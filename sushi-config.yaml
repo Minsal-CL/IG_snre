@@ -1,0 +1,50 @@
+# ╭─────────────────────────────────ImplementationGuide-hl7.fhir.uv.RE.json──────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see:                                                                    │
+# │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: hl7.fhir.uv.RecetaCH
+canonical: http://minsal.cl/fhir/core/
+version: 0.65 (Proceso de Ballot Pendiente)
+name: RecetaCL
+
+title: Guía de Implementación Receta-CL
+status: draft
+date: 2021-07
+publisher: Ministerio de Salud, Chile / HL7 Chile 
+contact:
+  - name: Pablo Pizzaro
+    telecom:
+      - system: email
+        value: ppizarro.delgado@minsal.cl
+description: Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional
+license: CC0-1.0
+fhirVersion: 4.0.1
+parameters:
+  apply-publisher: true
+  apply-contact: true
+  show-inherited-invariants: false
+copyrightYear: 2020+
+releaseLabel: ci-build
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu: 
+  Inicio: index.html
+  Objetivos : objetivos.html
+  Actores y Casos de Uso: casos.html
+  Operaciones y Terminologías: operaciones.html
+  Resumen de Artefactos:
+    Artefactos: artifacts.html
+  Perfiles: 
+    Prescripción: StructureDefinition-RecetaPrescripcionCl.html
+    Dispensación: StructureDefinition-DispensacionMedicamentoCl.html
+    Receta: StructureDefinition-RecetaCl.html
+    Organización Receta: StructureDefinition-RecetaOrganizacionCl.html
+    
+  Ejemplos:
+    Ejemplo Prescripción: StructureDefinition-RecetaPrescripcionCl-examples.html
+    Ejemplo Dispensación: StructureDefinition-DispensacionMedicamentoCl-examples.html
+    Ejemplo de Receta: StructureDefinition-RecetaCl-examples.html
+    Ejemplo Organización: StructureDefinition-RecetaOrganizacionCl-examples.html
