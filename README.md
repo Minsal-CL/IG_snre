@@ -1,17 +1,33 @@
-# IG_Receta V0.65
+# IG_Receta V0.7
 
 ## Control de Cambios
-Esta versión es la primera publicada por lo que no contiene control de cambios
+Esta versión incorpora cambios relacionados con la corrección de errores generados desde la validación QA al momento de publicas
 
-### Nuevo Formato de Guía
-no aplica a esta version
+### Formato de Guía
+
+* se corrigen errores de resolución de fuentes de las imágenes
+* Se corrigió error en el despliegue del menú
+* se corriegieron errores de vínculos rotos con algunas descargas
+* Se corrigieron todos los perfiles, extensiones y ejemplos al formato *nombreArtefacto-CL"
+* Se corrigió el **diagrama de secuencia** de *dispensación* que contenía un error en la secuencia final  
 
 ### Cambios en los Recursos
 
-No aplica a esta versión
+* Recurso Prescription: 
+ * Se corrige error en las istrucciones de **dosaje** del recurso al definir el sistema de medicion temporal con el sistema equivalente a *UCUM*
+ * Se cambió la definición de la cardinalidad del **identifier**
+
+* Recurso de Dispensación:
+ * Se corrigió error en el *slice* de **performer**, dada una mala definición del *discrimnador*. Se ajusto el discriminador al valor de la ruta *function.coding.code*, generando dos códigos forzados para cada uno de los dos slices: **#Dispensador** y **#Validador**
+ * Las reglas de slicing se dejaron en estado *close*
+   
 
 ### Cambios en los ejemplos
-No aplica
+* Recurso Receta:
+ * Se corrigió el elemento **status** del ejemplo a el *patrón requerido* que es *completed*
+
+* Recurso Dispensación:
+ * * En el ejemplo, se ajustaron las rutas de los *system* correpondientes a códigos **UCUM** a *http://unitsofmeasure.org*
 
 ## Guía de Implementación de Receta Electrónica Nacional del MINSAL
 Esta Guía presenta los servicios que deberán estar contenidos en los desarrollos que permitan la interoperabilidad de los distintos sistemas de Prescripción y Dispensación con el Sistema Nacional de Receta Electrónica. Así mismo, describe cómo se usan los recursos FHIR para cada uno de los componentes del desarrollo. Esta guía propone todos los artefactos y perfiles necesarios para conseguir los objetivos de interoperabilidad en base al estándar HL7 FHIR R4.
