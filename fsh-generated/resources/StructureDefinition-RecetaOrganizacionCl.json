@@ -1,0 +1,155 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RecetaOrganizacionCl",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Entities"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
+  "url": "http://minsal.cl/fhir/core/StructureDefinition/RecetaOrganizacionCl",
+  "version": "0.7 (Proceso de Ballot Pendiente)",
+  "name": "OrganizaciondRecetaCL",
+  "title": "Organización_Receta_CL",
+  "status": "active",
+  "description": "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Organzación para cubrir las necesidades de una Organización Prestadora de salud o Dispensadora",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization.identifier",
+        "path": "Organization.identifier",
+        "short": "identificador de organizacion de salud (DEIS, RUT, Codigos para cietos tipos de REcintos, etc.)",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.identifier.system",
+        "path": "Organization.identifier.system",
+        "short": "indicador del sistema de indentificación usado pora determinar el valor del identificador",
+        "definition": "Para el caso de Receta System debera contener dos posibles sistemas de identificacion: DEIS url http://minsal.cl/deis/codDeis o el de Farmacia XXXX XXXXX. En base a lo que se usará tiene que ser indicado en este campo)",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.identifier.value",
+        "path": "Organization.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.active",
+        "path": "Organization.active",
+        "short": "estado de prestador o dispensador si esta facultado o no (true|false)"
+      },
+      {
+        "id": "Organization.name",
+        "path": "Organization.name",
+        "short": "Nombre Legal de la Organizacion",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.alias",
+        "path": "Organization.alias",
+        "short": "Nombre de Fantasía",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.telecom",
+        "path": "Organization.telecom",
+        "short": "contactos de la organiazacon",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.telecom.use",
+        "path": "Organization.telecom.use",
+        "short": "uso del contacto descrito (home | work | temp | old | mobile)"
+      },
+      {
+        "id": "Organization.address",
+        "path": "Organization.address",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.address.use",
+        "path": "Organization.address.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.address.line",
+        "path": "Organization.address.line",
+        "short": "Calle o avenida, numero y casa o depto",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.address.city",
+        "path": "Organization.address.city",
+        "short": "Campo para Comuna de residencia",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://minsal.cl/fhir/core/ValueSet/CodNacComunas"
+        }
+      },
+      {
+        "id": "Organization.address.district",
+        "path": "Organization.address.district",
+        "short": "Campo para Provincia de Residencia",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://minsal.cl/fhir/core/ValueSet/CodProv"
+        }
+      },
+      {
+        "id": "Organization.address.state",
+        "path": "Organization.address.state",
+        "short": "Campo para Provincia de Región",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://minsal.cl/fhir/core/ValueSet/CodReg"
+        }
+      },
+      {
+        "id": "Organization.address.country",
+        "path": "Organization.address.country",
+        "short": "Campo para País de Residencia",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://minsal.cl/fhir/core/ValueSet/DOCType-V2-0203"
+        }
+      }
+    ]
+  }
+}

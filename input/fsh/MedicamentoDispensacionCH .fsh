@@ -22,7 +22,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 //status
 * status MS
 * status 1..1
-* status ^short = " estado de la dispensación según estándar: cancelled | completed | entered-in-error | declined"
+* status ^short = "estado de la dispensación según estándar: cancelled | completed | entered-in-error | declined"
 * status ^definition = "Estado de la dispensación, estos estaos pueden ser: preparation | in-progress | cancelled | on-hold | completed | entered-in-error | stopped | declined | unknown"
 * status ^comment = "Si bien los códigos para este elemento son mas que los mostrados en esta guía solo se considerarán los expuestos para el caso local"
 
@@ -52,7 +52,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * authorizingPrescription 1..1
 * authorizingPrescription ^short = "Referencia a la prescripción que autoriza la dispensación."
 * authorizingPrescription ^definition = "Referencia a la prescripción que autoriza la dispensación. esta debe ser referenciada al recurso MedicarionPrescrition involucrado en la receta presentada al momento de la dspensación"
-* authorizingPrescription.reference ^short = "Referencia a la receta que autoriza la dispensación. ´https://api-receta.minsal.cl/v2/MedicationPrescription´ (Obligada) "
+* authorizingPrescription.reference ^short = "Referencia a la receta que autoriza la dispensación. ´https://api-receta.minsal.cl/v2/MedicationPrescription´ (Obligada)"
 * authorizingPrescription.reference ^definition = "Referencia a la receta que autoriza la dispensación. esta debe ser referenciada al recurso MedicarionPrescrition involucrado en la receta presentada al momento de la dspensación. ´https://api-receta.minsal.cl/v2/MediationPrescription´ (Obligada)"
 
 
@@ -127,7 +127,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * performer[Dispensador].function.coding.code ^definition = "Código del tipo de dispensador según tabla maestra. En este caso debe ser 01"
 * performer[Dispensador].function.coding.code = #Dispensador
 
-* performer[Dispensador].actor ^short = "Profesional que realiza la dispensación. El endPoint es ´http://api-receta.minsal.cl/v2/practitioner´ "
+* performer[Dispensador].actor ^short = "Profesional que realiza la dispensación. El endPoint es ´http://api-receta.minsal.cl/v2/practitioner´"
 * performer[Dispensador].actor.reference ^short = "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/practitioner´"
 * performer[Dispensador].actor.reference ^definition = "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/practitioner´. En el caso nacional el dispensador estaría dentro de los recucursos desarrollados para Prestadores"
 
@@ -146,7 +146,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * performer[Validador].function.coding.code ^definition = "Código de validador según tabla maestra. En este caso debe ser 02"
 * performer[Validador].function.coding.code = #Validador
 
-* performer[Validador].actor ^short = "Profesional que realiza la validación. El endPoint es ´http://api-receta.minsal.cl/v2/practitioner´ "
+* performer[Validador].actor ^short = "Profesional que realiza la validación. El endPoint es ´http://api-receta.minsal.cl/v2/practitioner´"
 * performer[Validador].actor.reference ^short = "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/practitioner´"
 * performer[Validador].actor.reference ^definition = "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/practitioner´. En el caso nacional el dispensador estaría dentro de los recucursos desarrollados para Prestadores"
 

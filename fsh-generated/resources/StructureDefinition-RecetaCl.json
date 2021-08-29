@@ -1,0 +1,97 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RecetaCl",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Care Provision"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
+  "url": "http://minsal.cl/fhir/core/StructureDefinition/RecetaCl",
+  "version": "0.7 (Proceso de Ballot Pendiente)",
+  "name": "MedicamentoRecetaCL",
+  "title": "Receta_CL",
+  "status": "active",
+  "description": "Este Perfil usa este recurso como un contenedor de Prescripciones para poder ser usadas como formato de Receta electrónica con los farmacos indicados por el clínico durante un acto médico.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "RequestGroup",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/RequestGroup",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "RequestGroup.groupIdentifier",
+        "path": "RequestGroup.groupIdentifier",
+        "short": "Número identificador de grupo que debe ser el mismo con el cual se identificaron los farmacos prescritos en el acto clínico",
+        "definition": "dEste numero vincula el contenedor con todos los farmacos prescritos durante la atención del paciente. Este hará el uso de Receta y el grupo de farmacos co misma identificacion grupal. El formato debe ser xxxxxxxx",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "RequestGroup.groupIdentifier.value",
+        "path": "RequestGroup.groupIdentifier.value",
+        "short": "identificador de grupo"
+      },
+      {
+        "id": "RequestGroup.status",
+        "path": "RequestGroup.status",
+        "short": "\tdraft | active | on-hold | revoked | completed | entered-in-error | unknown",
+        "definition": "Dado que la receta siempre sera creada completa y enviada al repositorio Central entonces el estado se debe forzar a completed",
+        "comment": "Debe ser siempre completed",
+        "patternCode": "completed",
+        "mustSupport": true
+      },
+      {
+        "id": "RequestGroup.intent",
+        "path": "RequestGroup.intent",
+        "definition": "Dado que la receta siempre sera creada para receta y enviada al repositorio Central entonces el estado se debe forzar a order",
+        "comment": "Debe ser siempre order",
+        "patternCode": "order",
+        "mustSupport": true
+      },
+      {
+        "id": "RequestGroup.subject",
+        "path": "RequestGroup.subject",
+        "short": "Informacion acerca del paciente al cual se le ha indicado la receta",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "RequestGroup.subject.reference",
+        "path": "RequestGroup.subject.reference",
+        "short": "Referencia al recurso del paciente al cual se le arma la receta"
+      },
+      {
+        "id": "RequestGroup.authoredOn",
+        "path": "RequestGroup.authoredOn",
+        "short": "Fecha y hora cuando el medicamento fue dispensado. Se debe especificar en formato de fecha según HL7. YYYY-MM-DDThh:mm:ss+zz:zz, ej. 2018, 1973-06, 1905-08-23, 2015-02-07T13:28:17-05:00 or 2017-01-01T00:00:00.000Z.",
+        "comment": "No soporta formato 24 hrs",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}
