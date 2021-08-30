@@ -22,7 +22,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 //status
 * status MS
 * status 1..1
-* status ^short = " estado de la dispensación según estándar: cancelled | completed | entered-in-error | declined"
+* status ^short = "estado de la dispensación según estándar: cancelled | completed | entered-in-error | declined"
 * status ^definition = "Estado de la dispensación, estos estaos pueden ser: preparation | in-progress | cancelled | on-hold | completed | entered-in-error | stopped | declined | unknown"
 * status ^comment = "Si bien los códigos para este elemento son mas que los mostrados en esta guía solo se considerarán los expuestos para el caso local"
 
@@ -52,7 +52,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * authorizingPrescription 1..1
 * authorizingPrescription ^short = "Referencia a la prescripción que autoriza la dispensación."
 * authorizingPrescription ^definition = "Referencia a la prescripción que autoriza la dispensación. esta debe ser referenciada al recurso MedicarionPrescrition involucrado en la receta presentada al momento de la dspensación"
-* authorizingPrescription.reference ^short = "Referencia a la receta que autoriza la dispensación. ´https://api-receta.minsal.cl/v2/MedicationPrescription´ (Obligada) "
+* authorizingPrescription.reference ^short = "Referencia a la receta que autoriza la dispensación. ´https://api-receta.minsal.cl/v2/MedicationPrescription´ (Obligada)"
 * authorizingPrescription.reference ^definition = "Referencia a la receta que autoriza la dispensación. esta debe ser referenciada al recurso MedicarionPrescrition involucrado en la receta presentada al momento de la dspensación. ´https://api-receta.minsal.cl/v2/MediationPrescription´ (Obligada)"
 
 
@@ -104,46 +104,49 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * performer MS
 * performer 1..2
 * performer ^slicing.discriminator.type = #value
-* performer ^slicing.discriminator.path = "performer.function.code"
-* performer ^slicing.rules = #openAtEnd
+* performer ^slicing.discriminator.path = "function.coding.code"
+* performer ^slicing.rules = #closed
 
 * performer contains
 	Dispensador 1..1 and Validador 0..1
 
 * performer ^short = "Profesional que realizó la orden."
-* performer ^comment = "SE definen dos tipos de dispensador, no excluyentes mutuamente. El primero es el dispensador del fármaco pero el segundo es el validador. El dispensador es obligado. Ambos son iguales desde el punto de vista del desarrollo de cada slice es el mismo solo debe cambiar el valor del código del la ruta performer.function.code"
+* performer ^comment = "Se definen dos tipos de dispensador, no excluyentes mutuamente. El primero es el dispensador del fármaco pero el segundo es el validador. El dispensador es obligado. Ambos son iguales desde el punto de vista del desarrollo de cada slice es el mismo solo debe cambiar el valor del código del la ruta performer.function.code"
 
-
+* performer[Dispensador] MS
 * performer[Dispensador] ^short = "Aquel individuo que realiza la entega de medicamentos"
 * performer[Dispensador] ^definition = "Se entiende por dispensador al individuo que entrega los medicamentos a quien los solicite en el punto de entrega. Simpre el en proceso de dispensación existe un dispensador"
 
 * performer[Dispensador].function 1..1
 * performer[Dispensador].function ^short = "Función que desarrolla el Performer, en este caso dispensador"
 * performer[Dispensador].function ^definition = "Función que desarrolla el Performer, en este caso dispensador"
-* performer[Dispensador].function.coding.system ^short = "Sistema sobre el cual se obtiene el código de tipo de dispensador"
-* performer[Dispensador].function.coding.system ^definition = "Sistema sobre el cual se obtiene el código de tipo de dispensador, en este caso será una tabla local"
-* performer[Dispensador].function.coding.system ^comment = "La tabla quedará disponible por MINSAL para que los desarrolladores la puedan levantar localmente"
-* performer[Dispensador].function.coding.code ^short = "Código del tipo de dispensador"
-* performer[Dispensador].function.coding.code ^definition = "Código del tipo de dispensador según tabla maestra"
+//* performer[Dispensador].function.coding.system ^short = "Sistema sobre el cual se obtiene el código de tipo de dispensador"
+//* performer[Dispensador].function.coding.system ^definition = "Sistema sobre el cual se obtiene el código de tipo de dispensador, en este caso será una tabla local"
+//* performer[Dispensador].function.coding.system ^comment = "La tabla quedará disponible por MINSAL para que los desarrolladores la puedan levantar localmente"
+* performer[Dispensador].function.coding.code ^short = "Código del tipo de dispensador. Debe ser 01 para el Dispensador Obligado"
+* performer[Dispensador].function.coding.code ^definition = "Código del tipo de dispensador según tabla maestra. En este caso debe ser 01"
+* performer[Dispensador].function.coding.code = #Dispensador
 
-* performer[Dispensador].actor ^short = "Profesional que realiza la dispensación. El endPoint es ´http://api-receta.minsal.cl/v2/practitioner´ "
+* performer[Dispensador].actor ^short = "Profesional que realiza la dispensación. El endPoint es ´http://api-receta.minsal.cl/v2/practitioner´"
 * performer[Dispensador].actor.reference ^short = "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/practitioner´"
 * performer[Dispensador].actor.reference ^definition = "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/practitioner´. En el caso nacional el dispensador estaría dentro de los recucursos desarrollados para Prestadores"
 
 
+* performer[Validador] MS
 * performer[Validador] ^short = "Aquel individuo que realiza la validaciín ante la entega de medicamentos"
 * performer[Validador] ^definition = "Se entiende por dispensador al individuo que valida la entrega los medicamentos a quien los solicite en el punto de entrega. Por lo común es un Químico Farmaceutico de Profesión"
 
 * performer[Validador].function 1..1
 * performer[Validador].function ^short = "Función que desarrolla el Validador, en este caso siempre será un QF"
 * performer[Validador].function ^definition = "Función que desarrolla el Performer, en este caso validador"
-* performer[Validador].function.coding.system ^short = "Sistema sobre el cual se obtiene el código de tipo de performer"
-* performer[Validador].function.coding.system ^definition = "Sistema sobre el cual se obtiene el código de tipo de performer, en este caso será una tabla local"
-* performer[Validador].function.coding.system ^comment = "La tabla quedará disponible por MINSAL para que los desarrolladores la puedan levantar localmente"
-* performer[Validador].function.coding.code ^short = "Código de validador"
-* performer[Validador].function.coding.code ^definition = "Código de validador según tabla maestra"
+//* performer[Validador].function.coding.system ^short = "Sistema sobre el cual se obtiene el código de tipo de performer"
+//* performer[Validador].function.coding.system ^definition = "Sistema sobre el cual se obtiene el código de tipo de performer, en este caso será una tabla local"
+//* performer[Validador].function.coding.system ^comment = "La tabla quedará disponible por MINSAL para que los desarrolladores la puedan levantar localmente"
+* performer[Validador].function.coding.code ^short = "Código de validador. Debe ser 02 para definir un validador"
+* performer[Validador].function.coding.code ^definition = "Código de validador según tabla maestra. En este caso debe ser 02"
+* performer[Validador].function.coding.code = #Validador
 
-* performer[Validador].actor ^short = "Profesional que realiza la validación. El endPoint es ´http://api-receta.minsal.cl/v2/practitioner´ "
+* performer[Validador].actor ^short = "Profesional que realiza la validación. El endPoint es ´http://api-receta.minsal.cl/v2/practitioner´"
 * performer[Validador].actor.reference ^short = "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/practitioner´"
 * performer[Validador].actor.reference ^definition = "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/practitioner´. En el caso nacional el dispensador estaría dentro de los recucursos desarrollados para Prestadores"
 
@@ -180,8 +183,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * detectedIssue.display ^short = "Texto libre que describe el potencial evento adverso o contraindicación"
 * detectedIssue.display ^definition = "Texto libre que describe el potencial evento adverso o contraindicación. Por momento solo se considera la redacción en texto libre de este campo"
 
-//partOf
-* partOf MS
+
 
 Instance : DispensacionMedicamentoCL
 Title : "Ejemplo de la dispensacion del Medicamento Oxycodone Via Oral"
@@ -192,7 +194,7 @@ InstanceOf : DispensacionMedicamentoCl
 * identifier.value = "Dispensacion-001"
 
 //////////////////
-* status = #active
+* status = #completed
 
 //////////////////
 * statusReasonCodeableConcept.coding.system = "http://minsal.cl/razon-de-no-dispensacion"
@@ -203,17 +205,19 @@ InstanceOf : DispensacionMedicamentoCl
 * medicationReference.reference = "https://api-receta.minsal.cl/v2/medication/Med#22353"
 
 //////////////////
-* performer[Dispensador].function.coding.system = "http://farmaciaLocal.cl/api-R/Tablas/TablaFunc"
-* performer[Dispensador].function.coding.code = #02
+//* performer[Dispensador].function.coding.system = "http://farmaciaLocal.cl/api-R/Tablas/TablaFunc"
+* performer[Dispensador].function.coding.code = #Dispensador
 * performer[Dispensador].function.coding.display = "Vendedor"
 * performer[Dispensador].actor.reference = "https://api-receta.minsal.cl/v2/practitioner/Di#14785214"
 * performer[Dispensador].actor.display = "Juan Bastidas"
+//* performer[Dispensador].function.text = "Dispensador de la Prescripción"
 
-* performer[Validador].function.coding.system = "http://farmaciaLocal.cl/api-R/Tablas/TablaFunc"
-* performer[Validador].function.coding.code = #01
+//* performer[Validador].function.coding.system = "http://farmaciaLocal.cl/api-R/Tablas/TablaFunc"
+* performer[Validador].function.coding.code = #Validador
 * performer[Validador].function.coding.display = "Químico Farmaceutico"
 * performer[Validador].actor.reference = "https://api-receta.minsal.cl/v2/practitioner/Di#245993"
 * performer[Validador].actor.display = "Sofia Galindo"
+//* performer[Validador].function.text = "Validador de la Prescripción Dispensada"
 
 //////////////////
 * subject.reference = "https://api-receta.minsal.cl/v2/Patient/Paciente#2411224"
@@ -243,16 +247,16 @@ InstanceOf : DispensacionMedicamentoCl
 * dosageInstruction.sequence = 1
 * dosageInstruction.text = "una-dos pastillas cada 4-6 horas en caso de aumento de dolor"
 * dosageInstruction.additionalInstruction.coding.system = "http://snomed.info/sct"
-* dosageInstruction.additionalInstruction.coding.code = #4189114006
+* dosageInstruction.additionalInstruction.coding.code = #418639000
 * dosageInstruction.additionalInstruction.coding.display = "Advertencia. Puede provocar somnolencia. Si le afecta no conduzca ni maneje maquinaria. Evitar las bebidas alcohólicas (valor calificativo)"
 * dosageInstruction.patientInstruction = "Tomar una o dos pastillas cada 4-6 horas en caso de aumento de dolor"
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.period = 4
 * dosageInstruction.timing.repeat.periodMax = 6
 * dosageInstruction.timing.repeat.periodUnit = #h
-* dosageInstruction.asNeededCodeableConcept.coding.system = "http://snomed.info/sct"
-* dosageInstruction.asNeededCodeableConcept.coding.code = #297217002
-* dosageInstruction.asNeededCodeableConcept.coding.display = "Dolor Renal (finding)"
+
+* dosageInstruction.asNeededBoolean = false
+
 * dosageInstruction.route.coding.system = "http://snomed.info/sct"
 * dosageInstruction.route.coding.code = #26643006
 * dosageInstruction.route.coding.display = "Ruta Oral"

@@ -11,8 +11,13 @@
       "valueCode": "patient"
     }
   ],
+<<<<<<< HEAD
   "url": "http://minsal.cl/fhir/core//StructureDefinition/DispensacionMedicamentoCl",
   "version": "0.65 (Proceso de Ballot Pendiente)",
+=======
+  "url": "http://minsal.cl/fhir/core/StructureDefinition/DispensacionMedicamentoCl",
+  "version": "0.7 (Proceso de Ballot Pendiente)",
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
   "name": "DispensacionMedicamentoCL",
   "title": "Dispensación_CL",
   "status": "active",
@@ -79,11 +84,14 @@
         "mustSupport": true
       },
       {
+<<<<<<< HEAD
         "id": "MedicationDispense.partOf",
         "path": "MedicationDispense.partOf",
         "mustSupport": true
       },
       {
+=======
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
         "id": "MedicationDispense.status",
         "path": "MedicationDispense.status",
         "short": " estado de la dispensación según estándar: cancelled | completed | entered-in-error | declined",
@@ -155,6 +163,7 @@
           "discriminator": [
             {
               "type": "value",
+<<<<<<< HEAD
               "path": "performer.function.code"
             }
           ],
@@ -162,6 +171,15 @@
         },
         "short": "Profesional que realizó la orden.",
         "comment": "SE definen dos tipos de dispensador, no excluyentes mutuamente. El primero es el dispensador del fármaco pero el segundo es el validador. El dispensador es obligado. Ambos son iguales desde el punto de vista del desarrollo de cada slice es el mismo solo debe cambiar el valor del código del la ruta performer.function.code",
+=======
+              "path": "function.coding.code"
+            }
+          ],
+          "rules": "closed"
+        },
+        "short": "Profesional que realizó la orden.",
+        "comment": "Se definen dos tipos de dispensador, no excluyentes mutuamente. El primero es el dispensador del fármaco pero el segundo es el validador. El dispensador es obligado. Ambos son iguales desde el punto de vista del desarrollo de cada slice es el mismo solo debe cambiar el valor del código del la ruta performer.function.code",
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
         "min": 1,
         "max": "2",
         "mustSupport": true
@@ -173,7 +191,12 @@
         "short": "Aquel individuo que realiza la entega de medicamentos",
         "definition": "Se entiende por dispensador al individuo que entrega los medicamentos a quien los solicite en el punto de entrega. Simpre el en proceso de dispensación existe un dispensador",
         "min": 1,
+<<<<<<< HEAD
         "max": "1"
+=======
+        "max": "1",
+        "mustSupport": true
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
       },
       {
         "id": "MedicationDispense.performer:Dispensador.function",
@@ -183,6 +206,7 @@
         "min": 1
       },
       {
+<<<<<<< HEAD
         "id": "MedicationDispense.performer:Dispensador.function.coding.system",
         "path": "MedicationDispense.performer.function.coding.system",
         "short": "Sistema sobre el cual se obtiene el código de tipo de dispensador",
@@ -194,6 +218,14 @@
         "path": "MedicationDispense.performer.function.coding.code",
         "short": "Código del tipo de dispensador",
         "definition": "Código del tipo de dispensador según tabla maestra"
+=======
+        "id": "MedicationDispense.performer:Dispensador.function.coding.code",
+        "path": "MedicationDispense.performer.function.coding.code",
+        "short": "Código del tipo de dispensador. Debe ser 01 para el Dispensador Obligado",
+        "definition": "Código del tipo de dispensador según tabla maestra. En este caso debe ser 01",
+        "min": 1,
+        "patternCode": "Dispensador"
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
       },
       {
         "id": "MedicationDispense.performer:Dispensador.actor",
@@ -213,7 +245,12 @@
         "short": "Aquel individuo que realiza la validaciín ante la entega de medicamentos",
         "definition": "Se entiende por dispensador al individuo que valida la entrega los medicamentos a quien los solicite en el punto de entrega. Por lo común es un Químico Farmaceutico de Profesión",
         "min": 0,
+<<<<<<< HEAD
         "max": "1"
+=======
+        "max": "1",
+        "mustSupport": true
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
       },
       {
         "id": "MedicationDispense.performer:Validador.function",
@@ -223,6 +260,7 @@
         "min": 1
       },
       {
+<<<<<<< HEAD
         "id": "MedicationDispense.performer:Validador.function.coding.system",
         "path": "MedicationDispense.performer.function.coding.system",
         "short": "Sistema sobre el cual se obtiene el código de tipo de performer",
@@ -234,6 +272,14 @@
         "path": "MedicationDispense.performer.function.coding.code",
         "short": "Código de validador",
         "definition": "Código de validador según tabla maestra"
+=======
+        "id": "MedicationDispense.performer:Validador.function.coding.code",
+        "path": "MedicationDispense.performer.function.coding.code",
+        "short": "Código de validador. Debe ser 02 para definir un validador",
+        "definition": "Código de validador según tabla maestra. En este caso debe ser 02",
+        "min": 1,
+        "patternCode": "Validador"
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
       },
       {
         "id": "MedicationDispense.performer:Validador.actor",

@@ -39,12 +39,14 @@ Description:    "Este Perfil usa este recurso como un contenedor de Prescripcion
 * authoredOn ^short = "Fecha y hora cuando el medicamento fue dispensado. Se debe especificar en formato de fecha según HL7. YYYY-MM-DDThh:mm:ss+zz:zz, ej. 2018, 1973-06, 1905-08-23, 2015-02-07T13:28:17-05:00 or 2017-01-01T00:00:00.000Z."
 * authoredOn ^comment = "No soporta formato 24 hrs"
 
+
+
 Instance : EjemploRecetaCL
 Title : "Ejemplo de Recurso de una receta completa"
 InstanceOf : MedicamentoRecetaCL
 
 * contained[0] = medicationrequest-1
-* contained[+] = medicationrequest-2
+* contained[1] = medicationrequest-2
 
 
 * groupIdentifier.value = "00001"
@@ -73,6 +75,7 @@ Usage: #example
 
 * intent = #order
 
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
 * category.coding.code = #inpatient
 //* category.coding.display = "Inpatient"
 
@@ -97,6 +100,7 @@ Usage: #example
 
 * dosageInstruction.timing.repeat.periodUnit = #h
 
+* dosageInstruction.route.coding.system = "http://snomed.info/sct"
 * dosageInstruction.route.coding.code = #421521009
 * dosageInstruction.route.coding.display = "tragarlo, instrucciones de dosage imperativas (qualifier value)"
 
@@ -108,6 +112,7 @@ Usage: #example
 * dispenseRequest.validityPeriod.start = "2021-06-12"
 * dispenseRequest.validityPeriod.start = "2022-01-12"
 * dispenseRequest.quantity.value = 10
+* dispenseRequest.expectedSupplyDuration.system = "http://unitsofmeasure.org"
 * dispenseRequest.expectedSupplyDuration.value = 5
 * dispenseRequest.expectedSupplyDuration.unit = "días"
 * dispenseRequest.expectedSupplyDuration.code = #d
@@ -127,6 +132,7 @@ Usage: #example
 
 * intent = #order
 
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
 * category.coding.code = #inpatient
 //* category.coding.display = "Inpatient"
 
@@ -151,6 +157,7 @@ Usage: #example
 
 * dosageInstruction.timing.repeat.periodUnit = #h
 
+* dosageInstruction.route.coding.system = "http://snomed.info/sct"
 * dosageInstruction.route.coding.code = #421521009
 * dosageInstruction.route.coding.display = "tragarlo, instrucciones de dosage imperativas (qualifier value)"
 
@@ -162,6 +169,7 @@ Usage: #example
 * dispenseRequest.validityPeriod.start = "2021-06-12"
 * dispenseRequest.validityPeriod.start = "2022-01-12"
 * dispenseRequest.quantity.value = 10
+* dispenseRequest.expectedSupplyDuration.system = "http://unitsofmeasure.org"
 * dispenseRequest.expectedSupplyDuration.value = 5
 * dispenseRequest.expectedSupplyDuration.unit = "días"
 * dispenseRequest.expectedSupplyDuration.code = #d

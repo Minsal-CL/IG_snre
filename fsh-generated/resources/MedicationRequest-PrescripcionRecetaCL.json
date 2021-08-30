@@ -3,10 +3,26 @@
   "id": "PrescripcionRecetaCL",
   "meta": {
     "profile": [
+<<<<<<< HEAD
       "http://minsal.cl/fhir/core//StructureDefinition/RecetaPrescripcionCl"
     ]
   },
   "intent": "order",
+=======
+      "http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl"
+    ]
+  },
+  "intent": "order",
+  "extension": [
+    {
+      "url": "http://minsal.cl/fhir/core/StructureDefinition/Prod-Comercial",
+      "valueReference": {
+        "reference": "https://api-receta.minsal.cl/v2/medication/med#1257",
+        "display": "Oxycontin MR"
+      }
+    }
+  ],
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
   "identifier": [
     {
       "system": "https://minsal.cl/portalReceta/prescripciones",
@@ -26,6 +42,10 @@
     {
       "coding": [
         {
+<<<<<<< HEAD
+=======
+          "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
           "code": "inpatient"
         }
       ]
@@ -38,6 +58,7 @@
     "reference": "https://api-receta.minsal.cl/v2/Medication/Medicamento#1345",
     "display": "Oxycodone"
   },
+<<<<<<< HEAD
   "extension": [
     {
       "url": "PComercial",
@@ -47,6 +68,8 @@
       }
     }
   ],
+=======
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
   "subject": {
     "reference": "https://api-receta.minsal.cl/v2/Patient/Paciente#2411224",
     "display": "Patricio Perez"
@@ -101,8 +124,14 @@
       "value": 30
     },
     "expectedSupplyDuration": {
+<<<<<<< HEAD
       "value": 10,
       "unit": "días",
+=======
+      "system": "http://unitsofmeasure.org",
+      "value": 10,
+      "unit": "Day",
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
       "code": "d"
     }
   }

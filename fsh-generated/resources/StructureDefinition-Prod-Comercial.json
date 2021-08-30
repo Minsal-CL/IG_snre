@@ -1,8 +1,13 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Prod-Comercial",
+<<<<<<< HEAD
   "url": "http://minsal.cl/fhir/core//StructureDefinition/Prod-Comercial",
   "version": "0.65 (Proceso de Ballot Pendiente)",
+=======
+  "url": "http://minsal.cl/fhir/core/StructureDefinition/Prod-Comercial",
+  "version": "0.7 (Proceso de Ballot Pendiente)",
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
   "name": "Prod_Comercial",
   "status": "active",
   "description": "Recomendación de MEdicamento en Producto Comercial",
@@ -40,6 +45,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
+<<<<<<< HEAD
         "fixedUri": "http://minsal.cl/fhir/core//StructureDefinition/Prod-Comercial"
       },
       {
@@ -48,14 +54,42 @@
         "short": "Referencia a un recurso medicamento en ´http://api-receta.minsal.cl/v2/medication´",
         "min": 0,
         "max": "1",
+=======
+        "fixedUri": "http://minsal.cl/fhir/core/StructureDefinition/Prod-Comercial"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
         "type": [
           {
             "code": "Reference"
           }
+<<<<<<< HEAD
         ],
         "patternReference": {
           "reference": "medication"
         }
+=======
+        ]
+      },
+      {
+        "id": "Extension.valueReference",
+        "path": "Extension.valueReference",
+        "short": "Referencia a un recurso medicamento en ´http://api-receta.minsal.cl/v2/medication´",
+        "min": 0,
+        "max": "1"
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
       }
     ]
   }

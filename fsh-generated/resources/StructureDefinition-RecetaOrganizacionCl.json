@@ -11,8 +11,13 @@
       "valueCode": "business"
     }
   ],
+<<<<<<< HEAD
   "url": "http://minsal.cl/fhir/core//StructureDefinition/RecetaOrganizacionCl",
   "version": "0.65 (Proceso de Ballot Pendiente)",
+=======
+  "url": "http://minsal.cl/fhir/core/StructureDefinition/RecetaOrganizacionCl",
+  "version": "0.7 (Proceso de Ballot Pendiente)",
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
   "name": "OrganizaciondRecetaCL",
   "title": "Organización_Receta_CL",
   "status": "active",
@@ -117,7 +122,11 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
+<<<<<<< HEAD
           "valueSet": "http://minsal.cl/fhir/core//ValueSet/CodNacComunas"
+=======
+          "valueSet": "http://minsal.cl/fhir/core/ValueSet/CodNacComunas"
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
         }
       },
       {
@@ -127,7 +136,11 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
+<<<<<<< HEAD
           "valueSet": "http://minsal.cl/fhir/core//ValueSet/CodProv"
+=======
+          "valueSet": "http://minsal.cl/fhir/core/ValueSet/CodProv"
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
         }
       },
       {
@@ -137,7 +150,11 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
+<<<<<<< HEAD
           "valueSet": "http://minsal.cl/fhir/core//ValueSet/CodReg"
+=======
+          "valueSet": "http://minsal.cl/fhir/core/ValueSet/CodReg"
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
         }
       },
       {
@@ -147,7 +164,11 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
+<<<<<<< HEAD
           "valueSet": "http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203"
+=======
+          "valueSet": "http://minsal.cl/fhir/core/ValueSet/DOCType-V2-0203"
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
         }
       }
     ]

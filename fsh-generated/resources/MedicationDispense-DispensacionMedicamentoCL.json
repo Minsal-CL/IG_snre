@@ -3,6 +3,7 @@
   "id": "DispensacionMedicamentoCL",
   "meta": {
     "profile": [
+<<<<<<< HEAD
       "http://minsal.cl/fhir/core//StructureDefinition/DispensacionMedicamentoCl"
     ]
   },
@@ -25,13 +26,22 @@
   "medicationReference": {
     "reference": "https://api-receta.minsal.cl/v2/medication/Med#22353"
   },
+=======
+      "http://minsal.cl/fhir/core/StructureDefinition/DispensacionMedicamentoCl"
+    ]
+  },
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
   "performer": [
     {
       "function": {
         "coding": [
           {
+<<<<<<< HEAD
             "system": "http://farmaciaLocal.cl/api-R/Tablas/TablaFunc",
             "code": "02",
+=======
+            "code": "Dispensador",
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
             "display": "Vendedor"
           }
         ]
@@ -45,8 +55,12 @@
       "function": {
         "coding": [
           {
+<<<<<<< HEAD
             "system": "http://farmaciaLocal.cl/api-R/Tablas/TablaFunc",
             "code": "01",
+=======
+            "code": "Validador",
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
             "display": "Químico Farmaceutico"
           }
         ]
@@ -57,6 +71,28 @@
       }
     }
   ],
+<<<<<<< HEAD
+=======
+  "identifier": [
+    {
+      "system": "http://minsal.cl/portalReceta/dispensacion",
+      "value": "Dispensacion-001"
+    }
+  ],
+  "status": "completed",
+  "statusReasonCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://minsal.cl/razon-de-no-dispensacion",
+        "code": "1123654",
+        "display": "medicamento agotado"
+      }
+    ]
+  },
+  "medicationReference": {
+    "reference": "https://api-receta.minsal.cl/v2/medication/Med#22353"
+  },
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
   "subject": {
     "reference": "https://api-receta.minsal.cl/v2/Patient/Paciente#2411224",
     "display": "Patricio Perez"
@@ -88,7 +124,11 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
+<<<<<<< HEAD
               "code": "4189114006",
+=======
+              "code": "418639000",
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
               "display": "Advertencia. Puede provocar somnolencia. Si le afecta no conduzca ni maneje maquinaria. Evitar las bebidas alcohólicas (valor calificativo)"
             }
           ]
@@ -103,6 +143,7 @@
           "periodUnit": "h"
         }
       },
+<<<<<<< HEAD
       "asNeededCodeableConcept": {
         "coding": [
           {
@@ -112,6 +153,9 @@
           }
         ]
       },
+=======
+      "asNeededBoolean": false,
+>>>>>>> df644f43521c82f175b21dba0dabea25131a4625
       "route": {
         "coding": [
           {
