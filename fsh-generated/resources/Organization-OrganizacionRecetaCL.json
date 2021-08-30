@@ -3,11 +3,7 @@
   "id": "OrganizacionRecetaCL",
   "meta": {
     "profile": [
-<<<<<<< HEAD
-      "http://minsal.cl/fhir/core//StructureDefinition/RecetaOrganizacionCl"
-=======
       "http://minsal.cl/fhir/core/StructureDefinition/RecetaOrganizacionCl"
->>>>>>> df644f43521c82f175b21dba0dabea25131a4625
     ]
   },
   "active": true,

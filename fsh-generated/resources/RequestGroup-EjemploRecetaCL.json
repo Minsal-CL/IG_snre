@@ -3,11 +3,7 @@
   "id": "EjemploRecetaCL",
   "meta": {
     "profile": [
-<<<<<<< HEAD
-      "http://minsal.cl/fhir/core//StructureDefinition/RecetaCl"
-=======
       "http://minsal.cl/fhir/core/StructureDefinition/RecetaCl"
->>>>>>> df644f43521c82f175b21dba0dabea25131a4625
     ]
   },
   "status": "completed",
@@ -28,10 +24,7 @@
         {
           "coding": [
             {
-<<<<<<< HEAD
-=======
               "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
->>>>>>> df644f43521c82f175b21dba0dabea25131a4625
               "code": "inpatient"
             }
           ]
@@ -71,10 +64,7 @@
           "route": {
             "coding": [
               {
-<<<<<<< HEAD
-=======
                 "system": "http://snomed.info/sct",
->>>>>>> df644f43521c82f175b21dba0dabea25131a4625
                 "code": "421521009",
                 "display": "tragarlo, instrucciones de dosage imperativas (qualifier value)"
               }
@@ -100,10 +90,7 @@
           "value": 10
         },
         "expectedSupplyDuration": {
-<<<<<<< HEAD
-=======
           "system": "http://unitsofmeasure.org",
->>>>>>> df644f43521c82f175b21dba0dabea25131a4625
           "value": 5,
           "unit": "días",
           "code": "d"
@@ -125,10 +112,7 @@
         {
           "coding": [
             {
-<<<<<<< HEAD
-=======
               "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
->>>>>>> df644f43521c82f175b21dba0dabea25131a4625
               "code": "inpatient"
             }
           ]
@@ -168,10 +152,7 @@
           "route": {
             "coding": [
               {
-<<<<<<< HEAD
-=======
                 "system": "http://snomed.info/sct",
->>>>>>> df644f43521c82f175b21dba0dabea25131a4625
                 "code": "421521009",
                 "display": "tragarlo, instrucciones de dosage imperativas (qualifier value)"
               }
@@ -197,10 +178,7 @@
           "value": 10
         },
         "expectedSupplyDuration": {
-<<<<<<< HEAD
-=======
           "system": "http://unitsofmeasure.org",
->>>>>>> df644f43521c82f175b21dba0dabea25131a4625
           "value": 5,
           "unit": "días",
           "code": "d"

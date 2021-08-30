@@ -5,13 +5,8 @@
   "id": "CodProv",
   "title": "Códigos de Provincias en Chile",
   "description": "Codigos definidos para identificar una provincia en Chile",
-<<<<<<< HEAD
-  "version": "0.65 (Proceso de Ballot Pendiente)",
-  "url": "http://minsal.cl/fhir/core//ValueSet/CodProv",
-=======
   "version": "0.7 (Proceso de Ballot Pendiente)",
   "url": "http://minsal.cl/fhir/core/ValueSet/CodProv",
->>>>>>> df644f43521c82f175b21dba0dabea25131a4625
   "compose": {
     "include": [
       {

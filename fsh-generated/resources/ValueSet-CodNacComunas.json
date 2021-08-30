@@ -5,13 +5,8 @@
   "id": "CodNacComunas",
   "title": "Códigos de Comunas en Chile",
   "description": "Codigos definidos para identificar una comuna en Chile",
-<<<<<<< HEAD
-  "version": "0.65 (Proceso de Ballot Pendiente)",
-  "url": "http://minsal.cl/fhir/core//ValueSet/CodNacComunas",
-=======
   "version": "0.7 (Proceso de Ballot Pendiente)",
   "url": "http://minsal.cl/fhir/core/ValueSet/CodNacComunas",
->>>>>>> df644f43521c82f175b21dba0dabea25131a4625
   "compose": {
     "include": [
       {
