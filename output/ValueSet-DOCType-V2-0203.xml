@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DOCType-V2-0203"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <code>https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html</code></li></ul></div>
+  </text>
+  <url value="http://minsal.cl/fhir/core/ValueSet/DOCType-V2-0203"/>
+  <version value="0.7 (Proceso de Ballot Pendiente)"/>
+  <name value="ISO3166COD"/>
+  <title value="C&#xF3;digos de Pa&#xED;ses Segun Norma ISO-3166 N"/>
+  <status value="active"/>
+  <date value="2021-08-30T12:20:31-04:00"/>
+  <contact>
+    <name value="Pablo Pizzaro"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:ppizarro.delgado@minsal.cl"/>
+    </telecom>
+  </contact>
+  <description value="Codigos para especificar tipos de identificadores usando lo definido en Hl7 V2.x"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="152"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,126 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://minsal.cl/fhir/core/MedicationRequest/PrescripcionRecetaCL> a fhir:MedicationRequest;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PrescripcionRecetaCL"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Prod_Comercial</b>: <a href=\"https://api-receta.minsal.cl/v2/medication/med#1257\">Oxycontin MR</a></p><p><b>identifier</b>: id: RNCheque-1232</p><p><b>status</b>: active</p><p><b>statusReason</b>: <span title=\"Codes: \">probar otra alternativa primero</span></p><p><b>intent</b>: order</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}\">Inpatient</span></p><p><b>medication</b>: <a href=\"https://api-receta.minsal.cl/v2/Medication/Medicamento#1345\">Oxycodone</a></p><p><b>subject</b>: <a href=\"https://api-receta.minsal.cl/v2/Patient/Paciente#2411224\">Patricio Perez</a></p><p><b>authoredOn</b>: 2021-06-12</p><p><b>requester</b>: <a href=\"https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421\">Cecilia Ampuero</a></p><p><b>groupIdentifier</b>: id: FARM2122-1206211145-11</p><p><b>note</b>: Al paciente se le indicó que lo administrara durante comidas</p><blockquote><p><b>dispenseRequest</b></p><p><b>validityPeriod</b>: 2022-01-12 --&gt; (ongoing)</p><p><b>quantity</b>: 30</p></blockquote></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://minsal.cl/fhir/core/StructureDefinition/Prod-Comercial" ];
+     fhir:Extension.valueReference [
+       fhir:link <https://api-receta.minsal.cl/v2/medication/med#1257>;
+       fhir:Reference.reference [ fhir:value "https://api-receta.minsal.cl/v2/medication/med#1257" ];
+       fhir:Reference.display [ fhir:value "Oxycontin MR" ]
+     ]
+  ];
+  fhir:MedicationRequest.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://minsal.cl/portalReceta/prescripciones" ];
+     fhir:Identifier.value [ fhir:value "RNCheque-1232" ]
+  ];
+  fhir:MedicationRequest.status [ fhir:value "active"];
+  fhir:MedicationRequest.statusReason [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "altchoice" ];
+       fhir:Coding.display [ fhir:value "probar otra alternativa primero" ]
+     ]
+  ];
+  fhir:MedicationRequest.intent [ fhir:value "order"];
+  fhir:MedicationRequest.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/medicationrequest-category" ];
+       fhir:Coding.code [ fhir:value "inpatient" ]
+     ]
+  ];
+  fhir:MedicationRequest.medicationReference [
+     fhir:link <https://api-receta.minsal.cl/v2/Medication/Medicamento#1345>;
+     fhir:Reference.reference [ fhir:value "https://api-receta.minsal.cl/v2/Medication/Medicamento#1345" ];
+     fhir:Reference.display [ fhir:value "Oxycodone" ]
+  ];
+  fhir:MedicationRequest.subject [
+     fhir:link <https://api-receta.minsal.cl/v2/Patient/Paciente#2411224>;
+     fhir:Reference.reference [ fhir:value "https://api-receta.minsal.cl/v2/Patient/Paciente#2411224" ];
+     fhir:Reference.display [ fhir:value "Patricio Perez" ]
+  ];
+  fhir:MedicationRequest.authoredOn [ fhir:value "2021-06-12"^^xsd:date];
+  fhir:MedicationRequest.requester [
+     fhir:link <https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421>;
+     fhir:Reference.reference [ fhir:value "https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421" ];
+     fhir:Reference.display [ fhir:value "Cecilia Ampuero" ]
+  ];
+  fhir:MedicationRequest.groupIdentifier [
+     fhir:Identifier.value [ fhir:value "FARM2122-1206211145-11" ]
+  ];
+  fhir:MedicationRequest.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "Al paciente se le indicó que lo administrara durante comidas" ]
+  ];
+  fhir:MedicationRequest.dosageInstruction [
+     fhir:index 0;
+     fhir:Dosage.text [ fhir:value "Una o dos tabletas cada 4 a 6 horas segun necesidad en base a la intensidad del dolor renal" ];
+     fhir:Dosage.patientInstruction [ fhir:value "Una o dos tabletas cada 4 a 6 horas segun necesidad en base a la intensidad del dolor renal" ];
+     fhir:Dosage.timing [
+       fhir:Timing.repeat [
+         fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:positiveInteger ];
+         fhir:Timing.repeat.period [ fhir:value "4"^^xsd:decimal ];
+         fhir:Timing.repeat.periodMax [ fhir:value "6"^^xsd:decimal ];
+         fhir:Timing.repeat.periodUnit [ fhir:value "h" ]
+       ]
+     ];
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "421521009" ];
+         fhir:Coding.display [ fhir:value "tragarlo, instrucciones de dosage imperativas (qualifier value)" ]
+       ]
+     ];
+     fhir:Dosage.doseAndRate [
+       fhir:index 0;
+       fhir:Dosage.doseAndRate.doseRange [
+         fhir:Range.low [
+           fhir:Quantity.value [ fhir:value "2"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "Tableta" ]
+         ]
+       ]
+     ]
+  ];
+  fhir:MedicationRequest.dispenseRequest [
+     fhir:MedicationRequest.dispenseRequest.validityPeriod [
+       fhir:Period.start [ fhir:value "2022-01-12"^^xsd:date ]
+     ];
+     fhir:MedicationRequest.dispenseRequest.quantity [
+       fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ]
+     ];
+     fhir:MedicationRequest.dispenseRequest.expectedSupplyDuration [
+       fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "Day" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "d" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://minsal.cl/fhir/core/MedicationRequest/PrescripcionRecetaCL.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

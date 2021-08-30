@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="CodProv"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <code>https://apis.digital.gob.cl/dpa/provincias/</code></li></ul></div>
+  </text>
+  <url value="http://minsal.cl/fhir/core/ValueSet/CodProv"/>
+  <version value="0.7 (Proceso de Ballot Pendiente)"/>
+  <name value="CodProvincia"/>
+  <title value="C&#xF3;digos de Provincias en Chile"/>
+  <status value="active"/>
+  <date value="2021-08-30T12:20:31-04:00"/>
+  <contact>
+    <name value="Pablo Pizzaro"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:ppizarro.delgado@minsal.cl"/>
+    </telecom>
+  </contact>
+  <description value="Codigos definidos para identificar una provincia en Chile"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="152"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://apis.digital.gob.cl/dpa/provincias/"/>
+    </include>
+  </compose>
+</ValueSet>
