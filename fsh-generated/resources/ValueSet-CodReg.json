@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CodRegion",
+  "id": "CodReg",
+  "title": "Códigos de Regiones en Chile",
+  "description": "Codigos definidos para identificar una comuna en Chile",
+  "version": "0.65 (Proceso de Ballot Pendiente)",
+  "url": "http://minsal.cl/fhir/core//ValueSet/CodReg",
+  "compose": {
+    "include": [
+      {
+        "system": "https://apis.digital.gob.cl/dpa/regiones/"
+      }
+    ]
+  }
+}

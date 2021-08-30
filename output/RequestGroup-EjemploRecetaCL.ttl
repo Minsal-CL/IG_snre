@@ -1,0 +1,202 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://minsal.cl/fhir/core/RequestGroup/EjemploRecetaCL> a fhir:RequestGroup;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "EjemploRecetaCL"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/fhir/core//StructureDefinition/RecetaCl";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/fhir/core//StructureDefinition/RecetaCl>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>groupIdentifier</b>: id: 00001</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"https://api-receta.minsal.cl/v2/Patient/Paciente#2411224\">https://api-receta.minsal.cl/v2/Patient/Paciente#2411224</a></p><p><b>authoredOn</b>: Jun 12, 2021 1:31:00 PM</p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:MedicationRequest;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "medicationrequest-1" ];
+     fhir:MedicationRequest.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "https://minsal.cl/portalReceta/prescripciones" ];
+       fhir:Identifier.value [ fhir:value "RNCheque-1234" ]
+     ];
+     fhir:MedicationRequest.status [ fhir:value "active" ];
+     fhir:MedicationRequest.intent [ fhir:value "order" ];
+     fhir:MedicationRequest.category [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "inpatient" ]
+       ]
+     ];
+     fhir:MedicationRequest.medicationReference [
+       fhir:link <https://api-receta.minsal.cl/v2/Medication/Medicamento#1028>;
+       fhir:Reference.reference [ fhir:value "https://api-receta.minsal.cl/v2/Medication/Medicamento#1028" ]
+     ];
+     fhir:MedicationRequest.subject [
+       fhir:link <https://api-receta.minsal.cl/v2/Patient/Paciente#2411224>;
+       fhir:Reference.reference [ fhir:value "https://api-receta.minsal.cl/v2/Patient/Paciente#2411224" ];
+       fhir:Reference.display [ fhir:value "Patricio Perez" ]
+     ];
+     fhir:MedicationRequest.authoredOn [ fhir:value "2021-06-12"^^xsd:date ];
+     fhir:MedicationRequest.requester [
+       fhir:link <https://api-receta.minsal.cl/v2/Practitoner/PRestador#923421>;
+       fhir:Reference.reference [ fhir:value "https://api-receta.minsal.cl/v2/Practitoner/PRestador#923421" ];
+       fhir:Reference.display [ fhir:value "Cecilia Ampuero" ]
+     ];
+     fhir:MedicationRequest.groupIdentifier [
+       fhir:Identifier.value [ fhir:value "FARM2122-1206211145-11" ]
+     ];
+     fhir:MedicationRequest.note [
+       fhir:index 0;
+       fhir:Annotation.text [ fhir:value "Al paciente se le indicó lo tome 2 veces al día" ]
+     ];
+     fhir:MedicationRequest.dosageInstruction [
+       fhir:index 0;
+       fhir:Dosage.text [ fhir:value "Una tableta cada 12 hrs por 5 días" ];
+       fhir:Dosage.patientInstruction [ fhir:value "Una tableta al desayuno y otro a la cena" ];
+       fhir:Dosage.timing [
+         fhir:Timing.repeat [
+           fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:positiveInteger ];
+           fhir:Timing.repeat.period [ fhir:value "12"^^xsd:decimal ];
+           fhir:Timing.repeat.periodUnit [ fhir:value "h" ]
+         ]
+       ];
+       fhir:Dosage.route [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.code [ fhir:value "421521009" ];
+           fhir:Coding.display [ fhir:value "tragarlo, instrucciones de dosage imperativas (qualifier value)" ]
+         ]
+       ];
+       fhir:Dosage.doseAndRate [
+         fhir:index 0;
+         fhir:Dosage.doseAndRate.doseRange [
+           fhir:Range.low [
+             fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+             fhir:Quantity.unit [ fhir:value "Tableta" ]
+           ]
+         ]
+       ]
+     ];
+     fhir:MedicationRequest.dispenseRequest [
+       fhir:MedicationRequest.dispenseRequest.validityPeriod [
+         fhir:Period.start [ fhir:value "2022-01-12"^^xsd:date ]
+       ];
+       fhir:MedicationRequest.dispenseRequest.quantity [
+         fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ]
+       ];
+       fhir:MedicationRequest.dispenseRequest.expectedSupplyDuration [
+         fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "días" ];
+         fhir:Quantity.code [ fhir:value "d" ]
+       ]
+     ]
+  ], [
+     a fhir:MedicationRequest;
+     fhir:index 1;
+     fhir:Resource.id [ fhir:value "medicationrequest-2" ];
+     fhir:MedicationRequest.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "https://minsal.cl/portalReceta/prescripciones" ];
+       fhir:Identifier.value [ fhir:value "RNCheque-1234" ]
+     ];
+     fhir:MedicationRequest.status [ fhir:value "active" ];
+     fhir:MedicationRequest.intent [ fhir:value "order" ];
+     fhir:MedicationRequest.category [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "inpatient" ]
+       ]
+     ];
+     fhir:MedicationRequest.medicationReference [
+       fhir:link <https://api-receta.minsal.cl/v2/Medication/Medicamento#1028>;
+       fhir:Reference.reference [ fhir:value "https://api-receta.minsal.cl/v2/Medication/Medicamento#1028" ]
+     ];
+     fhir:MedicationRequest.subject [
+       fhir:link <https://api-receta.minsal.cl/v2/Patient/Paciente#2411224>;
+       fhir:Reference.reference [ fhir:value "https://api-receta.minsal.cl/v2/Patient/Paciente#2411224" ];
+       fhir:Reference.display [ fhir:value "Patricio Perez" ]
+     ];
+     fhir:MedicationRequest.authoredOn [ fhir:value "2021-06-12"^^xsd:date ];
+     fhir:MedicationRequest.requester [
+       fhir:link <https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421>;
+       fhir:Reference.reference [ fhir:value "https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421" ];
+       fhir:Reference.display [ fhir:value "Cecilia Ampuero" ]
+     ];
+     fhir:MedicationRequest.groupIdentifier [
+       fhir:Identifier.value [ fhir:value "FARM2122-1206211145-11" ]
+     ];
+     fhir:MedicationRequest.note [
+       fhir:index 0;
+       fhir:Annotation.text [ fhir:value "Al paciente se le indicó lo tome 2 veces al día" ]
+     ];
+     fhir:MedicationRequest.dosageInstruction [
+       fhir:index 0;
+       fhir:Dosage.text [ fhir:value "Una tableta cada 12 hrs por 5 días" ];
+       fhir:Dosage.patientInstruction [ fhir:value "Una tableta al desayuno y otro a la cena" ];
+       fhir:Dosage.timing [
+         fhir:Timing.repeat [
+           fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:positiveInteger ];
+           fhir:Timing.repeat.period [ fhir:value "12"^^xsd:decimal ];
+           fhir:Timing.repeat.periodUnit [ fhir:value "h" ]
+         ]
+       ];
+       fhir:Dosage.route [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.code [ fhir:value "421521009" ];
+           fhir:Coding.display [ fhir:value "tragarlo, instrucciones de dosage imperativas (qualifier value)" ]
+         ]
+       ];
+       fhir:Dosage.doseAndRate [
+         fhir:index 0;
+         fhir:Dosage.doseAndRate.doseRange [
+           fhir:Range.low [
+             fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+             fhir:Quantity.unit [ fhir:value "Tableta" ]
+           ]
+         ]
+       ]
+     ];
+     fhir:MedicationRequest.dispenseRequest [
+       fhir:MedicationRequest.dispenseRequest.validityPeriod [
+         fhir:Period.start [ fhir:value "2022-01-12"^^xsd:date ]
+       ];
+       fhir:MedicationRequest.dispenseRequest.quantity [
+         fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ]
+       ];
+       fhir:MedicationRequest.dispenseRequest.expectedSupplyDuration [
+         fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "días" ];
+         fhir:Quantity.code [ fhir:value "d" ]
+       ]
+     ]
+  ];
+  fhir:RequestGroup.groupIdentifier [
+     fhir:Identifier.value [ fhir:value "00001" ]
+  ];
+  fhir:RequestGroup.status [ fhir:value "completed"];
+  fhir:RequestGroup.intent [ fhir:value "order"];
+  fhir:RequestGroup.subject [
+     fhir:link <https://api-receta.minsal.cl/v2/Patient/Paciente#2411224>;
+     fhir:Reference.reference [ fhir:value "https://api-receta.minsal.cl/v2/Patient/Paciente#2411224" ]
+  ];
+  fhir:RequestGroup.authoredOn [ fhir:value "2021-06-12T17:31:00Z"^^xsd:dateTime] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://minsal.cl/fhir/core/RequestGroup/EjemploRecetaCL.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

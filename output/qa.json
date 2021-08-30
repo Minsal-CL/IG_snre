@@ -1,0 +1,12 @@
+{
+  "url": "http://minsal.cl/fhir/core//ImplementationGuide/hl7.fhir.uv.RecetaCH",
+  "name": "RecetaCL",
+  "package-id": "hl7.fhir.uv.RecetaCH",
+  "ig-ver": "0.65 (Proceso de Ballot Pendiente)",
+  "date": "Mon, 30 Aug, 2021 12:12:55 -0400",
+  "errs": 236,
+  "warnings": 60,
+  "hints": 6,
+  "version": "4.0.1",
+  "tool": "4.6.0 (3)"
+}

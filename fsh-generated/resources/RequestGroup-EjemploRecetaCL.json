@@ -1,0 +1,190 @@
+{
+  "resourceType": "RequestGroup",
+  "id": "EjemploRecetaCL",
+  "meta": {
+    "profile": [
+      "http://minsal.cl/fhir/core//StructureDefinition/RecetaCl"
+    ]
+  },
+  "status": "completed",
+  "intent": "order",
+  "contained": [
+    {
+      "resourceType": "MedicationRequest",
+      "id": "medicationrequest-1",
+      "identifier": [
+        {
+          "system": "https://minsal.cl/portalReceta/prescripciones",
+          "value": "RNCheque-1234"
+        }
+      ],
+      "status": "active",
+      "intent": "order",
+      "category": [
+        {
+          "coding": [
+            {
+              "code": "inpatient"
+            }
+          ]
+        }
+      ],
+      "groupIdentifier": {
+        "value": "FARM2122-1206211145-11"
+      },
+      "medicationReference": {
+        "reference": "https://api-receta.minsal.cl/v2/Medication/Medicamento#1028"
+      },
+      "subject": {
+        "reference": "https://api-receta.minsal.cl/v2/Patient/Paciente#2411224",
+        "display": "Patricio Perez"
+      },
+      "authoredOn": "2021-06-12",
+      "requester": {
+        "reference": "https://api-receta.minsal.cl/v2/Practitoner/PRestador#923421",
+        "display": "Cecilia Ampuero"
+      },
+      "note": [
+        {
+          "text": "Al paciente se le indicó lo tome 2 veces al día"
+        }
+      ],
+      "dosageInstruction": [
+        {
+          "text": "Una tableta cada 12 hrs por 5 días",
+          "patientInstruction": "Una tableta al desayuno y otro a la cena",
+          "timing": {
+            "repeat": {
+              "frequency": 1,
+              "period": 12,
+              "periodUnit": "h"
+            }
+          },
+          "route": {
+            "coding": [
+              {
+                "code": "421521009",
+                "display": "tragarlo, instrucciones de dosage imperativas (qualifier value)"
+              }
+            ]
+          },
+          "doseAndRate": [
+            {
+              "doseRange": {
+                "low": {
+                  "value": 1,
+                  "unit": "Tableta"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "dispenseRequest": {
+        "validityPeriod": {
+          "start": "2022-01-12"
+        },
+        "quantity": {
+          "value": 10
+        },
+        "expectedSupplyDuration": {
+          "value": 5,
+          "unit": "días",
+          "code": "d"
+        }
+      }
+    },
+    {
+      "resourceType": "MedicationRequest",
+      "id": "medicationrequest-2",
+      "identifier": [
+        {
+          "system": "https://minsal.cl/portalReceta/prescripciones",
+          "value": "RNCheque-1234"
+        }
+      ],
+      "status": "active",
+      "intent": "order",
+      "category": [
+        {
+          "coding": [
+            {
+              "code": "inpatient"
+            }
+          ]
+        }
+      ],
+      "groupIdentifier": {
+        "value": "FARM2122-1206211145-11"
+      },
+      "medicationReference": {
+        "reference": "https://api-receta.minsal.cl/v2/Medication/Medicamento#1028"
+      },
+      "subject": {
+        "reference": "https://api-receta.minsal.cl/v2/Patient/Paciente#2411224",
+        "display": "Patricio Perez"
+      },
+      "authoredOn": "2021-06-12",
+      "requester": {
+        "reference": "https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421",
+        "display": "Cecilia Ampuero"
+      },
+      "note": [
+        {
+          "text": "Al paciente se le indicó lo tome 2 veces al día"
+        }
+      ],
+      "dosageInstruction": [
+        {
+          "text": "Una tableta cada 12 hrs por 5 días",
+          "patientInstruction": "Una tableta al desayuno y otro a la cena",
+          "timing": {
+            "repeat": {
+              "frequency": 1,
+              "period": 12,
+              "periodUnit": "h"
+            }
+          },
+          "route": {
+            "coding": [
+              {
+                "code": "421521009",
+                "display": "tragarlo, instrucciones de dosage imperativas (qualifier value)"
+              }
+            ]
+          },
+          "doseAndRate": [
+            {
+              "doseRange": {
+                "low": {
+                  "value": 1,
+                  "unit": "Tableta"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "dispenseRequest": {
+        "validityPeriod": {
+          "start": "2022-01-12"
+        },
+        "quantity": {
+          "value": 10
+        },
+        "expectedSupplyDuration": {
+          "value": 5,
+          "unit": "días",
+          "code": "d"
+        }
+      }
+    }
+  ],
+  "groupIdentifier": {
+    "value": "00001"
+  },
+  "subject": {
+    "reference": "https://api-receta.minsal.cl/v2/Patient/Paciente#2411224"
+  },
+  "authoredOn": "2021-06-12T17:31:00Z"
+}

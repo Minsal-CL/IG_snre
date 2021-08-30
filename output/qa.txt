@@ -1,0 +1,800 @@
+﻿RecetaCL : Validation Results
+=========================================
+
+err = 236, warn = 60, info = 6
+IG Publisher Version: 1.1.77
+Generated Mon Aug 30 12:13:39 CLT 2021. FHIR version 4.0.1 for hl7.fhir.uv.RecetaCH#0.65 (Proceso de Ballot Pendiente) (canonical = http://minsal.cl/fhir/core/)
+
+ Build Errors : 638 / 6 / 0
+ C:\IGs\_IG_Receta\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.RecetaCH : 1 / 1 / 1
+ C:\IGs\_IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL : 13 / 3 / 5
+ C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-PrescripcionRecetaCL : 7 / 3 / 2
+ C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-1 : 5 / 2 / 1
+ C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-2 : 5 / 2 / 1
+ C:\IGs\_IG_Receta\fsh-generated\resources\Organization-OrganizacionRecetaCL : 4 / 0 / 1
+ C:\IGs\_IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL : 12 / 4 / 3
+ C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-DispensacionMedicamentoCl : 1 / 10 / 2
+ C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-Prod-Comercial : 3 / 1 / 1
+ C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaCl : 1 / 2 / 1
+ C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaOrganizacionCl : 1 / 0 / 1
+ C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl : 1 / 18 / 1
+ C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodNacComunas : 0 / 2 / 1
+ C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodProv : 0 / 2 / 1
+ C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodReg : 0 / 2 / 1
+ C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-DOCType-V2-0203 : 0 / 2 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/DispensacionMedicamentoCL.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RequestGroup/EjemploRecetaCL.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/OrganizacionRecetaCL.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/PrescripcionRecetaCL.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/medicationrequest-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/medicationrequest-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.change.history.html#/html/body/div/div/div/p/a at Line 279, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.html#/html/body/div/div/nav/div/div/ul/li/a at Line 91, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.html#/html/body/div/div/nav/div/div/ul/li/a at Line 97, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.html#/html/body/div/div/nav/div/div/ul/li/a at Line 100, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.html#/html/body/div/div/div/p/a at Line 266, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.json.html#/html/body/div/div/div/p/a at Line 434, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.ttl.html#/html/body/div/div/div/p/a at Line 422, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.xml.html#/html/body/div/div/div/p/a at Line 411, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.change.history.html#/html/body/div/div/div/p/a at Line 279, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.html#/html/body/div/div/nav/div/div/ul/li/a at Line 91, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.html#/html/body/div/div/nav/div/div/ul/li/a at Line 97, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.html#/html/body/div/div/nav/div/div/ul/li/a at Line 100, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.html#/html/body/div/div/div/p/a at Line 266, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.json.html#/html/body/div/div/div/p/a at Line 381, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.ttl.html#/html/body/div/div/div/p/a at Line 378, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.xml.html#/html/body/div/div/div/p/a at Line 366, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.change.history.html#/html/body/div/div/div/p/a at Line 279, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.html#/html/body/div/div/nav/div/div/ul/li/a at Line 91, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.html#/html/body/div/div/nav/div/div/ul/li/a at Line 97, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.html#/html/body/div/div/nav/div/div/ul/li/a at Line 100, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.html#/html/body/div/div/div/p/a at Line 266, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.json.html#/html/body/div/div/div/p/a at Line 357, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.ttl.html#/html/body/div/div/div/p/a at Line 356, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.xml.html#/html/body/div/div/div/p/a at Line 346, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.change.history.html#/html/body/div/div/div/p/a at Line 279, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.html#/html/body/div/div/nav/div/div/ul/li/a at Line 91, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.html#/html/body/div/div/nav/div/div/ul/li/a at Line 97, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.html#/html/body/div/div/nav/div/div/ul/li/a at Line 100, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.html#/html/body/div/div/div/p/a at Line 266, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.json.html#/html/body/div/div/div/p/a at Line 357, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.ttl.html#/html/body/div/div/div/p/a at Line 356, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.xml.html#/html/body/div/div/div/p/a at Line 346, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.change.history.html#/html/body/div/div/div/p/a at Line 279, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.html#/html/body/div/div/nav/div/div/ul/li/a at Line 91, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.html#/html/body/div/div/nav/div/div/ul/li/a at Line 97, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.html#/html/body/div/div/nav/div/div/ul/li/a at Line 100, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.html#/html/body/div/div/div/p/a at Line 266, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.json.html#/html/body/div/div/div/p/a at Line 310, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.ttl.html#/html/body/div/div/div/p/a at Line 323, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.xml.html#/html/body/div/div/div/p/a at Line 299, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.change.history.html#/html/body/div/div/div/p/a at Line 279, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.html#/html/body/div/div/nav/div/div/ul/li/a at Line 91, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.html#/html/body/div/div/nav/div/div/ul/li/a at Line 97, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.html#/html/body/div/div/nav/div/div/ul/li/a at Line 100, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.html#/html/body/div/div/div/p/a at Line 266, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.json.html#/html/body/div/div/div/p/a at Line 462, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.ttl.html#/html/body/div/div/div/p/a at Line 429, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.xml.html#/html/body/div/div/div/p/a at Line 440, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-definitions.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-definitions.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-definitions.html#/html/body/div/div/div/p/a at Line 1932, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-examples.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-examples.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-examples.html#/html/body/div/div/div/p/a at Line 332, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-mappings.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-mappings.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-mappings.html#/html/body/div/div/div/p/a at Line 604, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.html#/html/body/div/div/div/p/a at Line 1492, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.history.html#/html/body/div/div/div/p/a at Line 310, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.json.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.json.html#/html/body/div/div/div/p/a at Line 8320, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.ttl.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 7150, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.xml.html#/html/body/div/div/div/p/a at Line 7483, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial-definitions.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial-definitions.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial-definitions.html#/html/body/div/div/div/p/a at Line 358, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial-mappings.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial-mappings.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial-mappings.html#/html/body/div/div/div/p/a at Line 318, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.html#/html/body/div/div/nav/div/div/ul/li/a at Line 91, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.html#/html/body/div/div/nav/div/div/ul/li/a at Line 97, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.html#/html/body/div/div/nav/div/div/ul/li/a at Line 100, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.html#/html/body/div/div/div/p/a at Line 555, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.history.html#/html/body/div/div/div/p/a at Line 300, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.json.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.json.html#/html/body/div/div/div/p/a at Line 640, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.ttl.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.ttl.html#/html/body/div/div/div/p/a at Line 604, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.xml.html#/html/body/div/div/div/p/a at Line 592, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-definitions.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-definitions.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-definitions.html#/html/body/div/div/div/p/a at Line 1016, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-examples.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-examples.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-examples.html#/html/body/div/div/div/p/a at Line 332, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-mappings.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-mappings.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-mappings.html#/html/body/div/div/div/p/a at Line 400, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.html#/html/body/div/div/div/p/a at Line 936, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.history.html#/html/body/div/div/div/p/a at Line 310, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.json.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.json.html#/html/body/div/div/div/p/a at Line 3586, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.ttl.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 3185, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.xml.html#/html/body/div/div/div/p/a at Line 3195, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-definitions.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-definitions.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-definitions.html#/html/body/div/div/div/p/a at Line 887, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-examples.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-examples.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-examples.html#/html/body/div/div/div/p/a at Line 332, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-mappings.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-mappings.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-mappings.html#/html/body/div/div/div/p/a at Line 441, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.html#/html/body/div/div/div/p/a at Line 818, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.history.html#/html/body/div/div/div/p/a at Line 310, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.json.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.json.html#/html/body/div/div/div/p/a at Line 3134, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.ttl.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 2738, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.xml.html#/html/body/div/div/div/p/a at Line 2817, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-definitions.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-definitions.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-definitions.html#/html/body/div/div/div/p/a at Line 2842, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-examples.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-examples.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-examples.html#/html/body/div/div/div/p/a at Line 332, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-mappings.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-mappings.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-mappings.html#/html/body/div/div/div/p/a at Line 764, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.html#/html/body/div/div/div/p/a at Line 1996, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.history.html#/html/body/div/div/div/p/a at Line 310, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.json.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.json.html#/html/body/div/div/div/p/a at Line 12783, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.ttl.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 10906, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.xml.html#/html/body/div/div/div/p/a at Line 11512, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.change.history.html#/html/body/div/div/div/p/a at Line 279, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.html#/html/body/div/div/nav/div/div/ul/li/a at Line 91, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.html#/html/body/div/div/nav/div/div/ul/li/a at Line 97, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.html#/html/body/div/div/nav/div/div/ul/li/a at Line 100, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.html#/html/body/div/div/div/p/a at Line 329, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.json.html#/html/body/div/div/div/p/a at Line 301, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.ttl.html#/html/body/div/div/div/p/a at Line 310, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.xml.html#/html/body/div/div/div/p/a at Line 295, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.change.history.html#/html/body/div/div/div/p/a at Line 279, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.html#/html/body/div/div/nav/div/div/ul/li/a at Line 91, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.html#/html/body/div/div/nav/div/div/ul/li/a at Line 97, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.html#/html/body/div/div/nav/div/div/ul/li/a at Line 100, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.html#/html/body/div/div/div/p/a at Line 329, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.json.html#/html/body/div/div/div/p/a at Line 301, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.ttl.html#/html/body/div/div/div/p/a at Line 310, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodProv.xml.html#/html/body/div/div/div/p/a at Line 295, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.change.history.html#/html/body/div/div/div/p/a at Line 279, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.html#/html/body/div/div/nav/div/div/ul/li/a at Line 91, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.html#/html/body/div/div/nav/div/div/ul/li/a at Line 97, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.html#/html/body/div/div/nav/div/div/ul/li/a at Line 100, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.html#/html/body/div/div/div/p/a at Line 329, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.json.html#/html/body/div/div/div/p/a at Line 301, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.ttl.html#/html/body/div/div/div/p/a at Line 310, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-CodReg.xml.html#/html/body/div/div/div/p/a at Line 295, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 98, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 101, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 104, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.change.history.html#/html/body/div/div/div/p/a at Line 279, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.html#/html/body/div/div/nav/div/div/ul/li/a at Line 91, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.html#/html/body/div/div/nav/div/div/ul/li/a at Line 97, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.html#/html/body/div/div/nav/div/div/ul/li/a at Line 100, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.html#/html/body/div/div/div/p/a at Line 329, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.json.html#/html/body/div/div/div/p/a at Line 301, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.ttl.html#/html/body/div/div/div/p/a at Line 310, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 99, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.xml.html#/html/body/div/div/div/p/a at Line 296, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\artifacts.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\artifacts.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\artifacts.html#/html/body/div/div/nav/div/div/ul/li/a at Line 91, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\artifacts.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\artifacts.html#/html/body/div/div/nav/div/div/ul/li/a at Line 97, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\artifacts.html#/html/body/div/div/nav/div/div/ul/li/a at Line 100, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\artifacts.html#/html/body/div/div/div/p/a at Line 403, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\searchform.html#/html/body/div/div/a/img/div/div/nav/div/div/ul/li/a at Line 63, column 21: The link 'index.html' for "Specification" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\toc.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\toc.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\toc.html#/html/body/div/div/nav/div/div/ul/li/a at Line 91, column 6: The link 'index.html' for "Inicio" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\toc.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'objetivos.html' for "Objetivos" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\toc.html#/html/body/div/div/nav/div/div/ul/li/a at Line 97, column 6: The link 'casos.html' for "Actores y Casos de Uso" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\toc.html#/html/body/div/div/nav/div/div/ul/li/a at Line 100, column 6: The link 'operaciones.html' for "Operaciones y Terminologías" cannot be resolved
+ERROR: C:\IGs\_IG_Receta\output\toc.html#/html/body/div/div/div/p/a at Line 217, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+== C:\IGs\_IG_Receta\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.RecetaCH.json ==
+ERROR: ImplementationGuide.where(url = 'http://minsal.cl/fhir/core//ImplementationGuide/hl7.fhir.uv.RecetaCH'): Conformance resource C:\IGs\_IG_Receta\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.RecetaCH.json - the canonical URL (http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.uv.RecetaCH) does not match the URL (http://minsal.cl/fhir/core//ImplementationGuide/hl7.fhir.uv.RecetaCH)
+WARNING: ImplementationGuide.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+== C:\IGs\_IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL.json ==
+ERROR: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.performer[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: performer.function.code (@char 1)
+ERROR: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.performer[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: performer.function.code (@char 1)
+INFORMATION: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense: MedicationDispense.performer:Dispensador: Unable to check minimum required (MedicationDispense.performer) due to lack of slicing validation (from http://minsal.cl/fhir/core//StructureDefinition/DispensacionMedicamentoCl)
+ERROR: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.status: The value provided ('active') is not in the value set http://hl7.org/fhir/ValueSet/medicationdispense-status|4.0.1 (http://hl7.org/fhir/ValueSet/medicationdispense-status), and a code is required from this value set) (error message = Unknown Code http://terminology.hl7.org/CodeSystem/medicationdispense-status#active in http://terminology.hl7.org/CodeSystem/medicationdispense-status)
+INFORMATION: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.statusReason.ofType(CodeableConcept).coding[0]: Code System URI 'http://minsal.cl/razon-de-no-dispensacion' is unknown so the code cannot be validated
+ERROR: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.medication.ofType(Reference): Unable to resolve resource 'https://api-receta.minsal.cl/v2/medication/Med#22353'
+ERROR: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'
+INFORMATION: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.performer[0].function.coding[0]: Code System URI 'http://farmaciaLocal.cl/api-R/Tablas/TablaFunc' is unknown so the code cannot be validated
+ERROR: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.performer[0].actor: Unable to resolve resource 'https://api-receta.minsal.cl/v2/practitioner/Di#14785214'
+INFORMATION: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.performer[1].function.coding[0]: Code System URI 'http://farmaciaLocal.cl/api-R/Tablas/TablaFunc' is unknown so the code cannot be validated
+ERROR: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.performer[1].actor: Unable to resolve resource 'https://api-receta.minsal.cl/v2/practitioner/Di#245993'
+ERROR: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.location: Unable to resolve resource 'https://api-receta.minsal.cl/v2/location/145874'
+ERROR: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.authorizingPrescription[0]: Unable to resolve resource 'https://api-receta.minsal.cl/v2/medicationReference/Pres#1321'
+ERROR: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.dosageInstruction[0].additionalInstruction[0].coding[0]: Unable to find code 4189114006 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code "4189114006" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#4189114006) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#4189114006'
+WARNING: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.dosageInstruction[0].asNeeded.ofType(CodeableConcept).coding[0]: The display "Dolor Renal (finding)" is not a valid display for the code {http://snomed.info/sct}297217002 - should be one of [Rib pain, Rib pain (finding)] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#297217002'
+WARNING: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.dosageInstruction[0].route.coding[0]: The display "Ruta Oral" is not a valid display for the code {http://snomed.info/sct}26643006 - should be one of [Oral route, Per os, Oral route (qualifier value), Oral use, Per oral route, PO - Per os, By mouth, A digestive tract route that begins in the mouth.] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#26643006'
+WARNING: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.dosageInstruction[0].method.coding[0]: The display "Tragarsela - imperativo contar con información de dosaje (qualifier value)" is not a valid display for the code {http://snomed.info/sct}421521009 - should be one of [Swallow - dosing instruction imperative (qualifier value), Swallow, Swallow - dosing instruction imperative] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#421521009'
+ERROR: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.dosageInstruction[0].asNeeded.ofType(CodeableConcept): This element does not match any known slice  defined in the profile http://minsal.cl/fhir/core//StructureDefinition/DispensacionMedicamentoCl and slicing is CLOSED: MedicationDispense.dosageInstruction[0].asNeeded.ofType(CodeableConcept): Does not match slice 'asNeededBoolean'
+ERROR: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.dosageInstruction[0].asNeeded.ofType(CodeableConcept): The Profile 'http://minsal.cl/fhir/core//StructureDefinition/DispensacionMedicamentoCl' definition allows for the type boolean but found type CodeableConcept
+ERROR: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.dosageInstruction[0].asNeeded.ofType(CodeableConcept).coding[0]: This element is not allowed by the profile http://hl7.org/fhir/StructureDefinition/boolean
+== C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-PrescripcionRecetaCL.json ==
+INFORMATION: MedicationRequest/PrescripcionRecetaCL: MedicationRequest.extension[0]: This element does not match any known slice defined in the profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrescripcionCl
+ERROR: MedicationRequest/PrescripcionRecetaCL: MedicationRequest.extension[0]: Extension.url must be an absolute URL
+ERROR: MedicationRequest/PrescripcionRecetaCL: MedicationRequest.extension[0].value.ofType(Reference): Unable to resolve resource 'https://api-receta.minsal.cl/v2/medication/med#1257'
+WARNING: MedicationRequest/PrescripcionRecetaCL: MedicationRequest.statusReason.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationRequest/PrescripcionRecetaCL: MedicationRequest.category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: MedicationRequest/PrescripcionRecetaCL: MedicationRequest.medication.ofType(Reference): Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1345'
+ERROR: MedicationRequest/PrescripcionRecetaCL: MedicationRequest.subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'
+ERROR: MedicationRequest/PrescripcionRecetaCL: MedicationRequest.requester: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421'
+WARNING: MedicationRequest/PrescripcionRecetaCL: MedicationRequest.dosageInstruction[0].route.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: MedicationRequest/PrescripcionRecetaCL: MedicationRequest.dispenseRequest.expectedSupplyDuration: drt-1: 'There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.' Rule 'There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.' Failed
+ERROR: MedicationRequest/PrescripcionRecetaCL: MedicationRequest.dispenseRequest.expectedSupplyDuration: qty-3: 'If a code for the unit is present, the system SHALL also be present' Rule 'If a code for the unit is present, the system SHALL also be present' Failed
+== C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-1.json ==
+WARNING: MedicationRequest/medicationrequest-1: MedicationRequest.category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: MedicationRequest/medicationrequest-1: MedicationRequest.medication.ofType(Reference): Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1028'
+ERROR: MedicationRequest/medicationrequest-1: MedicationRequest.subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'
+ERROR: MedicationRequest/medicationrequest-1: MedicationRequest.requester: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitoner/PRestador#923421'
+WARNING: MedicationRequest/medicationrequest-1: MedicationRequest.dosageInstruction[0].route.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: MedicationRequest/medicationrequest-1: MedicationRequest.dispenseRequest.expectedSupplyDuration: drt-1: 'There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.' Rule 'There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.' Failed
+ERROR: MedicationRequest/medicationrequest-1: MedicationRequest.dispenseRequest.expectedSupplyDuration: qty-3: 'If a code for the unit is present, the system SHALL also be present' Rule 'If a code for the unit is present, the system SHALL also be present' Failed
+== C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-2.json ==
+WARNING: MedicationRequest/medicationrequest-2: MedicationRequest.category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: MedicationRequest/medicationrequest-2: MedicationRequest.medication.ofType(Reference): Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1028'
+ERROR: MedicationRequest/medicationrequest-2: MedicationRequest.subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'
+ERROR: MedicationRequest/medicationrequest-2: MedicationRequest.requester: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421'
+WARNING: MedicationRequest/medicationrequest-2: MedicationRequest.dosageInstruction[0].route.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: MedicationRequest/medicationrequest-2: MedicationRequest.dispenseRequest.expectedSupplyDuration: drt-1: 'There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.' Rule 'There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.' Failed
+ERROR: MedicationRequest/medicationrequest-2: MedicationRequest.dispenseRequest.expectedSupplyDuration: qty-3: 'If a code for the unit is present, the system SHALL also be present' Rule 'If a code for the unit is present, the system SHALL also be present' Failed
+== C:\IGs\_IG_Receta\fsh-generated\resources\Organization-OrganizacionRecetaCL.json ==
+ERROR: Organization/OrganizacionRecetaCL: Organization.address[0].city: The value provided ('07401') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodNacComunas (http://minsal.cl/fhir/core//ValueSet/CodNacComunas), and a code is required from this value set) (error message = The code system "https://apis.digital.gob.cl/dpa/comunas/" in the include in "http://minsal.cl/fhir/core//ValueSet/CodNacComunas" is not known; The code system "https://apis.digital.gob.cl/dpa/comunas/" is not known (encountered paired with code = "07401"); The code provided (https://apis.digital.gob.cl/dpa/comunas/#07401) is not valid in the value set 'CodComunas' (from http://tx.fhir.org/r4))
+ERROR: Organization/OrganizacionRecetaCL: Organization.address[0].district: The value provided ('074') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodProv (http://minsal.cl/fhir/core//ValueSet/CodProv), and a code is required from this value set) (error message = The code system "https://apis.digital.gob.cl/dpa/provincias/" in the include in "http://minsal.cl/fhir/core//ValueSet/CodProv" is not known; The code system "https://apis.digital.gob.cl/dpa/provincias/" is not known (encountered paired with code = "074"); The code provided (https://apis.digital.gob.cl/dpa/provincias/#074) is not valid in the value set 'CodProvincia' (from http://tx.fhir.org/r4))
+ERROR: Organization/OrganizacionRecetaCL: Organization.address[0].state: The value provided ('07') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodReg (http://minsal.cl/fhir/core//ValueSet/CodReg), and a code is required from this value set) (error message = The code system "https://apis.digital.gob.cl/dpa/regiones/" in the include in "http://minsal.cl/fhir/core//ValueSet/CodReg" is not known; The code system "https://apis.digital.gob.cl/dpa/regiones/" is not known (encountered paired with code = "07"); The code provided (https://apis.digital.gob.cl/dpa/regiones/#07) is not valid in the value set 'CodRegion' (from http://tx.fhir.org/r4))
+ERROR: Organization/OrganizacionRecetaCL: Organization.address[0].country: The value provided ('152') is not in the value set http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = The code system "https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html" in the include in "http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203" is not known; The code system "https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html" is not known (encountered paired with code = "152"); The code provided (https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html#152) is not valid in the value set 'ISO3166COD' (from http://tx.fhir.org/r4))
+== C:\IGs\_IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL.json ==
+ERROR: RequestGroup/EjemploRecetaCL: RequestGroup: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: medicationrequest-1,medicationrequest-2))
+WARNING: RequestGroup/EjemploRecetaCL: RequestGroup.contained[0].ofType(MedicationRequest).category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[0].ofType(MedicationRequest).medication.ofType(Reference): Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1028'
+ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[0].ofType(MedicationRequest).subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'
+ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[0].ofType(MedicationRequest).requester: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitoner/PRestador#923421'
+WARNING: RequestGroup/EjemploRecetaCL: RequestGroup.contained[0].ofType(MedicationRequest).dosageInstruction[0].route.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[0].ofType(MedicationRequest).dispenseRequest.expectedSupplyDuration: drt-1: 'There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.' Rule 'There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.' Failed
+ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[0].ofType(MedicationRequest).dispenseRequest.expectedSupplyDuration: qty-3: 'If a code for the unit is present, the system SHALL also be present' Rule 'If a code for the unit is present, the system SHALL also be present' Failed
+WARNING: RequestGroup/EjemploRecetaCL: RequestGroup.contained[1].ofType(MedicationRequest).category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[1].ofType(MedicationRequest).medication.ofType(Reference): Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1028'
+ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[1].ofType(MedicationRequest).subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'
+ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[1].ofType(MedicationRequest).requester: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421'
+WARNING: RequestGroup/EjemploRecetaCL: RequestGroup.contained[1].ofType(MedicationRequest).dosageInstruction[0].route.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[1].ofType(MedicationRequest).dispenseRequest.expectedSupplyDuration: drt-1: 'There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.' Rule 'There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.' Failed
+ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[1].ofType(MedicationRequest).dispenseRequest.expectedSupplyDuration: qty-3: 'If a code for the unit is present, the system SHALL also be present' Rule 'If a code for the unit is present, the system SHALL also be present' Failed
+ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'
+== C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-DispensacionMedicamentoCl.json ==
+WARNING: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.snapshot.element[25].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.snapshot.element[67].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.snapshot.element[90].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.snapshot.element[107].short: value should not start or finish with whitespace
+INFORMATION: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.snapshot.element[113].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.snapshot.element[123].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.differential.element[6].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.differential.element[18].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.differential.element[24].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.differential.element[29].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.differential.element[33].short: value should not start or finish with whitespace
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+== C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-Prod-Comercial.json ==
+ERROR: StructureDefinition/Prod-Comercial: StructureDefinition.snapshot.element[5].pattern.ofType(Reference): Unable to resolve resource 'medication'
+ERROR: StructureDefinition/Prod-Comercial: StructureDefinition.differential.element[3].pattern.ofType(Reference): Unable to resolve resource 'medication'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/core//StructureDefinition/Prod-Comercial'): The Implementation Guide contains no examples for this extension
+== C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaCl.json ==
+WARNING: StructureDefinition/RecetaCl: StructureDefinition.snapshot.element[23].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaCl: StructureDefinition.differential.element[3].short: value should not start or finish with whitespace
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+== C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaOrganizacionCl.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+== C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json ==
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[32].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[38].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[39].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[108].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[175].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[186].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[194].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[236].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[249].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[10].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[13].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[14].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[34].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[56].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[61].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[65].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[79].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[81].short: value should not start or finish with whitespace
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+== C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodNacComunas.json ==
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: ValueSet.where(id = 'CodNacComunas'): Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/comunas/
+== C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodProv.json ==
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: ValueSet.where(id = 'CodProv'): Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/provincias/
+== C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodReg.json ==
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: ValueSet.where(id = 'CodReg'): Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/regiones/
+== C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-DOCType-V2-0203.json ==
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: ValueSet.where(id = 'DOCType-V2-0203'): Error from server: Unable to provide support for code system https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html

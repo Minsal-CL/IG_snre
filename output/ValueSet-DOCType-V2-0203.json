@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "DOCType-V2-0203",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html</code></li></ul></div>"
+  },
+  "url": "http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203",
+  "version": "0.65 (Proceso de Ballot Pendiente)",
+  "name": "ISO3166COD",
+  "title": "Códigos de Países Segun Norma ISO-3166 N",
+  "status": "active",
+  "date": "2021-08-30T12:12:55-04:00",
+  "contact": [
+    {
+      "name": "Pablo Pizzaro",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "ppizarro.delgado@minsal.cl"
+        }
+      ]
+    }
+  ],
+  "description": "Codigos para especificar tipos de identificadores usando lo definido en Hl7 V2.x",
+  "compose": {
+    "include": [
+      {
+        "system": "https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html"
+      }
+    ]
+  }
+}

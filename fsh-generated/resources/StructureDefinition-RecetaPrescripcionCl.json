@@ -1,0 +1,579 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RecetaPrescripcionCl",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Medications"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://minsal.cl/fhir/core//StructureDefinition/RecetaPrescripcionCl",
+  "version": "0.65 (Proceso de Ballot Pendiente)",
+  "name": "PrescripcionRecetaCL",
+  "title": "Prescripción_CL",
+  "status": "active",
+  "description": "ESte Perfil describe la información contenida en la prescripción de un medicamento para la Receta Electrónica Nacional del MINSAL",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "script10.6",
+      "uri": "http://ncpdp.org/SCRIPT10_6",
+      "name": "Mapping to NCPDP SCRIPT 10.6"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationRequest.extension",
+        "path": "MedicationRequest.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Determinación del medicamento en Producto Comercial",
+        "definition": "Determinación de un medicamento en Producto Comercial. Para eso esta extnsión define una Referecia solo a un recurso de medication. "
+      },
+      {
+        "id": "MedicationRequest.extension:PComercial",
+        "path": "MedicationRequest.extension",
+        "sliceName": "PComercial",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://minsal.cl/fhir/core//StructureDefinition/Prod-Comercial"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.identifier",
+        "path": "MedicationRequest.identifier",
+        "short": "Pueden ser 3 tipos de identificación de Receta: Id Local| Id_Cheque| Id Receta Gráfica",
+        "definition": "La identificación local puede ser dada localmente, puede ser la de la Receta Cheque o la identificación dada al ser escaneada una receta a papel. En cualquir caso no pueden ir aparejadas una identificación de receta cheque con una de receta gráfica",
+        "max": "2",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.identifier.type",
+        "path": "MedicationRequest.identifier.type",
+        "short": "tipo de identificación segun tabla",
+        "definition": "Tipo de identificación segun tabla que debe ser levantada localmene en la cual se consideran 3 códigos: Local|Cheque|Grafica"
+      },
+      {
+        "id": "MedicationRequest.identifier.system",
+        "path": "MedicationRequest.identifier.system",
+        "short": "Se identificará la url de la API sobre la cual se puede consultar por el valor del identificador generado",
+        "definition": "URL sobre la cual se determina el formato y procedencia del valor del identificador"
+      },
+      {
+        "id": "MedicationRequest.identifier.value",
+        "path": "MedicationRequest.identifier.value",
+        "short": "número identificador"
+      },
+      {
+        "id": "MedicationRequest.identifier.assigner.display",
+        "path": "MedicationRequest.identifier.assigner.display",
+        "short": "Organización en texto libre que dio el numero identificador.",
+        "definition": "Organización en texto libre que dio el numero identificador. DEBE ser informado en caso que la identificación sea de tipo Local"
+      },
+      {
+        "id": "MedicationRequest.status",
+        "path": "MedicationRequest.status",
+        "short": "active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown código del estado de la receta del medicamento prescrito  (requerido)",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.statusReason",
+        "path": "MedicationRequest.statusReason",
+        "short": "Este dato es Obligatorio condicional a que haya un cambio de estado de la Receta (R2)... es la razon por la cual se cambia el estado de la receta",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.statusReason.coding.system",
+        "path": "MedicationRequest.statusReason.coding.system",
+        "short": "Sistema de codigos a ocupar, se hará uso sel det de valores de hl7 MedicationRequest-status-reason ",
+        "patternUri": "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason"
+      },
+      {
+        "id": "MedicationRequest.statusReason.coding.code",
+        "path": "MedicationRequest.statusReason.coding.code",
+        "short": "codigo relacionado al estado"
+      },
+      {
+        "id": "MedicationRequest.statusReason.coding.display",
+        "path": "MedicationRequest.statusReason.coding.display",
+        "short": "descripción del estado"
+      },
+      {
+        "id": "MedicationRequest.intent",
+        "path": "MedicationRequest.intent",
+        "short": "\tproposal | plan | order | original-order | reflex-order | filler-order | instance-order | option Intención para la cual es requerido el medicamento (requerido). Se Forzará siempre a order",
+        "patternCode": "order",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.category",
+        "path": "MedicationRequest.category",
+        "short": "Tipo de Acto clínico en el cual se realiza la Prescripción. ´http://terminology.hl7.org/CodeSystem/medicationrequest-category´ (extensible) ",
+        "definition": "Se reconoce según la tabla de Hl7 cual es el tipo de acto clínico en el cual se desarrolla la prescripciones",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.category.coding.system",
+        "path": "MedicationRequest.category.coding.system",
+        "short": "Sistema de codigos a ocupar, se hará uso sel det de valores de hl7 MedicationRequest-category",
+        "definition": "Sistema de codigos a ocupar, se hará uso sel det de valores de hl7 MedicationRequest-category. Esto esta forzado",
+        "patternUri": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+      },
+      {
+        "id": "MedicationRequest.category.coding.code",
+        "path": "MedicationRequest.category.coding.code",
+        "short": "codigo relacionado"
+      },
+      {
+        "id": "MedicationRequest.category.coding.display",
+        "path": "MedicationRequest.category.coding.display",
+        "short": "Glosa del código",
+        "definition": "Glosa del código según su definición de la tabla de HL7"
+      },
+      {
+        "id": "MedicationRequest.medicationReference",
+        "path": "MedicationRequest.medicationReference",
+        "short": "Referecia al medicamento que se dispensa por medio del acceso al recurso generado desde la TFC",
+        "definition": "Referecia al medicamento que se dispensa por medio del acceso al recurso generado desde la TFC. Se especifica la API a la cual se debe acceder",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Medication"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medicationReference.reference",
+        "path": "MedicationRequest.medicationReference.reference",
+        "short": "url del recurso. Para el caso el repositorio se encuentra en ´https://api-receta.minsal.cl/v2/medication´",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medicationReference.display",
+        "path": "MedicationRequest.medicationReference.display",
+        "short": "descripción del fármaco"
+      },
+      {
+        "id": "MedicationRequest.subject",
+        "path": "MedicationRequest.subject",
+        "short": "Referencia a un sujeto|organización para nuestro caso sera un sujeto",
+        "definition": "La referencia en este caso solo se hace sobre el paciente al cual se le receta el fármaco independiente que sea otra la persona que hace retiro de estos",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.subject.reference",
+        "path": "MedicationRequest.subject.reference",
+        "short": "La API sobre la cual se hace consulta de los recursos de los pacientes es ´http://api-receta.minsal.cl/v2/patient´",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.subject.display",
+        "path": "MedicationRequest.subject.display",
+        "short": "nombre paciente"
+      },
+      {
+        "id": "MedicationRequest.authoredOn",
+        "path": "MedicationRequest.authoredOn",
+        "short": "Fecha y hora en la cual fue solicitado el medicamento en formato YYYY-MM-DDThh:mm:ss+zz:zz",
+        "definition": "Fecha y hora en la cual fue solicitado el medicamento en formato YYYY-MM-DDThh:mm:ss+zz:zz, e.j. 2018, 1973-06, 1905-08-23, 2015-02-07T13:28:17-05:00 o 2017-01-01T00:00:00.000Z",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.requester",
+        "path": "MedicationRequest.requester",
+        "short": "referencia a un sujeto que prescribe",
+        "definition": "En este caso la referencia será sobre una persona que es un prescriptor validado por la Super Intendecia",
+        "comment": "en una posterior versiín evolutiva de la guía y el sistema de receta se deberá referenciar un ParactitionerRole",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.requester.reference",
+        "path": "MedicationRequest.requester.reference",
+        "short": "La API sobre la cual se hace consulta de los recursos de los prescriptores es ´https://api-receta.minsal.cl/v2/practitioner´",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.requester.display",
+        "path": "MedicationRequest.requester.display",
+        "short": "nombre Prescriptor"
+      },
+      {
+        "id": "MedicationRequest.recorder",
+        "path": "MedicationRequest.recorder",
+        "short": "referencia a un sujeto|organización para nuestro caso sera un sujeto, que será el que registra la receta",
+        "definition": "En este caso la referencia será sobre una persona que es un prescriptor validado por la Super Intendecia",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.recorder.reference",
+        "path": "MedicationRequest.recorder.reference",
+        "short": "La API sobre la cual se hace consulta de los recursos de los pacientes es ´http://api-receta.minsal.cl/v2/practitioner´",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.recorder.display",
+        "path": "MedicationRequest.recorder.display",
+        "short": "Nombre Prescriptor"
+      },
+      {
+        "id": "MedicationRequest.groupIdentifier",
+        "path": "MedicationRequest.groupIdentifier",
+        "short": "Número identificador de grupo que debe ser el mismo con el cual se identificaron los farmacos prescritos en el acto clínico",
+        "definition": "Este numero vincula el contenedor (RequestGroup) con todos los farmacos prescritos durante la atención del paciente (medicationRequest). Este hará el uso de Receta y el grupo de farmacos co misma identificacion grupal. El formato debe ser UUID",
+        "comment": "El elemento groupIdentifier de los recursos MedicationRequest generados durante el mismo acto clínico deberán coincidir con el que se genere en el recurso RequestGroup. ESte identificador debe ser generado como un valor UUID",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.groupIdentifier.value",
+        "path": "MedicationRequest.groupIdentifier.value",
+        "short": "identificador de grupo"
+      },
+      {
+        "id": "MedicationRequest.courseOfTherapyType",
+        "path": "MedicationRequest.courseOfTherapyType",
+        "short": "Expresa el patrón en la administración del medicamento",
+        "definition": "La descripción del patrón general de la administración del medicamento al paciente.",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.courseOfTherapyType.coding.system",
+        "path": "MedicationRequest.courseOfTherapyType.coding.system",
+        "short": "Sistema de codigos a ocupar, se hará uso sel det de valores de hl7 MedicationRequest-course-of-therapy ",
+        "patternUri": "https://www.hl7.org/fhir/valueset-medicationrequest-course-of-therapy.html"
+      },
+      {
+        "id": "MedicationRequest.courseOfTherapyType.coding.code",
+        "path": "MedicationRequest.courseOfTherapyType.coding.code",
+        "short": "código relacionado continuo|agudo|temporada"
+      },
+      {
+        "id": "MedicationRequest.courseOfTherapyType.coding.display",
+        "path": "MedicationRequest.courseOfTherapyType.coding.display",
+        "short": "descripción del código"
+      },
+      {
+        "id": "MedicationRequest.note",
+        "path": "MedicationRequest.note",
+        "short": "texto libre en donde se expresan las instrucciones de como el medicamento debe ser administrado",
+        "definition": "Información adicional sobre la prescripción que no puede ser transmitida por los otros atributos.",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction",
+        "path": "MedicationRequest.dosageInstruction",
+        "short": "instrucciones del dosaje del medicamento",
+        "definition": "Indica cómo debe utilizar el paciente el medicamento.",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.text",
+        "path": "MedicationRequest.dosageInstruction.text",
+        "short": "instucciones en texto libre"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.patientInstruction",
+        "path": "MedicationRequest.dosageInstruction.patientInstruction",
+        "short": "instrucciones adicionales orientadas al paciente"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing",
+        "path": "MedicationRequest.dosageInstruction.timing",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat",
+        "short": "repetitividad en la administración del medicamento"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.frequency",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.frequency",
+        "short": "cantidad de repeticiones"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.period",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.period",
+        "short": "perido en el cual se realizan las repeticiones"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.periodMax",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.periodMax",
+        "short": "perido máximo en el cual se realizan las repeticiones"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.periodUnit",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.periodUnit",
+        "short": "s | min | h | d | wk | mo | a - unidad de tiempo (UCUM) (Requerida)"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.asNeededBoolean",
+        "path": "MedicationRequest.dosageInstruction.asNeededBoolean",
+        "short": "En caso de SOS, se usa, considerar este valor como booleano",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.route",
+        "path": "MedicationRequest.dosageInstruction.route",
+        "short": "via por la cual es administrado el medicamento",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.route.coding.system",
+        "path": "MedicationRequest.dosageInstruction.route.coding.system",
+        "short": "Sistema basado en subset de Snomed CT",
+        "patternUri": "http://hl7.org/fhir/ValueSet/route-codes"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.route.coding.code",
+        "path": "MedicationRequest.dosageInstruction.route.coding.code",
+        "short": "codigo de la via de Snomed"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.route.coding.display",
+        "path": "MedicationRequest.dosageInstruction.route.coding.display",
+        "short": "descripcióncipón del código"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate",
+        "short": "cantidad de medicamento administrado puede ser Cantidad o Rango",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.doseQuantity",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.doseQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.value",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.value",
+        "short": "valor de la cantidad a administrar"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.unit",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.unit",
+        "short": "unidad de la cantidad administrada"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.system",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.system",
+        "short": "se usa el sistema de códigos de V3 http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm ",
+        "patternUri": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.code",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.code",
+        "short": "codigo para la unidad"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.doseRange",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.doseRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.doseRange.low.value",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.doseRange.low.value",
+        "short": "valor mínmo del rango"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.doseRange.low.unit",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.doseRange.low.unit",
+        "short": "unidad de la cantidad administrada"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.doseRange.low.system",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.doseRange.low.system",
+        "short": "se usa el sistema de códigos de V3 http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm ",
+        "patternUri": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.doseRange.low.code",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.doseRange.low.code",
+        "short": "codigo para la unidad"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.doseRange.high.value",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.doseRange.high.value",
+        "short": "valor máximo del rango"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.doseRange.high.unit",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.doseRange.high.unit",
+        "short": "unidad de la cantidad administrada"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.doseRange.high.system",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.doseRange.high.system",
+        "short": "se usa el sistema de códigos de V3 http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm ",
+        "patternUri": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.doseRange.high.code",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.doseRange.high.code",
+        "short": "codigo para la unidad"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest",
+        "path": "MedicationRequest.dispenseRequest",
+        "short": "Autorización de la dispensación",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.validityPeriod",
+        "path": "MedicationRequest.dispenseRequest.validityPeriod",
+        "short": "periodo de validez de la Prescripción",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.validityPeriod.start",
+        "path": "MedicationRequest.dispenseRequest.validityPeriod.start",
+        "short": "fecha de inicio de la validez de la prescripción. El formato es YYYY-MM-DD"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.validityPeriod.end",
+        "path": "MedicationRequest.dispenseRequest.validityPeriod.end",
+        "short": "fecha de fin de la validez de la prescripción. El formato es YYYY-MM-DD"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.quantity",
+        "path": "MedicationRequest.dispenseRequest.quantity",
+        "short": "Cantidad de medicamento Dispensado",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.quantity.value",
+        "path": "MedicationRequest.dispenseRequest.quantity.value",
+        "short": "Valor de la cantida del medicamento Dispensado. Obligatorio para fármaco Cotrolado",
+        "definition": "Valor de la cantida del medicamento Dispensado. Obligatorio para fármaco Cotrolado",
+        "comment": "Obligatorio para fármaco Cotrolado"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.expectedSupplyDuration",
+        "path": "MedicationRequest.dispenseRequest.expectedSupplyDuration",
+        "short": "numero de días que dura lo que se ha dispensado",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.expectedSupplyDuration.value",
+        "path": "MedicationRequest.dispenseRequest.expectedSupplyDuration.value",
+        "short": "valor de la unidad de duracion"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.expectedSupplyDuration.unit",
+        "path": "MedicationRequest.dispenseRequest.expectedSupplyDuration.unit",
+        "short": "unidad temporal segun UCUM"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.expectedSupplyDuration.system",
+        "path": "MedicationRequest.dispenseRequest.expectedSupplyDuration.system",
+        "short": "sistema de codigos temprales segun UCUM",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.expectedSupplyDuration.code",
+        "path": "MedicationRequest.dispenseRequest.expectedSupplyDuration.code",
+        "short": "Código segun UCUM"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.performer",
+        "path": "MedicationRequest.dispenseRequest.performer",
+        "short": "A quien se intenciona sea el que dispense. Obligatorio en Sector Público",
+        "definition": "Se debe referenciar a la API de minsal´https://api-receta.minsal.cl/v2/practitioner´. Obligatorio si es prescriptor público",
+        "comment": "Obligatorio si es prescriptor público",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.performer.reference",
+        "path": "MedicationRequest.dispenseRequest.performer.reference",
+        "short": "Recurso referenciado. "
+      },
+      {
+        "id": "MedicationRequest.priorPrescription",
+        "path": "MedicationRequest.priorPrescription",
+        "short": "prescripciónu orden a la cual esta reemplaza",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.priorPrescription.reference",
+        "path": "MedicationRequest.priorPrescription.reference",
+        "short": "recurso MedicationDispense que se reemplaza. "
+      }
+    ]
+  }
+}
