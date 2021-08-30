@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "ISO3166COD"];
   fhir:ValueSet.title [ fhir:value "Códigos de Países Segun Norma ISO-3166 N"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-08-30T12:27:57-04:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-08-30T12:31:36-04:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];
