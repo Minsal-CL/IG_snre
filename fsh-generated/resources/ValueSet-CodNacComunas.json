@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CodComunas",
+  "id": "CodNacComunas",
+  "title": "Códigos de Comunas en Chile",
+  "description": "Codigos definidos para identificar una comuna en Chile",
+  "version": "0.7 (Proceso de Ballot Pendiente)",
+  "url": "http://minsal.cl/fhir/core/ValueSet/CodNacComunas",
+  "compose": {
+    "include": [
+      {
+        "system": "https://apis.digital.gob.cl/dpa/comunas/"
+      }
+    ]
+  }
+}

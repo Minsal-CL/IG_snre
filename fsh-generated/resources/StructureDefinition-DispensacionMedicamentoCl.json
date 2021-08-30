@@ -1,0 +1,380 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DispensacionMedicamentoCl",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Medications"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://minsal.cl/fhir/core/StructureDefinition/DispensacionMedicamentoCl",
+  "version": "0.7 (Proceso de Ballot Pendiente)",
+  "name": "DispensacionMedicamentoCL",
+  "title": "Dispensación_CL",
+  "status": "active",
+  "description": "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica desde la visión de la TFC que se usará para poder manejar farmacos ya registrados, y que deberán ser consultados por los prestadores a la hora de prescribir alguno.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rx-dispense-rmim",
+      "uri": "http://www.hl7.org/v3/PORX_RM020070UV",
+      "name": "V3 Pharmacy Dispense RMIM"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationDispense",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationDispense",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationDispense.identifier",
+        "path": "MedicationDispense.identifier",
+        "short": "Se usará en caso que se realice una dispensación con Id Local",
+        "definition": "Es el numero de Id Local, generado a nivel del dispensador.",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.identifier.system",
+        "path": "MedicationDispense.identifier.system",
+        "short": "Se identificará la url de la API sobre la cual se puede consultar por el valor del identificador generado",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.identifier.value",
+        "path": "MedicationDispense.identifier.value",
+        "short": "número identificador"
+      },
+      {
+        "id": "MedicationDispense.identifier.assigner.display",
+        "path": "MedicationDispense.identifier.assigner.display",
+        "short": "Se indica el nombre del dispensador que otorgo la identificacion",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.status",
+        "path": "MedicationDispense.status",
+        "short": "estado de la dispensación según estándar: cancelled | completed | entered-in-error | declined",
+        "definition": "Estado de la dispensación, estos estaos pueden ser: preparation | in-progress | cancelled | on-hold | completed | entered-in-error | stopped | declined | unknown",
+        "comment": "Si bien los códigos para este elemento son mas que los mostrados en esta guía solo se considerarán los expuestos para el caso local",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.statusReasonCodeableConcept",
+        "path": "MedicationDispense.statusReasonCodeableConcept",
+        "short": "Razón por la cual no se realizó la dispensación",
+        "definition": "Razón por la cual no se realizó la dispensación, se debe utilizar la tabla definida por MINSAL.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.statusReasonCodeableConcept.coding.system",
+        "path": "MedicationDispense.statusReasonCodeableConcept.coding.system",
+        "short": "Glosa del codigo",
+        "definition": "Codigos definidos para motivos de rechazo de la dispensacion. Tabla que será generada por MINSAL",
+        "comment": "Tabla que será generada por MINSAL, quedará disponible para que cada sistema la levante localmente y apunte a ella en esta ruta"
+      },
+      {
+        "id": "MedicationDispense.statusReasonCodeableConcept.coding.code",
+        "path": "MedicationDispense.statusReasonCodeableConcept.coding.code",
+        "short": "Codigo referente a la razon de porque no se entrego la dispensacion"
+      },
+      {
+        "id": "MedicationDispense.statusReasonCodeableConcept.text",
+        "path": "MedicationDispense.statusReasonCodeableConcept.text",
+        "short": "Razon de la cancelacion. *Definir si es necesario este texto, ya que en caso de haber codificacion se puede usar display*"
+      },
+      {
+        "id": "MedicationDispense.medicationReference",
+        "path": "MedicationDispense.medicationReference",
+        "short": "Medicamento comercial dispensado. Como repositorio nacional: ´http://api-receta.minsal.cl/v2/medication´ (Obligatorio)",
+        "definition": "Medicamento dispenado que obedece al Producto Comercial que fue entregado a quien lo retira. Este se describe mediante el recurso de medicamento desde el reposotorio de estos. Solo se agrega en caso de ser dispensado el medicamento de otra forma no es necesario. El repositorio es ´https://api-receta.minsal.cl/v2/medication´",
+        "comment": "Solo se agrega en caso de ser dispensado el medicamento",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Medication"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.subject",
+        "path": "MedicationDispense.subject",
+        "short": "Referencia a un sujeto|organización para nuestro caso sera un sujeto. Repositorio es ´https://api-receta.minsal.cl/v2/patient´ (Obligatorio)",
+        "definition": "La referencia en este caso solo se hace sobre el paciente al cual se le receta el fármaco independiente que sea otra la persona que hace retiro de estos. Se usa el repositorio ´https://api-receta.minsal.cl/v2/patient´",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.performer",
+        "path": "MedicationDispense.performer",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "function.coding.code"
+            }
+          ],
+          "rules": "closed"
+        },
+        "short": "Profesional que realizó la orden.",
+        "comment": "Se definen dos tipos de dispensador, no excluyentes mutuamente. El primero es el dispensador del fármaco pero el segundo es el validador. El dispensador es obligado. Ambos son iguales desde el punto de vista del desarrollo de cada slice es el mismo solo debe cambiar el valor del código del la ruta performer.function.code",
+        "min": 1,
+        "max": "2",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.performer:Dispensador",
+        "path": "MedicationDispense.performer",
+        "sliceName": "Dispensador",
+        "short": "Aquel individuo que realiza la entega de medicamentos",
+        "definition": "Se entiende por dispensador al individuo que entrega los medicamentos a quien los solicite en el punto de entrega. Simpre el en proceso de dispensación existe un dispensador",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.performer:Dispensador.function",
+        "path": "MedicationDispense.performer.function",
+        "short": "Función que desarrolla el Performer, en este caso dispensador",
+        "definition": "Función que desarrolla el Performer, en este caso dispensador",
+        "min": 1
+      },
+      {
+        "id": "MedicationDispense.performer:Dispensador.function.coding.code",
+        "path": "MedicationDispense.performer.function.coding.code",
+        "short": "Código del tipo de dispensador. Debe ser 01 para el Dispensador Obligado",
+        "definition": "Código del tipo de dispensador según tabla maestra. En este caso debe ser 01",
+        "min": 1,
+        "patternCode": "Dispensador"
+      },
+      {
+        "id": "MedicationDispense.performer:Dispensador.actor",
+        "path": "MedicationDispense.performer.actor",
+        "short": "Profesional que realiza la dispensación. El endPoint es ´http://api-receta.minsal.cl/v2/practitioner´"
+      },
+      {
+        "id": "MedicationDispense.performer:Dispensador.actor.reference",
+        "path": "MedicationDispense.performer.actor.reference",
+        "short": "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/practitioner´",
+        "definition": "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/practitioner´. En el caso nacional el dispensador estaría dentro de los recucursos desarrollados para Prestadores"
+      },
+      {
+        "id": "MedicationDispense.performer:Validador",
+        "path": "MedicationDispense.performer",
+        "sliceName": "Validador",
+        "short": "Aquel individuo que realiza la validaciín ante la entega de medicamentos",
+        "definition": "Se entiende por dispensador al individuo que valida la entrega los medicamentos a quien los solicite en el punto de entrega. Por lo común es un Químico Farmaceutico de Profesión",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.performer:Validador.function",
+        "path": "MedicationDispense.performer.function",
+        "short": "Función que desarrolla el Validador, en este caso siempre será un QF",
+        "definition": "Función que desarrolla el Performer, en este caso validador",
+        "min": 1
+      },
+      {
+        "id": "MedicationDispense.performer:Validador.function.coding.code",
+        "path": "MedicationDispense.performer.function.coding.code",
+        "short": "Código de validador. Debe ser 02 para definir un validador",
+        "definition": "Código de validador según tabla maestra. En este caso debe ser 02",
+        "min": 1,
+        "patternCode": "Validador"
+      },
+      {
+        "id": "MedicationDispense.performer:Validador.actor",
+        "path": "MedicationDispense.performer.actor",
+        "short": "Profesional que realiza la validación. El endPoint es ´http://api-receta.minsal.cl/v2/practitioner´"
+      },
+      {
+        "id": "MedicationDispense.performer:Validador.actor.reference",
+        "path": "MedicationDispense.performer.actor.reference",
+        "short": "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/practitioner´",
+        "definition": "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/practitioner´. En el caso nacional el dispensador estaría dentro de los recucursos desarrollados para Prestadores"
+      },
+      {
+        "id": "MedicationDispense.location",
+        "path": "MedicationDispense.location",
+        "short": "Ubicación Georeferenciada de la dispensación",
+        "definition": "La ubicación física principal en la cual se desarrolló la dispensación",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.location.reference",
+        "path": "MedicationDispense.location.reference",
+        "short": "Identificación del recurso de lcalización de los dispensadores. ´https://api-receta.minsal.cl/v2/location´ (Obligatoria)",
+        "definition": "El repositorio Central tendrá listda la ubicación de todos los dispensadores en recurso location. Estas deberán ser alcanzadas desde ´https://api-receta.minsal.cl/v2/location´ (Obligatoria)"
+      },
+      {
+        "id": "MedicationDispense.authorizingPrescription",
+        "path": "MedicationDispense.authorizingPrescription",
+        "short": "Referencia a la prescripción que autoriza la dispensación.",
+        "definition": "Referencia a la prescripción que autoriza la dispensación. esta debe ser referenciada al recurso MedicarionPrescrition involucrado en la receta presentada al momento de la dspensación",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.authorizingPrescription.reference",
+        "path": "MedicationDispense.authorizingPrescription.reference",
+        "short": "Referencia a la receta que autoriza la dispensación. ´https://api-receta.minsal.cl/v2/MedicationPrescription´ (Obligada)",
+        "definition": "Referencia a la receta que autoriza la dispensación. esta debe ser referenciada al recurso MedicarionPrescrition involucrado en la receta presentada al momento de la dspensación. ´https://api-receta.minsal.cl/v2/MediationPrescription´ (Obligada)"
+      },
+      {
+        "id": "MedicationDispense.quantity",
+        "path": "MedicationDispense.quantity",
+        "short": "Dosis recetada del medicamento",
+        "definition": "Cantidad del medicamento dispensado",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.whenHandedOver",
+        "path": "MedicationDispense.whenHandedOver",
+        "short": "Fecha y hora cuando el medicamento fue dispensado. Se debe especificar en formato de fecha según HL7. YYYY-MM-DDThh:mm:ss+zz:zz, ej. 2018, 1973-06, 1905-08-23, 2015-02-07T13:28:17-05:00 or 2017-01-01T00:00:00.000Z.",
+        "comment": "No soporta formato 24 hrs",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.receiver",
+        "path": "MedicationDispense.receiver",
+        "short": "Persona a la cual se le hace entrega de los fármacos.",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.receiver.display",
+        "path": "MedicationDispense.receiver.display",
+        "short": "Se debe  escribir el nombre y apellido de quien recibe el medicamento ",
+        "definition": "Se define el nombre y apellido de quien recibe el medicamento. Este elemento si bien no es obligatorio debería serlo en el servicio público y solo en caso que quien recibe el medicamento no sea el paciente sobre el cual fueron recetados ",
+        "comment": "Debe ser obligatorio en dispensaciones realizadas en el sector de salud Público"
+      },
+      {
+        "id": "MedicationDispense.note",
+        "path": "MedicationDispense.note",
+        "short": "Información sobre la receta",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.dosageInstruction",
+        "path": "MedicationDispense.dosageInstruction",
+        "short": "Cómo se debe administrar el medicamento. Este se llena automaticamente al vincularlo con la Prescripción",
+        "definition": "Si bien se especifica, al momento de vicular el recuso con el recurso MedicationPrescription, este elemento con todas sus rutas se completan de manera automática, por lo que no es deber del dispensador llenar estos campos.",
+        "comment": "Este elemento y todos los que lo desriben se completan de manera automática al vincularse este recucurso conun recurso MedicationRequest",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.dosageInstruction.sequence",
+        "path": "MedicationDispense.dosageInstruction.sequence",
+        "short": "Secuencia de administracion del medicamento",
+        "definition": "Indica el orden en el que se deben aplicar o interpretar las instrucciones de dosificación."
+      },
+      {
+        "id": "MedicationDispense.dosageInstruction.text",
+        "path": "MedicationDispense.dosageInstruction.text",
+        "short": "Instruccion de dosificación"
+      },
+      {
+        "id": "MedicationDispense.dosageInstruction.additionalInstruction",
+        "path": "MedicationDispense.dosageInstruction.additionalInstruction",
+        "short": "Instrucciones, advertencias y/o efectos secundarios"
+      },
+      {
+        "id": "MedicationDispense.dosageInstruction.patientInstruction",
+        "path": "MedicationDispense.dosageInstruction.patientInstruction",
+        "short": "Instrucciones para el paciente",
+        "definition": "Instrucciones con detalle o lenguaje que los pacientes puedan comprender"
+      },
+      {
+        "id": "MedicationDispense.dosageInstruction.timing",
+        "path": "MedicationDispense.dosageInstruction.timing",
+        "short": "Cuando se debe administrar los medicamentos"
+      },
+      {
+        "id": "MedicationDispense.dosageInstruction.asNeededBoolean",
+        "path": "MedicationDispense.dosageInstruction.asNeededBoolean",
+        "short": "En caso de SOS, se usa, considerar este valor como booleano",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "MedicationDispense.dosageInstruction.route",
+        "path": "MedicationDispense.dosageInstruction.route",
+        "short": "Como se debe administrar el medicamento (Via de administración o como debe el farmaco entrar al cuerpo)"
+      },
+      {
+        "id": "MedicationDispense.dosageInstruction.method",
+        "path": "MedicationDispense.dosageInstruction.method",
+        "short": "Tecnica para administrar el medicamento",
+        "definition": "Es un valor codificado que indica el método mediante el cual se introduce el medicamento en el cuerpo o sobre él. Más comúnmente utilizado para inyecciones. Por ejemplo, empuje lento; Profundo IV."
+      },
+      {
+        "id": "MedicationDispense.dosageInstruction.doseAndRate",
+        "path": "MedicationDispense.dosageInstruction.doseAndRate",
+        "short": "Cantidad de los medicamentos a administrar"
+      },
+      {
+        "id": "MedicationDispense.detectedIssue",
+        "path": "MedicationDispense.detectedIssue",
+        "short": "Evento adverso detectado como contraindicación al farmaco dispensado",
+        "definition": "Indica un problema clinico real o potencial, con acciones clinicas posibles, por ejemplo, una interaccion farmaco-farmaco, doble dosis de medicamentos, etc.",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.detectedIssue.display",
+        "path": "MedicationDispense.detectedIssue.display",
+        "short": "Texto libre que describe el potencial evento adverso o contraindicación",
+        "definition": "Texto libre que describe el potencial evento adverso o contraindicación. Por momento solo se considera la redacción en texto libre de este campo",
+        "mustSupport": true
+      }
+    ]
+  }
+}

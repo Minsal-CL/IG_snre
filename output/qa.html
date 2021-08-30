@@ -1,0 +1,1350 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 1, errors = 225, warn = 48, info = 2 -->
+<head>
+  <title>RecetaCL : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for RecetaCL</h1>
+ <p>Generated Mon Aug 30 12:28:31 CLT 2021, FHIR version 4.0.1 for hl7.fhir.uv.RecetaCH#0.7 (Proceso de Ballot Pendiente) (canonical = <a href="http://minsal.cl/fhir/core">http://minsal.cl/fhir/core</a> (<a href="http://minsal.cl/fhir/core/history.html">history</a>)). See <a href="c:\igs\_ig_receta\output\qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.77</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.uv.RecetaCH, Canonical = http://minsal.cl/fhir/core</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.7 (Proceso de Ballot Pendiente): <span stlye="color: marron; font-weight: bold">Version does not conform to semver rules</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\IGs\_IG_Receta\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAI0lEQVR42u3QIQEAAAACIL/6/4MvTAQOkLYBAAB4kAAAANwMad9AqkRjgNAAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.RecetaCH</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.7 (Proceso de Ballot Pendiente)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://minsal.cl/fhir/core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: fhir.base.template#0.2.1</para></div></td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2020+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><a href="qa-hta.html">All OK</a></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://minsal.cl/fhir/core (Problem #1 with package-list.json at http://minsal.cl/fhir/core: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 2 column 2 path $)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 1, errors = 225, warn = 48, info = 2</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>193</b></td><td><b>6</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__IGs__IG_Receta_fsh-generated_resources_ImplementationGuide-hl7.fhir.uv.RecetaCH"><b>C:\IGs\_IG_Receta\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.RecetaCH</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__IG_Receta_fsh-generated_resources_MedicationDispense-DispensacionMedicamentoCL"><b>C:\IGs\_IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL</b></a></td><td><b>6</b></td><td><b>5</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__IG_Receta_fsh-generated_resources_MedicationRequest-PrescripcionRecetaCL"><b>C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-PrescripcionRecetaCL</b></a></td><td><b>4</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__IG_Receta_fsh-generated_resources_MedicationRequest-medicationrequest-1"><b>C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-1</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__IG_Receta_fsh-generated_resources_MedicationRequest-medicationrequest-2"><b>C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-2</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__IG_Receta_fsh-generated_resources_Organization-OrganizacionRecetaCL"><b>C:\IGs\_IG_Receta\fsh-generated\resources\Organization-OrganizacionRecetaCL</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__IG_Receta_fsh-generated_resources_RequestGroup-EjemploRecetaCL"><b>C:\IGs\_IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL</b></a></td><td><b>8</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__IG_Receta_fsh-generated_resources_StructureDefinition-DispensacionMedicamentoCl"><b>C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-DispensacionMedicamentoCl</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__IG_Receta_fsh-generated_resources_StructureDefinition-Prod-Comercial"><b>C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-Prod-Comercial</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__IG_Receta_fsh-generated_resources_StructureDefinition-RecetaCl"><b>C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaCl</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__IG_Receta_fsh-generated_resources_StructureDefinition-RecetaOrganizacionCl"><b>C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaOrganizacionCl</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__IG_Receta_fsh-generated_resources_StructureDefinition-RecetaPrescripcionCl"><b>C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl</b></a></td><td><b>1</b></td><td><b>18</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__IGs__IG_Receta_fsh-generated_resources_ValueSet-CodNacComunas"><b>C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodNacComunas</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__IGs__IG_Receta_fsh-generated_resources_ValueSet-CodProv"><b>C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodProv</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__IGs__IG_Receta_fsh-generated_resources_ValueSet-CodReg"><b>C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodReg</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__IGs__IG_Receta_fsh-generated_resources_ValueSet-DOCType-V2-0203"><b>C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-DOCType-V2-0203</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/DispensacionMedicamentoCL.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource RequestGroup/EjemploRecetaCL.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/OrganizacionRecetaCL.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/PrescripcionRecetaCL.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/medicationrequest-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/medicationrequest-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.change.history.html#288347b2-8514-4653-9736-e3d3286c4d15">MedicationDispense-DispensacionMedicamentoCL.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.change.history.html#5dd6e673-a58c-42bf-b3ed-1c3d8cfaf0a4">MedicationDispense-DispensacionMedicamentoCL.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.html#7b94e752-741b-40e9-a714-308895b1bab8">MedicationDispense-DispensacionMedicamentoCL.html#/html/body/div/div/div/a/img at Line 56, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.html#c1bd7e7d-e945-4e57-b401-af5a28ae22dc">MedicationDispense-DispensacionMedicamentoCL.html#/html/body/div/div/div/a/img at Line 62, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.json.html#d97b08f2-90db-46d4-bba6-1b124708c10a">MedicationDispense-DispensacionMedicamentoCL.json.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.json.html#abe7a92f-f261-4420-bdf5-5854af51ee14">MedicationDispense-DispensacionMedicamentoCL.json.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.ttl.html#d4960d0c-6b2b-4a4d-96bc-1b5d1a4260b7">MedicationDispense-DispensacionMedicamentoCL.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.ttl.html#87348e06-0285-4075-92f3-18c0fa6f6901">MedicationDispense-DispensacionMedicamentoCL.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.xml.html#026c8879-a799-40b1-81f5-8ffd5cd15b55">MedicationDispense-DispensacionMedicamentoCL.xml.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationDispense-DispensacionMedicamentoCL.xml.html#922f3602-272d-472c-9107-a5d0dfaea9de">MedicationDispense-DispensacionMedicamentoCL.xml.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.change.history.html#80ba4908-a213-4070-a3e5-17196fc641de">MedicationRequest-PrescripcionRecetaCL.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.change.history.html#7353c0c6-e548-4c6a-9eb6-44a79a16fceb">MedicationRequest-PrescripcionRecetaCL.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.html#cfced6ec-1552-464a-9a1b-838d74a0b4a7">MedicationRequest-PrescripcionRecetaCL.html#/html/body/div/div/div/a/img at Line 56, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.html#d64925a0-9ccb-442e-b45f-8a132490cf82">MedicationRequest-PrescripcionRecetaCL.html#/html/body/div/div/div/a/img at Line 62, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.json.html#65ff696f-8592-418f-af43-8d5615ab4e7f">MedicationRequest-PrescripcionRecetaCL.json.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.json.html#8c678272-df8c-47d9-998d-d084bf85ee0e">MedicationRequest-PrescripcionRecetaCL.json.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.ttl.html#bee4c6b6-8a8b-43a8-b749-2fbe2e45f1d7">MedicationRequest-PrescripcionRecetaCL.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.ttl.html#6fde41a8-a36a-45be-b687-330df7755b99">MedicationRequest-PrescripcionRecetaCL.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.xml.html#d607b6c4-8c2a-4eed-99b9-96876d921381">MedicationRequest-PrescripcionRecetaCL.xml.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-PrescripcionRecetaCL.xml.html#c297ab83-cf3e-477c-a8c7-d296f92d3d7f">MedicationRequest-PrescripcionRecetaCL.xml.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.change.history.html#e4c602e0-971a-4791-a476-58f7fd0f7bb7">MedicationRequest-medicationrequest-1.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.change.history.html#bf468f8f-a867-4f34-afdc-78ded53a94f5">MedicationRequest-medicationrequest-1.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.html#1a3a69d7-40e8-4ed8-93ae-26d32172f25d">MedicationRequest-medicationrequest-1.html#/html/body/div/div/div/a/img at Line 56, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.html#8e3dbb3e-eea9-42f7-9243-48907cb1bb43">MedicationRequest-medicationrequest-1.html#/html/body/div/div/div/a/img at Line 62, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.json.html#efabe1e7-1ab8-42d9-9192-31a3fc2e67d0">MedicationRequest-medicationrequest-1.json.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.json.html#292264b1-de3d-42cb-b2a4-332dc40c0d68">MedicationRequest-medicationrequest-1.json.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.ttl.html#55c529be-c519-4b02-a0ee-2ab0f49f18a5">MedicationRequest-medicationrequest-1.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.ttl.html#1f84c9e8-8e47-4193-ba50-e43fbf4d6504">MedicationRequest-medicationrequest-1.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.xml.html#e78c4ca6-cb4b-4a27-a422-4f6c5aff930c">MedicationRequest-medicationrequest-1.xml.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-1.xml.html#849ecb2a-99b2-4c5a-9bb7-1ed59a5f99d1">MedicationRequest-medicationrequest-1.xml.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.change.history.html#d1cab265-e828-430b-8122-d68a99e7b59b">MedicationRequest-medicationrequest-2.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.change.history.html#88dfd2c4-770e-4d3e-b434-d90da8bceaa7">MedicationRequest-medicationrequest-2.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.html#b6036313-dfdc-481b-8cd3-eb1bf7c114a8">MedicationRequest-medicationrequest-2.html#/html/body/div/div/div/a/img at Line 56, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.html#547f8131-0b3d-4148-a9d2-ca5c2030ee29">MedicationRequest-medicationrequest-2.html#/html/body/div/div/div/a/img at Line 62, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.json.html#1f80a223-22bf-476d-b983-984b844f81e0">MedicationRequest-medicationrequest-2.json.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.json.html#8d7ab9ba-dca8-40d3-9bd3-ae2d1a40355b">MedicationRequest-medicationrequest-2.json.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.ttl.html#060e6a71-e960-4422-a6d7-6d81dfc2fa9f">MedicationRequest-medicationrequest-2.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.ttl.html#86200848-2de9-435b-b495-845c4d91fcaa">MedicationRequest-medicationrequest-2.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.xml.html#e9407d00-814f-41c2-b420-ac75417de58e">MedicationRequest-medicationrequest-2.xml.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\MedicationRequest-medicationrequest-2.xml.html#124e671d-af2b-475d-8cc5-6ce0d281539c">MedicationRequest-medicationrequest-2.xml.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.change.history.html#acfd82e4-c75f-4285-b503-50b4b7331bee">Organization-OrganizacionRecetaCL.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.change.history.html#16f9499a-9cd2-4a0b-b8bf-5f0ab1793e34">Organization-OrganizacionRecetaCL.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.html#54f9efc8-1104-487d-af9b-e6d8d2c0ee99">Organization-OrganizacionRecetaCL.html#/html/body/div/div/div/a/img at Line 56, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.html#fd537729-bd64-4213-a40e-2b8e44296759">Organization-OrganizacionRecetaCL.html#/html/body/div/div/div/a/img at Line 62, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.json.html#5dd80f54-599b-4c50-a6bb-91e2de56924c">Organization-OrganizacionRecetaCL.json.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.json.html#d9ea8e0d-5850-4749-9f9c-e126d783ddf8">Organization-OrganizacionRecetaCL.json.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.ttl.html#4a018943-5b8d-4fa8-9b52-2b6e445e66d8">Organization-OrganizacionRecetaCL.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.ttl.html#db4f56a6-ae98-42e2-865c-a5b7b66c8956">Organization-OrganizacionRecetaCL.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.xml.html#3dd32017-f510-4ae1-b885-88bf4db7dcbb">Organization-OrganizacionRecetaCL.xml.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\Organization-OrganizacionRecetaCL.xml.html#253abd66-32e9-4273-a801-fd51c9ce5cbf">Organization-OrganizacionRecetaCL.xml.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.change.history.html#063cfab7-3144-4cfb-8118-e7e16ed95651">RequestGroup-EjemploRecetaCL.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.change.history.html#d333d8cb-bcb8-4099-88fb-e4a89e829327">RequestGroup-EjemploRecetaCL.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.html#234cfeed-e126-4188-86f4-023415a3c22d">RequestGroup-EjemploRecetaCL.html#/html/body/div/div/div/a/img at Line 56, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.html#1624853b-4983-440e-9ccd-ffc27cb6e387">RequestGroup-EjemploRecetaCL.html#/html/body/div/div/div/a/img at Line 62, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.json.html#7659a03d-23a3-4c09-af7a-bd9e1617f489">RequestGroup-EjemploRecetaCL.json.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.json.html#59dd2f3c-1c9a-44c5-ab09-fc69ba72d9d6">RequestGroup-EjemploRecetaCL.json.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.ttl.html#268e9de4-6f3c-4082-87de-f699640190ee">RequestGroup-EjemploRecetaCL.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.ttl.html#22dfc33d-2d65-4cb1-b2b3-9ed05757058c">RequestGroup-EjemploRecetaCL.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.xml.html#00a6d27b-5061-4820-ae61-fea1cb591630">RequestGroup-EjemploRecetaCL.xml.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\RequestGroup-EjemploRecetaCL.xml.html#375f1e19-0822-43b6-98cc-cb06da3bcaee">RequestGroup-EjemploRecetaCL.xml.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-definitions.html#2e724b9a-6a6e-4b49-bd4a-dd392a7eb97c">StructureDefinition-DispensacionMedicamentoCl-definitions.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-definitions.html#446921e1-482d-4195-a2ba-cee737cd2fe7">StructureDefinition-DispensacionMedicamentoCl-definitions.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-examples.html#f23d6f5a-6e22-495c-8f15-4d2522c979f9">StructureDefinition-DispensacionMedicamentoCl-examples.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-examples.html#f5d93c3b-6279-456b-b85f-d4ac814d3703">StructureDefinition-DispensacionMedicamentoCl-examples.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-mappings.html#71695b57-7d2c-4cc8-a5c7-92bbb3678f56">StructureDefinition-DispensacionMedicamentoCl-mappings.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl-mappings.html#256c1331-4012-4f47-b580-f1b17976bdb9">StructureDefinition-DispensacionMedicamentoCl-mappings.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.html#c6cfa396-0ae5-4e89-aa00-28d26979555f">StructureDefinition-DispensacionMedicamentoCl.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.html#1b8b048a-b4fd-4652-ae8e-642b50faab74">StructureDefinition-DispensacionMedicamentoCl.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.history.html#139f88ec-cda7-4923-8321-9a028e36688e">StructureDefinition-DispensacionMedicamentoCl.profile.history.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.history.html#13da8fe9-f1da-43bf-aafd-8cec563b7719">StructureDefinition-DispensacionMedicamentoCl.profile.history.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.json.html#87d1424a-f777-4ff1-87cb-a3c21020b594">StructureDefinition-DispensacionMedicamentoCl.profile.json.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.json.html#52c94bb7-da05-4bdb-98eb-a5d20419a939">StructureDefinition-DispensacionMedicamentoCl.profile.json.html#/html/body/div/div/div/a/img at Line 70, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.ttl.html#c8348526-18c1-43d2-847b-ea446c26d51d">StructureDefinition-DispensacionMedicamentoCl.profile.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.ttl.html#8ed58072-a6a3-4be5-8624-e254377a253a">StructureDefinition-DispensacionMedicamentoCl.profile.ttl.html#/html/body/div/div/div/a/img at Line 70, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.xml.html#6a4267df-6e73-4a6e-a7ac-41fb2f68d321">StructureDefinition-DispensacionMedicamentoCl.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-DispensacionMedicamentoCl.profile.xml.html#3df0c2c7-8ae5-4c2f-ad24-57c78ba52fca">StructureDefinition-DispensacionMedicamentoCl.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial-definitions.html#a12f022c-9067-436e-97a5-76d66349e6a9">StructureDefinition-Prod-Comercial-definitions.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial-definitions.html#474ed583-81e0-48bb-89b9-a023e4faa6e8">StructureDefinition-Prod-Comercial-definitions.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial-mappings.html#6f69afed-339a-42e1-aa57-d88d69f2ae03">StructureDefinition-Prod-Comercial-mappings.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial-mappings.html#8cd1f22e-3ffb-4157-a230-0c4ca35edd71">StructureDefinition-Prod-Comercial-mappings.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.html#92d9e6d1-a6ee-4ece-a993-5dd0b5c9bc66">StructureDefinition-Prod-Comercial.html#/html/body/div/div/div/a/img at Line 56, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.html#d79fcf61-4166-4070-a7ce-18e42a47c2e4">StructureDefinition-Prod-Comercial.html#/html/body/div/div/div/a/img at Line 62, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.history.html#3847211e-d10a-4599-987f-3ce13d372140">StructureDefinition-Prod-Comercial.profile.history.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.history.html#fe029e5a-6037-4f72-9750-7b5e29e0a5ab">StructureDefinition-Prod-Comercial.profile.history.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.json.html#c3603698-ca1e-49c7-b6f6-913438b9059d">StructureDefinition-Prod-Comercial.profile.json.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.json.html#97715d43-f18d-47c6-910f-53eb69568a6a">StructureDefinition-Prod-Comercial.profile.json.html#/html/body/div/div/div/a/img at Line 70, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.ttl.html#a8c7e9de-555e-43a0-a60a-d1e45ac7bc28">StructureDefinition-Prod-Comercial.profile.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.ttl.html#a303414d-758a-4fca-88fd-e747fb7f99cd">StructureDefinition-Prod-Comercial.profile.ttl.html#/html/body/div/div/div/a/img at Line 70, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.xml.html#64468c2b-2519-4966-b466-660b5f279a91">StructureDefinition-Prod-Comercial.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-Prod-Comercial.profile.xml.html#bb190b02-1751-4a02-aaf7-5828e29c8a84">StructureDefinition-Prod-Comercial.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-definitions.html#982943e1-42b2-45ca-808e-0532de306cac">StructureDefinition-RecetaCl-definitions.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-definitions.html#7213220d-46c9-4d8d-abda-5c9004532de6">StructureDefinition-RecetaCl-definitions.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-examples.html#04eeb2e0-1c18-414e-9eec-a0e4e21ffa5f">StructureDefinition-RecetaCl-examples.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-examples.html#407d022c-1b28-4127-b03c-58d08331bd11">StructureDefinition-RecetaCl-examples.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-mappings.html#c5ee9185-0e02-4fb6-8e02-642519f44627">StructureDefinition-RecetaCl-mappings.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl-mappings.html#1d35b443-c261-4365-a3ae-a1fc61d567a8">StructureDefinition-RecetaCl-mappings.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.html#7d47a768-4a98-4ef1-99d0-eca1b03a7150">StructureDefinition-RecetaCl.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.html#fdf6d6f8-2f7d-4f05-a294-7c6cc3b3f351">StructureDefinition-RecetaCl.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.history.html#86d1df52-e78b-448d-87a2-f6bc09a9202a">StructureDefinition-RecetaCl.profile.history.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.history.html#0e8fde0e-062d-4267-932a-e282f66a17f5">StructureDefinition-RecetaCl.profile.history.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.json.html#3defc825-96cd-45b2-a226-80ab9baeb22d">StructureDefinition-RecetaCl.profile.json.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.json.html#cf1740dd-d422-4207-a72e-2e4be429f9fd">StructureDefinition-RecetaCl.profile.json.html#/html/body/div/div/div/a/img at Line 70, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.ttl.html#86cc1e0f-5571-42cf-8639-0bff902a0dd4">StructureDefinition-RecetaCl.profile.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.ttl.html#b6f6b7b9-3f03-4d3c-80ea-86f03258bd58">StructureDefinition-RecetaCl.profile.ttl.html#/html/body/div/div/div/a/img at Line 70, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.xml.html#7dfc17f5-46dc-4502-9057-2f761bfa62c2">StructureDefinition-RecetaCl.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaCl.profile.xml.html#fda07c6a-9315-456d-ab11-26840eed5eaf">StructureDefinition-RecetaCl.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-definitions.html#5ca6820e-dd87-466e-98e8-669657a4bd19">StructureDefinition-RecetaOrganizacionCl-definitions.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-definitions.html#6bdd8370-4a9c-478a-9b53-be8b62cb82e2">StructureDefinition-RecetaOrganizacionCl-definitions.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-examples.html#f3cf68e8-3872-40ea-a604-3a0cdd0ff32b">StructureDefinition-RecetaOrganizacionCl-examples.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-examples.html#1257855b-2102-4e08-9af4-9af37068836e">StructureDefinition-RecetaOrganizacionCl-examples.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-mappings.html#29491379-c211-4d67-b181-ae1de9da1bca">StructureDefinition-RecetaOrganizacionCl-mappings.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl-mappings.html#a5cc9037-bcad-47be-a7f4-ccee4b1cb366">StructureDefinition-RecetaOrganizacionCl-mappings.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.html#7e009ce5-f600-47c3-a8ee-e580a26397e0">StructureDefinition-RecetaOrganizacionCl.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.html#eb47b58b-e2f3-410c-954d-65f69cccaa8c">StructureDefinition-RecetaOrganizacionCl.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.history.html#4f0e4b51-3f56-4670-827d-4779e9a04803">StructureDefinition-RecetaOrganizacionCl.profile.history.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.history.html#3394a66d-d29b-447b-a69c-71fcb5ac94a8">StructureDefinition-RecetaOrganizacionCl.profile.history.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.json.html#b0b2658d-0e8e-4126-b8de-42b2493dc7a9">StructureDefinition-RecetaOrganizacionCl.profile.json.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.json.html#b66fe4a1-aae0-447c-a1d8-3ca50a5d4117">StructureDefinition-RecetaOrganizacionCl.profile.json.html#/html/body/div/div/div/a/img at Line 70, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.ttl.html#47d86caa-e5ec-4780-87fd-1082c03cc9ea">StructureDefinition-RecetaOrganizacionCl.profile.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.ttl.html#0db8d7c5-0906-40e7-b70d-7b6e6a184af0">StructureDefinition-RecetaOrganizacionCl.profile.ttl.html#/html/body/div/div/div/a/img at Line 70, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.xml.html#68e7fecb-c084-4983-917b-3f59fcede68b">StructureDefinition-RecetaOrganizacionCl.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaOrganizacionCl.profile.xml.html#42fa67e6-6549-4989-b3bf-ea225d871995">StructureDefinition-RecetaOrganizacionCl.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-definitions.html#433771b4-aa50-47ac-b6bf-5f520c8355f5">StructureDefinition-RecetaPrescripcionCl-definitions.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-definitions.html#85abb297-01ed-4e29-839f-024b318d0e70">StructureDefinition-RecetaPrescripcionCl-definitions.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-examples.html#3f228e6b-b8a7-402d-86bb-6878cbbb0aeb">StructureDefinition-RecetaPrescripcionCl-examples.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-examples.html#f19dba3d-45df-4ecc-8944-bb5ebf61aeae">StructureDefinition-RecetaPrescripcionCl-examples.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-mappings.html#92efd741-e468-4e52-97fb-9ff093a776d9">StructureDefinition-RecetaPrescripcionCl-mappings.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl-mappings.html#4191d264-255d-4616-bff3-3f88c8a7f854">StructureDefinition-RecetaPrescripcionCl-mappings.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.html#13cacae1-36b7-46d3-8052-74aa3263e022">StructureDefinition-RecetaPrescripcionCl.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.html#764248e6-cd90-4d46-b9e9-bc5e6dbdc630">StructureDefinition-RecetaPrescripcionCl.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.history.html#70099335-4047-48d8-9551-995f3401c509">StructureDefinition-RecetaPrescripcionCl.profile.history.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.history.html#156a5572-bac8-41bb-806c-9c108ba939bb">StructureDefinition-RecetaPrescripcionCl.profile.history.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.json.html#64e8be9c-b06d-4089-8421-9ba1361ba887">StructureDefinition-RecetaPrescripcionCl.profile.json.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.json.html#41463e1d-76f7-4916-a487-da421850bcf9">StructureDefinition-RecetaPrescripcionCl.profile.json.html#/html/body/div/div/div/a/img at Line 70, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.ttl.html#0ed915e5-4bf1-446a-8b02-b4238a79a1ee">StructureDefinition-RecetaPrescripcionCl.profile.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.ttl.html#fd6f0723-5e66-4ec9-ad6e-c9ef9af652bf">StructureDefinition-RecetaPrescripcionCl.profile.ttl.html#/html/body/div/div/div/a/img at Line 70, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.xml.html#c47d24ad-f374-4bf2-9f38-2cb0ff408f8a">StructureDefinition-RecetaPrescripcionCl.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\StructureDefinition-RecetaPrescripcionCl.profile.xml.html#531d9d0c-14b9-4db2-bc06-5f4c3106090e">StructureDefinition-RecetaPrescripcionCl.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.change.history.html#710ee04a-d591-4cc3-bc3a-36c20b3a5ca1">ValueSet-CodNacComunas.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.change.history.html#ba0ff570-3210-4170-b550-af7b97036cd0">ValueSet-CodNacComunas.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.html#2aa64ad1-2f68-4c8d-a5c6-aee7fc1cc96f">ValueSet-CodNacComunas.html#/html/body/div/div/div/a/img at Line 56, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.html#21bc2a0c-c913-4c3c-9e4f-b14a3c8a54ef">ValueSet-CodNacComunas.html#/html/body/div/div/div/a/img at Line 62, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.json.html#ba5b1a60-c03e-483d-9c4f-e94525bb5813">ValueSet-CodNacComunas.json.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.json.html#3a531278-2199-4026-bcd0-b9a5bd8fc811">ValueSet-CodNacComunas.json.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.ttl.html#e15256e3-f10a-46eb-b1fc-c239ebbe97be">ValueSet-CodNacComunas.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.ttl.html#62f28ab2-8251-4e2a-8f05-30ba51cabe2c">ValueSet-CodNacComunas.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.xml.html#2de68f0e-9884-4b8f-9172-331b022f20b7">ValueSet-CodNacComunas.xml.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodNacComunas.xml.html#945d658a-00c9-4797-82be-846a91406c64">ValueSet-CodNacComunas.xml.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodProv.change.history.html#156fe1c6-b2e6-4346-b1c3-17b64240d7f2">ValueSet-CodProv.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodProv.change.history.html#3c0b7ad2-c01c-4b45-b322-1ecbf21b5d2c">ValueSet-CodProv.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodProv.html#81b5ec36-e689-4d12-a5f8-d6bb8e6b82b6">ValueSet-CodProv.html#/html/body/div/div/div/a/img at Line 56, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodProv.html#e2bf4aeb-5c20-4706-9532-318cf1097ef7">ValueSet-CodProv.html#/html/body/div/div/div/a/img at Line 62, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodProv.json.html#bcb3fad4-edbd-44d2-8873-873d1dff583b">ValueSet-CodProv.json.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodProv.json.html#5d3cf882-f999-4202-b692-33fde9a85d0e">ValueSet-CodProv.json.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodProv.ttl.html#ac3f6063-a5a8-420d-a52d-4f89f8c256f9">ValueSet-CodProv.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodProv.ttl.html#0c23ca40-c0bc-4ead-84f1-877ec9c3fe55">ValueSet-CodProv.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodProv.xml.html#120145ea-39b2-43f8-b21b-52432b87df1b">ValueSet-CodProv.xml.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodProv.xml.html#43f55e9b-d40a-45a3-8869-9ff16ae4743e">ValueSet-CodProv.xml.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodReg.change.history.html#82092873-a386-4fe7-b612-4b218883ce0b">ValueSet-CodReg.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodReg.change.history.html#26a3fd82-8519-49b9-a51e-6b86da80f991">ValueSet-CodReg.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodReg.html#8e21edbf-eb25-4f30-a632-b8e4bd26625c">ValueSet-CodReg.html#/html/body/div/div/div/a/img at Line 56, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodReg.html#68b67d5a-55f8-416c-9fea-2d5b64fc7c27">ValueSet-CodReg.html#/html/body/div/div/div/a/img at Line 62, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodReg.json.html#1b47f78c-e640-4aba-b4a1-31e7913e8262">ValueSet-CodReg.json.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodReg.json.html#3d314852-b4b8-4170-9f42-686d5df388c9">ValueSet-CodReg.json.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodReg.ttl.html#85f640e0-cdf4-48c8-b66a-db3c4d753754">ValueSet-CodReg.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodReg.ttl.html#b3c596bf-e75c-4e4d-a835-c5b12a6c0fd2">ValueSet-CodReg.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodReg.xml.html#9eb4e57c-ee76-4afa-bfb4-6ae592ae1cdb">ValueSet-CodReg.xml.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-CodReg.xml.html#683627e7-a358-4077-a0fd-b1c496c559dc">ValueSet-CodReg.xml.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.change.history.html#e60ea453-5c41-4aef-88d1-e35612991d94">ValueSet-DOCType-V2-0203.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.change.history.html#0ca69bda-3a8f-47f3-bcda-f74ff2d5579d">ValueSet-DOCType-V2-0203.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.html#164bc023-e0b0-49f1-92d4-3df28a95bc99">ValueSet-DOCType-V2-0203.html#/html/body/div/div/div/a/img at Line 56, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.html#0415b316-b84a-4e62-8c38-f52bd292dcf2">ValueSet-DOCType-V2-0203.html#/html/body/div/div/div/a/img at Line 62, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.json.html#fef2ebad-27c2-4cf8-a4e2-23e62a8d2fa5">ValueSet-DOCType-V2-0203.json.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.json.html#92574a81-664c-40b1-bd13-4abe4ff25c4b">ValueSet-DOCType-V2-0203.json.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.ttl.html#90421fc8-64ca-44f4-96e8-f72070b8177e">ValueSet-DOCType-V2-0203.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.ttl.html#3c2c9ca3-d375-4d01-b9d9-6263e76c05a0">ValueSet-DOCType-V2-0203.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.xml.html#779f18fb-88aa-4fa1-9189-8cd5a727a399">ValueSet-DOCType-V2-0203.xml.html#/html/body/div/div/div/a/img at Line 58, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\ValueSet-DOCType-V2-0203.xml.html#9da2381f-1cc6-499e-b008-49fd81d228e0">ValueSet-DOCType-V2-0203.xml.html#/html/body/div/div/div/a/img at Line 64, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\artifacts.html#3fd33d7f-729d-4f89-bfb3-2e84610dd2c7">artifacts.html#/html/body/div/div/div/a/img at Line 56, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\artifacts.html#6e69b670-cdbc-4434-8f67-b4c2a3d2378c">artifacts.html#/html/body/div/div/div/a/img at Line 62, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\casos.html#6cc95783-a1c8-4a90-82bc-969126acc757">casos.html#/html/body/div/div/div/a/img at Line 56, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\casos.html#c2758c68-4201-4550-a65c-f3e99c71351a">casos.html#/html/body/div/div/div/a/img at Line 62, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\index.html#33877f4a-38c3-4826-a967-e79d6136b4cc">index.html#/html/body/div/div/div/a/img at Line 56, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\index.html#eeea5c27-d817-4790-b4db-e3b1d0a77272">index.html#/html/body/div/div/div/a/img at Line 62, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\index2.html#ff6e1141-134e-4ac9-98ac-01093889c2f4">index2.html#/html/body/div/div/div/a/img at Line 56, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\index2.html#517e7bb6-8362-487f-a0c1-719da3612cb0">index2.html#/html/body/div/div/div/a/img at Line 62, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\objetivos.html#c07adcb3-afbe-4c97-82f2-c948d4538beb">objetivos.html#/html/body/div/div/div/a/img at Line 56, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\objetivos.html#4d9e216a-89c9-44a1-83e2-c9218bc6b04d">objetivos.html#/html/body/div/div/div/a/img at Line 62, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\operaciones.html#d0205ff1-9fe4-4b67-b783-54049c47fb2d">operaciones.html#/html/body/div/div/div/a/img at Line 56, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\operaciones.html#e83577c4-d594-4905-8f26-0ec891227306">operaciones.html#/html/body/div/div/div/a/img at Line 62, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="operaciones.html#2e969689-bc7c-4eb9-bd65-aee624375db8">operaciones.html#/html/body/div/div/div/div/div/ul/li/a at Line 542, column 111</a></b></td><td><b>error</b></td><td><b>The link 'resource-operations.html' for &quot;Resource Operations&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\toc.html#fd137eae-e11c-45c8-b778-83b8db05d53a">toc.html#/html/body/div/div/div/a/img at Line 56, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'minsal.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_IG_Receta\output\toc.html#d5d538ec-5d22-44e7-b727-6251fadf4f0a">toc.html#/html/body/div/div/div/a/img at Line 62, column 10</a></b></td><td><b>error</b></td><td><b>The image source 'hl7chile.png' cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__IG_Receta_fsh-generated_resources_ImplementationGuide-hl7.fhir.uv.RecetaCH"> </a>
+<h2><a href="ImplementationGuide-hl7.fhir.uv.RecetaCH.html">C:\IGs\_IG_Receta\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.RecetaCH.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__IG_Receta_fsh-generated_resources_MedicationDispense-DispensacionMedicamentoCL"> </a>
+<h2><a href="MedicationDispense-DispensacionMedicamentoCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationDispense: Validated against <i>this.</i><a href="StructureDefinition-DispensacionMedicamentoCl.html">Dispensación_CL</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.statusReason.ofType(CodeableConcept).coding[0] (l48/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://minsal.cl/razon-de-no-dispensacion' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationDispense.medication.ofType(Reference) (l57/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/medication/Med#22353'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationDispense.subject (l59/c77)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[0].function.coding[0] (l13/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationDispense.performer[0].actor (l20/c81)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/practitioner/Di#14785214'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[1].function.coding[0] (l27/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationDispense.performer[1].actor (l34/c79)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/practitioner/Di#245993'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationDispense.location (l64/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/location/145874'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationDispense.authorizingPrescription[0] (l66/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/medicationReference/Pres#1321'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.dosageInstruction[0].additionalInstruction[0].coding[0] (l87/c14)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>The display &quot;Advertencia. Puede provocar somnolencia. Si le afecta no conduzca ni maneje maquinaria. Evitar las bebidas alcohólicas (valor calificativo)&quot; is not a valid display for the code {http://snomed.info/sct}418639000 - should be one of [Warning. May cause drowsiness (qualifier value), Warning. May cause drowsiness] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#418639000'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.dosageInstruction[0].route.coding[0] (l107/c12)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>The display &quot;Ruta Oral&quot; is not a valid display for the code {http://snomed.info/sct}26643006 - should be one of [Oral route, Per os, Oral route (qualifier value), Oral use, Per oral route, PO - Per os, By mouth, A digestive tract route that begins in the mouth.] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#26643006'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.dosageInstruction[0].method.coding[0] (l116/c12)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>The display &quot;Tragarsela - imperativo contar con información de dosaje (qualifier value)&quot; is not a valid display for the code {http://snomed.info/sct}421521009 - should be one of [Swallow - dosing instruction imperative (qualifier value), Swallow, Swallow - dosing instruction imperative] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#421521009'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__IG_Receta_fsh-generated_resources_MedicationRequest-PrescripcionRecetaCL"> </a>
+<h2><a href="MedicationRequest-PrescripcionRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-PrescripcionRecetaCL.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationRequest: Validated against <i>this.</i><a href="StructureDefinition-RecetaPrescripcionCl.html">Prescripción_CL</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationRequest.extension[0].value.ofType(Reference) (l14/c76)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/medication/med#1257'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationRequest.statusReason.coding[0] (l28/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationRequest.medication.ofType(Reference) (l48/c80)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1345'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationRequest.subject (l52/c77)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationRequest.requester (l57/c82)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationRequest.dosageInstruction[0].route.coding[0] (l79/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__IG_Receta_fsh-generated_resources_MedicationRequest-medicationrequest-1"> </a>
+<h2><a href="MedicationRequest-medicationrequest-1.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-1.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationRequest: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationRequest.medication.ofType(Reference) (l27/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1028'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationRequest.subject (l29/c77)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationRequest.requester (l34/c81)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitoner/PRestador#923421'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationRequest.dosageInstruction[0].route.coding[0] (l55/c12)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>The display &quot;tragarlo, instrucciones de dosage imperativas (qualifier value)&quot; is not a valid display for the code {http://snomed.info/sct}421521009 - should be one of [Swallow - dosing instruction imperative (qualifier value), Swallow, Swallow - dosing instruction imperative] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#421521009'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__IG_Receta_fsh-generated_resources_MedicationRequest-medicationrequest-2"> </a>
+<h2><a href="MedicationRequest-medicationrequest-2.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-2.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationRequest: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationRequest.medication.ofType(Reference) (l27/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1028'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationRequest.subject (l29/c77)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationRequest.requester (l34/c82)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationRequest.dosageInstruction[0].route.coding[0] (l55/c12)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>The display &quot;tragarlo, instrucciones de dosage imperativas (qualifier value)&quot; is not a valid display for the code {http://snomed.info/sct}421521009 - should be one of [Swallow - dosing instruction imperative (qualifier value), Swallow, Swallow - dosing instruction imperative] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#421521009'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__IG_Receta_fsh-generated_resources_Organization-OrganizacionRecetaCL"> </a>
+<h2><a href="Organization-OrganizacionRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\Organization-OrganizacionRecetaCL.json</a></h2>
+ <ul style="font-size: 7px"><li>Organization: Validated against <i>this.</i><a href="StructureDefinition-RecetaOrganizacionCl.html">Organización_Receta_CL</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Organization.address[0].city (l32/c23)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('07401') is not in the value set http://minsal.cl/fhir/core/ValueSet/CodNacComunas (http://minsal.cl/fhir/core/ValueSet/CodNacComunas), and a code is required from this value set) (error message = The code system &quot;https://apis.digital.gob.cl/dpa/comunas/&quot; in the include in &quot;http://minsal.cl/fhir/core/ValueSet/CodNacComunas&quot; is not known; The code system &quot;https://apis.digital.gob.cl/dpa/comunas/&quot; is not known (encountered paired with code = &quot;07401&quot;); The code provided (https://apis.digital.gob.cl/dpa/comunas/#07401) is not valid in the value set 'CodComunas' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Organization.address[0].district (l33/c25)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('074') is not in the value set http://minsal.cl/fhir/core/ValueSet/CodProv (http://minsal.cl/fhir/core/ValueSet/CodProv), and a code is required from this value set) (error message = The code system &quot;https://apis.digital.gob.cl/dpa/provincias/&quot; in the include in &quot;http://minsal.cl/fhir/core/ValueSet/CodProv&quot; is not known; The code system &quot;https://apis.digital.gob.cl/dpa/provincias/&quot; is not known (encountered paired with code = &quot;074&quot;); The code provided (https://apis.digital.gob.cl/dpa/provincias/#074) is not valid in the value set 'CodProvincia' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Organization.address[0].state (l34/c21)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('07') is not in the value set http://minsal.cl/fhir/core/ValueSet/CodReg (http://minsal.cl/fhir/core/ValueSet/CodReg), and a code is required from this value set) (error message = The code system &quot;https://apis.digital.gob.cl/dpa/regiones/&quot; in the include in &quot;http://minsal.cl/fhir/core/ValueSet/CodReg&quot; is not known; The code system &quot;https://apis.digital.gob.cl/dpa/regiones/&quot; is not known (encountered paired with code = &quot;07&quot;); The code provided (https://apis.digital.gob.cl/dpa/regiones/#07) is not valid in the value set 'CodRegion' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Organization.address[0].country (l36/c6)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('152') is not in the value set http://minsal.cl/fhir/core/ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core/ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = The code system &quot;https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html&quot; in the include in &quot;http://minsal.cl/fhir/core/ValueSet/DOCType-V2-0203&quot; is not known; The code system &quot;https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html&quot; is not known (encountered paired with code = &quot;152&quot;); The code provided (https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html#152) is not valid in the value set 'ISO3166COD' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__IG_Receta_fsh-generated_resources_RequestGroup-EjemploRecetaCL"> </a>
+<h2><a href="RequestGroup-EjemploRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL.json</a></h2>
+ <ul style="font-size: 7px"><li>RequestGroup: Validated against <i>this.</i><a href="StructureDefinition-RecetaCl.html">Receta_CL</a></li><li>RequestGroup.contained[0]: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a></li><li>RequestGroup.contained[1]: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>RequestGroup (l1/c2)</b></td><td><b>error</b></td><td title="dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: medicationrequest-1,medicationrequest-2))"><b>dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: medicationrequest-1,medicationrequest-2))</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>RequestGroup.contained[0].ofType(MedicationRequest).medication.ofType(Reference) (l38/c8)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1028'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>RequestGroup.contained[0].ofType(MedicationRequest).subject (l40/c81)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>RequestGroup.contained[0].ofType(MedicationRequest).requester (l45/c85)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitoner/PRestador#923421'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>RequestGroup.contained[0].ofType(MedicationRequest).dosageInstruction[0].route.coding[0] (l66/c16)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>The display &quot;tragarlo, instrucciones de dosage imperativas (qualifier value)&quot; is not a valid display for the code {http://snomed.info/sct}421521009 - should be one of [Swallow - dosing instruction imperative (qualifier value), Swallow, Swallow - dosing instruction imperative] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#421521009'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>RequestGroup.contained[1].ofType(MedicationRequest).medication.ofType(Reference) (l126/c8)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1028'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>RequestGroup.contained[1].ofType(MedicationRequest).subject (l128/c81)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>RequestGroup.contained[1].ofType(MedicationRequest).requester (l133/c86)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>RequestGroup.contained[1].ofType(MedicationRequest).dosageInstruction[0].route.coding[0] (l154/c16)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>The display &quot;tragarlo, instrucciones de dosage imperativas (qualifier value)&quot; is not a valid display for the code {http://snomed.info/sct}421521009 - should be one of [Swallow - dosing instruction imperative (qualifier value), Swallow, Swallow - dosing instruction imperative] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#421521009'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>RequestGroup.subject (l194/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__IG_Receta_fsh-generated_resources_StructureDefinition-DispensacionMedicamentoCl"> </a>
+<h2><a href="StructureDefinition-DispensacionMedicamentoCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-DispensacionMedicamentoCl.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.snapshot.element[113].mapping[0].map</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[123].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[30].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__IG_Receta_fsh-generated_resources_StructureDefinition-Prod-Comercial"> </a>
+<h2><a href="StructureDefinition-Prod-Comercial.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-Prod-Comercial.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__IG_Receta_fsh-generated_resources_StructureDefinition-RecetaCl"> </a>
+<h2><a href="StructureDefinition-RecetaCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaCl.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[23].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[3].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__IG_Receta_fsh-generated_resources_StructureDefinition-RecetaOrganizacionCl"> </a>
+<h2><a href="StructureDefinition-RecetaOrganizacionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaOrganizacionCl.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__IG_Receta_fsh-generated_resources_StructureDefinition-RecetaPrescripcionCl"> </a>
+<h2><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[32].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[38].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[39].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[108].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[175].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[186].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[194].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[236].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[249].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[10].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[13].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[14].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[34].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[56].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[61].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[65].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[79].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[81].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__IG_Receta_fsh-generated_resources_ValueSet-CodNacComunas"> </a>
+<h2><a href="ValueSet-CodNacComunas.html">C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodNacComunas.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'CodNacComunas')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/comunas/</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__IG_Receta_fsh-generated_resources_ValueSet-CodProv"> </a>
+<h2><a href="ValueSet-CodProv.html">C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodProv.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'CodProv')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/provincias/</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__IG_Receta_fsh-generated_resources_ValueSet-CodReg"> </a>
+<h2><a href="ValueSet-CodReg.html">C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodReg.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'CodReg')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/regiones/</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__IG_Receta_fsh-generated_resources_ValueSet-DOCType-V2-0203"> </a>
+<h2><a href="ValueSet-DOCType-V2-0203.html">C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-DOCType-V2-0203.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'DOCType-V2-0203')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="RESOURCE_JURISDICTION_MISMATCH"> </a>
+<h2>RESOURCE_JURISDICTION_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-hl7.fhir.uv.RecetaCH.html">C:\IGs\_IG_Receta\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.RecetaCH.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-DispensacionMedicamentoCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-DispensacionMedicamentoCl.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-Prod-Comercial.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-Prod-Comercial.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-RecetaCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaCl.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-RecetaOrganizacionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaOrganizacionCl.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-CodNacComunas.html">C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodNacComunas.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-CodProv.html">C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodProv.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-CodReg.html">C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodReg.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-DOCType-V2-0203.html">C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-DOCType-V2-0203.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationDispense-DispensacionMedicamentoCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/medication/Med#22353'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationDispense-DispensacionMedicamentoCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationDispense-DispensacionMedicamentoCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/practitioner/Di#14785214'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationDispense-DispensacionMedicamentoCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/practitioner/Di#245993'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationDispense-DispensacionMedicamentoCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/location/145874'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationDispense-DispensacionMedicamentoCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/medicationReference/Pres#1321'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationRequest-PrescripcionRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-PrescripcionRecetaCL.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/medication/med#1257'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationRequest-PrescripcionRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-PrescripcionRecetaCL.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1345'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationRequest-PrescripcionRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-PrescripcionRecetaCL.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationRequest-PrescripcionRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-PrescripcionRecetaCL.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationRequest-medicationrequest-1.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-1.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1028'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationRequest-medicationrequest-1.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-1.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationRequest-medicationrequest-1.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-1.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitoner/PRestador#923421'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationRequest-medicationrequest-2.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-2.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1028'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationRequest-medicationrequest-2.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-2.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationRequest-medicationrequest-2.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-2.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="RequestGroup-EjemploRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1028'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="RequestGroup-EjemploRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="RequestGroup-EjemploRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitoner/PRestador#923421'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="RequestGroup-EjemploRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1028'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="RequestGroup-EjemploRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="RequestGroup-EjemploRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="RequestGroup-EjemploRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL.json</a></td><td><b>Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SECURITY_STRING_CONTENT_WARNING"> </a>
+<h2>SECURITY_STRING_CONTENT_WARNING</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-DispensacionMedicamentoCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-DispensacionMedicamentoCl.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TERMINOLOGY_TX_SYSTEM_NO_CODE"> </a>
+<h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-DispensacionMedicamentoCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-DispensacionMedicamentoCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationRequest-PrescripcionRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-PrescripcionRecetaCL.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationRequest-PrescripcionRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-PrescripcionRecetaCL.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_PassThrough_TX_Message"> </a>
+<h2>Terminology_PassThrough_TX_Message</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-DispensacionMedicamentoCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL.json</a></td><td><b>The display &quot;Advertencia. Puede provocar somnolencia. Si le afecta no conduzca ni maneje maquinaria. Evitar las bebidas alcohólicas (valor calificativo)&quot; is not a valid display for the code {http://snomed.info/sct}418639000 - should be one of [Warning. May cause drowsiness (qualifier value), Warning. May cause drowsiness] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#418639000'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-DispensacionMedicamentoCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL.json</a></td><td><b>The display &quot;Ruta Oral&quot; is not a valid display for the code {http://snomed.info/sct}26643006 - should be one of [Oral route, Per os, Oral route (qualifier value), Oral use, Per oral route, PO - Per os, By mouth, A digestive tract route that begins in the mouth.] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#26643006'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-DispensacionMedicamentoCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL.json</a></td><td><b>The display &quot;Tragarsela - imperativo contar con información de dosaje (qualifier value)&quot; is not a valid display for the code {http://snomed.info/sct}421521009 - should be one of [Swallow - dosing instruction imperative (qualifier value), Swallow, Swallow - dosing instruction imperative] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#421521009'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationRequest-medicationrequest-1.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-1.json</a></td><td><b>The display &quot;tragarlo, instrucciones de dosage imperativas (qualifier value)&quot; is not a valid display for the code {http://snomed.info/sct}421521009 - should be one of [Swallow - dosing instruction imperative (qualifier value), Swallow, Swallow - dosing instruction imperative] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#421521009'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationRequest-medicationrequest-2.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-2.json</a></td><td><b>The display &quot;tragarlo, instrucciones de dosage imperativas (qualifier value)&quot; is not a valid display for the code {http://snomed.info/sct}421521009 - should be one of [Swallow - dosing instruction imperative (qualifier value), Swallow, Swallow - dosing instruction imperative] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#421521009'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="RequestGroup-EjemploRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL.json</a></td><td><b>The display &quot;tragarlo, instrucciones de dosage imperativas (qualifier value)&quot; is not a valid display for the code {http://snomed.info/sct}421521009 - should be one of [Swallow - dosing instruction imperative (qualifier value), Swallow, Swallow - dosing instruction imperative] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#421521009'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="RequestGroup-EjemploRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL.json</a></td><td><b>The display &quot;tragarlo, instrucciones de dosage imperativas (qualifier value)&quot; is not a valid display for the code {http://snomed.info/sct}421521009 - should be one of [Swallow - dosing instruction imperative (qualifier value), Swallow, Swallow - dosing instruction imperative] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#421521009'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_16"> </a>
+<h2>Terminology_TX_NoValid_16</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Organization-OrganizacionRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\Organization-OrganizacionRecetaCL.json</a></td><td><b>The value provided ('07401') is not in the value set http://minsal.cl/fhir/core/ValueSet/CodNacComunas (http://minsal.cl/fhir/core/ValueSet/CodNacComunas), and a code is required from this value set) (error message = The code system &quot;https://apis.digital.gob.cl/dpa/comunas/&quot; in the include in &quot;http://minsal.cl/fhir/core/ValueSet/CodNacComunas&quot; is not known; The code system &quot;https://apis.digital.gob.cl/dpa/comunas/&quot; is not known (encountered paired with code = &quot;07401&quot;); The code provided (https://apis.digital.gob.cl/dpa/comunas/#07401) is not valid in the value set 'CodComunas' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Organization-OrganizacionRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\Organization-OrganizacionRecetaCL.json</a></td><td><b>The value provided ('074') is not in the value set http://minsal.cl/fhir/core/ValueSet/CodProv (http://minsal.cl/fhir/core/ValueSet/CodProv), and a code is required from this value set) (error message = The code system &quot;https://apis.digital.gob.cl/dpa/provincias/&quot; in the include in &quot;http://minsal.cl/fhir/core/ValueSet/CodProv&quot; is not known; The code system &quot;https://apis.digital.gob.cl/dpa/provincias/&quot; is not known (encountered paired with code = &quot;074&quot;); The code provided (https://apis.digital.gob.cl/dpa/provincias/#074) is not valid in the value set 'CodProvincia' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Organization-OrganizacionRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\Organization-OrganizacionRecetaCL.json</a></td><td><b>The value provided ('07') is not in the value set http://minsal.cl/fhir/core/ValueSet/CodReg (http://minsal.cl/fhir/core/ValueSet/CodReg), and a code is required from this value set) (error message = The code system &quot;https://apis.digital.gob.cl/dpa/regiones/&quot; in the include in &quot;http://minsal.cl/fhir/core/ValueSet/CodReg&quot; is not known; The code system &quot;https://apis.digital.gob.cl/dpa/regiones/&quot; is not known (encountered paired with code = &quot;07&quot;); The code provided (https://apis.digital.gob.cl/dpa/regiones/#07) is not valid in the value set 'CodRegion' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Organization-OrganizacionRecetaCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\Organization-OrganizacionRecetaCL.json</a></td><td><b>The value provided ('152') is not in the value set http://minsal.cl/fhir/core/ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core/ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = The code system &quot;https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html&quot; in the include in &quot;http://minsal.cl/fhir/core/ValueSet/DOCType-V2-0203&quot; is not known; The code system &quot;https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html&quot; is not known (encountered paired with code = &quot;152&quot;); The code provided (https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html#152) is not valid in the value set 'ISO3166COD' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-DispensacionMedicamentoCL.html">C:\IGs\_IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL.json</a></td><td><b>Code System URI 'http://minsal.cl/razon-de-no-dispensacion' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_String_WS"> </a>
+<h2>Type_Specific_Checks_DT_String_WS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-DispensacionMedicamentoCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-DispensacionMedicamentoCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-DispensacionMedicamentoCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-DispensacionMedicamentoCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaPrescripcionCl.html">C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+</body>
+</html>

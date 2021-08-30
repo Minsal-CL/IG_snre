@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>HL7.FHIR.UV.RECETACH\Home - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/fhir.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations 
+<div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="http://hl7.org">
+        <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png" />
+    </a>
+</div> -->
+<div id="hl7-nav-left">
+    <a no-external="true" id="header-logo-left" href="http://minsal.cl"><a name="33877f4a-38c3-4826-a967-e79d6136b4cc">​</a>
+        <img src="minsal.png" alt="Visitar sitio web del Ministerio de Salud de Chile" height="80"/>
+    </a>
+</div>
+
+<div id="hl7-nav-right">
+    <a no-external="true" id="header-logo-righ" href="http://hl7chile.cl"><a name="eeea5c27-d817-4790-b4db-e3b1d0a77272">​</a>
+        <img src="hl7chile.png" alt="Visitar HL7 Chile" height="80"/>
+    </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación Receta-CL</span><br/>0.7 (Proceso de Ballot Pendiente) - ci-build</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Inicio</a>
+  </li>
+  <li>
+    <a href="objetivos.html">Objetivos</a>
+  </li>
+  <li>
+    <a href="casos.html">Actores y Casos de Uso</a>
+  </li>
+  <li>
+    <a href="operaciones.html">Operaciones y Terminologías</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Resumen de Artefactos
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artefactos</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Perfiles
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="StructureDefinition-RecetaPrescripcionCl.html">Prescripción</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-DispensacionMedicamentoCl.html">Dispensación</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-RecetaCl.html">Receta</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-RecetaOrganizacionCl.html">Organización Receta</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Ejemplos
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="StructureDefinition-RecetaPrescripcionCl-examples.html">Ejemplo Prescripción</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-DispensacionMedicamentoCl-examples.html">Ejemplo Dispensación</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-RecetaCl-examples.html">Ejemplo de Receta</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-RecetaOrganizacionCl-examples.html">Ejemplo Organización</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación Receta-CL - Local Development build (v0.7 (Proceso de Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#trasfondo" id="markdown-toc-trasfondo">Trasfondo</a></li>
+  <li><a href="#colaboraciones-en-el-proyecto" id="markdown-toc-colaboraciones-en-el-proyecto">Colaboraciones en el Proyecto</a></li>
+  <li><a href="#audiencia-de-esta-guía" id="markdown-toc-audiencia-de-esta-guía">Audiencia de esta Guía</a></li>
+  <li><a href="#aspectos-generales-de-esta-guía" id="markdown-toc-aspectos-generales-de-esta-guía">Aspectos Generales de esta Guía</a></li>
+  <li><a href="#contenido-de-la-guía" id="markdown-toc-contenido-de-la-guía">Contenido de la Guía</a></li>
+  <li><a href="#recursos-a-disposición" id="markdown-toc-recursos-a-disposición">Recursos a Disposición</a></li>
+</ul>
+
+</div>
+<h3 id="trasfondo">Trasfondo</h3>
+<p><br/></p>
+
+<p>Este documenta presenta los servicios que deberán estar contenidos en los desarrollos que permitan la interoperabilidad de los distintos sistemas de <strong>Prescripción</strong> y <strong>Dispensación</strong> con el <strong>Sistema Nacional de Receta Electrónica</strong>. Así mismo, describe cómo se usan los recursos FHIR para cada uno de los componentes del desarrollo. Esta guía propone todos los artefactos y perfiles necesarios para conseguir los objetivos de interoperabilidad en base al estándar HL7 FHIR R4.
+<br/>
+<br/></p>
+
+<h3 id="colaboraciones-en-el-proyecto">Colaboraciones en el Proyecto</h3>
+<p><br/></p>
+
+<p>Este es un proyecto impulsado por <strong>MINSAL</strong> con la colaboración de <strong>HL7 Chile</strong>.
+<br/>
+<br/></p>
+
+<h3 id="audiencia-de-esta-guía">Audiencia de esta Guía</h3>
+<p><br/></p>
+
+<p>Esta Guía de Implementación está dirigida a los desarrolladores de las soluciones informáticas asociadas al funcionamiento del <strong>Sistema Nacional de Receta Electrónica</strong> mediante interoperabilidad, así como a los profesionales que deseen comprender los procesos o funcionalidades involucrados.
+<br/>
+<br/></p>
+
+<h3 id="aspectos-generales-de-esta-guía">Aspectos Generales de esta Guía</h3>
+<p><br/></p>
+
+<p>A continuación, se describe el funcionamiento general del proceso de la receta, con las funcionalidades que deberán estar contenidas en el desarrollo solicitado. Se detalla el modelo, componentes, servicios y aplicaciones que permiten abarcar los diferentes escenarios que se presenten, de modo que esta solución tenga un alcance nacional, tanto público como privado.
+<br/>
+<br/></p>
+
+<h4 id="flujo-general-de-funcionamiento">Flujo General de Funcionamiento</h4>
+<p><br/></p>
+
+<p>El proceso del sistema se describe en la siguiente imagen: 
+<br/>
+<br/></p>
+
+<div align="center">
+  <img src="Proceso_Receta.png"/> 
+  <p>Esquema General del Proceso de Receta Electrónica</p>
+</div>
+
+<p><br/></p>
+
+<p>El proyecto abarca desde la prescripción médica hasta el momento de la dispensación en una farmacia. La prescripción y la dispensación pueden generarse en diferentes ámbitos.</p>
+
+<p><em>Ejemplos:</em> Atención clínica en un establecimiento público y dispensación en farmacia comunitaria, atención clínica en un establecimiento privado y dispensación en farmacia privada.</p>
+
+<p>El funcionamiento genérico con sus funciones sería el siguiente:</p>
+
+<p><em>Emisión de Receta y Registro en Repositorio:</em> El prescriptor visualiza los datos administrativos de la receta, como los de identificación de paciente, prestador e institución (traídos automáticamente por el sistema). El ministerio de salud dispondrá de una serie de recursos para la validación de los datos mencionados.
+El clínico ingresa los datos de prescripción, como el fármaco recetado, potencia, dosis. Una vez generado el documento clínico, ser enviado al repositorio centralizado de receta.</p>
+
+<p><em>Dispensación de Receta Electrónica:</em> Cada paciente, desde su aplicación móvil y/o correo electrónico, podrá disponer de las recetas extendidas a su nombre o de algún tercero bajo autorización. El ministerio de salud dispondrá de un servicio que permitirá leer, mediante código de barra, el folio de la receta, de modo de poder obtener la información de la receta o el documento mismo desde el repositorio central. La farmacia deberá registrar el o los medicamentos dispensados, tanto el producto comercial como información relativa a la cantidad y números disponibles de dispensación. El detalle será tratado más adelante.
+<br/>
+<br/></p>
+
+<h4 id="procesos">Procesos</h4>
+<p><br/></p>
+
+<p>El proyecto se separa en básicamente 4 procesos que son los que se enumeran continuación:
+<br/></p>
+
+<h5 id="proceso-de-prescripción">Proceso de prescripción</h5>
+<p>Este proceso se desarrolla en el momento en que un prescriptor desarrolla una receta. Dentro de
+los pasos fundamentales de este caso se encuentran:</p>
+
+<ul>
+  <li>Validación de Prescriptor y Paciente</li>
+  <li>Validación Terminológica de los fármacos a recetar</li>
+  <li>Registro de prescripción en repositorio de receta
+<br/></li>
+</ul>
+
+<h5 id="proceso-de-dispensación">Proceso de dispensación</h5>
+<p>Este proceso se desarrolla en el momento en que el dispensador recibe una solicitud de dispensación de un fármaco por medio de una Receta Electrónica. Los pasos fundamentales son los siguientes:</p>
+<ul>
+  <li>Lectura del folio</li>
+  <li>Validación del dispensador</li>
+  <li>Consulta al repositorio por Receta</li>
+  <li>Revisión de estado de la Receta</li>
+  <li>Notificación de dispensación al repositorio
+<br/></li>
+</ul>
+
+<h4 id="proceso-de-cambio-de-estado">Proceso de cambio de estado</h4>
+<p>Este proceso describe los cambios de estado que sufre una receta durante el ciclo de prescripción y dispensación de esta. Estos cambios de estado pueden deberse a múltiples razones, las cuales se especifican en los Subset de valores correspondientes a los recursos estimados para el proyecto. Los pasos fundamentales son los siguientes:</p>
+<ul>
+  <li>Validación de usuario</li>
+  <li>Consulta y recepción de Receta</li>
+  <li>Cambio de estado</li>
+  <li>Actualización de estado en repositorio
+<br/>
+<br/></li>
+</ul>
+
+<h3 id="contenido-de-la-guía">Contenido de la Guía</h3>
+<p><br/></p>
+
+<p>Esta Guía se estructura en base al manú de la parte superior de la siguiente manera:
+<br/></p>
+
+<ul>
+  <li><a href="index.html">Inicio</a>: Página de Bienvenida a la Guía</li>
+  <li><a href="objetivos.html">Objetivos</a>: Información General sobre los objetivos de esta Guía</li>
+  <li><a href="casos.html">Actores y Casos de Uso</a>: Información detallada de los casos de uso, sus actores, y la secuencia de transacciones</li>
+  <li><a href="operaciones.html">Operaciones y Terminologías</a>: Infirmación General de las operaciones básicas que se ejecutan al momento de hacer generar manejo de datos entre un servicio FHIR y los clientes</li>
+  <li><a href="artifacts.html">Resumen de Artefactos</a>: Describe todos los artefactos que son parte de esta GI, separados en Esteuctura de Perfiles, Extensiones, Value Sets y Ejemplos. Dado que esta Guía Hereda su base Canónica desde el Core-CL, algunos de los artefactos descritos son parte de esa Guía</li>
+  <li>Perfiles: Este menú despliega el listado de los 4 perfiles generados paraesta GI
+    <ul>
+      <li><a href="StructureDefinition-RecetaPrescripcionCl.html">Prescripción</a>: Perfil del Recurso para la prescripción de un fármaco</li>
+      <li><a href="StructureDefinition-DispensacionMedicamentoCl.html">Dispensación</a>: Perfil de Recurso para la dispensación de farmacos desde puntos de despacho</li>
+      <li><a href="StructureDefinition-RecetaCl.html">Receta</a>: Perfil de recurso que permite agrupar diferentes prescriciones en formato de una única receta</li>
+      <li><a href="StructureDefinition-RecetaOrganizacionCl.html">Orgaización Para Receta</a>: Recurso que define una organización para este proyecto desde el recuso definido en el CORE-CL</li>
+    </ul>
+  </li>
+  <li>Ejemplos: Listo de ejemplos desarrollados para cada Perfil generado para esta GI
+<br/>
+<br/></li>
+</ul>
+
+<h3 id="recursos-a-disposición">Recursos a Disposición</h3>
+<p><br/></p>
+
+<p>[Ministerio de Salud de Chile] (http://www.minsal.cl)</p>
+
+<p><a href="http://hl7chile.cl">Capítulo Chileno de HL7, HL7 Chile</a></p>
+
+<p>HL7 Internacional (http://hl7.org)</p>
+
+<p><a href="http://hl7.org/fhir/">FHIR R4</a></p>
+
+<p><a href="https://build.fhir.org/ig/HL7/fhir-shorthand">FHIR Shorthand Documentation</a></p>
+
+<p><a href="https://github.com/HL7/fhir-shorthand">FHIR Shorthand documentation code repository</a></p>
+
+<p><a href="https://github.com/FHIR/sushi">SUSHI code repository</a></p>
+
+<p><a href="https://chat.fhir.org">Zulip</a> channel: #shorthand</p>
+
+
+
+
+</div>
+</div>
+  <!-- /inner-wrapper -->
+</div>
+  <!-- /row -->
+</div>
+  <!-- /container -->
+</div>
+  <!-- /segment-content -->
+
+<script src="assets/js/jquery.js" type="text/javascript">
+</script>
+  <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="assets/js/jquery-ui.min.js" type="text/javascript">
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        if (window.location.hash != "") {
+            $('a[href="' + window.location.hash + '"]').click()
+        }
+    });
+</script>
+<a name="bottom"> </a>
+<div igtool="footer" id="segment-footer" class="segment">
+      <!-- segment-footer -->
+    <div class="container">
+          <!-- container -->
+        
+        <div class="inner-wrapper">
+            <p>
+                IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.uv.RecetaCH#0.7 (Proceso de Ballot Pendiente)
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Mon, Aug 30, 2021 12:27-0400">30-08-2021</span>
+                <br/>
+                <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 
+                
+            </p>
+        </div>
+          <!-- /inner-wrapper -->
+    </div>
+      <!-- /container -->
+</div>
+  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">
+      <!-- segment-post-footer -->
+    <div class="container">
+          <!-- container -->
+    </div>
+      <!-- /container -->
+</div>
+  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/bootstrap.min.js" type="text/javascript">
+</script>
+<script src="assets/js/respond.min.js" type="text/javascript">
+</script>
+<script src="assets/js/anchor.min.js" type="text/javascript">
+</script>
+<script>
+    anchors.options.visible = 'hover'
+    anchors.add()
+</script>
+
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+  <!-- Analytics Below
+  ================================================== -->
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://minsal.cl/fhir/core/ValueSet/DOCType-V2-0203> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "DOCType-V2-0203"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html</code></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://minsal.cl/fhir/core/ValueSet/DOCType-V2-0203"];
+  fhir:ValueSet.version [ fhir:value "0.7 (Proceso de Ballot Pendiente)"];
+  fhir:ValueSet.name [ fhir:value "ISO3166COD"];
+  fhir:ValueSet.title [ fhir:value "Códigos de Países Segun Norma ISO-3166 N"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-08-30T12:27:57-04:00"^^xsd:dateTime];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:ppizarro.delgado@minsal.cl" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Codigos para especificar tipos de identificadores usando lo definido en Hl7 V2.x"];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "152" ]
+     ]
+  ];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://minsal.cl/fhir/core/ValueSet/DOCType-V2-0203.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
