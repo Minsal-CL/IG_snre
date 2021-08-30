@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CodProvincia",
+  "id": "CodProv",
+  "title": "Códigos de Provincias en Chile",
+  "description": "Codigos definidos para identificar una provincia en Chile",
+  "version": "0.7 (Proceso de Ballot Pendiente)",
+  "url": "http://minsal.cl/fhir/core/ValueSet/CodProv",
+  "compose": {
+    "include": [
+      {
+        "system": "https://apis.digital.gob.cl/dpa/provincias/"
+      }
+    ]
+  }
+}

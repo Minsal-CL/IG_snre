@@ -4,9 +4,10 @@
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.uv.RecetaCH
-canonical: http://minsal.cl/fhir/core/
-version: 0.65 (Proceso de Ballot Pendiente)
+canonical: http://minsal.cl/fhir/core
+version: 0.7 (Proceso de Ballot Pendiente)
 name: RecetaCL
+
 
 title: Guía de Implementación Receta-CL
 status: draft
@@ -16,10 +17,13 @@ contact:
   - name: Pablo Pizzaro
     telecom:
       - system: email
-        value: ppizarro.delgado@minsal.cl
+        value: mailto:ppizarro.delgado@minsal.cl
+
 description: Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional
+jurisdiction: "http://unstats.un.org/unsd/methods/m49/m49.htm#152"
 license: CC0-1.0
 fhirVersion: 4.0.1
+
 parameters:
   apply-publisher: true
   apply-contact: true

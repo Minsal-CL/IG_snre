@@ -191,6 +191,7 @@ InstanceOf : RecetaPrescripcionCl
 
 * intent = #order
 
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
 * category.coding.code = #inpatient
 //* category.coding.display = "Inpatient"
 
@@ -199,9 +200,9 @@ InstanceOf : RecetaPrescripcionCl
 * medicationReference.reference = "https://api-receta.minsal.cl/v2/Medication/Medicamento#1345"
 * medicationReference.display = "Oxycodone"
 
-* extension.url = "PComercial"
-* extension.valueReference.reference = "https://api-receta.minsal.cl/v2/medication/med#1257"
-* extension.valueReference.display = "Oxycontin MR"
+//* extension.url = "PComercial"
+* extension[Prod_Comercial].valueReference.reference = "https://api-receta.minsal.cl/v2/medication/med#1257"
+* extension[Prod_Comercial].valueReference.display = "Oxycontin MR"
 
 * subject.reference = "https://api-receta.minsal.cl/v2/Patient/Paciente#2411224"
 * subject.display = "Patricio Perez"
@@ -232,7 +233,9 @@ InstanceOf : RecetaPrescripcionCl
 * dispenseRequest.validityPeriod.start = "2021-06-12"
 * dispenseRequest.validityPeriod.start = "2022-01-12"
 * dispenseRequest.quantity.value = 30
+
+* dispenseRequest.expectedSupplyDuration.system = "http://unitsofmeasure.org"
 * dispenseRequest.expectedSupplyDuration.value = 10
-* dispenseRequest.expectedSupplyDuration.unit = "días"
+* dispenseRequest.expectedSupplyDuration.unit = "Day"
 * dispenseRequest.expectedSupplyDuration.code = #d
 

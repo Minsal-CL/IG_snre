@@ -4,5 +4,6 @@ Description: "Recomendación de MEdicamento en Producto Comercial"
 
  
 * extension 0..0
-* valueReference = Reference(medication)
+* value[x] only Reference
+//* valueReference = Reference(medication)
 * valueReference ^short = "Referencia a un recurso medicamento en ´http://api-receta.minsal.cl/v2/medication´"

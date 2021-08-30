@@ -1,0 +1,209 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.uv.RecetaCH",
+  "url": "http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.uv.RecetaCH",
+  "version": "0.7 (Proceso de Ballot Pendiente)",
+  "name": "RecetaCL",
+  "title": "Guía de Implementación Receta-CL",
+  "status": "draft",
+  "date": "2021-07",
+  "contact": [
+    {
+      "name": "Pablo Pizzaro",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:ppizarro.delgado@minsal.cl"
+        }
+      ]
+    }
+  ],
+  "description": "Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "152",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm"
+        }
+      ]
+    }
+  ],
+  "packageId": "hl7.fhir.uv.RecetaCH",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/DispensacionMedicamentoCl"
+        },
+        "name": "Dispensación_CL",
+        "description": "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica desde la visión de la TFC que se usará para poder manejar farmacos ya registrados, y que deberán ser consultados por los prestadores a la hora de prescribir alguno.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/RecetaCl"
+        },
+        "name": "Receta_CL",
+        "description": "Este Perfil usa este recurso como un contenedor de Prescripciones para poder ser usadas como formato de Receta electrónica con los farmacos indicados por el clínico durante un acto médico.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/RecetaOrganizacionCl"
+        },
+        "name": "Organización_Receta_CL",
+        "description": "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Organzación para cubrir las necesidades de una Organización Prestadora de salud o Dispensadora",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/RecetaPrescripcionCl"
+        },
+        "name": "Prescripción_CL",
+        "description": "ESte Perfil describe la información contenida en la prescripción de un medicamento para la Receta Electrónica Nacional del MINSAL",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Prod-Comercial"
+        },
+        "name": "Prod_Comercial",
+        "description": "Recomendación de MEdicamento en Producto Comercial",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CodNacComunas"
+        },
+        "name": "Códigos de Comunas en Chile",
+        "description": "Codigos definidos para identificar una comuna en Chile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CodProv"
+        },
+        "name": "Códigos de Provincias en Chile",
+        "description": "Codigos definidos para identificar una provincia en Chile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CodReg"
+        },
+        "name": "Códigos de Regiones en Chile",
+        "description": "Codigos definidos para identificar una comuna en Chile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DOCType-V2-0203"
+        },
+        "name": "Códigos de Países Segun Norma ISO-3166 N",
+        "description": "Codigos para especificar tipos de identificadores usando lo definido en Hl7 V2.x",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "MedicationDispense/DispensacionMedicamentoCL"
+        },
+        "name": "Ejemplo de la dispensacion del Medicamento Oxycodone Via Oral",
+        "exampleCanonical": "http://minsal.cl/fhir/core/StructureDefinition/DispensacionMedicamentoCl"
+      },
+      {
+        "reference": {
+          "reference": "RequestGroup/EjemploRecetaCL"
+        },
+        "name": "Ejemplo de Recurso de una receta completa",
+        "exampleCanonical": "http://minsal.cl/fhir/core/StructureDefinition/RecetaCl"
+      },
+      {
+        "reference": {
+          "reference": "Organization/OrganizacionRecetaCL"
+        },
+        "name": "Ejemplo de Recurso de organización prestadora de salud",
+        "exampleCanonical": "http://minsal.cl/fhir/core/StructureDefinition/RecetaOrganizacionCl"
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/PrescripcionRecetaCL"
+        },
+        "name": "Ejemplo Prescripción de Medicamento Oxycodone Via Oral, para una solicitud segun necesidad con pre-condiciones",
+        "exampleCanonical": "http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl"
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/medicationrequest-1"
+        },
+        "name": "medicationrequest-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/medicationrequest-2"
+        },
+        "name": "medicationrequest-2",
+        "exampleBoolean": true
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "casos.html",
+          "title": "Casos",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "index2.html",
+          "title": "Index 2",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "objetivos.html",
+          "title": "Objetivos",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "operaciones.html",
+          "title": "Operaciones",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "apply-publisher",
+        "value": "true"
+      },
+      {
+        "code": "apply-contact",
+        "value": "true"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      }
+    ]
+  }
+}
