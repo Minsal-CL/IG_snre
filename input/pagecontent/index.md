@@ -40,7 +40,7 @@ El proceso del sistema se describe en la siguiente imagen:
 
 
 <div align="center">
-  <img src="Proceso_Receta.png"> 
+  <img src="Proceso_Receta.png" width="800"> 
   <p>Esquema General del Proceso de Receta Electrónica</p>
 </div>
 
