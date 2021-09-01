@@ -10,10 +10,10 @@
   fhir:Resource.id [ fhir:value "hl7.fhir.uv.RecetaCH"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RecetaCL</h2><p>The official URL for this implementation guide is: </p><pre>http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.uv.RecetaCH</pre><div><p>Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RecetaCL</h2><p>The official URL for this implementation guide is: </p><pre>http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.uv.RecetaCH</pre><div><p>Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional. Esta Guía se encuentra aún en proceso de creación por lo que esta versión esta sujeta a observaciones y cambios. Aquellos implementadores que tengan acceso a ella se les sugiere desarrollar comentarios para su mejora)</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.uv.RecetaCH"];
-  fhir:ImplementationGuide.version [ fhir:value "0.7 (Proceso de Ballot Pendiente)"];
+  fhir:ImplementationGuide.version [ fhir:value "0.75 (Proceso de Ballot Pendiente)"];
   fhir:ImplementationGuide.name [ fhir:value "RecetaCL"];
   fhir:ImplementationGuide.title [ fhir:value "Guía de Implementación Receta-CL"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
@@ -27,13 +27,14 @@
        fhir:ContactPoint.value [ fhir:value "mailto:ppizarro.delgado@minsal.cl" ]
      ]
   ];
-  fhir:ImplementationGuide.description [ fhir:value "Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional"];
+  fhir:ImplementationGuide.description [ fhir:value "Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional. Esta Guía se encuentra aún en proceso de creación por lo que esta versión esta sujeta a observaciones y cambios. Aquellos implementadores que tengan acceso a ella se les sugiere desarrollar comentarios para su mejora)"];
   fhir:ImplementationGuide.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
-       fhir:Coding.code [ fhir:value "152" ]
+       fhir:Coding.code [ fhir:value "152" ];
+       fhir:Coding.display [ fhir:value "Chile (CHL)" ]
      ]
   ];
   fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.uv.RecetaCH"];
@@ -332,28 +333,14 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://minsal.cl/fhir/core/StructureDefinition/RecetaOrganizacionCl>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/RecetaOrganizacionCl" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organización_Receta_CL" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Organzación para cubrir las necesidades de una Organización Prestadora de salud o Dispensadora" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 3;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/RecetaPrescripcionCl" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Prescripción_CL" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ESte Perfil describe la información contenida en la prescripción de un medicamento para la Receta Electrónica Nacional del MINSAL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este Perfil describe la información contenida en la prescripción de un medicamento para la Receta Electrónica Nacional del MINSAL" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -364,66 +351,10 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Prod-Comercial" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Prod_Comercial" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Recomendación de MEdicamento en Producto Comercial" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Recomendación de Medicamento en Producto Comercial" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://minsal.cl/fhir/core/ValueSet/CodNacComunas>;
-         fhir:Reference.reference [ fhir:value "ValueSet/CodNacComunas" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Comunas en Chile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codigos definidos para identificar una comuna en Chile" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 6;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://minsal.cl/fhir/core/ValueSet/CodProv>;
-         fhir:Reference.reference [ fhir:value "ValueSet/CodProv" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Provincias en Chile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codigos definidos para identificar una provincia en Chile" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 7;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://minsal.cl/fhir/core/ValueSet/CodReg>;
-         fhir:Reference.reference [ fhir:value "ValueSet/CodReg" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Regiones en Chile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codigos definidos para identificar una comuna en Chile" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 8;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://minsal.cl/fhir/core/ValueSet/DOCType-V2-0203>;
-         fhir:Reference.reference [ fhir:value "ValueSet/DOCType-V2-0203" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Países Segun Norma ISO-3166 N" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codigos para especificar tipos de identificadores usando lo definido en Hl7 V2.x" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 9;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -439,7 +370,23 @@
          fhir:link <http://minsal.cl/fhir/core/StructureDefinition/DispensacionMedicamentoCl>
        ]
      ], [
-       fhir:index 10;
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationDispense" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://minsal.cl/fhir/core/MedicationDispense/DispensacionMedicamentoCL-2>;
+         fhir:Reference.reference [ fhir:value "MedicationDispense/DispensacionMedicamentoCL-2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de la dispensacion del Medicamento Kitadol 500mg" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://minsal.cl/fhir/core/StructureDefinition/DispensacionMedicamentoCl";
+         fhir:link <http://minsal.cl/fhir/core/StructureDefinition/DispensacionMedicamentoCl>
+       ]
+     ], [
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -455,23 +402,23 @@
          fhir:link <http://minsal.cl/fhir/core/StructureDefinition/RecetaCl>
        ]
      ], [
-       fhir:index 11;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Organization" ]
+         fhir:Extension.valueString [ fhir:value "RequestGroup" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://minsal.cl/fhir/core/Organization/OrganizacionRecetaCL>;
-         fhir:Reference.reference [ fhir:value "Organization/OrganizacionRecetaCL" ]
+         fhir:link <http://minsal.cl/fhir/core/RequestGroup/EjemploRecetaCL-2>;
+         fhir:Reference.reference [ fhir:value "RequestGroup/EjemploRecetaCL-2" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Recurso de organización prestadora de salud" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Recurso de una receta con solo un fármaco prescrito, Paracetamol 500mg" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://minsal.cl/fhir/core/StructureDefinition/RecetaOrganizacionCl";
-         fhir:link <http://minsal.cl/fhir/core/StructureDefinition/RecetaOrganizacionCl>
+         fhir:value "http://minsal.cl/fhir/core/StructureDefinition/RecetaCl";
+         fhir:link <http://minsal.cl/fhir/core/StructureDefinition/RecetaCl>
        ]
      ], [
-       fhir:index 12;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -487,31 +434,21 @@
          fhir:link <http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl>
        ]
      ], [
-       fhir:index 13;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://minsal.cl/fhir/core/MedicationRequest/medicationrequest-1>;
-         fhir:Reference.reference [ fhir:value "MedicationRequest/medicationrequest-1" ]
+         fhir:link <http://minsal.cl/fhir/core/MedicationRequest/PrescripcionRecetaCL-2>;
+         fhir:Reference.reference [ fhir:value "MedicationRequest/PrescripcionRecetaCL-2" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "medicationrequest-1" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 14;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://minsal.cl/fhir/core/MedicationRequest/medicationrequest-2>;
-         fhir:Reference.reference [ fhir:value "MedicationRequest/medicationrequest-2" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "medicationrequest-2" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Prescripción de Hidroclorotizida + Valsartán" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl";
+         fhir:link <http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl>
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
@@ -524,21 +461,16 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Alcances-Objetivos.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Alcances Objetivos" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "casos.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Casos" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 2;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index2.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Index 2" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-       ], [
          fhir:index 3;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "objetivos.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Objetivos" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-       ], [
-         fhir:index 4;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "operaciones.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Operaciones" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]

@@ -6,91 +6,98 @@
     <profile value="http://minsal.cl/fhir/core/StructureDefinition/RecetaCl"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>groupIdentifier</b>: id: 00001</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href="https://api-receta.minsal.cl/v2/Patient/Paciente#2411224">https://api-receta.minsal.cl/v2/Patient/Paciente#2411224</a></p><p><b>authoredOn</b>: Jun 12, 2021 1:31:00 PM</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>groupIdentifier</b>: id: 00001</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href="https://api-receta.minsal.cl/v2/Patient/Paciente#2411224">https://api-receta.minsal.cl/v2/Patient/Paciente#2411224</a></p><p><b>authoredOn</b>: 12-06-2021 13:31:00</p></div>
   </text>
   <contained>
     <MedicationRequest>
       <id value="medicationrequest-1"/>
+      <meta>
+        <profile value="http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl"/>
+      </meta>
       <identifier>
-        <system value="https://minsal.cl/portalReceta/prescripciones"/>
-        <value value="RNCheque-1234"/>
+        <type>
+          <coding>
+            <code value="Id_Local"/>
+            <display value="Identificaci&#xF3;n Local"/>
+          </coding>
+        </type>
+        <system value="https://sistema_de_dispensacion_local/prescripciones"/>
+        <value value="10101010"/>
+        <assigner>
+          <display value="CESFAM COQUIMBO"/>
+        </assigner>
       </identifier>
       <status value="active"/>
       <intent value="order"/>
       <category>
         <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
-          <code value="inpatient"/>
+          <code value="community"/>
         </coding>
       </category>
       <medicationReference>
-        <reference value="https://api-receta.minsal.cl/v2/Medication/Medicamento#1028"/>
+        <reference value="https://api-receta.minsal.cl/v2/Medication/1703591000167111"/>
+        <display value="Hidroclorotiazida 25 mg + Valsart&#xE1;n 160 mg comprimido"/>
       </medicationReference>
       <subject>
-        <reference value="https://api-receta.minsal.cl/v2/Patient/Paciente#2411224"/>
-        <display value="Patricio Perez"/>
+        <reference value="https://api-receta.minsal.cl/v2/Patient/3254156114"/>
+        <display value="FELIPE MAURICIO MANCINI RUIZ-TAGLE"/>
       </subject>
-      <authoredOn value="2021-06-12"/>
+      <authoredOn value="2021-08-15T17:31:00Z"/>
       <requester>
-        <reference value="https://api-receta.minsal.cl/v2/Practitoner/PRestador#923421"/>
-        <display value="Cecilia Ampuero"/>
+        <reference value="https://api-receta.minsal.cl/v2/Practitioner/3253825513"/>
+        <display value="JUAN JOS&#xC9; ORTEGA CALLEJAS"/>
       </requester>
       <groupIdentifier>
-        <value value="FARM2122-1206211145-11"/>
+        <value value="h1qouq88zjwvm6rlnwhq"/>
       </groupIdentifier>
-      <note>
-        <text value="Al paciente se le indic&#xF3; lo tome 2 veces al d&#xED;a"/>
-      </note>
       <dosageInstruction>
-        <text value="Una tableta cada 12 hrs por 5 d&#xED;as"/>
-        <patientInstruction value="Una tableta al desayuno y otro a la cena"/>
         <timing>
           <repeat>
             <frequency value="1"/>
-            <period value="12"/>
-            <periodUnit value="h"/>
+            <period value="1"/>
+            <periodUnit value="d"/>
           </repeat>
         </timing>
         <route>
           <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="421521009"/>
-            <display value="tragarlo, instrucciones de dosage imperativas (qualifier value)"/>
+            <code value="26643006"/>
+            <display value="V&#xED;a Oral"/>
           </coding>
         </route>
+        <method>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="738995006"/>
+            <display value="Tragar (m&#xE9;todo de administraci&#xF3;n)"/>
+          </coding>
+        </method>
         <doseAndRate>
-          <doseRange>
-            <low>
-              <value value="1"/>
-              <unit value="Tableta"/>
-            </low>
-          </doseRange>
+          <doseQuantity>
+            <value value="2"/>
+            <unit value="Comprimido"/>
+          </doseQuantity>
         </doseAndRate>
       </dosageInstruction>
       <dispenseRequest>
         <validityPeriod>
-          <start value="2022-01-12"/>
+          <start value="2021-08-15"/>
+          <end value="2022-08-15"/>
         </validityPeriod>
-        <quantity>
-          <value value="10"/>
-        </quantity>
-        <expectedSupplyDuration>
-          <value value="5"/>
-          <unit value="d&#xED;as"/>
-          <system value="http://unitsofmeasure.org"/>
-          <code value="d"/>
-        </expectedSupplyDuration>
       </dispenseRequest>
     </MedicationRequest>
   </contained>
   <contained>
     <MedicationRequest>
       <id value="medicationrequest-2"/>
+      <meta>
+        <profile value="http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl"/>
+      </meta>
       <identifier>
         <system value="https://minsal.cl/portalReceta/prescripciones"/>
         <value value="RNCheque-1234"/>
       </identifier>
-      <status value="active"/>
+      <status value="completed"/>
       <intent value="order"/>
       <category>
         <coding>
@@ -161,7 +168,7 @@
   <groupIdentifier>
     <value value="00001"/>
   </groupIdentifier>
-  <status value="completed"/>
+  <status value="active"/>
   <intent value="order"/>
   <subject>
     <reference value="https://api-receta.minsal.cl/v2/Patient/Paciente#2411224"/>

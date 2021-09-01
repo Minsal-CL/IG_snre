@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2"}
-    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations 
@@ -64,7 +64,7 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación Receta-CL</span><br/>0.7 (Proceso de Ballot Pendiente) - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación Receta-CL</span><br/>0.75 (Proceso de Ballot Pendiente) - ci-build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -91,7 +91,7 @@
     <a href="index.html">Inicio</a>
   </li>
   <li>
-    <a href="objetivos.html">Objetivos</a>
+    <a href="Alcances-Objetivos.html">Objetivos</a>
   </li>
   <li>
     <a href="casos.html">Actores y Casos de Uso</a>
@@ -123,9 +123,6 @@
       <li>
         <a href="StructureDefinition-RecetaCl.html">Receta</a>
       </li>
-      <li>
-        <a href="StructureDefinition-RecetaOrganizacionCl.html">Organización Receta</a>
-      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -141,9 +138,6 @@
       </li>
       <li>
         <a href="StructureDefinition-RecetaCl-examples.html">Ejemplo de Receta</a>
-      </li>
-      <li>
-        <a href="StructureDefinition-RecetaOrganizacionCl-examples.html">Ejemplo Organización</a>
       </li>
     </ul>
   </li>
@@ -179,7 +173,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación Receta-CL - Local Development build (v0.7 (Proceso de Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación Receta-CL - Local Development build (v0.75 (Proceso de Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Casos</h2>
   
 
@@ -224,15 +218,15 @@ Este caso de uso describe la generación de una Receta con una o múltiples Pres
   <li>
     <p><strong>Prescriptor Genera Prescripciones por Fármacos</strong></p>
   </li>
-  <li>El <em>pescriptor</em> genera cada una de las prescripciones de medicamentos individuales, generando el sistema informático estas Prescripciones en formato de recurso <strong>MedictionRequest</strong>. Cada uno de estos recursos generados deben contener un <em>IdentificationGroup</em> idéntico para cada uno de ellos. El medicamento en cuestión debe ser obtenido desde el repositorio mediante una vinculación.</li>
+  <li>El <em>Prescriptor</em> genera cada una de las prescripciones de medicamentos individuales, generando el sistema informático estas Prescripciones en formato de recurso <strong>MedictionRequest</strong>. Cada uno de estos recursos generados deben contener un <em>IdentificationGroup</em> idéntico para cada uno de ellos. El medicamento en cuestión debe ser obtenido desde el repositorio mediante una vinculación.</li>
   <li>
-    <p>Al cerrar el ciclo de creacion de Prescriciones el Sistema del Prestador debe generar la Receta en el formato de un recurso <strong>RequestGroup</strong>. Este recurso también debe replicar el valor del elemento <em>IdentificationGroup</em> de los <strong>MedicationRequest</strong> generados.
+    <p>Al cerrar el ciclo de creacion de Prescriciones el Sistema del Prestador debe generar la Receta en el formato de un recurso <strong>RequestGroup</strong>. Este recurso también debe replicar el valor del elemento <em>IdentificationGroup</em> de los <strong>MedicationRequest</strong> generados. El valor del elemento <em>status</em> del <strong>RequestGroup</strong> debe ser igual a <em>active</em>
 <br /></p>
   </li>
   <li>
     <p><strong>Prescriptor Envía a Repositorio Central la Receta</strong></p>
   </li>
-  <li>El sistema del Prestador genera una opeación <em>Put</em> del recurso <strong>RequestGroup</strong> al endPoint de MINSAL  para que la receta sea almacenada en el <em>Repositorio Cetral de Recetas</em>.</li>
+  <li>El sistema del Prestador genera una operación <em>Post</em> del recurso <strong>RequestGroup</strong> al endPoint de MINSAL  para que la receta sea almacenada en el <em>Repositorio Cetral de Recetas</em>.</li>
   <li>El Sistema de MINSAL responde al Sistema del Prestador con un <em>mensaje de estado de recepción</em> acusando recibo sin error o con errores
 <br />
 <br />
@@ -250,11 +244,9 @@ Este caso de uso describe la generación de una Receta con una o múltiples Pres
 <h3 id="caso-de-uso-2-dispensación">Caso de Uso 2: Dispensación</h3>
 <p><br /></p>
 
-<p>Este caso describe la secuencia de mensajes que se produce al momento en el cual se dispensa o se rechaza la dispensación de uno o más fármacos de la misma receta. El proceso tiene un punto de inicio cuando en el punto de dispensación se hace la solicitud de fármacos por medio del código de barras que contiene el valor del <em>IdentificationGroup</em> generado en tanto en el agrupador como en las prescripciones individuales al momento de crearse la receta.</p>
-
-<p><br /></p>
-
-<p>Este proceso además permite que el <strong>Dispensador</strong> genere cambios de estado en las prescripciones, indicando si esta se ha completado, la cantidad o si esta queda cerrada al ser retenida. Estos elementos se notifican a MINSAL devolviendo el recurso <strong>RequestGroup</strong> actualizado con las consideraciones antes mencionadas.
+<p>Este caso describe la secuencia de mensajes que se produce al momento en el cual se dispensa o se rechaza la dispensación de uno o más fármacos de la misma receta. El proceso tiene un punto de inicio cuando en el punto de dispensación se hace la solicitud de fármacos por medio del código de barras que contiene el valor del <em>IdentificationGroup</em> generado en tanto en el agrupador como en las prescripciones individuales al momento de crearse la receta. 
+<br />
+Este proceso además permite que el <strong>Dispensador</strong> genere cambios de estado en las prescripciones, indicando si esta se ha completado, la cantidad o si esta queda cerrada al ser retenida. Estos elementos se notifican a MINSAL devolviendo el recurso <strong>RequestGroup</strong> actualizado con las consideraciones antes mencionadas.
 <br />
 <br /></p>
 
@@ -280,7 +272,9 @@ Este caso de uso describe la generación de una Receta con una o múltiples Pres
   </li>
   <li>El sistema del punto de dispensación recorre el recurso agrupador obteniendo de éste cada una de las Prescripciones representadas en el formato de un recurso <strong>MedicationPrescription</strong>  contenidas en el agrupador Receta.</li>
   <li>El <strong>Dispensador</strong> hace entrega de los fármacos solicitados por el solicitante, hace registro de esto, de las modificaciones que se puedan producir entre lo que se dispensó v/s lo recetado y en los eventuales cambios de estado que existan en cada <em>Prescripción recetada</em>.</li>
-  <li>El sistema del punto de dispensación, actualiza la receta representada en el recurso <strong>RequestGroup</strong> y mediante la operación <em>Update</em> sobre el endPoint del <strong>Repositorio Central</strong> actualiza dicho recurso</li>
+  <li>Por cada dispensación generada, se debe generar un recurso <strong>MedicationDispence</strong></li>
+  <li>Cada Recurso <strong>MedicationDispence</strong> generado debe ser enviado al <strong>Repositorio Central</strong> mediante la operación <em>Post</em></li>
+  <li>El sistema del punto de dispensación, actualiza la receta representada en el recurso <strong>RequestGroup</strong> y mediante la operación <em>Put</em> sobre el endPoint del <strong>Repositorio Central</strong> actualiza dicho recurso. En caso de haber dispensado todas las prescipciones el parámeto <em>status</em> pasa a tener valor <em>completed</em></li>
   <li>El sistema de <strong>Repositorio Central</strong> responde al sistema del punto de dispensación indicando el estado de la actualización con o sin errores.
 <br />
 <br />
@@ -396,8 +390,8 @@ Este caso de uso describe la generación de una Receta con una o múltiples Pres
         
         <div class="inner-wrapper">
             <p>
-                IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.uv.RecetaCH#0.7 (Proceso de Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Mon, Aug 30, 2021 12:31-0400">30-08-2021</span>
+                IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.uv.RecetaCH#0.75 (Proceso de Ballot Pendiente)
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Wed, Sep 1, 2021 15:09-0400">01-09-2021</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.uv.RecetaCH",
-  "version": "0.7 (Proceso de Ballot Pendiente)",
+  "version": "0.75 (Proceso de Ballot Pendiente)",
   "fhirVersion": "4.0.1",
   "jurisdiction": "152",
   "extensions": [
@@ -24,12 +24,6 @@
       {
         "url": "http://minsal.cl/fhir/core/StructureDefinition/RecetaCl",
         "title": "Receta_CL"
-      }
-    ],
-    "Organization": [
-      {
-        "url": "http://minsal.cl/fhir/core/StructureDefinition/RecetaOrganizacionCl",
-        "title": "Organización_Receta_CL"
       }
     ],
     "MedicationRequest": [
@@ -62,9 +56,6 @@
       "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
-      "StructureDefinition.snapshot.element.type"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [

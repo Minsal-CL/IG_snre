@@ -3,11 +3,11 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.uv.RecetaCH"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RecetaCL</h2><p>The official URL for this implementation guide is: </p><pre>http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.uv.RecetaCH</pre><div><p>Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RecetaCL</h2><p>The official URL for this implementation guide is: </p><pre>http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.uv.RecetaCH</pre><div><p>Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional. Esta Guía se encuentra aún en proceso de creación por lo que esta versión esta sujeta a observaciones y cambios. Aquellos implementadores que tengan acceso a ella se les sugiere desarrollar comentarios para su mejora)</p>
 </div></div>
   </text>
   <url value="http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.uv.RecetaCH"/>
-  <version value="0.7 (Proceso de Ballot Pendiente)"/>
+  <version value="0.75 (Proceso de Ballot Pendiente)"/>
   <name value="RecetaCL"/>
   <title value="Gu&#xED;a de Implementaci&#xF3;n Receta-CL"/>
   <status value="draft"/>
@@ -19,11 +19,12 @@
       <value value="mailto:ppizarro.delgado@minsal.cl"/>
     </telecom>
   </contact>
-  <description value="Gu&#xED;a de Implementaci&#xF3;n para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electr&#xF3;nica Nacional"/>
+  <description value="Gu&#xED;a de Implementaci&#xF3;n para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electr&#xF3;nica Nacional. Esta Gu&#xED;a se encuentra a&#xFA;n en proceso de creaci&#xF3;n por lo que esta versi&#xF3;n esta sujeta a observaciones y cambios. Aquellos implementadores que tengan acceso a ella se les sugiere desarrollar comentarios para su mejora)"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
       <code value="152"/>
+      <display value="Chile (CHL)"/>
     </coding>
   </jurisdiction>
   <packageId value="hl7.fhir.uv.RecetaCH"/>
@@ -225,21 +226,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RecetaOrganizacionCl"/>
-      </reference>
-      <name value="Organizaci&#xF3;n_Receta_CL"/>
-      <description value="Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electr&#xF3;nica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Organzaci&#xF3;n para cubrir las necesidades de una Organizaci&#xF3;n Prestadora de salud o Dispensadora"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/RecetaPrescripcionCl"/>
       </reference>
       <name value="Prescripci&#xF3;n_CL"/>
-      <description value="ESte Perfil describe la informaci&#xF3;n contenida en la prescripci&#xF3;n de un medicamento para la Receta Electr&#xF3;nica Nacional del MINSAL"/>
+      <description value="Este Perfil describe la informaci&#xF3;n contenida en la prescripci&#xF3;n de un medicamento para la Receta Electr&#xF3;nica Nacional del MINSAL"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -250,51 +240,7 @@
         <reference value="StructureDefinition/Prod-Comercial"/>
       </reference>
       <name value="Prod_Comercial"/>
-      <description value="Recomendaci&#xF3;n de MEdicamento en Producto Comercial"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/CodNacComunas"/>
-      </reference>
-      <name value="C&#xF3;digos de Comunas en Chile"/>
-      <description value="Codigos definidos para identificar una comuna en Chile"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/CodProv"/>
-      </reference>
-      <name value="C&#xF3;digos de Provincias en Chile"/>
-      <description value="Codigos definidos para identificar una provincia en Chile"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/CodReg"/>
-      </reference>
-      <name value="C&#xF3;digos de Regiones en Chile"/>
-      <description value="Codigos definidos para identificar una comuna en Chile"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/DOCType-V2-0203"/>
-      </reference>
-      <name value="C&#xF3;digos de Pa&#xED;ses Segun Norma ISO-3166 N"/>
-      <description value="Codigos para especificar tipos de identificadores usando lo definido en Hl7 V2.x"/>
+      <description value="Recomendaci&#xF3;n de Medicamento en Producto Comercial"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -309,6 +255,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationDispense"/>
+      </extension>
+      <reference>
+        <reference value="MedicationDispense/DispensacionMedicamentoCL-2"/>
+      </reference>
+      <name value="Ejemplo de la dispensacion del Medicamento Kitadol 500mg"/>
+      <exampleCanonical value="http://minsal.cl/fhir/core/StructureDefinition/DispensacionMedicamentoCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="RequestGroup"/>
       </extension>
       <reference>
@@ -319,13 +275,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
+        <valueString value="RequestGroup"/>
       </extension>
       <reference>
-        <reference value="Organization/OrganizacionRecetaCL"/>
+        <reference value="RequestGroup/EjemploRecetaCL-2"/>
       </reference>
-      <name value="Ejemplo de Recurso de organizaci&#xF3;n prestadora de salud"/>
-      <exampleCanonical value="http://minsal.cl/fhir/core/StructureDefinition/RecetaOrganizacionCl"/>
+      <name value="Ejemplo de Recurso de una receta con solo un f&#xE1;rmaco prescrito, Paracetamol 500mg"/>
+      <exampleCanonical value="http://minsal.cl/fhir/core/StructureDefinition/RecetaCl"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -342,20 +298,10 @@
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
-        <reference value="MedicationRequest/medicationrequest-1"/>
+        <reference value="MedicationRequest/PrescripcionRecetaCL-2"/>
       </reference>
-      <name value="medicationrequest-1"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationRequest"/>
-      </extension>
-      <reference>
-        <reference value="MedicationRequest/medicationrequest-2"/>
-      </reference>
-      <name value="medicationrequest-2"/>
-      <exampleBoolean value="true"/>
+      <name value="Ejemplo de Prescripci&#xF3;n de Hidroclorotizida + Valsart&#xE1;n"/>
+      <exampleCanonical value="http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
@@ -367,18 +313,13 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <nameUrl value="Alcances-Objetivos.html"/>
+        <title value="Alcances Objetivos"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="casos.html"/>
         <title value="Casos"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="index2.html"/>
-        <title value="Index 2"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="objetivos.html"/>
-        <title value="Objetivos"/>
         <generation value="markdown"/>
       </page>
       <page>

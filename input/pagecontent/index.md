@@ -1,3 +1,8 @@
+### Disclaimer
+<br>
+
+Esta guía se encuentra en una **fase de evolución** por lo que esta sujeta a cambios previo a alcanzar nivel normativo. El proceso de apertura a implementadores será usado como primer balotage con el fin de recopilar de parte de éstos actores comentarios, sugerencias u observaciones para robustecer la GI previa Versión 1.0
+
 ### Trasfondo
 <br>
 
@@ -94,15 +99,14 @@ Esta Guía se estructura en base al manú de la parte superior de la siguiente m
 <br>
 
 * [Inicio](index.html): Página de Bienvenida a la Guía
-* [Objetivos](objetivos.html): Información General sobre los objetivos de esta Guía
+* [Objetivos](Alcances-Objetivos.html): Información General sobre los objetivos de esta Guía
 * [Actores y Casos de Uso](casos.html): Información detallada de los casos de uso, sus actores, y la secuencia de transacciones
-* [Operaciones y Terminologías](operaciones.html): Infirmación General de las operaciones básicas que se ejecutan al momento de hacer generar manejo de datos entre un servicio FHIR y los clientes
+* [Operaciones y Terminologías](operaciones.html): Información General de las operaciones básicas que se ejecutan al momento de hacer generar manejo de datos entre un servicio FHIR y los clientes
 * [Resumen de Artefactos](artifacts.html): Describe todos los artefactos que son parte de esta GI, separados en Esteuctura de Perfiles, Extensiones, Value Sets y Ejemplos. Dado que esta Guía Hereda su base Canónica desde el Core-CL, algunos de los artefactos descritos son parte de esa Guía
-* Perfiles: Este menú despliega el listado de los 4 perfiles generados paraesta GI
+* Perfiles: Este menú despliega el listado de los 4 perfiles generados para esta GI
   * [Prescripción](StructureDefinition-RecetaPrescripcionCl.html): Perfil del Recurso para la prescripción de un fármaco
   * [Dispensación](StructureDefinition-DispensacionMedicamentoCl.html): Perfil de Recurso para la dispensación de farmacos desde puntos de despacho
   * [Receta](StructureDefinition-RecetaCl.html): Perfil de recurso que permite agrupar diferentes prescriciones en formato de una única receta
-  * [Orgaización Para Receta](StructureDefinition-RecetaOrganizacionCl.html): Recurso que define una organización para este proyecto desde el recuso definido en el CORE-CL
 * Ejemplos: Listo de ejemplos desarrollados para cada Perfil generado para esta GI
 <br>
 <br>

@@ -607,7 +607,7 @@ El listado de recursos se define en:
 
 Los Métodos y los parámetros para la consulta de recursos se describen a continuación y se basan en la busqueda sobre recurso Paciente:
 
-1.  Eneste caso los servidores **DEBEN** soportar buscar un recurso Patient usando el parametro de búsqueda **[`_id`]:
+1.  En este caso los servidores **DEBEN** soportar buscar un recurso Patient usando el parametro de búsqueda **[`_id`]:
 
     `GET [base]/Patient[id]`
 
@@ -661,12 +661,12 @@ POST [base]/Patient En el Body, un recurso paciente compatible con el/los perfil
 
 _Definición de Medicamentos:_ Se utiliza la Terminología de Farmacos Chilena (TFC), expuesta por medio de un servicio de terminolgía Local o desde MINSAL
 
-_Profesionales de la Salud:_ desplegados a travez de la Super Intendencia y el sistema Midas, este registro se expone por medio del recurso  FHIR Practitioner, y la especialidad por medio dek recurso PractitionerRole.
+_Profesionales de la Salud:_ desplegados a través de la Super Intendencia y el sistema Midas, este registro se expone por medio del recurso  FHIR Practitioner, y la especialidad por medio del recurso PractitionerRole.
 
-_Establecimientos de Salud_: utiliza su identificación por medio de código DEIS, y su registro se expone a travez de los recursos FHIR Location y Organization, según corresponda.
+_Establecimientos de Salud_: utiliza su identificación por medio de código DEIS, y su registro se expone a través de los recursos FHIR Location y Organization, según corresponda.
 
-_Farmacias_: utiliza el registro de famrmacias Farmanet y se expone como como los recursos FHIR Location y Organization.
+_Farmacias_: utiliza el registro de farmacias Farmanet y se expone como como los recursos FHIR Location y Organization.
 
-_Pacientes:_ Se identidican por medio de su número identificador que pude ser cualquier tipo de documento especificado en las tablas de HL7 V3 relcionados con identificadores de personas.
+_Pacientes:_ Se identifican por medio de su número identificador que pude ser cualquier tipo de documento especificado en las tablas de HL7 V3 relcionados con identificadores de personas.
 
 _Tablas Maestras específicas:_ se incluyen las de comunas, provincias y regiones, entre otras pertenecientes a la normativa Nacional que son expuestas en la GI y que deben ser en muchos casos levantadas a nivel local

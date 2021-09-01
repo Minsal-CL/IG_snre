@@ -64,7 +64,7 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación Receta-CL</span><br/>0.7 (Proceso de Ballot Pendiente) - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación Receta-CL</span><br/>0.75 (Proceso de Ballot Pendiente) - ci-build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -91,7 +91,7 @@
     <a href="index.html">Inicio</a>
   </li>
   <li>
-    <a href="objetivos.html">Objetivos</a>
+    <a href="Alcances-Objetivos.html">Objetivos</a>
   </li>
   <li>
     <a href="casos.html">Actores y Casos de Uso</a>
@@ -123,9 +123,6 @@
       <li>
         <a href="StructureDefinition-RecetaCl.html">Receta</a>
       </li>
-      <li>
-        <a href="StructureDefinition-RecetaOrganizacionCl.html">Organización Receta</a>
-      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -141,9 +138,6 @@
       </li>
       <li>
         <a href="StructureDefinition-RecetaCl-examples.html">Ejemplo de Receta</a>
-      </li>
-      <li>
-        <a href="StructureDefinition-RecetaOrganizacionCl-examples.html">Ejemplo Organización</a>
       </li>
     </ul>
   </li>
@@ -179,7 +173,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación Receta-CL - Local Development build (v0.7 (Proceso de Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación Receta-CL - Local Development build (v0.75 (Proceso de Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -194,6 +188,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#disclaimer" id="markdown-toc-disclaimer">Disclaimer</a></li>
   <li><a href="#trasfondo" id="markdown-toc-trasfondo">Trasfondo</a></li>
   <li><a href="#colaboraciones-en-el-proyecto" id="markdown-toc-colaboraciones-en-el-proyecto">Colaboraciones en el Proyecto</a></li>
   <li><a href="#audiencia-de-esta-guía" id="markdown-toc-audiencia-de-esta-guía">Audiencia de esta Guía</a></li>
@@ -203,6 +198,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
+<h3 id="disclaimer">Disclaimer</h3>
+<p><br /></p>
+
+<p>Esta guía se encuentra en una <strong>fase de evolución</strong> por lo que esta sujeta a cambios previo a alcanzar nivel normativo. El proceso de apertura a implementadores será usado como primer balotage con el fin de recopilar de parte de éstos actores comentarios, sugerencias u observaciones para robustecer la GI previa Versión 1.0</p>
+
 <h3 id="trasfondo">Trasfondo</h3>
 <p><br /></p>
 
@@ -305,16 +305,15 @@ los pasos fundamentales de este caso se encuentran:</p>
 
 <ul>
   <li><a href="index.html">Inicio</a>: Página de Bienvenida a la Guía</li>
-  <li><a href="objetivos.html">Objetivos</a>: Información General sobre los objetivos de esta Guía</li>
+  <li><a href="Alcances-Objetivos.html">Objetivos</a>: Información General sobre los objetivos de esta Guía</li>
   <li><a href="casos.html">Actores y Casos de Uso</a>: Información detallada de los casos de uso, sus actores, y la secuencia de transacciones</li>
-  <li><a href="operaciones.html">Operaciones y Terminologías</a>: Infirmación General de las operaciones básicas que se ejecutan al momento de hacer generar manejo de datos entre un servicio FHIR y los clientes</li>
+  <li><a href="operaciones.html">Operaciones y Terminologías</a>: Información General de las operaciones básicas que se ejecutan al momento de hacer generar manejo de datos entre un servicio FHIR y los clientes</li>
   <li><a href="artifacts.html">Resumen de Artefactos</a>: Describe todos los artefactos que son parte de esta GI, separados en Esteuctura de Perfiles, Extensiones, Value Sets y Ejemplos. Dado que esta Guía Hereda su base Canónica desde el Core-CL, algunos de los artefactos descritos son parte de esa Guía</li>
-  <li>Perfiles: Este menú despliega el listado de los 4 perfiles generados paraesta GI
+  <li>Perfiles: Este menú despliega el listado de los 4 perfiles generados para esta GI
     <ul>
       <li><a href="StructureDefinition-RecetaPrescripcionCl.html">Prescripción</a>: Perfil del Recurso para la prescripción de un fármaco</li>
       <li><a href="StructureDefinition-DispensacionMedicamentoCl.html">Dispensación</a>: Perfil de Recurso para la dispensación de farmacos desde puntos de despacho</li>
       <li><a href="StructureDefinition-RecetaCl.html">Receta</a>: Perfil de recurso que permite agrupar diferentes prescriciones en formato de una única receta</li>
-      <li><a href="StructureDefinition-RecetaOrganizacionCl.html">Orgaización Para Receta</a>: Recurso que define una organización para este proyecto desde el recuso definido en el CORE-CL</li>
     </ul>
   </li>
   <li>Ejemplos: Listo de ejemplos desarrollados para cada Perfil generado para esta GI
@@ -375,8 +374,8 @@ los pasos fundamentales de este caso se encuentran:</p>
         
         <div class="inner-wrapper">
             <p>
-                IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.uv.RecetaCH#0.7 (Proceso de Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Mon, Aug 30, 2021 12:31-0400">30-08-2021</span>
+                IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.uv.RecetaCH#0.75 (Proceso de Ballot Pendiente)
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Wed, Sep 1, 2021 15:09-0400">01-09-2021</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

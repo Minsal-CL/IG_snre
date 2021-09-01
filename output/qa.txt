@@ -1,39 +1,34 @@
 ﻿RecetaCL : Validation Results
 =========================================
 
-err = 33, warn = 48, info = 2
-IG Publisher Version: 1.1.77
-Generated Mon Aug 30 12:32:18 CLT 2021. FHIR version 4.0.1 for hl7.fhir.uv.RecetaCH#0.7 (Proceso de Ballot Pendiente) (canonical = http://minsal.cl/fhir/core)
+err = 36, warn = 52, info = 4
+IG Publisher Version: 1.1.77 Out of date - current version is 1.1.78
+Generated Wed Sep 01 15:10:15 CLT 2021. FHIR version 4.0.1 for hl7.fhir.uv.RecetaCH#0.75 (Proceso de Ballot Pendiente) (canonical = http://minsal.cl/fhir/core)
 
  Build Errors : 1 / 6 / 0
- C:\IGs\_IG_Receta\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.RecetaCH : 0 / 1 / 1
- C:\IGs\_IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL : 6 / 5 / 2
- C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-PrescripcionRecetaCL : 4 / 2 / 1
- C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-1 : 3 / 1 / 1
- C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-2 : 3 / 1 / 1
- C:\IGs\_IG_Receta\fsh-generated\resources\Organization-OrganizacionRecetaCL : 4 / 0 / 1
- C:\IGs\_IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL : 8 / 2 / 3
- C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-DispensacionMedicamentoCl : 1 / 2 / 2
- C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-Prod-Comercial : 1 / 0 / 1
- C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaCl : 1 / 2 / 1
- C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaOrganizacionCl : 1 / 0 / 1
- C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl : 1 / 18 / 1
- C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodNacComunas : 0 / 2 / 1
- C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodProv : 0 / 2 / 1
- C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodReg : 0 / 2 / 1
- C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-DOCType-V2-0203 : 0 / 2 / 1
+ C:\GI_FHIR\IG_Receta\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.RecetaCH : 0 / 1 / 1
+ C:\GI_FHIR\IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL : 6 / 5 / 2
+ C:\GI_FHIR\IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL-2 : 6 / 2 / 3
+ C:\GI_FHIR\IG_Receta\fsh-generated\resources\MedicationRequest-PrescripcionRecetaCL : 4 / 2 / 1
+ C:\GI_FHIR\IG_Receta\fsh-generated\resources\MedicationRequest-PrescripcionRecetaCL-2 : 3 / 4 / 1
+ C:\GI_FHIR\IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL : 8 / 5 / 5
+ C:\GI_FHIR\IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL-2 : 5 / 3 / 3
+ C:\GI_FHIR\IG_Receta\fsh-generated\resources\StructureDefinition-DispensacionMedicamentoCl : 1 / 2 / 2
+ C:\GI_FHIR\IG_Receta\fsh-generated\resources\StructureDefinition-Prod-Comercial : 1 / 0 / 1
+ C:\GI_FHIR\IG_Receta\fsh-generated\resources\StructureDefinition-RecetaCl : 1 / 2 / 1
+ C:\GI_FHIR\IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl : 1 / 20 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/DispensacionMedicamentoCL.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/DispensacionMedicamentoCL-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RequestGroup/EjemploRecetaCL.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/OrganizacionRecetaCL.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RequestGroup/EjemploRecetaCL-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/PrescripcionRecetaCL.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/medicationrequest-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/medicationrequest-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: C:\IGs\_IG_Receta\output\operaciones.html#/html/body/div/div/div/div/div/ul/li/a at Line 542, column 111: The link 'resource-operations.html' for "Resource Operations" cannot be resolved
-== C:\IGs\_IG_Receta\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.RecetaCH.json ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/PrescripcionRecetaCL-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: C:\GI_FHIR\IG_Receta\output\operaciones.html#/html/body/div/div/div/div/div/ul/li/a at Line 536, column 111: The link 'resource-operations.html' for "Resource Operations" cannot be resolved
+== C:\GI_FHIR\IG_Receta\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.RecetaCH.json ==
 WARNING: ImplementationGuide.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
-== C:\IGs\_IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL.json ==
+== C:\GI_FHIR\IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL.json ==
 INFORMATION: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.statusReason.ofType(CodeableConcept).coding[0]: Code System URI 'http://minsal.cl/razon-de-no-dispensacion' is unknown so the code cannot be validated
 ERROR: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.medication.ofType(Reference): Unable to resolve resource 'https://api-receta.minsal.cl/v2/medication/Med#22353'
 ERROR: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'
@@ -46,81 +41,85 @@ ERROR: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.authoriz
 WARNING: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.dosageInstruction[0].additionalInstruction[0].coding[0]: The display "Advertencia. Puede provocar somnolencia. Si le afecta no conduzca ni maneje maquinaria. Evitar las bebidas alcohólicas (valor calificativo)" is not a valid display for the code {http://snomed.info/sct}418639000 - should be one of [Warning. May cause drowsiness (qualifier value), Warning. May cause drowsiness] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#418639000'
 WARNING: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.dosageInstruction[0].route.coding[0]: The display "Ruta Oral" is not a valid display for the code {http://snomed.info/sct}26643006 - should be one of [Oral route, Per os, Oral route (qualifier value), Oral use, Per oral route, PO - Per os, By mouth, A digestive tract route that begins in the mouth.] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#26643006'
 WARNING: MedicationDispense/DispensacionMedicamentoCL: MedicationDispense.dosageInstruction[0].method.coding[0]: The display "Tragarsela - imperativo contar con información de dosaje (qualifier value)" is not a valid display for the code {http://snomed.info/sct}421521009 - should be one of [Swallow - dosing instruction imperative (qualifier value), Swallow, Swallow - dosing instruction imperative] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#421521009'
-== C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-PrescripcionRecetaCL.json ==
+== C:\GI_FHIR\IG_Receta\fsh-generated\resources\MedicationDispense-DispensacionMedicamentoCL-2.json ==
+ERROR: MedicationDispense/DispensacionMedicamentoCL-2: MedicationDispense.medication.ofType(Reference): Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/2123731000167117'
+ERROR: MedicationDispense/DispensacionMedicamentoCL-2: MedicationDispense.subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/1115090713'
+INFORMATION: MedicationDispense/DispensacionMedicamentoCL-2: MedicationDispense.performer[0].function.coding[0]: Code System URI 'http://receta.minsal.gob.cl/Tablas/TablaFunc' is unknown so the code cannot be validated
+ERROR: MedicationDispense/DispensacionMedicamentoCL-2: MedicationDispense.performer[0].actor: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitioner/323073548642'
+INFORMATION: MedicationDispense/DispensacionMedicamentoCL-2: MedicationDispense.performer[1].function.coding[0]: Code System URI 'http://receta.minsal.gob.cl/Tablas/TablaFunc' is unknown so the code cannot be validated
+ERROR: MedicationDispense/DispensacionMedicamentoCL-2: MedicationDispense.performer[1].actor: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitioner/2309028611'
+ERROR: MedicationDispense/DispensacionMedicamentoCL-2: MedicationDispense.location: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Location/cbc1a58wefvbwlebm51z'
+ERROR: MedicationDispense/DispensacionMedicamentoCL-2: MedicationDispense.authorizingPrescription[0]: Unable to resolve resource 'https://api-receta.minsal.cl/v2/MedicationRequest/l3gerwpo41pn7305mfoi'
+WARNING: MedicationDispense/DispensacionMedicamentoCL-2: MedicationDispense.dosageInstruction[0].route.coding[0]: The display "Vía Oral" is not a valid display for the code {http://snomed.info/sct}26643006 - should be one of [Oral route, Per os, Oral route (qualifier value), Oral use, Per oral route, PO - Per os, By mouth, A digestive tract route that begins in the mouth.] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#26643006'
+WARNING: MedicationDispense/DispensacionMedicamentoCL-2: MedicationDispense.dosageInstruction[0].method.coding[0]: The display "Tragar (método de administración)" is not a valid display for the code {http://snomed.info/sct}738995006 - should be one of [Swallow (administration method), Swallow, A method of administration of a dose form by taking into the mouth and allowing to pass down the throat.] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#738995006'
+== C:\GI_FHIR\IG_Receta\fsh-generated\resources\MedicationRequest-PrescripcionRecetaCL.json ==
 ERROR: MedicationRequest/PrescripcionRecetaCL: MedicationRequest.extension[0].value.ofType(Reference): Unable to resolve resource 'https://api-receta.minsal.cl/v2/medication/med#1257'
 WARNING: MedicationRequest/PrescripcionRecetaCL: MedicationRequest.statusReason.coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: MedicationRequest/PrescripcionRecetaCL: MedicationRequest.medication.ofType(Reference): Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1345'
 ERROR: MedicationRequest/PrescripcionRecetaCL: MedicationRequest.subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'
 ERROR: MedicationRequest/PrescripcionRecetaCL: MedicationRequest.requester: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421'
 WARNING: MedicationRequest/PrescripcionRecetaCL: MedicationRequest.dosageInstruction[0].route.coding[0]: A code with no system has no defined meaning. A system should be provided
-== C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-1.json ==
-ERROR: MedicationRequest/medicationrequest-1: MedicationRequest.medication.ofType(Reference): Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1028'
-ERROR: MedicationRequest/medicationrequest-1: MedicationRequest.subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'
-ERROR: MedicationRequest/medicationrequest-1: MedicationRequest.requester: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitoner/PRestador#923421'
-WARNING: MedicationRequest/medicationrequest-1: MedicationRequest.dosageInstruction[0].route.coding[0]: The display "tragarlo, instrucciones de dosage imperativas (qualifier value)" is not a valid display for the code {http://snomed.info/sct}421521009 - should be one of [Swallow - dosing instruction imperative (qualifier value), Swallow, Swallow - dosing instruction imperative] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#421521009'
-== C:\IGs\_IG_Receta\fsh-generated\resources\MedicationRequest-medicationrequest-2.json ==
-ERROR: MedicationRequest/medicationrequest-2: MedicationRequest.medication.ofType(Reference): Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1028'
-ERROR: MedicationRequest/medicationrequest-2: MedicationRequest.subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'
-ERROR: MedicationRequest/medicationrequest-2: MedicationRequest.requester: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421'
-WARNING: MedicationRequest/medicationrequest-2: MedicationRequest.dosageInstruction[0].route.coding[0]: The display "tragarlo, instrucciones de dosage imperativas (qualifier value)" is not a valid display for the code {http://snomed.info/sct}421521009 - should be one of [Swallow - dosing instruction imperative (qualifier value), Swallow, Swallow - dosing instruction imperative] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#421521009'
-== C:\IGs\_IG_Receta\fsh-generated\resources\Organization-OrganizacionRecetaCL.json ==
-ERROR: Organization/OrganizacionRecetaCL: Organization.address[0].city: The value provided ('07401') is not in the value set http://minsal.cl/fhir/core/ValueSet/CodNacComunas (http://minsal.cl/fhir/core/ValueSet/CodNacComunas), and a code is required from this value set) (error message = The code system "https://apis.digital.gob.cl/dpa/comunas/" in the include in "http://minsal.cl/fhir/core/ValueSet/CodNacComunas" is not known; The code system "https://apis.digital.gob.cl/dpa/comunas/" is not known (encountered paired with code = "07401"); The code provided (https://apis.digital.gob.cl/dpa/comunas/#07401) is not valid in the value set 'CodComunas' (from http://tx.fhir.org/r4))
-ERROR: Organization/OrganizacionRecetaCL: Organization.address[0].district: The value provided ('074') is not in the value set http://minsal.cl/fhir/core/ValueSet/CodProv (http://minsal.cl/fhir/core/ValueSet/CodProv), and a code is required from this value set) (error message = The code system "https://apis.digital.gob.cl/dpa/provincias/" in the include in "http://minsal.cl/fhir/core/ValueSet/CodProv" is not known; The code system "https://apis.digital.gob.cl/dpa/provincias/" is not known (encountered paired with code = "074"); The code provided (https://apis.digital.gob.cl/dpa/provincias/#074) is not valid in the value set 'CodProvincia' (from http://tx.fhir.org/r4))
-ERROR: Organization/OrganizacionRecetaCL: Organization.address[0].state: The value provided ('07') is not in the value set http://minsal.cl/fhir/core/ValueSet/CodReg (http://minsal.cl/fhir/core/ValueSet/CodReg), and a code is required from this value set) (error message = The code system "https://apis.digital.gob.cl/dpa/regiones/" in the include in "http://minsal.cl/fhir/core/ValueSet/CodReg" is not known; The code system "https://apis.digital.gob.cl/dpa/regiones/" is not known (encountered paired with code = "07"); The code provided (https://apis.digital.gob.cl/dpa/regiones/#07) is not valid in the value set 'CodRegion' (from http://tx.fhir.org/r4))
-ERROR: Organization/OrganizacionRecetaCL: Organization.address[0].country: The value provided ('152') is not in the value set http://minsal.cl/fhir/core/ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core/ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = The code system "https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html" in the include in "http://minsal.cl/fhir/core/ValueSet/DOCType-V2-0203" is not known; The code system "https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html" is not known (encountered paired with code = "152"); The code provided (https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html#152) is not valid in the value set 'ISO3166COD' (from http://tx.fhir.org/r4))
-== C:\IGs\_IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL.json ==
+== C:\GI_FHIR\IG_Receta\fsh-generated\resources\MedicationRequest-PrescripcionRecetaCL-2.json ==
+WARNING: MedicationRequest/PrescripcionRecetaCL-2: MedicationRequest.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationRequest/PrescripcionRecetaCL-2: MedicationRequest.category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: MedicationRequest/PrescripcionRecetaCL-2: MedicationRequest.medication.ofType(Reference): Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/1703591000167111'
+ERROR: MedicationRequest/PrescripcionRecetaCL-2: MedicationRequest.subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/3254156114'
+ERROR: MedicationRequest/PrescripcionRecetaCL-2: MedicationRequest.requester: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitioner/3253825513'
+WARNING: MedicationRequest/PrescripcionRecetaCL-2: MedicationRequest.dosageInstruction[0].route.coding[0]: The display "Vía Oral" is not a valid display for the code {http://snomed.info/sct}26643006 - should be one of [Oral route, Per os, Oral route (qualifier value), Oral use, Per oral route, PO - Per os, By mouth, A digestive tract route that begins in the mouth.] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#26643006'
+WARNING: MedicationRequest/PrescripcionRecetaCL-2: MedicationRequest.dosageInstruction[0].method.coding[0]: The display "Tragar (método de administración)" is not a valid display for the code {http://snomed.info/sct}738995006 - should be one of [Swallow (administration method), Swallow, A method of administration of a dose form by taking into the mouth and allowing to pass down the throat.] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#738995006'
+== C:\GI_FHIR\IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL.json ==
 ERROR: RequestGroup/EjemploRecetaCL: RequestGroup: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: medicationrequest-1,medicationrequest-2))
-ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[0].ofType(MedicationRequest).medication.ofType(Reference): Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1028'
-ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[0].ofType(MedicationRequest).subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'
-ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[0].ofType(MedicationRequest).requester: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitoner/PRestador#923421'
-WARNING: RequestGroup/EjemploRecetaCL: RequestGroup.contained[0].ofType(MedicationRequest).dosageInstruction[0].route.coding[0]: The display "tragarlo, instrucciones de dosage imperativas (qualifier value)" is not a valid display for the code {http://snomed.info/sct}421521009 - should be one of [Swallow - dosing instruction imperative (qualifier value), Swallow, Swallow - dosing instruction imperative] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#421521009'
+WARNING: RequestGroup/EjemploRecetaCL: RequestGroup.contained[0].ofType(MedicationRequest).identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: RequestGroup/EjemploRecetaCL: RequestGroup.contained[0].ofType(MedicationRequest).category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[0].ofType(MedicationRequest).medication.ofType(Reference): Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/1703591000167111'
+ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[0].ofType(MedicationRequest).subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/3254156114'
+ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[0].ofType(MedicationRequest).requester: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitioner/3253825513'
+WARNING: RequestGroup/EjemploRecetaCL: RequestGroup.contained[0].ofType(MedicationRequest).dosageInstruction[0].route.coding[0]: The display "Vía Oral" is not a valid display for the code {http://snomed.info/sct}26643006 - should be one of [Oral route, Per os, Oral route (qualifier value), Oral use, Per oral route, PO - Per os, By mouth, A digestive tract route that begins in the mouth.] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#26643006'
+WARNING: RequestGroup/EjemploRecetaCL: RequestGroup.contained[0].ofType(MedicationRequest).dosageInstruction[0].method.coding[0]: The display "Tragar (método de administración)" is not a valid display for the code {http://snomed.info/sct}738995006 - should be one of [Swallow (administration method), Swallow, A method of administration of a dose form by taking into the mouth and allowing to pass down the throat.] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#738995006'
 ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[1].ofType(MedicationRequest).medication.ofType(Reference): Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/Medicamento#1028'
 ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[1].ofType(MedicationRequest).subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'
 ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.contained[1].ofType(MedicationRequest).requester: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421'
 WARNING: RequestGroup/EjemploRecetaCL: RequestGroup.contained[1].ofType(MedicationRequest).dosageInstruction[0].route.coding[0]: The display "tragarlo, instrucciones de dosage imperativas (qualifier value)" is not a valid display for the code {http://snomed.info/sct}421521009 - should be one of [Swallow - dosing instruction imperative (qualifier value), Swallow, Swallow - dosing instruction imperative] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#421521009'
 ERROR: RequestGroup/EjemploRecetaCL: RequestGroup.subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/Paciente#2411224'
-== C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-DispensacionMedicamentoCl.json ==
+== C:\GI_FHIR\IG_Receta\fsh-generated\resources\RequestGroup-EjemploRecetaCL-2.json ==
+ERROR: RequestGroup/EjemploRecetaCL-2: RequestGroup: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: MedicamentoPres))
+WARNING: RequestGroup/EjemploRecetaCL-2: RequestGroup.contained[0].ofType(MedicationRequest).category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: RequestGroup/EjemploRecetaCL-2: RequestGroup.contained[0].ofType(MedicationRequest).medication.ofType(Reference): Unable to resolve resource 'https://api-receta.minsal.cl/v2/Medication/1682851000167115'
+ERROR: RequestGroup/EjemploRecetaCL-2: RequestGroup.contained[0].ofType(MedicationRequest).subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/1115090713'
+ERROR: RequestGroup/EjemploRecetaCL-2: RequestGroup.contained[0].ofType(MedicationRequest).requester: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Practitioner/3245690418'
+WARNING: RequestGroup/EjemploRecetaCL-2: RequestGroup.contained[0].ofType(MedicationRequest).dosageInstruction[0].route.coding[0]: The display "Vía Oral" is not a valid display for the code {http://snomed.info/sct}26643006 - should be one of [Oral route, Per os, Oral route (qualifier value), Oral use, Per oral route, PO - Per os, By mouth, A digestive tract route that begins in the mouth.] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#26643006'
+WARNING: RequestGroup/EjemploRecetaCL-2: RequestGroup.contained[0].ofType(MedicationRequest).dosageInstruction[0].method.coding[0]: The display "Tragar (método de administración)" is not a valid display for the code {http://snomed.info/sct}738995006 - should be one of [Swallow (administration method), Swallow, A method of administration of a dose form by taking into the mouth and allowing to pass down the throat.] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#738995006'
+ERROR: RequestGroup/EjemploRecetaCL-2: RequestGroup.subject: Unable to resolve resource 'https://api-receta.minsal.cl/v2/Patient/1115090713'
+== C:\GI_FHIR\IG_Receta\fsh-generated\resources\StructureDefinition-DispensacionMedicamentoCl.json ==
 INFORMATION: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.snapshot.element[113].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.snapshot.element[123].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.differential.element[30].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.differential.element[32].short: value should not start or finish with whitespace
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
-== C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-Prod-Comercial.json ==
+== C:\GI_FHIR\IG_Receta\fsh-generated\resources\StructureDefinition-Prod-Comercial.json ==
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
-== C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaCl.json ==
+== C:\GI_FHIR\IG_Receta\fsh-generated\resources\StructureDefinition-RecetaCl.json ==
 WARNING: StructureDefinition/RecetaCl: StructureDefinition.snapshot.element[23].short: value should not start or finish with whitespace
 WARNING: StructureDefinition/RecetaCl: StructureDefinition.differential.element[3].short: value should not start or finish with whitespace
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
-== C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaOrganizacionCl.json ==
-ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
-== C:\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json ==
-WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[32].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[38].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[39].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[108].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[175].short: value should not start or finish with whitespace
+== C:\GI_FHIR\IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json ==
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[20].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[43].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[49].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[50].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[119].short: value should not start or finish with whitespace
 WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[186].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[194].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[236].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[249].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[10].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[197].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[205].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[247].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[260].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[5].short: value should not start or finish with whitespace
 WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[13].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[14].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[34].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[56].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[61].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[65].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[79].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[81].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[16].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[17].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[37].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[59].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[64].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[68].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[82].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.differential.element[84].short: value should not start or finish with whitespace
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
-== C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodNacComunas.json ==
-WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
-WARNING: ValueSet.where(id = 'CodNacComunas'): Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/comunas/
-== C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodProv.json ==
-WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
-WARNING: ValueSet.where(id = 'CodProv'): Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/provincias/
-== C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-CodReg.json ==
-WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
-WARNING: ValueSet.where(id = 'CodReg'): Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/regiones/
-== C:\IGs\_IG_Receta\fsh-generated\resources\ValueSet-DOCType-V2-0203.json ==
-WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.RecetaCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
-WARNING: ValueSet.where(id = 'DOCType-V2-0203'): Error from server: Unable to provide support for code system https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html

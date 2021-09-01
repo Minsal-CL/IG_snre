@@ -18,13 +18,13 @@ Este caso de uso describe la generación de una Receta con una o múltiples Pres
 
 * **Prescriptor Genera Prescripciones por Fármacos** 
 
-*  El *pescriptor* genera cada una de las prescripciones de medicamentos individuales, generando el sistema informático estas Prescripciones en formato de recurso **MedictionRequest**. Cada uno de estos recursos generados deben contener un *IdentificationGroup* idéntico para cada uno de ellos. El medicamento en cuestión debe ser obtenido desde el repositorio mediante una vinculación. 
-*  Al cerrar el ciclo de creacion de Prescriciones el Sistema del Prestador debe generar la Receta en el formato de un recurso **RequestGroup**. Este recurso también debe replicar el valor del elemento *IdentificationGroup* de los **MedicationRequest** generados.
+*  El *Prescriptor* genera cada una de las prescripciones de medicamentos individuales, generando el sistema informático estas Prescripciones en formato de recurso **MedictionRequest**. Cada uno de estos recursos generados deben contener un *IdentificationGroup* idéntico para cada uno de ellos. El medicamento en cuestión debe ser obtenido desde el repositorio mediante una vinculación. 
+*  Al cerrar el ciclo de creacion de Prescriciones el Sistema del Prestador debe generar la Receta en el formato de un recurso **RequestGroup**. Este recurso también debe replicar el valor del elemento *IdentificationGroup* de los **MedicationRequest** generados. El valor del elemento *status* del **RequestGroup** debe ser igual a *active*
 <br>
 
 * **Prescriptor Envía a Repositorio Central la Receta**
 
-*  El sistema del Prestador genera una opeación *Put* del recurso **RequestGroup** al endPoint de MINSAL  para que la receta sea almacenada en el *Repositorio Cetral de Recetas*.
+*  El sistema del Prestador genera una operación *Post* del recurso **RequestGroup** al endPoint de MINSAL  para que la receta sea almacenada en el *Repositorio Cetral de Recetas*.
 *  El Sistema de MINSAL responde al Sistema del Prestador con un *mensaje de estado de recepción* acusando recibo sin error o con errores
 <br>
 <br>
@@ -45,9 +45,7 @@ Este caso de uso describe la generación de una Receta con una o múltiples Pres
 <br>
 
 Este caso describe la secuencia de mensajes que se produce al momento en el cual se dispensa o se rechaza la dispensación de uno o más fármacos de la misma receta. El proceso tiene un punto de inicio cuando en el punto de dispensación se hace la solicitud de fármacos por medio del código de barras que contiene el valor del *IdentificationGroup* generado en tanto en el agrupador como en las prescripciones individuales al momento de crearse la receta. 
-
 <br>
-
 Este proceso además permite que el **Dispensador** genere cambios de estado en las prescripciones, indicando si esta se ha completado, la cantidad o si esta queda cerrada al ser retenida. Estos elementos se notifican a MINSAL devolviendo el recurso **RequestGroup** actualizado con las consideraciones antes mencionadas.
 <br>
 <br>
@@ -68,7 +66,9 @@ Este proceso además permite que el **Dispensador** genere cambios de estado en 
 
 *  El sistema del punto de dispensación recorre el recurso agrupador obteniendo de éste cada una de las Prescripciones representadas en el formato de un recurso **MedicationPrescription**  contenidas en el agrupador Receta.
 *  El **Dispensador** hace entrega de los fármacos solicitados por el solicitante, hace registro de esto, de las modificaciones que se puedan producir entre lo que se dispensó v/s lo recetado y en los eventuales cambios de estado que existan en cada *Prescripción recetada*.
-*  El sistema del punto de dispensación, actualiza la receta representada en el recurso **RequestGroup** y mediante la operación *Update* sobre el endPoint del **Repositorio Central** actualiza dicho recurso
+*  Por cada dispensación generada, se debe generar un recurso **MedicationDispence**
+*  Cada Recurso **MedicationDispence** generado debe ser enviado al **Repositorio Central** mediante la operación *Post*
+*  El sistema del punto de dispensación, actualiza la receta representada en el recurso **RequestGroup** y mediante la operación *Put* sobre el endPoint del **Repositorio Central** actualiza dicho recurso. En caso de haber dispensado todas las prescipciones el parámeto *status* pasa a tener valor *completed*
 *  El sistema de **Repositorio Central** responde al sistema del punto de dispensación indicando el estado de la actualización con o sin errores.
 <br>
 <br>

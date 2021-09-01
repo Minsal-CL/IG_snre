@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RequestGroup xmlns="http://hl7.org/fhir">
+  <id value="EjemploRecetaCL-2"/>
+  <meta>
+    <profile value="http://minsal.cl/fhir/core/StructureDefinition/RecetaCl"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>groupIdentifier</b>: id: 97925d4fee524551ad2f</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href="https://api-receta.minsal.cl/v2/Patient/1115090713">PABLO PIZARRO</a></p><p><b>authoredOn</b>: 22-08-2021 13:31:00</p></div>
+  </text>
+  <contained>
+    <MedicationRequest>
+      <id value="MedicamentoPres"/>
+      <meta>
+        <profile value="http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl"/>
+      </meta>
+      <status value="active"/>
+      <intent value="order"/>
+      <category>
+        <coding>
+          <code value="community"/>
+        </coding>
+      </category>
+      <medicationReference>
+        <reference value="https://api-receta.minsal.cl/v2/Medication/1682851000167115"/>
+        <display value="Paracetamol 500 mg comprimido"/>
+      </medicationReference>
+      <subject>
+        <reference value="https://api-receta.minsal.cl/v2/Patient/1115090713"/>
+        <display value="PABLO PIZARRO"/>
+      </subject>
+      <authoredOn value="2021-08-22T17:31:00Z"/>
+      <requester>
+        <reference value="https://api-receta.minsal.cl/v2/Practitioner/3245690418"/>
+        <display value="Maria Carmen De los angeles Del rio Gonzalez"/>
+      </requester>
+      <groupIdentifier>
+        <value value="97925d4fee524551ad2f"/>
+      </groupIdentifier>
+      <note>
+        <text value="Administrar durante comidas"/>
+      </note>
+      <dosageInstruction>
+        <timing>
+          <repeat>
+            <boundsDuration>
+              <value value="1"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="d"/>
+            </boundsDuration>
+            <frequency value="1"/>
+            <period value="1"/>
+            <periodUnit value="d"/>
+          </repeat>
+        </timing>
+        <route>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26643006"/>
+            <display value="V&#xED;a Oral"/>
+          </coding>
+        </route>
+        <method>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="738995006"/>
+            <display value="Tragar (m&#xE9;todo de administraci&#xF3;n)"/>
+          </coding>
+        </method>
+        <doseAndRate>
+          <doseQuantity>
+            <value value="1"/>
+            <unit value="comprimido"/>
+          </doseQuantity>
+        </doseAndRate>
+      </dosageInstruction>
+      <dispenseRequest>
+        <validityPeriod>
+          <start value="2021-08-22"/>
+          <end value="2021-09-22"/>
+        </validityPeriod>
+      </dispenseRequest>
+    </MedicationRequest>
+  </contained>
+  <groupIdentifier>
+    <value value="97925d4fee524551ad2f"/>
+  </groupIdentifier>
+  <status value="active"/>
+  <intent value="order"/>
+  <subject>
+    <reference value="https://api-receta.minsal.cl/v2/Patient/1115090713"/>
+    <display value="PABLO PIZARRO"/>
+  </subject>
+  <authoredOn value="2021-08-22T17:31:00Z"/>
+</RequestGroup>
