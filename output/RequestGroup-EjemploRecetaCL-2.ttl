@@ -18,7 +18,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>groupIdentifier</b>: id: 815823ca-28ca-4094-8518-c3ee7c6ebca0</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"https://api-receta.minsal.cl/v2/Patient/1115090713\">PABLO PIZARRO</a></p><p><b>authoredOn</b>: 22-08-2021 13:31:00</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>groupIdentifier</b>: id: 815823ca-28ca-4094-8518-c3ee7c6ebca0</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"https://api-receta.minsal.cl/v2/Patient/1115090713\">PABLO PIZARRO</a></p><p><b>authoredOn</b>: Aug 22, 2021 1:31:00 PM</p></div>"
   ];
   fhir:DomainResource.contained [
      a fhir:MedicationRequest;
