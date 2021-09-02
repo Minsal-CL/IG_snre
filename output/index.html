@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.UV.RECETACH\Home - FHIR v4.0.1</title>
+    <title>HL7.FHIR.CL.RECETACH\Home - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -64,7 +64,7 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación Receta-CL</span><br/>0.75 (Proceso de Ballot Pendiente) - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación Receta-CL</span><br/>0.752 (Proceso de Ballot Pendiente) - ci-build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -173,7 +173,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación Receta-CL - Local Development build (v0.75 (Proceso de Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación Receta-CL - Local Development build (v0.752 (Proceso de Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -251,7 +251,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>El funcionamiento genérico con sus funciones sería el siguiente:</p>
 
-<p><em>Emisión de Receta y Registro en Repositorio:</em> El prescriptor visualiza los datos administrativos de la receta, como los de identificación de paciente, prestador e institución (traídos automáticamente por el sistema). El ministerio de salud dispondrá de una serie de recursos para la validación de los datos mencionados.
+<p><em>Emisión de Receta y Registro en Repositorio:</em> El prescriptor visualiza los datos administrativos de la receta, como los de identificación de paciente, prestador e institución (traídos automáticamente por el sistema). El Ministerio de Salud dispondrá de una serie de recursos para la validación de los datos mencionados.
 El clínico ingresa los datos de prescripción, como el fármaco recetado, potencia, dosis. Una vez generado el documento clínico, ser enviado al repositorio centralizado de receta.</p>
 
 <p><em>Dispensación de Receta Electrónica:</em> Cada paciente, desde su aplicación móvil y/o correo electrónico, podrá disponer de las recetas extendidas a su nombre o de algún tercero bajo autorización. El ministerio de salud dispondrá de un servicio que permitirá leer, mediante código de barra, el folio de la receta, de modo de poder obtener la información de la receta o el documento mismo desde el repositorio central. La farmacia deberá registrar el o los medicamentos dispensados, tanto el producto comercial como información relativa a la cantidad y números disponibles de dispensación. El detalle será tratado más adelante.
@@ -264,8 +264,8 @@ El clínico ingresa los datos de prescripción, como el fármaco recetado, poten
 <p>El proyecto se separa en básicamente 4 procesos que son los que se enumeran continuación:
 <br /></p>
 
-<h5 id="proceso-de-prescripción">Proceso de prescripción</h5>
-<p>Este proceso se desarrolla en el momento en que un prescriptor desarrolla una receta. Dentro de
+<h5 id="proceso-de-prescripción">Proceso de Prescripción</h5>
+<p>Este proceso se desarrolla en el momento en que un prescriptor genera una receta. Dentro de
 los pasos fundamentales de este caso se encuentran:</p>
 
 <ul>
@@ -304,11 +304,11 @@ los pasos fundamentales de este caso se encuentran:</p>
 <br /></p>
 
 <ul>
-  <li><a href="index.html">Inicio</a>: Página de Bienvenida a la Guía</li>
+  <li><a href="index.html">Home</a>: Página de Bienvenida a la Guía</li>
   <li><a href="Alcances-Objetivos.html">Objetivos</a>: Información General sobre los objetivos de esta Guía</li>
   <li><a href="casos.html">Actores y Casos de Uso</a>: Información detallada de los casos de uso, sus actores, y la secuencia de transacciones</li>
-  <li><a href="operaciones.html">Operaciones y Terminologías</a>: Información General de las operaciones básicas que se ejecutan al momento de hacer generar manejo de datos entre un servicio FHIR y los clientes</li>
-  <li><a href="artifacts.html">Resumen de Artefactos</a>: Describe todos los artefactos que son parte de esta GI, separados en Esteuctura de Perfiles, Extensiones, Value Sets y Ejemplos. Dado que esta Guía Hereda su base Canónica desde el Core-CL, algunos de los artefactos descritos son parte de esa Guía</li>
+  <li><a href="operaciones.html">Operaciones y Terminologías</a>: Información general de las operaciones básicas que se ejecutan al momento de hacer generar manejo de datos entre un servicio FHIR y los clientes</li>
+  <li><a href="artifacts.html">Resumen de Artefactos</a>: Describe todos los artefactos que son parte de esta GI, separados en Estructura de Perfiles, Extensiones, Value Sets y Ejemplos. Dado que esta Guía hereda su base Canónica desde el Core-CL, algunos de los artefactos descritos son parte de esa Guía</li>
   <li>Perfiles: Este menú despliega el listado de los 4 perfiles generados para esta GI
     <ul>
       <li><a href="StructureDefinition-RecetaPrescripcionCl.html">Prescripción</a>: Perfil del Recurso para la prescripción de un fármaco</li>
@@ -316,7 +316,7 @@ los pasos fundamentales de este caso se encuentran:</p>
       <li><a href="StructureDefinition-RecetaCl.html">Receta</a>: Perfil de recurso que permite agrupar diferentes prescriciones en formato de una única receta</li>
     </ul>
   </li>
-  <li>Ejemplos: Listo de ejemplos desarrollados para cada Perfil generado para esta GI
+  <li>Ejemplos: Listado de ejemplos desarrollados para cada Perfil generado para esta GI
 <br />
 <br /></li>
 </ul>
@@ -374,8 +374,8 @@ los pasos fundamentales de este caso se encuentran:</p>
         
         <div class="inner-wrapper">
             <p>
-                IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.uv.RecetaCH#0.75 (Proceso de Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Wed, Sep 1, 2021 15:09-0400">01-09-2021</span>
+                IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.RecetaCH#0.752 (Proceso de Ballot Pendiente)
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Thu, Sep 2, 2021 12:55-0400">02-09-2021</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

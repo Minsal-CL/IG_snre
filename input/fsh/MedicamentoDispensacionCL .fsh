@@ -15,14 +15,14 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * identifier.system ^short = "Se identificará la url de la API sobre la cual se puede consultar por el valor del identificador generado"
 * identifier.system MS 
 * identifier.system 1..1
-* identifier.value ^short = "número identificador"
+* identifier.value ^short = "Número identificador"
 * identifier.assigner.display ^short = "Se indica el nombre del dispensador que otorgo la identificación"
 * identifier.assigner.display MS
 
 //status
 * status MS
 * status 1..1
-* status ^short = "estado de la dispensación según estándar: cancelled | completed | entered-in-error | declined"
+* status ^short = "Estado de la dispensación según estándar: cancelled | completed | entered-in-error | declined"
 * status ^definition = "Estado de la dispensación, estos estaos pueden ser: preparation | in-progress | cancelled | on-hold | completed | entered-in-error | stopped | declined | unknown"
 * status ^comment = "Si bien los códigos para este elemento son mas que los mostrados en esta guía solo se considerarán los expuestos para el caso local"
 
@@ -34,9 +34,10 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * statusReasonCodeableConcept.coding.system ^short = "Códigos definidos para motivos de rechazo de la dispensacion. Tabla que será generada por MINSAL"
 * statusReasonCodeableConcept.coding.system ^definition = "Códigos definidos para motivos de rechazo de la dispensacion. Tabla que será generada por MINSAL"
 * statusReasonCodeableConcept.coding.system ^comment = "Tabla que será generada por MINSAL, quedará disponible para que cada sistema la levante localmente y apunte a ella en esta ruta"
-* statusReasonCodeableConcept.coding.code ^short = "Coódigo referente a la razon de porque no se entrego la dispensacion"
+* statusReasonCodeableConcept.coding.code ^short = "Código referente a la razon de porque no se entrego la dispensacion"
 * statusReasonCodeableConcept.coding.system ^short = "Glosa del código"
-* statusReasonCodeableConcept.text ^short = "Razon de la cancelacion. *Definir si es necesario este texto, ya que en caso de haber codificacion se puede usar display*"
+* statusReasonCodeableConcept.text ^short = "Razon de la cancelacion"
+* statusReasonCodeableConcept.text ^definition = "Razon de la cancelacion, explicada en texto libre"
 
 
 //subject
@@ -51,7 +52,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * authorizingPrescription MS
 * authorizingPrescription 1..1
 * authorizingPrescription ^short = "Referencia a la prescripción que autoriza la dispensación."
-* authorizingPrescription ^definition = "Referencia a la prescripción que autoriza la dispensación. esta debe ser referenciada al recurso MedicarionRequest involucrado en la receta presentada al momento de la dspensación"
+* authorizingPrescription ^definition = "Referencia a la prescripción que autoriza la dispensación. Esta debe ser referenciada al recurso MedicarionRequest involucrado en la receta presentada al momento de la dspensación"
 * authorizingPrescription.reference ^short = "Referencia a la prescripción que autoriza la dispensación. ´https://api-receta.minsal.cl/v2/MedicationRequest´ (Obligada)"
 * authorizingPrescription.reference ^definition = "Referencia a la receta que autoriza la dispensación. esta debe ser referenciada al recurso MedicarionPrescrition involucrado en la receta presentada al momento de la dspensación. ´https://api-receta.minsal.cl/v2/MediationPrescription´ (Obligada)"
 
@@ -89,16 +90,23 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction.sequence ^short = "Secuencia de administracion del medicamento"
 * dosageInstruction.sequence ^definition = "Indica el orden en el que se deben aplicar o interpretar las instrucciones de dosificación."
 * dosageInstruction.text ^short = "Instruccion de dosificación"
+* dosageInstruction.text ^definition = "Instruccion de dosificación"
 * dosageInstruction.additionalInstruction ^short = "Instrucciones, advertencias y/o efectos secundarios"
+* dosageInstruction.additionalInstruction ^definition = "Instrucciones, advertencias y/o efectos secundarios"
 * dosageInstruction.patientInstruction ^short = "Instrucciones para el paciente"
 * dosageInstruction.patientInstruction ^definition = "Instrucciones con detalle o lenguaje que los pacientes puedan comprender"
 * dosageInstruction.timing ^short = "Cuando se debe administrar los medicamentos"
+* dosageInstruction.timing ^definition = "Cuando se debe administrar los medicamentos"
 
-* dosageInstruction.asNeededBoolean ^short = "En caso de SOS, se usa, considerar este valor como booleano"
+* dosageInstruction.asNeededBoolean ^short = "Se define para uso de fármaco sin receta o indicación en esta."
+* dosageInstruction.asNeededBoolean ^definition = "Para indicar si el fármaco se puede usar sin respetar diretamente lo presctito en el dosaje, como por ejemplo medicamentos que se pueden usar en caso de SOS"
+	
 * dosageInstruction.route ^short = "Como se debe administrar el medicamento (Via de administración o como debe el farmaco entrar al cuerpo)"
-* dosageInstruction.method ^short = "Tecnica para administrar el medicamento"
+* dosageInstruction.route ^definition = "Como se debe administrar el medicamento (Via de administración o como debe el farmaco entrar al cuerpo)"
+* dosageInstruction.method ^short = "Técnica para administrar el medicamento"
 * dosageInstruction.method ^definition = "Es un valor codificado que indica el método mediante el cual se introduce el medicamento en el cuerpo o sobre él. Más comúnmente utilizado para inyecciones. Por ejemplo, empuje lento; Profundo IV."
 * dosageInstruction.doseAndRate ^short = "Cantidad de los medicamentos a administrar"
+* dosageInstruction.doseAndRate ^definition = "Cantidad de los medicamentos a administrar"
 
 //performer
 * performer MS
@@ -111,6 +119,8 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 	Dispensador 1..1 and Validador 0..1
 
 * performer ^short = "Profesional que realizó la orden."
+
+* performer ^definition = "Profesional que realizó o validó la entrega de la orden de fármacos."
 * performer ^comment = "Se definen dos tipos de dispensador, no excluyentes mutuamente. El primero es el dispensador del fármaco pero el segundo es el validador. El dispensador es obligado. Ambos son iguales desde el punto de vista del desarrollo de cada slice es el mismo solo debe cambiar el valor del código del la ruta performer.function.code"
 
 * performer[Dispensador] MS
@@ -124,7 +134,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 //* performer[Dispensador].function.coding.system ^definition = "Sistema sobre el cual se obtiene el código de tipo de dispensador, en este caso será una tabla local"
 * performer[Dispensador].function.coding.system ^comment = "Dado que estos códigos quedarán normativos y con motivo de simplificación  de desarrollo, se puede obviar la ruta *performer[Validador].function.coding.system*"
 * performer[Dispensador].function.coding.code ^short = "Código del tipo de dispensador. Debe ser 01 para el Dispensador Obligado"
-* performer[Dispensador].function.coding.code ^definition = "Código del tipo de dispensador según tabla maestra. En este caso debe ser **Dispensador**"
+* performer[Dispensador].function.coding.code ^definition = "Código del tipo de dispensador según tabla maestra. En este caso debe ser Dispensador"
 * performer[Dispensador].function.coding.code = #Dispensador
 
 * performer[Dispensador].actor ^short = "Profesional que realiza la dispensación. El endPoint es ´http://api-receta.minsal.cl/v2/practitioner´"
@@ -137,13 +147,13 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * performer[Validador] ^definition = "Se entiende por dispensador al individuo que valida la entrega los medicamentos a quien los solicite en el punto de entrega. Por lo común es un Químico Farmaceutico de Profesión"
 
 * performer[Validador].function 1..1
-* performer[Validador].function ^short = "Función que desarrolla el Validador, en este caso siempre será un QF"
+* performer[Validador].function ^short = "Función que desarrolla el Validador, en este caso siempre será un Químico Farmaceutico"
 * performer[Validador].function ^definition = "Función que desarrolla el Performer, en este caso validador"
 //* performer[Validador].function.coding.system ^short = "Sistema sobre el cual se obtiene el código de tipo de performer"
 //* performer[Validador].function.coding.system ^definition = "Sistema sobre el cual se obtiene el código de tipo de performer, en este caso será una tabla local"
 * performer[Validador].function.coding.system ^comment = "Dado que estos códigos quedarán normativos y con motivo de simplificación  de desarrollo, se puede obviar la ruta *performer[Validador].function.coding.system*"
 * performer[Validador].function.coding.code ^short = "Código de validador. Debe ser **Validador** para definir un Validador"
-* performer[Validador].function.coding.code ^definition = "Código de validador según tabla maestra. En este caso debe ser **Validador**"
+* performer[Validador].function.coding.code ^definition = "Código de validador según tabla maestra. En este caso debe ser Validador"
 * performer[Validador].function.coding.code = #Validador
 
 * performer[Validador].actor ^short = "Profesional que realiza la validación. El endPoint es ´http://api-receta.minsal.cl/v2/practitioner´"
@@ -188,13 +198,14 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 Instance : DispensacionMedicamentoCL
 Title : "Ejemplo de la dispensacion del Medicamento Oxycodone Via Oral"
 InstanceOf : DispensacionMedicamentoCl	
+Usage: #example
 
 //////////////////
 * identifier.system = "http://minsal.cl/portalReceta/dispensacion"
 * identifier.value = "Dispensacion-001"
 
 //////////////////
-* status = #completed
+* status = #cancelled
 
 //////////////////
 * statusReasonCodeableConcept.coding.system = "http://minsal.cl/razon-de-no-dispensacion"
@@ -307,7 +318,7 @@ Usage: #example
 
 * dosageInstruction.timing.repeat.boundsDuration.value = 1 
 * dosageInstruction.timing.repeat.boundsDuration.unit = #d
-* dosageInstruction.timing.repeat.boundsDuration.system = "http://unitsofmeasure.org"
+	* dosageInstruction.timing.repeat.boundsDuration.system = "http://unitsofmeasure.org"
 
 
 * dosageInstruction.doseAndRate.doseQuantity.value = 1 

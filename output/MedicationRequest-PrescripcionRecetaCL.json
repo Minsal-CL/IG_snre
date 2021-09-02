@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Prod_Comercial</b>: <a href=\"https://api-receta.minsal.cl/v2/medication/med#1257\">Oxycontin MR</a></p><p><b>identifier</b>: id: RNCheque-1232</p><p><b>status</b>: active</p><p><b>statusReason</b>: <span title=\"Codes: \">probar otra alternativa primero</span></p><p><b>intent</b>: order</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}\">Inpatient</span></p><p><b>medication</b>: <a href=\"https://api-receta.minsal.cl/v2/Medication/Medicamento#1345\">Oxycodone</a></p><p><b>subject</b>: <a href=\"https://api-receta.minsal.cl/v2/Patient/Paciente#2411224\">Patricio Perez</a></p><p><b>authoredOn</b>: 2021-06-12</p><p><b>requester</b>: <a href=\"https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421\">Cecilia Ampuero</a></p><p><b>groupIdentifier</b>: id: FARM2122-1206211145-11</p><p><b>note</b>: Al paciente se le indicó que lo administrara durante comidas</p><blockquote><p><b>dispenseRequest</b></p><p><b>validityPeriod</b>: 2022-01-12 --&gt; (ongoing)</p><p><b>quantity</b>: 30</p></blockquote></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Prod_Comercial</b>: <a href=\"https://api-receta.minsal.cl/v2/medication/med#1257\">Oxycontin MR</a></p><p><b>identifier</b>: id: RNCheque-1232</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}\">Inpatient</span></p><p><b>medication</b>: <a href=\"https://api-receta.minsal.cl/v2/Medication/Medicamento#1345\">Oxycodone</a></p><p><b>subject</b>: <a href=\"https://api-receta.minsal.cl/v2/Patient/Paciente#2411224\">Patricio Perez</a></p><p><b>authoredOn</b>: 2021-06-12</p><p><b>requester</b>: <a href=\"https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421\">Cecilia Ampuero</a></p><p><b>groupIdentifier</b>: id: 359ac04b-40c5-43a6-9114-aaa0f51406bd</p><p><b>note</b>: Al paciente se le indicó que lo administrara durante comidas</p><blockquote><p><b>dispenseRequest</b></p><p><b>validityPeriod</b>: 2022-01-12 --&gt; (ongoing)</p><p><b>quantity</b>: 30</p></blockquote></div>"
   },
   "extension": [
     {
@@ -26,14 +26,6 @@
     }
   ],
   "status": "active",
-  "statusReason": {
-    "coding": [
-      {
-        "code": "altchoice",
-        "display": "probar otra alternativa primero"
-      }
-    ]
-  },
   "intent": "order",
   "category": [
     {
@@ -59,7 +51,7 @@
     "display": "Cecilia Ampuero"
   },
   "groupIdentifier": {
-    "value": "FARM2122-1206211145-11"
+    "value": "359ac04b-40c5-43a6-9114-aaa0f51406bd"
   },
   "note": [
     {
@@ -82,7 +74,7 @@
         "coding": [
           {
             "code": "421521009",
-            "display": "tragarlo, instrucciones de dosage imperativas (qualifier value)"
+            "display": "Tragarlo, instrucciones de dosage imperativas (qualifier value)"
           }
         ]
       },

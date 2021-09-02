@@ -6,7 +6,7 @@
     <profile value="http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Prod_Comercial</b>: <a href="https://api-receta.minsal.cl/v2/medication/med#1257">Oxycontin MR</a></p><p><b>identifier</b>: id: RNCheque-1232</p><p><b>status</b>: active</p><p><b>statusReason</b>: <span title="Codes: ">probar otra alternativa primero</span></p><p><b>intent</b>: order</p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient</span></p><p><b>medication</b>: <a href="https://api-receta.minsal.cl/v2/Medication/Medicamento#1345">Oxycodone</a></p><p><b>subject</b>: <a href="https://api-receta.minsal.cl/v2/Patient/Paciente#2411224">Patricio Perez</a></p><p><b>authoredOn</b>: 2021-06-12</p><p><b>requester</b>: <a href="https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421">Cecilia Ampuero</a></p><p><b>groupIdentifier</b>: id: FARM2122-1206211145-11</p><p><b>note</b>: Al paciente se le indicó que lo administrara durante comidas</p><blockquote><p><b>dispenseRequest</b></p><p><b>validityPeriod</b>: 2022-01-12 --&gt; (ongoing)</p><p><b>quantity</b>: 30</p></blockquote></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Prod_Comercial</b>: <a href="https://api-receta.minsal.cl/v2/medication/med#1257">Oxycontin MR</a></p><p><b>identifier</b>: id: RNCheque-1232</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient</span></p><p><b>medication</b>: <a href="https://api-receta.minsal.cl/v2/Medication/Medicamento#1345">Oxycodone</a></p><p><b>subject</b>: <a href="https://api-receta.minsal.cl/v2/Patient/Paciente#2411224">Patricio Perez</a></p><p><b>authoredOn</b>: 2021-06-12</p><p><b>requester</b>: <a href="https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421">Cecilia Ampuero</a></p><p><b>groupIdentifier</b>: id: 359ac04b-40c5-43a6-9114-aaa0f51406bd</p><p><b>note</b>: Al paciente se le indicó que lo administrara durante comidas</p><blockquote><p><b>dispenseRequest</b></p><p><b>validityPeriod</b>: 2022-01-12 --&gt; (ongoing)</p><p><b>quantity</b>: 30</p></blockquote></div>
   </text>
   <extension url="http://minsal.cl/fhir/core/StructureDefinition/Prod-Comercial">
     <valueReference>
@@ -19,12 +19,6 @@
     <value value="RNCheque-1232"/>
   </identifier>
   <status value="active"/>
-  <statusReason>
-    <coding>
-      <code value="altchoice"/>
-      <display value="probar otra alternativa primero"/>
-    </coding>
-  </statusReason>
   <intent value="order"/>
   <category>
     <coding>
@@ -46,7 +40,7 @@
     <display value="Cecilia Ampuero"/>
   </requester>
   <groupIdentifier>
-    <value value="FARM2122-1206211145-11"/>
+    <value value="359ac04b-40c5-43a6-9114-aaa0f51406bd"/>
   </groupIdentifier>
   <note>
     <text value="Al paciente se le indic&#xF3; que lo administrara durante comidas"/>
@@ -65,7 +59,7 @@
     <route>
       <coding>
         <code value="421521009"/>
-        <display value="tragarlo, instrucciones de dosage imperativas (qualifier value)"/>
+        <display value="Tragarlo, instrucciones de dosage imperativas (qualifier value)"/>
       </coding>
     </route>
     <doseAndRate>

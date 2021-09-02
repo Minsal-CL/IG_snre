@@ -6,7 +6,7 @@
     <profile value="http://minsal.cl/fhir/core/StructureDefinition/RecetaCl"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>groupIdentifier</b>: id: 00001</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href="https://api-receta.minsal.cl/v2/Patient/Paciente#2411224">https://api-receta.minsal.cl/v2/Patient/Paciente#2411224</a></p><p><b>authoredOn</b>: 12-06-2021 13:31:00</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>groupIdentifier</b>: id: 617ab558-2749-4cf6-9c42-49dcda55bb2c</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href="https://api-receta.minsal.cl/v2/Patient/Paciente#2411224">https://api-receta.minsal.cl/v2/Patient/Paciente#2411224</a></p><p><b>authoredOn</b>: 12-06-2021 13:31:00</p></div>
   </text>
   <contained>
     <MedicationRequest>
@@ -31,7 +31,7 @@
       <intent value="order"/>
       <category>
         <coding>
-          <code value="community"/>
+          <code value="inpatient"/>
         </coding>
       </category>
       <medicationReference>
@@ -48,7 +48,7 @@
         <display value="JUAN JOS&#xC9; ORTEGA CALLEJAS"/>
       </requester>
       <groupIdentifier>
-        <value value="h1qouq88zjwvm6rlnwhq"/>
+        <value value="617ab558-2749-4cf6-9c42-49dcda55bb2c"/>
       </groupIdentifier>
       <dosageInstruction>
         <timing>
@@ -94,8 +94,17 @@
         <profile value="http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl"/>
       </meta>
       <identifier>
-        <system value="https://minsal.cl/portalReceta/prescripciones"/>
-        <value value="RNCheque-1234"/>
+        <type>
+          <coding>
+            <code value="Id_Local"/>
+            <display value="Identificaci&#xF3;n Local"/>
+          </coding>
+        </type>
+        <system value="https://sistema_de_dispensacion_local/prescripciones"/>
+        <value value="10101011"/>
+        <assigner>
+          <display value="CESFAM COQUIMBO"/>
+        </assigner>
       </identifier>
       <status value="completed"/>
       <intent value="order"/>
@@ -109,23 +118,23 @@
         <reference value="https://api-receta.minsal.cl/v2/Medication/Medicamento#1028"/>
       </medicationReference>
       <subject>
-        <reference value="https://api-receta.minsal.cl/v2/Patient/Paciente#2411224"/>
-        <display value="Patricio Perez"/>
+        <reference value="https://api-receta.minsal.cl/v2/Patient/3254156114"/>
+        <display value="FELIPE MAURICIO MANCINI RUIZ-TAGLE"/>
       </subject>
-      <authoredOn value="2021-06-12"/>
+      <authoredOn value="2021-08-15T17:31:00Z"/>
       <requester>
-        <reference value="https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421"/>
-        <display value="Cecilia Ampuero"/>
+        <reference value="https://api-receta.minsal.cl/v2/Practitioner/3253825513"/>
+        <display value="JUAN JOS&#xC9; ORTEGA CALLEJAS"/>
       </requester>
       <groupIdentifier>
-        <value value="FARM2122-1206211145-11"/>
+        <value value="617ab558-2749-4cf6-9c42-49dcda55bb2c"/>
       </groupIdentifier>
       <note>
         <text value="Al paciente se le indic&#xF3; lo tome 2 veces al d&#xED;a"/>
       </note>
       <dosageInstruction>
         <text value="Una tableta cada 12 hrs por 5 d&#xED;as"/>
-        <patientInstruction value="Una tableta al desayuno y otro a la cena"/>
+        <patientInstruction value="Una tableta al desayuno y otro a la cena, por 5 d&#xED;as"/>
         <timing>
           <repeat>
             <frequency value="1"/>
@@ -166,7 +175,7 @@
     </MedicationRequest>
   </contained>
   <groupIdentifier>
-    <value value="00001"/>
+    <value value="617ab558-2749-4cf6-9c42-49dcda55bb2c"/>
   </groupIdentifier>
   <status value="active"/>
   <intent value="order"/>

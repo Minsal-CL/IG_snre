@@ -1,37 +1,37 @@
 [
   {
-    "id": "hl7.fhir.uv.RecetaCH",
+    "id": "hl7.fhir.cl.RecetaCH",
     "type": "ImplementationGuide",
-    "url": "http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.uv.RecetaCH",
-    "version": "0.75 (Proceso de Ballot Pendiente)",
+    "url": "http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.cl.RecetaCH",
+    "version": "0.752 (Proceso de Ballot Pendiente)",
     "name": "RecetaCL"
   },
   {
     "id": "DispensacionMedicamentoCl",
     "type": "StructureDefinition",
     "url": "http://minsal.cl/fhir/core/StructureDefinition/DispensacionMedicamentoCl",
-    "version": "0.75 (Proceso de Ballot Pendiente)",
+    "version": "0.752 (Proceso de Ballot Pendiente)",
     "name": "DispensacionMedicamentoCL"
   },
   {
     "id": "Prod-Comercial",
     "type": "StructureDefinition",
     "url": "http://minsal.cl/fhir/core/StructureDefinition/Prod-Comercial",
-    "version": "0.75 (Proceso de Ballot Pendiente)",
+    "version": "0.752 (Proceso de Ballot Pendiente)",
     "name": "Prod_Comercial"
   },
   {
     "id": "RecetaCl",
     "type": "StructureDefinition",
     "url": "http://minsal.cl/fhir/core/StructureDefinition/RecetaCl",
-    "version": "0.75 (Proceso de Ballot Pendiente)",
+    "version": "0.752 (Proceso de Ballot Pendiente)",
     "name": "MedicamentoRecetaCL"
   },
   {
     "id": "RecetaPrescripcionCl",
     "type": "StructureDefinition",
     "url": "http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl",
-    "version": "0.75 (Proceso de Ballot Pendiente)",
+    "version": "0.752 (Proceso de Ballot Pendiente)",
     "name": "PrescripcionRecetaCL"
   }
 ]

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.UV.RECETACH\Ejemplo de la dispensacion del Medicamento Oxycodone Via Oral - FHIR v4.0.1</title>
+    <title>HL7.FHIR.CL.RECETACH\Ejemplo de la dispensacion del Medicamento Oxycodone Via Oral - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -64,7 +64,7 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación Receta-CL</span><br/>0.75 (Proceso de Ballot Pendiente) - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación Receta-CL</span><br/>0.752 (Proceso de Ballot Pendiente) - ci-build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -166,7 +166,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación Receta-CL - Local Development build (v0.75 (Proceso de Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación Receta-CL - Local Development build (v0.752 (Proceso de Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
   
 
@@ -219,7 +219,7 @@
 
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: Dispensacion-001</p><p><b>status</b>: completed</p><p><b>statusReason</b>: <span title="Codes: {http://minsal.cl/razon-de-no-dispensacion 1123654}">medicamento agotado</span></p><p><b>medication</b>: <a href="https://api-receta.minsal.cl/v2/medication/Med#22353">https://api-receta.minsal.cl/v2/medication/Med#22353</a></p><p><b>subject</b>: <a href="https://api-receta.minsal.cl/v2/Patient/Paciente#2411224">Patricio Perez</a></p><blockquote><p><b>performer</b></p><p><b>function</b>: <span title="Codes: ">Vendedor</span></p><p><b>actor</b>: <a href="https://api-receta.minsal.cl/v2/practitioner/Di#14785214">Juan Bastidas</a></p></blockquote><blockquote><p><b>performer</b></p><p><b>function</b>: <span title="Codes: ">Químico Farmaceutico</span></p><p><b>actor</b>: <a href="https://api-receta.minsal.cl/v2/practitioner/Di#245993">Sofia Galindo</a></p></blockquote><p><b>location</b>: <a href="https://api-receta.minsal.cl/v2/location/145874">https://api-receta.minsal.cl/v2/location/145874</a></p><p><b>authorizingPrescription</b>: <a href="https://api-receta.minsal.cl/v2/medicationReference/Pres#1321">https://api-receta.minsal.cl/v2/medicationReference/Pres#1321</a></p><p><b>quantity</b>: 1</p><p><b>whenHandedOver</b>: 10-01-2020 17:22:12</p><p><b>note</b>: El medicamento solo se receta en caso de dolor extremo y cuando este persista por mas de 10 dias</p></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: Dispensacion-001</p><p><b>status</b>: cancelled</p><p><b>statusReason</b>: <span title="Codes: {http://minsal.cl/razon-de-no-dispensacion 1123654}">medicamento agotado</span></p><p><b>medication</b>: <a href="https://api-receta.minsal.cl/v2/medication/Med#22353">https://api-receta.minsal.cl/v2/medication/Med#22353</a></p><p><b>subject</b>: <a href="https://api-receta.minsal.cl/v2/Patient/Paciente#2411224">Patricio Perez</a></p><blockquote><p><b>performer</b></p><p><b>function</b>: <span title="Codes: ">Vendedor</span></p><p><b>actor</b>: <a href="https://api-receta.minsal.cl/v2/practitioner/Di#14785214">Juan Bastidas</a></p></blockquote><blockquote><p><b>performer</b></p><p><b>function</b>: <span title="Codes: ">Químico Farmaceutico</span></p><p><b>actor</b>: <a href="https://api-receta.minsal.cl/v2/practitioner/Di#245993">Sofia Galindo</a></p></blockquote><p><b>location</b>: <a href="https://api-receta.minsal.cl/v2/location/145874">https://api-receta.minsal.cl/v2/location/145874</a></p><p><b>authorizingPrescription</b>: <a href="https://api-receta.minsal.cl/v2/medicationReference/Pres#1321">https://api-receta.minsal.cl/v2/medicationReference/Pres#1321</a></p><p><b>quantity</b>: 1</p><p><b>whenHandedOver</b>: 10-01-2020 17:22:12</p><p><b>note</b>: El medicamento solo se receta en caso de dolor extremo y cuando este persista por mas de 10 dias</p></div>
 
   <!-- insert notes if present -->
   
@@ -257,8 +257,8 @@
         
         <div class="inner-wrapper">
             <p>
-                IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.uv.RecetaCH#0.75 (Proceso de Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Wed, Sep 1, 2021 15:09-0400">01-09-2021</span>
+                IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.RecetaCH#0.752 (Proceso de Ballot Pendiente)
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Thu, Sep 2, 2021 12:55-0400">02-09-2021</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

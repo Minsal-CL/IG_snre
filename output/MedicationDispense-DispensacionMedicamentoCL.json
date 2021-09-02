@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: Dispensacion-001</p><p><b>status</b>: completed</p><p><b>statusReason</b>: <span title=\"Codes: {http://minsal.cl/razon-de-no-dispensacion 1123654}\">medicamento agotado</span></p><p><b>medication</b>: <a href=\"https://api-receta.minsal.cl/v2/medication/Med#22353\">https://api-receta.minsal.cl/v2/medication/Med#22353</a></p><p><b>subject</b>: <a href=\"https://api-receta.minsal.cl/v2/Patient/Paciente#2411224\">Patricio Perez</a></p><blockquote><p><b>performer</b></p><p><b>function</b>: <span title=\"Codes: \">Vendedor</span></p><p><b>actor</b>: <a href=\"https://api-receta.minsal.cl/v2/practitioner/Di#14785214\">Juan Bastidas</a></p></blockquote><blockquote><p><b>performer</b></p><p><b>function</b>: <span title=\"Codes: \">Químico Farmaceutico</span></p><p><b>actor</b>: <a href=\"https://api-receta.minsal.cl/v2/practitioner/Di#245993\">Sofia Galindo</a></p></blockquote><p><b>location</b>: <a href=\"https://api-receta.minsal.cl/v2/location/145874\">https://api-receta.minsal.cl/v2/location/145874</a></p><p><b>authorizingPrescription</b>: <a href=\"https://api-receta.minsal.cl/v2/medicationReference/Pres#1321\">https://api-receta.minsal.cl/v2/medicationReference/Pres#1321</a></p><p><b>quantity</b>: 1</p><p><b>whenHandedOver</b>: 10-01-2020 17:22:12</p><p><b>note</b>: El medicamento solo se receta en caso de dolor extremo y cuando este persista por mas de 10 dias</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: Dispensacion-001</p><p><b>status</b>: cancelled</p><p><b>statusReason</b>: <span title=\"Codes: {http://minsal.cl/razon-de-no-dispensacion 1123654}\">medicamento agotado</span></p><p><b>medication</b>: <a href=\"https://api-receta.minsal.cl/v2/medication/Med#22353\">https://api-receta.minsal.cl/v2/medication/Med#22353</a></p><p><b>subject</b>: <a href=\"https://api-receta.minsal.cl/v2/Patient/Paciente#2411224\">Patricio Perez</a></p><blockquote><p><b>performer</b></p><p><b>function</b>: <span title=\"Codes: \">Vendedor</span></p><p><b>actor</b>: <a href=\"https://api-receta.minsal.cl/v2/practitioner/Di#14785214\">Juan Bastidas</a></p></blockquote><blockquote><p><b>performer</b></p><p><b>function</b>: <span title=\"Codes: \">Químico Farmaceutico</span></p><p><b>actor</b>: <a href=\"https://api-receta.minsal.cl/v2/practitioner/Di#245993\">Sofia Galindo</a></p></blockquote><p><b>location</b>: <a href=\"https://api-receta.minsal.cl/v2/location/145874\">https://api-receta.minsal.cl/v2/location/145874</a></p><p><b>authorizingPrescription</b>: <a href=\"https://api-receta.minsal.cl/v2/medicationReference/Pres#1321\">https://api-receta.minsal.cl/v2/medicationReference/Pres#1321</a></p><p><b>quantity</b>: 1</p><p><b>whenHandedOver</b>: 10-01-2020 17:22:12</p><p><b>note</b>: El medicamento solo se receta en caso de dolor extremo y cuando este persista por mas de 10 dias</p></div>"
   },
   "identifier": [
     {
@@ -16,7 +16,7 @@
       "value": "Dispensacion-001"
     }
   ],
-  "status": "completed",
+  "status": "cancelled",
   "statusReasonCodeableConcept": {
     "coding": [
       {

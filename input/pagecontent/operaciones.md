@@ -632,7 +632,7 @@ Lo anterior es aplicable para un recurso ya creado el cual se alamacena con una 
 
         <td>GET [base]/Patient?identifier=http://minsal.cl/API/Paciente</td>
 
-        <td>99999999</td>
+        <td>|99999999</td>
 
         </tr>
 
@@ -667,6 +667,6 @@ _Establecimientos de Salud_: utiliza su identificación por medio de código DEI
 
 _Farmacias_: utiliza el registro de farmacias Farmanet y se expone como como los recursos FHIR Location y Organization.
 
-_Pacientes:_ Se identifican por medio de su número identificador que pude ser cualquier tipo de documento especificado en las tablas de HL7 V3 relcionados con identificadores de personas.
+_Pacientes:_ Se identifican por medio de su número identificador que peude ser cualquier tipo de documento, especificado en las tablas de HL7 V3 relcionados con identificadores de personas.
 
 _Tablas Maestras específicas:_ se incluyen las de comunas, provincias y regiones, entre otras pertenecientes a la normativa Nacional que son expuestas en la GI y que deben ser en muchos casos levantadas a nivel local

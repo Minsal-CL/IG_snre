@@ -52,7 +52,7 @@ El proyecto abarca desde la prescripción médica hasta el momento de la dispens
 
 El funcionamiento genérico con sus funciones sería el siguiente:
 
-*Emisión de Receta y Registro en Repositorio:* El prescriptor visualiza los datos administrativos de la receta, como los de identificación de paciente, prestador e institución (traídos automáticamente por el sistema). El ministerio de salud dispondrá de una serie de recursos para la validación de los datos mencionados.
+*Emisión de Receta y Registro en Repositorio:* El prescriptor visualiza los datos administrativos de la receta, como los de identificación de paciente, prestador e institución (traídos automáticamente por el sistema). El Ministerio de Salud dispondrá de una serie de recursos para la validación de los datos mencionados.
 El clínico ingresa los datos de prescripción, como el fármaco recetado, potencia, dosis. Una vez generado el documento clínico, ser enviado al repositorio centralizado de receta.
 
 *Dispensación de Receta Electrónica:* Cada paciente, desde su aplicación móvil y/o correo electrónico, podrá disponer de las recetas extendidas a su nombre o de algún tercero bajo autorización. El ministerio de salud dispondrá de un servicio que permitirá leer, mediante código de barra, el folio de la receta, de modo de poder obtener la información de la receta o el documento mismo desde el repositorio central. La farmacia deberá registrar el o los medicamentos dispensados, tanto el producto comercial como información relativa a la cantidad y números disponibles de dispensación. El detalle será tratado más adelante.
@@ -65,8 +65,8 @@ El clínico ingresa los datos de prescripción, como el fármaco recetado, poten
 El proyecto se separa en básicamente 4 procesos que son los que se enumeran continuación:
 <br>
 
-#####	Proceso de prescripción
-Este proceso se desarrolla en el momento en que un prescriptor desarrolla una receta. Dentro de
+#####	Proceso de Prescripción
+Este proceso se desarrolla en el momento en que un prescriptor genera una receta. Dentro de
 los pasos fundamentales de este caso se encuentran:
 
 * Validación de Prescriptor y Paciente
@@ -98,16 +98,16 @@ Este proceso describe los cambios de estado que sufre una receta durante el cicl
 Esta Guía se estructura en base al manú de la parte superior de la siguiente manera:
 <br>
 
-* [Inicio](index.html): Página de Bienvenida a la Guía
+* [Home](index.html): Página de Bienvenida a la Guía
 * [Objetivos](Alcances-Objetivos.html): Información General sobre los objetivos de esta Guía
 * [Actores y Casos de Uso](casos.html): Información detallada de los casos de uso, sus actores, y la secuencia de transacciones
-* [Operaciones y Terminologías](operaciones.html): Información General de las operaciones básicas que se ejecutan al momento de hacer generar manejo de datos entre un servicio FHIR y los clientes
-* [Resumen de Artefactos](artifacts.html): Describe todos los artefactos que son parte de esta GI, separados en Esteuctura de Perfiles, Extensiones, Value Sets y Ejemplos. Dado que esta Guía Hereda su base Canónica desde el Core-CL, algunos de los artefactos descritos son parte de esa Guía
+* [Operaciones y Terminologías](operaciones.html): Información general de las operaciones básicas que se ejecutan al momento de hacer generar manejo de datos entre un servicio FHIR y los clientes
+* [Resumen de Artefactos](artifacts.html): Describe todos los artefactos que son parte de esta GI, separados en Estructura de Perfiles, Extensiones, Value Sets y Ejemplos. Dado que esta Guía hereda su base Canónica desde el Core-CL, algunos de los artefactos descritos son parte de esa Guía
 * Perfiles: Este menú despliega el listado de los 4 perfiles generados para esta GI
   * [Prescripción](StructureDefinition-RecetaPrescripcionCl.html): Perfil del Recurso para la prescripción de un fármaco
   * [Dispensación](StructureDefinition-DispensacionMedicamentoCl.html): Perfil de Recurso para la dispensación de farmacos desde puntos de despacho
   * [Receta](StructureDefinition-RecetaCl.html): Perfil de recurso que permite agrupar diferentes prescriciones en formato de una única receta
-* Ejemplos: Listo de ejemplos desarrollados para cada Perfil generado para esta GI
+* Ejemplos: Listado de ejemplos desarrollados para cada Perfil generado para esta GI
 <br>
 <br>
 

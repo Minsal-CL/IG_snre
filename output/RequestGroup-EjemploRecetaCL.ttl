@@ -18,7 +18,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>groupIdentifier</b>: id: 00001</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"https://api-receta.minsal.cl/v2/Patient/Paciente#2411224\">https://api-receta.minsal.cl/v2/Patient/Paciente#2411224</a></p><p><b>authoredOn</b>: 12-06-2021 13:31:00</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>groupIdentifier</b>: id: 617ab558-2749-4cf6-9c42-49dcda55bb2c</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"https://api-receta.minsal.cl/v2/Patient/Paciente#2411224\">https://api-receta.minsal.cl/v2/Patient/Paciente#2411224</a></p><p><b>authoredOn</b>: 12-06-2021 13:31:00</p></div>"
   ];
   fhir:DomainResource.contained [
      a fhir:MedicationRequest;
@@ -52,7 +52,7 @@
        fhir:index 0;
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.code [ fhir:value "community" ]
+         fhir:Coding.code [ fhir:value "inpatient" ]
        ]
      ];
      fhir:MedicationRequest.medicationReference [
@@ -72,7 +72,7 @@
        fhir:Reference.display [ fhir:value "JUAN JOSÉ ORTEGA CALLEJAS" ]
      ];
      fhir:MedicationRequest.groupIdentifier [
-       fhir:Identifier.value [ fhir:value "h1qouq88zjwvm6rlnwhq" ]
+       fhir:Identifier.value [ fhir:value "617ab558-2749-4cf6-9c42-49dcda55bb2c" ]
      ];
      fhir:MedicationRequest.dosageInstruction [
        fhir:index 0;
@@ -128,8 +128,18 @@
      ];
      fhir:MedicationRequest.identifier [
        fhir:index 0;
-       fhir:Identifier.system [ fhir:value "https://minsal.cl/portalReceta/prescripciones" ];
-       fhir:Identifier.value [ fhir:value "RNCheque-1234" ]
+       fhir:Identifier.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.code [ fhir:value "Id_Local" ];
+           fhir:Coding.display [ fhir:value "Identificación Local" ]
+         ]
+       ];
+       fhir:Identifier.system [ fhir:value "https://sistema_de_dispensacion_local/prescripciones" ];
+       fhir:Identifier.value [ fhir:value "10101011" ];
+       fhir:Identifier.assigner [
+         fhir:Reference.display [ fhir:value "CESFAM COQUIMBO" ]
+       ]
      ];
      fhir:MedicationRequest.status [ fhir:value "completed" ];
      fhir:MedicationRequest.intent [ fhir:value "order" ];
@@ -146,18 +156,18 @@
        fhir:Reference.reference [ fhir:value "https://api-receta.minsal.cl/v2/Medication/Medicamento#1028" ]
      ];
      fhir:MedicationRequest.subject [
-       fhir:link <https://api-receta.minsal.cl/v2/Patient/Paciente#2411224>;
-       fhir:Reference.reference [ fhir:value "https://api-receta.minsal.cl/v2/Patient/Paciente#2411224" ];
-       fhir:Reference.display [ fhir:value "Patricio Perez" ]
+       fhir:link <https://api-receta.minsal.cl/v2/Patient/3254156114>;
+       fhir:Reference.reference [ fhir:value "https://api-receta.minsal.cl/v2/Patient/3254156114" ];
+       fhir:Reference.display [ fhir:value "FELIPE MAURICIO MANCINI RUIZ-TAGLE" ]
      ];
-     fhir:MedicationRequest.authoredOn [ fhir:value "2021-06-12"^^xsd:date ];
+     fhir:MedicationRequest.authoredOn [ fhir:value "2021-08-15T17:31:00Z"^^xsd:dateTime ];
      fhir:MedicationRequest.requester [
-       fhir:link <https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421>;
-       fhir:Reference.reference [ fhir:value "https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421" ];
-       fhir:Reference.display [ fhir:value "Cecilia Ampuero" ]
+       fhir:link <https://api-receta.minsal.cl/v2/Practitioner/3253825513>;
+       fhir:Reference.reference [ fhir:value "https://api-receta.minsal.cl/v2/Practitioner/3253825513" ];
+       fhir:Reference.display [ fhir:value "JUAN JOSÉ ORTEGA CALLEJAS" ]
      ];
      fhir:MedicationRequest.groupIdentifier [
-       fhir:Identifier.value [ fhir:value "FARM2122-1206211145-11" ]
+       fhir:Identifier.value [ fhir:value "617ab558-2749-4cf6-9c42-49dcda55bb2c" ]
      ];
      fhir:MedicationRequest.note [
        fhir:index 0;
@@ -166,7 +176,7 @@
      fhir:MedicationRequest.dosageInstruction [
        fhir:index 0;
        fhir:Dosage.text [ fhir:value "Una tableta cada 12 hrs por 5 días" ];
-       fhir:Dosage.patientInstruction [ fhir:value "Una tableta al desayuno y otro a la cena" ];
+       fhir:Dosage.patientInstruction [ fhir:value "Una tableta al desayuno y otro a la cena, por 5 días" ];
        fhir:Dosage.timing [
          fhir:Timing.repeat [
            fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:positiveInteger ];
@@ -209,7 +219,7 @@
      ]
   ];
   fhir:RequestGroup.groupIdentifier [
-     fhir:Identifier.value [ fhir:value "00001" ]
+     fhir:Identifier.value [ fhir:value "617ab558-2749-4cf6-9c42-49dcda55bb2c" ]
   ];
   fhir:RequestGroup.status [ fhir:value "active"];
   fhir:RequestGroup.intent [ fhir:value "order"];

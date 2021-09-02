@@ -10,8 +10,8 @@ Description:    "Este Perfil usa este recurso como un contenedor de Prescripcion
 * groupIdentifier MS
 * groupIdentifier 1..1
 * groupIdentifier ^short = "Número identificador de grupo que debe ser el mismo con el cual se identificaron los farmacos prescritos en el acto clínico"
-* groupIdentifier ^definition = "dEste numero vincula el contenedor con todos los farmacos prescritos durante la atención del paciente. Este hará el uso de Receta y el grupo de farmacos co misma identificacion grupal. El formato debe ser xxxxxxxx"
-* groupIdentifier.value ^short = "identificador de grupo"
+* groupIdentifier ^definition = "Este numero vincula el contenedor con todos los farmacos prescritos durante la atención del paciente. Este hará el uso de Receta y el grupo de farmacos co misma identificacion grupal. El formato debe ser xxxxxxxx"
+* groupIdentifier.value ^short = "Identificador de grupo"
 
 * status and intent MS
 * status ^short = "	draft | active | on-hold | revoked | completed | entered-in-error | unknown"
@@ -50,7 +50,7 @@ InstanceOf : RecetaCl
 
 * contained[0] = medicationrequest-1
 * contained[+] = medicationrequest-2
-* groupIdentifier.value = "00001"
+* groupIdentifier.value = "617ab558-2749-4cf6-9c42-49dcda55bb2c"
 * status = #active
 * intent = #order
 * subject.reference = "https://api-receta.minsal.cl/v2/Patient/Paciente#2411224"
@@ -67,12 +67,12 @@ Usage: #inline
 
 * status = #active
 * intent = #order
-* category.coding.code = #community
+* category.coding.code = #inpatient
 * medicationReference = Reference(https://api-receta.minsal.cl/v2/Medication/1703591000167111) "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"
 * subject = Reference(https://api-receta.minsal.cl/v2/Patient/3254156114) "FELIPE MAURICIO MANCINI RUIZ-TAGLE"
 * requester = Reference(https://api-receta.minsal.cl/v2/Practitioner/3253825513) "JUAN JOSÉ ORTEGA CALLEJAS"
 * authoredOn = "2021-08-15T17:31:00Z"
-* groupIdentifier.value = "h1qouq88zjwvm6rlnwhq"
+* groupIdentifier.value = "617ab558-2749-4cf6-9c42-49dcda55bb2c"
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.period = 1
 * dosageInstruction.timing.repeat.periodUnit = #d
@@ -93,8 +93,11 @@ Instance: medicationrequest-2
 InstanceOf: RecetaPrescripcionCl
 Usage: #inline
 
-* identifier.system = "https://minsal.cl/portalReceta/prescripciones"
-* identifier.value = "RNCheque-1234"
+* identifier.type.coding.code = #Id_Local
+* identifier.type.coding.display = "Identificación Local"
+* identifier.system = "https://sistema_de_dispensacion_local/prescripciones"
+* identifier.value = "10101011"
+* identifier.assigner.display = "CESFAM COQUIMBO"
 
 * status = #completed
 
@@ -105,22 +108,19 @@ Usage: #inline
 * category.coding.code = #inpatient
 //* category.coding.display = "Inpatient"
 
-* groupIdentifier.value = "FARM2122-1206211145-11"
+* groupIdentifier.value = "617ab558-2749-4cf6-9c42-49dcda55bb2c"
 
 * medicationReference.reference = "https://api-receta.minsal.cl/v2/Medication/Medicamento#1028"
 
-* subject.reference = "https://api-receta.minsal.cl/v2/Patient/Paciente#2411224"
-* subject.display = "Patricio Perez"
+* subject = Reference(https://api-receta.minsal.cl/v2/Patient/3254156114) "FELIPE MAURICIO MANCINI RUIZ-TAGLE"
+* requester = Reference(https://api-receta.minsal.cl/v2/Practitioner/3253825513) "JUAN JOSÉ ORTEGA CALLEJAS"
+* authoredOn = "2021-08-15T17:31:00Z"
 
-* authoredOn = "2021-06-12"
-
-* requester.reference = "https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421"
-* requester.display = "Cecilia Ampuero"
 
 * note.text = "Al paciente se le indicó lo tome 2 veces al día"
 
 * dosageInstruction.text = "Una tableta cada 12 hrs por 5 días"
-* dosageInstruction.patientInstruction = "Una tableta al desayuno y otro a la cena"
+* dosageInstruction.patientInstruction = "Una tableta al desayuno y otro a la cena, por 5 días"
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.period = 12
 
@@ -157,7 +157,7 @@ Usage: #example
 * contained = MedicamentoPres
 * status = #active
 * intent = #order
-* groupIdentifier.value = "97925d4fee524551ad2f"
+* groupIdentifier.value = "815823ca-28ca-4094-8518-c3ee7c6ebca0"
 * subject = Reference(https://api-receta.minsal.cl/v2/Patient/1115090713) "PABLO PIZARRO"
 * authoredOn = "2021-08-22T17:31:00Z"
 
@@ -170,12 +170,12 @@ Usage: #inline
 * intent = #order
 
 * subject = Reference(https://api-receta.minsal.cl/v2/Patient/1115090713) "PABLO PIZARRO"
-* category.coding.code = #community
+* category.coding.code = #inpatient
 * requester = Reference(https://api-receta.minsal.cl/v2/Practitioner/3245690418) "Maria Carmen De los angeles Del rio Gonzalez"
 * authoredOn = "2021-08-22T17:31:00Z"
 * dispenseRequest.validityPeriod.end = "2021-09-22"
 * dispenseRequest.validityPeriod.start = "2021-08-22"
-* groupIdentifier.value = "97925d4fee524551ad2f"
+* groupIdentifier.value = "815823ca-28ca-4094-8518-c3ee7c6ebca0"
 * dosageInstruction.route = $sct#26643006 "Vía Oral"
 * dosageInstruction.method = $sct#738995006 "Tragar (método de administración)"
 * dosageInstruction.timing.repeat.period = 1

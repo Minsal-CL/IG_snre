@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>groupIdentifier</b>: id: 00001</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"https://api-receta.minsal.cl/v2/Patient/Paciente#2411224\">https://api-receta.minsal.cl/v2/Patient/Paciente#2411224</a></p><p><b>authoredOn</b>: 12-06-2021 13:31:00</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>groupIdentifier</b>: id: 617ab558-2749-4cf6-9c42-49dcda55bb2c</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"https://api-receta.minsal.cl/v2/Patient/Paciente#2411224\">https://api-receta.minsal.cl/v2/Patient/Paciente#2411224</a></p><p><b>authoredOn</b>: 12-06-2021 13:31:00</p></div>"
   },
   "contained": [
     {
@@ -42,7 +42,7 @@
         {
           "coding": [
             {
-              "code": "community"
+              "code": "inpatient"
             }
           ]
         }
@@ -61,7 +61,7 @@
         "display": "JUAN JOSÉ ORTEGA CALLEJAS"
       },
       "groupIdentifier": {
-        "value": "h1qouq88zjwvm6rlnwhq"
+        "value": "617ab558-2749-4cf6-9c42-49dcda55bb2c"
       },
       "dosageInstruction": [
         {
@@ -117,8 +117,19 @@
       },
       "identifier": [
         {
-          "system": "https://minsal.cl/portalReceta/prescripciones",
-          "value": "RNCheque-1234"
+          "type": {
+            "coding": [
+              {
+                "code": "Id_Local",
+                "display": "Identificación Local"
+              }
+            ]
+          },
+          "system": "https://sistema_de_dispensacion_local/prescripciones",
+          "value": "10101011",
+          "assigner": {
+            "display": "CESFAM COQUIMBO"
+          }
         }
       ],
       "status": "completed",
@@ -137,16 +148,16 @@
         "reference": "https://api-receta.minsal.cl/v2/Medication/Medicamento#1028"
       },
       "subject": {
-        "reference": "https://api-receta.minsal.cl/v2/Patient/Paciente#2411224",
-        "display": "Patricio Perez"
+        "reference": "https://api-receta.minsal.cl/v2/Patient/3254156114",
+        "display": "FELIPE MAURICIO MANCINI RUIZ-TAGLE"
       },
-      "authoredOn": "2021-06-12",
+      "authoredOn": "2021-08-15T17:31:00Z",
       "requester": {
-        "reference": "https://api-receta.minsal.cl/v2/Practitioner/PRestador#923421",
-        "display": "Cecilia Ampuero"
+        "reference": "https://api-receta.minsal.cl/v2/Practitioner/3253825513",
+        "display": "JUAN JOSÉ ORTEGA CALLEJAS"
       },
       "groupIdentifier": {
-        "value": "FARM2122-1206211145-11"
+        "value": "617ab558-2749-4cf6-9c42-49dcda55bb2c"
       },
       "note": [
         {
@@ -156,7 +167,7 @@
       "dosageInstruction": [
         {
           "text": "Una tableta cada 12 hrs por 5 días",
-          "patientInstruction": "Una tableta al desayuno y otro a la cena",
+          "patientInstruction": "Una tableta al desayuno y otro a la cena, por 5 días",
           "timing": {
             "repeat": {
               "frequency": 1,
@@ -202,7 +213,7 @@
     }
   ],
   "groupIdentifier": {
-    "value": "00001"
+    "value": "617ab558-2749-4cf6-9c42-49dcda55bb2c"
   },
   "status": "active",
   "intent": "order",

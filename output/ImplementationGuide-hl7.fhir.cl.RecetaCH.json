@@ -1,12 +1,12 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "hl7.fhir.uv.RecetaCH",
+  "id": "hl7.fhir.cl.RecetaCH",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RecetaCL</h2><p>The official URL for this implementation guide is: </p><pre>http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.uv.RecetaCH</pre><div><p>Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional. Esta Guía se encuentra aún en proceso de creación por lo que esta versión esta sujeta a observaciones y cambios. Aquellos implementadores que tengan acceso a ella se les sugiere desarrollar comentarios para su mejora)</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RecetaCL</h2><p>The official URL for this implementation guide is: </p><pre>http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.cl.RecetaCH</pre><div><p>Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional. Esta Guía se encuentra aún en proceso de creación por lo que esta versión esta sujeta a observaciones y cambios. Aquellos implementadores que tengan acceso a ella se les sugiere desarrollar comentarios para su mejora)</p>\n</div></div>"
   },
-  "url": "http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.uv.RecetaCH",
-  "version": "0.75 (Proceso de Ballot Pendiente)",
+  "url": "http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.cl.RecetaCH",
+  "version": "0.752 (Proceso de Ballot Pendiente)",
   "name": "RecetaCL",
   "title": "Guía de Implementación Receta-CL",
   "status": "draft",
@@ -27,14 +27,14 @@
     {
       "coding": [
         {
-          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code": "152",
-          "display": "Chile (CHL)"
+          "system": "urn:iso:std:iso:3166",
+          "code": "CL",
+          "display": "Chile"
         }
       ]
     }
   ],
-  "packageId": "hl7.fhir.uv.RecetaCH",
+  "packageId": "hl7.fhir.cl.RecetaCH",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
@@ -355,7 +355,7 @@
           "reference": "StructureDefinition/RecetaPrescripcionCl"
         },
         "name": "Prescripción_CL",
-        "description": "Este Perfil describe la información contenida en la prescripción de un medicamento para la Receta Electrónica Nacional del MINSAL",
+        "description": "Este Perfil describe la información contenida en la Prescripción de un medicamento para la Receta Electrónica Nacional del MINSAL",
         "exampleBoolean": false
       },
       {

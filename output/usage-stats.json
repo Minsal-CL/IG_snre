@@ -1,8 +1,8 @@
 {
-  "package": "hl7.fhir.uv.RecetaCH",
-  "version": "0.75 (Proceso de Ballot Pendiente)",
+  "package": "hl7.fhir.cl.RecetaCH",
+  "version": "0.752 (Proceso de Ballot Pendiente)",
   "fhirVersion": "4.0.1",
-  "jurisdiction": "152",
+  "jurisdiction": "CL",
   "extensions": [
     {
       "url": "http://minsal.cl/fhir/core/StructureDefinition/Prod-Comercial",

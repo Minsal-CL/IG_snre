@@ -11,10 +11,10 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://minsal.cl/fhir/core/StructureDefinition/Prod-Comercial"/>
-  <version value="0.75 (Proceso de Ballot Pendiente)"/>
+  <version value="0.752 (Proceso de Ballot Pendiente)"/>
   <name value="Prod_Comercial"/>
   <status value="active"/>
-  <date value="2021-09-01T15:09:38-04:00"/>
+  <date value="2021-09-02T12:55:11-04:00"/>
   <contact>
     <name value="Pablo Pizzaro"/>
     <telecom>
@@ -25,9 +25,9 @@
   <description value="Recomendaci&#xF3;n de Medicamento en Producto Comercial"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="152"/>
-      <display value="Chile (CHL)"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>
