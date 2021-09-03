@@ -7,7 +7,7 @@
 </div></div>
   </text>
   <url value="http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.cl.RecetaCH"/>
-  <version value="0.752 (Proceso de Ballot Pendiente)"/>
+  <version value="0.753 (Proceso de Ballot Pendiente)"/>
   <name value="RecetaCL"/>
   <title value="Gu&#xED;a de Implementaci&#xF3;n Receta-CL"/>
   <status value="draft"/>

@@ -22,11 +22,11 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl"];
-  fhir:StructureDefinition.version [ fhir:value "0.752 (Proceso de Ballot Pendiente)"];
+  fhir:StructureDefinition.version [ fhir:value "0.753 (Proceso de Ballot Pendiente)"];
   fhir:StructureDefinition.name [ fhir:value "PrescripcionRecetaCL"];
   fhir:StructureDefinition.title [ fhir:value "Prescripción_CL"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-09-03T09:14:47-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-09-03T09:34:12-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];

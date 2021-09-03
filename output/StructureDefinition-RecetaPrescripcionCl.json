@@ -16,11 +16,11 @@
     }
   ],
   "url": "http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl",
-  "version": "0.752 (Proceso de Ballot Pendiente)",
+  "version": "0.753 (Proceso de Ballot Pendiente)",
   "name": "PrescripcionRecetaCL",
   "title": "Prescripción_CL",
   "status": "active",
-  "date": "2021-09-03T09:14:47-04:00",
+  "date": "2021-09-03T09:34:12-04:00",
   "contact": [
     {
       "name": "Pablo Pizzaro",

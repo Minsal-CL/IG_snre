@@ -62,11 +62,11 @@
     <valueCode value="patient"/>
   </extension>
   <url value="http://minsal.cl/fhir/core/StructureDefinition/DispensacionMedicamentoCl"/>
-  <version value="0.752 (Proceso de Ballot Pendiente)"/>
+  <version value="0.753 (Proceso de Ballot Pendiente)"/>
   <name value="DispensacionMedicamentoCL"/>
   <title value="Dispensaci&#xF3;n_CL"/>
   <status value="active"/>
-  <date value="2021-09-03T09:14:47-04:00"/>
+  <date value="2021-09-03T09:34:12-04:00"/>
   <contact>
     <name value="Pablo Pizzaro"/>
     <telecom>

@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.cl.RecetaCH",
-  "version": "0.752 (Proceso de Ballot Pendiente)",
+  "version": "0.753 (Proceso de Ballot Pendiente)",
   "fhirVersion": "4.0.1",
   "jurisdiction": "CL",
   "extensions": [

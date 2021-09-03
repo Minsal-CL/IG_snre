@@ -6,7 +6,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RecetaCL</h2><p>The official URL for this implementation guide is: </p><pre>http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.cl.RecetaCH</pre><div><p>Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional. Esta Guía se encuentra aún en proceso de creación por lo que esta versión esta sujeta a observaciones y cambios. Aquellos implementadores que tengan acceso a ella se les sugiere desarrollar comentarios para su mejora)</p>\n</div></div>"
   },
   "url": "http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.cl.RecetaCH",
-  "version": "0.752 (Proceso de Ballot Pendiente)",
+  "version": "0.753 (Proceso de Ballot Pendiente)",
   "name": "RecetaCL",
   "title": "Guía de Implementación Receta-CL",
   "status": "draft",
