@@ -262,6 +262,7 @@ Usage: #example
 * dosageInstruction.additionalInstruction.coding.display = "Advertencia. Puede provocar somnolencia. Si le afecta no conduzca ni maneje maquinaria. Evitar las bebidas alcohólicas (valor calificativo)"
 * dosageInstruction.patientInstruction = "Tomar una o dos pastillas cada 4-6 horas en caso de aumento de dolor"
 * dosageInstruction.timing.repeat.frequency = 1
+* dosageInstruction.timing.repeat.frequencyMax = 2
 * dosageInstruction.timing.repeat.period = 4
 * dosageInstruction.timing.repeat.periodMax = 6
 * dosageInstruction.timing.repeat.periodUnit = #h

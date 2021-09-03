@@ -290,7 +290,7 @@
       <reference>
         <reference value="MedicationRequest/PrescripcionRecetaCL"/>
       </reference>
-      <name value="Ejemplo Prescripci&#xF3;n de Medicamento Oxycodone Via Oral, para una solicitud segun necesidad con pre-condiciones"/>
+      <name value="Ejemplo Prescripci&#xF3;n de Medicamento Oxycodone Via Oral, una o dos tabletas al d&#xED;a cada 4 o 6 horas, para una solicitud segun necesidad con pre-condiciones"/>
       <exampleCanonical value="http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl"/>
     </resource>
     <resource>
@@ -300,7 +300,7 @@
       <reference>
         <reference value="MedicationRequest/PrescripcionRecetaCL-2"/>
       </reference>
-      <name value="Ejemplo de Prescripci&#xF3;n de Hidroclorotizida + Valsart&#xE1;n"/>
+      <name value="Ejemplo de Prescripci&#xF3;n de Hidroclorotizida + Valsart&#xE1;n, Prescrito dos veces al d&#xED;a V&#xED;a Oral, trag&#xE1;ndoselo"/>
       <exampleCanonical value="http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl"/>
     </resource>
     <page>

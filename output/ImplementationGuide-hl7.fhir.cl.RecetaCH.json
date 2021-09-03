@@ -434,7 +434,7 @@
         "reference": {
           "reference": "MedicationRequest/PrescripcionRecetaCL"
         },
-        "name": "Ejemplo Prescripción de Medicamento Oxycodone Via Oral, para una solicitud segun necesidad con pre-condiciones",
+        "name": "Ejemplo Prescripción de Medicamento Oxycodone Via Oral, una o dos tabletas al día cada 4 o 6 horas, para una solicitud segun necesidad con pre-condiciones",
         "exampleCanonical": "http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl"
       },
       {
@@ -447,7 +447,7 @@
         "reference": {
           "reference": "MedicationRequest/PrescripcionRecetaCL-2"
         },
-        "name": "Ejemplo de Prescripción de Hidroclorotizida + Valsartán",
+        "name": "Ejemplo de Prescripción de Hidroclorotizida + Valsartán, Prescrito dos veces al día Vía Oral, tragándoselo",
         "exampleCanonical": "http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl"
       }
     ],

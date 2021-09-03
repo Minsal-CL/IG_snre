@@ -108,6 +108,7 @@
      fhir:Dosage.timing [
        fhir:Timing.repeat [
          fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:positiveInteger ];
+         fhir:Timing.repeat.frequencyMax [ fhir:value "2"^^xsd:positiveInteger ];
          fhir:Timing.repeat.period [ fhir:value "4"^^xsd:decimal ];
          fhir:Timing.repeat.periodMax [ fhir:value "6"^^xsd:decimal ];
          fhir:Timing.repeat.periodUnit [ fhir:value "h" ]

@@ -6,7 +6,7 @@
     <profile value="http://minsal.cl/fhir/core/StructureDefinition/RecetaCl"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>groupIdentifier</b>: id: 617ab558-2749-4cf6-9c42-49dcda55bb2c</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href="https://api-receta.minsal.cl/v2/Patient/Paciente#2411224">https://api-receta.minsal.cl/v2/Patient/Paciente#2411224</a></p><p><b>authoredOn</b>: 12-06-2021 13:31:00</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>groupIdentifier</b>: id: z4fxajxh2kdkock9pvsp</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href="https://api-receta.minsal.cl/v2/Patient/Paciente#2411224">https://api-receta.minsal.cl/v2/Patient/Paciente#2411224</a></p><p><b>authoredOn</b>: 12-06-2021 13:31:00</p></div>
   </text>
   <contained>
     <MedicationRequest>
@@ -48,7 +48,7 @@
         <display value="JUAN JOS&#xC9; ORTEGA CALLEJAS"/>
       </requester>
       <groupIdentifier>
-        <value value="617ab558-2749-4cf6-9c42-49dcda55bb2c"/>
+        <value value="z4fxajxh2kdkock9pvsp"/>
       </groupIdentifier>
       <dosageInstruction>
         <timing>
@@ -111,7 +111,7 @@
       <category>
         <coding>
           <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
-          <code value="inpatient"/>
+          <code value="outpatient"/>
         </coding>
       </category>
       <medicationReference>
@@ -127,7 +127,7 @@
         <display value="JUAN JOS&#xC9; ORTEGA CALLEJAS"/>
       </requester>
       <groupIdentifier>
-        <value value="617ab558-2749-4cf6-9c42-49dcda55bb2c"/>
+        <value value="z4fxajxh2kdkock9pvsp"/>
       </groupIdentifier>
       <note>
         <text value="Al paciente se le indic&#xF3; lo tome 2 veces al d&#xED;a"/>
@@ -175,7 +175,7 @@
     </MedicationRequest>
   </contained>
   <groupIdentifier>
-    <value value="617ab558-2749-4cf6-9c42-49dcda55bb2c"/>
+    <value value="z4fxajxh2kdkock9pvsp"/>
   </groupIdentifier>
   <status value="active"/>
   <intent value="order"/>

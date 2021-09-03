@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>groupIdentifier</b>: id: 617ab558-2749-4cf6-9c42-49dcda55bb2c</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"https://api-receta.minsal.cl/v2/Patient/Paciente#2411224\">https://api-receta.minsal.cl/v2/Patient/Paciente#2411224</a></p><p><b>authoredOn</b>: 12-06-2021 13:31:00</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>groupIdentifier</b>: id: z4fxajxh2kdkock9pvsp</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"https://api-receta.minsal.cl/v2/Patient/Paciente#2411224\">https://api-receta.minsal.cl/v2/Patient/Paciente#2411224</a></p><p><b>authoredOn</b>: 12-06-2021 13:31:00</p></div>"
   },
   "contained": [
     {
@@ -61,7 +61,7 @@
         "display": "JUAN JOSÉ ORTEGA CALLEJAS"
       },
       "groupIdentifier": {
-        "value": "617ab558-2749-4cf6-9c42-49dcda55bb2c"
+        "value": "z4fxajxh2kdkock9pvsp"
       },
       "dosageInstruction": [
         {
@@ -139,7 +139,7 @@
           "coding": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
-              "code": "inpatient"
+              "code": "outpatient"
             }
           ]
         }
@@ -157,7 +157,7 @@
         "display": "JUAN JOSÉ ORTEGA CALLEJAS"
       },
       "groupIdentifier": {
-        "value": "617ab558-2749-4cf6-9c42-49dcda55bb2c"
+        "value": "z4fxajxh2kdkock9pvsp"
       },
       "note": [
         {
@@ -213,7 +213,7 @@
     }
   ],
   "groupIdentifier": {
-    "value": "617ab558-2749-4cf6-9c42-49dcda55bb2c"
+    "value": "z4fxajxh2kdkock9pvsp"
   },
   "status": "active",
   "intent": "order",

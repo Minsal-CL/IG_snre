@@ -428,7 +428,7 @@
          fhir:link <http://minsal.cl/fhir/core/MedicationRequest/PrescripcionRecetaCL>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/PrescripcionRecetaCL" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo Prescripción de Medicamento Oxycodone Via Oral, para una solicitud segun necesidad con pre-condiciones" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo Prescripción de Medicamento Oxycodone Via Oral, una o dos tabletas al día cada 4 o 6 horas, para una solicitud segun necesidad con pre-condiciones" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl";
          fhir:link <http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl>
@@ -444,7 +444,7 @@
          fhir:link <http://minsal.cl/fhir/core/MedicationRequest/PrescripcionRecetaCL-2>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/PrescripcionRecetaCL-2" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Prescripción de Hidroclorotizida + Valsartán" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Prescripción de Hidroclorotizida + Valsartán, Prescrito dos veces al día Vía Oral, tragándoselo" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl";
          fhir:link <http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl>

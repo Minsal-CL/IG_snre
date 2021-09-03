@@ -100,6 +100,7 @@
       "timing": {
         "repeat": {
           "frequency": 1,
+          "frequencyMax": 2,
           "period": 4,
           "periodMax": 6,
           "periodUnit": "h"

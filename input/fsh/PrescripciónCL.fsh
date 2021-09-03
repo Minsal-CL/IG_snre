@@ -39,9 +39,9 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 //Identificador de Grupo
 * groupIdentifier MS
 * groupIdentifier 1..1
-* groupIdentifier ^short = "Número identificador de grupo que debe ser el mismo con el cual se identificaron los farmacos prescritos en el acto clínico. Se genera como UUID"
-* groupIdentifier ^definition = "Este numero vincula el contenedor (RequestGroup) con todos los farmacos prescritos durante la atención del paciente (medicationRequest). Este hará el uso de Receta y el grupo de farmacos co misma identificacion grupal. El formato debe ser UUID"
-* groupIdentifier ^comment = "El elemento groupIdentifier de los recursos MedicationRequest generados durante el mismo acto clínico deberán coincidir con el que se genere en el recurso RequestGroup. Este identificador debe ser generado como un valor UUID"
+* groupIdentifier ^short = "Número identificador de grupo que debe ser el mismo con el cual se identificaron los farmacos prescritos en el acto clínico. Se genera como un NanoId"
+* groupIdentifier ^definition = "Este numero vincula el contenedor (RequestGroup) con todos los farmacos prescritos durante la atención del paciente (medicationRequest). Este hará el uso de Receta y el grupo de farmacos co misma identificacion grupal. El formato debe ser NanoId"
+* groupIdentifier ^comment = "El elemento groupIdentifier de los recursos MedicationRequest generados durante el mismo acto clínico deberán coincidir con el que se genere en el recurso RequestGroup. Este identificador debe ser generado como un valor NanoId"
 * groupIdentifier.value ^short = "Identificador de grupo"
 
 * category MS
@@ -118,8 +118,8 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 		* dosageInstruction.timing.repeat.period ^short = "Período en el cual se realizan las repeticiones"
 		* dosageInstruction.timing.repeat.periodMax ^short = "Periodo máximo en el cual se realizan las repeticiones"
 		* dosageInstruction.timing.repeat.periodUnit ^short = "s | min | h | d | wk | mo | a - unidad de tiempo (UCUM) (Requerida)"
-		* dosageInstruction.timing.repeat.frequency ^definition = "Cantidad de repeticiones"
-		* dosageInstruction.timing.repeat.period ^definition = "Período en el cual se realizan las repeticiones"
+		* dosageInstruction.timing.repeat.frequency ^definition = "El número de veces que se debe repetir la acción dentro del periodo especificado. Si frequencyMax está presente, este elemento indica el límite inferior del rango permitido de la frecuencia."
+		* dosageInstruction.timing.repeat.period ^definition = "Indica la duración del tiempo durante el cual deben producirse las repeticiones; por ejemplo, para expresar ´3 veces al día´, 3 sería la frecuencia y ´1 día´ sería el periodo. Si periodMax está presente, este elemento indica el límite inferior del rango permitido de la longitud del periodo."
 		* dosageInstruction.timing.repeat.periodMax ^definition = "Periodo máximo en el cual se realizan las repeticiones"
 		* dosageInstruction.timing.repeat.periodUnit ^definition = "s | min | h | d | wk | mo | a - unidad de tiempo (UCUM) (Requerida)"
 
@@ -136,6 +136,17 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 		* dosageInstruction.route.coding.system ^definition = "Sistema basado en subset de Snomed CT"
 		* dosageInstruction.route.coding.code ^definition = "Código de la via de Snomed" 
 		* dosageInstruction.route.coding.display ^definition = "Descripción del código"
+
+	* dosageInstruction.method MS
+		* dosageInstruction.method ^short = "Forma exacta en el fármaco ingresa al organismo"
+		* dosageInstruction.method ^definition = "Forma exacta en el fármaco ingresa al organismo. En este caso se define la ruta plausible para vías de administración"
+		* dosageInstruction.method.coding.system = "http://snomed.info/sct"
+		* dosageInstruction.method.coding.system ^short = "Se usará Snomed Ct para la definición del set de valores"
+		* dosageInstruction.method.coding.system ^definition = "Se usará Snomed Ct para la definición del set de valores definidos para este caso"
+		* dosageInstruction.method.coding.code ^short = "Código en Snomed-Ct correspondiente al método"
+		* dosageInstruction.method.coding.code ^definition = "Código en Snomed-Ct correspondiente al método"
+		* dosageInstruction.route.coding.code ^short = "Código del metodo indicado"
+		* dosageInstruction.route.coding.code ^definition = "Código del metodo indicado"
 
 	
 	* dosageInstruction.doseAndRate ^short = "Cantidad de medicamento administrado puede ser Cantidad o Rango"	
@@ -222,7 +233,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
  
 
 Instance : PrescripcionRecetaCL
-Title : "Ejemplo Prescripción de Medicamento Oxycodone Via Oral, para una solicitud segun necesidad con pre-condiciones"
+Title : "Ejemplo Prescripción de Medicamento Oxycodone Via Oral, una o dos tabletas al día cada 4 o 6 horas, para una solicitud segun necesidad con pre-condiciones"
 InstanceOf : RecetaPrescripcionCl	
 Usage: #example
 
@@ -236,10 +247,10 @@ Usage: #example
 * intent = #order
 
 * category.coding.system = "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
-* category.coding.code = #inpatient
+* category.coding.code = #outpatient
 //* category.coding.display = "Inpatient"
 
-* groupIdentifier.value = "359ac04b-40c5-43a6-9114-aaa0f51406bd"
+* groupIdentifier.value = "tv829fxi21tqloo5fl2n"
 
 * medicationReference.reference = "https://api-receta.minsal.cl/v2/Medication/Medicamento#1345"
 * medicationReference.display = "Oxycodone"
@@ -261,6 +272,7 @@ Usage: #example
 * dosageInstruction.text = "Una o dos tabletas cada 4 a 6 horas segun necesidad en base a la intensidad del dolor renal"
 * dosageInstruction.patientInstruction = "Una o dos tabletas cada 4 a 6 horas segun necesidad en base a la intensidad del dolor renal"
 * dosageInstruction.timing.repeat.frequency = 1
+* dosageInstruction.timing.repeat.frequencyMax = 2
 * dosageInstruction.timing.repeat.period = 4
 * dosageInstruction.timing.repeat.periodMax = 6
 * dosageInstruction.timing.repeat.periodUnit = #h
@@ -287,7 +299,7 @@ Usage: #example
 Alias: $sct = http://snomed.info/sct
 
 Instance: PrescripcionRecetaCL-2
-Title: "Ejemplo de Prescripción de Hidroclorotizida + Valsartán"
+Title: "Ejemplo de Prescripción de Hidroclorotizida + Valsartán, Prescrito dos veces al día Vía Oral, tragándoselo"
 InstanceOf: RecetaPrescripcionCl
 Usage: #example
 
@@ -299,13 +311,13 @@ Usage: #example
 
 * status = #active
 * intent = #order
-* category.coding.code = #inpatient
+* category.coding.code = #outpatient
 * medicationReference = Reference(https://api-receta.minsal.cl/v2/Medication/1703591000167111) "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"
 * subject = Reference(https://api-receta.minsal.cl/v2/Patient/3254156114) "FELIPE MAURICIO MANCINI RUIZ-TAGLE"
 * requester = Reference(https://api-receta.minsal.cl/v2/Practitioner/3253825513) "JUAN JOSÉ ORTEGA CALLEJAS"
 * authoredOn = "2021-08-15T17:31:00Z"
 * groupIdentifier.value = "64e51a53-97d3-44dc-bbfe-1c8697697763"
-* dosageInstruction.timing.repeat.frequency = 1
+* dosageInstruction.timing.repeat.frequency = 2
 * dosageInstruction.timing.repeat.period = 1
 * dosageInstruction.timing.repeat.periodUnit = #d
 * dosageInstruction.route = $sct#26643006 "Vía Oral"
