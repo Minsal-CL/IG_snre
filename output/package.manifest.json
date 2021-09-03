@@ -1,10 +1,6 @@
 {
   "version": "0.753 (Proceso de Ballot Pendiente)",
   "fhirVersion": "[4.0.1]",
-<<<<<<< HEAD
-  "date": "20210903093349",
-=======
-  "date": "20210902145036",
->>>>>>> 452dcf60ac54c6c7c4ce42a6f13196e1806d1d99
+  "date": "20210903100924",
   "name": "hl7.fhir.cl.RecetaCH"
 }
