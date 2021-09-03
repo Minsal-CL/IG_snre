@@ -116,6 +116,8 @@ Esta Guía se estructura en base al manú de la parte superior de la siguiente m
 
 * Autores de la Guía: **Pablo Pizarro (MINSAL)**, **Nicolás Soto (MINSAL)**, **César Galindo (HL7 Chile)**, **Jorge Mansilla (HL7 Chile)**
 * Colaborarodes: *Diego Olea (MINSAL)*, *Franco Ulloa (MINSAL)*, *Diego Kaminker (HL7 Iternacional)*
+<br>
+<br>
 ### Recursos a Disposición
 <br>
 

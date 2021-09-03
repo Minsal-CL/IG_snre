@@ -3,7 +3,7 @@
   "name": "RecetaCL",
   "package-id": "hl7.fhir.cl.RecetaCH",
   "ig-ver": "0.753 (Proceso de Ballot Pendiente)",
-  "date": "Fri, 03 Sep, 2021 10:51:55 -0400",
+  "date": "Fri, 03 Sep, 2021 10:56:36 -0400",
   "errs": 32,
   "warnings": 51,
   "hints": 4,
