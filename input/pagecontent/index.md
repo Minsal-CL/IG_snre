@@ -111,11 +111,11 @@ Esta Guía se estructura en base al manú de la parte superior de la siguiente m
 <br>
 <br>
 
-###	 Colaboraciones en el Proyecto
+###	 Autores y Colaboradores
 <br>
 
-Autores de la Guía: Pablo Pizarro (MINSAL), Nicolás Soto (MINSAL), César Galindo (HL7 Chile), Jorge Mansilla (HL7 Chile)
-Colaborarodes: Diego Olea (MINSAL), Franco Ulloa (MINSAL), Diego Kaminker (HL7 Iternacional)
+* Autores de la Guía: **Pablo Pizarro (MINSAL)**, **Nicolás Soto (MINSAL)**, **César Galindo (HL7 Chile)**, **Jorge Mansilla (HL7 Chile)**
+* Colaborarodes: *Diego Olea (MINSAL)*, *Franco Ulloa (MINSAL)*, *Diego Kaminker (HL7 Iternacional)*
 ### Recursos a Disposición
 <br>
 

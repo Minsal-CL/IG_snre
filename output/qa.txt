@@ -3,7 +3,7 @@
 
 err = 32, warn = 51, info = 4
 IG Publisher Version: 1.1.77 Out of date - current version is 1.1.79
-Generated Fri Sep 03 10:45:38 CLT 2021. FHIR version 4.0.1 for hl7.fhir.cl.RecetaCH#0.753 (Proceso de Ballot Pendiente) (canonical = http://minsal.cl/fhir/core)
+Generated Fri Sep 03 10:52:33 CLT 2021. FHIR version 4.0.1 for hl7.fhir.cl.RecetaCH#0.753 (Proceso de Ballot Pendiente) (canonical = http://minsal.cl/fhir/core)
 
  Build Errors : 1 / 6 / 0
  C:\GI_FHIR\IG_Receta\fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.RecetaCH : 0 / 0 / 1
