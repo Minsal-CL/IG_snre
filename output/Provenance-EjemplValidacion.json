@@ -1,0 +1,57 @@
+{
+  "resourceType": "Provenance",
+  "id": "EjemplValidacion",
+  "meta": {
+    "profile": [
+      "http://minsal.cl/fhir/core/StructureDefinition/ValProcCl"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>target</b>: <a href=\"http://Repositorio.cl/RequestGroup/RG#12224\">http://Repositorio.cl/RequestGroup/RG#12224</a></p><p><b>recorded</b>: 26-08-2015 19:39:24</p><p><b>activity</b>: <span title=\"Codes: \">legally authenticated</span></p><h3>Agents</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Who</b></td></tr><tr><td>*</td><td><span title=\"Codes: \">author</span></td><td><a href=\"http://Practitioner/Prac-author\">http://Practitioner/Prac-author</a></td></tr></table></div>"
+  },
+  "target": [
+    {
+      "reference": "http://Repositorio.cl/RequestGroup/RG#12224"
+    }
+  ],
+  "recorded": "2015-08-27T08:39:24+10:00",
+  "activity": {
+    "coding": [
+      {
+        "code": "LA",
+        "display": "legally authenticated"
+      }
+    ]
+  },
+  "agent": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "AUT",
+            "display": "author"
+          }
+        ]
+      },
+      "who": {
+        "reference": "http://Practitioner/Prac-author"
+      }
+    }
+  ],
+  "signature": [
+    {
+      "type": [
+        {
+          "code": "1.2.840.10065.1.12.1.1"
+        }
+      ],
+      "when": "2015-08-27T08:39:24+10:00",
+      "who": {
+        "reference": "Practitioner/Prac-author"
+      },
+      "sigFormat": "application/signature+xml",
+      "data": "Li4u"
+    }
+  ]
+}

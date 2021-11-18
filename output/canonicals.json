@@ -33,5 +33,12 @@
     "url": "http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl",
     "version": "0.753 (Proceso de Ballot Pendiente)",
     "name": "PrescripcionRecetaCL"
+  },
+  {
+    "id": "ValProcCl",
+    "type": "StructureDefinition",
+    "url": "http://minsal.cl/fhir/core/StructureDefinition/ValProcCl",
+    "version": "0.753 (Proceso de Ballot Pendiente)",
+    "name": "ValidacionProcedenciaCL"
   }
 ]

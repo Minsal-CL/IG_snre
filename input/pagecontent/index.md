@@ -119,6 +119,7 @@ Esta Guía se estructura en base al manú de la parte superior de la siguiente m
 <br>
 <br>
 ### Recursos a Disposición
+
 <br>
 
 [Ministerio de Salud de Chile] (http://www.minsal.cl)
