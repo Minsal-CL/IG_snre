@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "MedicamentoRecetaCL"];
   fhir:StructureDefinition.title [ fhir:value "Receta_CL"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-10-28T10:40:49-03:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-11-18T15:17:02-03:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];
