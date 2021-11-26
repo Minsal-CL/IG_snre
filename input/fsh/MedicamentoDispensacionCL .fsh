@@ -319,7 +319,7 @@ Usage: #example
 
 * dosageInstruction.timing.repeat.boundsDuration.value = 1 
 * dosageInstruction.timing.repeat.boundsDuration.unit = #d
-	* dosageInstruction.timing.repeat.boundsDuration.system = "http://unitsofmeasure.org"
+* dosageInstruction.timing.repeat.boundsDuration.system = "http://unitsofmeasure.org"
 
 
 * dosageInstruction.doseAndRate.doseQuantity.value = 1 
