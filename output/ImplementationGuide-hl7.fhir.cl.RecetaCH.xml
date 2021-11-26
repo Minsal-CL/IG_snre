@@ -234,6 +234,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ValProcCl"/>
+      </reference>
+      <name value="Validaci&#xF3;n de la Procedencia de una Receta"/>
+      <description value="Este Perfil describe la forma de validaci&#xF3;n respecto a la procedencia de una Receta genrada durante un acto cl&#xED;nico."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -262,6 +273,16 @@
       </reference>
       <name value="Ejemplo de la dispensacion del Medicamento Kitadol 500mg"/>
       <exampleCanonical value="http://minsal.cl/fhir/core/StructureDefinition/DispensacionMedicamentoCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/EjemplValidacion"/>
+      </reference>
+      <name value="Ejemplo de la Validaci&#xF3;n de una Receta por medio del Prescriptor"/>
+      <exampleCanonical value="http://minsal.cl/fhir/core/StructureDefinition/ValProcCl"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

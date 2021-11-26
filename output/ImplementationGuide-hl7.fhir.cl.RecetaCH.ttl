@@ -344,6 +344,20 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://minsal.cl/fhir/core/StructureDefinition/ValProcCl>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ValProcCl" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Validación de la Procedencia de una Receta" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este Perfil describe la forma de validación respecto a la procedencia de una Receta genrada durante un acto clínico." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -354,7 +368,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Recomendación de Medicamento en Producto Comercial" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -370,7 +384,7 @@
          fhir:link <http://minsal.cl/fhir/core/StructureDefinition/DispensacionMedicamentoCl>
        ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -386,7 +400,23 @@
          fhir:link <http://minsal.cl/fhir/core/StructureDefinition/DispensacionMedicamentoCl>
        ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Provenance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://minsal.cl/fhir/core/Provenance/EjemplValidacion>;
+         fhir:Reference.reference [ fhir:value "Provenance/EjemplValidacion" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de la Validación de una Receta por medio del Prescriptor" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://minsal.cl/fhir/core/StructureDefinition/ValProcCl";
+         fhir:link <http://minsal.cl/fhir/core/StructureDefinition/ValProcCl>
+       ]
+     ], [
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -402,7 +432,7 @@
          fhir:link <http://minsal.cl/fhir/core/StructureDefinition/RecetaCl>
        ]
      ], [
-       fhir:index 7;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -418,7 +448,7 @@
          fhir:link <http://minsal.cl/fhir/core/StructureDefinition/RecetaCl>
        ]
      ], [
-       fhir:index 8;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -434,7 +464,7 @@
          fhir:link <http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl>
        ]
      ], [
-       fhir:index 9;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

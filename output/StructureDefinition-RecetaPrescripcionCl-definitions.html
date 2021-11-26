@@ -171,40 +171,75 @@
 
 <div style="counter-reset: section 4" class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Guía de Implementación Receta-CL - Local Development build (v0.753 (Proceso de Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-        
-   
+  
+
+
+
+
+
+
+
+
+
+
 
 <ul class="nav nav-tabs">
+
+  <li>
+    <a href="StructureDefinition-RecetaPrescripcionCl.html">Content</a>
+  </li>
+
+
+
+  <li class="active">
+    <a href="#">Detailed Descriptions</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-RecetaPrescripcionCl-mappings.html">Mappings</a>
+    </li>
+  
+
+
+
+
+  
     
+      <li>
+        <a href="StructureDefinition-RecetaPrescripcionCl-examples.html">Examples</a>
+      </li>
+    
+  
+
+
+
+
+  
     <li>
-        <a href="StructureDefinition-RecetaPrescripcionCl.html">Contenido</a>
+      <a href="StructureDefinition-RecetaPrescripcionCl.profile.xml.html">XML</a>
     </li>
-     
-    <li class="active">
-        <a href="#">Descripción detallada</a>
-    </li>
-      
+  
+
+
+  
     <li>
-        <a href="StructureDefinition-RecetaPrescripcionCl-mappings.html">Mapeo</a>
+      <a href="StructureDefinition-RecetaPrescripcionCl.profile.json.html">JSON</a>
     </li>
-         
+  
+
+
+  
     <li>
-        <a href="StructureDefinition-RecetaPrescripcionCl-examples.html">Ejemplos</a>
+      <a href="StructureDefinition-RecetaPrescripcionCl.profile.ttl.html">TTL</a>
     </li>
-         
-    <li>
-        <a href="StructureDefinition-RecetaPrescripcionCl.profile.xml.html">XML</a>
-    </li>
-       
-    <li>
-        <a href="StructureDefinition-RecetaPrescripcionCl.profile.json.html">JSON</a>
-    </li>
-       
-    <li>
-        <a href="StructureDefinition-RecetaPrescripcionCl.profile.ttl.html">TTL</a>
-    </li>
-      
+  
+
+
 </ul>
+
 
 <a name="root"> </a>
 <h2 id="root">Resource Profile: PrescripcionRecetaCL - Detailed Descriptions</h2>
@@ -2882,7 +2917,7 @@ A coded concept describing the reason that a different medication should (or sho
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices on MedicationRequest.priorPrescription.extension. The slices are unordered and Open, and can be differentiated using the following discriminators: <ul> <li>value @ url</li></ul></td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="MedicationRequest.priorPrescription.reference"> </a><span style="color: grey">272.</span> <b>MedicationRequest.priorPrescription.reference</b><a href="#MedicationRequest.priorPrescription.reference" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
-  <tr><td>Definition</td><td><p>Recurso MedicationDispense que se reemplaza.</p>
+  <tr><td>Definition</td><td><p>A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ref-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
@@ -3006,7 +3041,7 @@ Aa resource (or, for logical models, the URI of the logical model).</p>
         <div class="inner-wrapper">
             <p>
                 IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.RecetaCH#0.753 (Proceso de Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Fri, Sep 10, 2021 18:24-0300">10-09-2021</span>
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Thu, Nov 18, 2021 15:17-0300">18-11-2021</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

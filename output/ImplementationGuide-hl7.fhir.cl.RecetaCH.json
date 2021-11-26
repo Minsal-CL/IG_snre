@@ -362,6 +362,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ValProcCl"
+        },
+        "name": "Validación de la Procedencia de una Receta",
+        "description": "Este Perfil describe la forma de validación respecto a la procedencia de una Receta genrada durante un acto clínico.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
           }
         ],
@@ -397,6 +411,19 @@
         },
         "name": "Ejemplo de la dispensacion del Medicamento Kitadol 500mg",
         "exampleCanonical": "http://minsal.cl/fhir/core/StructureDefinition/DispensacionMedicamentoCl"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/EjemplValidacion"
+        },
+        "name": "Ejemplo de la Validación de una Receta por medio del Prescriptor",
+        "exampleCanonical": "http://minsal.cl/fhir/core/StructureDefinition/ValProcCl"
       },
       {
         "extension": [
