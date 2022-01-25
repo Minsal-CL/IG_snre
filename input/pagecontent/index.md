@@ -1,12 +1,12 @@
 ### Disclaimer
 <br>
 
-Esta guía se encuentra en una **fase de evolución** por lo que esta sujeta a cambios previo a alcanzar nivel normativo. El proceso de apertura a implementadores será usado como primer balotage con el fin de recopilar de parte de éstos actores comentarios, sugerencias u observaciones para robustecer la GI previa Versión 1.0
+Esta guía se encuentra en **fase de evolución** por lo que esta sujeta a cambios previo a alcanzar nivel normativo. El proceso de apertura a implementadores será usado como primer balotage con el fin de recopilar de parte de éstos actores comentarios, sugerencias u observaciones para robustecer la GI previa Versión 1.0
 
 ### Trasfondo
 <br>
 
-Este documenta presenta los servicios que deberán estar contenidos en los desarrollos que permitan la interoperabilidad de los distintos sistemas de **Prescripción** y **Dispensación** con el **Sistema Nacional de Receta Electrónica**. Así mismo, describe cómo se usan los recursos FHIR para cada uno de los componentes del desarrollo. Esta guía propone todos los artefactos y perfiles necesarios para conseguir los objetivos de interoperabilidad en base al estándar HL7 FHIR R4.
+Este document presenta los servicios que deberán estar contenidos en los desarrollos que permitan la interoperabilidad de los distintos sistemas de **Prescripción** y **Dispensación** con el **Sistema Nacional de Receta Electrónica**. Así mismo, describe cómo se usan los recursos FHIR para cada uno de los componentes del desarrollo. Esta guía presenta todos los artefactos y perfiles necesarios para conseguir los objetivos de interoperabilidad en base al estándar HL7 FHIR R4.
 <br>
 <br>
 
@@ -53,16 +53,16 @@ El proyecto abarca desde la prescripción médica hasta el momento de la dispens
 El funcionamiento genérico con sus funciones sería el siguiente:
 
 *Emisión de Receta y Registro en Repositorio:* El prescriptor visualiza los datos administrativos de la receta, como los de identificación de paciente, prestador e institución (traídos automáticamente por el sistema). El Ministerio de Salud dispondrá de una serie de recursos para la validación de los datos mencionados.
-El clínico ingresa los datos de prescripción, como el fármaco recetado, potencia, dosis. Una vez generado el documento clínico, ser enviado al repositorio centralizado de receta.
+El clínico ingresa los datos de prescripción, como el fármaco recetado, potencia, dosis. Una vez generado el documento clínico, este es enviado al repositorio centralizado de receta.
 
-*Dispensación de Receta Electrónica:* Cada paciente, desde su aplicación móvil y/o correo electrónico, podrá disponer de las recetas extendidas a su nombre o de algún tercero bajo autorización. El ministerio de salud dispondrá de un servicio que permitirá leer, mediante código de barra, el folio de la receta, de modo de poder obtener la información de la receta o el documento mismo desde el repositorio central. La farmacia deberá registrar el o los medicamentos dispensados, tanto el producto comercial como información relativa a la cantidad y números disponibles de dispensación. El detalle será tratado más adelante.
+*Dispensación de Receta Electrónica:* Cada paciente, desde su aplicación móvil y/o correo electrónico, podrá disponer de las recetas extendidas a su nombre o de algún tercero bajo autorización. El ministerio de salud dispondrá de un servicio que permitirá leer, mediante código de barra, el folio de la receta, para poder obtener la información de la receta o el documento mismo desde el repositorio central. La farmacia deberá registrar el o los medicamentos dispensados, tanto para producto commercial como genérico o bioequivalente. El detalle será tratado más adelante.
 <br>
 <br>
 
 ####	Procesos
 <br>
 
-El proyecto se separa en básicamente 4 procesos que son los que se enumeran continuación:
+El proyecto se separa en básicamente tres procesos, los cuales son enumerados continuación:
 <br>
 
 #####	Proceso de Prescripción
@@ -83,7 +83,7 @@ Este proceso se desarrolla en el momento en que el dispensador recibe una solici
 * Notificación de dispensación al repositorio
 <br>
 
-####	Proceso de cambio de estado
+#####	Proceso de cambio de estado
 Este proceso describe los cambios de estado que sufre una receta durante el ciclo de prescripción y dispensación de esta. Estos cambios de estado pueden deberse a múltiples razones, las cuales se especifican en los Subset de valores correspondientes a los recursos estimados para el proyecto. Los pasos fundamentales son los siguientes:
 * Validación de usuario
 * Consulta y recepción de Receta
@@ -95,18 +95,18 @@ Este proceso describe los cambios de estado que sufre una receta durante el cicl
 ### Contenido de la Guía
 <br>
 
-Esta Guía se estructura en base al manú de la parte superior de la siguiente manera:
+Esta Guía se estructura en base al menú de la parte superior de la siguiente manera:
 <br>
 
-* [Home](index.html): Página de Bienvenida a la Guía
+* [Home](index.html): Página de Bienvenida a la Guía.
 * [Objetivos](Alcances-Objetivos.html): Información General sobre los objetivos de esta Guía
-* [Actores y Casos de Uso](casos.html): Información detallada de los casos de uso, sus actores, y la secuencia de transacciones
-* [Operaciones y Terminologías](operaciones.html): Información general de las operaciones básicas que se ejecutan al momento de hacer generar manejo de datos entre un servicio FHIR y los clientes
+* [Actores y Casos de Uso](casos.html): Información detallada de los casos de uso, sus actores, y la secuencia de transacciones.
+* [Operaciones y Terminologías](operaciones.html): Información general de las operaciones básicas que se ejecutan para el manejo de datos entre un servicio FHIR y los clientes.
 * [Resumen de Artefactos](artifacts.html): Describe todos los artefactos que son parte de esta GI, separados en Estructura de Perfiles, Extensiones, Value Sets y Ejemplos. Dado que esta Guía hereda su base Canónica desde el Core-CL, algunos de los artefactos descritos son parte de esa Guía
-* Perfiles: Este menú despliega el listado de los 4 perfiles generados para esta GI
+* Perfiles: Este menú despliega el listado de los 3 perfiles generados para esta GI
   * [Prescripción](StructureDefinition-RecetaPrescripcionCl.html): Perfil del Recurso para la prescripción de un fármaco
-  * [Dispensación](StructureDefinition-DispensacionMedicamentoCl.html): Perfil de Recurso para la dispensación de farmacos desde puntos de despacho
-  * [Receta](StructureDefinition-RecetaCl.html): Perfil de recurso que permite agrupar diferentes prescriciones en formato de una única receta
+  * [Dispensación](StructureDefinition-DispensacionMedicamentoCl.html): Perfil de Recurso para la dispensación de fármacos desde puntos de despacho
+  * [Receta](StructureDefinition-RecetaCl.html): Perfil de recurso que permite agrupar diferentes prescripciones en formato de una única receta
 * Ejemplos: Listado de ejemplos desarrollados para cada Perfil generado para esta GI
 <br>
 <br>
@@ -115,18 +115,18 @@ Esta Guía se estructura en base al manú de la parte superior de la siguiente m
 <br>
 
 * Autores de la Guía: **Pablo Pizarro (MINSAL)**, **Nicolás Soto (MINSAL)**, **César Galindo (HL7 Chile)**, **Jorge Mansilla (HL7 Chile)**
-* Colaborarodes: *Diego Olea (MINSAL)*, *Franco Ulloa (MINSAL)*, *Diego Kaminker (HL7 Iternacional)*
+* Colaboradores: *Diego Olea (MINSAL)*, *Franco Ulloa (MINSAL)* *Fernanda Canales (MINSAL)*, *Diego Kaminker (HL7 Iternacional)*
 <br>
 <br>
 ### Recursos a Disposición
 
 <br>
 
-[Ministerio de Salud de Chile] (http://www.minsal.cl)
+[Ministerio de Salud de Chile](http://www.minsal.cl)
 
 [Capítulo Chileno de HL7, HL7 Chile](http://hl7chile.cl)
 
-HL7 Internacional (http://hl7.org)
+[HL7 Internacional](http://hl7.org)
 
 [FHIR R4](http://hl7.org/fhir/)
 
