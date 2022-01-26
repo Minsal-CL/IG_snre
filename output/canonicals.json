@@ -1,5 +1,12 @@
 [
   {
+    "id": "CSStatusReason",
+    "type": "CodeSystem",
+    "url": "http://minsal.cl/fhir/core/CodeSystem/CSStatusReason",
+    "version": "0.753 (Proceso de Ballot Pendiente)",
+    "name": "CSStatusReason"
+  },
+  {
     "id": "hl7.fhir.cl.RecetaCH",
     "type": "ImplementationGuide",
     "url": "http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.cl.RecetaCH",
@@ -35,10 +42,10 @@
     "name": "PrescripcionRecetaCL"
   },
   {
-    "id": "ValProcCl",
-    "type": "StructureDefinition",
-    "url": "http://minsal.cl/fhir/core/StructureDefinition/ValProcCl",
+    "id": "VSStatusReason",
+    "type": "ValueSet",
+    "url": "http://minsal.cl/fhir/core/ValueSet/VSStatusReason",
     "version": "0.753 (Proceso de Ballot Pendiente)",
-    "name": "ValidacionProcedenciaCL"
+    "name": "VSStatusReason"
   }
 ]

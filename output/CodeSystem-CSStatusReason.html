@@ -1,11 +1,9 @@
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.CL.RECETACH\Ejemplo de la Validación de una Receta por medio del Prescriptor - XML Representation - FHIR v4.0.1</title>
+    <title>HL7.FHIR.CL.RECETACH\CodeSystem Razón Cambio Estado Prescripción. - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.8"}
-    h3,h4,h5,h6{--heading-prefix:"5.8"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.6"}
+    h3,h4,h5,h6{--heading-prefix:"5.6"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations 
@@ -155,7 +153,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Resumen de artefactos</b></a></li><li><b>Ejemplo de la Validación de una Receta por medio del Prescriptor</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Resumen de artefactos</b></a></li><li><b>CodeSystem Razón Cambio Estado Prescripción.</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -167,9 +165,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Guía de Implementación Receta-CL - Local Development build (v0.753 (Proceso de Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación Receta-CL - Local Development build (v0.753 (Proceso de Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
 
 
 
@@ -178,28 +176,28 @@
 
 <ul class="nav nav-tabs">
 
-  <li>
-    <a href="Provenance-EjemplValidacion.html">Narrative Content</a>
+  <li class="active">
+    <a href="#">Narrative Content</a>
   </li>
 
 
   
-    <li class="active">
-      <a href="#">XML</a>
+    <li>
+      <a href="CodeSystem-CSStatusReason.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="Provenance-EjemplValidacion.json.html">JSON</a>
+      <a href="CodeSystem-CSStatusReason.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="Provenance-EjemplValidacion.ttl.html">TTL</a>
+      <a href="CodeSystem-CSStatusReason.ttl.html">TTL</a>
     </li>
   
 
@@ -207,69 +205,50 @@
 
 </ul>
 
-
-<a name="root"> </a>
-
-
-<h2 id="root">: Ejemplo de la Validación de una Receta por medio del Prescriptor - XML Representation</h2>
-
-<p><a href="Provenance-EjemplValidacion.xml" no-download="true">Raw xml</a> | <a href="Provenance-EjemplValidacion.xml" download>Download</a></p>
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: CodeSystem Razón Cambio Estado Prescripción.</h2>
 
   <!-- insert intro if present -->
   
 
 
 
-  <pre class="xml"><code class="language-xml">
+  <p>
+    <b>Summary</b>
+  </p>
 
-&lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance">Provenance</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;EjemplValidacion&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.meta">meta</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://minsal.cl/fhir/core/StructureDefinition/ValProcCl&quot;/&gt;
-  &lt;/meta&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;target&lt;/b&gt;: &lt;a href=&quot;http://Repositorio.cl/RequestGroup/RG#12224&quot;&gt;http://Repositorio.cl/RequestGroup/RG#12224&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;recorded&lt;/b&gt;: 26-08-2015 19:39:24&lt;/p&gt;&lt;p&gt;&lt;b&gt;activity&lt;/b&gt;: &lt;span title=&quot;Codes: &quot;&gt;legally authenticated&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Agents&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Who&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes: &quot;&gt;author&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://Practitioner/Prac-author&quot;&gt;http://Practitioner/Prac-author&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/text&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.target">target</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;http://Repositorio.cl/RequestGroup/RG#12224&quot;/&gt;
-  &lt;/target&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.recorded">recorded</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2015-08-27T08:39:24+10:00&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.activity">activity</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;LA&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;legally authenticated&quot;/&gt;
-    &lt;/coding&gt;
-  &lt;/activity&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent">agent</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.type">type</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;AUT&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;author&quot;/&gt;
-      &lt;/coding&gt;
-    &lt;/type&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.who">who</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;http://Practitioner/Prac-author&quot;/&gt;
-    &lt;/who&gt;
-  &lt;/agent&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.signature">signature</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.type">type</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1.2.840.10065.1.12.1.1&quot;/&gt;
-    &lt;/type&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.when">when</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2015-08-27T08:39:24+10:00&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.who">who</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Practitioner/Prac-author&quot;/&gt;
-    &lt;/who&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.sigFormat">sigFormat</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;application/signature+xml&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.data">data</a> <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">value</a>=&quot;Li4u&quot;/&gt;
-  &lt;/signature&gt;
-&lt;/Provenance&gt;</code></pre>
+  <table class="grid">
+<tbody>
+<tr><td>Defining URL:</td><td>http://minsal.cl/fhir/core/CodeSystem/CSStatusReason</td></tr>
+ <tr><td>Version:</td><td>0.753 (Proceso de Ballot Pendiente)</td></tr>
+ <tr><td>Name:</td><td>CSStatusReason</td></tr>
+ <tr><td>Title:</td><td>CodeSystem Razón Cambio Estado Prescripción.</td></tr>
+ <tr><td>Status:</td><td>Active as of 2022-01-18T00:00:00-03:00</td></tr>
+ <tr><td>Definition:</td><td><p>Códidigos de CodeSystema que indican la razón por la cual una Prescripción ha cambiado su estado</p>
+</td></tr>
+ <tr><td>Content:</td><td>Complete: All the concepts defined by the code system are included in the code system resource</td></tr>
+ <tr><td>Source Resource:</td><td><a href="CodeSystem-CSStatusReason.xml.html">XML</a> / <a href="CodeSystem-CSStatusReason.json.html">JSON</a> / <a href="CodeSystem-CSStatusReason.ttl.html">Turtle</a></td></tr>
+</tbody></table>
 
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-VSStatusReason.html">VSStatusReason</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://minsal.cl/fhir/core/CodeSystem/CSStatusReason defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">altchoice<a name="CSStatusReason-altchoice"> </a></td><td>Try another treatment first</td><td>This therapy has been ordered as a backup to a preferred therapy. This order will be released when and if the preferred therapy is unsuccessful.</td></tr><tr><td style="white-space:nowrap">clarif<a name="CSStatusReason-clarif"> </a></td><td>Prescription requires clarification</td><td>Clarification is required before the order can be acted upon.</td></tr><tr><td style="white-space:nowrap">drughigh<a name="CSStatusReason-drughigh"> </a></td><td>Drug level too high</td><td>The current level of the medication in the patient's system is too high. The medication is suspended to allow the level to subside to a safer level.</td></tr><tr><td style="white-space:nowrap">hospadm<a name="CSStatusReason-hospadm"> </a></td><td>Admission to hospital</td><td>The patient has been admitted to a care facility and their community medications are suspended until hospital discharge.</td></tr><tr><td style="white-space:nowrap">labint<a name="CSStatusReason-labint"> </a></td><td>Lab interference issues</td><td>The therapy would interfere with a planned lab test and the therapy is being withdrawn until the test is completed.</td></tr><tr><td style="white-space:nowrap">non-avail<a name="CSStatusReason-non-avail"> </a></td><td>Patient not available</td><td>Patient not available for a period of time due to a scheduled therapy, leave of absence or other reason.</td></tr><tr><td style="white-space:nowrap">preg<a name="CSStatusReason-preg"> </a></td><td>Parent is pregnant/breast feeding</td><td>The patient is pregnant or breast feeding. The therapy will be resumed when the pregnancy is complete and the patient is no longer breastfeeding.</td></tr><tr><td style="white-space:nowrap">salg<a name="CSStatusReason-salg"> </a></td><td>Allergy</td><td>The patient is believed to be allergic to a substance that is part of the therapy and the therapy is being temporarily withdrawn to confirm.</td></tr><tr><td style="white-space:nowrap">sddi<a name="CSStatusReason-sddi"> </a></td><td>Drug interacts with another drug</td><td>The drug interacts with a short-term treatment that is more urgently required. This order will be resumed when the short-term treatment is complete.</td></tr><tr><td style="white-space:nowrap">sdupther<a name="CSStatusReason-sdupther"> </a></td><td>Duplicate therapy</td><td>The drug interacts with a short-term treatment that is more urgently required. This order will be resumed when the short-term treatment is complete.</td></tr><tr><td style="white-space:nowrap">sintol<a name="CSStatusReason-sintol"> </a></td><td>Suspected intolerance</td><td>The drug interacts with a short-term treatment that is more urgently required. This order will be resumed when the short-term treatment is complete.</td></tr><tr><td style="white-space:nowrap">surg<a name="CSStatusReason-surg"> </a></td><td>Patient scheduled for surgery.</td><td>The drug is contraindicated for patients receiving surgery and the patient is scheduled to be admitted for surgery in the near future. The drug will be resumed when the patient has sufficiently recovered from the surgery.</td></tr><tr><td style="white-space:nowrap">washout<a name="CSStatusReason-washout"> </a></td><td>Waiting for old drug to wash out</td><td>The patient was previously receiving a medication contraindicated with the current medication. The current medication will remain on hold until the prior medication has been cleansed from their system.</td></tr><tr><td style="white-space:nowrap">otra<a name="CSStatusReason-otra"> </a></td><td>Otra</td><td>Otra razón no considerada en el listado</td></tr></table></div>
 
   <!-- insert notes if present -->
   
 
 
+
+  
 
 </div>
 </div>
@@ -303,7 +282,7 @@
         <div class="inner-wrapper">
             <p>
                 IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.RecetaCH#0.753 (Proceso de Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Thu, Nov 18, 2021 15:17-0300">18-11-2021</span>
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Wed, Jan 26, 2022 12:49-0300">26-01-2022</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

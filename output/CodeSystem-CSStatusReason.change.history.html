@@ -1,3 +1,5 @@
+<!-- layouts\layout-changehistory.html -->
+<!-- get modelType -->
 
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -5,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.CL.RECETACH\Ejemplo de la Validación de una Receta por medio del Prescriptor - JSON Representation - FHIR v4.0.1</title>
+    <title>HL7.FHIR.CL.RECETACH\ - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.8"}
-    h3,h4,h5,h6{--heading-prefix:"5.8"}</style>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations 
@@ -155,7 +157,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Resumen de artefactos</b></a></li><li><b>Ejemplo de la Validación de una Receta por medio del Prescriptor</b></li>
+          
 
         </ul>
       </div>  <!-- /container -->
@@ -167,9 +169,10 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Guía de Implementación Receta-CL - Local Development build (v0.753 (Proceso de Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación Receta-CL - Local Development build (v0.753 (Proceso de Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
 
 
 
@@ -179,27 +182,27 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="Provenance-EjemplValidacion.html">Narrative Content</a>
+    <a href="CodeSystem-CSStatusReason.html">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="Provenance-EjemplValidacion.xml.html">XML</a>
-    </li>
-  
-
-
-  
-    <li class="active">
-      <a href="#">JSON</a>
+      <a href="CodeSystem-CSStatusReason.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="Provenance-EjemplValidacion.ttl.html">TTL</a>
+      <a href="CodeSystem-CSStatusReason.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-CSStatusReason.ttl.html">TTL</a>
     </li>
   
 
@@ -208,84 +211,14 @@
 </ul>
 
 
-<a name="root"> </a>
+  <a name="root"> </a>
+  <h2 id="root">: CSStatusReason - Change History</h2>
+  <p>History of changes for CSStatusReason .</p>
 
-
-<h2 id="root">: Ejemplo de la Validación de una Receta por medio del Prescriptor - JSON Representation</h2>
-
-<p><a href="Provenance-EjemplValidacion.json" no-download="true">Raw json</a> | <a href="Provenance-EjemplValidacion.json" download>Download</a></p>
-
-  <!-- insert intro if present -->
   
-
-
-
-  <pre class="json"><code class="language-json">
-{
-  "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance">resourceType</a>" : "Provenance",
-  "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.id">id</a>" : "EjemplValidacion",
-  "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.meta">meta</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-      "http://minsal.cl/fhir/core/StructureDefinition/ValProcCl"
-    ]
-  },
-  "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;target&lt;/b&gt;: &lt;a href=\&quot;http://Repositorio.cl/RequestGroup/RG#12224\&quot;&gt;http://Repositorio.cl/RequestGroup/RG#12224&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;recorded&lt;/b&gt;: 26-08-2015 19:39:24&lt;/p&gt;&lt;p&gt;&lt;b&gt;activity&lt;/b&gt;: &lt;span title=\&quot;Codes: \&quot;&gt;legally authenticated&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Agents&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Who&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes: \&quot;&gt;author&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://Practitioner/Prac-author\&quot;&gt;http://Practitioner/Prac-author&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
-  },
-  "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.target">target</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "http://Repositorio.cl/RequestGroup/RG#12224"
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.recorded">recorded</a>" : "2015-08-27T08:39:24+10:00",
-  "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.activity">activity</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-      {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "LA",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "legally authenticated"
-      }
-    ]
-  },
-  "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent">agent</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.type">type</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "AUT",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "author"
-          }
-        ]
-      },
-      "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.who">who</a>" : {
-        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "http://Practitioner/Prac-author"
-      }
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.signature">signature</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.type">type</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "1.2.840.10065.1.12.1.1"
-        }
-      ],
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.when">when</a>" : "2015-08-27T08:39:24+10:00",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.who">who</a>" : {
-        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/Prac-author"
-      },
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.sigFormat">sigFormat</a>" : "application/signature+xml",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.data">data</a>" : "Li4u"
-    }
-  ]
-}</code></pre>
-
-
-  <!-- insert notes if present -->
-  
-
-
 
 </div>
+
 </div>
 <!-- /inner-wrapper -->
 </div>
@@ -299,6 +232,27 @@
 </script>
 <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
 <script type="text/javascript" src="assets/js/jquery-ui.min.js">
+</script>
+
+<script type="text/javascript">
+    try {
+        var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+    } catch (exception) {}
+
+    if (!currentTabIndex)
+        currentTabIndex = '0';
+
+    $('#tabs').tabs({
+        active: currentTabIndex,
+        activate: function(event, ui) {
+            var active = $('.selector').tabs('option', 'active');
+            currentTabIndex = ui.newTab.index();
+            document.activeElement.blur();
+            try {
+                sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+            } catch (exception) {}
+        }
+    });
 </script>
 
 <script type="text/javascript">
@@ -317,7 +271,7 @@
         <div class="inner-wrapper">
             <p>
                 IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.RecetaCH#0.753 (Proceso de Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Thu, Nov 18, 2021 15:17-0300">18-11-2021</span>
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Wed, Jan 26, 2022 12:49-0300">26-01-2022</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

@@ -202,12 +202,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="disclaimer">Disclaimer</h3>
 <p><br /></p>
 
-<p>Esta guía se encuentra en una <strong>fase de evolución</strong> por lo que esta sujeta a cambios previo a alcanzar nivel normativo. El proceso de apertura a implementadores será usado como primer balotage con el fin de recopilar de parte de éstos actores comentarios, sugerencias u observaciones para robustecer la GI previa Versión 1.0</p>
+<p>Esta guía se encuentra en <strong>fase de evolución</strong> por lo que esta sujeta a cambios previo a alcanzar nivel normativo. El proceso de apertura a implementadores será usado como primer balotage con el fin de recopilar de parte de éstos actores comentarios, sugerencias u observaciones para robustecer la GI previa Versión 1.0</p>
 
 <h3 id="trasfondo">Trasfondo</h3>
 <p><br /></p>
 
-<p>Este documenta presenta los servicios que deberán estar contenidos en los desarrollos que permitan la interoperabilidad de los distintos sistemas de <strong>Prescripción</strong> y <strong>Dispensación</strong> con el <strong>Sistema Nacional de Receta Electrónica</strong>. Así mismo, describe cómo se usan los recursos FHIR para cada uno de los componentes del desarrollo. Esta guía propone todos los artefactos y perfiles necesarios para conseguir los objetivos de interoperabilidad en base al estándar HL7 FHIR R4.
+<p>Este document presenta los servicios que deberán estar contenidos en los desarrollos que permitan la interoperabilidad de los distintos sistemas de <strong>Prescripción</strong> y <strong>Dispensación</strong> con el <strong>Sistema Nacional de Receta Electrónica</strong>. Así mismo, describe cómo se usan los recursos FHIR para cada uno de los componentes del desarrollo. Esta guía presenta todos los artefactos y perfiles necesarios para conseguir los objetivos de interoperabilidad en base al estándar HL7 FHIR R4.
 <br />
 <br /></p>
 
@@ -253,16 +253,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>El funcionamiento genérico con sus funciones sería el siguiente:</p>
 
 <p><em>Emisión de Receta y Registro en Repositorio:</em> El prescriptor visualiza los datos administrativos de la receta, como los de identificación de paciente, prestador e institución (traídos automáticamente por el sistema). El Ministerio de Salud dispondrá de una serie de recursos para la validación de los datos mencionados.
-El clínico ingresa los datos de prescripción, como el fármaco recetado, potencia, dosis. Una vez generado el documento clínico, ser enviado al repositorio centralizado de receta.</p>
+El clínico ingresa los datos de prescripción, como el fármaco recetado, potencia, dosis. Una vez generado el documento clínico, este es enviado al repositorio centralizado de receta.</p>
 
-<p><em>Dispensación de Receta Electrónica:</em> Cada paciente, desde su aplicación móvil y/o correo electrónico, podrá disponer de las recetas extendidas a su nombre o de algún tercero bajo autorización. El ministerio de salud dispondrá de un servicio que permitirá leer, mediante código de barra, el folio de la receta, de modo de poder obtener la información de la receta o el documento mismo desde el repositorio central. La farmacia deberá registrar el o los medicamentos dispensados, tanto el producto comercial como información relativa a la cantidad y números disponibles de dispensación. El detalle será tratado más adelante.
+<p><em>Dispensación de Receta Electrónica:</em> Cada paciente, desde su aplicación móvil y/o correo electrónico, podrá disponer de las recetas extendidas a su nombre o de algún tercero bajo autorización. El ministerio de salud dispondrá de un servicio que permitirá leer, mediante código de barra, el folio de la receta, para poder obtener la información de la receta o el documento mismo desde el repositorio central. La farmacia deberá registrar el o los medicamentos dispensados, tanto para producto commercial como genérico o bioequivalente. El detalle será tratado más adelante.
 <br />
 <br /></p>
 
 <h4 id="procesos">Procesos</h4>
 <p><br /></p>
 
-<p>El proyecto se separa en básicamente 4 procesos que son los que se enumeran continuación:
+<p>El proyecto se separa en básicamente tres procesos, los cuales son enumerados continuación:
 <br /></p>
 
 <h5 id="proceso-de-prescripción">Proceso de Prescripción</h5>
@@ -287,7 +287,7 @@ los pasos fundamentales de este caso se encuentran:</p>
 <br /></li>
 </ul>
 
-<h4 id="proceso-de-cambio-de-estado">Proceso de cambio de estado</h4>
+<h5 id="proceso-de-cambio-de-estado">Proceso de cambio de estado</h5>
 <p>Este proceso describe los cambios de estado que sufre una receta durante el ciclo de prescripción y dispensación de esta. Estos cambios de estado pueden deberse a múltiples razones, las cuales se especifican en los Subset de valores correspondientes a los recursos estimados para el proyecto. Los pasos fundamentales son los siguientes:</p>
 <ul>
   <li>Validación de usuario</li>
@@ -301,20 +301,20 @@ los pasos fundamentales de este caso se encuentran:</p>
 <h3 id="contenido-de-la-guía">Contenido de la Guía</h3>
 <p><br /></p>
 
-<p>Esta Guía se estructura en base al manú de la parte superior de la siguiente manera:
+<p>Esta Guía se estructura en base al menú de la parte superior de la siguiente manera:
 <br /></p>
 
 <ul>
-  <li><a href="index.html">Home</a>: Página de Bienvenida a la Guía</li>
+  <li><a href="index.html">Home</a>: Página de Bienvenida a la Guía.</li>
   <li><a href="Alcances-Objetivos.html">Objetivos</a>: Información General sobre los objetivos de esta Guía</li>
-  <li><a href="casos.html">Actores y Casos de Uso</a>: Información detallada de los casos de uso, sus actores, y la secuencia de transacciones</li>
-  <li><a href="operaciones.html">Operaciones y Terminologías</a>: Información general de las operaciones básicas que se ejecutan al momento de hacer generar manejo de datos entre un servicio FHIR y los clientes</li>
+  <li><a href="casos.html">Actores y Casos de Uso</a>: Información detallada de los casos de uso, sus actores, y la secuencia de transacciones.</li>
+  <li><a href="operaciones.html">Operaciones y Terminologías</a>: Información general de las operaciones básicas que se ejecutan para el manejo de datos entre un servicio FHIR y los clientes.</li>
   <li><a href="artifacts.html">Resumen de Artefactos</a>: Describe todos los artefactos que son parte de esta GI, separados en Estructura de Perfiles, Extensiones, Value Sets y Ejemplos. Dado que esta Guía hereda su base Canónica desde el Core-CL, algunos de los artefactos descritos son parte de esa Guía</li>
-  <li>Perfiles: Este menú despliega el listado de los 4 perfiles generados para esta GI
+  <li>Perfiles: Este menú despliega el listado de los 3 perfiles generados para esta GI
     <ul>
       <li><a href="StructureDefinition-RecetaPrescripcionCl.html">Prescripción</a>: Perfil del Recurso para la prescripción de un fármaco</li>
-      <li><a href="StructureDefinition-DispensacionMedicamentoCl.html">Dispensación</a>: Perfil de Recurso para la dispensación de farmacos desde puntos de despacho</li>
-      <li><a href="StructureDefinition-RecetaCl.html">Receta</a>: Perfil de recurso que permite agrupar diferentes prescriciones en formato de una única receta</li>
+      <li><a href="StructureDefinition-DispensacionMedicamentoCl.html">Dispensación</a>: Perfil de Recurso para la dispensación de fármacos desde puntos de despacho</li>
+      <li><a href="StructureDefinition-RecetaCl.html">Receta</a>: Perfil de recurso que permite agrupar diferentes prescripciones en formato de una única receta</li>
     </ul>
   </li>
   <li>Ejemplos: Listado de ejemplos desarrollados para cada Perfil generado para esta GI
@@ -327,7 +327,7 @@ los pasos fundamentales de este caso se encuentran:</p>
 
 <ul>
   <li>Autores de la Guía: <strong>Pablo Pizarro (MINSAL)</strong>, <strong>Nicolás Soto (MINSAL)</strong>, <strong>César Galindo (HL7 Chile)</strong>, <strong>Jorge Mansilla (HL7 Chile)</strong></li>
-  <li>Colaborarodes: <em>Diego Olea (MINSAL)</em>, <em>Franco Ulloa (MINSAL)</em>, <em>Diego Kaminker (HL7 Iternacional)</em>
+  <li>Colaboradores: <em>Diego Olea (MINSAL)</em>, <em>Franco Ulloa (MINSAL)</em> <em>Fernanda Canales (MINSAL)</em>, <em>Diego Kaminker (HL7 Iternacional)</em>
 <br />
 <br />
     <h3 id="recursos-a-disposición">Recursos a Disposición</h3>
@@ -336,11 +336,11 @@ los pasos fundamentales de este caso se encuentran:</p>
 
 <p><br /></p>
 
-<p>[Ministerio de Salud de Chile] (http://www.minsal.cl)</p>
+<p><a href="http://www.minsal.cl">Ministerio de Salud de Chile</a></p>
 
 <p><a href="http://hl7chile.cl">Capítulo Chileno de HL7, HL7 Chile</a></p>
 
-<p>HL7 Internacional (http://hl7.org)</p>
+<p><a href="http://hl7.org">HL7 Internacional</a></p>
 
 <p><a href="http://hl7.org/fhir/">FHIR R4</a></p>
 
@@ -387,7 +387,7 @@ los pasos fundamentales de este caso se encuentran:</p>
         <div class="inner-wrapper">
             <p>
                 IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.RecetaCH#0.753 (Proceso de Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Thu, Nov 18, 2021 15:17-0300">18-11-2021</span>
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Wed, Jan 26, 2022 12:49-0300">26-01-2022</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

@@ -189,7 +189,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#2">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#3">Example: Example Instances</a>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -233,15 +239,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Este Perfil describe la información contenida en la Prescripción de un medicamento para la Receta Electrónica Nacional del MINSAL</p>
 </td>
             </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ValProcCl.html"
-                     title="StructureDefinition/ValProcCl">Validación de la Procedencia de una Receta</a>
-               </td>
-               <td>
-<p>Este Perfil describe la forma de validación respecto a la procedencia de una Receta genrada durante un acto clínico.</p>
-</td>
-            </tr>
          </tbody>
       </table>
    </p>
@@ -267,6 +264,46 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </table>
    </p>
    <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSStatusReason.html" title="ValueSet/VSStatusReason">Códigos Razón Cambio Estado Prescripción.</a>
+               </td>
+               <td>
+<p>Códigos que indican la razón por la cual una Prescripción ha cambiado su estado</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSStatusReason.html" title="CodeSystem/CSStatusReason">CodeSystem Razón Cambio Estado Prescripción.</a>
+               </td>
+               <td>
+<p>Códidigos de CodeSystema que indican la razón por la cual una Prescripción ha cambiado su estado</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
@@ -285,12 +322,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <td style="column-width:30%">
                   <a href="MedicationDispense-DispensacionMedicamentoCL-2.html"
                      title="MedicationDispense/DispensacionMedicamentoCL-2">Ejemplo de la dispensacion del Medicamento Kitadol 500mg</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Provenance-EjemplValidacion.html"
-                     title="Provenance/EjemplValidacion">Ejemplo de la Validación de una Receta por medio del Prescriptor</a>
                </td>
             </tr>
             <tr>
@@ -354,7 +385,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         <div class="inner-wrapper">
             <p>
                 IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.RecetaCH#0.753 (Proceso de Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Thu, Nov 18, 2021 15:17-0300">18-11-2021</span>
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Wed, Jan 26, 2022 12:49-0300">26-01-2022</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

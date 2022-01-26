@@ -31,12 +31,6 @@
         "url": "http://minsal.cl/fhir/core/StructureDefinition/RecetaPrescripcionCl",
         "title": "Prescripción_CL"
       }
-    ],
-    "Provenance": [
-      {
-        "url": "http://minsal.cl/fhir/core/StructureDefinition/ValProcCl",
-        "title": "Validación de la Procedencia de una Receta"
-      }
     ]
   },
   "usage": {

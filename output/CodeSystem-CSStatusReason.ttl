@@ -1,0 +1,120 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://minsal.cl/fhir/core/CodeSystem/CSStatusReason> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CSStatusReason"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://minsal.cl/fhir/core/CodeSystem/CSStatusReason defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">altchoice<a name=\"CSStatusReason-altchoice\"> </a></td><td>Try another treatment first</td><td>This therapy has been ordered as a backup to a preferred therapy. This order will be released when and if the preferred therapy is unsuccessful.</td></tr><tr><td style=\"white-space:nowrap\">clarif<a name=\"CSStatusReason-clarif\"> </a></td><td>Prescription requires clarification</td><td>Clarification is required before the order can be acted upon.</td></tr><tr><td style=\"white-space:nowrap\">drughigh<a name=\"CSStatusReason-drughigh\"> </a></td><td>Drug level too high</td><td>The current level of the medication in the patient's system is too high. The medication is suspended to allow the level to subside to a safer level.</td></tr><tr><td style=\"white-space:nowrap\">hospadm<a name=\"CSStatusReason-hospadm\"> </a></td><td>Admission to hospital</td><td>The patient has been admitted to a care facility and their community medications are suspended until hospital discharge.</td></tr><tr><td style=\"white-space:nowrap\">labint<a name=\"CSStatusReason-labint\"> </a></td><td>Lab interference issues</td><td>The therapy would interfere with a planned lab test and the therapy is being withdrawn until the test is completed.</td></tr><tr><td style=\"white-space:nowrap\">non-avail<a name=\"CSStatusReason-non-avail\"> </a></td><td>Patient not available</td><td>Patient not available for a period of time due to a scheduled therapy, leave of absence or other reason.</td></tr><tr><td style=\"white-space:nowrap\">preg<a name=\"CSStatusReason-preg\"> </a></td><td>Parent is pregnant/breast feeding</td><td>The patient is pregnant or breast feeding. The therapy will be resumed when the pregnancy is complete and the patient is no longer breastfeeding.</td></tr><tr><td style=\"white-space:nowrap\">salg<a name=\"CSStatusReason-salg\"> </a></td><td>Allergy</td><td>The patient is believed to be allergic to a substance that is part of the therapy and the therapy is being temporarily withdrawn to confirm.</td></tr><tr><td style=\"white-space:nowrap\">sddi<a name=\"CSStatusReason-sddi\"> </a></td><td>Drug interacts with another drug</td><td>The drug interacts with a short-term treatment that is more urgently required. This order will be resumed when the short-term treatment is complete.</td></tr><tr><td style=\"white-space:nowrap\">sdupther<a name=\"CSStatusReason-sdupther\"> </a></td><td>Duplicate therapy</td><td>The drug interacts with a short-term treatment that is more urgently required. This order will be resumed when the short-term treatment is complete.</td></tr><tr><td style=\"white-space:nowrap\">sintol<a name=\"CSStatusReason-sintol\"> </a></td><td>Suspected intolerance</td><td>The drug interacts with a short-term treatment that is more urgently required. This order will be resumed when the short-term treatment is complete.</td></tr><tr><td style=\"white-space:nowrap\">surg<a name=\"CSStatusReason-surg\"> </a></td><td>Patient scheduled for surgery.</td><td>The drug is contraindicated for patients receiving surgery and the patient is scheduled to be admitted for surgery in the near future. The drug will be resumed when the patient has sufficiently recovered from the surgery.</td></tr><tr><td style=\"white-space:nowrap\">washout<a name=\"CSStatusReason-washout\"> </a></td><td>Waiting for old drug to wash out</td><td>The patient was previously receiving a medication contraindicated with the current medication. The current medication will remain on hold until the prior medication has been cleansed from their system.</td></tr><tr><td style=\"white-space:nowrap\">otra<a name=\"CSStatusReason-otra\"> </a></td><td>Otra</td><td>Otra razón no considerada en el listado</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://minsal.cl/fhir/core/CodeSystem/CSStatusReason"];
+  fhir:CodeSystem.version [ fhir:value "0.753 (Proceso de Ballot Pendiente)"];
+  fhir:CodeSystem.name [ fhir:value "CSStatusReason"];
+  fhir:CodeSystem.title [ fhir:value "CodeSystem Razón Cambio Estado Prescripción."];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-01-18T00:00:00-03:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:ppizarro.delgado@minsal.cl" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Códidigos de CodeSystema que indican la razón por la cual una Prescripción ha cambiado su estado"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "CL" ];
+       fhir:Coding.display [ fhir:value "Chile" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "14"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "altchoice" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Try another treatment first" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "This therapy has been ordered as a backup to a preferred therapy. This order will be released when and if the preferred therapy is unsuccessful." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "clarif" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prescription requires clarification" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Clarification is required before the order can be acted upon." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "drughigh" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Drug level too high" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The current level of the medication in the patient's system is too high. The medication is suspended to allow the level to subside to a safer level." ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "hospadm" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Admission to hospital" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The patient has been admitted to a care facility and their community medications are suspended until hospital discharge." ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "labint" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lab interference issues" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The therapy would interfere with a planned lab test and the therapy is being withdrawn until the test is completed." ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "non-avail" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Patient not available" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Patient not available for a period of time due to a scheduled therapy, leave of absence or other reason." ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "preg" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Parent is pregnant/breast feeding" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The patient is pregnant or breast feeding. The therapy will be resumed when the pregnancy is complete and the patient is no longer breastfeeding." ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "salg" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Allergy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The patient is believed to be allergic to a substance that is part of the therapy and the therapy is being temporarily withdrawn to confirm." ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "sddi" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Drug interacts with another drug" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The drug interacts with a short-term treatment that is more urgently required. This order will be resumed when the short-term treatment is complete." ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "sdupther" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Duplicate therapy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The drug interacts with a short-term treatment that is more urgently required. This order will be resumed when the short-term treatment is complete." ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "sintol" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Suspected intolerance" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The drug interacts with a short-term treatment that is more urgently required. This order will be resumed when the short-term treatment is complete." ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "surg" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Patient scheduled for surgery." ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The drug is contraindicated for patients receiving surgery and the patient is scheduled to be admitted for surgery in the near future. The drug will be resumed when the patient has sufficiently recovered from the surgery." ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "washout" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Waiting for old drug to wash out" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The patient was previously receiving a medication contraindicated with the current medication. The current medication will remain on hold until the prior medication has been cleansed from their system." ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "otra" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Otra" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Otra razón no considerada en el listado" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://minsal.cl/fhir/core/CodeSystem/CSStatusReason.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
