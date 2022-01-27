@@ -2,20 +2,20 @@ Profile:        MedicamentoRecetaCL
 Parent:         RequestGroup
 Id:             RecetaCl
 Title:          "Receta_CL"
-Description:    "Este Perfil usa este recurso como un contenedor de Prescripciones para poder ser usadas como formato de Receta electrónica con los farmacos indicados por el clínico durante un acto médico."
+Description:    "Este Perfil utiliza este recurso como un contenedor de Prescripciones para poder ser utilizadas como formato de Receta electrónica con los fármacos indicados por el clínico durante un acto médico."
 
 
 
 //Identificador de Grupo
 * groupIdentifier MS
 * groupIdentifier 1..1
-* groupIdentifier ^short = "Número identificador de grupo que debe ser el mismo con el cual se identificaron los farmacos prescritos en el acto clínico. El identificador debe ser un NanoId"
-* groupIdentifier ^definition = "Este numero vincula el contenedor con todos los farmacos prescritos durante la atención del paciente. Este hará el uso de Receta y el grupo de farmacos co misma identificacion grupal. El formato debe ser el de un NanoId"
+* groupIdentifier ^short = "Número identificador de grupo que debe ser el mismo con el cual se identificaron los fármacos prescritos en el acto clínico. El identificador debe ser un NanoId"
+* groupIdentifier ^definition = "Este número vincula el contenedor con todos los fármacos prescritos durante la atención del paciente. Este hará el uso de Receta y el grupo de fármacos con misma identificación grupal. El formato debe ser el de un NanoId"
 * groupIdentifier.value ^short = "Identificador de grupo"
 
 * status and intent MS
 * status ^short = "	draft | active | on-hold | revoked | completed | entered-in-error | unknown"
-* status ^definition = "El estado de la receta se desribe como activa (aun no ha sido dispensada) o completada (se dispensó). En caso que las prescripciones no se dispencen entonces la receta pasa a estado cancelada"
+* status ^definition = "El estado de la receta se describe como activa (aún no ha sido dispensada) o completada (se dispensó). En caso que las prescripciones no se dispensen entonces la receta pasa a estado cancelada"
 * status ^comment = "Es válido hacer uso solo de los estados active y completed. En el caso que la receta ha sido recién creada esta se generá con estado **active**. Al momento de dispensar todos las prescripciones, la receta pasa a estado **completed**. Si esta nunca es dispensada se usa el código de **cancelled**"
 
 

@@ -2,13 +2,13 @@ Profile:        DispensacionMedicamentoCL
 Parent:         MedicationDispense
 Id:             DispensacionMedicamentoCl
 Title:          "Dispensación_CL"
-Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica desde la visión de la TFC que se usará para poder manejar farmacos ya registrados, y que deberán ser consultados por los prestadores a la hora de prescribir alguno."
+Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica desde la visión de la TFC que se usará para poder manejar fármacos ya registrados, los cuales deberán ser consultados por los prestadores a la hora de prescribir alguno."
 
 //Identifier
 * identifier MS
 * identifier 0..1 
 * identifier ^short = "Se usará en caso que se realice una dispensación con Id Local"
-* identifier ^definition = "Es el numero de Id Local, generado a nivel del dispensador."
+* identifier ^definition = "Es el número de Id Local, generado a nivel del dispensador."
 
 
 
@@ -25,14 +25,20 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * status MS
 * status 1..1
 * status ^short = "Estado de la dispensación según estándar: cancelled | completed | entered-in-error | declined"
+<<<<<<< HEAD
 * status ^definition = "Estado de la dispensación, estos estaos pueden ser: preparation | in-progress | cancelled | on-hold | completed | entered-in-error | stopped | declined | unknown"
 * status from http://hl7.org/fhir/ValueSet/medicationdispense-status (required)
+=======
+* status ^definition = "Estado de la dispensación, estos estados pueden ser: preparation | in-progress | cancelled | on-hold | completed | entered-in-error | stopped | declined | unknown"
+* status ^comment = "Si bien los códigos para este elemento son mas que los mostrados en esta guía solo se considerarán los expuestos para el caso local"
+>>>>>>> f211041f244f023d52932f057f64c0b4507a706a
 
 //statusRasonCodeableConcept
 * statusReasonCodeableConcept MS
 * statusReasonCodeableConcept ^short = "Razón por la cual no se realizó la dispensación"
 * statusReasonCodeableConcept ^definition = "Razón por la cual no se realizó la dispensación, se debe utilizar la tabla definida por MINSAL."
 
+<<<<<<< HEAD
 * statusReasonCodeableConcept.coding.system ^short = "Identidad del sistema terminológico"
 * statusReasonCodeableConcept.coding.system ^definition = "Identidad del sistema termonológico que define los códigos "
 
@@ -44,6 +50,15 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 * statusReasonCodeableConcept.text ^short = "Razon de la cancelacion"
 * statusReasonCodeableConcept.text ^definition = "Razon de la cancelacion, explicada en texto libre"
+=======
+* statusReasonCodeableConcept.coding.system ^short = "Códigos definidos para motivos de rechazo de la dispensación. Tabla que será generada por MINSAL"
+* statusReasonCodeableConcept.coding.system ^definition = "Códigos definidos para motivos de rechazo de la dispensación. Tabla que será generada por MINSAL"
+* statusReasonCodeableConcept.coding.system ^comment = "Tabla que será generada por MINSAL, quedará disponible para que cada sistema la levante localmente y apunte a ella en esta ruta"
+* statusReasonCodeableConcept.coding.code ^short = "Código referente a la razon de porque no se entrego la dispensación"
+* statusReasonCodeableConcept.coding.system ^short = "Glosa del código"
+* statusReasonCodeableConcept.text ^short = "Razón de la cancelación"
+* statusReasonCodeableConcept.text ^definition = "Razón de la cancelación, explicada en texto libre"
+>>>>>>> f211041f244f023d52932f057f64c0b4507a706a
 
 
 //subject
@@ -59,16 +74,21 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * authorizingPrescription MS
 * authorizingPrescription 1..1
 * authorizingPrescription ^short = "Referencia a la prescripción que autoriza la dispensación."
-* authorizingPrescription ^definition = "Referencia a la prescripción que autoriza la dispensación. Esta debe ser referenciada al recurso MedicarionRequest involucrado en la receta presentada al momento de la dspensación"
+* authorizingPrescription ^definition = "Referencia a la prescripción que autoriza la dispensación. Esta debe ser referenciada al recurso MedicationRequest involucrado en la receta presentada al momento de la dspensación"
 * authorizingPrescription.reference ^short = "Referencia a la prescripción que autoriza la dispensación. ´https://api-receta.minsal.cl/v2/MedicationRequest´ (Obligada)"
-* authorizingPrescription.reference ^definition = "Referencia a la receta que autoriza la dispensación. esta debe ser referenciada al recurso MedicarionPrescrition involucrado en la receta presentada al momento de la dspensación. ´https://api-receta.minsal.cl/v2/MediationPrescription´ (Obligada)"
+* authorizingPrescription.reference ^definition = "Referencia a la receta que autoriza la dispensación. esta debe ser referenciada al recurso MedicationRequest involucrado en la receta presentada al momento de la dispensación. ´https://api-receta.minsal.cl/v2/MediationPrescription´ (Obligada)"
 
 
 //medicationReference
 
 * medicationReference MS
+<<<<<<< HEAD
 * medicationReference ^short = "Medicamento comercial dispensado. Como repositorio nacional: ´http://api-receta.minsal.cl/v2/medication´."
 * medicationReference ^definition = "Medicamento dispenado que obedece al Producto Comercial que fue entregado a quien lo retira. Este se describe mediante el recurso de medicamento desde el reposotorio de estos. Solo se agrega en caso de ser dispensado el medicamento de otra forma no es necesario. El repositorio es ´https://api-receta.minsal.cl/v2/medication´"
+=======
+* medicationReference ^short = "Medicamento comercial dispensado. Como repositorio nacional: ´http://api-receta.minsal.cl/v2/medication´ (Obligatorio)"
+* medicationReference ^definition = "Medicamento dispensado correspondiente al Producto Comercial que fue entregado a quien lo retira. Este se describe mediante el recurso de medicamento desde el repositorio. Solo se agrega en caso de ser dispensado el medicamento, de otra forma no es necesario. El repositorio es ´https://api-receta.minsal.cl/v2/medication´"
+>>>>>>> f211041f244f023d52932f057f64c0b4507a706a
 * medicationReference ^comment = "Solo se agrega en caso de ser dispensado el medicamento"
 
 
@@ -98,10 +118,15 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 * dosageInstruction.sequence ^short = "Secuencia de administracion del medicamento"
 * dosageInstruction.sequence ^definition = "Indica el orden en el que se deben aplicar o interpretar las instrucciones de dosificación."
+<<<<<<< HEAD
 
 * dosageInstruction.text ^short = "Instruccion de dosificación"
 * dosageInstruction.text ^definition = "Instruccion de dosificación"
 
+=======
+* dosageInstruction.text ^short = "Instrucción de dosificación"
+* dosageInstruction.text ^definition = "Instrucción de dosificación"
+>>>>>>> f211041f244f023d52932f057f64c0b4507a706a
 * dosageInstruction.additionalInstruction ^short = "Instrucciones, advertencias y/o efectos secundarios"
 * dosageInstruction.additionalInstruction ^definition = "Instrucciones, advertencias y/o efectos secundarios"
 * dosageInstruction.additionalInstruction.coding.code from http://hl7.org/fhir/ValueSet/additional-instruction-codes (example)
@@ -132,6 +157,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction.asNeededBoolean ^short = "Se define para uso de fármaco sin receta o indicación en esta."
 * dosageInstruction.asNeededBoolean ^definition = "Para indicar si el fármaco se puede usar sin respetar diretamente lo presctito en el dosaje, como por ejemplo medicamentos que se pueden usar en caso de SOS"
 	
+<<<<<<< HEAD
 * dosageInstruction.route ^short = "via por la cual es administrado el medicamento"
 * dosageInstruction.route.coding.system = "http://snomed.info/sct"
 * dosageInstruction.route.coding.system ^short = "NameSpace de Snomed"
@@ -141,6 +167,14 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction.route.coding.code ^definition = "Código de la via por medio de subset de Snomed"
 * dosageInstruction.route.coding.display ^short = "Descripción del código"
 * dosageInstruction.route.coding.display ^definition = "Descripción del código"
+=======
+* dosageInstruction.route ^short = "Como se debe administrar el medicamento (Vía de administración o como debe el farmaco entrar al cuerpo)"
+* dosageInstruction.route ^definition = "Como se debe administrar el medicamento (Vía de administración o como debe el farmaco entrar al cuerpo)"
+* dosageInstruction.method ^short = "Técnica para administrar el medicamento"
+* dosageInstruction.method ^definition = "Es un valor codificado que indica el método mediante el cual se introduce el medicamento en el cuerpo o sobre él. Más comúnmente utilizado para inyecciones. Por ejemplo, empuje lento; Profundo IV."
+* dosageInstruction.doseAndRate ^short = "Cantidad de los medicamentos a administrar"
+* dosageInstruction.doseAndRate ^definition = "Cantidad de los medicamentos a administrar"
+>>>>>>> f211041f244f023d52932f057f64c0b4507a706a
 
 
 
@@ -215,7 +249,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 * performer[Dispensador] MS
 * performer[Dispensador] ^short = "Aquel individuo que realiza la entega de medicamentos"
-* performer[Dispensador] ^definition = "Se entiende por dispensador al individuo que entrega los medicamentos a quien los solicite en el punto de entrega. Simpre el en proceso de dispensación existe un dispensador"
+* performer[Dispensador] ^definition = "Se entiende por dispensador al individuo que entrega los medicamentos a quien los solicite en el punto de entrega. Simpre en el proceso de dispensación existe un dispensador"
 
 * performer[Dispensador].function 1..1
 * performer[Dispensador].function ^short = "Función que desarrolla el Performer, en este caso dispensador"
@@ -233,7 +267,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 * performer[Validador] MS
 * performer[Validador] ^short = "Aquel individuo que realiza la validaciín ante la entega de medicamentos"
-* performer[Validador] ^definition = "Se entiende por dispensador al individuo que valida la entrega los medicamentos a quien los solicite en el punto de entrega. Por lo común es un Químico Farmaceutico de Profesión"
+* performer[Validador] ^definition = "Se entiende por dispensador al individuo que valida la entrega de los medicamentos a quien los solicite en el punto de entrega. Por lo común es un Químico Farmacéutico de Profesión"
 
 * performer[Validador].function 1..1
 * performer[Validador].function ^short = "Función que desarrolla el Validador, en este caso siempre será un Químico Farmaceutico"
@@ -255,7 +289,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * location ^short = "Ubicación Georeferenciada de la dispensación"
 * location ^definition = "La ubicación física principal en la cual se desarrolló la dispensación"
 * location.reference ^short = "Identificación del recurso de lcalización de los dispensadores. ´https://api-receta.minsal.cl/v2/location´ (Obligatoria)"
-* location.reference ^definition = "El repositorio Central tendrá listda la ubicación de todos los dispensadores en recurso location. Estas deberán ser alcanzadas desde ´https://api-receta.minsal.cl/v2/location´ (Obligatoria)"
+* location.reference ^definition = "El repositorio Central tendrá listada la ubicación de todos los dispensadores en recurso location. Estas deberán ser alcanzadas desde ´https://api-receta.minsal.cl/v2/location´ (Obligatoria)"
 
 //receiver
 * receiver MS
@@ -283,7 +317,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 Instance : DispensacionMedicamentoCL
-Title : "Ejemplo de la dispensacion del Medicamento Oxycodone Via Oral"
+Title : "Ejemplo de la dispensación del Medicamento Oxycodone Vía Oral"
 InstanceOf : DispensacionMedicamentoCl	
 Usage: #example
 
