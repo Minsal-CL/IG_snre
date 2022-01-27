@@ -1,8 +1,8 @@
-### Operaciones Básicas basada en Métodos 
+### Operaciones Básicas basadas en Métodos 
 
-Las Operaciones que se pueden ejecutar como base en el manejo de recuros en FHIR se especifican desde el mismo estándar  travez de [Resumen de operaciones](https://www.hl7.org/fhir/http.html#summary) 
+Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHIR se especifican desde el mismo estándar  través de [Resumen de operaciones](https://www.hl7.org/fhir/http.html#summary) 
 
- Como nota que  _todos_ los requests pueden incluir un opcional `Accept` como cabecera que indica el formato que se debe usar como respuesta (esto incluso se aplica a  `DELETE` dado que una OperationOutcome debe ser devuelta).
+ Nota: se debe considerar que todos los requests pueden incluir un opcional `Accept` como cabecera que indica el formato que se debe usar como respuesta (esto incluso se aplica a  `DELETE` dado que una OperationOutcome debe ser devuelta).
 
 <table class="grid">
 
@@ -10,9 +10,9 @@ Las Operaciones que se pueden ejecutar como base en el manejo de recuros en FHIR
 
 <tr>
 
-<th>Interacción</th>
+<th>Operation</th>
 
-<th>Ruta</th>
+<th>Path</th>
 
 <th colspan="5">Request</th>
 
@@ -22,7 +22,7 @@ Las Operaciones que se pueden ejecutar como base en el manejo de recuros en FHIR
 
 <th colspan="2"></th>
 
-<th>Método</th>
+<th>Method</th>
 
 <th>Content-Type</th>
 
@@ -30,13 +30,13 @@ Las Operaciones que se pueden ejecutar como base en el manejo de recuros en FHIR
 
 <th>Prefer</th>
 
-<th>Condcional (si aplica)</th>
+<th>Conditional (If apply)</th>
 
 </tr>
 
 <tr>
 
-<td>`read`</td>
+<td>read</td>
 
 <td>`/[type]/[id]`</td>
 
@@ -605,9 +605,9 @@ El listado de recursos se define en:
 
 #### Búsquedas Soportadas
 
-Los Métodos y los parámetros para la consulta de recursos se describen a continuación y se basan en la busqueda sobre recurso Paciente:
+Los métodos y parámetros para la consulta de recursos se describen a continuación y se basan en la búsqueda sobre recurso Paciente:
 
-1.  En este caso los servidores **DEBEN** soportar buscar un recurso Patient usando el parametro de búsqueda **[`_id`]:
+1.  En este caso los servidores **DEBEN** soportar buscar un recurso Patient usando el parámetro de búsqueda **[`_id`]:
 
     `GET [base]/Patient[id]`
 
@@ -616,9 +616,9 @@ Los Métodos y los parámetros para la consulta de recursos se describen a conti
     1.  GET [base]/Patient/1032702
     2.  GET [base]/Patient?_id=1032702
 
-Lo anterior es aplicable para un recurso ya creado el cual se alamacena con una identificación generada en ese momento    
+Lo anterior es aplicable para un recurso ya creado el cual se almacena con una identificación generada en ese momento    
 
-2.  Los servidores **DEBEN** soportar buscar un recurso Patient por un identificador como el numero RUN de la Cédula de Identidad Nacional, utilizando el parámetro de búsqueda **[`identifier`]:
+2.  Los servidores **DEBEN** soportar buscar un recurso Patient mediante un identificador como el número RUN de la Cédula de Identidad Nacional por ejemplo, utilizando el parámetro de búsqueda **[`identifier`]:
 
     `GET [base]/Patient?identifier={system|}[code]`
 
@@ -651,22 +651,22 @@ Lo anterior es aplicable para un recurso ya creado el cual se alamacena con una 
     
 
 
-#### Agregado de Recursos (Creando Recursos para ser almacenados)
+#### Agregando recursos (creando recursos para ser almacenados)
 
-POST [base]/Patient En el Body, un recurso paciente compatible con el/los perfiles definidos core definido en el Core-Cl (para este caso sería el perfil Paciente-CL)
+POST [base]/Patient. En el Body, un recurso paciente compatible con el/los perfiles definido en el Core-Cl (para este caso sería el perfil Paciente-CL)
 
 ### Terminologia
 
 #### Vocabularios
 
-_Definición de Medicamentos:_ Se utiliza la Terminología de Farmacos Chilena (TFC), expuesta por medio de un servicio de terminolgía Local o desde MINSAL
+_Definición de Medicamentos:_ Se utiliza la Terminología de Fármacos Chilena (TFC), expuesta por medio de un servicio de terminología Local o desde MINSAL
 
 _Profesionales de la Salud:_ desplegados a través de la Super Intendencia y el sistema Midas, este registro se expone por medio del recurso  FHIR Practitioner, y la especialidad por medio del recurso PractitionerRole.
 
 _Establecimientos de Salud_: utiliza su identificación por medio de código DEIS, y su registro se expone a través de los recursos FHIR Location y Organization, según corresponda.
 
-_Farmacias_: utiliza el registro de farmacias Farmanet y se expone como como los recursos FHIR Location y Organization.
+_Farmacias_: utiliza el registro de farmacias Farmanet y se expone como los recursos FHIR Location y Organization.
 
-_Pacientes:_ Se identifican por medio de su número identificador que peude ser cualquier tipo de documento, especificado en las tablas de HL7 V3 relcionados con identificadores de personas.
+_Pacientes:_ Se identifican por medio de su número identificador que puede ser cualquier tipo de documento, especificado en las tablas de HL7 V3 relacionados con identificadores de personas.
 
-_Tablas Maestras específicas:_ se incluyen las de comunas, provincias y regiones, entre otras pertenecientes a la normativa Nacional que son expuestas en la GI y que deben ser en muchos casos levantadas a nivel local
+_Tablas Maestras específicas:_ se incluyen las de comunas, provincias y regiones, entre otras pertenecientes a la normativa Nacional. Estas son expuestas en la IG y deben ser en muchos casos levantadas a nivel local.

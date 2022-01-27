@@ -50,7 +50,7 @@ activate MINSALRep
 deactivate MINSALRep
 @enduml
 
-DISPENSACION
+DISPENSACIÓN
 @startuml
 -> Dispensador : Solicitud
 

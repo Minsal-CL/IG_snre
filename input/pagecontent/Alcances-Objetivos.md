@@ -1,7 +1,7 @@
 ### Objetivo General
 <br>
 
-Otorgar las directrices necesarias para desarrollar y asegurar la interoperabilidad de los distintos sistemas informáticos asociados a atención en salud con el sistema nacional de **Receta Rlectrónica de MINSAL**, basado en el estándar internacional **HL7 FHIR-R4**.
+Otorgar las directrices necesarias para desarrollar y asegurar la interoperabilidad de los distintos sistemas informáticos asociados a atención en salud con el sistema nacional de **Receta Electrónica de MINSAL**, basado en el estándar internacional **HL7 FHIR-R4**.
 
 ### Objetivos específicos
 <br>

@@ -22,9 +22,9 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 
 * identifier.system ^short = "Namespace del identificador"
 * identifier.system ^definition = "URL sobre la cual se determina el formato y procedencia del valor del identificador"
-* identifier.value ^short = "Numero identificador"
+* identifier.value ^short = "número identificador"
 * identifier.assigner.display ^short = "Organización en texto libre que dio el numer."
-* identifier.assigner.display ^definition =	"Organización en texto libre que dio el numero identificador. DEBE ser informado en caso que la identificación sea de tipo Local"
+* identifier.assigner.display ^definition =	"Organización en texto libre que dio el número identificador. DEBE ser informado en caso que la identificación sea de tipo Local"
 
 * status and intent MS
 * status from http://hl7.org/fhir/ValueSet/medicationrequest-status (required)
@@ -49,15 +49,15 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 //Identificador de Grupo
 * groupIdentifier MS
 * groupIdentifier 1..1
-* groupIdentifier ^short = "Número identificador de grupo que debe ser el mismo con el cual se identificaron los farmacos prescritos en el acto clínico. Se genera como un NanoId."
-* groupIdentifier ^definition = "Este numero vincula el contenedor (RequestGroup) con todos los farmacos prescritos durante la atención del paciente (medicationRequest). Este hará el uso de Receta y el grupo de farmacos co misma identificacion grupal. El formato debe ser NanoId."
+* groupIdentifier ^short = "Número identificador de grupo que debe ser el mismo con el cual se identificaron los fármacos prescritos en el acto clínico. Se genera como un NanoId."
+* groupIdentifier ^definition = "Este número vincula el contenedor (RequestGroup) con todos los fármacos prescritos durante la atención del paciente (medicationRequest). Este hará el uso de Receta y el grupo de fármacos co misma identificación grupal. El formato debe ser NanoId."
 * groupIdentifier ^comment = "El elemento groupIdentifier de los recursos MedicationRequest generados durante el mismo acto clínico deberán coincidir con el que se genere en el recurso RequestGroup. Este identificador debe ser generado como un valor NanoId."
 * groupIdentifier.value ^short = "Identificador de grupo."
 * groupIdentifier.value ^definition = "Identificador de grupo."
 
 * category MS
 * category ^short = "Tipo de Acto clínico en el cual se realiza la Prescripción."
-* category ^definition = "Se reconoce según la tabla de Hl7 cual es el tipo de acto clínico en el cual se desarrolla la prescripciones"
+* category ^definition = "Se reconoce según la tabla de Hl7 cual es el tipo de acto clínico en el cual se desarrollan las prescripciones"
 
 * category.coding.system ^short = "Namespace para códigos"
 * category.coding.system ^definition = "CodeSystem de donde pertenecen los códigos a usar"
@@ -147,27 +147,27 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * dosageInstruction.asNeededBoolean ^definition = "Para indicar si el fármaco se puede usar sin respetar diretamente lo presctito en el dosaje, como por ejemplo medicamentos que se pueden usar en caso de SOS"
 	
 
-* dosageInstruction.route ^short = "via por la cual es administrado el medicamento"
+* dosageInstruction.route ^short = "vía por la cual es administrado el medicamento"
 * dosageInstruction.route.coding.system = "http://snomed.info/sct"
-* dosageInstruction.route.coding.system ^short = "NameSpace de Snomed"
-* dosageInstruction.route.coding.system ^definition = "NameSpace de Snomed"
+* dosageInstruction.route.coding.system ^short = "NameSpace de SNOMED-CT"
+* dosageInstruction.route.coding.system ^definition = "NameSpace de SNOMED-CT"
 * dosageInstruction.route.coding.code from  http://hl7.org/fhir/ValueSet/route-codes (example)
-* dosageInstruction.route.coding.code ^short = "Código de la via por medio de subset de Snomed" 
-* dosageInstruction.route.coding.code ^definition = "Código de la via por medio de subset de Snomed"
+* dosageInstruction.route.coding.code ^short = "Código de la vía por medio de subset de SNOMED-CT" 
+* dosageInstruction.route.coding.code ^definition = "Código de la vía por medio de subset de SNOMED-CT"
 * dosageInstruction.route.coding.display ^short = "Descripción del código"
 * dosageInstruction.route.coding.display ^definition = "Descripción del código"
 
 
 
 * dosageInstruction.method MS
-* dosageInstruction.method ^short = "Forma exacta en el fármaco ingresa al organismo"
-* dosageInstruction.method ^definition = "Forma exacta en el fármaco ingresa al organismo. En este caso se define la ruta plausible para vías de administración"
+* dosageInstruction.method ^short = "Forma exacta en la que el fármaco ingresa al organismo"
+* dosageInstruction.method ^definition = "Forma exacta en la que el fármaco ingresa al organismo. En este caso se define la ruta plausible para vías de administración"
 * dosageInstruction.method.coding.system = "http://snomed.info/sct"
-* dosageInstruction.method.coding.system ^short = "NameSpace de los códigos desde Snomed."
-* dosageInstruction.method.coding.system ^definition = "NameSpace de los códigos desde Snomed."
+* dosageInstruction.method.coding.system ^short = "NameSpace de los códigos desde SNOMED-CT."
+* dosageInstruction.method.coding.system ^definition = "NameSpace de los códigos desde SNOMED-CT."
 
-* dosageInstruction.method.coding.code ^short = "Códigos del Set de Valores definidos desde Snomed"
-* dosageInstruction.method.coding.code ^definition = "Código en Snomed-Ct correspondiente al método"
+* dosageInstruction.method.coding.code ^short = "Códigos del Set de Valores definidos desde SNOMED-CT"
+* dosageInstruction.method.coding.code ^definition = "Código en SNOMED-CT correspondiente al método"
 * dosageInstruction.method.coding.code from http://hl7.org/fhir/ValueSet/administration-method-codes (example)
 
 	
@@ -233,16 +233,16 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * dispenseRequest.quantity.value ^comment = "Obligatorio para fármaco Controlado"
 
 * dispenseRequest.expectedSupplyDuration ^short = "Número de días que dura lo que se ha dispensado" 
-* dispenseRequest.expectedSupplyDuration.value ^short = "Valor de la unidad de duracion" 
-* dispenseRequest.expectedSupplyDuration.unit ^short = "Unidad temporal segun UCUM"
-* dispenseRequest.expectedSupplyDuration.value ^definition = "Valor de la unidad de duracion" 
-* dispenseRequest.expectedSupplyDuration.unit ^definition = "Unidad temporal segun UCUM"
+* dispenseRequest.expectedSupplyDuration.value ^short = "Valor de la unidad de duración" 
+* dispenseRequest.expectedSupplyDuration.unit ^short = "Unidad temporal según UCUM"
+* dispenseRequest.expectedSupplyDuration.value ^definition = "Valor de la unidad de duración" 
+* dispenseRequest.expectedSupplyDuration.unit ^definition = "Unidad temporal según UCUM"
 * dispenseRequest.expectedSupplyDuration.system = "http://unitsofmeasure.org"
-* dispenseRequest.expectedSupplyDuration.system ^short = "Sistema de códigos temprales segun UCUM"
-* dispenseRequest.expectedSupplyDuration.code ^short = "Código segun UCUM"
+* dispenseRequest.expectedSupplyDuration.system ^short = "Sistema de códigos temprales según UCUM"
+* dispenseRequest.expectedSupplyDuration.code ^short = "Código según UCUM"
 * dispenseRequest.expectedSupplyDuration.code from http://hl7.org/fhir/ValueSet/age-units
-* dispenseRequest.expectedSupplyDuration.system ^definition = "Sistema de códigos temprales segun UCUM"
-* dispenseRequest.expectedSupplyDuration.code ^definition = "Código segun UCUM"
+* dispenseRequest.expectedSupplyDuration.system ^definition = "Sistema de códigos temprales según UCUM"
+* dispenseRequest.expectedSupplyDuration.code ^definition = "Código según UCUM"
 	
 * dispenseRequest.performer ^short = "A quien se intenciona sea el que dispense. Obligatorio en Sector Público"
 * dispenseRequest.performer ^definition = "Se debe referenciar a la API disponible. Obligatorio si es prescriptor público"
@@ -263,7 +263,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
  
 
 Instance : PrescripcionRecetaCL
-Title : "Ejemplo Prescripción de Medicamento Oxycodone Via Oral, una o dos tabletas al día cada 4 o 6 horas, para una solicitud segun necesidad con pre-condiciones"
+Title : "Ejemplo Prescripción de Medicamento Oxycodone Vía Oral, una o dos tabletas al día cada 4 o 6 horas, para una solicitud según necesidad con pre-condiciones"
 InstanceOf : RecetaPrescripcionCl	
 Usage: #example
 
@@ -299,8 +299,8 @@ Usage: #example
 
 * note.text = "Al paciente se le indicó que lo administrara durante comidas"
 
-* dosageInstruction.text = "Una o dos tabletas cada 4 a 6 horas segun necesidad en base a la intensidad del dolor renal"
-* dosageInstruction.patientInstruction = "Una o dos tabletas cada 4 a 6 horas segun necesidad en base a la intensidad del dolor renal"
+* dosageInstruction.text = "Una o dos tabletas cada 4 a 6 horas según necesidad en base a la intensidad del dolor renal"
+* dosageInstruction.patientInstruction = "Una o dos tabletas cada 4 a 6 horas según necesidad en base a la intensidad del dolor renal"
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.frequencyMax = 2
 * dosageInstruction.timing.repeat.period = 4
