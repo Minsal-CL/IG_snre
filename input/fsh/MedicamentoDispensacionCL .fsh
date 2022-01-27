@@ -12,30 +12,36 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 
-* identifier.system ^short = "Se identificará la url de la API sobre la cual se puede consultar por el valor del identificador generado"
+* identifier.system ^short = "NameSpace de id de local"
 * identifier.system MS 
-* identifier.system 1..1
+* identifier.system ^definition = "NameSpace de id de local"
 * identifier.value ^short = "Número identificador"
-* identifier.assigner.display ^short = "Se indica el nombre del dispensador que otorgo la identificación"
-* identifier.assigner.display MS
+* identifier.value ^definition = "Número identificador"
+* identifier.assigner.identifier ^short = "Se el identificador de la Farmacia que ha dado identifier a la receta"
+* identifier.assigner.identifier ^definition = "Se el identificador de la Farmacia que ha dado identifier a la receta"
+* identifier.assigner.identifier MS
 
 //status
 * status MS
 * status 1..1
 * status ^short = "Estado de la dispensación según estándar: cancelled | completed | entered-in-error | declined"
 * status ^definition = "Estado de la dispensación, estos estaos pueden ser: preparation | in-progress | cancelled | on-hold | completed | entered-in-error | stopped | declined | unknown"
-* status ^comment = "Si bien los códigos para este elemento son mas que los mostrados en esta guía solo se considerarán los expuestos para el caso local"
+* status from http://hl7.org/fhir/ValueSet/medicationdispense-status (required)
 
 //statusRasonCodeableConcept
 * statusReasonCodeableConcept MS
 * statusReasonCodeableConcept ^short = "Razón por la cual no se realizó la dispensación"
 * statusReasonCodeableConcept ^definition = "Razón por la cual no se realizó la dispensación, se debe utilizar la tabla definida por MINSAL."
 
-* statusReasonCodeableConcept.coding.system ^short = "Códigos definidos para motivos de rechazo de la dispensacion. Tabla que será generada por MINSAL"
-* statusReasonCodeableConcept.coding.system ^definition = "Códigos definidos para motivos de rechazo de la dispensacion. Tabla que será generada por MINSAL"
-* statusReasonCodeableConcept.coding.system ^comment = "Tabla que será generada por MINSAL, quedará disponible para que cada sistema la levante localmente y apunte a ella en esta ruta"
+* statusReasonCodeableConcept.coding.system ^short = "Identidad del sistema terminológico"
+* statusReasonCodeableConcept.coding.system ^definition = "Identidad del sistema termonológico que define los códigos "
+
+* statusReasonCodeableConcept.coding.code from http://hl7.org/fhir/ValueSet/medicationdispense-status-reason (example)
 * statusReasonCodeableConcept.coding.code ^short = "Código referente a la razon de porque no se entrego la dispensacion"
-* statusReasonCodeableConcept.coding.system ^short = "Glosa del código"
+* statusReasonCodeableConcept.coding.display ^short = "Glosa del código"
+* statusReasonCodeableConcept.coding.code ^definition = "Código referente a la razon de porque no se entrego la dispensacion"
+* statusReasonCodeableConcept.coding.display ^definition = "Glosa del código"
+
 * statusReasonCodeableConcept.text ^short = "Razon de la cancelacion"
 * statusReasonCodeableConcept.text ^definition = "Razon de la cancelacion, explicada en texto libre"
 
@@ -43,7 +49,8 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 //subject
 * subject MS
 * subject 1..1
-* subject ^short = "Referencia a un sujeto|organización para nuestro caso sera un sujeto. Repositorio es ´https://api-receta.minsal.cl/v2/patient´ (Obligatorio)"
+* subject only Reference (Patient)
+* subject ^short = "Referencia al Paciente  ´https://api-receta.minsal.cl/v2/patient´ "
 * subject ^definition = "La referencia en este caso solo se hace sobre el paciente al cual se le receta el fármaco independiente que sea otra la persona que hace retiro de estos. Se usa el repositorio ´https://api-receta.minsal.cl/v2/patient´"
 
 
@@ -58,8 +65,9 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 //medicationReference
+
 * medicationReference MS
-* medicationReference ^short = "Medicamento comercial dispensado. Como repositorio nacional: ´http://api-receta.minsal.cl/v2/medication´ (Obligatorio)"
+* medicationReference ^short = "Medicamento comercial dispensado. Como repositorio nacional: ´http://api-receta.minsal.cl/v2/medication´."
 * medicationReference ^definition = "Medicamento dispenado que obedece al Producto Comercial que fue entregado a quien lo retira. Este se describe mediante el recurso de medicamento desde el reposotorio de estos. Solo se agrega en caso de ser dispensado el medicamento de otra forma no es necesario. El repositorio es ´https://api-receta.minsal.cl/v2/medication´"
 * medicationReference ^comment = "Solo se agrega en caso de ser dispensado el medicamento"
 
@@ -69,7 +77,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * whenHandedOver 1..1
 * whenHandedOver ^short = "Fecha y hora cuando el medicamento fue dispensado. Formato YYYY-MM-DDThh:mm:ss+zz:zz, ej: 2018, 1973-06, 1905-08-23, 2015-02-07T13:28:17-05:00 or 2017-01-01T00:00:00.000Z"
 * whenHandedOver ^short = "Fecha y hora cuando el medicamento fue dispensado. Se debe especificar en formato de fecha según HL7. YYYY-MM-DDThh:mm:ss+zz:zz, ej. 2018, 1973-06, 1905-08-23, 2015-02-07T13:28:17-05:00 or 2017-01-01T00:00:00.000Z."
-* whenHandedOver ^comment = "No soporta formato 24 hrs"
+
 
 //quantity
 * quantity MS
@@ -87,27 +95,109 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction ^short = "Cómo se debe administrar el medicamento. Este se llena automaticamente al vincularlo con la Prescripción"
 * dosageInstruction ^definition = "Si bien se especifica, al momento de vicular el recuso con el recurso MedicationPrescription, este elemento con todas sus rutas se completan de manera automática, por lo que no es deber del dispensador llenar estos campos."
 * dosageInstruction ^comment = "Este elemento y todos los que lo desriben se completan de manera automática al vincularse este recucurso conun recurso MedicationRequest"
+
 * dosageInstruction.sequence ^short = "Secuencia de administracion del medicamento"
 * dosageInstruction.sequence ^definition = "Indica el orden en el que se deben aplicar o interpretar las instrucciones de dosificación."
+
 * dosageInstruction.text ^short = "Instruccion de dosificación"
 * dosageInstruction.text ^definition = "Instruccion de dosificación"
+
 * dosageInstruction.additionalInstruction ^short = "Instrucciones, advertencias y/o efectos secundarios"
 * dosageInstruction.additionalInstruction ^definition = "Instrucciones, advertencias y/o efectos secundarios"
+* dosageInstruction.additionalInstruction.coding.code from http://hl7.org/fhir/ValueSet/additional-instruction-codes (example)
+* dosageInstruction.additionalInstruction.coding.code ^short = "Codigo de las instrucciones adicionales"
+* dosageInstruction.additionalInstruction.coding.code ^definition = "Codigo de las instrucciones adicionales" 
+* dosageInstruction.additionalInstruction.coding.system ^short = "Systema terminológico para los códigos"
+* dosageInstruction.additionalInstruction.coding.system ^definition = "Systema terminológico para los códigos"
+* dosageInstruction.additionalInstruction.coding.display ^short = "Definición en texto del código"
+* dosageInstruction.additionalInstruction.coding.display ^definition = "Definición en texto del código"
+
 * dosageInstruction.patientInstruction ^short = "Instrucciones para el paciente"
 * dosageInstruction.patientInstruction ^definition = "Instrucciones con detalle o lenguaje que los pacientes puedan comprender"
-* dosageInstruction.timing ^short = "Cuando se debe administrar los medicamentos"
-* dosageInstruction.timing ^definition = "Cuando se debe administrar los medicamentos"
+
+* dosageInstruction.timing.repeat ^short = "Administración del medicamento en temporalidad"
+* dosageInstruction.timing.repeat.frequency ^short = "Cantidad de repeticiones"
+* dosageInstruction.timing.repeat.frequency ^definition = "El número de veces que se debe repetir la acción dentro del periodo especificado. Si frequencyMax está presente, este elemento indica el límite inferior del rango permitido de la frecuencia."
+
+* dosageInstruction.timing.repeat.period ^short = "Período en el cual se realizan las repeticiones"
+* dosageInstruction.timing.repeat.period ^definition = "Período en el cual se realizan las repeticiones"
+
+* dosageInstruction.timing.repeat.periodMax ^short = "Periodo máximo en el cual se realizan las repeticiones"
+* dosageInstruction.timing.repeat.periodMax ^definition = "Periodo máximo en el cual se realizan las repeticiones"
+
+* dosageInstruction.timing.repeat.periodUnit ^short = "s | min | h | d | wk | mo | a - unidad de tiempo (UCUM)"
+* dosageInstruction.timing.repeat.periodUnit ^definition = "Unidad de tiempo según Unidades de Tiempo definidias en UCUM"
+* dosageInstruction.timing.repeat.periodUnit from http://hl7.org/fhir/ValueSet/units-of-time
 
 * dosageInstruction.asNeededBoolean ^short = "Se define para uso de fármaco sin receta o indicación en esta."
 * dosageInstruction.asNeededBoolean ^definition = "Para indicar si el fármaco se puede usar sin respetar diretamente lo presctito en el dosaje, como por ejemplo medicamentos que se pueden usar en caso de SOS"
 	
-* dosageInstruction.route ^short = "Como se debe administrar el medicamento (Via de administración o como debe el farmaco entrar al cuerpo)"
-* dosageInstruction.route ^definition = "Como se debe administrar el medicamento (Via de administración o como debe el farmaco entrar al cuerpo)"
-* dosageInstruction.method ^short = "Técnica para administrar el medicamento"
-* dosageInstruction.method ^definition = "Es un valor codificado que indica el método mediante el cual se introduce el medicamento en el cuerpo o sobre él. Más comúnmente utilizado para inyecciones. Por ejemplo, empuje lento; Profundo IV."
-* dosageInstruction.doseAndRate ^short = "Cantidad de los medicamentos a administrar"
-* dosageInstruction.doseAndRate ^definition = "Cantidad de los medicamentos a administrar"
+* dosageInstruction.route ^short = "via por la cual es administrado el medicamento"
+* dosageInstruction.route.coding.system = "http://snomed.info/sct"
+* dosageInstruction.route.coding.system ^short = "NameSpace de Snomed"
+* dosageInstruction.route.coding.system ^definition = "NameSpace de Snomed"
+* dosageInstruction.route.coding.code from  http://hl7.org/fhir/ValueSet/route-codes (example)
+* dosageInstruction.route.coding.code ^short = "Código de la via por medio de subset de Snomed" 
+* dosageInstruction.route.coding.code ^definition = "Código de la via por medio de subset de Snomed"
+* dosageInstruction.route.coding.display ^short = "Descripción del código"
+* dosageInstruction.route.coding.display ^definition = "Descripción del código"
 
+
+
+* dosageInstruction.method MS
+* dosageInstruction.method ^short = "Forma exacta en el fármaco ingresa al organismo"
+* dosageInstruction.method ^definition = "Forma exacta en el fármaco ingresa al organismo. En este caso se define la ruta plausible para vías de administración"
+* dosageInstruction.method.coding.system = "http://snomed.info/sct"
+* dosageInstruction.method.coding.system ^short = "NameSpace de los códigos desde Snomed."
+* dosageInstruction.method.coding.system ^definition = "NameSpace de los códigos desde Snomed."
+
+* dosageInstruction.method.coding.code ^short = "Códigos del Set de Valores definidos desde Snomed"
+* dosageInstruction.method.coding.code ^definition = "Código en Snomed-Ct correspondiente al método"
+* dosageInstruction.method.coding.code from http://hl7.org/fhir/ValueSet/administration-method-codes (example)
+
+* dosageInstruction.doseAndRate ^short = "Cantidad de medicamento administrado puede ser Cantidad o Rango"	
+* dosageInstruction.doseAndRate ^definition = "Cantidad de medicamento administrado puede ser Cantidad o Rango, solo se puede usar uno de ellos en el Dosaje"
+* dosageInstruction.doseAndRate.doseQuantity.value ^short = "Valor de la cantidad a administrar"
+* dosageInstruction.doseAndRate.doseQuantity.unit ^short = "Unidad de la cantidad administrada"
+* dosageInstruction.doseAndRate.doseQuantity.value ^definition = "Valor de la cantidad a administrar"
+* dosageInstruction.doseAndRate.doseQuantity.unit ^definition = "Unidad de la cantidad administrada"
+* dosageInstruction.doseAndRate.doseQuantity.unit from http://hl7.org/fhir/ValueSet/ucum-units
+			
+* dosageInstruction.doseAndRate.doseQuantity.system ^short = "NameSpace del sistema de codificacion (UCUM)"
+* dosageInstruction.doseAndRate.doseQuantity.system ^definition = "Se usará UCUM como systema para unidades, se sugiere dosageInstruction.doseAndRate.doseQuantity.unit"
+* dosageInstruction.doseAndRate.doseQuantity.code ^short = "Código para el tipo de forma del fármaco"
+* dosageInstruction.doseAndRate.doseQuantity.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
+* dosageInstruction.doseAndRate.doseQuantity.code from http://terminology.hl7.org/ValueSet/v3-AdministrableDrugForm (example)
+
+* dosageInstruction.doseAndRate.doseRange.low.value ^short = "Valor mínimo del rango"
+* dosageInstruction.doseAndRate.doseRange.low.unit ^short = "Unidad de la cantidad administrada"
+			
+* dosageInstruction.doseAndRate.doseRange.low.system ^short = "Se definirá mas adelante "
+* dosageInstruction.doseAndRate.doseRange.low.code ^short = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
+* dosageInstruction.doseAndRate.doseRange.low.code from http://terminology.hl7.org/ValueSet/v3-AdministrableDrugForm (example)
+
+
+* dosageInstruction.doseAndRate.doseRange.high.value ^short = "Valor mínimo del rango"
+* dosageInstruction.doseAndRate.doseRange.high.unit ^short = "Unidad de la cantidad administrada"
+			
+* dosageInstruction.doseAndRate.doseRange.high.system ^short = "Se definirá mas adelante "
+* dosageInstruction.doseAndRate.doseRange.high.code ^short = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
+* dosageInstruction.doseAndRate.doseRange.high.code from http://terminology.hl7.org/ValueSet/v3-AdministrableDrugForm (example)
+
+
+* dosageInstruction.doseAndRate.doseRange.low.value ^definition = "Valor mínimo del rango"
+* dosageInstruction.doseAndRate.doseRange.low.unit ^definition = "Unidad de la cantidad administrada"
+			
+* dosageInstruction.doseAndRate.doseRange.low.system ^definition = "Se definirá mas adelante "
+* dosageInstruction.doseAndRate.doseRange.low.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
+		
+* dosageInstruction.doseAndRate.doseRange.high.value ^definition = "Valor mínimo del rango"
+* dosageInstruction.doseAndRate.doseRange.high.unit ^definition = "Unidad de la cantidad administrada"
+			
+* dosageInstruction.doseAndRate.doseRange.high.system ^definition = "Se definirá mas adelante "
+* dosageInstruction.doseAndRate.doseRange.high.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
+		
+		
 //performer
 * performer MS
 * performer 1..2
@@ -130,8 +220,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * performer[Dispensador].function 1..1
 * performer[Dispensador].function ^short = "Función que desarrolla el Performer, en este caso dispensador"
 * performer[Dispensador].function ^definition = "Función que desarrolla el Performer, en este caso dispensador"
-//* performer[Dispensador].function.coding.system ^short = "Sistema sobre el cual se obtiene el código de tipo de dispensador"
-//* performer[Dispensador].function.coding.system ^definition = "Sistema sobre el cual se obtiene el código de tipo de dispensador, en este caso será una tabla local"
+
 * performer[Dispensador].function.coding.system ^comment = "Dado que estos códigos quedarán normativos y con motivo de simplificación  de desarrollo, se puede obviar la ruta *performer[Validador].function.coding.system*"
 * performer[Dispensador].function.coding.code ^short = "Código del tipo de dispensador. Debe ser 01 para el Dispensador Obligado"
 * performer[Dispensador].function.coding.code ^definition = "Código del tipo de dispensador según tabla maestra. En este caso debe ser Dispensador"
@@ -149,8 +238,6 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * performer[Validador].function 1..1
 * performer[Validador].function ^short = "Función que desarrolla el Validador, en este caso siempre será un Químico Farmaceutico"
 * performer[Validador].function ^definition = "Función que desarrolla el Performer, en este caso validador"
-//* performer[Validador].function.coding.system ^short = "Sistema sobre el cual se obtiene el código de tipo de performer"
-//* performer[Validador].function.coding.system ^definition = "Sistema sobre el cual se obtiene el código de tipo de performer, en este caso será una tabla local"
 * performer[Validador].function.coding.system ^comment = "Dado que estos códigos quedarán normativos y con motivo de simplificación  de desarrollo, se puede obviar la ruta *performer[Validador].function.coding.system*"
 * performer[Validador].function.coding.code ^short = "Código de validador. Debe ser **Validador** para definir un Validador"
 * performer[Validador].function.coding.code ^definition = "Código de validador según tabla maestra. En este caso debe ser Validador"

@@ -3,9 +3,9 @@
   "name": "RecetaCL",
   "package-id": "hl7.fhir.cl.RecetaCH",
   "ig-ver": "0.753 (Proceso de Ballot Pendiente)",
-  "date": "Wed, 26 Jan, 2022 12:49:09 -0300",
-  "errs": 35,
-  "warnings": 41,
+  "date": "Thu, 27 Jan, 2022 11:40:23 -0300",
+  "errs": 36,
+  "warnings": 47,
   "hints": 4,
   "version": "4.0.1",
   "tool": "4.6.0 (3)"
