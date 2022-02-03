@@ -25,20 +25,14 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * status MS
 * status 1..1
 * status ^short = "Estado de la dispensación según estándar: cancelled | completed | entered-in-error | declined"
-<<<<<<< HEAD
-* status ^definition = "Estado de la dispensación, estos estaos pueden ser: preparation | in-progress | cancelled | on-hold | completed | entered-in-error | stopped | declined | unknown"
-* status from http://hl7.org/fhir/ValueSet/medicationdispense-status (required)
-=======
 * status ^definition = "Estado de la dispensación, estos estados pueden ser: preparation | in-progress | cancelled | on-hold | completed | entered-in-error | stopped | declined | unknown"
 * status ^comment = "Si bien los códigos para este elemento son mas que los mostrados en esta guía solo se considerarán los expuestos para el caso local"
->>>>>>> f211041f244f023d52932f057f64c0b4507a706a
 
 //statusRasonCodeableConcept
 * statusReasonCodeableConcept MS
 * statusReasonCodeableConcept ^short = "Razón por la cual no se realizó la dispensación"
 * statusReasonCodeableConcept ^definition = "Razón por la cual no se realizó la dispensación, se debe utilizar la tabla definida por MINSAL."
 
-<<<<<<< HEAD
 * statusReasonCodeableConcept.coding.system ^short = "Identidad del sistema terminológico"
 * statusReasonCodeableConcept.coding.system ^definition = "Identidad del sistema termonológico que define los códigos "
 
@@ -50,7 +44,6 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 * statusReasonCodeableConcept.text ^short = "Razon de la cancelacion"
 * statusReasonCodeableConcept.text ^definition = "Razon de la cancelacion, explicada en texto libre"
-=======
 * statusReasonCodeableConcept.coding.system ^short = "Códigos definidos para motivos de rechazo de la dispensación. Tabla que será generada por MINSAL"
 * statusReasonCodeableConcept.coding.system ^definition = "Códigos definidos para motivos de rechazo de la dispensación. Tabla que será generada por MINSAL"
 * statusReasonCodeableConcept.coding.system ^comment = "Tabla que será generada por MINSAL, quedará disponible para que cada sistema la levante localmente y apunte a ella en esta ruta"
@@ -58,7 +51,6 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * statusReasonCodeableConcept.coding.system ^short = "Glosa del código"
 * statusReasonCodeableConcept.text ^short = "Razón de la cancelación"
 * statusReasonCodeableConcept.text ^definition = "Razón de la cancelación, explicada en texto libre"
->>>>>>> f211041f244f023d52932f057f64c0b4507a706a
 
 
 //subject
@@ -82,13 +74,10 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 //medicationReference
 
 * medicationReference MS
-<<<<<<< HEAD
 * medicationReference ^short = "Medicamento comercial dispensado. Como repositorio nacional: ´http://api-receta.minsal.cl/v2/medication´."
 * medicationReference ^definition = "Medicamento dispenado que obedece al Producto Comercial que fue entregado a quien lo retira. Este se describe mediante el recurso de medicamento desde el reposotorio de estos. Solo se agrega en caso de ser dispensado el medicamento de otra forma no es necesario. El repositorio es ´https://api-receta.minsal.cl/v2/medication´"
-=======
 * medicationReference ^short = "Medicamento comercial dispensado. Como repositorio nacional: ´http://api-receta.minsal.cl/v2/medication´ (Obligatorio)"
 * medicationReference ^definition = "Medicamento dispensado correspondiente al Producto Comercial que fue entregado a quien lo retira. Este se describe mediante el recurso de medicamento desde el repositorio. Solo se agrega en caso de ser dispensado el medicamento, de otra forma no es necesario. El repositorio es ´https://api-receta.minsal.cl/v2/medication´"
->>>>>>> f211041f244f023d52932f057f64c0b4507a706a
 * medicationReference ^comment = "Solo se agrega en caso de ser dispensado el medicamento"
 
 
@@ -118,15 +107,12 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 * dosageInstruction.sequence ^short = "Secuencia de administracion del medicamento"
 * dosageInstruction.sequence ^definition = "Indica el orden en el que se deben aplicar o interpretar las instrucciones de dosificación."
-<<<<<<< HEAD
 
 * dosageInstruction.text ^short = "Instruccion de dosificación"
 * dosageInstruction.text ^definition = "Instruccion de dosificación"
 
-=======
 * dosageInstruction.text ^short = "Instrucción de dosificación"
 * dosageInstruction.text ^definition = "Instrucción de dosificación"
->>>>>>> f211041f244f023d52932f057f64c0b4507a706a
 * dosageInstruction.additionalInstruction ^short = "Instrucciones, advertencias y/o efectos secundarios"
 * dosageInstruction.additionalInstruction ^definition = "Instrucciones, advertencias y/o efectos secundarios"
 * dosageInstruction.additionalInstruction.coding.code from http://hl7.org/fhir/ValueSet/additional-instruction-codes (example)
@@ -157,7 +143,6 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction.asNeededBoolean ^short = "Se define para uso de fármaco sin receta o indicación en esta."
 * dosageInstruction.asNeededBoolean ^definition = "Para indicar si el fármaco se puede usar sin respetar diretamente lo presctito en el dosaje, como por ejemplo medicamentos que se pueden usar en caso de SOS"
 	
-<<<<<<< HEAD
 * dosageInstruction.route ^short = "via por la cual es administrado el medicamento"
 * dosageInstruction.route.coding.system = "http://snomed.info/sct"
 * dosageInstruction.route.coding.system ^short = "NameSpace de Snomed"
@@ -167,14 +152,12 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction.route.coding.code ^definition = "Código de la via por medio de subset de Snomed"
 * dosageInstruction.route.coding.display ^short = "Descripción del código"
 * dosageInstruction.route.coding.display ^definition = "Descripción del código"
-=======
 * dosageInstruction.route ^short = "Como se debe administrar el medicamento (Vía de administración o como debe el farmaco entrar al cuerpo)"
 * dosageInstruction.route ^definition = "Como se debe administrar el medicamento (Vía de administración o como debe el farmaco entrar al cuerpo)"
 * dosageInstruction.method ^short = "Técnica para administrar el medicamento"
 * dosageInstruction.method ^definition = "Es un valor codificado que indica el método mediante el cual se introduce el medicamento en el cuerpo o sobre él. Más comúnmente utilizado para inyecciones. Por ejemplo, empuje lento; Profundo IV."
 * dosageInstruction.doseAndRate ^short = "Cantidad de los medicamentos a administrar"
 * dosageInstruction.doseAndRate ^definition = "Cantidad de los medicamentos a administrar"
->>>>>>> f211041f244f023d52932f057f64c0b4507a706a
 
 
 

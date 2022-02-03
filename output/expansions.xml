@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="bf9eab33-e2d5-4fe5-b467-545cc56e76e8"/>
+  <id value="338e5fe2-9607-442c-84e2-811e496b5811"/>
   <meta>
-    <lastUpdated value="2022-01-27T11:40:23.819-03:00"/>
+    <lastUpdated value="2022-01-27T14:55:18.615-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -18,7 +18,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSStatusReason.html">CodeSystem Razón Cambio Estado Prescripción. v0.753 (Proceso de Ballot Pendiente) (CodeSystem)</a>
             </p>
-            <p>All codes from system 
+            <p>All codes in this table are from the system 
               <a href="CodeSystem-CSStatusReason.html">
                 <code>http://minsal.cl/fhir/core/CodeSystem/CSStatusReason</code>
               </a>
@@ -153,7 +153,7 @@
         <url value="http://minsal.cl/fhir/core/ValueSet/VSStatusReason"/>
         <version value="0.753 (Proceso de Ballot Pendiente)"/>
         <name value="VSStatusReason"/>
-        <title value="C&#xF3;digos Raz&#xF3;n Cambio Estado Prescripci&#xF3;n."/>
+        <title value="Códigos Razón Cambio Estado Prescripción."/>
         <status value="active"/>
         <date value="2022-01-25T00:00:00-03:00"/>
         <contact>
@@ -163,7 +163,7 @@
             <value value="mailto:ppizarro.delgado@minsal.cl"/>
           </telecom>
         </contact>
-        <description value="C&#xF3;digos que indican la raz&#xF3;n por la cual una Prescripci&#xF3;n ha cambiado su estado"/>
+        <description value="Códigos que indican la razón por la cual una Prescripción ha cambiado su estado"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -172,8 +172,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ba16a1ec-10dd-44ac-97c1-69d1291deaea"/>
-          <timestamp value="2022-01-27T11:40:49-03:00"/>
+          <identifier value="urn:uuid:4722173d-0749-4fef-b52b-07dd50794a17"/>
+          <timestamp value="2022-01-27T14:55:54-03:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>

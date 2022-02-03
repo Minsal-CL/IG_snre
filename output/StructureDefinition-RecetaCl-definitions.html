@@ -171,75 +171,40 @@
 
 <div style="counter-reset: section 4" class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Guía de Implementación Receta-CL - Local Development build (v0.753 (Proceso de Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  
-
-
-
-
-
-
-
-
-
-
+        
+   
 
 <ul class="nav nav-tabs">
-
-  <li>
-    <a href="StructureDefinition-RecetaCl.html">Content</a>
-  </li>
-
-
-
-  <li class="active">
-    <a href="#">Detailed Descriptions</a>
-  </li>
-
-
-
-  
-    <li>
-      <a href="StructureDefinition-RecetaCl-mappings.html">Mappings</a>
-    </li>
-  
-
-
-
-
-  
     
-      <li>
-        <a href="StructureDefinition-RecetaCl-examples.html">Examples</a>
-      </li>
-    
-  
-
-
-
-
-  
     <li>
-      <a href="StructureDefinition-RecetaCl.profile.xml.html">XML</a>
+        <a href="StructureDefinition-RecetaCl.html">Contenido</a>
     </li>
-  
-
-
-  
+     
+    <li class="active">
+        <a href="#">Descripción detallada</a>
+    </li>
+      
     <li>
-      <a href="StructureDefinition-RecetaCl.profile.json.html">JSON</a>
+        <a href="StructureDefinition-RecetaCl-mappings.html">Mapeo</a>
     </li>
-  
-
-
-  
+         
     <li>
-      <a href="StructureDefinition-RecetaCl.profile.ttl.html">TTL</a>
+        <a href="StructureDefinition-RecetaCl-examples.html">Ejemplos</a>
     </li>
-  
-
-
+         
+    <li>
+        <a href="StructureDefinition-RecetaCl.profile.xml.html">XML</a>
+    </li>
+       
+    <li>
+        <a href="StructureDefinition-RecetaCl.profile.json.html">JSON</a>
+    </li>
+       
+    <li>
+        <a href="StructureDefinition-RecetaCl.profile.ttl.html">TTL</a>
+    </li>
+      
 </ul>
-
 
 <a name="root"> </a>
 <h2 id="root">Resource Profile: MedicamentoRecetaCL - Detailed Descriptions</h2>
@@ -383,7 +348,7 @@ A human language.</p>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="RequestGroup.groupIdentifier"> </a><span style="color: grey">15.</span> <b>RequestGroup.groupIdentifier</b><a href="#RequestGroup.groupIdentifier" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
-  <tr><td>Definition</td><td><p>Este numero vincula el contenedor con todos los farmacos prescritos durante la atención del paciente. Este hará el uso de Receta y el grupo de farmacos co misma identificacion grupal. El formato debe ser el de un NanoId</p>
+  <tr><td>Definition</td><td><p>Este número vincula el contenedor con todos los fármacos prescritos durante la atención del paciente. Este hará el uso de Receta y el grupo de fármacos con misma identificación grupal. El formato debe ser el de un NanoId</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td></tr>
@@ -481,7 +446,7 @@ A coded type for an identifier that can be used to determine which identifier to
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="RequestGroup.status"> </a><span style="color: grey">24.</span> <b>RequestGroup.status</b><a href="#RequestGroup.status" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
-  <tr><td>Definition</td><td><p>El estado de la receta se desribe como activa (aun no ha sido dispensada) o completada (se dispensó). En caso que las prescripciones no se dispencen entonces la receta pasa a estado cancelada</p>
+  <tr><td>Definition</td><td><p>El estado de la receta se describe como activa (aún no ha sido dispensada) o completada (se dispensó). En caso que las prescripciones no se dispensen entonces la receta pasa a estado cancelada</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-request-status.html">RequestStatus</a>
@@ -846,7 +811,7 @@ Defines the types of relationships between actions.</p>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="RequestGroup.action.relatedAction.offset[x]"> </a><a name="RequestGroup.action.relatedAction.offsetDuration"> </a><a name="RequestGroup.action.relatedAction.offsetRange"> </a><span style="color: grey">64.</span> <b>RequestGroup.action.relatedAction.offset[x]</b><a href="#RequestGroup.action.relatedAction.offset[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="RequestGroup.action.relatedAction.offset[x]"> </a><a name="RequestGroup.action.relatedAction.offsetDuration"> </a><a name="RequestGroup.action.relatedAction.offset[x]:offsetDuration"> </a><a name="RequestGroup.action.relatedAction.offsetRange"> </a><a name="RequestGroup.action.relatedAction.offset[x]:offsetRange"> </a><span style="color: grey">64.</span> <b>RequestGroup.action.relatedAction.offset[x]</b><a href="#RequestGroup.action.relatedAction.offset[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>A duration or range of durations to apply to the relationship. For example, 30-60 minutes before.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
@@ -854,7 +819,7 @@ Defines the types of relationships between actions.</p>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="RequestGroup.action.timing[x]"> </a><a name="RequestGroup.action.timingDateTime"> </a><a name="RequestGroup.action.timingRange"> </a><a name="RequestGroup.action.timingDuration"> </a><a name="RequestGroup.action.timingTiming"> </a><a name="RequestGroup.action.timingAge"> </a><a name="RequestGroup.action.timingPeriod"> </a><span style="color: grey">65.</span> <b>RequestGroup.action.timing[x]</b><a href="#RequestGroup.action.timing[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="RequestGroup.action.timing[x]"> </a><a name="RequestGroup.action.timingDateTime"> </a><a name="RequestGroup.action.timing[x]:timingDateTime"> </a><a name="RequestGroup.action.timingAge"> </a><a name="RequestGroup.action.timing[x]:timingAge"> </a><a name="RequestGroup.action.timingPeriod"> </a><a name="RequestGroup.action.timing[x]:timingPeriod"> </a><a name="RequestGroup.action.timingDuration"> </a><a name="RequestGroup.action.timing[x]:timingDuration"> </a><a name="RequestGroup.action.timingRange"> </a><a name="RequestGroup.action.timing[x]:timingRange"> </a><a name="RequestGroup.action.timingTiming"> </a><a name="RequestGroup.action.timing[x]:timingTiming"> </a><span style="color: grey">65.</span> <b>RequestGroup.action.timing[x]</b><a href="#RequestGroup.action.timing[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>An optional value describing when the action should be performed.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
@@ -1007,7 +972,7 @@ Defines behavior for an action or a group for how many times that item may be re
         <div class="inner-wrapper">
             <p>
                 IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.RecetaCH#0.753 (Proceso de Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Thu, Jan 27, 2022 11:40-0300">27-01-2022</span>
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Thu, Jan 27, 2022 14:55-0300">27-01-2022</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

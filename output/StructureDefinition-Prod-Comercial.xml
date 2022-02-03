@@ -14,7 +14,7 @@
   <version value="0.753 (Proceso de Ballot Pendiente)"/>
   <name value="Prod_Comercial"/>
   <status value="active"/>
-  <date value="2022-01-27T11:40:23-03:00"/>
+  <date value="2022-01-27T14:55:18-03:00"/>
   <contact>
     <name value="Pablo Pizzaro"/>
     <telecom>
@@ -22,7 +22,7 @@
       <value value="mailto:ppizarro.delgado@minsal.cl"/>
     </telecom>
   </contact>
-  <description value="Recomendaci&#xF3;n de Medicamento en Producto Comercial"/>
+  <description value="Recomendación de Medicamento en Producto Comercial"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Extension"/>
-      <definition value="Recomendaci&#xF3;n de Medicamento en Producto Comercial"/>
+      <definition value="Recomendación de Medicamento en Producto Comercial"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -209,7 +209,7 @@
     <element id="Extension.value[x]:valueReference">
       <path value="Extension.value[x]"/>
       <sliceName value="valueReference"/>
-      <short value="Referencia a un recurso medicamento en &#xB4;http://api-receta.minsal.cl/v2/medication&#xB4;"/>
+      <short value="Referencia a un recurso medicamento en ´http://api-receta.minsal.cl/v2/medication´"/>
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)."/>
       <min value="0"/>
       <max value="1"/>
@@ -240,7 +240,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <definition value="Recomendaci&#xF3;n de Medicamento en Producto Comercial"/>
+      <definition value="Recomendación de Medicamento en Producto Comercial"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -266,7 +266,7 @@
     </element>
     <element id="Extension.valueReference">
       <path value="Extension.valueReference"/>
-      <short value="Referencia a un recurso medicamento en &#xB4;http://api-receta.minsal.cl/v2/medication&#xB4;"/>
+      <short value="Referencia a un recurso medicamento en ´http://api-receta.minsal.cl/v2/medication´"/>
       <min value="0"/>
       <max value="1"/>
     </element>

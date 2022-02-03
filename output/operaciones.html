@@ -187,16 +187,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#operaciones-básicas-basada-en-métodos" id="markdown-toc-operaciones-básicas-basada-en-métodos">Operaciones Básicas basada en Métodos</a></li>
+  <li><a href="#operaciones-básicas-basadas-en-métodos" id="markdown-toc-operaciones-básicas-basadas-en-métodos">Operaciones Básicas basadas en Métodos</a></li>
   <li><a href="#terminologia" id="markdown-toc-terminologia">Terminologia</a></li>
 </ul>
 
 </div>
-<h3 id="operaciones-básicas-basada-en-métodos">Operaciones Básicas basada en Métodos</h3>
+<h3 id="operaciones-básicas-basadas-en-métodos">Operaciones Básicas basadas en Métodos</h3>
 
-<p>Las Operaciones que se pueden ejecutar como base en el manejo de recuros en FHIR se especifican desde el mismo estándar  travez de <a href="https://www.hl7.org/fhir/http.html#summary">Resumen de operaciones</a></p>
+<p>Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHIR se especifican desde el mismo estándar  través de <a href="https://www.hl7.org/fhir/http.html#summary">Resumen de operaciones</a></p>
 
-<p>Como nota que  <em>todos</em> los requests pueden incluir un opcional <code class="language-plaintext highlighter-rouge">Accept</code> como cabecera que indica el formato que se debe usar como respuesta (esto incluso se aplica a  <code class="language-plaintext highlighter-rouge">DELETE</code> dado que una OperationOutcome debe ser devuelta).</p>
+<p>Nota: se debe considerar que todos los requests pueden incluir un opcional <code class="language-plaintext highlighter-rouge">Accept</code> como cabecera que indica el formato que se debe usar como respuesta (esto incluso se aplica a  <code class="language-plaintext highlighter-rouge">DELETE</code> dado que una OperationOutcome debe ser devuelta).</p>
 
 <table class="grid">
 
@@ -204,9 +204,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <tr>
 
-<th>Interacción</th>
+<th>Operation</th>
 
-<th>Ruta</th>
+<th>Path</th>
 
 <th colspan="5">Request</th>
 
@@ -216,7 +216,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <th colspan="2"></th>
 
-<th>Método</th>
+<th>Method</th>
 
 <th>Content-Type</th>
 
@@ -224,13 +224,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <th>Prefer</th>
 
-<th>Condcional (si aplica)</th>
+<th>Conditional (If apply)</th>
 
 </tr>
 
 <tr>
 
-<td>`read`</td>
+<td>read</td>
 
 <td>`/[type]/[id]`</td>
 
@@ -532,7 +532,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li>N/A = no Presente, R = Requerido, O = opcional</li>
-  <li><a name="27889f01-9e3f-4949-845b-eda54ec49cdb">​</a>Para las operaciones definidas en todos los recursos, incluyendo acceso directo al meta elemento, ver  <a href="resource-operations.html">Resource Operations</a></li>
+  <li><a name="l792">​</a>Para las operaciones definidas en todos los recursos, incluyendo acceso directo al meta elemento, ver  <a href="resource-operations.html">Resource Operations</a></li>
 </ul>
 
 <p>La aplicación específica de cada parametro, para cada una de las operaciones, dependen de cada recurso, en en los cuales el estándar especifica cuales se encuentran definidos para cada operción.</p>
@@ -801,11 +801,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="búsquedas-soportadas">Búsquedas Soportadas</h4>
 
-<p>Los Métodos y los parámetros para la consulta de recursos se describen a continuación y se basan en la busqueda sobre recurso Paciente:</p>
+<p>Los métodos y parámetros para la consulta de recursos se describen a continuación y se basan en la búsqueda sobre recurso Paciente:</p>
 
 <ol>
   <li>
-    <p>En este caso los servidores <strong>DEBEN</strong> soportar buscar un recurso Patient usando el parametro de búsqueda **[<code class="language-plaintext highlighter-rouge">_id</code>]:</p>
+    <p>En este caso los servidores <strong>DEBEN</strong> soportar buscar un recurso Patient usando el parámetro de búsqueda **[<code class="language-plaintext highlighter-rouge">_id</code>]:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Patient[id]</code></p>
 
@@ -818,11 +818,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
 </ol>
 
-<p>Lo anterior es aplicable para un recurso ya creado el cual se alamacena con una identificación generada en ese momento</p>
+<p>Lo anterior es aplicable para un recurso ya creado el cual se almacena con una identificación generada en ese momento</p>
 
 <ol>
   <li>
-    <p>Los servidores <strong>DEBEN</strong> soportar buscar un recurso Patient por un identificador como el numero RUN de la Cédula de Identidad Nacional, utilizando el parámetro de búsqueda **[<code class="language-plaintext highlighter-rouge">identifier</code>]:</p>
+    <p>Los servidores <strong>DEBEN</strong> soportar buscar un recurso Patient mediante un identificador como el número RUN de la Cédula de Identidad Nacional por ejemplo, utilizando el parámetro de búsqueda **[<code class="language-plaintext highlighter-rouge">identifier</code>]:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Patient?identifier={system|}[code]</code></p>
 
@@ -859,25 +859,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
 </ol>
 
-<h4 id="agregado-de-recursos-creando-recursos-para-ser-almacenados">Agregado de Recursos (Creando Recursos para ser almacenados)</h4>
+<h4 id="agregando-recursos-creando-recursos-para-ser-almacenados">Agregando recursos (creando recursos para ser almacenados)</h4>
 
-<p>POST [base]/Patient En el Body, un recurso paciente compatible con el/los perfiles definidos core definido en el Core-Cl (para este caso sería el perfil Paciente-CL)</p>
+<p>POST [base]/Patient. En el Body, un recurso paciente compatible con el/los perfiles definido en el Core-Cl (para este caso sería el perfil Paciente-CL)</p>
 
 <h3 id="terminologia">Terminologia</h3>
 
 <h4 id="vocabularios">Vocabularios</h4>
 
-<p><em>Definición de Medicamentos:</em> Se utiliza la Terminología de Farmacos Chilena (TFC), expuesta por medio de un servicio de terminolgía Local o desde MINSAL</p>
+<p><em>Definición de Medicamentos:</em> Se utiliza la Terminología de Fármacos Chilena (TFC), expuesta por medio de un servicio de terminología Local o desde MINSAL</p>
 
 <p><em>Profesionales de la Salud:</em> desplegados a través de la Super Intendencia y el sistema Midas, este registro se expone por medio del recurso  FHIR Practitioner, y la especialidad por medio del recurso PractitionerRole.</p>
 
 <p><em>Establecimientos de Salud</em>: utiliza su identificación por medio de código DEIS, y su registro se expone a través de los recursos FHIR Location y Organization, según corresponda.</p>
 
-<p><em>Farmacias</em>: utiliza el registro de farmacias Farmanet y se expone como como los recursos FHIR Location y Organization.</p>
+<p><em>Farmacias</em>: utiliza el registro de farmacias Farmanet y se expone como los recursos FHIR Location y Organization.</p>
 
-<p><em>Pacientes:</em> Se identifican por medio de su número identificador que peude ser cualquier tipo de documento, especificado en las tablas de HL7 V3 relcionados con identificadores de personas.</p>
+<p><em>Pacientes:</em> Se identifican por medio de su número identificador que puede ser cualquier tipo de documento, especificado en las tablas de HL7 V3 relacionados con identificadores de personas.</p>
 
-<p><em>Tablas Maestras específicas:</em> se incluyen las de comunas, provincias y regiones, entre otras pertenecientes a la normativa Nacional que son expuestas en la GI y que deben ser en muchos casos levantadas a nivel local</p>
+<p><em>Tablas Maestras específicas:</em> se incluyen las de comunas, provincias y regiones, entre otras pertenecientes a la normativa Nacional. Estas son expuestas en la IG y deben ser en muchos casos levantadas a nivel local.</p>
 
 
 
@@ -913,7 +913,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         <div class="inner-wrapper">
             <p>
                 IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.RecetaCH#0.753 (Proceso de Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Thu, Jan 27, 2022 11:40-0300">27-01-2022</span>
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Thu, Jan 27, 2022 14:55-0300">27-01-2022</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 
