@@ -31,7 +31,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * status ^short = "active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown código del estado de la receta del medicamento prescrito  (requerido)"
 
 * intent ^short = "	proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option Intención para la cual es requerido el medicamento (requerido). Se Forzará siempre a order"
-* intent from http://hl7.org/fhir/ValueSet/medicationrequest-intent
+* intent from http://hl7.org/fhir/ValueSet/medicationrequest-intent (required)
 * intent = #order
 
 * statusReason MS
@@ -39,7 +39,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 
 * statusReason.coding.system ^short = "Sistema de códigos a ocupar."
 * statusReason.coding.code ^short = "Código relacionado al estado."
-* statusReason.coding.code from VSStatusReason (preferred) 
+* statusReason.coding.code from VSStatusReason (extensible) 
 * statusReason.coding.display ^short = "Descripción del código."
 
 * statusReason.text ^short = "Texto que representa el concepto. Si el codigo es #otra entonces debe describirse aquí la razón"
@@ -63,7 +63,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * category.coding.system ^definition = "CodeSystem de donde pertenecen los códigos a usar"
 * category.coding.code ^short = "Código relacionado"
 * category.coding.code ^definition = "Código relacionado"
-* category.coding.code from http://hl7.org/fhir/ValueSet/medicationrequest-category (example)
+* category.coding.code from VSCodificacionCategoria (extensible)
 * category.coding.display ^short = "Glosa del código"
 * category.coding.display ^definition = "Glosa del código según su definición de la tabla de HL7"
 
@@ -83,7 +83,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * subject only Reference (Patient) 
 * subject ^short = "Referencia al paciente a quien se le prescribe"
 * subject ^definition = "La referencia en este caso solo se hace sobre el paciente al cual se le prescribe el fármaco independiente que sea otra la persona que hace retiro de estos"
-* subject.reference ^short = "Referencia al recurso del paciente. ´http://api-receta.minsal.cl/v2/patient´" 
+* subject.reference ^short = "Referencia al recurso del paciente. ´http://api-receta.minsal.cl/v2/Patient´" 
 * subject.display ^short = "Nombre paciente"
 
 * authoredOn MS
@@ -96,7 +96,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * requester ^short = "Referencia al Prescriptor"
 * requester ^definition = "En este caso la referencia será sobre una persona que es Prescritpr  validado por la SIS"
 
-* requester.reference ^short = "Recurso asociado al Prescriptor  ´https://api-receta.minsal.cl/v2/practitioner´" 
+* requester.reference ^short = "Recurso asociado al Prescriptor  ´https://api-receta.minsal.cl/v2/Practitioner´" 
 * requester.display ^short = "Nombre Prescriptor"
 
 * recorder and recorder.reference MS
@@ -104,7 +104,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * recorder only Reference (Practitioner)
 * recorder ^short = "Referencia a un sujeto, que será el que registra la receta"
 * recorder ^definition = "En este caso la referencia será sobre una persona que es un prescriptor validado por la SIS"
-* recorder.reference ^short = "Recurso asociado ´http://api-receta.minsal.cl/v2/practitioner´"
+* recorder.reference ^short = "Recurso asociado ´http://api-receta.minsal.cl/v2/Practitioner´"
 * recorder.display ^short = "Nombre Prescriptor (Registrador)"
 
 
@@ -113,8 +113,8 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * courseOfTherapyType ^short = "Expresa el patrón en la administración del medicamento"
 * courseOfTherapyType ^definition = "La descripción del patrón general de la administración del medicamento al paciente."
 * courseOfTherapyType.coding.system ^short = "Sistema de códigos a ocupar, se hará uso sel det de valores de hl7 MedicationRequest-course-of-therapy "
-* courseOfTherapyType.coding.code from https://www.hl7.org/fhir/valueset-medicationrequest-course-of-therapy.html
-* courseOfTherapyType.coding.code ^short = "Código relacionado continuous|acute|seasonal (Continuo, agudo o por temporada)"
+* courseOfTherapyType.coding.code from VSCodificacionPatron
+* courseOfTherapyType.coding.code ^short = "Código relacionado con el patrón de administración"
 * courseOfTherapyType.coding.display ^short = "Descripción del código"
 
 * note MS
@@ -151,7 +151,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * dosageInstruction.route.coding.system = "http://snomed.info/sct"
 * dosageInstruction.route.coding.system ^short = "NameSpace de SNOMED-CT"
 * dosageInstruction.route.coding.system ^definition = "NameSpace de SNOMED-CT"
-* dosageInstruction.route.coding.code from  http://hl7.org/fhir/ValueSet/route-codes (example)
+* dosageInstruction.route.coding.code from  VSViasAdmin (extensible)
 * dosageInstruction.route.coding.code ^short = "Código de la vía por medio de subset de SNOMED-CT" 
 * dosageInstruction.route.coding.code ^definition = "Código de la vía por medio de subset de SNOMED-CT"
 * dosageInstruction.route.coding.display ^short = "Descripción del código"
@@ -168,7 +168,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 
 * dosageInstruction.method.coding.code ^short = "Códigos del Set de Valores definidos desde SNOMED-CT"
 * dosageInstruction.method.coding.code ^definition = "Código en SNOMED-CT correspondiente al método"
-* dosageInstruction.method.coding.code from http://hl7.org/fhir/ValueSet/administration-method-codes (example)
+* dosageInstruction.method.coding.code from VSMetodos (extensible)
 
 	
 * dosageInstruction.doseAndRate ^short = "Cantidad de medicamento administrado puede ser Cantidad o Rango"	
@@ -183,14 +183,14 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * dosageInstruction.doseAndRate.doseQuantity.system ^definition = "Se usará UCUM como systema para unidades, se sugiere dosageInstruction.doseAndRate.doseQuantity.unit"
 * dosageInstruction.doseAndRate.doseQuantity.code ^short = "Código para el tipo de forma del fármaco"
 * dosageInstruction.doseAndRate.doseQuantity.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
-* dosageInstruction.doseAndRate.doseQuantity.code from http://terminology.hl7.org/ValueSet/v3-AdministrableDrugForm (example)
+* dosageInstruction.doseAndRate.doseQuantity.code from VSUnidadAsistencial (extensible)
 
 * dosageInstruction.doseAndRate.doseRange.low.value ^short = "Valor mínimo del rango"
 * dosageInstruction.doseAndRate.doseRange.low.unit ^short = "Unidad de la cantidad administrada"
 			
 * dosageInstruction.doseAndRate.doseRange.low.system ^short = "Se definirá mas adelante "
 * dosageInstruction.doseAndRate.doseRange.low.code ^short = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
-* dosageInstruction.doseAndRate.doseRange.low.code from http://terminology.hl7.org/ValueSet/v3-AdministrableDrugForm (example)
+* dosageInstruction.doseAndRate.doseRange.low.code from VSUnidadAsistencial (extensible)
 
 
 * dosageInstruction.doseAndRate.doseRange.high.value ^short = "Valor mínimo del rango"
@@ -198,7 +198,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 			
 * dosageInstruction.doseAndRate.doseRange.high.system ^short = "Se definirá mas adelante "
 * dosageInstruction.doseAndRate.doseRange.high.code ^short = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
-* dosageInstruction.doseAndRate.doseRange.high.code from http://terminology.hl7.org/ValueSet/v3-AdministrableDrugForm (example)
+* dosageInstruction.doseAndRate.doseRange.high.code from VSUnidadAsistencial (extensible)
 
 
 * dosageInstruction.doseAndRate.doseRange.low.value ^definition = "Valor mínimo del rango"

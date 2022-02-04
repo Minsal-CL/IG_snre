@@ -4,7 +4,7 @@
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.cl.RecetaCH
-canonical: http://minsal.cl/fhir/core
+canonical: http://recetaelectronica.minsal.cl/gi-fhir
 version: 0.753 (Proceso de Ballot Pendiente) 
 name: RecetaCL
 

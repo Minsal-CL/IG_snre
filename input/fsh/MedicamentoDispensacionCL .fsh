@@ -36,7 +36,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * statusReasonCodeableConcept.coding.system ^short = "Identidad del sistema terminológico"
 * statusReasonCodeableConcept.coding.system ^definition = "Identidad del sistema termonológico que define los códigos "
 
-* statusReasonCodeableConcept.coding.code from http://hl7.org/fhir/ValueSet/medicationdispense-status-reason (example)
+* statusReasonCodeableConcept.coding.code from VSRazonEstadoMD (extensible)
 * statusReasonCodeableConcept.coding.code ^short = "Código referente a la razon de porque no se entrego la dispensacion"
 * statusReasonCodeableConcept.coding.display ^short = "Glosa del código"
 * statusReasonCodeableConcept.coding.code ^definition = "Código referente a la razon de porque no se entrego la dispensacion"
@@ -57,7 +57,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * subject MS
 * subject 1..1
 * subject only Reference (Patient)
-* subject ^short = "Referencia al Paciente  ´https://api-receta.minsal.cl/v2/patient´ "
+* subject ^short = "Referencia al Paciente  ´https://api-receta.minsal.cl/v2/Patient´ "
 * subject ^definition = "La referencia en este caso solo se hace sobre el paciente al cual se le receta el fármaco independiente que sea otra la persona que hace retiro de estos. Se usa el repositorio ´https://api-receta.minsal.cl/v2/patient´"
 
 
@@ -74,9 +74,9 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 //medicationReference
 
 * medicationReference MS
-* medicationReference ^short = "Medicamento comercial dispensado. Como repositorio nacional: ´http://api-receta.minsal.cl/v2/medication´."
+* medicationReference ^short = "Medicamento comercial dispensado. Como repositorio nacional: ´http://api-receta.minsal.cl/v2/Medication´."
 * medicationReference ^definition = "Medicamento dispenado que obedece al Producto Comercial que fue entregado a quien lo retira. Este se describe mediante el recurso de medicamento desde el reposotorio de estos. Solo se agrega en caso de ser dispensado el medicamento de otra forma no es necesario. El repositorio es ´https://api-receta.minsal.cl/v2/medication´"
-* medicationReference ^short = "Medicamento comercial dispensado. Como repositorio nacional: ´http://api-receta.minsal.cl/v2/medication´ (Obligatorio)"
+* medicationReference ^short = "Medicamento comercial dispensado. Como repositorio nacional: ´http://api-receta.minsal.cl/v2/Medication´ (Obligatorio)"
 * medicationReference ^definition = "Medicamento dispensado correspondiente al Producto Comercial que fue entregado a quien lo retira. Este se describe mediante el recurso de medicamento desde el repositorio. Solo se agrega en caso de ser dispensado el medicamento, de otra forma no es necesario. El repositorio es ´https://api-receta.minsal.cl/v2/medication´"
 * medicationReference ^comment = "Solo se agrega en caso de ser dispensado el medicamento"
 
@@ -111,17 +111,17 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction.text ^short = "Instruccion de dosificación"
 * dosageInstruction.text ^definition = "Instruccion de dosificación"
 
-* dosageInstruction.text ^short = "Instrucción de dosificación"
-* dosageInstruction.text ^definition = "Instrucción de dosificación"
-* dosageInstruction.additionalInstruction ^short = "Instrucciones, advertencias y/o efectos secundarios"
-* dosageInstruction.additionalInstruction ^definition = "Instrucciones, advertencias y/o efectos secundarios"
-* dosageInstruction.additionalInstruction.coding.code from http://hl7.org/fhir/ValueSet/additional-instruction-codes (example)
-* dosageInstruction.additionalInstruction.coding.code ^short = "Codigo de las instrucciones adicionales"
-* dosageInstruction.additionalInstruction.coding.code ^definition = "Codigo de las instrucciones adicionales" 
-* dosageInstruction.additionalInstruction.coding.system ^short = "Systema terminológico para los códigos"
-* dosageInstruction.additionalInstruction.coding.system ^definition = "Systema terminológico para los códigos"
-* dosageInstruction.additionalInstruction.coding.display ^short = "Definición en texto del código"
-* dosageInstruction.additionalInstruction.coding.display ^definition = "Definición en texto del código"
+//* dosageInstruction.text ^short = "Instrucción de dosificación"
+//* dosageInstruction.text ^definition = "Instrucción de dosificación"
+//* dosageInstruction.additionalInstruction ^short = "Instrucciones, advertencias y/o efectos secundarios"
+//* dosageInstruction.additionalInstruction ^definition = "Instrucciones, advertencias y/o efectos secundarios"
+//* dosageInstruction.additionalInstruction.coding.code from http://hl7.org/fhir/ValueSet/additional-instruction-codes (example)
+//* dosageInstruction.additionalInstruction.coding.code ^short = "Codigo de las instrucciones adicionales"
+//* dosageInstruction.additionalInstruction.coding.code ^definition = "Codigo de las instrucciones adicionales" 
+//* dosageInstruction.additionalInstruction.coding.system ^short = "Systema terminológico para los códigos"
+//* dosageInstruction.additionalInstruction.coding.system ^definition = "Systema terminológico para los códigos"
+//* dosageInstruction.additionalInstruction.coding.display ^short = "Definición en texto del código"
+//* dosageInstruction.additionalInstruction.coding.display ^definition = "Definición en texto del código"
 
 * dosageInstruction.patientInstruction ^short = "Instrucciones para el paciente"
 * dosageInstruction.patientInstruction ^definition = "Instrucciones con detalle o lenguaje que los pacientes puedan comprender"
@@ -147,7 +147,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction.route.coding.system = "http://snomed.info/sct"
 * dosageInstruction.route.coding.system ^short = "NameSpace de Snomed"
 * dosageInstruction.route.coding.system ^definition = "NameSpace de Snomed"
-* dosageInstruction.route.coding.code from  http://hl7.org/fhir/ValueSet/route-codes (example)
+* dosageInstruction.route.coding.code from  VSViasAdmin (extensible)
 * dosageInstruction.route.coding.code ^short = "Código de la via por medio de subset de Snomed" 
 * dosageInstruction.route.coding.code ^definition = "Código de la via por medio de subset de Snomed"
 * dosageInstruction.route.coding.display ^short = "Descripción del código"
@@ -170,7 +170,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 * dosageInstruction.method.coding.code ^short = "Códigos del Set de Valores definidos desde Snomed"
 * dosageInstruction.method.coding.code ^definition = "Código en Snomed-Ct correspondiente al método"
-* dosageInstruction.method.coding.code from http://hl7.org/fhir/ValueSet/administration-method-codes (example)
+* dosageInstruction.method.coding.code from VSMetodos (extensible)
 
 * dosageInstruction.doseAndRate ^short = "Cantidad de medicamento administrado puede ser Cantidad o Rango"	
 * dosageInstruction.doseAndRate ^definition = "Cantidad de medicamento administrado puede ser Cantidad o Rango, solo se puede usar uno de ellos en el Dosaje"
@@ -184,14 +184,14 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction.doseAndRate.doseQuantity.system ^definition = "Se usará UCUM como systema para unidades, se sugiere dosageInstruction.doseAndRate.doseQuantity.unit"
 * dosageInstruction.doseAndRate.doseQuantity.code ^short = "Código para el tipo de forma del fármaco"
 * dosageInstruction.doseAndRate.doseQuantity.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
-* dosageInstruction.doseAndRate.doseQuantity.code from http://terminology.hl7.org/ValueSet/v3-AdministrableDrugForm (example)
+* dosageInstruction.doseAndRate.doseQuantity.code from VSUnidadAsistencial (extensible)
 
 * dosageInstruction.doseAndRate.doseRange.low.value ^short = "Valor mínimo del rango"
 * dosageInstruction.doseAndRate.doseRange.low.unit ^short = "Unidad de la cantidad administrada"
 			
 * dosageInstruction.doseAndRate.doseRange.low.system ^short = "Se definirá mas adelante "
 * dosageInstruction.doseAndRate.doseRange.low.code ^short = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
-* dosageInstruction.doseAndRate.doseRange.low.code from http://terminology.hl7.org/ValueSet/v3-AdministrableDrugForm (example)
+* dosageInstruction.doseAndRate.doseRange.low.code from VSUnidadAsistencial (extensible)
 
 
 * dosageInstruction.doseAndRate.doseRange.high.value ^short = "Valor mínimo del rango"
@@ -199,7 +199,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 			
 * dosageInstruction.doseAndRate.doseRange.high.system ^short = "Se definirá mas adelante "
 * dosageInstruction.doseAndRate.doseRange.high.code ^short = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
-* dosageInstruction.doseAndRate.doseRange.high.code from http://terminology.hl7.org/ValueSet/v3-AdministrableDrugForm (example)
+* dosageInstruction.doseAndRate.doseRange.high.code from VSUnidadAsistencial (extensible)
 
 
 * dosageInstruction.doseAndRate.doseRange.low.value ^definition = "Valor mínimo del rango"
@@ -243,9 +243,9 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * performer[Dispensador].function.coding.code ^definition = "Código del tipo de dispensador según tabla maestra. En este caso debe ser Dispensador"
 * performer[Dispensador].function.coding.code = #Dispensador
 
-* performer[Dispensador].actor ^short = "Profesional que realiza la dispensación. El endPoint es ´http://api-receta.minsal.cl/v2/practitioner´"
-* performer[Dispensador].actor.reference ^short = "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/practitioner´"
-* performer[Dispensador].actor.reference ^definition = "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/practitioner´. En el caso nacional el dispensador estaría dentro de los recucursos desarrollados para Prestadores"
+* performer[Dispensador].actor ^short = "Profesional que realiza la dispensación. El endPoint es ´http://api-receta.minsal.cl/v2/Practitioner´"
+* performer[Dispensador].actor.reference ^short = "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/Practitioner´"
+* performer[Dispensador].actor.reference ^definition = "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/Practitioner´. En el caso nacional el dispensador estaría dentro de los recucursos desarrollados para Prestadores"
 
 
 * performer[Validador] MS

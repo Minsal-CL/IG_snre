@@ -56,7 +56,7 @@ Description: "Codificación del estado de una prescripción"
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system prescripcion-categoria
+* include codes from system CSCodificacionCategoria
 
 CodeSystem: CSCodificacionCategoria
 Id: CSCodificacionCategoria
@@ -87,7 +87,7 @@ Description: "Codificacion el patrón de administración de una prescripción"
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system prescripcion-cursoterapia
+* include codes from system CSCodificacionPatron
 
 CodeSystem: CSCodificacionPatron
 Id: CSCodificacionPatron
@@ -116,7 +116,7 @@ Description: "Codificación de la razón del cambio de estado de una Dispensacio
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system dispensacion-razon-estado
+* include codes from system CSRazonEstadoMD
 
 CodeSystem: CSRazonEstadoMD
 Id: CSRazonEstadoMD
@@ -164,7 +164,7 @@ Description: "Unidad para dosificar"
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system unidad-asistencial
+* include codes from system CSUnidadAsistencial
 
 CodeSystem: CSUnidadAsistencial
 Id: CSUnidadAsistencial
@@ -178,35 +178,35 @@ Description: "Unidad para dosificar"
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #mililitro
-* #comprimido
-* #miligramo
-* #Unidades
-* #capsula
-* #aplicacion
-* #supositorio
-* #ampolla
-* #sobre
-* #gotas
-* #dosis
-* #aposito
-* #parche
-* #microgramo
-* #frasco
-* #UnidadesInternacionales
-* #puff
-* #bidón
-* #bolsa
-* #gramo
-* #dispositivo
-* #ovulo
-* #vial
-* #implante
-* #anillovaginal
-* #chicle
-* #tarro
-* #aplicador
-* #jeringaprellenada
+* #mililitro "Mililitro"
+* #comprimido "Comprimido"
+* #miligramo "Miligramo"
+* #unidades "Unidades"
+* #capsula "Cápsula"
+* #aplicacion "Aplicación"
+* #supositorio "Supositorio"
+* #ampolla "Ampolla"
+* #sobre "Sobre"
+* #gotas "Gotas"
+* #dosis "Dosis"
+* #aposito "Apósito"
+* #parche "Parche"
+* #microgramo "Microgramo"
+* #frasco "Frasco"
+* #UnidadesInternacionales "Unidad Internacional"
+* #puff "Puff"
+* #bidon "Bidón"
+* #bolsa "Bolsa"
+* #gramo "Gramo"
+* #dispositivo "Dispositivo"
+* #ovulo "Óvulo"
+* #vial "Vial"
+* #implante "Implante"
+* #anillovaginal "Anillo Vaginal"
+* #chicle "Chicle"
+* #tarro "Tarro"
+* #aplicador "Aplicador"
+* #jeringaprellenada "Jeringa Prellenada"
 
 
 ValueSet: VSViasAdmin
@@ -220,7 +220,7 @@ Description:  "Vias de Administración de Snomed-CT utilizadas para el proyecto 
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* codes from system viascs
+* codes from system CSViasAdmin
 
 CodeSystem: CSViasAdmin
 Id: CSViasAdmin
@@ -258,57 +258,57 @@ Description:  "Vias de administración de Snomed-CT utilizadas para el proyecto 
 * #37161004 "vía de administración en el recto (calificador)"
 * #127492001 "vía de administración a través de la nariz hasta el estómago (calificador)"
 * #34206005	"vía de administración subcutánea (calificador)"
-* #37839007 	"vía de administración por debajo de la lengua (calificador)"
-* #6064005	"vía de administración tópica (calificador)"
-* #45890007 	"vía de administración a través de la dermis (calificador)"
-* #418511008	"vía de administración a través de la uretra (calificador)"
-* #16857009 	"vía de administración por la vagina (calificador)"
-* #418722009	"vía de administración alrededor del globo ocular (calificador)"
-* #419762003	"vía de administración alrededor de un tendón (calificador)"
-* #418813001	"vía de administración a través de drenaje quirúrgico (calificador)"
-* #372458006	"vía de administración en la cavidad amniótica (calificador)"
-* #419894000	"vía de administración en cavidad quirúrgica (calificador)"
-* #418162004	"vía de administración a través de colostomía (calificador)"
-* #418418000	"vía de administración en columna vertebral (calificador)"
-* #372460008	"vía de administración en el corazón (calificador)"
-* #419243002	"vía de administración a través del cuello uterino (calificador)"
-* #448598008	"vía de administración cutánea (calificador)"
-* #445769006	"vía de administración en el cuerpo cavernoso (calificador)"
-* #372449004	"vía de administración dental (calificador)"
-* #372457001	"vía de administración en la encía (calificador)"
-* #417985001	"vía de administración enteral (calificador)"
-* #420163009	"vía de administración a través de esofagostomía (calificador)"
-* #697971008	"vía de administración a través de fístula arteriovenosa (calificador)"
-* #447121004	"vía de administración en la glándula mamaria (calificador)"
-* #766790006	"vía de hemodiálisis extracorpórea (calificador)"
-* #418401004	"vía de administración en el humor vítreo (calificador)"
-* #419954003	 "vía de administración a través de ileostomía (calificador)"
-* #372459003	"vía de administración en una bolsa serosa (calificador)"
-* #58771000052103	"vía intracolangiopancreática (calificador)"
-* #429817007	"vía de administración en el intersticio de un tejido (calificador)"
-* #418608002	"vía de administración en la córnea (calificador)"
-* #711360002	"vía intraneural (calificador)"
-* #446442000	"vía de administración a través de la placenta (calificador)"
+* #37839007 "vía de administración por debajo de la lengua (calificador)"
+* #6064005 "vía de administración tópica (calificador)"
+* #45890007 "vía de administración a través de la dermis (calificador)"
+* #418511008 "vía de administración a través de la uretra (calificador)"
+* #16857009 "vía de administración por la vagina (calificador)"
+* #418722009 "vía de administración alrededor del globo ocular (calificador)"
+* #419762003 "vía de administración alrededor de un tendón (calificador)"
+* #418813001 "vía de administración a través de drenaje quirúrgico (calificador)"
+* #372458006 "vía de administración en la cavidad amniótica (calificador)"
+* #419894000 "vía de administración en cavidad quirúrgica (calificador)"
+* #418162004 "vía de administración a través de colostomía (calificador)"
+* #418418000 "vía de administración en columna vertebral (calificador)"
+* #372460008 "vía de administración en el corazón (calificador)"
+* #419243002 "vía de administración a través del cuello uterino (calificador)"
+* #448598008 "vía de administración cutánea (calificador)"
+* #445769006 "vía de administración en el cuerpo cavernoso (calificador)"
+* #372449004 "vía de administración dental (calificador)"
+* #372457001 "vía de administración en la encía (calificador)"
+* #417985001 "vía de administración enteral (calificador)"
+* #420163009 "vía de administración a través de esofagostomía (calificador)"
+* #697971008 "vía de administración a través de fístula arteriovenosa (calificador)"
+* #447121004 "vía de administración en la glándula mamaria (calificador)"
+* #766790006 "vía de hemodiálisis extracorpórea (calificador)"
+* #418401004 "vía de administración en el humor vítreo (calificador)"
+* #419954003 "vía de administración a través de ileostomía (calificador)"
+* #372459003 "vía de administración en una bolsa serosa (calificador)"
+* #58771000052103 "vía intracolangiopancreática (calificador)"
+* #429817007 "vía de administración en el intersticio de un tejido (calificador)"
+* #418608002 "vía de administración en la córnea (calificador)"
+* #711360002 "vía intraneural (calificador)"
+* #446442000 "vía de administración a través de la placenta (calificador)"
 * #60213007	"vía de administración en médula ósea (calificador)"
-* #418730005	"vía de administración a través de la nariz hasta el yeyuno (calificador)"
-* #428191002	"vía de administración a través de la piel (calificador)"
-* #372474001	"vía de administración en tejidos que rodean una articulación (calificador)"
-* #445771006	"vía de administración en pericardio (calificador)"
-* #372475000	"vía de administración en el tejido que rodea a un nervio (calificador)"
-* #420047004	"vía de administración en el periostio (calificador)"
-* #372469009	"vía de administración en pleura o espacio pleural (calificador)"
-* #418321004	"vía de administración retrobulbar (calificador)"
-* #58831000052108	 "vía subretiniana (calificador)"
-* #447081004	"vía de administración en el tracto respiratorio inferior (calificador)"
-* #447227007	"vía de administración a través del tímpano (calificador)"
-* #447122006	"vía de administración en un tumor (calificador)"
-* #420168000	"vía de administración a través urostomía (calificador)"
-* #372463005	"vía de administración en vaso coronario (calificador)"
-* #372467006	"vía de administración en vaso o ganglio linfático (calificador)"
-* #404819002	"vía de administración en la bilis o las vías biliares (calificador)"
+* #418730005 "vía de administración a través de la nariz hasta el yeyuno (calificador)"
+* #428191002 "vía de administración a través de la piel (calificador)"
+* #372474001 "vía de administración en tejidos que rodean una articulación (calificador)"
+* #445771006 "vía de administración en pericardio (calificador)"
+* #372475000 "vía de administración en el tejido que rodea a un nervio (calificador)"
+* #420047004 "vía de administración en el periostio (calificador)"
+* #372469009 "vía de administración en pleura o espacio pleural (calificador)"
+* #418321004 "vía de administración retrobulbar (calificador)"
+* #58831000052108 "vía subretiniana (calificador)"
+* #447081004 "vía de administración en el tracto respiratorio inferior (calificador)"
+* #447227007 "vía de administración a través del tímpano (calificador)"
+* #447122006 "vía de administración en un tumor (calificador)"
+* #420168000 "vía de administración a través urostomía (calificador)"
+* #372463005 "vía de administración en vaso coronario (calificador)"
+* #372467006 "vía de administración en vaso o ganglio linfático (calificador)"
+* #404819002 "vía de administración en la bilis o las vías biliares (calificador)"
 
-ValueSet: SNOMEDCTMetodos
-Id: snomedCTME
+ValueSet: VSMetodos
+Id: VSMetodos
 Title: "Métodos de Administración"
 Description: "Métodos de Administración de Snomed-CT utilizados para el proyecto de receta electrónica"
 * ^version = "1.0.0"
@@ -319,10 +319,10 @@ Description: "Métodos de Administración de Snomed-CT utilizados para el proyec
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* codes from system metodoCS
+* codes from system CSMetodos
 
-CodeSystem: MetodosCS
-Id: metodoCS
+CodeSystem: CSMetodos
+Id: CSMetodos
 Title: "Métodos de Administración"
 Description: "Métodos de Administración de Snomed-CT utilizados para el proyecto de receta electrónica"
 * ^version = "1.0.0"
@@ -333,19 +333,19 @@ Description: "Métodos de Administración de Snomed-CT utilizados para el proyec
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #738991002	"Aplicación (método de administración)"
-* #740685003	"Inyección (método de administración)"
-* #738990001	"Administración (método de administración)"
-* #785900008	"Enjuague o lavado (método de administración)"
-* #764794000	"Infusión (método de administración)"
-* #740666001	"Inhalación (método de administración)"
-* #738994005	"Instilación (método de administración)"
-* #738993004	"Inserción (método de administración)"
-* #738996007	"Aerosolización (método de administración)"
-* #738995006	"Tragar (método de administración)"
-* #738992009	"Masticar (método de administración)"
-* #764498003	"Chupar (método de administración)"
-* #823034001	"Orodispersión (método de administración)"
-* #827107003	"Implante (método de administración)"
+* #738991002 "Aplicación (método de administración)"
+* #740685003 "Inyección (método de administración)"
+* #738990001 "Administración (método de administración)"
+* #785900008 "Enjuague o lavado (método de administración)"
+* #764794000 "Infusión (método de administración)"
+* #740666001 "Inhalación (método de administración)"
+* #738994005 "Instilación (método de administración)"
+* #738993004 "Inserción (método de administración)"
+* #738996007 "Aerosolización (método de administración)"
+* #738995006 "Tragar (método de administración)"
+* #738992009 "Masticar (método de administración)"
+* #764498003 "Chupar (método de administración)"
+* #823034001 "Orodispersión (método de administración)"
+* #827107003 "Implante (método de administración)"
 
 
