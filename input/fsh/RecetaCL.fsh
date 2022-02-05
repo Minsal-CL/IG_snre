@@ -4,16 +4,18 @@ Id:             RecetaCl
 Title:          "Receta_CL"
 Description:    "Este Perfil utiliza este recurso como un contenedor de Prescripciones para poder ser utilizadas como formato de Receta electrónica con los fármacos indicados por el clínico durante un acto médico."
 
-
+* groupIdentifier MS
+  * value MS
+* status and intent and subject MS
+  * reference MS
+* authoredOn MS
 
 //Identificador de Grupo
-* groupIdentifier MS
 * groupIdentifier 1..1
 * groupIdentifier ^short = "Número identificador de grupo que debe ser el mismo con el cual se identificaron los fármacos prescritos en el acto clínico. El identificador debe ser un NanoId"
 * groupIdentifier ^definition = "Este número vincula el contenedor con todos los fármacos prescritos durante la atención del paciente. Este hará el uso de Receta y el grupo de fármacos con misma identificación grupal. El formato debe ser el de un NanoId"
 * groupIdentifier.value ^short = "Identificador de grupo"
 
-* status and intent MS
 * status ^short = "	draft | active | on-hold | revoked | completed | entered-in-error | unknown"
 * status ^definition = "El estado de la receta se describe como activa (aún no ha sido dispensada) o completada (se dispensó). En caso que las prescripciones no se dispensen entonces la receta pasa a estado cancelada"
 * status ^comment = "Es válido hacer uso solo de los estados active y completed. En el caso que la receta ha sido recién creada esta se generá con estado **active**. Al momento de dispensar todos las prescripciones, la receta pasa a estado **completed**. Si esta nunca es dispensada se usa el código de **cancelled**"
@@ -27,14 +29,14 @@ Description:    "Este Perfil utiliza este recurso como un contenedor de Prescrip
 
 
 //subject
-* subject MS
+
+* subject only Reference(Patient)
 * subject 1..1
 * subject ^short = "Información acerca del paciente al cual se le ha indicado la receta"
 * subject.reference ^short = "Referencia al recurso del paciente al cual se le arma la receta"
 
 
 //creación
-* authoredOn MS
 * authoredOn 1..1
 * authoredOn ^short = "Fecha y hora cuando el medicamento fue dispensado. Formato YYYY-MM-DDThh:mm:ss+zz:zz, ej: 2018, 1973-06, 1905-08-23, 2015-02-07T13:28:17-05:00 or 2017-01-01T00:00:00.000Z"
 * authoredOn ^short = "Fecha y hora cuando el medicamento fue dispensado. Se debe especificar en formato de fecha según HL7. YYYY-MM-DDThh:mm:ss+zz:zz, ej. 2018, 1973-06, 1905-08-23, 2015-02-07T13:28:17-05:00 or 2017-01-01T00:00:00.000Z."

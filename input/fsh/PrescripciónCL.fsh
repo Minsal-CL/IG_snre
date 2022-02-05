@@ -4,9 +4,67 @@ Id:             RecetaPrescripcionCl
 Title:          "Prescripción_CL"
 Description:    "Este Perfil describe la información contenida en la Prescripción de un medicamento para la Receta Electrónica Nacional del MINSAL"
 
-
-
 * identifier MS
+  * type MS
+    * coding MS
+      * system and code and display MS
+  * system and value and assigner MS
+    * display MS
+* status and statusReason MS
+  * coding MS
+    * system and code and display MS
+  * text MS
+* intent and category MS
+  * coding MS
+    * system and code and display MS
+* medicationReference MS
+  * reference and display MS
+* subject MS
+  * reference and display MS
+* authoredOn and requester MS
+  * reference and display MS
+* recorder MS
+  * reference and display MS
+* groupIdentifier MS
+  * value MS
+* courseOfTherapyType MS
+  * coding MS
+    * system and code and display MS
+* note MS
+* dosageInstruction MS
+  * text and patientInstruction and asNeededBoolean MS
+  * timing MS
+    * repeat MS
+      * frequency and period and periodMax and periodUnit MS
+  * route MS
+    * coding MS
+      * system and code and display MS
+  * method MS
+    * coding MS
+      * system and code and display MS
+  * doseAndRate MS
+    * doseQuantity MS
+      * value and unit and system and code MS
+    * doseRange MS
+      * low MS
+        * value and unit and system and code MS
+      * high MS
+        * value and unit and system and code MS
+* dispenseRequest MS
+  * validityPeriod MS
+    * start and end MS
+  * quantity MS
+    * value MS
+  * expectedSupplyDuration MS
+    * value and unit and system and code MS
+  * performer MS
+    * reference MS
+* priorPrescription MS
+  * reference MS
+
+
+
+
 
 * identifier 0..2 
 * identifier ^short = "Pueden ser 3 tipos de identificación de Receta: Id_Local| Id_Cheque| Id_Receta_Grafica"
@@ -26,7 +84,6 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * identifier.assigner.display ^short = "Organización en texto libre que dio el numer."
 * identifier.assigner.display ^definition =	"Organización en texto libre que dio el número identificador. DEBE ser informado en caso que la identificación sea de tipo Local"
 
-* status and intent MS
 * status from http://hl7.org/fhir/ValueSet/medicationrequest-status (required)
 * status ^short = "active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown código del estado de la receta del medicamento prescrito  (requerido)"
 
@@ -34,7 +91,6 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * intent from http://hl7.org/fhir/ValueSet/medicationrequest-intent (required)
 * intent = #order
 
-* statusReason MS
 * statusReason ^short = "Este dato es Obligatorio condicional a que haya un cambio de estado de la Receta (R2)... es la razón por la cual se cambia el estado de la receta"
 
 * statusReason.coding.system ^short = "Sistema de códigos a ocupar."
@@ -47,7 +103,6 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 
 
 //Identificador de Grupo
-* groupIdentifier MS
 * groupIdentifier 1..1
 * groupIdentifier ^short = "Número identificador de grupo que debe ser el mismo con el cual se identificaron los fármacos prescritos en el acto clínico. Se genera como un NanoId."
 * groupIdentifier ^definition = "Este número vincula el contenedor (RequestGroup) con todos los fármacos prescritos durante la atención del paciente (medicationRequest). Este hará el uso de Receta y el grupo de fármacos co misma identificación grupal. El formato debe ser NanoId."
@@ -55,7 +110,6 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * groupIdentifier.value ^short = "Identificador de grupo."
 * groupIdentifier.value ^definition = "Identificador de grupo."
 
-* category MS
 * category ^short = "Tipo de Acto clínico en el cual se realiza la Prescripción."
 * category ^definition = "Se reconoce según la tabla de Hl7 cual es el tipo de acto clínico en el cual se desarrollan las prescripciones"
 
@@ -68,48 +122,42 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * category.coding.display ^definition = "Glosa del código según su definición de la tabla de HL7"
 
 
-* medicationReference and medicationReference.reference MS
 * medicationReference 1..1
 * medicationReference ^short = "Referecia al medicamento que se prescribe."
 * medicationReference ^definition = "Referecia al medicamento que se prescribe, la cual se encuentra disponible en el servicio de la TFC."
-* medicationReference.reference ^short = "uri del recurso. Para el caso el repositorio se encuentra en ´https://api-receta.minsal.cl/v2/medication´"
+* medicationReference.reference ^short = "uri del recurso. Para el caso el repositorio se encuentra en \"https://api-receta.minsal.cl/v2/medication\""
 * medicationReference.display ^short = "Descripción del fármaco, según definición TFC"
 
 * extension contains  Prod-Comercial named PComercial 0..1 MS
 * extension ^short = "Determinación del medicamento en Producto Comercial"
 * extension ^definition = "Determinación de un medicamento en Producto Comercial. Para eso esta extensión define una Referecia solo a un recurso de medication. "
 
-* subject and subject.reference MS
 * subject only Reference (Patient) 
 * subject ^short = "Referencia al paciente a quien se le prescribe"
 * subject ^definition = "La referencia en este caso solo se hace sobre el paciente al cual se le prescribe el fármaco independiente que sea otra la persona que hace retiro de estos"
-* subject.reference ^short = "Referencia al recurso del paciente. ´http://api-receta.minsal.cl/v2/Patient´" 
+* subject.reference ^short = "Referencia al recurso del paciente. \"http://api-receta.minsal.cl/v2/Patient\"" 
 * subject.display ^short = "Nombre paciente"
 
-* authoredOn MS
 * authoredOn ^short = "Fecha y hora en la cual fue prescrito el medicamento en formato YYYY-MM-DDThh:mm:ss+zz:zz"
 * authoredOn ^definition = "Fecha y hora en la cual fue prescrito el medicamento en formato YYYY-MM-DDThh:mm:ss+zz:zz, e.j. 2018, 1973-06, 1905-08-23, 2015-02-07T13:28:17-05:00 o 2017-01-01T00:00:00.000Z"
 
-* requester and requester.reference MS
 * requester 1..1	
 * requester only Reference (Practitioner)
 * requester ^short = "Referencia al Prescriptor"
 * requester ^definition = "En este caso la referencia será sobre una persona que es Prescritpr  validado por la SIS"
 
-* requester.reference ^short = "Recurso asociado al Prescriptor  ´https://api-receta.minsal.cl/v2/Practitioner´" 
+* requester.reference ^short = "Recurso asociado al Prescriptor  \"https://api-receta.minsal.cl/v2/Practitioner\"" 
 * requester.display ^short = "Nombre Prescriptor"
 
-* recorder and recorder.reference MS
 * recorder 0..1
 * recorder only Reference (Practitioner)
 * recorder ^short = "Referencia a un sujeto, que será el que registra la receta"
 * recorder ^definition = "En este caso la referencia será sobre una persona que es un prescriptor validado por la SIS"
-* recorder.reference ^short = "Recurso asociado ´http://api-receta.minsal.cl/v2/Practitioner´"
+* recorder.reference ^short = "Recurso asociado \"http://api-receta.minsal.cl/v2/Practitioner\""
 * recorder.display ^short = "Nombre Prescriptor (Registrador)"
 
 
 
-* courseOfTherapyType MS
 * courseOfTherapyType ^short = "Expresa el patrón en la administración del medicamento"
 * courseOfTherapyType ^definition = "La descripción del patrón general de la administración del medicamento al paciente."
 * courseOfTherapyType.coding.system ^short = "Sistema de códigos a ocupar, se hará uso sel det de valores de hl7 MedicationRequest-course-of-therapy "
@@ -117,11 +165,9 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * courseOfTherapyType.coding.code ^short = "Código relacionado con el patrón de administración"
 * courseOfTherapyType.coding.display ^short = "Descripción del código"
 
-* note MS
 * note ^short = "Texto libre en donde se expresan las instrucciones de como el medicamento debe ser administrado"
 * note ^definition = "Información adicional sobre la prescripción que no puede ser transmitida por los otros atributos."
 
-* dosageInstruction and dosageInstruction.timing and dosageInstruction.route and dosageInstruction.doseAndRate  MS
 * dosageInstruction 1..1
 * dosageInstruction ^short = "Instrucciones del dosaje del medicamento"
 * dosageInstruction ^definition = "Indica cómo debe utilizar el paciente el medicamento."
@@ -159,7 +205,6 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 
 
 
-* dosageInstruction.method MS
 * dosageInstruction.method ^short = "Forma exacta en la que el fármaco ingresa al organismo"
 * dosageInstruction.method ^definition = "Forma exacta en la que el fármaco ingresa al organismo. En este caso se define la ruta plausible para vías de administración"
 * dosageInstruction.method.coding.system = "http://snomed.info/sct"
@@ -216,7 +261,6 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 		
 		
 		
-* dispenseRequest and dispenseRequest.validityPeriod and dispenseRequest.quantity and dispenseRequest.expectedSupplyDuration and dispenseRequest.performer MS				
 * dispenseRequest 1..1
 * dispenseRequest ^short = "Autorización de la dispensación"
 * dispenseRequest.validityPeriod 1..1
@@ -250,7 +294,6 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * dispenseRequest.performer.reference ^short = "Recurso referenciado."
 * dispenseRequest.performer.reference ^definition = "Recurso referenciado."
 
-* priorPrescription MS		
 * priorPrescription ^short = "Prescripciónu orden a la cual esta reemplaza"
 * priorPrescription ^definition = "Prescripciónu orden a la cual esta reemplaza"
 * priorPrescription.reference ^short = "Recurso MedicationDispense que se reemplaza."

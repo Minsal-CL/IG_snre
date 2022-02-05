@@ -13,13 +13,12 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 * identifier.system ^short = "NameSpace de id de local"
-* identifier.system MS 
 * identifier.system ^definition = "NameSpace de id de local"
 * identifier.value ^short = "Número identificador"
 * identifier.value ^definition = "Número identificador"
 * identifier.assigner.identifier ^short = "Se el identificador de la Farmacia que ha dado identifier a la receta"
 * identifier.assigner.identifier ^definition = "Se el identificador de la Farmacia que ha dado identifier a la receta"
-* identifier.assigner.identifier MS
+* identifier.system and identifier.value and identifier.assigner and identifier.assigner.identifier MS
 
 //status
 * status MS
@@ -29,7 +28,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * status ^comment = "Si bien los códigos para este elemento son mas que los mostrados en esta guía solo se considerarán los expuestos para el caso local"
 
 //statusRasonCodeableConcept
-* statusReasonCodeableConcept MS
+* statusReasonCodeableConcept and statusReasonCodeableConcept.coding and statusReasonCodeableConcept.coding.system and statusReasonCodeableConcept.coding.code and statusReasonCodeableConcept.coding.display and statusReasonCodeableConcept.text MS
 * statusReasonCodeableConcept ^short = "Razón por la cual no se realizó la dispensación"
 * statusReasonCodeableConcept ^definition = "Razón por la cual no se realizó la dispensación, se debe utilizar la tabla definida por MINSAL."
 
@@ -57,27 +56,27 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * subject MS
 * subject 1..1
 * subject only Reference (Patient)
-* subject ^short = "Referencia al Paciente  ´https://api-receta.minsal.cl/v2/Patient´ "
-* subject ^definition = "La referencia en este caso solo se hace sobre el paciente al cual se le receta el fármaco independiente que sea otra la persona que hace retiro de estos. Se usa el repositorio ´https://api-receta.minsal.cl/v2/patient´"
+* subject ^short = "Referencia al Paciente  \"https://api-receta.minsal.cl/v2/Patient\" "
+* subject ^definition = "La referencia en este caso solo se hace sobre el paciente al cual se le receta el fármaco independiente que sea otra la persona que hace retiro de estos. Se usa el repositorio \"https://api-receta.minsal.cl/v2/patient\""
 
 
 
 //authorizingPrescription
-* authorizingPrescription MS
+* authorizingPrescription and authorizingPrescription.reference MS
 * authorizingPrescription 1..1
 * authorizingPrescription ^short = "Referencia a la prescripción que autoriza la dispensación."
 * authorizingPrescription ^definition = "Referencia a la prescripción que autoriza la dispensación. Esta debe ser referenciada al recurso MedicationRequest involucrado en la receta presentada al momento de la dspensación"
-* authorizingPrescription.reference ^short = "Referencia a la prescripción que autoriza la dispensación. ´https://api-receta.minsal.cl/v2/MedicationRequest´ (Obligada)"
-* authorizingPrescription.reference ^definition = "Referencia a la receta que autoriza la dispensación. esta debe ser referenciada al recurso MedicationRequest involucrado en la receta presentada al momento de la dispensación. ´https://api-receta.minsal.cl/v2/MediationPrescription´ (Obligada)"
+* authorizingPrescription.reference ^short = "Referencia a la prescripción que autoriza la dispensación. \"https://api-receta.minsal.cl/v2/MedicationRequest\" (Obligada)"
+* authorizingPrescription.reference ^definition = "Referencia a la receta que autoriza la dispensación. esta debe ser referenciada al recurso MedicationRequest involucrado en la receta presentada al momento de la dispensación. \"https://api-receta.minsal.cl/v2/MediationPrescription\" (Obligada)"
 
 
 //medicationReference
 
 * medicationReference MS
-* medicationReference ^short = "Medicamento comercial dispensado. Como repositorio nacional: ´http://api-receta.minsal.cl/v2/Medication´."
-* medicationReference ^definition = "Medicamento dispenado que obedece al Producto Comercial que fue entregado a quien lo retira. Este se describe mediante el recurso de medicamento desde el reposotorio de estos. Solo se agrega en caso de ser dispensado el medicamento de otra forma no es necesario. El repositorio es ´https://api-receta.minsal.cl/v2/medication´"
-* medicationReference ^short = "Medicamento comercial dispensado. Como repositorio nacional: ´http://api-receta.minsal.cl/v2/Medication´ (Obligatorio)"
-* medicationReference ^definition = "Medicamento dispensado correspondiente al Producto Comercial que fue entregado a quien lo retira. Este se describe mediante el recurso de medicamento desde el repositorio. Solo se agrega en caso de ser dispensado el medicamento, de otra forma no es necesario. El repositorio es ´https://api-receta.minsal.cl/v2/medication´"
+* medicationReference ^short = "Medicamento comercial dispensado. Como repositorio nacional: \"http://api-receta.minsal.cl/v2/Medication\"."
+* medicationReference ^definition = "Medicamento dispenado que obedece al Producto Comercial que fue entregado a quien lo retira. Este se describe mediante el recurso de medicamento desde el reposotorio de estos. Solo se agrega en caso de ser dispensado el medicamento de otra forma no es necesario. El repositorio es \"https://api-receta.minsal.cl/v2/medication\""
+* medicationReference ^short = "Medicamento comercial dispensado. Como repositorio nacional: \"http://api-receta.minsal.cl/v2/Medication\" (Obligatorio)"
+* medicationReference ^definition = "Medicamento dispensado correspondiente al Producto Comercial que fue entregado a quien lo retira. Este se describe mediante el recurso de medicamento desde el repositorio. Solo se agrega en caso de ser dispensado el medicamento, de otra forma no es necesario. El repositorio es \"https://api-receta.minsal.cl/v2/medication\""
 * medicationReference ^comment = "Solo se agrega en caso de ser dispensado el medicamento"
 
 
@@ -98,9 +97,27 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * note MS
 * note ^short = "Información sobre la receta"
 
-//dosageInstruction 
-//* dosageInstruction
 * dosageInstruction MS
+  * sequence and text and patientInstruction and asNeededBoolean MS
+  * timing MS
+    * repeat MS
+      * frequency and period and periodMax and periodUnit MS
+  * route MS
+    * coding MS
+      * system and code and display MS
+  * method MS
+    * coding MS
+      * system and code and display MS
+  * doseAndRate MS
+    * doseQuantity MS
+      * value and unit and system and code MS
+    * doseRange MS
+      * low MS
+        * value and unit and system and code MS
+      * high MS
+        * value and unit and system and code MS
+
+
 * dosageInstruction ^short = "Cómo se debe administrar el medicamento. Este se llena automaticamente al vincularlo con la Prescripción"
 * dosageInstruction ^definition = "Si bien se especifica, al momento de vicular el recuso con el recurso MedicationPrescription, este elemento con todas sus rutas se completan de manera automática, por lo que no es deber del dispensador llenar estos campos."
 * dosageInstruction ^comment = "Este elemento y todos los que lo desriben se completan de manera automática al vincularse este recucurso conun recurso MedicationRequest"
@@ -230,7 +247,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * performer ^definition = "Profesional que realizó o validó la entrega de la orden de fármacos."
 * performer ^comment = "Se definen dos tipos de dispensador, no excluyentes mutuamente. El primero es el dispensador del fármaco pero el segundo es el validador. El dispensador es obligado. Ambos son iguales desde el punto de vista del desarrollo de cada slice es el mismo solo debe cambiar el valor del código del la ruta performer.function.code"
 
-* performer[Dispensador] MS
+* performer[Dispensador] and performer[Dispensador].function and performer[Dispensador].function.coding and performer[Dispensador].function.coding.system and performer[Dispensador].function.coding.code and performer[Dispensador].actor and performer[Dispensador].actor.reference MS
 * performer[Dispensador] ^short = "Aquel individuo que realiza la entega de medicamentos"
 * performer[Dispensador] ^definition = "Se entiende por dispensador al individuo que entrega los medicamentos a quien los solicite en el punto de entrega. Simpre en el proceso de dispensación existe un dispensador"
 
@@ -243,12 +260,13 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * performer[Dispensador].function.coding.code ^definition = "Código del tipo de dispensador según tabla maestra. En este caso debe ser Dispensador"
 * performer[Dispensador].function.coding.code = #Dispensador
 
-* performer[Dispensador].actor ^short = "Profesional que realiza la dispensación. El endPoint es ´http://api-receta.minsal.cl/v2/Practitioner´"
-* performer[Dispensador].actor.reference ^short = "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/Practitioner´"
-* performer[Dispensador].actor.reference ^definition = "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/Practitioner´. En el caso nacional el dispensador estaría dentro de los recucursos desarrollados para Prestadores"
+* performer[Dispensador].actor only Reference(Practitioner)
+* performer[Dispensador].actor ^short = "Profesional que realiza la dispensación. El endPoint es \"http://api-receta.minsal.cl/v2/Practitioner\""
+* performer[Dispensador].actor.reference ^short = "La referencia del recurso especificado debe ser al endPoint \"http://api-receta.minsal.cl/v2/Practitioner\""
+* performer[Dispensador].actor.reference ^definition = "La referencia del recurso especificado debe ser al endPoint \"http://api-receta.minsal.cl/v2/Practitioner\". En el caso nacional el dispensador estaría dentro de los recucursos desarrollados para Prestadores"
 
 
-* performer[Validador] MS
+* performer[Validador] and performer[Validador].function and performer[Validador].function.coding and performer[Validador].function.coding.system and performer[Validador].function.coding.code and performer[Validador].actor and performer[Validador].actor.reference MS
 * performer[Validador] ^short = "Aquel individuo que realiza la validaciín ante la entega de medicamentos"
 * performer[Validador] ^definition = "Se entiende por dispensador al individuo que valida la entrega de los medicamentos a quien los solicite en el punto de entrega. Por lo común es un Químico Farmacéutico de Profesión"
 
@@ -260,22 +278,26 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * performer[Validador].function.coding.code ^definition = "Código de validador según tabla maestra. En este caso debe ser Validador"
 * performer[Validador].function.coding.code = #Validador
 
-* performer[Validador].actor ^short = "Profesional que realiza la validación. El endPoint es ´http://api-receta.minsal.cl/v2/practitioner´"
-* performer[Validador].actor.reference ^short = "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/practitioner´"
-* performer[Validador].actor.reference ^definition = "La referencia del recurso especificado debe ser al endPoint ´http://api-receta.minsal.cl/v2/practitioner´. En el caso nacional el dispensador estaría dentro de los recucursos desarrollados para Prestadores"
+
+
+* performer[Validador].actor only Reference(Practitioner)
+* performer[Validador].actor ^short = "Profesional que realiza la validación. El endPoint es \"http://api-receta.minsal.cl/v2/practitioner\""
+* performer[Validador].actor.reference ^short = "La referencia del recurso especificado debe ser al endPoint \"http://api-receta.minsal.cl/v2/practitioner\""
+* performer[Validador].actor.reference ^definition = "La referencia del recurso especificado debe ser al endPoint \"http://api-receta.minsal.cl/v2/practitioner\". En el caso nacional el dispensador estaría dentro de los recucursos desarrollados para Prestadores"
 
 
 //localización
 
 * location 1..1
-* location MS
+* location and location.reference MS
 * location ^short = "Ubicación Georeferenciada de la dispensación"
 * location ^definition = "La ubicación física principal en la cual se desarrolló la dispensación"
-* location.reference ^short = "Identificación del recurso de lcalización de los dispensadores. ´https://api-receta.minsal.cl/v2/location´ (Obligatoria)"
-* location.reference ^definition = "El repositorio Central tendrá listada la ubicación de todos los dispensadores en recurso location. Estas deberán ser alcanzadas desde ´https://api-receta.minsal.cl/v2/location´ (Obligatoria)"
+* location.reference ^short = "Identificación del recurso de lcalización de los dispensadores. \"https://api-receta.minsal.cl/v2/location\" (Obligatoria)"
+* location.reference ^definition = "El repositorio Central tendrá listada la ubicación de todos los dispensadores en recurso location. Estas deberán ser alcanzadas desde \"https://api-receta.minsal.cl/v2/location\" (Obligatoria)"
 
 //receiver
-* receiver MS
+* receiver only Reference(Patient)
+* receiver and receiver.display MS
 * receiver 0..1
 
 * receiver ^short = "Persona a la cual se le hace entrega de los fármacos."

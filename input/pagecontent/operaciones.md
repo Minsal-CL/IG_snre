@@ -2,7 +2,7 @@
 
 Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHIR se especifican desde el mismo estándar  través de [Resumen de operaciones](https://www.hl7.org/fhir/http.html#summary) 
 
- Nota: se debe considerar que todos los requests pueden incluir un opcional `Accept` como cabecera que indica el formato que se debe usar como respuesta (esto incluso se aplica a  `DELETE` dado que una OperationOutcome debe ser devuelta).
+ Nota: se debe considerar que todos los requests pueden incluir un opcional Accept como cabecera que indica el formato que se debe usar como respuesta (esto incluso se aplica a  DELETE dado que una OperationOutcome debe ser devuelta).
 
 <table class="grid">
 
@@ -38,27 +38,27 @@ Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHI
 
 <td>read</td>
 
-<td>`/[type]/[id]`</td>
+<td>/[type]/[id]</td>
 
-<td>`GET`</td>
-
-<td>N/A</td>
+<td>GET</td>
 
 <td>N/A</td>
 
 <td>N/A</td>
 
-<td>O: `ETag`, `If-Modified-Since`, `If-None-Match`</td>
+<td>N/A</td>
+
+<td>O: ETag, If-Modified-Since, If-None-Match</td>
 
 </tr>
 
 <tr>
 
-<td>`vread`</td>
+<td>vread</td>
 
-<td>`/[type]/[id]/_history/[vid]`</td>
+<td>/[type]/[id]/_history/[vid]</td>
 
-<td>`GET`</td>
+<td>GET</td>
 
 <td>N/A</td>
 
@@ -72,11 +72,11 @@ Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHI
 
 <tr>
 
-<td>`update`</td>
+<td>update</td>
 
-<td>`/[type]/[id]`</td>
+<td>/[type]/[id]</td>
 
-<td>`PUT`</td>
+<td>PUT</td>
 
 <td>R</td>
 
@@ -84,17 +84,17 @@ Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHI
 
 <td>O</td>
 
-<td>O: `If-Match`</td>
+<td>O: If-Match</td>
 
 </tr>
 
 <tr>
 
-<td>`patch`</td>
+<td>patch</td>
 
-<td>`/[type]/[id]`</td>
+<td>/[type]/[id]</td>
 
-<td>`PATCH`</td>
+<td>PATCH</td>
 
 <td>R (may be a patch type)</td>
 
@@ -102,17 +102,17 @@ Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHI
 
 <td>O</td>
 
-<td>O: `If-Match`</td>
+<td>O: If-Match</td>
 
 </tr>
 
 <tr>
 
-<td>`delete`</td>
+<td>delete</td>
 
-<td>`/[type]/[id]`</td>
+<td>/[type]/[id]</td>
 
-<td>`DELETE`</td>
+<td>DELETE</td>
 
 <td>N/A</td>
 
@@ -126,9 +126,9 @@ Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHI
 
 <tr>
 
-<td>`create`</td>
+<td>create</td>
 
-<td>``/[type]``</td>
+<td>/[type]</td>
 
 <td>POST</td>
 
@@ -138,17 +138,17 @@ Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHI
 
 <td>O</td>
 
-<td>O: `If-None-Exist`</td>
+<td>O: If-None-Exist</td>
 
 </tr>
 
 <tr>
 
-<td rowspan="2">`search`</td>
+<td rowspan="2">search</td>
 
-<td>`/[type]?`</td>
+<td>/[type]?</td>
 
-<td>`GET`</td>
+<td>GET</td>
 
 <td>N/A</td>
 
@@ -162,11 +162,11 @@ Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHI
 
 <tr>
 
-<td>`/[type]/_search?`</td>
+<td>/[type]/_search?</td>
 
-<td>`POST`</td>
+<td>POST</td>
 
-<td>`application/x-www-form-urlencoded`</td>
+<td>application/x-www-form-urlencoded</td>
 
 <td>form data</td>
 
@@ -178,29 +178,11 @@ Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHI
 
 <tr>
 
-<td>`search-all`</td>
+<td>search-all</td>
 
-<td>`?`</td>
+<td>?</td>
 
-<td>`GET`</td>
-
-<td>N/A</td>
-
-<td>N/A</td>
-
-<td>N/A</td>
-
-<td>N/A</td>
-
-</tr>
-
-<tr>
-
-<td>`capabilities`</td>
-
-<td>`/metadata`</td>
-
-<td>`GET`</td>
+<td>GET</td>
 
 <td>N/A</td>
 
@@ -214,15 +196,33 @@ Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHI
 
 <tr>
 
-<td>`transaction`</td>
+<td>capabilities</td>
 
-<td>`/`</td>
+<td>/metadata</td>
 
-<td>`POST`</td>
+<td>GET</td>
+
+<td>N/A</td>
+
+<td>N/A</td>
+
+<td>N/A</td>
+
+<td>N/A</td>
+
+</tr>
+
+<tr>
+
+<td>transaction</td>
+
+<td>/</td>
+
+<td>POST</td>
 
 <td>R</td>
 
-<td>`Bundle`</td>
+<td>Bundle</td>
 
 <td>O</td>
 
@@ -232,29 +232,11 @@ Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHI
 
 <tr>
 
-<td>`history`</td>
+<td>history</td>
 
-<td>`/[type]/[id]/_history`</td>
+<td>/[type]/[id]/_history</td>
 
-<td>`GET`</td>
-
-<td>N/A</td>
-
-<td>N/A</td>
-
-<td>N/A</td>
-
-<td>N/A</td>
-
-</tr>
-
-<tr>
-
-<td>`history-type`</td>
-
-<td>`/[type]/_history`</td>
-
-<td>`GET`</td>
+<td>GET</td>
 
 <td>N/A</td>
 
@@ -268,11 +250,29 @@ Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHI
 
 <tr>
 
-<td>`history-all`</td>
+<td>history-type</td>
 
-<td>`/_history`</td>
+<td>/[type]/_history</td>
 
-<td>`GET`</td>
+<td>GET</td>
+
+<td>N/A</td>
+
+<td>N/A</td>
+
+<td>N/A</td>
+
+<td>N/A</td>
+
+</tr>
+
+<tr>
+
+<td>history-all</td>
+
+<td>/_history</td>
+
+<td>GET</td>
 
 <td>N/A</td>
 
@@ -288,9 +288,9 @@ Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHI
 
 <td rowspan="3">(operation)</td>
 
-<td rowspan="3">`/$[name]`, `/[type]/$[name]` or `/[type]/[id]/$[name]`</td>
+<td rowspan="3">/$[name], /[type]/$[name] or /[type]/[id]/$[name]</td>
 
-<td>`POST`</td>
+<td>POST</td>
 
 <td>R</td>
 
@@ -304,7 +304,7 @@ Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHI
 
 <tr>
 
-<td>`GET`</td>
+<td>GET</td>
 
 <td>N/A</td>
 
@@ -318,9 +318,9 @@ Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHI
 
 <tr>
 
-<td>`POST`</td>
+<td>POST</td>
 
-<td>`application/x-www-form-urlencoded`</td>
+<td>application/x-www-form-urlencoded</td>
 
 <td>form data</td>
 
@@ -371,7 +371,7 @@ La aplicación específica de cada parametro, para cada una de las operaciones, 
 
 <tr>
 
-<td>`read`</td>
+<td>read</td>
 
 <td>R</td>
 
@@ -379,15 +379,15 @@ La aplicación específica de cada parametro, para cada una de las operaciones, 
 
 <td>N/A</td>
 
-<td>R: `ETag`, `Last-Modified`</td>
+<td>R: ETag, Last-Modified</td>
 
-<td>`200`, `404`, `410`</td>
+<td>200, 404, 410</td>
 
 </tr>
 
 <tr>
 
-<td>`vread`</td>
+<td>vread</td>
 
 <td>R</td>
 
@@ -395,15 +395,15 @@ La aplicación específica de cada parametro, para cada una de las operaciones, 
 
 <td>N/A</td>
 
-<td>R: `ETag`, `Last-Modified`</td>
+<td>R: ETag, Last-Modified</td>
 
-<td>`200`, `404`</td>
+<td>200, 404</td>
 
 </tr>
 
 <tr>
 
-<td>`update`</td>
+<td>update</td>
 
 <td>R if body</td>
 
@@ -411,15 +411,15 @@ La aplicación específica de cada parametro, para cada una de las operaciones, 
 
 <td>N/A</td>
 
-<td>R: `ETag`, `Last-Modified`</td>
+<td>R: ETag, Last-Modified</td>
 
-<td>`200`, `201`, `400`, `404`, `405`, `409`, `412`, `422`</td>
+<td>200, 201, 400, 404, 405, 409, 412, 422</td>
 
 </tr>
 
 <tr>
 
-<td>`patch`</td>
+<td>patch</td>
 
 <td>R if body</td>
 
@@ -427,15 +427,15 @@ La aplicación específica de cada parametro, para cada una de las operaciones, 
 
 <td>N/A</td>
 
-<td>R: `ETag`, `Last-Modified`</td>
+<td>R: ETag, Last-Modified</td>
 
-<td>`200`, `201`, `400`, `404`, `405`, `409`, `412`, `422`</td>
+<td>200, 201, 400, 404, 405, 409, 412, 422</td>
 
 </tr>
 
 <tr>
 
-<td>`delete`</td>
+<td>delete</td>
 
 <td>R if body</td>
 
@@ -445,13 +445,13 @@ La aplicación específica de cada parametro, para cada una de las operaciones, 
 
 <td>N/A</td>
 
-<td>`200`, `202`, `204`, `404`, `405`, `409`, `412`</td>
+<td>200, 202, 204, 404, 405, 409, 412</td>
 
 </tr>
 
 <tr>
 
-<td>`create`</td>
+<td>create</td>
 
 <td>R if body</td>
 
@@ -459,15 +459,15 @@ La aplicación específica de cada parametro, para cada una de las operaciones, 
 
 <td>R</td>
 
-<td>R: `ETag`, `Last-Modified`</td>
+<td>R: ETag, Last-Modified</td>
 
-<td>`201`, `400`, `404`, `405`, `422`</td>
+<td>201, 400, 404, 405, 422</td>
 
 </tr>
 
 <tr>
 
-<td>`search`</td>
+<td>search</td>
 
 <td>R</td>
 
@@ -477,13 +477,13 @@ La aplicación específica de cada parametro, para cada una de las operaciones, 
 
 <td>N/A</td>
 
-<td>`200`, `401`?</td>
+<td>200, 401?</td>
 
 </tr>
 
 <tr>
 
-<td>`search-all`</td>
+<td>search-all</td>
 
 <td>R</td>
 
@@ -493,13 +493,13 @@ La aplicación específica de cada parametro, para cada una de las operaciones, 
 
 <td>N/A</td>
 
-<td>`200`, `401`?</td>
+<td>200, 401?</td>
 
 </tr>
 
 <tr>
 
-<td>`capabilities`</td>
+<td>capabilities</td>
 
 <td>R</td>
 
@@ -509,13 +509,13 @@ La aplicación específica de cada parametro, para cada una de las operaciones, 
 
 <td>N/A</td>
 
-<td>`200`, `404`</td>
+<td>200, 404</td>
 
 </tr>
 
 <tr>
 
-<td>`transaction`</td>
+<td>transaction</td>
 
 <td>R</td>
 
@@ -525,13 +525,13 @@ La aplicación específica de cada parametro, para cada una de las operaciones, 
 
 <td>N/A</td>
 
-<td>`200`, `400`, `404`, `405`, `409`, `412`, `422`</td>
+<td>200, 400, 404, 405, 409, 412, 422</td>
 
 </tr>
 
 <tr>
 
-<td>`history`</td>
+<td>history</td>
 
 <td>R</td>
 
@@ -541,13 +541,13 @@ La aplicación específica de cada parametro, para cada una de las operaciones, 
 
 <td>N/A</td>
 
-<td>`200`</td>
+<td>200</td>
 
 </tr>
 
 <tr>
 
-<td>`history-type`</td>
+<td>history-type</td>
 
 <td>R</td>
 
@@ -557,13 +557,13 @@ La aplicación específica de cada parametro, para cada una de las operaciones, 
 
 <td>N/A</td>
 
-<td>`200`</td>
+<td>200</td>
 
 </tr>
 
 <tr>
 
-<td>`history-all`</td>
+<td>history-all</td>
 
 <td>R</td>
 
@@ -573,7 +573,7 @@ La aplicación específica de cada parametro, para cada una de las operaciones, 
 
 <td>N/A</td>
 
-<td>`200`</td>
+<td>200</td>
 
 </tr>
 
@@ -589,7 +589,7 @@ La aplicación específica de cada parametro, para cada una de las operaciones, 
 
 <td>N/A</td>
 
-<td>`200`</td>
+<td>200</td>
 
 </tr>
 
@@ -607,9 +607,9 @@ El listado de recursos se define en:
 
 Los métodos y parámetros para la consulta de recursos se describen a continuación y se basan en la búsqueda sobre recurso Paciente:
 
-1.  En este caso los servidores **DEBEN** soportar buscar un recurso Patient usando el parámetro de búsqueda **[`_id`]:
+1.  En este caso los servidores **DEBEN** soportar buscar un recurso Patient usando el parámetro de búsqueda **[_id]:
 
-    `GET [base]/Patient[id]`
+    GET [base]/Patient[id]
 
     Ejemplos
 
@@ -618,9 +618,9 @@ Los métodos y parámetros para la consulta de recursos se describen a continuac
 
 Lo anterior es aplicable para un recurso ya creado el cual se almacena con una identificación generada en ese momento    
 
-2.  Los servidores **DEBEN** soportar buscar un recurso Patient mediante un identificador como el número RUN de la Cédula de Identidad Nacional por ejemplo, utilizando el parámetro de búsqueda **[`identifier`]:
+2.  Los servidores **DEBEN** soportar buscar un recurso Patient mediante un identificador como el número RUN de la Cédula de Identidad Nacional por ejemplo, utilizando el parámetro de búsqueda **[identifier]:
 
-    `GET [base]/Patient?identifier={system|}[code]`
+    GET [base]/Patient?identifier={system|}[code]
 
     Ejemplo:
 
