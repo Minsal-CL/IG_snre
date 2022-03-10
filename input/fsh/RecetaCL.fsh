@@ -10,6 +10,7 @@ Description:    "Este Perfil utiliza este recurso como un contenedor de Prescrip
   * reference MS
 * authoredOn MS
 
+
 //Identificador de Grupo
 * groupIdentifier 1..1
 * groupIdentifier ^short = "Número identificador de grupo que debe ser el mismo con el cual se identificaron los fármacos prescritos en el acto clínico. El identificador debe ser un NanoId"

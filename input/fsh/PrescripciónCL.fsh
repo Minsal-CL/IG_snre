@@ -59,7 +59,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
     * value and unit and system and code MS
   * performer MS
     * reference MS
-* priorPrescription MS
+* priorPrescription
   * reference MS
 
 
@@ -123,14 +123,14 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 
 
 * medicationReference 1..1
-* medicationReference ^short = "Referecia al medicamento que se prescribe."
-* medicationReference ^definition = "Referecia al medicamento que se prescribe, la cual se encuentra disponible en el servicio de la TFC."
-* medicationReference.reference ^short = "uri del recurso. Para el caso el repositorio se encuentra en \"https://api-receta.minsal.cl/v2/medication\""
+* medicationReference ^short = "Referencia al medicamento que se prescribe."
+* medicationReference ^definition = "Referencia al medicamento que se prescribe, la cual se encuentra disponible en el servicio de la TFC."
+* medicationReference.reference ^short = "uri del recurso. Para el caso el repositorio se encuentra en \"https://api-receta.minsal.cl/v2/Medication\""
 * medicationReference.display ^short = "Descripción del fármaco, según definición TFC"
 
 * extension contains  Prod-Comercial named PComercial 0..1 MS
 * extension ^short = "Determinación del medicamento en Producto Comercial"
-* extension ^definition = "Determinación de un medicamento en Producto Comercial. Para eso esta extensión define una Referecia solo a un recurso de medication. "
+* extension ^definition = "Determinación de un medicamento en Producto Comercial. Para eso esta extensión define una Referencia solo a un recurso de medication. "
 
 * subject only Reference (Patient) 
 * subject ^short = "Referencia al paciente a quien se le prescribe"
@@ -219,9 +219,9 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * dosageInstruction.doseAndRate ^short = "Cantidad de medicamento administrado puede ser Cantidad o Rango"	
 * dosageInstruction.doseAndRate ^definition = "Cantidad de medicamento administrado puede ser Cantidad o Rango, solo se puede usar uno de ellos en el Dosaje"
 * dosageInstruction.doseAndRate.doseQuantity.value ^short = "Valor de la cantidad a administrar"
-* dosageInstruction.doseAndRate.doseQuantity.unit ^short = "Unidad de la cantidad administrada"
+* dosageInstruction.doseAndRate.doseQuantity.unit ^short = "Unidad de la cantidad a administrar"
 * dosageInstruction.doseAndRate.doseQuantity.value ^definition = "Valor de la cantidad a administrar"
-* dosageInstruction.doseAndRate.doseQuantity.unit ^definition = "Unidad de la cantidad administrada"
+* dosageInstruction.doseAndRate.doseQuantity.unit ^definition = "Unidad de la cantidad a administrar"
 * dosageInstruction.doseAndRate.doseQuantity.unit from http://hl7.org/fhir/ValueSet/ucum-units
 			
 * dosageInstruction.doseAndRate.doseQuantity.system ^short = "NameSpace del sistema de codificacion (UCUM)"
@@ -231,7 +231,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * dosageInstruction.doseAndRate.doseQuantity.code from VSUnidadAsistencial (extensible)
 
 * dosageInstruction.doseAndRate.doseRange.low.value ^short = "Valor mínimo del rango"
-* dosageInstruction.doseAndRate.doseRange.low.unit ^short = "Unidad de la cantidad administrada"
+* dosageInstruction.doseAndRate.doseRange.low.unit ^short = "Unidad de la cantidad a administrar"
 			
 * dosageInstruction.doseAndRate.doseRange.low.system ^short = "Se definirá mas adelante "
 * dosageInstruction.doseAndRate.doseRange.low.code ^short = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
@@ -239,7 +239,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 
 
 * dosageInstruction.doseAndRate.doseRange.high.value ^short = "Valor mínimo del rango"
-* dosageInstruction.doseAndRate.doseRange.high.unit ^short = "Unidad de la cantidad administrada"
+* dosageInstruction.doseAndRate.doseRange.high.unit ^short = "Unidad de la cantidad a administrar"
 			
 * dosageInstruction.doseAndRate.doseRange.high.system ^short = "Se definirá mas adelante "
 * dosageInstruction.doseAndRate.doseRange.high.code ^short = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
@@ -247,13 +247,13 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 
 
 * dosageInstruction.doseAndRate.doseRange.low.value ^definition = "Valor mínimo del rango"
-* dosageInstruction.doseAndRate.doseRange.low.unit ^definition = "Unidad de la cantidad administrada"
+* dosageInstruction.doseAndRate.doseRange.low.unit ^definition = "Unidad de la cantidad a administrar"
 			
 * dosageInstruction.doseAndRate.doseRange.low.system ^definition = "Se definirá mas adelante "
 * dosageInstruction.doseAndRate.doseRange.low.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
 		
 * dosageInstruction.doseAndRate.doseRange.high.value ^definition = "Valor mínimo del rango"
-* dosageInstruction.doseAndRate.doseRange.high.unit ^definition = "Unidad de la cantidad administrada"
+* dosageInstruction.doseAndRate.doseRange.high.unit ^definition = "Unidad de la cantidad a administrar"
 			
 * dosageInstruction.doseAndRate.doseRange.high.system ^definition = "Se definirá mas adelante "
 * dosageInstruction.doseAndRate.doseRange.high.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
@@ -272,11 +272,11 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * dispenseRequest.validityPeriod.end ^definition = "Fecha de fin de la validez de la prescripción. El formato es YYYY-MM-DD"
 	
 * dispenseRequest.quantity ^short = "Cantidad de medicamento Dispensado"
-* dispenseRequest.quantity.value ^short = "Valor de la cantida del medicamento Dispensado. Obligatorio para fármaco Con	trolado"
-* dispenseRequest.quantity.value ^definition = "Valor de la cantida del medicamento Dispensado. Obligatorio para fármaco Controlado"
+* dispenseRequest.quantity.value ^short = "Valor de la cantidad del medicamento Dispensado. Obligatorio para fármaco Controlado"
+* dispenseRequest.quantity.value ^definition = "Valor de la cantidad del medicamento Dispensado. Obligatorio para fármaco Controlado"
 * dispenseRequest.quantity.value ^comment = "Obligatorio para fármaco Controlado"
 
-* dispenseRequest.expectedSupplyDuration ^short = "Número de días que dura lo que se ha dispensado" 
+* dispenseRequest.expectedSupplyDuration ^short = "Número de días que se espera que alcance lo que se dispensará" 
 * dispenseRequest.expectedSupplyDuration.value ^short = "Valor de la unidad de duración" 
 * dispenseRequest.expectedSupplyDuration.unit ^short = "Unidad temporal según UCUM"
 * dispenseRequest.expectedSupplyDuration.value ^definition = "Valor de la unidad de duración" 
@@ -294,8 +294,8 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * dispenseRequest.performer.reference ^short = "Recurso referenciado."
 * dispenseRequest.performer.reference ^definition = "Recurso referenciado."
 
-* priorPrescription ^short = "Prescripciónu orden a la cual esta reemplaza"
-* priorPrescription ^definition = "Prescripciónu orden a la cual esta reemplaza"
+* priorPrescription ^short = "Prescripción u orden a la cual esta reemplaza"
+* priorPrescription ^definition = "Prescripción u orden a la cual esta reemplaza"
 * priorPrescription.reference ^short = "Recurso MedicationDispense que se reemplaza."
 * priorPrescription.reference ^definition = "Recurso MedicationDispense que se reemplaza."
 
@@ -329,7 +329,7 @@ Usage: #example
 * medicationReference.display = "Oxycodone"
 
 //* extension.url = "PComercial"
-* extension[Prod_Comercial].valueReference.reference = "https://api-receta.minsal.cl/v2/medication/med#1257"
+* extension[Prod_Comercial].valueReference.reference = "https://api-receta.minsal.cl/v2/Medication/med#1257"
 * extension[Prod_Comercial].valueReference.display = "Oxycontin MR"
 
 * subject.reference = "https://api-receta.minsal.cl/v2/Patient/Paciente#2411224"

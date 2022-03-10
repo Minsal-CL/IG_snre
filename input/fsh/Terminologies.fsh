@@ -134,7 +134,6 @@ Description: "Codificación de la razón del cambio de estado de una Dispensacio
 * #frr02	"Orden caducada"    "Orden no fue completada dentro de un periodo razonable de tiempo, y podría no estar vigente."
 * #frr03	"Información incompleta"	"La información necesaria para ejecutar de forma segura la orden que se esperaba estuviese disponible independiente de la orden aún no está disponible. Ejemplo: Resultados de laboratorio, diagnóstico por imágenes, etc."
 * #frr04	"Producto no disponible"	"Producto no disponible o no manufacturado. No se puede proveer."
-* #frr05	"Ético/religioso"	"El dispensador tiene objeciones éticas, religiosas o morales para completar la orden/dispensar el producto"
 * #frr06	"Incapaz de proporcionar cuidados"	"Realizador no es capaz de proveer el cuidado necesario asociado con el cumplimiento de la orden. Ejemplo: La terapia requiere monitoreo constante por el realizador y el realizador estará terminando su práctica, dejando la ciudad, incapaz de dedicar el tiempo necesario, etc."
 * #altchoice	"Primero probar otro tratamiento"	"Esta terapia ha sido definida como respaldo de una terapia de elección. Esta orden será liberada cuando y si la terapia de elección fracasa."
 * #clarif	"La prescripción requiere una aclaración"	"Se requiere una aclaración antes de que la orden pueda ser realizada"

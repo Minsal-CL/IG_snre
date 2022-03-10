@@ -2,7 +2,7 @@ Extension: Prod_Comercial
 Id: Prod-Comercial
 Description: "Recomendación de Medicamento en Producto Comercial"
 
- 
+
 * extension 0..0
 * value[x] only Reference
 //* valueReference = Reference(medication)
