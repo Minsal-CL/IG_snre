@@ -9,7 +9,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
     * coding MS
       * system and code and display MS
   * system and value and assigner MS
-    * display MS
+    * display and reference MS
 * status and statusReason MS
   * coding MS
     * system and code and display MS
@@ -58,9 +58,9 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
   * expectedSupplyDuration MS
     * value and unit and system and code MS
   * performer MS
-    * reference MS
+    * reference and display MS
 * priorPrescription
-  * reference MS
+  * reference and display MS
 
 
 
@@ -81,8 +81,11 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * identifier.system ^short = "Namespace del identificador"
 * identifier.system ^definition = "URL sobre la cual se determina el formato y procedencia del valor del identificador"
 * identifier.value ^short = "número identificador"
-* identifier.assigner.display ^short = "Organización en texto libre que dio el numer."
+* identifier.assigner.display ^short = "Organización en texto libre que dio el numero."
 * identifier.assigner.display ^definition =	"Organización en texto libre que dio el número identificador. DEBE ser informado en caso que la identificación sea de tipo Local"
+* identifier.assigner.display ^short = "Nombre de la organización a la cual se hace la referencia"
+* identifier.assigner.display ^short = "Nombre de la organización a la cual se hace la referencia"
+* identifier.assigner.reference ^short = "Referencia a la organizacion que le dio el numero identificador"
 
 * status from http://hl7.org/fhir/ValueSet/medicationrequest-status (required)
 * status ^short = "active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown código del estado de la receta del medicamento prescrito  (requerido)"
@@ -293,12 +296,14 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * dispenseRequest.performer ^comment = "Obligatorio si es prescriptor público."
 * dispenseRequest.performer.reference ^short = "Recurso referenciado."
 * dispenseRequest.performer.reference ^definition = "Recurso referenciado."
+* dispenseRequest.performer.display ^short = "Nombre de la organización a la cual se intenciona sea quien dispense"
+
 
 * priorPrescription ^short = "Prescripción u orden a la cual esta reemplaza"
 * priorPrescription ^definition = "Prescripción u orden a la cual esta reemplaza"
 * priorPrescription.reference ^short = "Recurso MedicationDispense que se reemplaza."
 * priorPrescription.reference ^definition = "Recurso MedicationDispense que se reemplaza."
-
+* priorPrescription.display ^short = "Detalle de la orden o prescripción a la cual esta reemplaza."
 		
 
 

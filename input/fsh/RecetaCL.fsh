@@ -7,7 +7,7 @@ Description:    "Este Perfil utiliza este recurso como un contenedor de Prescrip
 * groupIdentifier MS
   * value MS
 * status and intent and subject MS
-  * reference MS
+  * reference and display MS
 * authoredOn MS
 
 
@@ -35,6 +35,7 @@ Description:    "Este Perfil utiliza este recurso como un contenedor de Prescrip
 * subject 1..1
 * subject ^short = "Información acerca del paciente al cual se le ha indicado la receta"
 * subject.reference ^short = "Referencia al recurso del paciente al cual se le arma la receta"
+* subject.display ^short = "Nombre del paciente al cual pertenece el recurso que esta referenciando"
 
 
 //creación
