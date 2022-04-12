@@ -32,7 +32,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
     * system and code and display MS
 * note MS
 * dosageInstruction MS
-  * text and patientInstruction and asNeededBoolean MS
+  * text and sequence and patientInstruction and asNeededBoolean MS
   * timing MS
     * repeat MS
       * frequency and period and periodMax and periodUnit MS
@@ -42,6 +42,8 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
   * method MS
     * coding MS
       * system and code and display MS
+
+/*
   * doseAndRate MS
     * doseQuantity MS
       * value and unit and system and code MS
@@ -50,6 +52,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
         * value and unit and system and code MS
       * high MS
         * value and unit and system and code MS
+*/
 * dispenseRequest MS
   * validityPeriod MS
     * start and end MS
@@ -66,20 +69,24 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 
 
 
+
 * identifier 0..2 
 * identifier ^short = "Pueden ser 3 tipos de identificación de Receta: Id_Local| Id_Cheque| Id_Receta_Grafica"
 * identifier ^definition = "La identificación local puede ser dada localmente, puede ser la de la Receta Cheque o la identificación dada al ser escaneada una receta a papel. En cualquir caso no pueden ir aparejadas una identificación de receta cheque con una de receta gráfica"
 
-* identifier.type from 	http://hl7.org/fhir/ValueSet/identifier-type (extensible)
+//* identifier.type from 	VSTipoPrescripcion (required)
 * identifier.type ^short = "Identifica el tipo de Prescripción códigos válidos Id_Local| Id_Cheque| Id_Receta_Grafica"
 * identifier.type ^definition = "Se consideran 3 códgos externos al ValueSet dado la extensibilidad del binding" 
 * identifier.type.coding.system ^short = "Identidad del sistema de codificación" 
 * identifier.type.coding.system ^definition = "Identidad del sistema de codificación"
-* identifier.type.coding.code ^short = "Símbolo o sitaxis definida en el sistema"
+//* identifier.type.coding.system = "http://recetaelectronica.minsal.cl/validar_tipo_receta"
+* identifier.type.coding.code ^short = "Símbolo o sintaxis definida en el sistema"
+* identifier.type.coding.code from VSTipoPrescripcion (required)
 * identifier.type.coding.display ^short = "Texto representativo del código"
 
 * identifier.system ^short = "Namespace del identificador"
 * identifier.system ^definition = "URL sobre la cual se determina el formato y procedencia del valor del identificador"
+
 * identifier.value ^short = "número identificador"
 * identifier.assigner.display ^short = "Organización en texto libre que dio el numero."
 * identifier.assigner.display ^definition =	"Organización en texto libre que dio el número identificador. DEBE ser informado en caso que la identificación sea de tipo Local"
@@ -197,7 +204,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 	
 
 * dosageInstruction.route ^short = "vía por la cual es administrado el medicamento"
-* dosageInstruction.route.coding.system = "http://snomed.info/sct"
+//* dosageInstruction.route.coding.system = "http://snomed.info/sct"
 * dosageInstruction.route.coding.system ^short = "NameSpace de SNOMED-CT"
 * dosageInstruction.route.coding.system ^definition = "NameSpace de SNOMED-CT"
 * dosageInstruction.route.coding.code from  VSViasAdmin (extensible)
@@ -210,15 +217,34 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 
 * dosageInstruction.method ^short = "Forma exacta en la que el fármaco ingresa al organismo"
 * dosageInstruction.method ^definition = "Forma exacta en la que el fármaco ingresa al organismo. En este caso se define la ruta plausible para vías de administración"
-* dosageInstruction.method.coding.system = "http://snomed.info/sct"
-* dosageInstruction.method.coding.system ^short = "NameSpace de los códigos desde SNOMED-CT."
+//* dosageInstruction.method.coding.system = "http://snomed.info/sct"
+* dosageInstruction.method.coding.system ^short = "NameSpace de los códigos desde VS local. Definir URl Local para validar"
 * dosageInstruction.method.coding.system ^definition = "NameSpace de los códigos desde SNOMED-CT."
 
 * dosageInstruction.method.coding.code ^short = "Códigos del Set de Valores definidos desde SNOMED-CT"
 * dosageInstruction.method.coding.code ^definition = "Código en SNOMED-CT correspondiente al método"
 * dosageInstruction.method.coding.code from VSMetodos (extensible)
+/*
+* deceased[x] only boolean or dateTime
+//* deceasedBoolean ^short = "a"
+//* deceasedDateTime ^short = "b"
+* deceased[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* deceased[x] ^type[=].extension.valueBoolean = true
+* deceased[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* deceased[x] ^type[=].extension.valueBoolean = true
+*/
 
-	
+* dosageInstruction.doseAndRate.dose[x] only SimpleQuantity or Range
+//* dosageInstruction.doseAndRate.dose.SimpleQuantity.unit ^short = "asdf" 
+
+//* dosageInstruction.doseAndRate.doseRange ^short = "test"
+//* dosageInstruction.doseAndRate.doseRange MS
+//* dosageInstruction.doseAndRate.doseQuantity ^short = "test"
+* dosageInstruction.doseAndRate.dose[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
+//* dosageInstruction.doseAndRate.dose[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+//* dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
+/*	
 * dosageInstruction.doseAndRate ^short = "Cantidad de medicamento administrado puede ser Cantidad o Rango"	
 * dosageInstruction.doseAndRate ^definition = "Cantidad de medicamento administrado puede ser Cantidad o Rango, solo se puede usar uno de ellos en el Dosaje"
 * dosageInstruction.doseAndRate.doseQuantity.value ^short = "Valor de la cantidad a administrar"
@@ -260,7 +286,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 			
 * dosageInstruction.doseAndRate.doseRange.high.system ^definition = "Se definirá mas adelante "
 * dosageInstruction.doseAndRate.doseRange.high.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
-		
+*/		
 		
 		
 		
@@ -284,7 +310,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * dispenseRequest.expectedSupplyDuration.unit ^short = "Unidad temporal según UCUM"
 * dispenseRequest.expectedSupplyDuration.value ^definition = "Valor de la unidad de duración" 
 * dispenseRequest.expectedSupplyDuration.unit ^definition = "Unidad temporal según UCUM"
-* dispenseRequest.expectedSupplyDuration.system = "http://unitsofmeasure.org"
+//* dispenseRequest.expectedSupplyDuration.system = "http://unitsofmeasure.org"
 * dispenseRequest.expectedSupplyDuration.system ^short = "Sistema de códigos temprales según UCUM"
 * dispenseRequest.expectedSupplyDuration.code ^short = "Código según UCUM"
 * dispenseRequest.expectedSupplyDuration.code from http://hl7.org/fhir/ValueSet/age-units
@@ -315,7 +341,7 @@ Title : "Ejemplo Prescripción de Medicamento Oxycodone Vía Oral, una o dos tab
 InstanceOf : RecetaPrescripcionCl	
 Usage: #example
 
-* identifier.system = "https://minsal.cl/portalReceta/prescripciones"
+* identifier.system = "http://recetaelectronica.minsal.cl/validar_tipo_receta"
 * identifier.value = "RNCheque-1232"
 
 * status = #active
@@ -383,7 +409,7 @@ Usage: #example
 
 * identifier.type.coding.code = #Id_Local
 * identifier.type.coding.display = "Identificación Local"
-* identifier.system = "https://sistema_de_dispensacion_local/prescripciones"
+* identifier.system = "http://recetaelectronica.minsal.cl/validar_tipo_receta"
 * identifier.value = "10101010"
 * identifier.assigner.display = "CESFAM COQUIMBO"
 

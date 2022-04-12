@@ -167,7 +167,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction.asNeededBoolean ^definition = "Para indicar si el fármaco se puede usar sin respetar diretamente lo presctito en el dosaje, como por ejemplo medicamentos que se pueden usar en caso de SOS"
 	
 * dosageInstruction.route ^short = "via por la cual es administrado el medicamento"
-* dosageInstruction.route.coding.system = "http://snomed.info/sct"
+//* dosageInstruction.route.coding.system = "http://snomed.info/sct"
 * dosageInstruction.route.coding.system ^short = "NameSpace de Snomed"
 * dosageInstruction.route.coding.system ^definition = "NameSpace de Snomed"
 * dosageInstruction.route.coding.code from  VSViasAdmin (extensible)
@@ -187,7 +187,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction.method MS
 * dosageInstruction.method ^short = "Forma exacta en el fármaco ingresa al organismo"
 * dosageInstruction.method ^definition = "Forma exacta en el fármaco ingresa al organismo. En este caso se define la ruta plausible para vías de administración"
-* dosageInstruction.method.coding.system = "http://snomed.info/sct"
+//* dosageInstruction.method.coding.system = "http://snomed.info/sct"
 * dosageInstruction.method.coding.system ^short = "NameSpace de los códigos desde Snomed."
 * dosageInstruction.method.coding.system ^definition = "NameSpace de los códigos desde Snomed."
 
@@ -206,7 +206,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction.doseAndRate.doseQuantity.unit ^short = "Unidad de medida asociado al valueSet del system"
 
 			
-* dosageInstruction.doseAndRate.doseQuantity.system ^short = "Nombre del sistema de codificacion. Debe usar el siguiente valor: \"https://rme.hl7chile.cl/ValueSet-VSUnidadAsistencial.html\""
+* dosageInstruction.doseAndRate.doseQuantity.system ^short = "Nombre del sistema de codificacion."
 * dosageInstruction.doseAndRate.doseQuantity.system ^definition = "Se usará el valueSet UnidadAsistencial como sistema para unidades"
 
 
@@ -219,7 +219,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction.doseAndRate.doseRange.low.value ^short = "Valor de la cantidad mínima a administrar"
 * dosageInstruction.doseAndRate.doseRange.low.unit ^short = "Unidad de medida asociado al valueSet del system"
 			
-* dosageInstruction.doseAndRate.doseRange.low.system ^short = "Nombre del sistema de codificacion. Debe usar el siguiente valor: \"https://rme.hl7chile.cl/ValueSet-VSUnidadAsistencial.html\""
+* dosageInstruction.doseAndRate.doseRange.low.system ^short = "Nombre del sistema de codificacion."
 * dosageInstruction.doseAndRate.doseRange.low.code ^short = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
 * dosageInstruction.doseAndRate.doseRange.low.code from VSUnidadAsistencial (extensible)
 
@@ -227,7 +227,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction.doseAndRate.doseRange.high.value ^short = "Valor de la cantidad máxima a administrar"
 * dosageInstruction.doseAndRate.doseRange.high.unit ^short = "Unidad de medida asociado al valueSet del system"
 			
-* dosageInstruction.doseAndRate.doseRange.high.system ^short = "Nombre del sistema de codificacion. Debe usar el siguiente valor: \"https://rme.hl7chile.cl/ValueSet-VSUnidadAsistencial.html\""
+* dosageInstruction.doseAndRate.doseRange.high.system ^short = "Nombre del sistema de codificacion."
 * dosageInstruction.doseAndRate.doseRange.high.code ^short = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
 * dosageInstruction.doseAndRate.doseRange.high.code from VSUnidadAsistencial (extensible)
 

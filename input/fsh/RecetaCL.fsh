@@ -65,7 +65,7 @@ InstanceOf: RecetaPrescripcionCl
 Usage: #inline
 * identifier.type.coding.code = #Id_Local
 * identifier.type.coding.display = "Identificación Local"
-* identifier.system = "https://sistema_de_dispensacion_local/prescripciones"
+* identifier.system = "http://recetaelectronica.minsal.cl/validar_tipo_receta"
 * identifier.value = "10101010"
 * identifier.assigner.display = "CESFAM COQUIMBO"
 
@@ -99,7 +99,7 @@ Usage: #inline
 
 * identifier.type.coding.code = #Id_Local
 * identifier.type.coding.display = "Identificación Local"
-* identifier.system = "https://sistema_de_dispensacion_local/prescripciones"
+* identifier.system = "http://recetaelectronica.minsal.cl/validar_tipo_receta"
 * identifier.value = "10101011"
 * identifier.assigner.display = "CESFAM COQUIMBO"
 

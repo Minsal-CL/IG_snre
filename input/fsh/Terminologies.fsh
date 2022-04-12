@@ -348,3 +348,32 @@ Description: "Métodos de Administración de Snomed-CT utilizados para el proyec
 * #827107003 "Implante (método de administración)"
 
 
+ValueSet: VSTipoPrescripcion
+Id: VSTipoPrescripcion
+Title: "Identifica el tipo de Prescripción códigos válidos Id_Local| Id_Cheque| Id_Receta_Grafica"
+Description: "Identifica el tipo de Prescripción códigos válidos Id_Local| Id_Cheque| Id_Receta_Grafica"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSTipoPrescripcion
+
+CodeSystem: CSTipoPrescripcion
+Id: CSTipoPrescripcion
+Title: "Identifica el tipo de Prescripción códigos válidos Id_Local| Id_Cheque| Id_Receta_Grafica"
+Description: "Identifica el tipo de Prescripción códigos válidos Id_Local| Id_Cheque| Id_Receta_Grafica"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #Id_Local "Id_Local"
+* #Id_Cheque "Id_Cheque"
+* #Id_Receta_Grafica "Id_Receta_Grafica"
