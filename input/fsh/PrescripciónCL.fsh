@@ -53,6 +53,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
       * high MS
         * value and unit and system and code MS
 */
+  * doseAndRate MS
 * dispenseRequest MS
   * validityPeriod MS
     * start and end MS
@@ -229,75 +230,19 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * dosageInstruction.method.coding.code ^short = "Códigos del Set de Valores definidos desde SNOMED-CT"
 * dosageInstruction.method.coding.code ^definition = "Código en SNOMED-CT correspondiente al método"
 * dosageInstruction.method.coding.code from VSMetodos (extensible)
-/*
-* deceased[x] only boolean or dateTime
-//* deceasedBoolean ^short = "a"
-//* deceasedDateTime ^short = "b"
-* deceased[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* deceased[x] ^type[=].extension.valueBoolean = true
-* deceased[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* deceased[x] ^type[=].extension.valueBoolean = true
-*/
 
-* dosageInstruction.doseAndRate.dose[x] only SimpleQuantity or Range
-//* dosageInstruction.doseAndRate.dose.SimpleQuantity.unit ^short = "asdf" 
+* dosageInstruction.doseAndRate ^short = "Definición de la cantidad de fármaco a consumir por uso indicado"
+* dosageInstruction.doseAndRate.dose[x] only SimpleQuantityCL or RangeCL
+* dosageInstruction.doseAndRate.dose[x] ^short = "Definición de Cantidad Simple o Rango"
+* dosageInstruction.doseAndRate.dose[x] MS
 
-//* dosageInstruction.doseAndRate.doseRange ^short = "test"
-//* dosageInstruction.doseAndRate.doseRange MS
-//* dosageInstruction.doseAndRate.doseQuantity ^short = "test"
+
 * dosageInstruction.doseAndRate.dose[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
+
 * dosageInstruction.doseAndRate.dose[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
-<<<<<<< HEAD
-//* dosageInstruction.doseAndRate.dose[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-//* dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
-=======
->>>>>>> ff2cc14cf34236664cad7cb46df222dead386e01
-/*	
-* dosageInstruction.doseAndRate ^short = "Cantidad de medicamento administrado puede ser Cantidad o Rango"	
-* dosageInstruction.doseAndRate ^definition = "Cantidad de medicamento administrado puede ser Cantidad o Rango, solo se puede usar uno de ellos en el Dosaje"
-* dosageInstruction.doseAndRate.doseQuantity.value ^short = "Valor de la cantidad a administrar"
-* dosageInstruction.doseAndRate.doseQuantity.unit ^short = "Unidad de la cantidad a administrar"
-* dosageInstruction.doseAndRate.doseQuantity.value ^definition = "Valor de la cantidad a administrar"
-* dosageInstruction.doseAndRate.doseQuantity.unit ^definition = "Unidad de la cantidad a administrar"
-* dosageInstruction.doseAndRate.doseQuantity.unit from http://hl7.org/fhir/ValueSet/ucum-units
-			
-* dosageInstruction.doseAndRate.doseQuantity.system ^short = "NameSpace del sistema de codificacion (UCUM)"
-* dosageInstruction.doseAndRate.doseQuantity.system ^definition = "Se usará UCUM como systema para unidades, se sugiere dosageInstruction.doseAndRate.doseQuantity.unit"
-* dosageInstruction.doseAndRate.doseQuantity.code ^short = "Código para el tipo de forma del fármaco"
-* dosageInstruction.doseAndRate.doseQuantity.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
-* dosageInstruction.doseAndRate.doseQuantity.code from VSUnidadAsistencial (extensible)
-
-* dosageInstruction.doseAndRate.doseRange.low.value ^short = "Valor mínimo del rango"
-* dosageInstruction.doseAndRate.doseRange.low.unit ^short = "Unidad de la cantidad a administrar"
-			
-* dosageInstruction.doseAndRate.doseRange.low.system ^short = "Se definirá mas adelante "
-* dosageInstruction.doseAndRate.doseRange.low.code ^short = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
-* dosageInstruction.doseAndRate.doseRange.low.code from VSUnidadAsistencial (extensible)
-
-
-* dosageInstruction.doseAndRate.doseRange.high.value ^short = "Valor mínimo del rango"
-* dosageInstruction.doseAndRate.doseRange.high.unit ^short = "Unidad de la cantidad a administrar"
-			
-* dosageInstruction.doseAndRate.doseRange.high.system ^short = "Se definirá mas adelante "
-* dosageInstruction.doseAndRate.doseRange.high.code ^short = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
-* dosageInstruction.doseAndRate.doseRange.high.code from VSUnidadAsistencial (extensible)
-
-
-* dosageInstruction.doseAndRate.doseRange.low.value ^definition = "Valor mínimo del rango"
-* dosageInstruction.doseAndRate.doseRange.low.unit ^definition = "Unidad de la cantidad a administrar"
-			
-* dosageInstruction.doseAndRate.doseRange.low.system ^definition = "Se definirá mas adelante "
-* dosageInstruction.doseAndRate.doseRange.low.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
-		
-* dosageInstruction.doseAndRate.doseRange.high.value ^definition = "Valor mínimo del rango"
-* dosageInstruction.doseAndRate.doseRange.high.unit ^definition = "Unidad de la cantidad a administrar"
-			
-* dosageInstruction.doseAndRate.doseRange.high.system ^definition = "Se definirá mas adelante "
-* dosageInstruction.doseAndRate.doseRange.high.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
-*/		
-		
+	
 		
 		
 * dispenseRequest 1..1
@@ -343,7 +288,21 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 		
 
 
-
+Extension:   CantidadSimpleCL
+Id:          CantidadSimpleCL
+Title:       "Identificación del Contacto de un Paciente"
+Description: "Identificación de contacto de paciente en especial para casos en los cuales este actúa como Tutor Legal"
+* extension contains
+	valor 0..1 MS and
+	sistema 0..1 MS and 
+  codigo 0..1
+* extension[valor] ^short = "Cantidad de Medicamento a Administrar"
+* extension[valor].value[x] only decimal
+* extension[sistema] ^short = "NameSpace para el código a usar"
+* extension[sistema].value[x] only uri
+* extension[codigo] ^short = "Código para la Unidad de la medida"
+* extension[codigo].value[x] only Coding
+* extension[codigo].valueCoding from VSUnidadAsistencial (required)
  
 
 Instance : PrescripcionRecetaCL

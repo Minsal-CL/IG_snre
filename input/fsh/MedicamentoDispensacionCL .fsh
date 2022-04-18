@@ -180,9 +180,21 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction.route ^definition = "Como se debe administrar el medicamento (Vía de administración o como debe el farmaco entrar al cuerpo)"
 * dosageInstruction.method ^short = "Técnica para administrar el medicamento"
 * dosageInstruction.method ^definition = "Es un valor codificado que indica el método mediante el cual se introduce el medicamento en el cuerpo o sobre él. Más comúnmente utilizado para inyecciones. Por ejemplo, empuje lento; Profundo IV."
+
 * dosageInstruction.doseAndRate ^short = "Cantidad de los medicamentos a administrar"
 * dosageInstruction.doseAndRate ^definition = "Cantidad de los medicamentos a administrar"
+* dosageInstruction.doseAndRate ^short = "Definición de la cantidad de fármaco a consumir por uso indicado"
+* dosageInstruction.doseAndRate.dose[x] only SimpleQuantityCL or RangeCL
+* dosageInstruction.doseAndRate.dose[x] ^short = "Definición de Cantidad Simple o Rango"
+* dosageInstruction.doseAndRate.dose[x] MS
 
+
+* dosageInstruction.doseAndRate.dose[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
+
+* dosageInstruction.doseAndRate.dose[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
+	
 
 
 * dosageInstruction.method MS
@@ -196,55 +208,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction.method.coding.code ^definition = "Código en Snomed-Ct correspondiente al método"
 * dosageInstruction.method.coding.code from VSMetodos (extensible)
 
-* dosageInstruction.doseAndRate ^short = "Cantidad de medicamento administrado puede ser Cantidad o Rango"	
-* dosageInstruction.doseAndRate ^definition = "Cantidad de medicamento administrado puede ser Cantidad o Rango, solo se puede usar uno de ellos en el Dosaje"
 
-* dosageInstruction.doseAndRate.doseQuantity.value ^short = "Valor de la cantidad a administrar"
-* dosageInstruction.doseAndRate.doseQuantity.value ^definition = "Valor de la cantidad a administrar"
-
-
-* dosageInstruction.doseAndRate.doseQuantity.unit ^definition = "Unidad de medida asociado al valueSet referenciado en el system"
-* dosageInstruction.doseAndRate.doseQuantity.unit ^short = "Unidad de medida asociado al valueSet del system"
-
-			
-* dosageInstruction.doseAndRate.doseQuantity.system ^short = "Nombre del sistema de codificacion."
-* dosageInstruction.doseAndRate.doseQuantity.system ^definition = "Se usará el valueSet UnidadAsistencial como sistema para unidades"
-
-
-* dosageInstruction.doseAndRate.doseQuantity.code ^short = "Código para el tipo de forma del fármaco"
-* dosageInstruction.doseAndRate.doseQuantity.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
-* dosageInstruction.doseAndRate.doseQuantity.code from VSUnidadAsistencial (extensible)
-
-
-
-* dosageInstruction.doseAndRate.doseRange.low.value ^short = "Valor de la cantidad mínima a administrar"
-* dosageInstruction.doseAndRate.doseRange.low.unit ^short = "Unidad de medida asociado al valueSet del system"
-			
-* dosageInstruction.doseAndRate.doseRange.low.system ^short = "Nombre del sistema de codificacion."
-* dosageInstruction.doseAndRate.doseRange.low.code ^short = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
-* dosageInstruction.doseAndRate.doseRange.low.code from VSUnidadAsistencial (extensible)
-
-
-* dosageInstruction.doseAndRate.doseRange.high.value ^short = "Valor de la cantidad máxima a administrar"
-* dosageInstruction.doseAndRate.doseRange.high.unit ^short = "Unidad de medida asociado al valueSet del system"
-			
-* dosageInstruction.doseAndRate.doseRange.high.system ^short = "Nombre del sistema de codificacion."
-* dosageInstruction.doseAndRate.doseRange.high.code ^short = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
-* dosageInstruction.doseAndRate.doseRange.high.code from VSUnidadAsistencial (extensible)
-
-
-* dosageInstruction.doseAndRate.doseRange.low.value ^definition = "Valor mínimo del rango"
-* dosageInstruction.doseAndRate.doseRange.low.unit ^definition = "Unidad de medida asociado al valueSet del system"
-			
-* dosageInstruction.doseAndRate.doseRange.low.system ^definition = "Se definirá mas adelante "
-* dosageInstruction.doseAndRate.doseRange.low.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
-		
-* dosageInstruction.doseAndRate.doseRange.high.value ^definition = "Valor mínimo del rango"
-* dosageInstruction.doseAndRate.doseRange.high.unit ^definition = "Unidad de medida asociado al valueSet del system"
-			
-* dosageInstruction.doseAndRate.doseRange.high.system ^definition = "Se definirá mas adelante "
-* dosageInstruction.doseAndRate.doseRange.high.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
-		
 		
 //performer
 * performer MS
