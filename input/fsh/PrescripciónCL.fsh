@@ -161,19 +161,24 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * courseOfTherapyType ^short = "Expresa el patrón en la administración del medicamento"
 * courseOfTherapyType ^definition = "La descripción del patrón general de la administración del medicamento al paciente."
 * courseOfTherapyType.coding.system ^short = "Sistema de códigos a ocupar, se hará uso sel det de valores de hl7 MedicationRequest-course-of-therapy "
-* courseOfTherapyType.coding.code from VSCodificacionPatron
+//* courseOfTherapyType.coding.code from VSCodificacionPatron
 * courseOfTherapyType.coding.code ^short = "Código relacionado con el patrón de administración"
 * courseOfTherapyType.coding.display ^short = "Descripción del código"
 
 * note ^short = "Texto libre en donde se expresan las instrucciones de como el medicamento debe ser administrado"
 * note ^definition = "Información adicional sobre la prescripción que no puede ser transmitida por los otros atributos."
 
-* dosageInstruction 1..1
+* dosageInstruction 1..*
 * dosageInstruction ^short = "Instrucciones del dosaje del medicamento"
 * dosageInstruction ^definition = "Indica cómo debe utilizar el paciente el medicamento."
 * dosageInstruction.text ^short = "Instucciones en texto libre"
 * dosageInstruction.patientInstruction ^short = "Instrucciones adicionales orientadas al paciente"
 * dosageInstruction.patientInstruction ^definition = "Instrucciones adicionales orientadas al paciente"
+
+* dosageInstruction.sequence 1..1 MS
+* dosageInstruction.sequence ^short = "Secuencia de administracion del medicamento"
+* dosageInstruction.sequence ^definition = "Indica el orden en el que se deben aplicar o interpretar las instrucciones de dosificación."
+
 
 * dosageInstruction.timing.repeat ^short = "Administración del medicamento en temporalidad"
 * dosageInstruction.timing.repeat.frequency ^short = "Cantidad de repeticiones"

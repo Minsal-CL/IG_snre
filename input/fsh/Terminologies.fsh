@@ -105,8 +105,8 @@ Description: "Codificacion el patrón de administración de una prescripción. E
 * #acute	"Terapia a corto plazo (aguda)" "Una medicación que se espera que el paciente consuma solo por la duración de la presente orden y no se espera que sea renovada"
 * #seasonal	"Por temporada" "Una medicación que se espera sea usada a tiempo parcial en ciertos momentos del año"
 
-ValueSet: VSRazonEstadoMD
-Id: VSRazonEstadoMD
+ValueSet: VSRazonEstadoDispensacion
+Id: VSRazonEstadoDispensacion
 Description: "Codificación de la razón del cambio de estado de una Dispensacion"
 * ^version = "1.0.0"
 * ^status = #active
@@ -116,10 +116,10 @@ Description: "Codificación de la razón del cambio de estado de una Dispensacio
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system CSRazonEstadoMD
+* include codes from system CSRazonEstadoDispensacion
 
-CodeSystem: CSRazonEstadoMD
-Id: CSRazonEstadoMD
+CodeSystem: CSRazonEstadoDispensacion
+Id: CSRazonEstadoDispensacion
 Title: "Razón de Estado"
 Description: "Codificación de la razón del cambio de estado de una Dispensacion. Estos códigos son la traducción oficial de la codificación de FHIR"
 * ^version = "1.0.0"
