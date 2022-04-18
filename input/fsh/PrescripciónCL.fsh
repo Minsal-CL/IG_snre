@@ -242,8 +242,8 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 //* dosageInstruction.doseAndRate.doseQuantity ^short = "test"
 * dosageInstruction.doseAndRate.dose[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
-//* dosageInstruction.doseAndRate.dose[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-//* dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
+* dosageInstruction.doseAndRate.dose[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
 /*	
 * dosageInstruction.doseAndRate ^short = "Cantidad de medicamento administrado puede ser Cantidad o Rango"	
 * dosageInstruction.doseAndRate ^definition = "Cantidad de medicamento administrado puede ser Cantidad o Rango, solo se puede usar uno de ellos en el Dosaje"
