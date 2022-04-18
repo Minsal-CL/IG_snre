@@ -7,7 +7,7 @@ Description:    "Este Perfil utiliza este recurso como un contenedor de Prescrip
 * groupIdentifier MS
   * value MS
 * status and intent and subject MS
-  * reference MS
+  * reference and display MS
 * authoredOn MS
 
 
@@ -35,6 +35,7 @@ Description:    "Este Perfil utiliza este recurso como un contenedor de Prescrip
 * subject 1..1
 * subject ^short = "Información acerca del paciente al cual se le ha indicado la receta"
 * subject.reference ^short = "Referencia al recurso del paciente al cual se le arma la receta"
+* subject.display ^short = "Nombre del paciente al cual pertenece el recurso que esta referenciando"
 
 
 //creación
@@ -64,7 +65,7 @@ InstanceOf: RecetaPrescripcionCl
 Usage: #inline
 * identifier.type.coding.code = #Id_Local
 * identifier.type.coding.display = "Identificación Local"
-* identifier.system = "https://sistema_de_dispensacion_local/prescripciones"
+* identifier.system = "http://recetaelectronica.minsal.cl/validar_tipo_receta"
 * identifier.value = "10101010"
 * identifier.assigner.display = "CESFAM COQUIMBO"
 
@@ -98,7 +99,7 @@ Usage: #inline
 
 * identifier.type.coding.code = #Id_Local
 * identifier.type.coding.display = "Identificación Local"
-* identifier.system = "https://sistema_de_dispensacion_local/prescripciones"
+* identifier.system = "http://recetaelectronica.minsal.cl/validar_tipo_receta"
 * identifier.value = "10101011"
 * identifier.assigner.display = "CESFAM COQUIMBO"
 

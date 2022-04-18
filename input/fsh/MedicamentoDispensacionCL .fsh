@@ -20,6 +20,8 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * identifier.assigner.identifier ^definition = "Si el identificador de la Farmacia que ha dado identifier a la receta"
 * identifier.system and identifier.value and identifier.assigner and identifier.assigner.identifier MS
 
+* identifier.assigner.display ^short = "Nombre de la organización a la cual se hace la referencia"
+
 //status
 * status MS
 * status 1..1
@@ -53,32 +55,36 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 //subject
-* subject MS
+* subject and subject.display and subject.reference MS
 * subject 1..1
 * subject only Reference (Patient)
 * subject ^short = "Referencia al Paciente  \"https://api-receta.minsal.cl/v2/Patient\" "
 * subject ^definition = "La referencia en este caso solo se hace sobre el paciente al cual se le receta el fármaco independiente que sea otra la persona que hace retiro de estos. Se usa el repositorio \"https://api-receta.minsal.cl/v2/patient\""
-
+* subject.display ^short = "Nombre del Paciente"
+* subject.reference ^short = "URL de la referencia del recurso del paciente"
 
 
 //authorizingPrescription
-* authorizingPrescription and authorizingPrescription.reference MS
+* authorizingPrescription and authorizingPrescription.reference and authorizingPrescription.display MS
 * authorizingPrescription 1..1
 * authorizingPrescription ^short = "Referencia a la prescripción que autoriza la dispensación."
 * authorizingPrescription ^definition = "Referencia a la prescripción que autoriza la dispensación. Esta debe ser referenciada al recurso MedicationRequest involucrado en la receta presentada al momento de la dspensación"
 * authorizingPrescription.reference ^short = "Referencia a la prescripción que autoriza la dispensación. \"https://api-receta.minsal.cl/v2/MedicationRequest\" (Obligada)"
 * authorizingPrescription.reference ^definition = "Referencia a la receta que autoriza la dispensación. esta debe ser referenciada al recurso MedicationRequest involucrado en la receta presentada al momento de la dispensación. \"https://api-receta.minsal.cl/v2/MediationPrescription\" (Obligada)"
 
+* authorizingPrescription.display ^short = "Id de la referencia a la prescripción"
 
 //medicationReference
 
-* medicationReference MS
+* medicationReference and medicationReference.display and medicationReference.reference MS
 * medicationReference ^short = "Medicamento comercial dispensado. Como repositorio nacional: \"http://api-receta.minsal.cl/v2/Medication\"."
 * medicationReference ^definition = "Medicamento dispenado que obedece al Producto Comercial que fue entregado a quien lo retira. Este se describe mediante el recurso de medicamento desde el reposotorio de estos. Solo se agrega en caso de ser dispensado el medicamento de otra forma no es necesario. El repositorio es \"https://api-receta.minsal.cl/v2/Medication\""
 * medicationReference ^short = "Medicamento comercial dispensado. Como repositorio nacional: \"http://api-receta.minsal.cl/v2/Medication\" (Obligatorio)"
 * medicationReference ^definition = "Medicamento dispensado correspondiente al Producto Comercial que fue entregado a quien lo retira. Este se describe mediante el recurso de medicamento desde el repositorio. Solo se agrega en caso de ser dispensado el medicamento, de otra forma no es necesario. El repositorio es \"https://api-receta.minsal.cl/v2/Medication\""
 * medicationReference ^comment = "Solo se agrega en caso de ser dispensado el medicamento"
 
+* medicationReference.display ^short = "Nombre del medicamento dispensado"
+* medicationReference.reference ^short = "URL de la referencia al medicamento dispensado"
 
 //whenHandedOver
 * whenHandedOver MS
@@ -162,7 +168,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction.asNeededBoolean ^definition = "Para indicar si el fármaco se puede usar sin respetar diretamente lo presctito en el dosaje, como por ejemplo medicamentos que se pueden usar en caso de SOS"
 	
 * dosageInstruction.route ^short = "via por la cual es administrado el medicamento"
-* dosageInstruction.route.coding.system = "http://snomed.info/sct"
+//* dosageInstruction.route.coding.system = "http://snomed.info/sct"
 * dosageInstruction.route.coding.system ^short = "NameSpace de Snomed"
 * dosageInstruction.route.coding.system ^definition = "NameSpace de Snomed"
 * dosageInstruction.route.coding.code from  VSViasAdmin (extensible)
@@ -182,7 +188,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction.method MS
 * dosageInstruction.method ^short = "Forma exacta en el fármaco ingresa al organismo"
 * dosageInstruction.method ^definition = "Forma exacta en el fármaco ingresa al organismo. En este caso se define la ruta plausible para vías de administración"
-* dosageInstruction.method.coding.system = "http://snomed.info/sct"
+//* dosageInstruction.method.coding.system = "http://snomed.info/sct"
 * dosageInstruction.method.coding.system ^short = "NameSpace de los códigos desde Snomed."
 * dosageInstruction.method.coding.system ^definition = "NameSpace de los códigos desde Snomed."
 
@@ -192,42 +198,49 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 * dosageInstruction.doseAndRate ^short = "Cantidad de medicamento administrado puede ser Cantidad o Rango"	
 * dosageInstruction.doseAndRate ^definition = "Cantidad de medicamento administrado puede ser Cantidad o Rango, solo se puede usar uno de ellos en el Dosaje"
+
 * dosageInstruction.doseAndRate.doseQuantity.value ^short = "Valor de la cantidad a administrar"
-* dosageInstruction.doseAndRate.doseQuantity.unit ^short = "Unidad de la cantidad a administrar"
 * dosageInstruction.doseAndRate.doseQuantity.value ^definition = "Valor de la cantidad a administrar"
-* dosageInstruction.doseAndRate.doseQuantity.unit ^definition = "Unidad de la cantidad a administrar"
-* dosageInstruction.doseAndRate.doseQuantity.unit from http://hl7.org/fhir/ValueSet/ucum-units
+
+
+* dosageInstruction.doseAndRate.doseQuantity.unit ^definition = "Unidad de medida asociado al valueSet referenciado en el system"
+* dosageInstruction.doseAndRate.doseQuantity.unit ^short = "Unidad de medida asociado al valueSet del system"
+
 			
-* dosageInstruction.doseAndRate.doseQuantity.system ^short = "NameSpace del sistema de codificacion (UCUM)"
-* dosageInstruction.doseAndRate.doseQuantity.system ^definition = "Se usará UCUM como systema para unidades, se sugiere dosageInstruction.doseAndRate.doseQuantity.unit"
+* dosageInstruction.doseAndRate.doseQuantity.system ^short = "Nombre del sistema de codificacion."
+* dosageInstruction.doseAndRate.doseQuantity.system ^definition = "Se usará el valueSet UnidadAsistencial como sistema para unidades"
+
+
 * dosageInstruction.doseAndRate.doseQuantity.code ^short = "Código para el tipo de forma del fármaco"
 * dosageInstruction.doseAndRate.doseQuantity.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
 * dosageInstruction.doseAndRate.doseQuantity.code from VSUnidadAsistencial (extensible)
 
-* dosageInstruction.doseAndRate.doseRange.low.value ^short = "Valor mínimo del rango"
-* dosageInstruction.doseAndRate.doseRange.low.unit ^short = "Unidad de la cantidad a administrar"
+
+
+* dosageInstruction.doseAndRate.doseRange.low.value ^short = "Valor de la cantidad mínima a administrar"
+* dosageInstruction.doseAndRate.doseRange.low.unit ^short = "Unidad de medida asociado al valueSet del system"
 			
-* dosageInstruction.doseAndRate.doseRange.low.system ^short = "Se definirá mas adelante "
+* dosageInstruction.doseAndRate.doseRange.low.system ^short = "Nombre del sistema de codificacion."
 * dosageInstruction.doseAndRate.doseRange.low.code ^short = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
 * dosageInstruction.doseAndRate.doseRange.low.code from VSUnidadAsistencial (extensible)
 
 
-* dosageInstruction.doseAndRate.doseRange.high.value ^short = "Valor mínimo del rango"
-* dosageInstruction.doseAndRate.doseRange.high.unit ^short = "Unidad de la cantidad a administrar"
+* dosageInstruction.doseAndRate.doseRange.high.value ^short = "Valor de la cantidad máxima a administrar"
+* dosageInstruction.doseAndRate.doseRange.high.unit ^short = "Unidad de medida asociado al valueSet del system"
 			
-* dosageInstruction.doseAndRate.doseRange.high.system ^short = "Se definirá mas adelante "
+* dosageInstruction.doseAndRate.doseRange.high.system ^short = "Nombre del sistema de codificacion."
 * dosageInstruction.doseAndRate.doseRange.high.code ^short = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
 * dosageInstruction.doseAndRate.doseRange.high.code from VSUnidadAsistencial (extensible)
 
 
 * dosageInstruction.doseAndRate.doseRange.low.value ^definition = "Valor mínimo del rango"
-* dosageInstruction.doseAndRate.doseRange.low.unit ^definition = "Unidad de la cantidad a administrar"
+* dosageInstruction.doseAndRate.doseRange.low.unit ^definition = "Unidad de medida asociado al valueSet del system"
 			
 * dosageInstruction.doseAndRate.doseRange.low.system ^definition = "Se definirá mas adelante "
 * dosageInstruction.doseAndRate.doseRange.low.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
 		
 * dosageInstruction.doseAndRate.doseRange.high.value ^definition = "Valor mínimo del rango"
-* dosageInstruction.doseAndRate.doseRange.high.unit ^definition = "Unidad de la cantidad a administrar"
+* dosageInstruction.doseAndRate.doseRange.high.unit ^definition = "Unidad de medida asociado al valueSet del system"
 			
 * dosageInstruction.doseAndRate.doseRange.high.system ^definition = "Se definirá mas adelante "
 * dosageInstruction.doseAndRate.doseRange.high.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
@@ -248,7 +261,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * performer ^definition = "Profesional que realizó o validó la entrega de la orden de fármacos."
 * performer ^comment = "Se definen dos tipos de dispensador, no excluyentes mutuamente. El primero es el dispensador del fármaco pero el segundo es el validador. El dispensador es obligado. Ambos son iguales desde el punto de vista del desarrollo de cada slice es el mismo solo debe cambiar el valor del código del la ruta performer.function.code"
 
-* performer[Dispensador] and performer[Dispensador].function and performer[Dispensador].function.coding and performer[Dispensador].function.coding.system and performer[Dispensador].function.coding.code and performer[Dispensador].actor and performer[Dispensador].actor.reference MS
+* performer[Dispensador] and performer[Dispensador].function and performer[Dispensador].function.coding and performer[Dispensador].function.coding.system and performer[Dispensador].function.coding.code and performer[Dispensador].actor and performer[Dispensador].actor.reference and performer[Dispensador].actor.display MS
 * performer[Dispensador] ^short = "Aquel individuo que realiza la entega de medicamentos"
 * performer[Dispensador] ^definition = "Se entiende por dispensador al individuo que entrega los medicamentos a quien los solicite en el punto de entrega. Simpre en el proceso de dispensación existe un dispensador"
 
@@ -265,9 +278,9 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * performer[Dispensador].actor ^short = "Profesional que realiza la dispensación. El endPoint es \"http://api-receta.minsal.cl/v2/Practitioner\""
 * performer[Dispensador].actor.reference ^short = "La referencia del recurso especificado debe ser al endPoint \"http://api-receta.minsal.cl/v2/Practitioner\""
 * performer[Dispensador].actor.reference ^definition = "La referencia del recurso especificado debe ser al endPoint \"http://api-receta.minsal.cl/v2/Practitioner\". En el caso nacional el dispensador estaría dentro de los recucursos desarrollados para Prestadores"
+* performer[Dispensador].actor.display ^short = "Nombre del dispensador de la receta"
 
-
-* performer[Validador] and performer[Validador].function and performer[Validador].function.coding and performer[Validador].function.coding.system and performer[Validador].function.coding.code and performer[Validador].actor and performer[Validador].actor.reference MS
+* performer[Validador] and performer[Validador].function and performer[Validador].function.coding and performer[Validador].function.coding.system and performer[Validador].function.coding.code and performer[Validador].actor and performer[Validador].actor.reference and performer[Validador].actor.display MS
 * performer[Validador] ^short = "Aquel individuo que realiza la validación ante la entega de medicamentos"
 * performer[Validador] ^definition = "Se entiende por dispensador al individuo que valida la entrega de los medicamentos a quien los solicite en el punto de entrega. Por lo común es un Químico Farmacéutico de Profesión"
 
@@ -278,7 +291,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * performer[Validador].function.coding.code ^short = "Código de validador. Debe ser **Validador** para definir un Validador"
 * performer[Validador].function.coding.code ^definition = "Código de validador según tabla maestra. En este caso debe ser Validador"
 * performer[Validador].function.coding.code = #Validador
-
+* performer[Validador].actor.display ^short = "Nombre de quien valida la receta antes de la entrega."
 
 
 * performer[Validador].actor only Reference(Practitioner)
@@ -290,21 +303,25 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 //localización
 
 * location 1..1
-* location and location.reference MS
+* location and location.reference and location.display MS
 * location ^short = "Ubicación Georeferenciada de la dispensación"
 * location ^definition = "La ubicación física principal en la cual se desarrolló la dispensación"
 * location.reference ^short = "Identificación del recurso de lcalización de los dispensadores. \"https://api-receta.minsal.cl/v2/Location\" (Obligatoria)"
 * location.reference ^definition = "El repositorio Central tendrá listada la ubicación de todos los dispensadores en recurso location. Estas deberán ser alcanzadas desde \"https://api-receta.minsal.cl/v2/Location\" (Obligatoria)"
+* location.display ^short = "Descripción de la ubicacion o localización donde se realiza la dispensación"
+
 
 //receiver
 * receiver only Reference(Patient)
-* receiver and receiver.display MS
+* receiver and receiver.display and receiver.reference MS
 * receiver 0..1
 
 * receiver ^short = "Persona a la cual se le hace entrega de los fármacos."
 * receiver.display ^short = "Se debe  escribir el nombre y apellido de quien recibe el medicamento "
 * receiver.display ^definition = "Se define el nombre y apellido de quien recibe el medicamento. Este elemento si bien no es obligatorio debería serlo en el servicio público y solo en caso que quien recibe el medicamento no sea el paciente sobre el cual fueron recetados "
 * receiver.display ^comment = "Debe ser obligatorio en dispensaciones realizadas en el sector de salud Público"
+* receiver.reference ^short = "URL del recurso Paciente"
+* receiver.reference ^short = "Se debe agregar la URL del recurso Paciente"
 
 
 //"Profesional quien hizo la receta. La manera correcta de hacer la referencia es referenciando a la API de MINSAL, mas el identificador del médico (https://api.receta.minsal.asimov.cl/practitioner)"
@@ -314,12 +331,12 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 //* location ^short = "Referencia a la geo-localizacion del dispensador de los medicamentos"
 
 //detectedIssue
-* detectedIssue  and detectedIssue.display MS
+* detectedIssue  and detectedIssue.display and detectedIssue.reference MS
 * detectedIssue ^short = "Evento adverso detectado como contraindicación al farmaco dispensado"
 * detectedIssue ^definition = "Indica un problema clinico real o potencial, con acciones clinicas posibles, por ejemplo, una interaccion farmaco-farmaco, doble dosis de medicamentos, etc."
 * detectedIssue.display ^short = "Texto libre que describe el potencial evento adverso o contraindicación"
 * detectedIssue.display ^definition = "Texto libre que describe el potencial evento adverso o contraindicación. Por momento solo se considera la redacción en texto libre de este campo"
-
+* detectedIssue.reference ^short = "Referencia al evendo adverso detectado."
 
 
 Instance : DispensacionMedicamentoCL
