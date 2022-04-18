@@ -242,7 +242,57 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 
 * dosageInstruction.doseAndRate.dose[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
+<<<<<<< HEAD
 	
+=======
+
+
+
+/*	
+* dosageInstruction.doseAndRate ^short = "Cantidad de medicamento administrado puede ser Cantidad o Rango"	
+* dosageInstruction.doseAndRate ^definition = "Cantidad de medicamento administrado puede ser Cantidad o Rango, solo se puede usar uno de ellos en el Dosaje"
+* dosageInstruction.doseAndRate.doseQuantity.value ^short = "Valor de la cantidad a administrar"
+* dosageInstruction.doseAndRate.doseQuantity.unit ^short = "Unidad de la cantidad a administrar"
+* dosageInstruction.doseAndRate.doseQuantity.value ^definition = "Valor de la cantidad a administrar"
+* dosageInstruction.doseAndRate.doseQuantity.unit ^definition = "Unidad de la cantidad a administrar"
+* dosageInstruction.doseAndRate.doseQuantity.unit from http://hl7.org/fhir/ValueSet/ucum-units
+			
+* dosageInstruction.doseAndRate.doseQuantity.system ^short = "NameSpace del sistema de codificacion (UCUM)"
+* dosageInstruction.doseAndRate.doseQuantity.system ^definition = "Se usará UCUM como systema para unidades, se sugiere dosageInstruction.doseAndRate.doseQuantity.unit"
+* dosageInstruction.doseAndRate.doseQuantity.code ^short = "Código para el tipo de forma del fármaco"
+* dosageInstruction.doseAndRate.doseQuantity.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
+* dosageInstruction.doseAndRate.doseQuantity.code from VSUnidadAsistencial (extensible)
+
+* dosageInstruction.doseAndRate.doseRange.low.value ^short = "Valor mínimo del rango"
+* dosageInstruction.doseAndRate.doseRange.low.unit ^short = "Unidad de la cantidad a administrar"
+			
+* dosageInstruction.doseAndRate.doseRange.low.system ^short = "Se definirá mas adelante "
+* dosageInstruction.doseAndRate.doseRange.low.code ^short = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
+* dosageInstruction.doseAndRate.doseRange.low.code from VSUnidadAsistencial (extensible)
+
+
+* dosageInstruction.doseAndRate.doseRange.high.value ^short = "Valor mínimo del rango"
+* dosageInstruction.doseAndRate.doseRange.high.unit ^short = "Unidad de la cantidad a administrar"
+			
+* dosageInstruction.doseAndRate.doseRange.high.system ^short = "Se definirá mas adelante "
+* dosageInstruction.doseAndRate.doseRange.high.code ^short = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
+* dosageInstruction.doseAndRate.doseRange.high.code from VSUnidadAsistencial (extensible)
+
+
+* dosageInstruction.doseAndRate.doseRange.low.value ^definition = "Valor mínimo del rango"
+* dosageInstruction.doseAndRate.doseRange.low.unit ^definition = "Unidad de la cantidad a administrar"
+			
+* dosageInstruction.doseAndRate.doseRange.low.system ^definition = "Se definirá mas adelante "
+* dosageInstruction.doseAndRate.doseRange.low.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
+		
+* dosageInstruction.doseAndRate.doseRange.high.value ^definition = "Valor mínimo del rango"
+* dosageInstruction.doseAndRate.doseRange.high.unit ^definition = "Unidad de la cantidad a administrar"
+			
+* dosageInstruction.doseAndRate.doseRange.high.system ^definition = "Se definirá mas adelante "
+* dosageInstruction.doseAndRate.doseRange.high.code ^definition = "Código para el tipo de forma del fármaco, este en principio no será validado estará dado en la Norma Técnica"
+*/		
+		
+>>>>>>> 333b626706a8bc74af47e759b7b6350a72cb9fb0
 		
 		
 * dispenseRequest 1..1
