@@ -13,7 +13,7 @@ status: draft
 date: 2021-07
 publisher: Ministerio de Salud, Chile / HL7 Chile 
 contact:
-  - name: Pablo Pizzaro
+  - name: Pablo Pizarro
     telecom:
       - system: email
         value: mailto:ppizarro.delgado@minsal.cl
