@@ -77,6 +77,7 @@ Usage: #inline
 * requester = Reference(https://api-receta.minsal.cl/v2/Practitioner/3253825513) "JUAN JOSÉ ORTEGA CALLEJAS"
 * authoredOn = "2021-08-15T17:31:00Z"
 * groupIdentifier.value = "z4fxajxh2kdkock9pvsp"
+* dosageInstruction.sequence = 1
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.period = 1
 * dosageInstruction.timing.repeat.periodUnit = #d
@@ -125,6 +126,7 @@ Usage: #inline
 
 * dosageInstruction.text = "Una tableta cada 12 hrs por 5 días"
 * dosageInstruction.patientInstruction = "Una tableta al desayuno y otro a la cena, por 5 días"
+* dosageInstruction.sequence = 1
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.period = 12
 
@@ -180,6 +182,7 @@ Usage: #inline
 * dispenseRequest.validityPeriod.end = "2021-09-22"
 * dispenseRequest.validityPeriod.start = "2021-08-22"
 * groupIdentifier.value = "a4om197ytt5njq4xyclo"
+* dosageInstruction.sequence = 1
 * dosageInstruction.route = $sct#26643006 "Vía Oral"
 * dosageInstruction.method = $sct#738995006 "Tragar (método de administración)"
 * dosageInstruction.timing.repeat.period = 1

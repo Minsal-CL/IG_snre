@@ -247,6 +247,8 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 //* dosageInstruction.doseAndRate.doseQuantity ^short = "test"
 * dosageInstruction.doseAndRate.dose[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
+* dosageInstruction.doseAndRate.dose[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
 //* dosageInstruction.doseAndRate.dose[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 //* dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
 /*	
@@ -380,6 +382,7 @@ Usage: #example
 
 * dosageInstruction.text = "Una o dos tabletas cada 4 a 6 horas según necesidad en base a la intensidad del dolor renal"
 * dosageInstruction.patientInstruction = "Una o dos tabletas cada 4 a 6 horas según necesidad en base a la intensidad del dolor renal"
+* dosageInstruction.sequence = 1
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.frequencyMax = 2
 * dosageInstruction.timing.repeat.period = 4
@@ -426,6 +429,7 @@ Usage: #example
 * requester = Reference(https://api-receta.minsal.cl/v2/Practitioner/3253825513) "JUAN JOSÉ ORTEGA CALLEJAS"
 * authoredOn = "2021-08-15T17:31:00Z"
 * groupIdentifier.value = "64e51a53-97d3-44dc-bbfe-1c8697697763"
+* dosageInstruction.sequence = 1
 * dosageInstruction.timing.repeat.frequency = 2
 * dosageInstruction.timing.repeat.period = 1
 * dosageInstruction.timing.repeat.periodUnit = #d

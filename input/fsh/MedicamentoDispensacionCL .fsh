@@ -37,7 +37,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * statusReasonCodeableConcept.coding.system ^short = "Identidad del sistema terminológico"
 * statusReasonCodeableConcept.coding.system ^definition = "Identidad del sistema termonológico que define los códigos "
 
-* statusReasonCodeableConcept.coding.code from VSRazonEstadoMD (extensible)
+* statusReasonCodeableConcept.coding.code from VSRazonEstadoDispensacion (extensible)
 * statusReasonCodeableConcept.coding.code ^short = "Código referente a la razon de porque no se entrego la dispensacion"
 * statusReasonCodeableConcept.coding.display ^short = "Glosa del código"
 * statusReasonCodeableConcept.coding.code ^definition = "Código referente a la razon de porque no se entrego la dispensacion"
@@ -457,6 +457,7 @@ Usage: #example
 * dosageInstruction.route = $sct#26643006 "Vía Oral"
 * dosageInstruction.method = $sct#738995006 "Tragar (método de administración)"
 
+* dosageInstruction.sequence = 1
 * dosageInstruction.timing.repeat.period = 1
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.periodUnit = #d
