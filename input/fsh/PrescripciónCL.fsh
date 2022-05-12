@@ -240,11 +240,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 */
 
 * dosageInstruction.doseAndRate.dose[x] only SimpleQuantity or Range
-//* dosageInstruction.doseAndRate.dose.SimpleQuantity.unit ^short = "asdf" 
-
-//* dosageInstruction.doseAndRate.doseRange ^short = "test"
-//* dosageInstruction.doseAndRate.doseRange MS
-//* dosageInstruction.doseAndRate.doseQuantity ^short = "test"
+* dosageInstruction.doseAndRate.dose[x] MS
 * dosageInstruction.doseAndRate.dose[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
 * dosageInstruction.doseAndRate.dose[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"

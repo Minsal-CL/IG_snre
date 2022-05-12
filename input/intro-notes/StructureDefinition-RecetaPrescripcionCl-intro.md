@@ -1,4 +1,12 @@
+## sdfsdfsdfsdfsdfsdfdfsdfsfsd
+## Esto es un mensaje para JORGE
+<br>
+<br>
 
+### No hacer trampas con el Rubik
+<br>
+
+Es importante hacer el rubik sin un tutorial
 This profile sets minimum expectations for the resource to record, search, and fetch pediatric weight for height and age observations associated with a patient. It is based on the [US Core Vital Signs Profile] and identifies the *additional* mandatory core elements, extensions, vocabularies and value sets which **SHALL** be present in the Observation resource when using this profile.
 
 **Example Usage Scenarios:**
@@ -22,6 +30,3 @@ The following are example usage scenarios for the US Core Pediatric Weight for H
 1.  a result value
 
 **Profile specific implementation guidance:**
-
-- See the implementation guidance section for the [US Core Vital Signs Profile]
-{% include link-list.md %}
