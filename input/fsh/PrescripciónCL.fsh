@@ -53,6 +53,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
       * high MS
         * value and unit and system and code MS
 */
+  * doseAndRate MS
 * dispenseRequest MS
   * validityPeriod MS
     * start and end MS
@@ -230,20 +231,13 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * dosageInstruction.method.coding.code ^short = "Códigos del Set de Valores definidos desde SNOMED-CT"
 * dosageInstruction.method.coding.code ^definition = "Código en SNOMED-CT correspondiente al método"
 * dosageInstruction.method.coding.code from VSMetodos (extensible)
-/*
-* deceased[x] only boolean or dateTime
-//* deceasedBoolean ^short = "a"
-//* deceasedDateTime ^short = "b"
-* deceased[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* deceased[x] ^type[=].extension.valueBoolean = true
-* deceased[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* deceased[x] ^type[=].extension.valueBoolean = true
-*/
 
 * dosageInstruction.doseAndRate.dose[x] only SimpleQuantity or Range
 * dosageInstruction.doseAndRate.dose[x] MS
+
 * dosageInstruction.doseAndRate.dose[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
+
 * dosageInstruction.doseAndRate.dose[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
 
@@ -340,7 +334,21 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 		
 
 
-
+Extension:   CantidadSimpleCL
+Id:          CantidadSimpleCL
+Title:       "Identificación del Contacto de un Paciente"
+Description: "Identificación de contacto de paciente en especial para casos en los cuales este actúa como Tutor Legal"
+* extension contains
+	valor 0..1 MS and
+	sistema 0..1 MS and 
+  codigo 0..1
+* extension[valor] ^short = "Cantidad de Medicamento a Administrar"
+* extension[valor].value[x] only decimal
+* extension[sistema] ^short = "NameSpace para el código a usar"
+* extension[sistema].value[x] only uri
+* extension[codigo] ^short = "Código para la Unidad de la medida"
+* extension[codigo].value[x] only Coding
+* extension[codigo].valueCoding from VSUnidadAsistencial (required)
  
 
 Instance : PrescripcionRecetaCL
