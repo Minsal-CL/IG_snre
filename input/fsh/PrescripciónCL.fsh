@@ -114,6 +114,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 
 //Identificador de Grupo
 * groupIdentifier 1..1
+* groupIdentifier.value 1..1
 * groupIdentifier ^short = "Número identificador de grupo que debe ser el mismo con el cual se identificaron los fármacos prescritos en el acto clínico. Se genera como un NanoId."
 * groupIdentifier ^definition = "Este número vincula el contenedor (RequestGroup) con todos los fármacos prescritos durante la atención del paciente (medicationRequest). Este hará el uso de Receta y el grupo de fármacos co misma identificación grupal. El formato debe ser NanoId."
 * groupIdentifier ^comment = "El elemento groupIdentifier de los recursos MedicationRequest generados durante el mismo acto clínico deberán coincidir con el que se genere en el recurso RequestGroup. Este identificador debe ser generado como un valor NanoId."
@@ -185,7 +186,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * dosageInstruction.patientInstruction ^short = "Instrucciones adicionales orientadas al paciente"
 * dosageInstruction.patientInstruction ^definition = "Instrucciones adicionales orientadas al paciente"
 
-* dosageInstruction.sequence 1..1 MS
+* dosageInstruction.sequence 0..1 MS
 * dosageInstruction.sequence ^short = "Secuencia de administracion del medicamento"
 * dosageInstruction.sequence ^definition = "Indica el orden en el que se deben aplicar o interpretar las instrucciones de dosificación."
 
@@ -299,6 +300,8 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * dispenseRequest.validityPeriod 1..1
 * dispenseRequest.validityPeriod ^short = "Periodo de validez de la Prescripción"
 * dispenseRequest.validityPeriod ^definition = "Periodo de validez de la Prescripción"
+* dispenseRequest.validityPeriod.start 1..1
+* dispenseRequest.validityPeriod.end 1..1
 * dispenseRequest.validityPeriod.start ^short = "Fecha de inicio de la validez de la prescripción. El formato es YYYY-MM-DD"
 * dispenseRequest.validityPeriod.end ^short = "Fecha de fin de la validez de la prescripción. El formato es YYYY-MM-DD"
 * dispenseRequest.validityPeriod.start ^definition = "Fecha de inicio de la validez de la prescripción. El formato es YYYY-MM-DD"
@@ -396,7 +399,7 @@ Usage: #example
 * dosageInstruction.doseAndRate.doseRange.low.unit = "Tableta"
 
 * dispenseRequest.validityPeriod.start = "2021-06-12"
-* dispenseRequest.validityPeriod.start = "2022-01-12"
+* dispenseRequest.validityPeriod.end = "2022-01-12"
 * dispenseRequest.quantity.value = 30
 
 * dispenseRequest.expectedSupplyDuration.system = "http://unitsofmeasure.org"

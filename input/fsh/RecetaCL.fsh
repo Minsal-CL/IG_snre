@@ -142,7 +142,7 @@ Usage: #inline
 
 
 * dispenseRequest.validityPeriod.start = "2021-06-12"
-* dispenseRequest.validityPeriod.start = "2022-01-12"
+* dispenseRequest.validityPeriod.end = "2022-01-12"
 * dispenseRequest.quantity.value = 10
 * dispenseRequest.expectedSupplyDuration.system = "http://unitsofmeasure.org"
 * dispenseRequest.expectedSupplyDuration.value = 5
