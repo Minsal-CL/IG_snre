@@ -4,13 +4,17 @@
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.cl.recetacl
-canonical: http://recetaelectronica.minsal.cl/gi-fhir
-version: 0.753 (Proceso de Ballot Pendiente) 
+canonical: https://rme.hl7chile.cl
+version: 0.753 
 name: RecetaCL
 title: Guía de Implementación Receta-CL
 status: draft
 date: 2021-07
-publisher: Ministerio de Salud, Chile / HL7 Chile 
+#publisher: Ministerio de Salud, Chile / HL7 Chile 
+publisher: 
+  name: HL7 Chile
+  url: http://hl7chile.cl
+  email: chair@hl7chile.cl
 contact:
   - name: Pablo Pizarro
     telecom:
