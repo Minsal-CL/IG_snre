@@ -3,50 +3,83 @@
 # │  supported properties, see:                                                                    │
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.cl.recetacl
-canonical: https://rme.hl7chile.cl
-version: 0.753 
-name: RecetaCL
-title: Guía de Implementación Receta-CL
+id: hl7.fhir.cl.corecl
+canonical: https://hl7chile.cl/fhir/ig/CoreCL
+version: 1.5.0 
+name: CoreCL-DEV
+
+title: Guía de Implementación Core-CL FHIR R4, (Versión Evolutiva)
 status: draft
-date: 2021-07
-#publisher: Ministerio de Salud, Chile / HL7 Chile 
+date: 2022-05
 publisher: 
   name: HL7 Chile
   url: http://hl7chile.cl
   email: chair@hl7chile.cl
-
-
-description: Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional. Esta Guía se encuentra aún en proceso de creación por lo que esta versión esta sujeta a observaciones y cambios. Aquellos implementadores que tengan acceso a ella se les sugiere desarrollar comentarios para su mejora)
-#jurisdiction: urn:iso:std:iso:3166#CL "Chile"
+       
+description: "Guía de Implementación Versión de Desarrollo Sobre STU 1, para los perfiles Core que se van a requerir a nivel de desarrollo Nacional para Sistemas que Intercambien datos en estandar FHIR-R4"
+jurisdiction: urn:iso:std:iso:3166#CL "Chile"
+copyright: "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."
 license: CC0-1.0
 fhirVersion: 4.0.1
 
+
+pages: 
+  index.md:
+    title: Inicio
+  Aspectos-Generales.md:
+    title: Generalidades
+  Alcances-Objetivos.md:
+    title: Objetivos
+  Consolidado-Operaciones.md:
+    title: Operaciones Básicas
+  Extensiones.md:
+  Set-De-Validacion-ValueSets.md:
+    title: CodeSystems/ValueSets
+  Perfiles.md: 
+  Set-Ejemplos.md:
+    title: Ejemplos
+  Todas-Descargas.md:
+    title: Descargas
+
 parameters:
   apply-publisher: true
+  no-broken-links: true
   apply-contact: true
   show-inherited-invariants: false
-copyrightYear: 2020+
-releaseLabel: ci-build
+  excludettl: true
+  generate: genExamples
+
+copyrightyear: '2021+'
+releaselabel: CI Build
+
+
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu: 
+
+menu:
   Inicio: index.html
-  Objetivos : Alcances-Objetivos.html
-  Actores y Casos de Uso: casos.html
-  Operaciones y Terminologías: operaciones.html
-  Resumen de Artefactos:
-    Artefactos: artifacts.html
+  Objetivos: Alcances-Objetivos.html
+  Generalidades: Aspectos-Generales.html
+  Operaciones: Consolidado-Operaciones.html
+  Artefactos:
+   Perfiles: Perfiles.html
+   Extensiones: Extensiones.html
+   Valuesets: Set-De-Validacion-ValueSets.html
   Perfiles: 
-    Prescripción: StructureDefinition-RecetaPrescripcionCl.html
-    Dispensación: StructureDefinition-DispensacionMedicamentoCl.html
-    Receta: StructureDefinition-RecetaCl.html
-  
-    
-  Ejemplos:
-    Ejemplo Prescripción: StructureDefinition-RecetaPrescripcionCl-examples.html
-    Ejemplo Dispensación: StructureDefinition-DispensacionMedicamentoCl-examples.html
-    Ejemplo de Receta: StructureDefinition-RecetaCl-examples.html
-   
+    Paciente: StructureDefinition-CorePacienteCl.html
+    Prestador: StructureDefinition-CorePrestadorCl.html
+    Especialidad Prestador: StructureDefinition-CoreEspecialidadCl.html
+    Organización: StructureDefinition-CoreOrganizacionCl.html
+    Medicamento: StructureDefinition-CoreMedicamentoCl.html
+    Localización: StructureDefinition-CoreLocalizacionCl.html
+    Provenance: StructureDefinition-ProvenanceCl.html
+    Encuentro: StructureDefinition-EncuetroCL.html
+    Inmunización: StructureDefinition-ImmunizationCL.html
+    Documento: StructureDefinition-DocumentoCl.html
+    Auditoría: StructureDefinition-AuditEventCl.html
+    Bundle: StructureDefinition-BundleCl.html
+  Ejemplos: Set-Ejemplos.html
+  Descargas: Todas-Descargas.html
+ 

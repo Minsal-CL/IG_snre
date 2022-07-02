@@ -1,132 +1,70 @@
-### Disclaimer
+### Versión de Desarrollo
 <br>
 
-Esta guía se encuentra en **fase de evolución** por lo que esta sujeta a cambios previo a alcanzar nivel normativo. El proceso de apertura a implementadores será usado como primer balotage con el fin de recopilar de parte de éstos actores comentarios, sugerencias u observaciones para robustecer la GI previa Versión 1.0
-
-### Trasfondo
+Esta Guía es la continuación de la versión 1.0.0 STU baloteada en diciembre del 2021, y agrega nuevos perfiles, permitiendo ir mejorando las cacacidades de la CORE en función de las nececidades del medio.
+### Cómo leer esta Guía
 <br>
 
-Este document presenta los servicios que deberán estar contenidos en los desarrollos que permitan la interoperabilidad de los distintos sistemas de **Prescripción** y **Dispensación** con el **Sistema Nacional de Receta Electrónica**. Así mismo, describe cómo se usan los recursos FHIR para cada uno de los componentes del desarrollo. Esta guía presenta todos los artefactos y perfiles necesarios para conseguir los objetivos de interoperabilidad en base al estándar HL7 FHIR R4.
-<br>
-<br>
-
-###	 Colaboraciones en el Proyecto
+Esta Guía sigue un formato especificado para **FHIR R4**, y se divide en varias paginas que proporcianan información **General del Core** y la explicacipon técnica de los **Artefactos Generados**. El menú se encuentra en la parte superior en la *barra de menú*.
 <br>
 
-Este es un proyecto impulsado por **MINSAL** con la colaboración de **HL7 Chile**.
-<br>
-<br>
-
-###	 Audiencia de esta Guía
-<br>
-
-Esta Guía de Implementación está dirigida a los desarrolladores de las soluciones informáticas asociadas al funcionamiento del **Sistema Nacional de Receta Electrónica** mediante interoperabilidad, así como a los profesionales que deseen comprender los procesos o funcionalidades involucrados.
-<br>
-<br>
-
-###	 Aspectos Generales de esta Guía 
-<br>
-
-A continuación, se describe el funcionamiento general del proceso de la receta, con las funcionalidades que deberán estar contenidas en el desarrollo solicitado. Se detalla el modelo, componentes, servicios y aplicaciones que permiten abarcar los diferentes escenarios que se presenten, de modo que esta solución tenga un alcance nacional, tanto público como privado.
-<br>
-<br>
-
-####	Flujo General de Funcionamiento
-<br>
-
-El proceso del sistema se describe en la siguiente imagen: 
+* [Home](index.html): Provee la introducción acerca de esta guía.
+* [Objetivos](Alcances-Objetivos.html): Describe los objetivos estratégicos de HL7, HL7 Internacional y el como esta guía se engancha con los objetivos estratégicos nacionales y organizacionales.
+* [Generalidades](Aspectos-Generales.html): Se especifican algunos conceptos importantes para poder comprender la lectura de los artefactos con el fin de hacer uso de la guía con objetivos de implementación
+* Operaciones: Define las operaciones más usadas para el intercambo, manejo, consulta, actualización, etc. de Recursos Generados en un servidor.
+* Artefactos: Estas páginas proveen descripciones detalladas y definiciones formales para los artefectos FHIR definidos en la guía.
+    * [Perfiles](Perfiles.html): Descripción de los perfiles Core generados para Chile
+    * [Extensiones](Extensiones.html): Descripción de todas las extensiones creadas para satisfacer las necesidades nacionales para los perfiles creados
+    * [ValueSets](Set-De-Validacion-ValueSets.html): Descripción de los sets de valores creados para poder hacer uso dentro de las necesidades locales de los perfiles creados.
+* [Ejemplos](Set-Ejemplos.html): Listado de ejemplos descritos a lo largo de la guía
+* [Descargas](Todas-Descargas.html): Schematrones para descarga local 
 <br>
 <br>
 
 
-<div align="center">
-  <img src="Proceso_Receta.png" width="100%"> 
-  <p>Esquema General del Proceso de Receta Electrónica</p>
-</div>
-
+### Perfiles de la Guía
 <br>
 
-El proyecto abarca desde la prescripción médica hasta el momento de la dispensación en una farmacia. La prescripción y la dispensación pueden generarse en diferentes ámbitos. 
-
-*Ejemplos:* Atención clínica en un establecimiento público y dispensación en farmacia comunitaria, atención clínica en un establecimiento privado y dispensación en farmacia privada.
-
-El funcionamiento genérico con sus funciones sería el siguiente:
-
-*Emisión de Receta y Registro en Repositorio:* El prescriptor visualiza los datos administrativos de la receta, como los de identificación de paciente, prestador e institución (traídos automáticamente por el sistema). El Ministerio de Salud dispondrá de una serie de recursos para la validación de los datos mencionados.
-El clínico ingresa los datos de prescripción, como el fármaco recetado, potencia, dosis. Una vez generado el documento clínico, este es enviado al repositorio centralizado de receta.
-
-*Dispensación de Receta Electrónica:* Cada paciente, desde su aplicación móvil y/o correo electrónico, podrá disponer de las recetas extendidas a su nombre o de algún tercero bajo autorización. El ministerio de salud dispondrá de un servicio que permitirá leer, mediante código de barra, el folio de la receta, para poder obtener la información de la receta o el documento mismo desde el repositorio central. La farmacia deberá registrar el o los medicamentos dispensados, tanto para producto commercial como genérico o bioequivalente. El detalle será tratado más adelante.
-<br>
+Cada perfil define los elementos obligatorios mínimos, extensiones y requerimientos terminológicos que **DEBEN** cumplirse. Para cada perfil, estos requerimientos se declaran con un sencillo resumen narrativo.
 <br>
 
-####	Procesos
-<br>
+Tambien se presenta una tabla jerárquica con una vista lógica del contenido como *Snapshot* y *Differential* . Para cada perfil también expresamos el conjunto de interacciones FHIR Restful asociadas (búsquedas, operaciones u otras interacciones)
 
-El proyecto se separa en básicamente tres procesos, los cuales son enumerados continuación:
-<br>
-
-#####	Proceso de Prescripción
-Este proceso se desarrolla en el momento en que un prescriptor genera una receta. Dentro de
-los pasos fundamentales de este caso se encuentran:
-
-* Validación de Prescriptor y Paciente
-* Validación Terminológica de los fármacos a recetar
-* Registro de prescripción en repositorio de receta
-<br>
-
-#####	Proceso de dispensación
-Este proceso se desarrolla en el momento en que el dispensador recibe una solicitud de dispensación de un fármaco por medio de una Receta Electrónica. Los pasos fundamentales son los siguientes:
-* Lectura del folio
-* Validación del dispensador
-* Consulta al repositorio por Receta
-* Revisión de estado de la Receta
-* Notificación de dispensación al repositorio
-<br>
-
-#####	Proceso de cambio de estado
-Este proceso describe los cambios de estado que sufre una receta durante el ciclo de prescripción y dispensación de esta. Estos cambios de estado pueden deberse a múltiples razones, las cuales se especifican en los Subset de valores correspondientes a los recursos estimados para el proyecto. Los pasos fundamentales son los siguientes:
-* Validación de usuario
-* Consulta y recepción de Receta
-* Cambio de estado
-* Actualización de estado en repositorio
+* [Paciente_CL](StructureDefinition-CorePacienteCl.html)
+* [Prestador_CL](StructureDefinition-CorePrestadorCl.html)
+* [Especialidad_Prestador_CL](StructureDefinition-CoreEspecialidadCl.html)
+* [Organización_CL](StructureDefinition-CoreOrganizacionCl.html)
+* [Medicamento_CL](StructureDefinition-CoreMedicamentoCl.html) 
+* [Localización_CL](StructureDefinition-CoreLocalizacionCl.html)
+* [Provenance_CL](StructureDefinition-ProvenanceCl.html)
+* [Auditoría_CL](StructureDefinition-AuditEventCl.html)
+* [Encuetro_CL](StructureDefinition-EncuetroCL.html)
+* [Inmunizacion_CL](StructureDefinition-ImmunizationCL.html)
+* [Documento_CL](StructureDefinition-DocumentoCl.html)
+* [Bundle_CL](StructureDefinition-BundleCl.html)
 <br>
 <br>
 
-### Contenido de la Guía
+### Requerimientos de Conformidad
 <br>
+Los requerimientos de conformidad describen las expectativas sobre la funcionalidad de las aplicaciones servidor/cliente, identificando los perfiles específicos y las interacciones que deben implementar. Los perfiles individuales identifican los requerimientos estructurales y terminológicos. Las definiciones de parámetros de búsqueda y operaciones especifican cómo son implementados por los servidores.
+<br>
+<br>
+<br> 
 
-Esta Guía se estructura en base al menú de la parte superior de la siguiente manera:
-<br>
+**Autores Primarios: Jorge Mansilla (HL7 Chile), César Galindo (HL7 Chile), Pablo Pizarro (MINSAL), Nicolás Soto (MINSAL)**
 
-* [Home](index.html): Página de Bienvenida a la Guía.
-* [Objetivos](Alcances-Objetivos.html): Información General sobre los objetivos de esta Guía
-* [Actores y Casos de Uso](casos.html): Información detallada de los casos de uso, sus actores, y la secuencia de transacciones.
-* [Operaciones y Terminologías](operaciones.html): Información general de las operaciones básicas que se ejecutan para el manejo de datos entre un servicio FHIR y los clientes.
-* [Resumen de Artefactos](artifacts.html): Describe todos los artefactos que son parte de esta GI, separados en Estructura de Perfiles, Extensiones, Value Sets y Ejemplos. Dado que esta Guía hereda su base Canónica desde el Core-CL, algunos de los artefactos descritos son parte de esa Guía
-* Perfiles: Este menú despliega el listado de los 3 perfiles generados para esta GI
-  * [Prescripción](StructureDefinition-RecetaPrescripcionCl.html): Perfil del Recurso para la prescripción de un fármaco
-  * [Dispensación](StructureDefinition-DispensacionMedicamentoCl.html): Perfil de Recurso para la dispensación de fármacos desde puntos de despacho
-  * [Receta](StructureDefinition-RecetaCl.html): Perfil de recurso que permite agrupar diferentes prescripciones en formato de una única receta
-* Ejemplos: Listado de ejemplos desarrollados para cada Perfil generado para esta GI
-<br>
-<br>
+Autores Secundarios: Diego Olea (MINSAL), Franco Ulloa (MINSAL)
 
-###	 Autores y Colaboradores
-<br>
 
-* Autores de la Guía: **Pablo Pizarro (MINSAL)**, **Nicolás Soto (MINSAL)**, **César Galindo (HL7 Chile)**, **Jorge Mansilla (HL7 Chile)**
-* Colaboradores: *Diego Olea (MINSAL)*, *Franco Ulloa (MINSAL)* *Fernanda Canales (MINSAL)*, *Diego Kaminker (HL7 Iternacional)*
-<br>
-<br>
+
+
 ### Recursos a Disposición
-
-<br>
-
-[Ministerio de Salud de Chile](http://www.minsal.cl)
+[Ministerio de Salud de Chile] (http://www.minsal.cl)
 
 [Capítulo Chileno de HL7, HL7 Chile](http://hl7chile.cl)
 
-[HL7 Internacional](http://hl7.org)
+HL7 Internacional (http://hl7.org)
 
 [FHIR R4](http://hl7.org/fhir/)
 
@@ -137,4 +75,3 @@ Esta Guía se estructura en base al menú de la parte superior de la siguiente m
 [SUSHI code repository](https://github.com/FHIR/sushi)
 
 [Zulip](https://chat.fhir.org) channel: #shorthand
-
