@@ -1,16 +1,11 @@
-### Que se Busca
-
-Los perfiles FHIR básicos de Chile, están diseñados para ser el conjunto elemental de requisitos y reglas para la implementación de FHIR en nuestro país. Todas las guías de implementación generadas en Chile. **DEBERÁN** utilizar los perfiles del Core-CL o indicar explícitamente por qué no pueden utilizarlos, siempre en el caso que se deban usar recursos con perfiles ya diseñados en esta Guía. A lo largo del desarrollo del Core-CL, los implementadores, el gobierno y la comunidad clínica han aportado y seguirán aportando requerimientos para irlo complementando aún más. Si bien este Core nace de las necesidades de implementación del proyecto de Receta Electrónica del MINSAL, la idea es irlo complementando y haciendo más robusto para avanzar hacia el CORE para una Historia Clínica Compartida y sus casos de uso específicos.
-<br>
-<br>
-### Futuro para la Guía
-
-Los pasos a seguir serán los siguientes:
+### Objetivo General
 <br>
 
-* Seguir Generando nuevos contenidos para la CORE
-* Generar Ballot para las indicaciones
-* Llevar la Guía a una version normativa
-* Realizar una Conectatón local 
+Otorgar las directrices necesarias para desarrollar y asegurar la interoperabilidad de los distintos sistemas informáticos asociados a atención en salud con el sistema nacional de **Receta Electrónica de MINSAL**, basado en el estándar internacional **HL7 FHIR-R4**.
 
+### Objetivos específicos
+<br>
 
+* Otorgar las herramientas necesarias para generar desarrollos informáticos en base al estándar HL7 FHIR.
+* Describir los distintos perfiles de usuario del sistema y los recursos asociados a cada uno.
+* Ejemplificar los distintos casos de uso asociados al sistema nacional de receta electrónica.
