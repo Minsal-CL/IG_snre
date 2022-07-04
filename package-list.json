@@ -1,5 +1,5 @@
 {
-    "package-id": "hl7.fhir.cl.recetacl",
+    "package-id": "hl7.fhir.cl.recetachile",
     "title": "CL Receta",
     "canonical": "https://rme.hl7chile.cl/",
     "introduction": "El Core FHIR Chileno nace de la necesidad de contar con una base de recursos FHIR para el desarrollo de interoperabilidad en diferentes casos de uso. Esta iniciativa nace específicamente de las necesidades de MINSAL para porder integrar información desde los casos de uso de Receta Electónica, desde donde HL7 Chile ve el espacio para levantar el Core Nacional",

@@ -3,7 +3,7 @@
 # │  supported properties, see:                                                                    │
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.cl.recetacl
+id: hl7.fhir.cl.recetachile
 canonical: https://rme.hl7chile.cl
 version: 0.9 
 name: RecetaCL
