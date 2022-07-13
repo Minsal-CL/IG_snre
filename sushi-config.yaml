@@ -26,8 +26,16 @@ parameters:
   apply-publisher: true
   apply-contact: true
   show-inherited-invariants: false
+  usage-stats-opt-out: true
 copyrightYear: 2020+
 releaseLabel: ci-build
+
+#dependencies:
+#  hl7.fhir.cl.corecl: 
+#    id: RecetaCL
+#    uri: https://build.fhir.org/ig/HL7Chile/CLReceta/
+#    version: 0.9
+
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
