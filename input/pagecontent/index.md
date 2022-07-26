@@ -116,9 +116,9 @@ Esta guía se implementación estructura en base al menú de la parte superior d
 
 - Autores de la Guía: 
   - **Pablo Pizarro (MINSAL)** [ppizarro.delgado@minsal.cl](mailto:ppizarro.delgado@minsal.cl)
-  - **Nicolás Soto (MINSAL)** nicolas.soto@minsal.cl
-  - **César Galindo (HL7 Chile)** cgalindo@uv.cl
-  - **Jorge Mansilla (HL7 Chile)** jorgemansillas@gmail.com
+  - **Nicolás Soto (MINSAL)** [nicolas.soto@minsal.cl](mailto:nicolas.soto@minsal.cl)
+  - **César Galindo (HL7 Chile)** [cgalindo@uv.cl](mailto:cgalindo@uv.cl)
+  - **Jorge Mansilla (HL7 Chile)** [jorgemansillas@gmail.com](mailto:jorgemansillas@gmail.com)
   
 - Colaboradores:
   - Diego Olea (MINSAL)
@@ -127,23 +127,14 @@ Esta guía se implementación estructura en base al menú de la parte superior d
   - Diego Kaminker (HL7 Iternacional)
 <br>
 <br>
+
 ### Enlaces y referencias
-
-<br>
-
-[Ministerio de Salud de Chile](http://www.minsal.cl)
-
-[Capítulo Chileno de HL7, HL7 Chile](http://hl7chile.cl)
-
-[HL7 Internacional](http://hl7.org)
-
-[FHIR R4](http://hl7.org/fhir/)
-
-[FHIR Shorthand Documentation](https://build.fhir.org/ig/HL7/fhir-shorthand) 
-
-[FHIR Shorthand documentation code repository](https://github.com/HL7/fhir-shorthand)
-
-[SUSHI code repository](https://github.com/FHIR/sushi)
-
-[Zulip](https://chat.fhir.org) channel: #shorthand
+- [Ministerio de Salud de Chile](http://www.minsal.cl)
+- [Capítulo Chileno de HL7, HL7 Chile](http://hl7chile.cl)
+- [HL7 Internacional](http://hl7.org)
+- [FHIR R4](http://hl7.org/fhir/)
+- [FHIR Shorthand Documentation](https://build.fhir.org/ig/HL7/fhir-shorthand) 
+- [FHIR Shorthand documentation code repository](https://github.com/HL7/fhir-shorthand)
+- [SUSHI code repository](https://github.com/FHIR/sushi)
+- [Zulip](https://chat.fhir.org) channel: #shorthand
 
