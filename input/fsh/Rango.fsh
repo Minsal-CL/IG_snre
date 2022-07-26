@@ -1,7 +1,7 @@
 Profile: RangeCL
 Parent: Range
 Id: RangeCL
-Title: "Rango para cantidad de medicamentos en Receta"
+Title: "Rango para dispensación de medicamentos"
 Description: "Definición para un rango de valores y su contenido para el consumo de un fármaco según prescripción"
 * ^version = "1.0.0"
 * ^publisher = "HL7 Chile"

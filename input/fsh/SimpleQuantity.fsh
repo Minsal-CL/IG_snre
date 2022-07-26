@@ -15,8 +15,8 @@ Description: "Definición para una unidad simple y su contenido para el consumo 
 * unit ^short = "Valor de la Cantidad a Administrar"
 * unit ^definition = "Valor de la Cantidad a Administrar" 
 * system 0..1 MS
-* system ^short  = "NameSpace del sistema de codificacion" 
-* system ^short  = "NameSpace del sistema de codificacion, se utilizará el CS creado para la Unidad Asistencial Chilena"
+* system ^short  = "NameSpace del sistema de codificación" 
+* system ^short  = "NameSpace del sistema de codificación, se utilizará el CS creado para la Unidad Asistencial Chilena"
 
 * code 0..1 MS
 * code ^short = "Código de la Unidad usada para definir el valor"

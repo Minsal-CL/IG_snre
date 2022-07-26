@@ -1,8 +1,8 @@
 ### Operaciones Básicas basadas en Métodos 
 
-Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHIR se especifican desde el mismo estándar  través de [Resumen de operaciones](https://www.hl7.org/fhir/http.html#summary) 
+Las Operaciones que se pueden ejecutar como base en el manejo de recursos en FHIR se especifican desde el mismo estándar a través de [Resumen de operaciones](https://www.hl7.org/fhir/http.html#summary) 
 
- Nota: se debe considerar que todos los requests pueden incluir un opcional Accept como cabecera que indica el formato que se debe usar como respuesta (esto incluso se aplica a  DELETE dado que una OperationOutcome debe ser devuelta).
+ Nota: se debe considerar que todos los *requests* pueden incluir un opcional *Accept* como cabecera que indica el formato que se debe usar como respuesta (esto incluso se aplica a  DELETE dado que una OperationOutcome debe ser devuelta).
 
 <table class="grid">
 
@@ -339,7 +339,7 @@ Notas:
 *   N/A = no Presente, R = Requerido, O = opcional
 *   Para las operaciones definidas en todos los recursos, incluyendo acceso directo al meta elemento, ver  [Resource Operations](resource-operations.html)
 
-La aplicación específica de cada parametro, para cada una de las operaciones, dependen de cada recurso, en en los cuales el estándar especifica cuales se encuentran definidos para cada operción.
+La aplicación específica de cada parámetro, para cada una de las operaciones, dependen de cada recurso, en los cuales el estándar especifica cuales se encuentran definidos para cada operación.
 
 <table class="grid">
 
@@ -597,28 +597,26 @@ La aplicación específica de cada parametro, para cada una de las operaciones, 
 
 </table>
 
-Not: Esta Tabla lista los códigos de estado, pero otros mas pueden ser descrito por la especificación de HTTP. Códgos adicionales son comunmente errores de servidor y de protocolos de autentificación.
+Nota: Esta Tabla lista los códigos de estado, pero otros más pueden ser descrito por la especificación de HTTP. Códigos adicionales son comúnmente errores de servidor y de protocolos de autentificación.
 
 El listado de recursos se define en:
 
-[sitio de recursos de FHIR] (https://hl7.org/FHIR/resourcelist.html)
+[sitio de recursos de FHIR](https://hl7.org/FHIR/resourcelist.html)
 
 #### Búsquedas Soportadas
 
-Los métodos y parámetros para la consulta de recursos se describen a continuación y se basan en la búsqueda sobre recurso Paciente:
-
-1.  En este caso los servidores **DEBEN** soportar buscar un recurso Patient usando el parámetro de búsqueda **[_id]:
+Los métodos y parámetros para la consulta de recursos se describen a continuación y se basan en la búsqueda sobre el recurso Paciente:
+1.  En este caso los servidores **DEBEN** soportar buscar un recurso *Patient* usando el parámetro de búsqueda **[_id]:
 
     GET [base]/Patient[id]
 
     Ejemplos
 
     1.  GET [base]/Patient/1032702
-    2.  GET [base]/Patient?_id=1032702
+    2.  GET [base]/Patient?id=1032702
 
-Lo anterior es aplicable para un recurso ya creado el cual se almacena con una identificación generada en ese momento    
-
-2.  Los servidores **DEBEN** soportar buscar un recurso Patient mediante un identificador como el número RUN de la Cédula de Identidad Nacional por ejemplo, utilizando el parámetro de búsqueda **[identifier]:
+Lo anterior es aplicable para un recurso ya creado, el cual se almacena con una identificación generada en el mismo momento de su generación.
+2.  Los servidores **DEBEN** soportar buscar un recurso *Patient* mediante un identificador como el número RUN de la Cédula de Identidad Nacional por ejemplo, utilizando el parámetro de búsqueda **[identifier]:
 
     GET [base]/Patient?identifier={system|}[code]
 
@@ -653,20 +651,20 @@ Lo anterior es aplicable para un recurso ya creado el cual se almacena con una i
 
 #### Agregando recursos (creando recursos para ser almacenados)
 
-POST [base]/Patient. En el Body, un recurso paciente compatible con el/los perfiles definido en el Core-Cl (para este caso sería el perfil Paciente-CL)
+POST [base]/Patient. En el *Body*, un recurso paciente compatible con el/los perfiles definidos en la guía de implementación Core-Cl (para este caso sería el perfil Paciente-CL)
 
-### Terminologia
+### Terminología
 
 #### Vocabularios
 
-_Definición de Medicamentos:_ Se utiliza la Terminología de Fármacos Chilena (TFC), expuesta por medio de un servicio de terminología Local o desde MINSAL
+*Definición de Medicamentos*: Se utiliza la Terminología Farmacéutica Chilena (TFC), expuesta por medio de un servicio de terminología Local o desde MINSAL.
 
-_Profesionales de la Salud:_ desplegados a través de la Super Intendencia y el sistema Midas, este registro se expone por medio del recurso  FHIR Practitioner, y la especialidad por medio del recurso PractitionerRole.
+Profesionales de la Salud: desplegados a través de la Superintendencia de Salud y el sistema Midas, este registro se expone por medio del recurso FHIR *Practitioner*, y su profesión por medio del recurso *PractitionerRole*.
 
-_Establecimientos de Salud_: utiliza su identificación por medio de código DEIS, y su registro se expone a través de los recursos FHIR Location y Organization, según corresponda.
+*Establecimientos de Salud*: utiliza su identificación por medio de código DEIS, y su registro se expone a través de los recursos FHIR *Location* y *Organization*, según corresponda.
 
-_Farmacias_: utiliza el registro de farmacias Farmanet y se expone como los recursos FHIR Location y Organization.
+*Farmacias*: utiliza el registro de farmacias Farmanet y se expone como los recursos FHIR *Location* y *Organization*.
 
-_Pacientes:_ Se identifican por medio de su número identificador que puede ser cualquier tipo de documento, especificado en las tablas de HL7 V3 relacionados con identificadores de personas.
+*Pacientes*: Se identifican por medio de su número identificador que puede ser cualquier tipo de documento, especificado en las tablas de HL7 V3 relacionados con identificadores de personas.
 
-_Tablas Maestras específicas:_ se incluyen las de comunas, provincias y regiones, entre otras pertenecientes a la normativa Nacional. Estas son expuestas en la IG y deben ser en muchos casos levantadas a nivel local.
+*Tablas Maestras específicas*: se incluyen las de comunas, provincias y regiones, entre otras pertenecientes a la normativa Nacional. Estas son expuestas en la GI y deben ser en muchos casos levantadas a nivel local.

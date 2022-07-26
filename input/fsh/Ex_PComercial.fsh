@@ -1,6 +1,7 @@
 Extension: Prod_Comercial
 Id: Prod-Comercial
-Description: "Recomendación de Medicamento en Producto Comercial"
+Title: "Identificación de un medicamento bajo su marca comercial"
+Description: "Indicación de un Medicamento bajo su Marca Comercial"
 
 
 * extension 0..0

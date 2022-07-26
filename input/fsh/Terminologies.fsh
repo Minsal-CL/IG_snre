@@ -1,26 +1,7 @@
-Alias: $v2-0136 = http://terminology.hl7.org/ValueSet/v2-0136
-
-ValueSet: VSStatusReason
-Id: VSStatusReason
-Title: "Códigos Razón Cambio Estado Prescripción."
-Description: "Códigos que indican la razón por la cual una Prescripción ha cambiado su estado"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2022-01-25T00:00:00-03:00"
-* ^contact.name = "HL7 Chile"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "chair@hl7chile.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* codes from system CSStatusReason
 
 
-
-
-CodeSystem: CSStatusReason
-Id: CSStatusReason
-Title: "CodeSystem Razón Cambio Estado Prescripción."
-Description: "Códidigos de CodeSystema que indican la razón por la cual una Prescripción ha cambiado su estado"
+////////////////////////////////////////////
+RuleSet: MetadataVSCS
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -28,6 +9,21 @@ Description: "Códidigos de CodeSystema que indican la razón por la cual una Pr
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+//////////////////////////////////////////
+
+
+ValueSet: VSStatusReason
+Id: VSStatusReason
+Title: "Razón del cambio de estado (Prescripción)"
+Description: "Códigos que indican la razón por la cual una Prescripción ha cambiado su estado"
+* insert MetadataVSCS
+* codes from system CSStatusReason
+
+CodeSystem: CSStatusReason
+Id: CSStatusReason
+Title: "Razón del cambio de estado (Prescripción)"
+Description: "Códigos que indican la razón por la cual una Prescripción ha cambiado su estado"
+* insert MetadataVSCS
 
 * #altchoice    "Primero probar otro tratamiento" "Esta terapia se ha ordenado como respaldo a una terapia preferida. Esta orden será liberada cuando y si, la terapia preferida no tiene éxito"
 * #clarif	"La prescripción requiere una aclaración" "Se requiere una aclaración antes de que la orden pueda ser realizada"
@@ -47,28 +43,16 @@ Description: "Códidigos de CodeSystema que indican la razón por la cual una Pr
 
 ValueSet: VSCodificacionCategoria
 Id: VSCodificacionCategoria 
-Description: "Codificación del estado de una prescripción"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2022-01-18T00:00:00-03:00"
-* ^contact.name = "HL7 Chile"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "chair@hl7chile.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
+Description: "Estado de una prescripción"
+Title: "Codificación del estado de una prescripción"
+* insert MetadataVSCS
 * include codes from system CSCodificacionCategoria
 
 CodeSystem: CSCodificacionCategoria
 Id: CSCodificacionCategoria
-Title: "Categoría de la Prescripción"
-Description: "Categoría de la prescripción. Estos códigos son la traducción de la codificación de FHIR"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2022-01-18T00:00:00-03:00"
-* ^contact.name = "HL7 Chile"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "chair@hl7chile.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+Description: "Estado de una prescripción"
+Title: "Codificación del estado de una prescripción"
+* insert MetadataVSCS
 
 * #inpatient    "Hospitalizado" "Incluye solicitudes de medicamentos para ser administrados o consumidos en contexto de hospitalización o cuidados primarios"
 * #outpatient   "Ambulatorio" "Incluye solicitudes de medicamentos para ser administrados o consumidos en el contexto ambulatorio (por ejemplo, departamento de urgencia, clínica ambulatoria, cirugía ambulatoria, oficina del doctor)"
@@ -77,29 +61,16 @@ Description: "Categoría de la prescripción. Estos códigos son la traducción 
 
 ValueSet: VSCodificacionPatron
 Id: VSCodificacionPatron
-Title: "Patron de la Prescripción"
-Description: "Codificacion el patrón de administración de una prescripción"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2022-01-18T00:00:00-03:00"
-* ^contact.name = "HL7 Chile"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "chair@hl7chile.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
+Title: "Patrón de la Prescripción"
+Description: "Codificación del patrón de administración de una prescripción"
+* insert MetadataVSCS
 * include codes from system CSCodificacionPatron
 
 CodeSystem: CSCodificacionPatron
 Id: CSCodificacionPatron
-Title: "Patron de la Prescripción"
-Description: "Codificacion el patrón de administración de una prescripción. Estos códigos son la traducción de la codificación FHIR "
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2022-01-18T00:00:00-03:00"
-* ^contact.name = "HL7 Chile"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "chair@hl7chile.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+Title: "Patrón de la Prescripción"
+Description: "Codificación del patrón de administración de una prescripción"
+* insert MetadataVSCS
 
 * #continuous	"Terapia continua a largo plazo" "Una medicación que se espera sea continuada más allá de la presente orden y que el paciente debe tomar a menos que explicitamente se le indique lo contrario"
 * #acute	"Terapia a corto plazo (aguda)" "Una medicación que se espera que el paciente consuma solo por la duración de la presente orden y no se espera que sea renovada"
@@ -107,28 +78,16 @@ Description: "Codificacion el patrón de administración de una prescripción. E
 
 ValueSet: VSRazonEstadoDispensacion
 Id: VSRazonEstadoDispensacion
-Description: "Codificación de la razón del cambio de estado de una Dispensacion"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2022-01-18T00:00:00-03:00"
-* ^contact.name = "HL7 Chile"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "chair@hl7chile.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
+Title: "Razón del cambio de estado (Dispensación)"
+Description: "Códigos que indican la razón por la cual una Dispensación ha cambiado su estado"
+* insert MetadataVSCS
 * include codes from system CSRazonEstadoDispensacion
 
 CodeSystem: CSRazonEstadoDispensacion
 Id: CSRazonEstadoDispensacion
-Title: "Razón de Estado"
-Description: "Codificación de la razón del cambio de estado de una Dispensacion. Estos códigos son la traducción oficial de la codificación de FHIR"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2022-01-18T00:00:00-03:00"
-* ^contact.name = "HL7 Chile"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "chair@hl7chile.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+Title: "Razón del cambio de estado (Dispensación)"
+Description: "Códigos que indican la razón por la cual una Dispensación ha cambiado su estado"
+* insert MetadataVSCS
 
 * #frr01	"Orden detenida"    "Esta orden fue detenida por el prescriptor pero no necesariamente por medios electrónicos. Ejemplos: Detención verbal, un fax, etc."
 * #frr02	"Orden caducada"    "Orden no fue completada dentro de un periodo razonable de tiempo, y podría no estar vigente."
@@ -155,27 +114,14 @@ ValueSet: VSUnidadAsistencial
 Id: VSUnidadAsistencial
 Title: "Unidad Asistencial"
 Description: "Unidad para dosificar"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2022-01-18T00:00:00-03:00"
-* ^contact.name = "HL7 Chile"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "chair@hl7chile.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
+* insert MetadataVSCS
 * include codes from system CSUnidadAsistencial
 
 CodeSystem: CSUnidadAsistencial
 Id: CSUnidadAsistencial
-Title: "Unidades"
+Title: "Unidad Asistencial"
 Description: "Unidad para dosificar"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2022-01-18T00:00:00-03:00"
-* ^contact.name = "HL7 Chile"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "chair@hl7chile.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* insert MetadataVSCS
 
 * #mililitro "Mililitro"
 * #comprimido "Comprimido"
@@ -213,28 +159,16 @@ Description: "Unidad para dosificar"
 
 ValueSet: VSViasAdmin
 Id: VSViasAdmin
-Description:  "Vias de Administración de Snomed-CT utilizadas para el proyecto de receta electrónica"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2022-01-18T00:00:00-03:00"
-* ^contact.name = "HL7 Chile"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "chair@hl7chile.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
+Title: "Vías de Administración"
+Description:  "Vías de Administración de SNOMED-CT utilizadas para el proyecto de receta electrónica"
+* insert MetadataVSCS
 * codes from system CSViasAdmin
 
 CodeSystem: CSViasAdmin
 Id: CSViasAdmin
-Title: "Vias de Administración"
-Description:  "Vias de administración de Snomed-CT utilizadas para el proyecto de receta electrónica"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2022-01-18T00:00:00-03:00"
-* ^contact.name = "HL7 Chile"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "chair@hl7chile.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+Title: "Vías de Administración"
+Description:  "Vías de administración de SNOMED-CT utilizadas para el proyecto de receta electrónica"
+* insert MetadataVSCS
 
 * #26643006 "vía oral (calificador)"
 * #46713006 "vía de administración en cavidad nasal (calificador)"
@@ -312,28 +246,15 @@ Description:  "Vias de administración de Snomed-CT utilizadas para el proyecto 
 ValueSet: VSMetodos
 Id: VSMetodos
 Title: "Métodos de Administración"
-Description: "Métodos de Administración de Snomed-CT utilizados para el proyecto de receta electrónica"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2022-01-18T00:00:00-03:00"
-* ^contact.name = "HL7 Chile"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "chair@hl7chile.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
+Description: "Métodos de Administración de SNOMED-CT utilizados para el proyecto de receta electrónica"
+* insert MetadataVSCS
 * codes from system CSMetodos
 
 CodeSystem: CSMetodos
 Id: CSMetodos
 Title: "Métodos de Administración"
-Description: "Métodos de Administración de Snomed-CT utilizados para el proyecto de receta electrónica"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2022-01-18T00:00:00-03:00"
-* ^contact.name = "HL7 Chile"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "chair@hl7chile.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+Description: "Métodos de Administración de SNOMED-CT utilizados para el proyecto de receta electrónica"
+* insert MetadataVSCS
 
 * #738991002 "Aplicación (método de administración)"
 * #740685003 "Inyección (método de administración)"
@@ -353,29 +274,16 @@ Description: "Métodos de Administración de Snomed-CT utilizados para el proyec
 
 ValueSet: VSTipoPrescripcion
 Id: VSTipoPrescripcion
-Title: "Identifica el tipo de Prescripción códigos válidos Id_Local| Id_Cheque| Id_Receta_Grafica"
-Description: "Identifica el tipo de Prescripción códigos válidos Id_Local| Id_Cheque| Id_Receta_Grafica"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2022-01-18T00:00:00-03:00"
-* ^contact.name = "HL7 Chile"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "chair@hl7chile.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
+Title: "Tipo de Prescripción"
+Description: "Identifica el tipo de Prescripción"
+* insert MetadataVSCS
 * codes from system CSTipoPrescripcion
 
 CodeSystem: CSTipoPrescripcion
 Id: CSTipoPrescripcion
-Title: "Identifica el tipo de Prescripción códigos válidos Id_Local| Id_Cheque| Id_Receta_Grafica"
-Description: "Identifica el tipo de Prescripción códigos válidos Id_Local| Id_Cheque| Id_Receta_Grafica"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2022-01-18T00:00:00-03:00"
-* ^contact.name = "HL7 Chile"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "chair@hl7chile.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+Title: "Tipo de Prescripción"
+Description: "Identifica el tipo de Prescripción"
+* insert MetadataVSCS
 
 * #Id_Local "Id_Local"
 * #Id_Cheque "Id_Cheque"
