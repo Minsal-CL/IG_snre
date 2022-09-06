@@ -137,4 +137,3 @@ Esta guía se implementación estructura en base al menú de la parte superior d
 - [FHIR Shorthand documentation code repository](https://github.com/HL7/fhir-shorthand)
 - [SUSHI code repository](https://github.com/FHIR/sushi)
 - [Zulip](https://chat.fhir.org) channel: #shorthand
-

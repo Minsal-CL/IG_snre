@@ -32,10 +32,10 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
     * system and code and display MS
 * note MS
 * dosageInstruction MS
-  * text and sequence and patientInstruction and asNeededBoolean MS
+  * text and sequence and patientInstruction MS
   * timing MS
     * repeat MS
-      * frequency and period and periodMax and periodUnit MS
+      * frequency and period and periodMax and boundsDuration and boundsRange and boundsPeriod and periodUnit MS
   * route MS
     * coding MS
       * system and code and display MS
@@ -70,13 +70,13 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * identifier.system ^definition = "URL sobre la cual se determina el formato y procedencia del valor del identificador"
 * identifier.value ^short = "Código Identificador"
 * identifier.assigner.display ^short = "Organización en texto libre que dio el numero."
-* identifier.assigner.display ^definition =	"Organización en texto libre que dio el número identificador. DEBE ser informado en caso que la identificación sea de tipo Local"
+* identifier.assigner.display ^definition = "Organización en texto libre que dio el número identificador. DEBE ser informado en caso que la identificación sea de tipo Local"
 * identifier.assigner.display ^short = "Nombre de la organización a la cual se hace la referencia"
 * identifier.assigner.display ^short = "Nombre de la organización a la cual se hace la referencia"
 * identifier.assigner.reference ^short = "Referencia a la organización que le dio el numero identificador"
 * status from http://hl7.org/fhir/ValueSet/medicationrequest-status (required)
 * status ^short = "active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown código del estado de la receta del medicamento prescrito  (requerido)"
-* intent ^short = "	proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option Intención para la cual es requerido el medicamento (requerido). Se Forzará siempre a order"
+* intent ^short = "	proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option Intención para la cual es indicado el medicamento (requerido). Se Forzará siempre a order"
 * intent from http://hl7.org/fhir/ValueSet/medicationrequest-intent (required)
 * intent = #order
 * statusReason ^short = "Este dato es Obligatorio condicional a que haya un cambio de estado de la Receta (R2). Es la razón por la cual se cambia el estado de la receta"
@@ -88,7 +88,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * statusReason.text ^definition = "Texto que representa el concepto. Si el código es #otra entonces debe describirse aquí la razón"
 * groupIdentifier 1..1
 * groupIdentifier.value 1..1
-* groupIdentifier ^short = "Número identificador de grupo que debe ser el mismo con el cual se identificaron los fármacos prescritos en el acto clínico. Se genera como un NanoId."
+* groupIdentifier ^short = "Código identificador de grupo que debe ser el mismo con el cual se identificará el RequestGroup de la receta. Se genera como un NanoId."
 * groupIdentifier ^definition = "Este número vincula el contenedor (RequestGroup) con todos los fármacos prescritos durante la atención del paciente (medicationRequest). Este hará el uso de Receta y el grupo de fármacos co misma identificación grupal. El formato debe ser NanoId."
 * groupIdentifier ^comment = "El elemento groupIdentifier de los recursos MedicationRequest generados durante el mismo acto clínico deberán coincidir con el que se genere en el recurso RequestGroup. Este identificador debe ser generado como un valor NanoId."
 * groupIdentifier.value ^short = "Identificador de grupo."
@@ -113,7 +113,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * subject only Reference (Patient) 
 * subject ^short = "Referencia al paciente a quien se le prescribe"
 * subject ^definition = "La referencia en este caso solo se hace sobre el paciente al cual se le prescribe el fármaco independiente que sea otra la persona que hace retiro de estos"
-* subject.reference ^short = "Referencia al recurso del paciente. \"http://api-receta.minsal.cl/v2/Patient\"" 
+* subject.reference ^short = "Referencia al recurso del paciente. \"https://api-receta.minsal.cl/v2/Patient\"" 
 * subject.display ^short = "Nombre paciente"
 * authoredOn ^short = "Fecha y hora en la cual fue prescrito el medicamento en formato YYYY-MM-DDThh:mm:ss+zz:zz"
 * authoredOn ^definition = "Fecha y hora en la cual fue prescrito el medicamento en formato YYYY-MM-DDThh:mm:ss+zz:zz, e.j. 2018, 1973-06, 1905-08-23, 2015-02-07T13:28:17-05:00 o 2017-01-01T00:00:00.000Z"
@@ -124,14 +124,14 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * requester.reference ^short = "Recurso asociado al Prescriptor  \"https://api-receta.minsal.cl/v2/Practitioner\"" 
 * requester.display ^short = "Nombre Prescriptor"
 * recorder 0..1
-* recorder only Reference (Practitioner)
+* recorder only Reference(PrestadorCL)
 * recorder ^short = "Referencia a un sujeto, que será el que registra la receta"
 * recorder ^definition = "En este caso la referencia será sobre una persona que es un prescriptor validado por la SIS"
 * recorder.reference ^short = "Recurso asociado \"http://api-receta.minsal.cl/v2/Practitioner\""
-* recorder.display ^short = "Nombre Prescriptor (Registrador)"
+* recorder.display ^short = "Nombre de quien registra la prescripción"
 * courseOfTherapyType ^short = "Expresa el patrón en la administración del medicamento"
 * courseOfTherapyType ^definition = "La descripción del patrón general de la administración del medicamento al paciente."
-* courseOfTherapyType.coding.system ^short = "Sistema de códigos a ocupar, se hará uso sel det de valores de hl7 MedicationRequest-course-of-therapy "
+* courseOfTherapyType.coding.system ^short = "Sistema de códigos a ocupar, se hará uso sel set de valores de hl7 MedicationRequest-course-of-therapy "
 * courseOfTherapyType.coding.code ^short = "Código relacionado con el patrón de administración"
 * courseOfTherapyType.coding.display ^short = "Descripción del código"
 * note ^short = "Texto libre en donde se expresan las instrucciones de como el medicamento debe ser administrado"
@@ -157,9 +157,10 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * dosageInstruction.timing.repeat.periodUnit from http://hl7.org/fhir/ValueSet/units-of-time
 * dosageInstruction.asNeededBoolean ^short = "Se define para uso de fármaco sin receta o indicación en esta."
 * dosageInstruction.asNeededBoolean ^definition = "Para indicar si el fármaco se puede usar sin respetar diretamente lo presctito en el dosaje, como por ejemplo medicamentos que se pueden usar en caso de SOS"
-* dosageInstruction.route ^short = "vía por la cual es administrado el medicamento"
-* dosageInstruction.route.coding.system ^short = "NameSpace de SNOMED-CT"
-* dosageInstruction.route.coding.system ^definition = "NameSpace de SNOMED-CT"
+* dosageInstruction.route ^short = "Vía por la cual es administrado el medicamento"
+* dosageInstruction.route ^definition = "Como se debe administrar el medicamento (Vía de administración o como debe el farmaco entrar al cuerpo)"
+* dosageInstruction.route.coding.system ^short = "Namespace de SNOMED-CT"
+* dosageInstruction.route.coding.system ^definition = "Namespace de SNOMED-CT"
 * dosageInstruction.route.coding.code from  VSViasAdmin (extensible)
 * dosageInstruction.route.coding.code ^short = "Código de la vía por medio de subset de SNOMED-CT" 
 * dosageInstruction.route.coding.code ^definition = "Código de la vía por medio de subset de SNOMED-CT"
@@ -167,11 +168,16 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * dosageInstruction.route.coding.display ^definition = "Descripción del código"
 * dosageInstruction.method ^short = "Forma exacta en la que el fármaco ingresa al organismo"
 * dosageInstruction.method ^definition = "Forma exacta en la que el fármaco ingresa al organismo. En este caso se define la ruta plausible para vías de administración"
-* dosageInstruction.method.coding.system ^short = "NameSpace de los códigos desde VS local. Definir URl Local para validar"
-* dosageInstruction.method.coding.system ^definition = "NameSpace de los códigos desde SNOMED-CT."
+* dosageInstruction.method.coding.system ^short = "Namespace de los códigos desde VS local. Definir URl Local para validar"
+* dosageInstruction.method.coding.system ^definition = "Namespace de los códigos desde SNOMED-CT."
 * dosageInstruction.method.coding.code ^short = "Códigos del Set de Valores definidos desde SNOMED-CT"
 * dosageInstruction.method.coding.code ^definition = "Código en SNOMED-CT correspondiente al método"
+* dosageInstruction.method.coding.display ^short = "Descripción del código"
+* dosageInstruction.method.coding.display ^definition = "Descripción del código"
+
 * dosageInstruction.method.coding.code from VSMetodos (extensible)
+* dosageInstruction.doseAndRate ^short = "Definición de la cantidad de fármaco a consumir por uso indicado"
+* dosageInstruction.doseAndRate ^definition = "Cantidad de los medicamentos a administrar"
 * dosageInstruction.doseAndRate.dose[x] only SimpleQuantity or Range
 * dosageInstruction.doseAndRate.dose[x] MS
 * dosageInstruction.doseAndRate.dose[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
@@ -189,26 +195,26 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * dispenseRequest.validityPeriod.end ^short = "Fecha de fin de la validez de la prescripción. El formato es YYYY-MM-DD"
 * dispenseRequest.validityPeriod.start ^definition = "Fecha de inicio de la validez de la prescripción. El formato es YYYY-MM-DD"
 * dispenseRequest.validityPeriod.end ^definition = "Fecha de fin de la validez de la prescripción. El formato es YYYY-MM-DD"
-* dispenseRequest.quantity ^short = "Cantidad de medicamento Dispensado"
-* dispenseRequest.quantity.value ^short = "Valor de la cantidad del medicamento Dispensado. Obligatorio para fármaco Controlado"
-* dispenseRequest.quantity.value ^definition = "Valor de la cantidad del medicamento Dispensado. Obligatorio para fármaco Controlado"
+* dispenseRequest.quantity ^short = "Cantidad de medicamento sugerido para dispensar"
+* dispenseRequest.quantity.value ^short = "Valor de la cantidad del medicamento sugerido para dispensar. Obligatorio para fármacos sujetos a condición de expendio receta retenida con control de existencia o receta cheque."
+* dispenseRequest.quantity.value ^definition = "Valor de la cantidad del medicamento sugerido para dispensar. Obligatorio para fármacos sujetos a condición de expendio receta retenida con control de existencia o receta cheque."
 * dispenseRequest.quantity.value ^comment = "Obligatorio para fármaco Controlado"
 * dispenseRequest.expectedSupplyDuration ^short = "Número de días que se espera que alcance lo que se dispensará" 
 * dispenseRequest.expectedSupplyDuration.value ^short = "Valor de la unidad de duración" 
 * dispenseRequest.expectedSupplyDuration.unit ^short = "Unidad temporal según UCUM"
 * dispenseRequest.expectedSupplyDuration.value ^definition = "Valor de la unidad de duración" 
 * dispenseRequest.expectedSupplyDuration.unit ^definition = "Unidad temporal según UCUM"
-* dispenseRequest.expectedSupplyDuration.system ^short = "Sistema de códigos temprales según UCUM"
+* dispenseRequest.expectedSupplyDuration.system ^short = "Sistema de códigos temporales según UCUM"
 * dispenseRequest.expectedSupplyDuration.code ^short = "Código según UCUM"
 * dispenseRequest.expectedSupplyDuration.code from http://hl7.org/fhir/ValueSet/age-units
-* dispenseRequest.expectedSupplyDuration.system ^definition = "Sistema de códigos temprales según UCUM"
+* dispenseRequest.expectedSupplyDuration.system ^definition = "Sistema de códigos temporales según UCUM"
 * dispenseRequest.expectedSupplyDuration.code ^definition = "Código según UCUM"
-* dispenseRequest.performer ^short = "A quien se intenciona sea el que dispense. Obligatorio en Sector Público"
+* dispenseRequest.performer ^short = "Recinto donde se direcciona para que dispense. Obligatorio en Sector Público"
 * dispenseRequest.performer ^definition = "Se debe referenciar a la API disponible. Obligatorio si es prescriptor público"
 * dispenseRequest.performer ^comment = "Obligatorio si es prescriptor público."
 * dispenseRequest.performer.reference ^short = "Recurso referenciado."
 * dispenseRequest.performer.reference ^definition = "Recurso referenciado."
-* dispenseRequest.performer.display ^short = "Nombre de la organización a la cual se intenciona sea quien dispense"
+* dispenseRequest.performer.display ^short = "Nombre de la organización a la cual se direcciona sea donde se dispense"
 * priorPrescription ^short = "Prescripción u orden a la cual esta reemplaza"
 * priorPrescription ^definition = "Prescripción u orden a la cual esta reemplaza"
 * priorPrescription.reference ^short = "Recurso MedicationDispense que se reemplaza."
@@ -226,13 +232,13 @@ Description: "Identificación de contacto de paciente en especial para casos en 
   codigo 0..1
 * extension[valor] ^short = "Cantidad de Medicamento a Administrar"
 * extension[valor].value[x] only decimal
-* extension[sistema] ^short = "NameSpace para el código a usar"
+* extension[sistema] ^short = "Namespace para el código a usar"
 * extension[sistema].value[x] only uri
 * extension[codigo] ^short = "Código para la Unidad de la medida"
 * extension[codigo].value[x] only Coding
 * extension[codigo].valueCoding from VSUnidadAsistencial (required)
  
-
+/*
 Instance : PrescripcionRecetaCL
 Title : "Ejemplo Prescripción de Medicamento Oxycodone Vía Oral, una o dos tabletas al día cada 4 o 6 horas, para una solicitud según necesidad con pre-condiciones"
 InstanceOf : RecetaPrescripcionCl	
@@ -306,3 +312,4 @@ Usage: #example
 * dosageInstruction.doseAndRate.doseQuantity.value = 2
 * dispenseRequest.validityPeriod.start = "2021-08-15"
 * dispenseRequest.validityPeriod.end = "2022-08-15"
+*/

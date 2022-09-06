@@ -42,7 +42,7 @@ Description: "Códigos que indican la razón por la cual una Prescripción ha ca
 ValueSet: VSCodificacionCategoria
 Id: VSCodificacionCategoria 
 Description: "Estado de una prescripción"
-Title: "Codificación del estado de una prescripción"
+Title: "Codificación de la categoría de una prescripción"
 * insert MetadataVSCS
 * include codes from system CSCodificacionCategoria
 
@@ -99,7 +99,7 @@ Description: "Códigos que indican la razón por la cual una Dispensación ha ca
 * #labint	"Interferencia con exámenes de laboratorio""La terapia podría interferir con un exámen de laboratorio planeado, por lo que se suspende la terapia hasta que el examen se realice"
 * #non-avail	"Paciente no disponible"	"Paciente no disponible por un período de tiempo debido a una terapia programada, permiso de ausencia u otra razón"
 * #preg	"Paciente embarazada/amamantando" 	"La paciente está embarazada o amamantando. La terapia se continuará cuando se complete el embarazo y la paciente deje de amamantar."
-* #saig	"Alergía"   "Se sospecha que el paciente es alérgico a una sustancia que es parte de la terapia y la terapia será temporalmente suspendida para confirmar"
+* #saig	"Alergia"   "Se sospecha que el paciente es alérgico a una sustancia que es parte de la terapia y la terapia será temporalmente suspendida para confirmar"
 * #sddi	"Fármaco interactúa con otro fármaco"	"El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete."
 * #sdupther	"Terapia duplicada"	"El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete."
 * #sintol	"Intolerancia sospechada"	"El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete."
@@ -158,14 +158,14 @@ Description: "Unidad para dosificar"
 ValueSet: VSViasAdmin
 Id: VSViasAdmin
 Title: "Vías de Administración"
-Description:  "Vías de Administración de SNOMED-CT utilizadas para el proyecto de receta electrónica"
+Description:  "Vías de Administración de SNOMED-CT utilizadas para el Sistema Nacional de Receta Electrónica"
 * insert MetadataVSCS
 * codes from system CSViasAdmin
 
 CodeSystem: CSViasAdmin
 Id: CSViasAdmin
 Title: "Vías de Administración"
-Description:  "Vías de administración de SNOMED-CT utilizadas para el proyecto de receta electrónica"
+Description:  "Vías de Administración de SNOMED-CT utilizadas para el Sistema Nacional de Receta Electrónica"
 * insert MetadataVSCS
 
 * #26643006 "vía oral (calificador)"

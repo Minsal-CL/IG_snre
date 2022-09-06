@@ -30,12 +30,14 @@ parameters:
 copyrightYear: 2020+
 releaseLabel: ci-build
 
-#dependencies:
-#  hl7.fhir.cl.corecl: 
-#    id: RecetaCL
-#    uri: https://build.fhir.org/ig/HL7Chile/CLReceta/
-#    version: 0.9
+dependencies:
 
+  hl7.fhir.cl.corecl: 
+    id: CoreCLDEV
+    uri: https://build.fhir.org/ig/HL7Chile/CL-Core/
+    version: dev
+
+  hl7.fhir.uv.ips: 1.0.0
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │

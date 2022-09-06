@@ -32,6 +32,7 @@ Description:    "Este Perfil utiliza este recurso como un contenedor de Prescrip
 * authoredOn ^short = "Fecha y hora cuando el medicamento fue dispensado. Se debe especificar en formato de fecha según HL7. YYYY-MM-DDThh:mm:ss+zz:zz, ej. 2018, 1973-06, 1905-08-23, 2015-02-07T13:28:17-05:00 or 2017-01-01T00:00:00.000Z."
 * authoredOn ^comment = "No soporta formato 24 hrs"
 
+/*
 Instance : EjemploRecetaCL
 Title : "Ejemplo de Recurso de una receta completa"
 InstanceOf : RecetaCl
@@ -40,7 +41,7 @@ InstanceOf : RecetaCl
 * groupIdentifier.value = "z4fxajxh2kdkock9pvsp"
 * status = #active
 * intent = #order
-* subject.reference = "https://api-receta.minsal.cl/v2/Patient/Paciente#2411224"
+* subject.reference = "Patient/Paciente#2411224"
 * authoredOn = "2021-06-12T17:31:00Z"
 
 Instance: medicationrequest-1
@@ -54,9 +55,9 @@ Usage: #inline
 * status = #active
 * intent = #order
 * category.coding.code = #inpatient
-* medicationReference = Reference(https://api-receta.minsal.cl/v2/Medication/1703591000167111) "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"
-* subject = Reference(https://api-receta.minsal.cl/v2/Patient/3254156114) "FELIPE MAURICIO MANCINI RUIZ-TAGLE"
-* requester = Reference(https://api-receta.minsal.cl/v2/Practitioner/3253825513) "JUAN JOSÉ ORTEGA CALLEJAS"
+* medicationReference = Reference(Medication/1703591000167111) "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"
+* subject = Reference(Patient/3254156114) "FELIPE MAURICIO MANCINI RUIZ-TAGLE"
+* requester = Reference(Practitioner/3253825513) "JUAN JOSÉ ORTEGA CALLEJAS"
 * authoredOn = "2021-08-15T17:31:00Z"
 * groupIdentifier.value = "z4fxajxh2kdkock9pvsp"
 * dosageInstruction.sequence = 1
@@ -84,9 +85,9 @@ Usage: #inline
 * category.coding.system = "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
 * category.coding.code = #outpatient
 * groupIdentifier.value = "z4fxajxh2kdkock9pvsp"
-* medicationReference.reference = "https://api-receta.minsal.cl/v2/Medication/Medicamento#1028"
-* subject = Reference(https://api-receta.minsal.cl/v2/Patient/3254156114) "FELIPE MAURICIO MANCINI RUIZ-TAGLE"
-* requester = Reference(https://api-receta.minsal.cl/v2/Practitioner/3253825513) "JUAN JOSÉ ORTEGA CALLEJAS"
+* medicationReference.reference = "Medication/Medicamento#1028"
+* subject = Reference(Patient/3254156114) "FELIPE MAURICIO MANCINI RUIZ-TAGLE"
+* requester = Reference(Practitioner/3253825513) "JUAN JOSÉ ORTEGA CALLEJAS"
 * authoredOn = "2021-08-15T17:31:00Z"
 * note.text = "Al paciente se le indicó lo tome 2 veces al día"
 * dosageInstruction.text = "Una tableta cada 12 hrs por 5 días"
@@ -117,7 +118,7 @@ Usage: #example
 * status = #active
 * intent = #order
 * groupIdentifier.value = "a4om197ytt5njq4xyclo"
-* subject = Reference(https://api-receta.minsal.cl/v2/Patient/1115090713) "PABLO PIZARRO"
+* subject = Reference(Patient/1115090713) "PABLO PIZARRO"
 * authoredOn = "2021-08-22T17:31:00Z"
 
 Instance: MedicamentoPres
@@ -127,9 +128,9 @@ Usage: #inline
 * note.text = "Administrar durante comidas"
 * status = #active
 * intent = #order
-* subject = Reference(https://api-receta.minsal.cl/v2/Patient/1115090713) "PABLO PIZARRO"
+* subject = Reference(Patient/1115090713) "PABLO PIZARRO"
 * category.coding.code = #inpatient
-* requester = Reference(https://api-receta.minsal.cl/v2/Practitioner/3245690418) "Maria Carmen De los angeles Del rio Gonzalez"
+* requester = Reference(Practitioner/3245690418) "Maria Carmen De los angeles Del rio Gonzalez"
 * authoredOn = "2021-08-22T17:31:00Z"
 * dispenseRequest.validityPeriod.end = "2021-09-22"
 * dispenseRequest.validityPeriod.start = "2021-08-22"
@@ -144,4 +145,7 @@ Usage: #inline
 * dosageInstruction.timing.repeat.boundsDuration.system = "http://unitsofmeasure.org"
 * dosageInstruction.doseAndRate.doseQuantity.value = 1 
 * dosageInstruction.doseAndRate.doseQuantity.unit = "comprimido"
-* medicationReference = Reference(https://api-receta.minsal.cl/v2/Medication/1682851000167115) "Paracetamol 500 mg comprimido"
+* medicationReference = Reference(Medication/1682851000167115) "Paracetamol 500 mg comprimido"
+
+
+*/
