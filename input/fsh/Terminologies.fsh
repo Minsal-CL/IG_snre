@@ -286,3 +286,20 @@ Description: "Identifica el tipo de Prescripción"
 * #Id_Local "Id_Local"
 * #Id_Cheque "Id_Cheque"
 * #Id_Receta_Grafica "Id_Receta_Grafica"
+
+ValueSet: VSFuncionProfesionalDispensacion
+Id: VSFuncionProfesionalDispensacion
+Title: "Funcion del Personal"
+Description: "Funcion del Personal. Puede ser Dispensador o Validador"
+* insert MetadataVSCS
+* codes from system CSFuncionProfesionalDispensacion
+
+CodeSystem: CSFuncionProfesionalDispensacion
+Id: CSFuncionProfesionalDispensacion
+Title: "Funcion del Personal"
+Description: "Funcion del Personal. Puede ser Dispensador o Validador"
+* insert MetadataVSCS
+
+* #Dispensador "Dispensador"
+* #Validador "Validador"
+

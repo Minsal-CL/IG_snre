@@ -7,6 +7,7 @@ Usage: #example
 * subject = Reference(Patient/Paciente1) "María Carmen de los Angeles Del río"
 * authoredOn = "2022-08-20T15:02:12.314Z"
 * contained = Inline-Instance-para-ejemplo1
+* basedOn = Reference(Inline-Instance-para-ejemplo1)
 
 Instance: Inline-Instance-para-ejemplo1
 InstanceOf: PrescripcionRecetaCL
@@ -29,7 +30,7 @@ Usage: #inline
 * dispenseRequest.validityPeriod.start = "2022-08-20"
 * dispenseRequest.validityPeriod.end = "2022-08-27"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "community"
-* courseOfTherapyType = http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
+* courseOfTherapyType = CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
 * note.text = "En caso de fiebre"
 
 
@@ -42,6 +43,7 @@ Usage: #example
 * subject = Reference(Patient/Paciente1) "María Carmen de los Angeles Del río"
 * authoredOn = "2022-08-19T19:34:33.128Z"
 * contained = Inline-Instance-para-ejemplo2
+* basedOn = Reference(Inline-Instance-para-ejemplo2)
 
 Instance: Inline-Instance-para-ejemplo2
 InstanceOf: PrescripcionRecetaCL
@@ -65,11 +67,11 @@ Usage: #inline
 * dispenseRequest.validityPeriod.end = "2022-08-20"
 * dispenseRequest.performer = Reference(Organization/8qj5s1ostjswt3r95vnv) "Centro de Salud Familiar Juan Pablo II (La Serena)"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#outpatient "Outpatient"
-* courseOfTherapyType = http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron#seasonal "Por temporada"
+* courseOfTherapyType = CSCodificacionPatron#seasonal "Por temporada"
 * identifier.type = http://recetaelectronica.minsal.cl/gi-fhir/Identifier-prescripcion#Id_Local "Identificador Local"
 * identifier.system = "https://innovaquidad.cl/integracion_minsal/idRecetaElectronica"
 * identifier.value = "e815615ef9ee7afb52be"
-* identifier.assigner.identifier.system = "Organization/8qj5s1ostjswt3r95vnv"
+* identifier.assigner.identifier.system = "https://api-receta.minsal.cl/v2Organization/8qj5s1ostjswt3r95vnv"
 * identifier.assigner.display = "Centro de Salud Familiar Juan Pablo II (La Serena)"
 
 Instance: Ejemplo3-Receta
@@ -81,6 +83,7 @@ Usage: #example
 * subject = Reference(Patient/Paciente1) "María Carmen de los Angeles Del río"
 * authoredOn = "2022-08-20T14:49:23.242Z"
 * contained = Inline-Instance-para-ejemplo3
+* basedOn = Reference(Inline-Instance-para-ejemplo3)
 
 Instance: Inline-Instance-para-ejemplo3
 InstanceOf: PrescripcionRecetaCL
@@ -104,7 +107,7 @@ Usage: #inline
 * dispenseRequest.validityPeriod.start = "2022-08-20"
 * dispenseRequest.validityPeriod.end = "2023-08-20"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "community"
-* courseOfTherapyType = http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron#continuous "Terapia continua a largo plazo (crónico)"
+* courseOfTherapyType = CSCodificacionPatron#continuous "Terapia continua a largo plazo"
 * extension[ProdComercial].url = "https://rme.hl7chile.cl/StructureDefinition/ProdComercial"
 * extension.valueReference = Reference(Medication/1973011000167111) "leodrin dúo biterapia comprimido recubierto (Recalcine)"
 * note.text = "Consumir a primera hora de la mañana, con el estómago vacío. Alimento luego de 1 hora de tomar el medicamento"
@@ -118,6 +121,7 @@ Usage: #example
 * subject = Reference(Patient/Paciente1) "María Carmen de los Angeles Del río"
 * authoredOn = "2022-08-19T19:26:36.032Z"
 * contained = Inline-Instance-para-ejemplo4
+* basedOn = Reference(Inline-Instance-para-ejemplo4)
 
 Instance: Inline-Instance-para-ejemplo4
 InstanceOf: PrescripcionRecetaCL
@@ -141,7 +145,7 @@ Usage: #inline
 * dispenseRequest.validityPeriod.end = "2022-09-18"
 * dispenseRequest.quantity.value = 60
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#discharge "Discharge"
-* courseOfTherapyType = http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
+* courseOfTherapyType = CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
 
 Instance: Ejemplo5-Receta
 InstanceOf: MedicamentoRecetaCL
@@ -152,6 +156,7 @@ Usage: #example
 * subject = Reference(Patient/Paciente1) "María Carmen de los Angeles Del río"
 * authoredOn = "2022-08-19T19:43:30.447Z"
 * contained = Inline-Instance-para-ejemplo5
+* basedOn = Reference(Inline-Instance-para-ejemplo5)
 
 Instance: Inline-Instance-para-ejemplo5
 InstanceOf: PrescripcionRecetaCL
@@ -175,7 +180,7 @@ Usage: #inline
 * dispenseRequest.validityPeriod.start = "2022-08-19"
 * dispenseRequest.validityPeriod.end = "2022-08-26"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#inpatient "Inpatient"
-* courseOfTherapyType = http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
+* courseOfTherapyType = CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
 * extension[ProdComercial].url = "https://rme.hl7chile.cl/StructureDefinition/ProdComercial"
 * extension.valueReference = Reference(Medication/2034051000167119) "insulatard suspensión inyectable (Novo Nordisk)"
 * note.text = "Administrar la cantidad según resultado de glucosa en sangre"
@@ -190,6 +195,8 @@ Usage: #example
 * authoredOn = "2022-08-19T19:05:55.961Z"
 * contained[0] = Inline-Instance-para-ejemplo6
 * contained[+] = Inline-Instance-para-ejemplo7
+* basedOn[0] = Reference(Inline-Instance-para-ejemplo6)
+* basedOn[+] = Reference(Inline-Instance-para-ejemplo7)
 
 Instance: Inline-Instance-para-ejemplo6
 InstanceOf: PrescripcionRecetaCL
@@ -212,7 +219,7 @@ Usage: #inline
 * dispenseRequest.validityPeriod.start = "2022-08-19"
 * dispenseRequest.validityPeriod.end = "2023-08-19"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "community"
-* courseOfTherapyType = http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron#continuous "Terapia continua a largo plazo (crónico)"
+* courseOfTherapyType = CSCodificacionPatron#continuous "Terapia continua a largo plazo"
 * extension[ProdComercial].url = "https://rme.hl7chile.cl/StructureDefinition/ProdComercial"
 * extension.valueReference = Reference(Medication/1965501000167112) "enalten 10 mg comprimido (Saval)"
 
@@ -237,7 +244,7 @@ Usage: #inline
 * dispenseRequest.validityPeriod.start = "2022-08-19"
 * dispenseRequest.validityPeriod.end = "2023-08-19"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "community"
-* courseOfTherapyType = http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron#continuous "Terapia continua a largo plazo (crónico)"
+* courseOfTherapyType = CSCodificacionPatron#continuous "Terapia continua a largo plazo"
 * extension[ProdComercial].url = "https://rme.hl7chile.cl/StructureDefinition/ProdComercial"
 * extension.valueReference = Reference(Medication/2034171000167114) "hidroronol T comprimido (ITF - Labomed)"
 * note.text = "Tomar en las mañanas"
@@ -252,6 +259,7 @@ Usage: #example
 * subject = Reference(Patient/Paciente1) "María Carmen de los Angeles Del río"
 * authoredOn = "2022-08-19T18:48:55.792Z"
 * contained = Inline-Instance-para-ejemplo8
+* basedOn = Reference(Inline-Instance-para-ejemplo8)
 
 Instance: Inline-Instance-para-ejemplo8
 InstanceOf: PrescripcionRecetaCL
@@ -277,7 +285,7 @@ Usage: #inline
 * dispenseRequest.validityPeriod.start = "2022-08-19"
 * dispenseRequest.validityPeriod.end = "2022-09-18"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "community"
-* courseOfTherapyType = http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
+* courseOfTherapyType = CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
 * extension[ProdComercial].url = "https://rme.hl7chile.cl/StructureDefinition/ProdComercial"
 * extension.valueReference = Reference(Medication/1976661000167112) "ketanor SL comprimido sublingual (ITF - Labomed)"
 * note.text = "Tomar según intensidad del dolor"

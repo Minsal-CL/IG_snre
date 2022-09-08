@@ -10,7 +10,7 @@ Usage: #example
 * quantity.value = 3
 * quantity.system = "http://unitsofmeasure.org"
 * location = Reference(Location/tqo6krppa0gbygu2kkud) "SALCOBRAND - Local: 73"
-* performer[Dispensador].function.coding = https://api-receta.minsal.cl/Tablas/TablaFunc#Dispensador
+* performer[Dispensador].function.coding = CSFuncionProfesionalDispensacion#Dispensador
 * performer[Dispensador].actor = Reference(Practitioner/Prescriptor1) "NICOLÁS ALEXIS SOTO DURÁN"
 * dosageInstruction.text = "Administrar 1 Comprimido cada 1 día por 1 año"
 * dosageInstruction.route = CSViasAdmin#26643006 "vía Oral route (calificador)"
@@ -35,9 +35,9 @@ Usage: #example
 * quantity.value = 2
 * quantity.system = "http://unitsofmeasure.org"
 * location = Reference(Location/tqo6krppa0gbygu2kkud) "SALCOBRAND - Local: 73"
-* performer[Dispensador].function.coding = https://api-receta.minsal.cl/Tablas/TablaFunc#Dispensador
+* performer[Dispensador].function.coding = CSFuncionProfesionalDispensacion#Dispensador
 * performer[Dispensador].actor = Reference(Practitioner/Prescriptor1) "NICOLÁS ALEXIS SOTO DURÁN"
-* performer[Validador].function.coding = https://api-receta.minsal.cl/Tablas/TablaFunc#Validador
+* performer[Validador].function.coding = CSFuncionProfesionalDispensacion#Validador
 * performer[Validador].actor = Reference(Practitioner/Prescriptor1) "NICOLÁS ALEXIS SOTO DURÁN"
 * receiver = Reference(Patient/Paciente1) "María Carmen de los Angeles Del río"
 * dosageInstruction.text = "Administrar 1 Comprimido cada 12 horas por 30 días"
@@ -63,7 +63,7 @@ Usage: #example
 * quantity.value = 1
 * quantity.system = "http://unitsofmeasure.org"
 * location = Reference(Location/tqo6krppa0gbygu2kkud) "SALCOBRAND - Local: 73"
-* performer[Dispensador].function.coding = https://api-receta.minsal.cl/Tablas/TablaFunc#Dispensador
+* performer[Dispensador].function.coding = CSFuncionProfesionalDispensacion#Dispensador
 * performer[Dispensador].actor = Reference(Practitioner/Prescriptor1) "NICOLÁS ALEXIS SOTO DURÁN"
 * dosageInstruction.text = "Administrar 0.5 - 1 Comprimidos cada 8 - 12 horas por 1 a 2 semanas"
 * dosageInstruction.route = CSViasAdmin#37839007 "vía de administración por debajo de la lengua (calificador)"
@@ -91,7 +91,7 @@ Usage: #example
 * quantity.value = 1
 * quantity.system = "http://unitsofmeasure.org"
 * location = Reference(Location/tqo6krppa0gbygu2kkud) "SALCOBRAND - Local: 73"
-* performer[Dispensador].function.coding = https://api-receta.minsal.cl/Tablas/TablaFunc#Dispensador
+* performer[Dispensador].function.coding = CSFuncionProfesionalDispensacion#Dispensador
 * performer[Dispensador].actor = Reference(Practitioner/Prescriptor1) "NICOLÁS ALEXIS SOTO DURÁN"
 * dosageInstruction.text = "Administrar 10 - 20 Unidades Internacionales cada 12 horas por 3 días"
 * dosageInstruction.route = CSViasAdmin#26643006 "vía Oral route (calificador)"
@@ -117,7 +117,7 @@ Usage: #example
 * quantity.value = 1
 * quantity.system = "http://unitsofmeasure.org"
 * location = Reference(Location/tqo6krppa0gbygu2kkud) "SALCOBRAND - Local: 73"
-* performer[Dispensador].function.coding = https://api-receta.minsal.cl/Tablas/TablaFunc#Dispensador
+* performer[Dispensador].function.coding = CSFuncionProfesionalDispensacion#Dispensador
 * performer[Dispensador].actor = Reference(Practitioner/Prescriptor1) "NICOLÁS ALEXIS SOTO DURÁN"
 * dosageInstruction.text = "Administrar 10 - 20 Unidades Internacionales cada 12 horas por 3 días"
 * dosageInstruction.route = CSViasAdmin#26643006 "vía Oral route (calificador)"
@@ -143,7 +143,7 @@ Usage: #example
 * quantity.value = 1
 * quantity.system = "http://unitsofmeasure.org"
 * location = Reference(Location/tqo6krppa0gbygu2kkud) "SALCOBRAND - Local: 73"
-* performer[Dispensador].function.coding = https://api-receta.minsal.cl/Tablas/TablaFunc#Dispensador
+* performer[Dispensador].function.coding = CSFuncionProfesionalDispensacion#Dispensador
 * performer[Dispensador].actor = Reference(Practitioner/Prescriptor1) "NICOLÁS ALEXIS SOTO DURÁN"
 * dosageInstruction.text = "Administrar 1 Comprimido cada 1 día por 1 año"
 * dosageInstruction.route = CSViasAdmin#26643006 "vía Oral route (calificador)"

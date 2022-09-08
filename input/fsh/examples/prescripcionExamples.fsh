@@ -20,7 +20,7 @@ Usage: #example
 * dispenseRequest.validityPeriod.end = "2022-08-27"
 * category = 
 http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "community"
-* courseOfTherapyType = http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
+* courseOfTherapyType = CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
 * note.text = "En caso de fiebre"
 
 
@@ -46,7 +46,7 @@ Usage: #example
 * dispenseRequest.validityPeriod.end = "2022-08-20"
 * dispenseRequest.performer = Reference(Organization/8qj5s1ostjswt3r95vnv) "Centro de Salud Familiar Juan Pablo II (La Serena)"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#outpatient "Outpatient"
-* courseOfTherapyType = http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron#seasonal "Por temporada"
+* courseOfTherapyType = CSCodificacionPatron#seasonal "Por temporada"
 * identifier.type = http://recetaelectronica.minsal.cl/gi-fhir/Identifier-prescripcion#Id_Local "Identificador Local"
 * identifier.system = "https://innovaquidad.cl/integracion_minsal/idRecetaElectronica"
 * identifier.value = "e815615ef9ee7afb52be"
@@ -75,7 +75,7 @@ Usage: #example
 * dispenseRequest.validityPeriod.start = "2022-08-20"
 * dispenseRequest.validityPeriod.end = "2023-08-20"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "community"
-* courseOfTherapyType = http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron#continuous "Terapia continua a largo plazo (crónico)"
+* courseOfTherapyType = CSCodificacionPatron#continuous "Terapia continua a largo plazo"
 //* extension[ProdComercial].url = "https://rme.hl7chile.cl/StructureDefinition/ProdComercial"
 ////* extension[ProdComercial].valueReference = Reference(Medication/1973011000167111)
 * note.text = "Consumir a primera hora de la mañana, con el estómago vacío. Alimento luego de 1 hora de tomar el medicamento"
@@ -103,7 +103,7 @@ Usage: #example
 * dispenseRequest.validityPeriod.end = "2022-09-18"
 * dispenseRequest.quantity.value = 60
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#discharge "Discharge"
-* courseOfTherapyType = http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
+* courseOfTherapyType = CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
  
 
 Instance: Ejemplo5-prescipcion
@@ -128,7 +128,7 @@ Usage: #example
 * dispenseRequest.validityPeriod.start = "2022-08-19"
 * dispenseRequest.validityPeriod.end = "2022-08-26"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#inpatient "Inpatient"
-* courseOfTherapyType = http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
+* courseOfTherapyType = CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
 ////* extension[ProdComercial].url = "https://rme.hl7chile.cl/StructureDefinition/ProdComercial"
 ////* extension[ProdComercial].valueReference = Reference(Medication/2034051000167119) "insulatard suspensión inyectable (Novo Nordisk)"
 * note.text = "Administrar la cantidad según resultado de glucosa en sangre"
@@ -154,7 +154,7 @@ Usage: #example
 * dispenseRequest.validityPeriod.start = "2022-08-19"
 * dispenseRequest.validityPeriod.end = "2023-08-19"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "community"
-* courseOfTherapyType = http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron#continuous "Terapia continua a largo plazo (crónico)"
+* courseOfTherapyType = CSCodificacionPatron#continuous "Terapia continua a largo plazo"
 //* extension[ProdComercial].url = "https://rme.hl7chile.cl/StructureDefinition/ProdComercial"
 ////* extension[ProdComercial].valueReference = Reference(Medication/1965501000167112) "enalten 10 mg comprimido (Saval)"
 
@@ -179,7 +179,7 @@ Usage: #example
 * dispenseRequest.validityPeriod.start = "2022-08-19"
 * dispenseRequest.validityPeriod.end = "2023-08-19"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "community"
-* courseOfTherapyType = http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron#continuous "Terapia continua a largo plazo (crónico)"
+* courseOfTherapyType = CSCodificacionPatron#continuous "Terapia continua a largo plazo"
 //* extension[ProdComercial].url = "https://rme.hl7chile.cl/StructureDefinition/ProdComercial"
 ////* extension[ProdComercial].valueReference = Reference(Medication/2034171000167114) "hidroronol T comprimido (ITF - Labomed)"
 * note.text = "Tomar en las mañanas"
@@ -209,7 +209,7 @@ Usage: #example
 * dispenseRequest.validityPeriod.start = "2022-08-19"
 * dispenseRequest.validityPeriod.end = "2022-09-18"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "community"
-* courseOfTherapyType = http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
+* courseOfTherapyType = CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
 //* extension[ProdComercial].url = "https://rme.hl7chile.cl/StructureDefinition/ProdComercial"
 ////* extension[ProdComercial].valueReference = "Medication/1976661000167112"
 * note.text = "Tomar según intensidad del dolor"
