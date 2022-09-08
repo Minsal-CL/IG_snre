@@ -1,0 +1,109 @@
+{
+    "resourceType": "RequestGroup",
+    "groupIdentifier": {
+        "value": "825c1968g3621adgbc17"
+    },
+    "status": "active",
+    "intent": "order",
+    "subject": {
+        "display": "María Carmen de los Angeles Del río",
+        "reference": "Patient/Paciente1"
+    },
+    "authoredOn": "2022-08-19T19:43:30.447Z",
+    "contained": [{
+        "resourceType": "MedicationRequest",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+            "reference": "Patient/Paciente1",
+            "display": "María Carmen de los Angeles Del río"
+        },
+        "medicationReference": {
+            "reference": "https://api-receta.minsal.cl/v2/Medication/1667701000167114",
+            "display": "insulina humana NPH 1000 UI/10 mL (100 UI/mL) inyectable"
+        },
+        "requester": {
+            "reference": "https://api-receta.minsal.cl/v2/Practitioner/3309267",
+            "display": "Maria Carmen De los angeles Del rio Gonzalez"
+        },
+        "groupIdentifier": {
+            "value": "825c1968g3621adgbc17"
+        },
+        "dosageInstruction": [{
+            "text": "Administrar 10 - 20 Unidades Internacionales cada 12 horas por 3 días",
+            "sequence": 1,
+            "timing": {
+                "repeat": {
+                    "period": 12,
+                    "frequency": 1,
+                    "periodUnit": "h",
+                    "boundsDuration": {
+                        "code": "d",
+                        "value": 3,
+                        "system": "http://unitsofmeasure.org"
+                    }
+                }
+            },
+            "route": {
+                "coding": [{
+                    "system": "http://snomed.info/sct",
+                    "code": "34206005",
+                    "display": "subcutánea"
+                }]
+            },
+            "method": {
+                "coding": [{
+                    "system": "http://snomed.info/sct",
+                    "code": "740685003",
+                    "display": "Inyección"
+                }]
+            },
+            "doseAndRate": [{
+                "doseRange": {
+                    "low": {
+                        "value": 10,
+                        "unit": "unidades-internacionales",
+                        "code": "unidades-internacionales",
+                        "system": "http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSUnidadAsistencial"
+                    },
+                    "high": {
+                        "value": 20,
+                        "unit": "unidades-internacionales",
+                        "code": "unidades-internacionales",
+                        "system": "http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSUnidadAsistencial"
+                    }
+                }
+            }]
+        }],
+        "dispenseRequest": {
+            "validityPeriod": {
+                "start": "2022-08-19",
+                "end": "2022-08-26"
+            }
+        },
+        "category": [{
+            "coding": [{
+                "system": "http://hl7.org/fhir/R4/codesystem-medicationrequest-category.html",
+                "code": "inpatient",
+                "display": "Hospitalizado"
+            }]
+        }],
+        "courseOfTherapyType": {
+            "coding": [{
+                "system": "http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron",
+                "code": "acute",
+                "display": "Terapia a corto plazo (aguda)"
+            }]
+        },
+        "extension": [{
+            "url": "http://recetaelectronica.minsal.cl/gi-fhir/StructureDefinition/Prod-Comercial",
+            "valueReference": {
+                "display": "insulatard suspensión inyectable (Novo Nordisk)",
+                "reference": "https://api-receta.minsal.cl/v2/Medication/2034051000167119"
+            }
+        }],
+        "note": [{
+            "text": "Administrar la cantidad según resultado de glucosa en sangre"
+        }]
+    }]
+}

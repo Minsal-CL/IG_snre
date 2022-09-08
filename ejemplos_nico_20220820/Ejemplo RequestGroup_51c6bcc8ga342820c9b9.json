@@ -1,0 +1,104 @@
+{
+    "resourceType": "RequestGroup",
+    "groupIdentifier": {
+        "value": "51c6bcc8ga342820c9b9"
+    },
+    "status": "active",
+    "intent": "order",
+    "subject": {
+        "display": "María Carmen de los Angeles Del río",
+        "reference": "Patient/Paciente1"
+    },
+    "authoredOn": "2022-08-20T14:49:23.242Z",
+    "contained": [{
+        "resourceType": "MedicationRequest",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+            "reference": "Patient/Paciente1",
+            "display": "María Carmen de los Angeles Del río"
+        },
+        "medicationReference": {
+            "reference": "https://api-receta.minsal.cl/v2/Medication/1683511000167113",
+            "display": "ácido alendrónico 70 mg comprimido y carbonato de calcio 1289 mg (calcio 500 mg) + colecalciferol 400 UI comprimido"
+        },
+        "requester": {
+            "reference": "https://api-receta.minsal.cl/v2/Practitioner/3309267",
+            "display": "Maria Carmen De los angeles Del rio Gonzalez"
+        },
+        "groupIdentifier": {
+            "value": "51c6bcc8ga342820c9b9"
+        },
+        "dosageInstruction": [{
+            "text": "Administrar 1 Comprimido cada 1 semana por 1 año. Administrar el día Lunes",
+            "sequence": 1,
+            "timing": {
+                "repeat": {
+                    "period": 1,
+                    "frequency": 1,
+                    "periodUnit": "wk",
+                    "boundsDuration": {
+                        "code": "a",
+                        "value": 1,
+                        "system": "http://unitsofmeasure.org"
+                    },
+                    "dayOfWeek": [
+                        "mon"
+                    ]
+                }
+            },
+            "route": {
+                "coding": [{
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "oral"
+                }]
+            },
+            "method": {
+                "coding": [{
+                    "system": "http://snomed.info/sct",
+                    "code": "738995006",
+                    "display": "Tragar"
+                }]
+            },
+            "doseAndRate": [{
+                "doseQuantity": {
+                    "value": 1,
+                    "unit": "comprimido",
+                    "code": "comprimido",
+                    "system": "http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSUnidadAsistencial"
+                }
+            }]
+        }],
+        "dispenseRequest": {
+            "validityPeriod": {
+                "start": "2022-08-20",
+                "end": "2023-08-20"
+            }
+        },
+        "category": [{
+            "coding": [{
+                "system": "http://hl7.org/fhir/R4/codesystem-medicationrequest-category.html",
+                "code": "community",
+                "display": "Comunitario"
+            }]
+        }],
+        "courseOfTherapyType": {
+            "coding": [{
+                "system": "http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron",
+                "code": "continuous",
+                "display": "Terapia continua a largo plazo (crónico)"
+            }]
+        },
+        "extension": [{
+            "url": "http://recetaelectronica.minsal.cl/gi-fhir/StructureDefinition/Prod-Comercial",
+            "valueReference": {
+                "display": "leodrin dúo biterapia comprimido recubierto (Recalcine)",
+                "reference": "https://api-receta.minsal.cl/v2/Medication/1973011000167111"
+            }
+        }],
+        "note": [{
+            "text": "Consumir a primera hora de la mañana, con el estómago vacío. Alimento luego de 1 hora de tomar el medicamento"
+        }]
+    }]
+}

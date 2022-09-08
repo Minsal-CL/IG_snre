@@ -1,0 +1,119 @@
+{
+    "resourceType": "RequestGroup",
+    "groupIdentifier": {
+        "value": "f89ba220g4455d6891f7"
+    },
+    "status": "active",
+    "intent": "order",
+    "subject": {
+        "display": "María Carmen de los Angeles Del río",
+        "reference": "Patient/Paciente1"
+    },
+    "authoredOn": "2022-08-19T18:48:55.792Z",
+    "contained": [{
+        "resourceType": "MedicationRequest",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+            "reference": "Patient/Paciente1",
+            "display": "María Carmen de los Angeles Del río"
+        },
+        "medicationReference": {
+            "reference": "https://api-receta.minsal.cl/v2/Medication/1668191000167115",
+            "display": "ketorolaco 30 mg comprimido sublingual"
+        },
+        "requester": {
+            "reference": "https://api-receta.minsal.cl/v2/Practitioner/3309267",
+            "display": "Maria Carmen De los angeles Del rio Gonzalez"
+        },
+        "groupIdentifier": {
+            "value": "f89ba220g4455d6891f7"
+        },
+        "dosageInstruction": [{
+            "text": "Administrar 0.5 - 1 Comprimidos cada 8 - 12 horas por 1 a 2 semanas",
+            "sequence": 1,
+            "timing": {
+                "repeat": {
+                    "period": 8,
+                    "frequency": 1,
+                    "periodUnit": "h",
+                    "periodMax": 12,
+                    "boundsRange": {
+                        "low": {
+                            "code": "wk",
+                            "value": 1,
+                            "unit": "wk",
+                            "system": "http://unitsofmeasure.org"
+                        },
+                        "high": {
+                            "code": "wk",
+                            "value": 2,
+                            "unit": "wk",
+                            "system": "http://unitsofmeasure.org"
+                        }
+                    }
+                }
+            },
+            "route": {
+                "coding": [{
+                    "system": "http://snomed.info/sct",
+                    "code": "37839007",
+                    "display": "por debajo de la lengua"
+                }]
+            },
+            "method": {
+                "coding": [{
+                    "system": "http://snomed.info/sct",
+                    "code": "738990001",
+                    "display": "Administración"
+                }]
+            },
+            "doseAndRate": [{
+                "doseRange": {
+                    "low": {
+                        "value": 0.5,
+                        "unit": "comprimido",
+                        "code": "comprimido",
+                        "system": "http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSUnidadAsistencial"
+                    },
+                    "high": {
+                        "value": 1,
+                        "unit": "comprimido",
+                        "code": "comprimido",
+                        "system": "http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSUnidadAsistencial"
+                    }
+                }
+            }]
+        }],
+        "dispenseRequest": {
+            "validityPeriod": {
+                "start": "2022-08-19",
+                "end": "2022-09-18"
+            }
+        },
+        "category": [{
+            "coding": [{
+                "system": "http://hl7.org/fhir/R4/codesystem-medicationrequest-category.html",
+                "code": "community",
+                "display": "Comunitario"
+            }]
+        }],
+        "courseOfTherapyType": {
+            "coding": [{
+                "system": "http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron",
+                "code": "acute",
+                "display": "Terapia a corto plazo (aguda)"
+            }]
+        },
+        "extension": [{
+            "url": "http://recetaelectronica.minsal.cl/gi-fhir/StructureDefinition/Prod-Comercial",
+            "valueReference": {
+                "display": "ketanor SL comprimido sublingual (ITF - Labomed)",
+                "reference": "https://api-receta.minsal.cl/v2/Medication/1976661000167112"
+            }
+        }],
+        "note": [{
+            "text": "Tomar según intensidad del dolor"
+        }]
+    }]
+}

@@ -1,0 +1,187 @@
+{
+    "resourceType": "RequestGroup",
+    "groupIdentifier": {
+        "value": "bcg7g47e8geabbd2590z"
+    },
+    "status": "active",
+    "intent": "order",
+    "subject": {
+        "display": "María Carmen de los Angeles Del río",
+        "reference": "Patient/Paciente1"
+    },
+    "authoredOn": "2022-08-19T19:05:55.961Z",
+    "contained": [{
+            "resourceType": "MedicationRequest",
+            "status": "active",
+            "intent": "order",
+            "subject": {
+                "reference": "Patient/Paciente1",
+                "display": "María Carmen de los Angeles Del río"
+            },
+            "medicationReference": {
+                "reference": "https://api-receta.minsal.cl/v2/Medication/1669781000167113",
+                "display": "enalapril 10 mg comprimido"
+            },
+            "requester": {
+                "reference": "https://api-receta.minsal.cl/v2/Practitioner/3309267",
+                "display": "Maria Carmen De los angeles Del rio Gonzalez"
+            },
+            "groupIdentifier": {
+                "value": "bcg7g47e8geabbd2590z"
+            },
+            "dosageInstruction": [{
+                "text": "Administrar 1 Comprimido cada 1 día por 1 año",
+                "sequence": 1,
+                "timing": {
+                    "repeat": {
+                        "period": 1,
+                        "frequency": 1,
+                        "periodUnit": "d",
+                        "boundsDuration": {
+                            "code": "a",
+                            "value": 1,
+                            "system": "http://unitsofmeasure.org"
+                        }
+                    }
+                },
+                "route": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "26643006",
+                        "display": "oral"
+                    }]
+                },
+                "method": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "738995006",
+                        "display": "Tragar"
+                    }]
+                },
+                "doseAndRate": [{
+                    "doseQuantity": {
+                        "value": 1,
+                        "unit": "comprimido",
+                        "code": "comprimido",
+                        "system": "http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSUnidadAsistencial"
+                    }
+                }]
+            }],
+            "dispenseRequest": {
+                "validityPeriod": {
+                    "start": "2022-08-19",
+                    "end": "2023-08-19"
+                }
+            },
+            "category": [{
+                "coding": [{
+                    "system": "http://hl7.org/fhir/R4/codesystem-medicationrequest-category.html",
+                    "code": "community",
+                    "display": "Comunitario"
+                }]
+            }],
+            "courseOfTherapyType": {
+                "coding": [{
+                    "system": "http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron",
+                    "code": "continuous",
+                    "display": "Terapia continua a largo plazo (crónico)"
+                }]
+            },
+            "extension": [{
+                "url": "http://recetaelectronica.minsal.cl/gi-fhir/StructureDefinition/Prod-Comercial",
+                "valueReference": {
+                    "display": "enalten 10 mg comprimido (Saval)",
+                    "reference": "https://api-receta.minsal.cl/v2/Medication/1965501000167112"
+                }
+            }]
+        },
+        {
+            "resourceType": "MedicationRequest",
+            "status": "active",
+            "intent": "order",
+            "subject": {
+                "reference": "Patient/Paciente1",
+                "display": "María Carmen de los Angeles Del río"
+            },
+            "medicationReference": {
+                "reference": "https://api-receta.minsal.cl/v2/Medication/1667741000167112",
+                "display": "hidroclorotiazida 25 mg + triamtereno 50 mg comprimido"
+            },
+            "requester": {
+                "reference": "https://api-receta.minsal.cl/v2/Practitioner/3309267",
+                "display": "Maria Carmen De los angeles Del rio Gonzalez"
+            },
+            "groupIdentifier": {
+                "value": "bcg7g47e8geabbd2590z"
+            },
+            "dosageInstruction": [{
+                "text": "Administrar 1 Comprimido cada 1 día por 1 año",
+                "sequence": 1,
+                "timing": {
+                    "repeat": {
+                        "period": 1,
+                        "frequency": 1,
+                        "periodUnit": "d",
+                        "boundsDuration": {
+                            "code": "a",
+                            "value": 1,
+                            "system": "http://unitsofmeasure.org"
+                        }
+                    }
+                },
+                "route": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "26643006",
+                        "display": "oral"
+                    }]
+                },
+                "method": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "738995006",
+                        "display": "Tragar"
+                    }]
+                },
+                "doseAndRate": [{
+                    "doseQuantity": {
+                        "value": 1,
+                        "unit": "comprimido",
+                        "code": "comprimido",
+                        "system": "http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSUnidadAsistencial"
+                    }
+                }]
+            }],
+            "dispenseRequest": {
+                "validityPeriod": {
+                    "start": "2022-08-19",
+                    "end": "2023-08-19"
+                }
+            },
+            "category": [{
+                "coding": [{
+                    "system": "http://hl7.org/fhir/R4/codesystem-medicationrequest-category.html",
+                    "code": "community",
+                    "display": "Comunitario"
+                }]
+            }],
+            "courseOfTherapyType": {
+                "coding": [{
+                    "system": "http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSCodificacionPatron",
+                    "code": "continuous",
+                    "display": "Terapia continua a largo plazo (crónico)"
+                }]
+            },
+            "extension": [{
+                "url": "http://recetaelectronica.minsal.cl/gi-fhir/StructureDefinition/Prod-Comercial",
+                "valueReference": {
+                    "display": "hidroronol T comprimido (ITF - Labomed)",
+                    "reference": "https://api-receta.minsal.cl/v2/Medication/2034171000167114"
+                }
+            }],
+            "note": [{
+                "text": "Tomar en las mañanas"
+            }]
+        }
+    ]
+}
