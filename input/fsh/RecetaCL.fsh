@@ -15,7 +15,7 @@ Description:    "Este Perfil utiliza este recurso como un contenedor de Prescrip
 * groupIdentifier ^short = "Identificador agrupador que debe ser el mismo con el cual se identifican las prescripciones en el acto clínico. El identificador debe ser del tipo NanoId"
 * groupIdentifier ^definition = "Este número vincula el contenedor con todos los fármacos prescritos durante la atención del paciente. Este hará el uso de Receta y el grupo de fármacos con misma identificación grupal. El formato debe ser el de un NanoId"
 * groupIdentifier.value ^short = "Identificador de grupo"
-* status ^short = "	draft | active | on-hold | revoked | completed | entered-in-error | unknown"
+* status ^short = "draft | active | on-hold | revoked | completed | entered-in-error | unknown"
 * status ^definition = "El estado de la receta se describe como activa (aún no ha sido dispensada) o completada (se dispensó). En caso que las prescripciones no se dispensen entonces la receta pasa a estado cancelada"
 * status ^comment = "Es válido hacer uso solo de los estados active y completed. En el caso que la receta ha sido recién creada esta se generá con estado **active**. Al momento de dispensar todos las prescripciones, la receta pasa a estado **completed**. Si esta nunca es dispensada se usa el código de **cancelled**"
 * intent ^short = "proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option"

@@ -54,7 +54,7 @@ Title: "Codificación del estado de una prescripción"
 
 * #inpatient    "Hospitalizado" "Incluye solicitudes de medicamentos para ser administrados o consumidos en contexto de hospitalización o cuidados primarios"
 * #outpatient   "Ambulatorio" "Incluye solicitudes de medicamentos para ser administrados o consumidos en el contexto ambulatorio (por ejemplo, departamento de urgencia, clínica ambulatoria, cirugía ambulatoria, oficina del doctor)"
-* #community    "Comunitario" "Incluye solicitudes de medicamentos para ser administrados o consumidos por el paciente en su hogar (esto incluiría cuidados a largo plazo u hogares de ancianos, asilos, etc.)"
+* #community    "community" "Incluye solicitudes de medicamentos para ser administrados o consumidos por el paciente en su hogar (esto incluiría cuidados a largo plazo u hogares de ancianos, asilos, etc.)"
 * #discharge    "Alta" "Incluye solicitudes de medicamentos creadas cuando el paciente es dado de alta de un centro"
 
 ValueSet: VSCodificacionPatron
@@ -168,7 +168,7 @@ Title: "Vías de Administración"
 Description:  "Vías de Administración de SNOMED-CT utilizadas para el Sistema Nacional de Receta Electrónica"
 * insert MetadataVSCS
 
-* #26643006 "vía oral (calificador)"
+* #26643006 "vía Oral route (calificador)"
 * #46713006 "vía de administración en cavidad nasal (calificador)"
 * #404820008 "vía de administración en el espacio epidural que rodea a la duramadre (calificador)"
 * #418136008 "vía de administración a través de estoma gastrointestinal (calificador)"

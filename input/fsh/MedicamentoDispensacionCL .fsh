@@ -66,7 +66,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * subject and subject.display and subject.reference MS
 * subject 1..1
 * subject only Reference (Patient)
-* subject ^short = "Referencia al Paciente  \"https://api-receta.minsal.cl/v2/Patient\" "
+* subject ^short = "Referencia al Paciente  \"https://api-receta.minsal.cl/v2/Patient\""
 * subject ^definition = "La referencia en este caso solo se hace sobre el paciente al cual se le receta el fármaco independiente que sea otra la persona que hace retiro de estos. Se usa el repositorio \"https://api-receta.minsal.cl/v2/patient\""
 * subject.display ^short = "Nombre del Paciente"
 * subject.reference ^short = "URL de la referencia del recurso del paciente"
@@ -209,8 +209,8 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * receiver and receiver.display and receiver.reference MS
 * receiver 0..1
 * receiver ^short = "Persona a la cual se le hace entrega de los fármacos."
-* receiver.display ^short = "Se debe  escribir el nombre y apellido de quien recibe el medicamento "
-* receiver.display ^definition = "Se define el nombre y apellido de quien recibe el medicamento. Este elemento si bien no es obligatorio debería serlo en el servicio público y solo en caso que quien recibe el medicamento no sea el paciente sobre el cual fueron recetados "
+* receiver.display ^short = "Se debe  escribir el nombre y apellido de quien recibe el medicamento"
+* receiver.display ^definition = "Se define el nombre y apellido de quien recibe el medicamento. Este elemento si bien no es obligatorio debería serlo en el servicio público y solo en caso que quien recibe el medicamento no sea el paciente sobre el cual fueron recetados"
 * receiver.display ^comment = "Debe ser obligatorio en dispensaciones realizadas en el sector de salud Público"
 * receiver.reference ^short = "URL del recurso Paciente"
 * receiver.reference ^short = "Se debe agregar la URL del recurso Paciente"

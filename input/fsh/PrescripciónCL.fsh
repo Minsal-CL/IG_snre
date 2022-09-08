@@ -76,7 +76,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * identifier.assigner.reference ^short = "Referencia a la organización que le dio el numero identificador"
 * status from http://hl7.org/fhir/ValueSet/medicationrequest-status (required)
 * status ^short = "active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown código del estado de la receta del medicamento prescrito  (requerido)"
-* intent ^short = "	proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option Intención para la cual es indicado el medicamento (requerido). Se Forzará siempre a order"
+* intent ^short = "proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option Intención para la cual es indicado el medicamento (requerido). Se Forzará siempre a order"
 * intent from http://hl7.org/fhir/ValueSet/medicationrequest-intent (required)
 * intent = #order
 * statusReason ^short = "Este dato es Obligatorio condicional a que haya un cambio de estado de la Receta (R2). Es la razón por la cual se cambia el estado de la receta"
@@ -107,7 +107,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * medicationReference ^definition = "Referencia al medicamento que se prescribe, la cual se encuentra disponible en el servicio de la TFC."
 * medicationReference.reference ^short = "uri del recurso. Para el caso el repositorio se encuentra en \"https://api-receta.minsal.cl/v2/Medication\""
 * medicationReference.display ^short = "Descripción del fármaco, según definición TFC"
-* extension contains  Prod-Comercial named PComercial 0..1 MS
+* extension contains ProdComercial named PComercial 0..1 MS
 * extension ^short = "Determinación del medicamento en Producto Comercial"
 * extension ^definition = "Determinación de un medicamento en Producto Comercial. Para eso esta extensión define una Referencia solo a un recurso de medication. "
 * subject only Reference (Patient) 
@@ -131,7 +131,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * recorder.display ^short = "Nombre de quien registra la prescripción"
 * courseOfTherapyType ^short = "Expresa el patrón en la administración del medicamento"
 * courseOfTherapyType ^definition = "La descripción del patrón general de la administración del medicamento al paciente."
-* courseOfTherapyType.coding.system ^short = "Sistema de códigos a ocupar, se hará uso sel set de valores de hl7 MedicationRequest-course-of-therapy "
+* courseOfTherapyType.coding.system ^short = "Sistema de códigos a ocupar, se hará uso sel set de valores de hl7 MedicationRequest-course-of-therapy"
 * courseOfTherapyType.coding.code ^short = "Código relacionado con el patrón de administración"
 * courseOfTherapyType.coding.display ^short = "Descripción del código"
 * note ^short = "Texto libre en donde se expresan las instrucciones de como el medicamento debe ser administrado"

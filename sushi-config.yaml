@@ -37,7 +37,15 @@ dependencies:
     uri: https://build.fhir.org/ig/HL7Chile/CL-Core/
     version: dev
 
-  hl7.fhir.uv.ips: 1.0.0
+pages: 
+  index.md:
+    title: Inicio
+  Alcances-Objetivos.md:
+    title: Objetivos
+  casos.md:
+    title: Casos de uso
+  operaciones.md:
+    title: Operaciones
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
@@ -55,7 +63,7 @@ menu:
     Receta: StructureDefinition-RecetaCl.html
   
     
-  Ejemplos:
-    Ejemplo Prescripción: StructureDefinition-RecetaPrescripcionCl-examples.html
-    Ejemplo Dispensación: StructureDefinition-DispensacionMedicamentoCl-examples.html
-    Ejemplo de Receta: StructureDefinition-RecetaCl-examples.html
+#  Ejemplos:
+#    Ejemplo Prescripción: StructureDefinition-RecetaPrescripcionCl-examples.html
+#    Ejemplo Dispensación: StructureDefinition-DispensacionMedicamentoCl-examples.html
+#    Ejemplo de Receta: StructureDefinition-RecetaCl-examples.html

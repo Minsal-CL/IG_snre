@@ -5,7 +5,3 @@
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
 #sacando in 
-== fsh-generated\resources\MedicationDispense-Ejemplo2-Dispensacion.json ==
-INFORMATION: MedicationDispense/Ejemplo2-Dispensacion: MedicationDispense.performer[0].function.coding[0]: Code System URI 'https://api-receta.minsal.cl/Tablas/TablaFunc' is unknown so the code cannot be validated
-INFORMATION: MedicationDispense/Ejemplo2-Dispensacion: MedicationDispense.performer[1].function.coding[0]: Code System URI 'https://api-receta.minsal.cl/Tablas/TablaFunc' is unknown so the code cannot be validated
-INFORMATION: MedicationDispense/Ejemplo2-Dispensacion: MedicationDispense.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): Code System URI 'http://recetaelectronica.minsal.cl/gi-fhir/CodeSystem/CSUnidadAsistencial' is unknown so the code cannot be validated
