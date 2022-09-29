@@ -31,6 +31,10 @@ Description:    "Este Perfil utiliza este recurso como un contenedor de Prescrip
 * authoredOn ^short = "Fecha y hora cuando la receta fue generada. Formato YYYY-MM-DDThh:mm:ss+zz:zz, ej: 2018, 1973-06, 1905-08-23, 2015-02-07T13:28:17-05:00 or 2017-01-01T00:00:00.000Z"
 * authoredOn ^short = "Fecha y hora cuando el medicamento fue dispensado. Se debe especificar en formato de fecha según HL7. YYYY-MM-DDThh:mm:ss+zz:zz, ej. 2018, 1973-06, 1905-08-23, 2015-02-07T13:28:17-05:00 or 2017-01-01T00:00:00.000Z."
 * authoredOn ^comment = "No soporta formato 24 hrs"
+* basedOn ^comment = "Campo el cual se debe agregar la referencia hacia los medicamentos que se incluyen en esta receta. Con medicamentos incluidos, se hace refencia a los medicamentos agregados dentro del elemento \"contained\""
+* basedOn ^short = "Referencia a las prescipciones que contiene la receta"
+* basedOn 0..* MS
+* basedOn only Reference(PrescripcionRecetaCL)
 
 /*
 Instance : EjemploRecetaCL

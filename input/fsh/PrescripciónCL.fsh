@@ -107,6 +107,9 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * medicationReference ^definition = "Referencia al medicamento que se prescribe, la cual se encuentra disponible en el servicio de la TFC."
 * medicationReference.reference ^short = "uri del recurso. Para el caso el repositorio se encuentra en \"https://api-receta.minsal.cl/v2/Medication\""
 * medicationReference.display ^short = "Descripción del fármaco, según definición TFC"
+
+
+
 * extension contains ProdComercial named PComercial 0..1 MS
 * extension ^short = "Determinación del medicamento en Producto Comercial"
 * extension ^definition = "Determinación de un medicamento en Producto Comercial. Para eso esta extensión define una Referencia solo a un recurso de medication. "
@@ -124,7 +127,8 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * requester.reference ^short = "Recurso asociado al Prescriptor  \"https://api-receta.minsal.cl/v2/Practitioner\"" 
 * requester.display ^short = "Nombre Prescriptor"
 * recorder 0..1
-* recorder only Reference(PrestadorCL)
+//* recorder only Reference(PrestadorCL)
+* recorder only Reference(Practitioner)
 * recorder ^short = "Referencia a un sujeto, que será el que registra la receta"
 * recorder ^definition = "En este caso la referencia será sobre una persona que es un prescriptor validado por la SIS"
 * recorder.reference ^short = "Recurso asociado \"http://api-receta.minsal.cl/v2/Practitioner\""
@@ -220,8 +224,11 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * priorPrescription.reference ^short = "Recurso MedicationDispense que se reemplaza."
 * priorPrescription.reference ^definition = "Recurso MedicationDispense que se reemplaza."
 * priorPrescription.display ^short = "Detalle de la orden o prescripción a la cual esta reemplaza."
-		
 
+
+
+
+/*
 Extension:   CantidadSimpleCL
 Id:          CantidadSimpleCL
 Title:       "Identificación del Contacto de un Paciente"
@@ -237,7 +244,9 @@ Description: "Identificación de contacto de paciente en especial para casos en 
 * extension[codigo] ^short = "Código para la Unidad de la medida"
 * extension[codigo].value[x] only Coding
 * extension[codigo].valueCoding from VSUnidadAsistencial (required)
- 
+ */
+
+
 /*
 Instance : PrescripcionRecetaCL
 Title : "Ejemplo Prescripción de Medicamento Oxycodone Vía Oral, una o dos tabletas al día cada 4 o 6 horas, para una solicitud según necesidad con pre-condiciones"

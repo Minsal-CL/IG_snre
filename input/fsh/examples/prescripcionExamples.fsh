@@ -24,6 +24,7 @@ http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "comm
 * note.text = "En caso de fiebre"
 
 
+
 Instance: Ejemplo2-prescipcion
 InstanceOf: PrescripcionRecetaCL
 Usage: #example
@@ -47,7 +48,7 @@ Usage: #example
 * dispenseRequest.performer = Reference(Organization/8qj5s1ostjswt3r95vnv) "Centro de Salud Familiar Juan Pablo II (La Serena)"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#outpatient "Outpatient"
 * courseOfTherapyType = CSCodificacionPatron#seasonal "Por temporada"
-* identifier.type = http://recetaelectronica.minsal.cl/gi-fhir/Identifier-prescripcion#Id_Local "Identificador Local"
+* identifier.type = CSTipoPrescripcion#Id_Local "Id_Local"
 * identifier.system = "https://innovaquidad.cl/integracion_minsal/idRecetaElectronica"
 * identifier.value = "e815615ef9ee7afb52be"
 * identifier.assigner.identifier.system = "https://api-receta.minsal.cl/v2/Organization/8qj5s1ostjswt3r95vnv"

@@ -32,10 +32,10 @@ releaseLabel: ci-build
 
 dependencies:
 
-  hl7.fhir.cl.corecl: 
-    id: CoreCLDEV
-    uri: https://build.fhir.org/ig/HL7Chile/CL-Core/
-    version: dev
+#  hl7.fhir.cl.corecl: 
+#    id: CoreCLDEV
+#    uri: https://build.fhir.org/ig/HL7Chile/CL-Core/
+#    version: dev
 
 pages: 
   index.md:

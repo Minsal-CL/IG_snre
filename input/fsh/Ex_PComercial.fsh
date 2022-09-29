@@ -8,7 +8,6 @@ Description: "Indicación de un Medicamento bajo su Marca Comercial"
 //* valueReference = Reference()
 * valueReference ^short = "Referencia a un recurso medicamento en \"https://api-receta.minsal.cl/v2/Medication\""
 
-
 /*
 Instance: Ejemplo-Curacion-Pie-Diabetico
 InstanceOf: ProdComercial
