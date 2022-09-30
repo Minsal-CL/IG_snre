@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ProdComercial"];
   fhir:StructureDefinition.title [ fhir:value "Identificación de un medicamento bajo su marca comercial"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-09-30T09:28:53-03:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-09-30T09:32:27-03:00"^^xsd:dateTime];
   fhir:StructureDefinition.description [ fhir:value "Indicación de un Medicamento bajo su Marca Comercial"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;

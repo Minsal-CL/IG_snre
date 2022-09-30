@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "SimpleQuantityCL"];
   fhir:StructureDefinition.title [ fhir:value "SimpleQuantity para el caso de Receta"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-09-30T09:28:53-03:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-09-30T09:32:27-03:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Chile"];
   fhir:StructureDefinition.description [ fhir:value "Definición para una unidad simple y su contenido para el consumo de un fármaco según prescripción"];
   fhir:StructureDefinition.jurisdiction [

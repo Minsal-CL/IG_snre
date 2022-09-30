@@ -3,7 +3,7 @@
   "name": "RecetaCL",
   "package-id": "hl7.fhir.cl.recetachile",
   "ig-ver": "0.9",
-  "date": "Fri, 30 Sep, 2022 09:28:53 -0300",
+  "date": "Fri, 30 Sep, 2022 09:32:27 -0300",
   "errs": 0,
   "warnings": 21,
   "hints": 10,

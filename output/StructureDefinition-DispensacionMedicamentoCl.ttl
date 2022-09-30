@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "DispensacionMedicamentoCL"];
   fhir:StructureDefinition.title [ fhir:value "CL Dispensación"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-09-30T09:28:53-03:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-09-30T09:32:27-03:00"^^xsd:dateTime];
   fhir:StructureDefinition.description [ fhir:value "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso del Sistema Nacional de Receta Electrónica desde la visión de la TFC que se utilizará para poder manejar fármacos que cuentan con autorización de comercialización en el país, los cuales deberán ser consultados por los prestadores a la hora de prescribir alguno o mantener una base local actualizada."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;

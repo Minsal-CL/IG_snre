@@ -10,7 +10,7 @@
   "name": "SimpleQuantityCL",
   "title": "SimpleQuantity para el caso de Receta",
   "status": "active",
-  "date": "2022-09-30T09:28:53-03:00",
+  "date": "2022-09-30T09:32:27-03:00",
   "publisher": "HL7 Chile",
   "description": "Definición para una unidad simple y su contenido para el consumo de un fármaco según prescripción",
   "jurisdiction": [

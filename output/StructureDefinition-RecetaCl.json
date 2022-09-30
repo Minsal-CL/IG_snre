@@ -20,7 +20,7 @@
   "name": "MedicamentoRecetaCL",
   "title": "CL Receta",
   "status": "active",
-  "date": "2022-09-30T09:28:53-03:00",
+  "date": "2022-09-30T09:32:27-03:00",
   "description": "Este Perfil utiliza este recurso como un contenedor de Prescripciones, de tal forma de poder ser utilizado como formato de Receta electrónica con los fármacos indicados por el clínico durante un acto de indicación farmacológica.",
   "jurisdiction": [
     {

@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "MedicamentoRecetaCL"];
   fhir:StructureDefinition.title [ fhir:value "CL Receta"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-09-30T09:28:53-03:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-09-30T09:32:27-03:00"^^xsd:dateTime];
   fhir:StructureDefinition.description [ fhir:value "Este Perfil utiliza este recurso como un contenedor de Prescripciones, de tal forma de poder ser utilizado como formato de Receta electrónica con los fármacos indicados por el clínico durante un acto de indicación farmacológica."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
