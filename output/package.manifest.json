@@ -1,0 +1,8 @@
+{
+  "version": "0.9",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "date": "20220930092734",
+  "name": "hl7.fhir.cl.recetachile"
+}

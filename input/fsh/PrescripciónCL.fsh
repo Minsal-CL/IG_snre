@@ -136,6 +136,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * courseOfTherapyType ^short = "Expresa el patrón en la administración del medicamento"
 * courseOfTherapyType ^definition = "La descripción del patrón general de la administración del medicamento al paciente."
 * courseOfTherapyType.coding.system ^short = "Sistema de códigos a ocupar, se hará uso sel set de valores de hl7 MedicationRequest-course-of-therapy"
+* courseOfTherapyType.coding.code from http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy
 * courseOfTherapyType.coding.code ^short = "Código relacionado con el patrón de administración"
 * courseOfTherapyType.coding.display ^short = "Descripción del código"
 * note ^short = "Texto libre en donde se expresan las instrucciones de como el medicamento debe ser administrado"

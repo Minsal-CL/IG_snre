@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="VSRazonEstadoDispensacion"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-CSRazonEstadoDispensacion.html"><code>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</code></a></li></ul></div>
+  </text>
+  <url value="https://rme.hl7chile.cl/ValueSet/VSRazonEstadoDispensacion"/>
+  <version value="0.9"/>
+  <name value="VSRazonEstadoDispensacion"/>
+  <title value="Razón del cambio de estado (Dispensación)"/>
+  <status value="active"/>
+  <date value="2022-01-18T00:00:00-03:00"/>
+  <contact>
+    <name value="HL7 Chile"/>
+    <telecom>
+      <system value="email"/>
+      <value value="chair@hl7chile.cl"/>
+    </telecom>
+  </contact>
+  <description value="Códigos que indican la razón por la cual una Dispensación ha cambiado su estado"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion"/>
+    </include>
+  </compose>
+</ValueSet>
