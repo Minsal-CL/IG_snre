@@ -7,17 +7,17 @@
 
 <https://rme.hl7chile.cl/CodeSystem/CSFuncionProfesionalDispensacion> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "CSFuncionProfesionalDispensacion"];
+  fhir:Resource.id [ fhir:value "CSFuncionProfesionalDispensacion"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://rme.hl7chile.cl/CodeSystem/CSFuncionProfesionalDispensacion defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Dispensador<a name=\"CSFuncionProfesionalDispensacion-Dispensador\"> </a></td><td>Dispensador</td></tr><tr><td style=\"white-space:nowrap\">Validador<a name=\"CSFuncionProfesionalDispensacion-Validador\"> </a></td><td>Validador</td></tr></table></div>"
-  ];
-  fhir:CodeSystem.url [ fhir:value "https://rme.hl7chile.cl/CodeSystem/CSFuncionProfesionalDispensacion"];
-  fhir:CodeSystem.version [ fhir:value "0.9"];
-  fhir:CodeSystem.name [ fhir:value "CSFuncionProfesionalDispensacion"];
-  fhir:CodeSystem.title [ fhir:value "Funcion del Personal"];
-  fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-01-18T00:00:00-03:00"^^xsd:dateTime];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://rme.hl7chile.cl/CodeSystem/CSFuncionProfesionalDispensacion</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Dispensador<a name=\"CSFuncionProfesionalDispensacion-Dispensador\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Validador<a name=\"CSFuncionProfesionalDispensacion-Validador\"> </a></td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://rme.hl7chile.cl/CodeSystem/CSFuncionProfesionalDispensacion"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.9"]; # 
+  fhir:CodeSystem.name [ fhir:value "CSFuncionProfesionalDispensacion"]; # 
+  fhir:CodeSystem.title [ fhir:value "Funcion del Personal"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.date [ fhir:value "2022-01-18T00:00:00-03:00"^^xsd:dateTime]; # 
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "HL7 Chile" ];
@@ -26,8 +26,8 @@
        fhir:ContactPoint.system [ fhir:value "email" ];
        fhir:ContactPoint.value [ fhir:value "chair@hl7chile.cl" ]
      ]
-  ];
-  fhir:CodeSystem.description [ fhir:value "Funcion del Personal. Puede ser Dispensador o Validador"];
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Funcion del Personal. Puede ser Dispensador o Validador"]; # 
   fhir:CodeSystem.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -36,9 +36,9 @@
        fhir:Coding.code [ fhir:value "CL" ];
        fhir:Coding.display [ fhir:value "Chile" ]
      ]
-  ];
-  fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "2"^^xsd:nonNegativeInteger];
+  ]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "2"^^xsd:nonNegativeInteger]; # 
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "Dispensador" ];
@@ -47,7 +47,7 @@
      fhir:index 1;
      fhir:CodeSystem.concept.code [ fhir:value "Validador" ];
      fhir:CodeSystem.concept.display [ fhir:value "Validador" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

@@ -20,6 +20,12 @@
         "title": "CL Dispensación"
       }
     ],
+    "Patient": [
+      {
+        "url": "https://rme.hl7chile.cl/StructureDefinition/PacienteCardio",
+        "title": "Perfil Paciente Cardio"
+      }
+    ],
     "RequestGroup": [
       {
         "url": "https://rme.hl7chile.cl/StructureDefinition/RecetaCl",
@@ -56,20 +62,47 @@
       "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family": [
+      "Patient.contact.name.family",
+      "Patient.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises": [
+      "Patient",
+      "Patient.identifier.type"
+    ],
+    "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/IdContacto": [
+      "Patient.contact"
     ],
     "https://rme.hl7chile.cl/StructureDefinition/ProdComercial": [
       "MedicationRequest",

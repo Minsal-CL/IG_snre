@@ -3,7 +3,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="CSFuncionProfesionalDispensacion"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://rme.hl7chile.cl/CodeSystem/CSFuncionProfesionalDispensacion defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Dispensador<a name="CSFuncionProfesionalDispensacion-Dispensador"> </a></td><td>Dispensador</td></tr><tr><td style="white-space:nowrap">Validador<a name="CSFuncionProfesionalDispensacion-Validador"> </a></td><td>Validador</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://rme.hl7chile.cl/CodeSystem/CSFuncionProfesionalDispensacion</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">Dispensador<a name="CSFuncionProfesionalDispensacion-Dispensador"> </a></td></tr><tr><td style="white-space:nowrap">Validador<a name="CSFuncionProfesionalDispensacion-Validador"> </a></td></tr></table></div>
   </text>
   <url value="https://rme.hl7chile.cl/CodeSystem/CSFuncionProfesionalDispensacion"/>
   <version value="0.9"/>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="fd92f860-6672-4b58-9edb-0b3e63ad54e7"/>
+  <id value="f3e78ae2-1aad-414a-9214-d97d666d68f3"/>
   <meta>
-    <lastUpdated value="2022-09-30T09:32:27.972-03:00"/>
+    <lastUpdated value="2022-12-20T14:37:53.584-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -18,15 +18,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSCodificacionCategoria.html">Codificación del estado de una prescripción v0.9 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-CSCodificacionCategoria.html">
-                <code>https://rme.hl7chile.cl/CodeSystem/CSCodificacionCategoria</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -40,32 +38,56 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSCodificacionCategoria-inpatient"> </a>  
                   <a href="CodeSystem-CSCodificacionCategoria.html#CSCodificacionCategoria-inpatient">inpatient</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSCodificacionCategoria</td>
                 <td>Hospitalizado</td>
-                <td>Incluye solicitudes de medicamentos para ser administrados o consumidos en contexto de hospitalización o cuidados primarios</td>
+                <td>
+                  <div>
+                    <p>Incluye solicitudes de medicamentos para ser administrados o consumidos en contexto de hospitalización o cuidados primarios</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSCodificacionCategoria-outpatient"> </a>  
                   <a href="CodeSystem-CSCodificacionCategoria.html#CSCodificacionCategoria-outpatient">outpatient</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSCodificacionCategoria</td>
                 <td>Ambulatorio</td>
-                <td>Incluye solicitudes de medicamentos para ser administrados o consumidos en el contexto ambulatorio (por ejemplo, departamento de urgencia, clínica ambulatoria, cirugía ambulatoria, oficina del doctor)</td>
+                <td>
+                  <div>
+                    <p>Incluye solicitudes de medicamentos para ser administrados o consumidos en el contexto ambulatorio (por ejemplo, departamento de urgencia, clínica ambulatoria, cirugía ambulatoria, oficina del doctor)</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSCodificacionCategoria-community"> </a>  
                   <a href="CodeSystem-CSCodificacionCategoria.html#CSCodificacionCategoria-community">community</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSCodificacionCategoria</td>
                 <td>community</td>
-                <td>Incluye solicitudes de medicamentos para ser administrados o consumidos por el paciente en su hogar (esto incluiría cuidados a largo plazo u hogares de ancianos, asilos, etc.)</td>
+                <td>
+                  <div>
+                    <p>Incluye solicitudes de medicamentos para ser administrados o consumidos por el paciente en su hogar (esto incluiría cuidados a largo plazo u hogares de ancianos, asilos, etc.)</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSCodificacionCategoria-discharge"> </a>  
                   <a href="CodeSystem-CSCodificacionCategoria.html#CSCodificacionCategoria-discharge">discharge</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSCodificacionCategoria</td>
                 <td>Alta</td>
-                <td>Incluye solicitudes de medicamentos creadas cuando el paciente es dado de alta de un centro</td>
+                <td>
+                  <div>
+                    <p>Incluye solicitudes de medicamentos creadas cuando el paciente es dado de alta de un centro</p>
+
+                  </div>
+                </td>
               </tr>
             </table>
           </div>
@@ -92,8 +114,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:eca6dc68-54a8-4212-bff2-4a4c89b10dc9"/>
-          <timestamp value="2022-09-30T09:33:25-03:00"/>
+          <identifier value="urn:uuid:bc743ed6-24d7-45f9-a081-16308204388d"/>
+          <timestamp value="2022-12-20T14:39:03-03:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -139,15 +161,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSCodificacionPatron.html">Patrón de la Prescripción v0.9 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-CSCodificacionPatron.html">
-                <code>https://rme.hl7chile.cl/CodeSystem/CSCodificacionPatron</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -161,24 +181,42 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSCodificacionPatron-continuous"> </a>  
                   <a href="CodeSystem-CSCodificacionPatron.html#CSCodificacionPatron-continuous">continuous</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSCodificacionPatron</td>
                 <td>Terapia continua a largo plazo</td>
-                <td>Una medicación que se espera sea continuada más allá de la presente orden y que el paciente debe tomar a menos que explicitamente se le indique lo contrario</td>
+                <td>
+                  <div>
+                    <p>Una medicación que se espera sea continuada más allá de la presente orden y que el paciente debe tomar a menos que explicitamente se le indique lo contrario</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSCodificacionPatron-acute"> </a>  
                   <a href="CodeSystem-CSCodificacionPatron.html#CSCodificacionPatron-acute">acute</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSCodificacionPatron</td>
                 <td>Terapia a corto plazo (aguda)</td>
-                <td>Una medicación que se espera que el paciente consuma solo por la duración de la presente orden y no se espera que sea renovada</td>
+                <td>
+                  <div>
+                    <p>Una medicación que se espera que el paciente consuma solo por la duración de la presente orden y no se espera que sea renovada</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSCodificacionPatron-seasonal"> </a>  
                   <a href="CodeSystem-CSCodificacionPatron.html#CSCodificacionPatron-seasonal">seasonal</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSCodificacionPatron</td>
                 <td>Por temporada</td>
-                <td>Una medicación que se espera sea usada a tiempo parcial en ciertos momentos del año</td>
+                <td>
+                  <div>
+                    <p>Una medicación que se espera sea usada a tiempo parcial en ciertos momentos del año</p>
+
+                  </div>
+                </td>
               </tr>
             </table>
           </div>
@@ -205,8 +243,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:15d16545-f2dc-4b7e-870b-d76308c2134a"/>
-          <timestamp value="2022-09-30T09:33:25-03:00"/>
+          <identifier value="urn:uuid:ae379aee-cfa9-407b-baad-1aacb179c147"/>
+          <timestamp value="2022-12-20T14:39:03-03:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -247,15 +285,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSFuncionProfesionalDispensacion.html">Funcion del Personal v0.9 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-CSFuncionProfesionalDispensacion.html">
-                <code>https://rme.hl7chile.cl/CodeSystem/CSFuncionProfesionalDispensacion</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -266,6 +302,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSFuncionProfesionalDispensacion-Dispensador"> </a>  
                   <a href="CodeSystem-CSFuncionProfesionalDispensacion.html#CSFuncionProfesionalDispensacion-Dispensador">Dispensador</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSFuncionProfesionalDispensacion</td>
                 <td>Dispensador</td>
               </tr>
               <tr>
@@ -273,6 +310,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSFuncionProfesionalDispensacion-Validador"> </a>  
                   <a href="CodeSystem-CSFuncionProfesionalDispensacion.html#CSFuncionProfesionalDispensacion-Validador">Validador</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSFuncionProfesionalDispensacion</td>
                 <td>Validador</td>
               </tr>
             </table>
@@ -300,8 +338,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:28a81f97-7f05-411e-9ba5-e4d1a5272219"/>
-          <timestamp value="2022-09-30T09:33:26-03:00"/>
+          <identifier value="urn:uuid:aff1beeb-63a5-4884-b220-27e010a2dcad"/>
+          <timestamp value="2022-12-20T14:39:04-03:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -337,15 +375,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSMetodos.html">Métodos de Administración v0.9 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-CSMetodos.html">
-                <code>https://rme.hl7chile.cl/CodeSystem/CSMetodos</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -356,6 +392,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSMetodos-738991002"> </a>  
                   <a href="CodeSystem-CSMetodos.html#CSMetodos-738991002">738991002</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSMetodos</td>
                 <td>Aplicación (método de administración)</td>
               </tr>
               <tr>
@@ -363,6 +400,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSMetodos-740685003"> </a>  
                   <a href="CodeSystem-CSMetodos.html#CSMetodos-740685003">740685003</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSMetodos</td>
                 <td>Inyección (método de administración)</td>
               </tr>
               <tr>
@@ -370,6 +408,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSMetodos-738990001"> </a>  
                   <a href="CodeSystem-CSMetodos.html#CSMetodos-738990001">738990001</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSMetodos</td>
                 <td>Administración (método de administración)</td>
               </tr>
               <tr>
@@ -377,6 +416,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSMetodos-785900008"> </a>  
                   <a href="CodeSystem-CSMetodos.html#CSMetodos-785900008">785900008</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSMetodos</td>
                 <td>Enjuague o lavado (método de administración)</td>
               </tr>
               <tr>
@@ -384,6 +424,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSMetodos-764794000"> </a>  
                   <a href="CodeSystem-CSMetodos.html#CSMetodos-764794000">764794000</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSMetodos</td>
                 <td>Infusión (método de administración)</td>
               </tr>
               <tr>
@@ -391,6 +432,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSMetodos-740666001"> </a>  
                   <a href="CodeSystem-CSMetodos.html#CSMetodos-740666001">740666001</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSMetodos</td>
                 <td>Inhalación (método de administración)</td>
               </tr>
               <tr>
@@ -398,6 +440,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSMetodos-738994005"> </a>  
                   <a href="CodeSystem-CSMetodos.html#CSMetodos-738994005">738994005</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSMetodos</td>
                 <td>Instilación (método de administración)</td>
               </tr>
               <tr>
@@ -405,6 +448,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSMetodos-738993004"> </a>  
                   <a href="CodeSystem-CSMetodos.html#CSMetodos-738993004">738993004</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSMetodos</td>
                 <td>Inserción (método de administración)</td>
               </tr>
               <tr>
@@ -412,6 +456,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSMetodos-738996007"> </a>  
                   <a href="CodeSystem-CSMetodos.html#CSMetodos-738996007">738996007</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSMetodos</td>
                 <td>Aerosolización (método de administración)</td>
               </tr>
               <tr>
@@ -419,6 +464,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSMetodos-738995006"> </a>  
                   <a href="CodeSystem-CSMetodos.html#CSMetodos-738995006">738995006</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSMetodos</td>
                 <td>Tragar (método de administración)</td>
               </tr>
               <tr>
@@ -426,6 +472,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSMetodos-738992009"> </a>  
                   <a href="CodeSystem-CSMetodos.html#CSMetodos-738992009">738992009</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSMetodos</td>
                 <td>Masticar (método de administración)</td>
               </tr>
               <tr>
@@ -433,6 +480,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSMetodos-764498003"> </a>  
                   <a href="CodeSystem-CSMetodos.html#CSMetodos-764498003">764498003</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSMetodos</td>
                 <td>Chupar (método de administración)</td>
               </tr>
               <tr>
@@ -440,6 +488,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSMetodos-823034001"> </a>  
                   <a href="CodeSystem-CSMetodos.html#CSMetodos-823034001">823034001</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSMetodos</td>
                 <td>Orodispersión (método de administración)</td>
               </tr>
               <tr>
@@ -447,6 +496,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSMetodos-827107003"> </a>  
                   <a href="CodeSystem-CSMetodos.html#CSMetodos-827107003">827107003</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSMetodos</td>
                 <td>Implante (método de administración)</td>
               </tr>
             </table>
@@ -474,8 +524,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0ac36288-dcb2-4f94-8ade-a8f4a60a3999"/>
-          <timestamp value="2022-09-30T09:33:26-03:00"/>
+          <identifier value="urn:uuid:d334c4f0-d89e-4342-8835-2b024654bd5c"/>
+          <timestamp value="2022-12-20T14:39:04-03:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -571,15 +621,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSRazonEstadoDispensacion.html">Razón del cambio de estado (Dispensación) v0.9 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-CSRazonEstadoDispensacion.html">
-                <code>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -593,160 +641,280 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-frr01"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-frr01">frr01</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>Orden detenida</td>
-                <td>Esta orden fue detenida por el prescriptor pero no necesariamente por medios electrónicos. Ejemplos: Detención verbal, un fax, etc.</td>
+                <td>
+                  <div>
+                    <p>Esta orden fue detenida por el prescriptor pero no necesariamente por medios electrónicos. Ejemplos: Detención verbal, un fax, etc.</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-frr02"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-frr02">frr02</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>Orden caducada</td>
-                <td>Orden no fue completada dentro de un periodo razonable de tiempo, y podría no estar vigente.</td>
+                <td>
+                  <div>
+                    <p>Orden no fue completada dentro de un periodo razonable de tiempo, y podría no estar vigente.</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-frr03"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-frr03">frr03</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>Información incompleta</td>
-                <td>La información necesaria para ejecutar de forma segura la orden que se esperaba estuviese disponible independiente de la orden aún no está disponible. Ejemplo: Resultados de laboratorio, diagnóstico por imágenes, etc.</td>
+                <td>
+                  <div>
+                    <p>La información necesaria para ejecutar de forma segura la orden que se esperaba estuviese disponible independiente de la orden aún no está disponible. Ejemplo: Resultados de laboratorio, diagnóstico por imágenes, etc.</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-frr04"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-frr04">frr04</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>Producto no disponible</td>
-                <td>Producto no disponible o no manufacturado. No se puede proveer.</td>
+                <td>
+                  <div>
+                    <p>Producto no disponible o no manufacturado. No se puede proveer.</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-frr06"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-frr06">frr06</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>Incapaz de proporcionar cuidados</td>
-                <td>Realizador no es capaz de proveer el cuidado necesario asociado con el cumplimiento de la orden. Ejemplo: La terapia requiere monitoreo constante por el realizador y el realizador estará terminando su práctica, dejando la ciudad, incapaz de dedicar el tiempo necesario, etc.</td>
+                <td>
+                  <div>
+                    <p>Realizador no es capaz de proveer el cuidado necesario asociado con el cumplimiento de la orden. Ejemplo: La terapia requiere monitoreo constante por el realizador y el realizador estará terminando su práctica, dejando la ciudad, incapaz de dedicar el tiempo necesario, etc.</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-altchoice"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-altchoice">altchoice</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>Primero probar otro tratamiento</td>
-                <td>Esta terapia ha sido definida como respaldo de una terapia de elección. Esta orden será liberada cuando y si la terapia de elección fracasa.</td>
+                <td>
+                  <div>
+                    <p>Esta terapia ha sido definida como respaldo de una terapia de elección. Esta orden será liberada cuando y si la terapia de elección fracasa.</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-clarif"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-clarif">clarif</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>La prescripción requiere una aclaración</td>
-                <td>Se requiere una aclaración antes de que la orden pueda ser realizada</td>
+                <td>
+                  <div>
+                    <p>Se requiere una aclaración antes de que la orden pueda ser realizada</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-drughigh"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-drughigh">drughigh</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>Dosis del fármaco es muy alta</td>
-                <td>Los niveles actuales del fármaco en el sistema del paciente son muy altos. El fármaco es suspendido para permitir que los niveles disminuyan hasta un nivel seguro</td>
+                <td>
+                  <div>
+                    <p>Los niveles actuales del fármaco en el sistema del paciente son muy altos. El fármaco es suspendido para permitir que los niveles disminuyan hasta un nivel seguro</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-hospadm"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-hospadm">hospadm</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>Admisión a hospital</td>
-                <td>El paciente ha ingresado a un centro asistencial y su medicación comunitaria será suspendido hasta el egreso hospitalario</td>
+                <td>
+                  <div>
+                    <p>El paciente ha ingresado a un centro asistencial y su medicación comunitaria será suspendido hasta el egreso hospitalario</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-labint"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-labint">labint</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>Interferencia con exámenes de laboratorio</td>
-                <td>La terapia podría interferir con un exámen de laboratorio planeado, por lo que se suspende la terapia hasta que el examen se realice</td>
+                <td>
+                  <div>
+                    <p>La terapia podría interferir con un exámen de laboratorio planeado, por lo que se suspende la terapia hasta que el examen se realice</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-non-avail"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-non-avail">non-avail</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>Paciente no disponible</td>
-                <td>Paciente no disponible por un período de tiempo debido a una terapia programada, permiso de ausencia u otra razón</td>
+                <td>
+                  <div>
+                    <p>Paciente no disponible por un período de tiempo debido a una terapia programada, permiso de ausencia u otra razón</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-preg"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-preg">preg</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>Paciente embarazada/amamantando</td>
-                <td>La paciente está embarazada o amamantando. La terapia se continuará cuando se complete el embarazo y la paciente deje de amamantar.</td>
+                <td>
+                  <div>
+                    <p>La paciente está embarazada o amamantando. La terapia se continuará cuando se complete el embarazo y la paciente deje de amamantar.</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-saig"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-saig">saig</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>Alergia</td>
-                <td>Se sospecha que el paciente es alérgico a una sustancia que es parte de la terapia y la terapia será temporalmente suspendida para confirmar</td>
+                <td>
+                  <div>
+                    <p>Se sospecha que el paciente es alérgico a una sustancia que es parte de la terapia y la terapia será temporalmente suspendida para confirmar</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-sddi"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-sddi">sddi</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>Fármaco interactúa con otro fármaco</td>
-                <td>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</td>
+                <td>
+                  <div>
+                    <p>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-sdupther"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-sdupther">sdupther</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>Terapia duplicada</td>
-                <td>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</td>
+                <td>
+                  <div>
+                    <p>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-sintol"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-sintol">sintol</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>Intolerancia sospechada</td>
-                <td>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</td>
+                <td>
+                  <div>
+                    <p>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-surg"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-surg">surg</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>Paciente programado para cirugía</td>
-                <td>Este fármaco está contraindicado en pacientes que serán sometidos a cirugía y el paciente está programado para recibir una cirugía en el futuro cercano. El fármaco será retomado una vez que el paciente se haya recuperado lo suficiente de la cirugía</td>
+                <td>
+                  <div>
+                    <p>Este fármaco está contraindicado en pacientes que serán sometidos a cirugía y el paciente está programado para recibir una cirugía en el futuro cercano. El fármaco será retomado una vez que el paciente se haya recuperado lo suficiente de la cirugía</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-washout"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-washout">washout</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>En espera de eliminación de fármaco previo</td>
-                <td>El paciente estaba recibiendo un fármaco que está contraindicado con su medicación actual. La medicación actual se mantendrá en espera hasta que el fármaco anterior haya sido eliminado de su sistema</td>
+                <td>
+                  <div>
+                    <p>El paciente estaba recibiendo un fármaco que está contraindicado con su medicación actual. La medicación actual se mantendrá en espera hasta que el fármaco anterior haya sido eliminado de su sistema</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-outofstock"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-outofstock">outofstock</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>Fármaco no disponible - Sin stock</td>
-                <td>Fármaco sin stock. No se puede proveer.</td>
+                <td>
+                  <div>
+                    <p>Fármaco sin stock. No se puede proveer.</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSRazonEstadoDispensacion-offmarket"> </a>  
                   <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-offmarket">offmarket</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion</td>
                 <td>Fármaco no disponible - Fuera del mercado</td>
-                <td>Fármaco ya no se vende. No se puede proveer.</td>
+                <td>
+                  <div>
+                    <p>Fármaco ya no se vende. No se puede proveer.</p>
+
+                  </div>
+                </td>
               </tr>
             </table>
           </div>
@@ -773,8 +941,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:04e5b39a-35db-4585-a6f8-13008db6815c"/>
-          <timestamp value="2022-09-30T09:33:26-03:00"/>
+          <identifier value="urn:uuid:6c76b8e0-6043-44d3-ba01-2b46b2b0c100"/>
+          <timestamp value="2022-12-20T14:39:04-03:00"/>
           <total value="20"/>
           <parameter>
             <name value="excludeNested"/>
@@ -900,15 +1068,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSStatusReason.html">Razón del cambio de estado (Prescripción) v0.9 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-CSStatusReason.html">
-                <code>https://rme.hl7chile.cl/CodeSystem/CSStatusReason</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -922,112 +1088,196 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSStatusReason-altchoice"> </a>  
                   <a href="CodeSystem-CSStatusReason.html#CSStatusReason-altchoice">altchoice</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSStatusReason</td>
                 <td>Primero probar otro tratamiento</td>
-                <td>Esta terapia se ha ordenado como respaldo a una terapia preferida. Esta orden será liberada cuando y si, la terapia preferida no tiene éxito</td>
+                <td>
+                  <div>
+                    <p>Esta terapia se ha ordenado como respaldo a una terapia preferida. Esta orden será liberada cuando y si, la terapia preferida no tiene éxito</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSStatusReason-clarif"> </a>  
                   <a href="CodeSystem-CSStatusReason.html#CSStatusReason-clarif">clarif</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSStatusReason</td>
                 <td>La prescripción requiere una aclaración</td>
-                <td>Se requiere una aclaración antes de que la orden pueda ser realizada</td>
+                <td>
+                  <div>
+                    <p>Se requiere una aclaración antes de que la orden pueda ser realizada</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSStatusReason-drughigh"> </a>  
                   <a href="CodeSystem-CSStatusReason.html#CSStatusReason-drughigh">drughigh</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSStatusReason</td>
                 <td>Dosis del fármaco es muy alta</td>
-                <td>Los niveles actuales del fármaco en el sistema del paciente son muy altos. El fármaco es suspendido para permitir que los niveles disminuyan hasta un nivel seguro</td>
+                <td>
+                  <div>
+                    <p>Los niveles actuales del fármaco en el sistema del paciente son muy altos. El fármaco es suspendido para permitir que los niveles disminuyan hasta un nivel seguro</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSStatusReason-hospadm"> </a>  
                   <a href="CodeSystem-CSStatusReason.html#CSStatusReason-hospadm">hospadm</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSStatusReason</td>
                 <td>Admisión a hospital</td>
-                <td>El paciente ha sido ingresado a un centro asistencial y su medicación comunitaria será suspendida hasta el alta hospitalaria</td>
+                <td>
+                  <div>
+                    <p>El paciente ha sido ingresado a un centro asistencial y su medicación comunitaria será suspendida hasta el alta hospitalaria</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSStatusReason-labint"> </a>  
                   <a href="CodeSystem-CSStatusReason.html#CSStatusReason-labint">labint</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSStatusReason</td>
                 <td>Interferencia con exámenes de laboratorio</td>
-                <td>La terapia podría interferir con un exámen de laboratorio planificado, por lo que se suspende la terapia hasta que el exámen se realice</td>
+                <td>
+                  <div>
+                    <p>La terapia podría interferir con un exámen de laboratorio planificado, por lo que se suspende la terapia hasta que el exámen se realice</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSStatusReason-non-avail"> </a>  
                   <a href="CodeSystem-CSStatusReason.html#CSStatusReason-non-avail">non-avail</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSStatusReason</td>
                 <td>Paciente no disponible</td>
-                <td>Paciente no disponible por un período de tiempo debido a una terapia programada, permiso de ausencia u otra razón</td>
+                <td>
+                  <div>
+                    <p>Paciente no disponible por un período de tiempo debido a una terapia programada, permiso de ausencia u otra razón</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSStatusReason-preg"> </a>  
                   <a href="CodeSystem-CSStatusReason.html#CSStatusReason-preg">preg</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSStatusReason</td>
                 <td>Paciente embarazada/amamantando</td>
-                <td>La paciente está embarazada o amamantando. La terapia se continuará cuando se complete el embarazo, y la paciente deje de amamantar.</td>
+                <td>
+                  <div>
+                    <p>La paciente está embarazada o amamantando. La terapia se continuará cuando se complete el embarazo, y la paciente deje de amamantar.</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSStatusReason-salg"> </a>  
                   <a href="CodeSystem-CSStatusReason.html#CSStatusReason-salg">salg</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSStatusReason</td>
                 <td>Alergia</td>
-                <td>Se sospecha que el paciente es alérgico a una sustancia que forma parte de la terapia, por lo que ésta será temporalmente suspendida para confirmar</td>
+                <td>
+                  <div>
+                    <p>Se sospecha que el paciente es alérgico a una sustancia que forma parte de la terapia, por lo que ésta será temporalmente suspendida para confirmar</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSStatusReason-sddi"> </a>  
                   <a href="CodeSystem-CSStatusReason.html#CSStatusReason-sddi">sddi</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSStatusReason</td>
                 <td>Fármaco interactúa con otro fármaco</td>
-                <td>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</td>
+                <td>
+                  <div>
+                    <p>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSStatusReason-sdupther"> </a>  
                   <a href="CodeSystem-CSStatusReason.html#CSStatusReason-sdupther">sdupther</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSStatusReason</td>
                 <td>Terapia duplicada</td>
-                <td>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</td>
+                <td>
+                  <div>
+                    <p>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSStatusReason-sintol"> </a>  
                   <a href="CodeSystem-CSStatusReason.html#CSStatusReason-sintol">sintol</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSStatusReason</td>
                 <td>Sospecha de intolerancia</td>
-                <td>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</td>
+                <td>
+                  <div>
+                    <p>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSStatusReason-surg"> </a>  
                   <a href="CodeSystem-CSStatusReason.html#CSStatusReason-surg">surg</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSStatusReason</td>
                 <td>Paciente programado para cirugía</td>
-                <td>El fármaco está contraindicado para pacientes que se someten a cirugía y para pacientes que estén programados para ser admitidos para cirugía en un futuro próximo. El tratamiento se reanudará cuando el paciente se haya recuperado suficientemente de la cirugía.</td>
+                <td>
+                  <div>
+                    <p>El fármaco está contraindicado para pacientes que se someten a cirugía y para pacientes que estén programados para ser admitidos para cirugía en un futuro próximo. El tratamiento se reanudará cuando el paciente se haya recuperado suficientemente de la cirugía.</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSStatusReason-washout"> </a>  
                   <a href="CodeSystem-CSStatusReason.html#CSStatusReason-washout">washout</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSStatusReason</td>
                 <td>En espera de eliminación de fármaco previo</td>
-                <td>El paciente estaba recibiendo un fármaco que está contraindicado con su medicación actual. La medicación actual se mantendrá en espera hasta que el fármaco anterior haya sido eliminado de su sistema</td>
+                <td>
+                  <div>
+                    <p>El paciente estaba recibiendo un fármaco que está contraindicado con su medicación actual. La medicación actual se mantendrá en espera hasta que el fármaco anterior haya sido eliminado de su sistema</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSStatusReason-otra"> </a>  
                   <a href="CodeSystem-CSStatusReason.html#CSStatusReason-otra">otra</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSStatusReason</td>
                 <td>Otra</td>
-                <td>Otra razón no considerada en el listado</td>
+                <td>
+                  <div>
+                    <p>Otra razón no considerada en el listado</p>
+
+                  </div>
+                </td>
               </tr>
             </table>
           </div>
@@ -1054,8 +1304,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:153fff35-284a-40bd-97a0-024d4f17bebd"/>
-          <timestamp value="2022-09-30T09:33:26-03:00"/>
+          <identifier value="urn:uuid:c034afda-dab6-4875-b53e-80277cc5e86c"/>
+          <timestamp value="2022-12-20T14:39:04-03:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1151,15 +1401,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSTipoPrescripcion.html">Tipo de Prescripción v0.9 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-CSTipoPrescripcion.html">
-                <code>https://rme.hl7chile.cl/CodeSystem/CSTipoPrescripcion</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -1170,6 +1418,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSTipoPrescripcion-Id-Local"> </a>  
                   <a href="CodeSystem-CSTipoPrescripcion.html#CSTipoPrescripcion-Id_Local">Id_Local</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSTipoPrescripcion</td>
                 <td>Id_Local</td>
               </tr>
               <tr>
@@ -1177,6 +1426,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSTipoPrescripcion-Id-Cheque"> </a>  
                   <a href="CodeSystem-CSTipoPrescripcion.html#CSTipoPrescripcion-Id_Cheque">Id_Cheque</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSTipoPrescripcion</td>
                 <td>Id_Cheque</td>
               </tr>
               <tr>
@@ -1184,6 +1434,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSTipoPrescripcion-Id-Receta-Grafica"> </a>  
                   <a href="CodeSystem-CSTipoPrescripcion.html#CSTipoPrescripcion-Id_Receta_Grafica">Id_Receta_Grafica</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSTipoPrescripcion</td>
                 <td>Id_Receta_Grafica</td>
               </tr>
             </table>
@@ -1211,8 +1462,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:094a6744-f9f2-4622-b67b-675350c5fdf7"/>
-          <timestamp value="2022-09-30T09:33:26-03:00"/>
+          <identifier value="urn:uuid:1a767e97-e5ed-4903-9f82-08d26d523cbd"/>
+          <timestamp value="2022-12-20T14:39:04-03:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1253,15 +1504,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSUnidadAsistencial.html">Unidad Asistencial v0.9 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-CSUnidadAsistencial.html">
-                <code>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -1272,6 +1521,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-mililitro"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-mililitro">mililitro</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Mililitro</td>
               </tr>
               <tr>
@@ -1279,6 +1529,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-comprimido"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-comprimido">comprimido</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Comprimido</td>
               </tr>
               <tr>
@@ -1286,6 +1537,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-miligramo"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-miligramo">miligramo</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Miligramo</td>
               </tr>
               <tr>
@@ -1293,6 +1545,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-unidades"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-unidades">unidades</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Unidades</td>
               </tr>
               <tr>
@@ -1300,6 +1553,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-capsula"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-capsula">capsula</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Cápsula</td>
               </tr>
               <tr>
@@ -1307,6 +1561,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-aplicacion"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-aplicacion">aplicacion</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Aplicación</td>
               </tr>
               <tr>
@@ -1314,6 +1569,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-supositorio"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-supositorio">supositorio</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Supositorio</td>
               </tr>
               <tr>
@@ -1321,6 +1577,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-ampolla"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-ampolla">ampolla</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Ampolla</td>
               </tr>
               <tr>
@@ -1328,6 +1585,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-sobre"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-sobre">sobre</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Sobre</td>
               </tr>
               <tr>
@@ -1335,6 +1593,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-gotas"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-gotas">gotas</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Gotas</td>
               </tr>
               <tr>
@@ -1342,6 +1601,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-dosis"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-dosis">dosis</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Dosis</td>
               </tr>
               <tr>
@@ -1349,6 +1609,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-aposito"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-aposito">aposito</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Apósito</td>
               </tr>
               <tr>
@@ -1356,6 +1617,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-parche"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-parche">parche</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Parche</td>
               </tr>
               <tr>
@@ -1363,6 +1625,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-microgramo"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-microgramo">microgramo</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Microgramo</td>
               </tr>
               <tr>
@@ -1370,6 +1633,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-frasco"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-frasco">frasco</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Frasco</td>
               </tr>
               <tr>
@@ -1377,6 +1641,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-unidades-internacionales"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-unidades-internacionales">unidades-internacionales</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Unidades Internacionales</td>
               </tr>
               <tr>
@@ -1384,6 +1649,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-puff"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-puff">puff</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Puff</td>
               </tr>
               <tr>
@@ -1391,6 +1657,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-bidon"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-bidon">bidon</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Bidón</td>
               </tr>
               <tr>
@@ -1398,6 +1665,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-bolsa"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-bolsa">bolsa</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Bolsa</td>
               </tr>
               <tr>
@@ -1405,6 +1673,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-gramo"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-gramo">gramo</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Gramo</td>
               </tr>
               <tr>
@@ -1412,6 +1681,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-dispositivo"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-dispositivo">dispositivo</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Dispositivo</td>
               </tr>
               <tr>
@@ -1419,6 +1689,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-ovulo"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-ovulo">ovulo</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Óvulo</td>
               </tr>
               <tr>
@@ -1426,6 +1697,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-vial"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-vial">vial</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Vial</td>
               </tr>
               <tr>
@@ -1433,6 +1705,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-implante"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-implante">implante</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Implante</td>
               </tr>
               <tr>
@@ -1440,6 +1713,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-anillo-vaginal"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-anillo-vaginal">anillo-vaginal</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Anillo Vaginal</td>
               </tr>
               <tr>
@@ -1447,6 +1721,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-chicle"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-chicle">chicle</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Chicle</td>
               </tr>
               <tr>
@@ -1454,6 +1729,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-tarro"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-tarro">tarro</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Tarro</td>
               </tr>
               <tr>
@@ -1461,6 +1737,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-aplicador"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-aplicador">aplicador</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Aplicador</td>
               </tr>
               <tr>
@@ -1468,6 +1745,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-jeringa-prellenada"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-jeringa-prellenada">jeringa-prellenada</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Jeringa Prellenada</td>
               </tr>
               <tr>
@@ -1475,6 +1753,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-gragea"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-gragea">gragea</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Gragea</td>
               </tr>
               <tr>
@@ -1482,6 +1761,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-cartucho"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-cartucho">cartucho</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Cartucho</td>
               </tr>
               <tr>
@@ -1489,6 +1769,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSUnidadAsistencial-globulo"> </a>  
                   <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-globulo">globulo</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial</td>
                 <td>Glóbulo</td>
               </tr>
             </table>
@@ -1516,8 +1797,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bd997bd9-e61b-4e19-925c-96ee26f889f2"/>
-          <timestamp value="2022-09-30T09:33:26-03:00"/>
+          <identifier value="urn:uuid:4cb41340-af54-426f-ad4f-a618e2665650"/>
+          <timestamp value="2022-12-20T14:39:04-03:00"/>
           <total value="32"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1703,15 +1984,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSViasAdmin.html">Vías de Administración v0.9 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-CSViasAdmin.html">
-                <code>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -1722,6 +2001,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-26643006"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-26643006">26643006</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía Oral route (calificador)</td>
               </tr>
               <tr>
@@ -1729,6 +2009,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-46713006"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-46713006">46713006</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en cavidad nasal (calificador)</td>
               </tr>
               <tr>
@@ -1736,6 +2017,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-404820008"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-404820008">404820008</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en el espacio epidural que rodea a la duramadre (calificador)</td>
               </tr>
               <tr>
@@ -1743,6 +2025,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-418136008"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-418136008">418136008</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración a través de estoma gastrointestinal (calificador)</td>
               </tr>
               <tr>
@@ -1750,6 +2033,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-127490009"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-127490009">127490009</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración a través de gastrostomía (calificador)</td>
               </tr>
               <tr>
@@ -1757,6 +2041,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-127491008"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-127491008">127491008</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración a través de yeyunostomía (calificador)</td>
               </tr>
               <tr>
@@ -1764,6 +2049,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-58100008"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-58100008">58100008</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración intrarterial (calificador)</td>
               </tr>
               <tr>
@@ -1771,6 +2057,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-12130007"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-12130007">12130007</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en una articulación (calificador)</td>
               </tr>
               <tr>
@@ -1778,6 +2065,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-372461007"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-372461007">372461007</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en lesión cavernosa (calificador)</td>
               </tr>
               <tr>
@@ -1785,6 +2073,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-372461008"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-372461008">372461008</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en lesión cavernosa (calificador)</td>
               </tr>
               <tr>
@@ -1792,6 +2081,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-372464004"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-372464004">372464004</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en la dermis (calificador)</td>
               </tr>
               <tr>
@@ -1799,6 +2089,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-78421000"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-78421000">78421000</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración intramuscular (calificador)</td>
               </tr>
               <tr>
@@ -1806,6 +2097,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-38239002"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-38239002">38239002</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en la cavidad peritoneal (calificador)</td>
               </tr>
               <tr>
@@ -1813,6 +2105,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-72607000"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-72607000">72607000</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en el espacio subaracnoideo (calificador)</td>
               </tr>
               <tr>
@@ -1820,6 +2113,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-418892005"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-418892005">418892005</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en cisterna magna (calificador)</td>
               </tr>
               <tr>
@@ -1827,6 +2121,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-420719007"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-420719007">420719007</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en ventrículo cerebral (calificador)</td>
               </tr>
               <tr>
@@ -1834,6 +2129,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-62226000"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-62226000">62226000</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en la cavidad uterina (calificador)</td>
               </tr>
               <tr>
@@ -1841,6 +2137,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-47625008"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-47625008">47625008</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración intravenosa (calificador)</td>
               </tr>
               <tr>
@@ -1848,6 +2145,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-372471009"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-372471009">372471009</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en la cavidad de la vejiga (calificador)</td>
               </tr>
               <tr>
@@ -1855,6 +2153,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-54485002"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-54485002">54485002</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración oftálmica (calificador)</td>
               </tr>
               <tr>
@@ -1862,6 +2161,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-10547007"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-10547007">10547007</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración a través del oído (calificador)</td>
               </tr>
               <tr>
@@ -1869,6 +2169,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-37161004"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-37161004">37161004</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en el recto (calificador)</td>
               </tr>
               <tr>
@@ -1876,6 +2177,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-127492001"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-127492001">127492001</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración a través de la nariz hasta el estómago (calificador)</td>
               </tr>
               <tr>
@@ -1883,6 +2185,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-34206005"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-34206005">34206005</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración subcutánea (calificador)</td>
               </tr>
               <tr>
@@ -1890,6 +2193,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-37839007"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-37839007">37839007</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración por debajo de la lengua (calificador)</td>
               </tr>
               <tr>
@@ -1897,6 +2201,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-6064005"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-6064005">6064005</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración tópica (calificador)</td>
               </tr>
               <tr>
@@ -1904,6 +2209,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-45890007"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-45890007">45890007</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración a través de la dermis (calificador)</td>
               </tr>
               <tr>
@@ -1911,6 +2217,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-418511008"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-418511008">418511008</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración a través de la uretra (calificador)</td>
               </tr>
               <tr>
@@ -1918,6 +2225,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-16857009"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-16857009">16857009</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración por la vagina (calificador)</td>
               </tr>
               <tr>
@@ -1925,6 +2233,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-418722009"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-418722009">418722009</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración alrededor del globo ocular (calificador)</td>
               </tr>
               <tr>
@@ -1932,6 +2241,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-419762003"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-419762003">419762003</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración alrededor de un tendón (calificador)</td>
               </tr>
               <tr>
@@ -1939,6 +2249,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-418813001"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-418813001">418813001</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración a través de drenaje quirúrgico (calificador)</td>
               </tr>
               <tr>
@@ -1946,6 +2257,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-372458006"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-372458006">372458006</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en la cavidad amniótica (calificador)</td>
               </tr>
               <tr>
@@ -1953,6 +2265,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-419894000"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-419894000">419894000</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en cavidad quirúrgica (calificador)</td>
               </tr>
               <tr>
@@ -1960,6 +2273,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-418162004"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-418162004">418162004</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración a través de colostomía (calificador)</td>
               </tr>
               <tr>
@@ -1967,6 +2281,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-418418000"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-418418000">418418000</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en columna vertebral (calificador)</td>
               </tr>
               <tr>
@@ -1974,6 +2289,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-372460008"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-372460008">372460008</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en el corazón (calificador)</td>
               </tr>
               <tr>
@@ -1981,6 +2297,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-419243002"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-419243002">419243002</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración a través del cuello uterino (calificador)</td>
               </tr>
               <tr>
@@ -1988,6 +2305,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-448598008"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-448598008">448598008</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración cutánea (calificador)</td>
               </tr>
               <tr>
@@ -1995,6 +2313,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-445769006"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-445769006">445769006</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en el cuerpo cavernoso (calificador)</td>
               </tr>
               <tr>
@@ -2002,6 +2321,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-372449004"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-372449004">372449004</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración dental (calificador)</td>
               </tr>
               <tr>
@@ -2009,6 +2329,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-372457001"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-372457001">372457001</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en la encía (calificador)</td>
               </tr>
               <tr>
@@ -2016,6 +2337,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-417985001"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-417985001">417985001</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración enteral (calificador)</td>
               </tr>
               <tr>
@@ -2023,6 +2345,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-420163009"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-420163009">420163009</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración a través de esofagostomía (calificador)</td>
               </tr>
               <tr>
@@ -2030,6 +2353,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-697971008"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-697971008">697971008</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración a través de fístula arteriovenosa (calificador)</td>
               </tr>
               <tr>
@@ -2037,6 +2361,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-447121004"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-447121004">447121004</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en la glándula mamaria (calificador)</td>
               </tr>
               <tr>
@@ -2044,6 +2369,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-766790006"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-766790006">766790006</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de hemodiálisis extracorpórea (calificador)</td>
               </tr>
               <tr>
@@ -2051,6 +2377,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-418401004"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-418401004">418401004</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en el humor vítreo (calificador)</td>
               </tr>
               <tr>
@@ -2058,6 +2385,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-419954003"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-419954003">419954003</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración a través de ileostomía (calificador)</td>
               </tr>
               <tr>
@@ -2065,6 +2393,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-372459003"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-372459003">372459003</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en una bolsa serosa (calificador)</td>
               </tr>
               <tr>
@@ -2072,6 +2401,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-58771000052103"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-58771000052103">58771000052103</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía intracolangiopancreática (calificador)</td>
               </tr>
               <tr>
@@ -2079,6 +2409,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-429817007"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-429817007">429817007</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en el intersticio de un tejido (calificador)</td>
               </tr>
               <tr>
@@ -2086,6 +2417,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-418608002"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-418608002">418608002</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en la córnea (calificador)</td>
               </tr>
               <tr>
@@ -2093,6 +2425,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-711360002"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-711360002">711360002</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía intraneural (calificador)</td>
               </tr>
               <tr>
@@ -2100,6 +2433,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-446442000"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-446442000">446442000</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración a través de la placenta (calificador)</td>
               </tr>
               <tr>
@@ -2107,6 +2441,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-60213007"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-60213007">60213007</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en médula ósea (calificador)</td>
               </tr>
               <tr>
@@ -2114,6 +2449,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-418730005"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-418730005">418730005</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración a través de la nariz hasta el yeyuno (calificador)</td>
               </tr>
               <tr>
@@ -2121,6 +2457,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-428191002"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-428191002">428191002</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración a través de la piel (calificador)</td>
               </tr>
               <tr>
@@ -2128,6 +2465,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-372474001"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-372474001">372474001</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en tejidos que rodean una articulación (calificador)</td>
               </tr>
               <tr>
@@ -2135,6 +2473,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-445771006"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-445771006">445771006</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en pericardio (calificador)</td>
               </tr>
               <tr>
@@ -2142,6 +2481,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-372475000"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-372475000">372475000</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en el tejido que rodea a un nervio (calificador)</td>
               </tr>
               <tr>
@@ -2149,6 +2489,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-420047004"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-420047004">420047004</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en el periostio (calificador)</td>
               </tr>
               <tr>
@@ -2156,6 +2497,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-372469009"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-372469009">372469009</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en pleura o espacio pleural (calificador)</td>
               </tr>
               <tr>
@@ -2163,6 +2505,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-418321004"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-418321004">418321004</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración retrobulbar (calificador)</td>
               </tr>
               <tr>
@@ -2170,6 +2513,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-58831000052108"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-58831000052108">58831000052108</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía subretiniana (calificador)</td>
               </tr>
               <tr>
@@ -2177,6 +2521,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-447081004"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-447081004">447081004</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en el tracto respiratorio inferior (calificador)</td>
               </tr>
               <tr>
@@ -2184,6 +2529,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-447227007"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-447227007">447227007</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración a través del tímpano (calificador)</td>
               </tr>
               <tr>
@@ -2191,6 +2537,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-447122006"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-447122006">447122006</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en un tumor (calificador)</td>
               </tr>
               <tr>
@@ -2198,6 +2545,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-420168000"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-420168000">420168000</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración a través urostomía (calificador)</td>
               </tr>
               <tr>
@@ -2205,6 +2553,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-372463005"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-372463005">372463005</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en vaso coronario (calificador)</td>
               </tr>
               <tr>
@@ -2212,6 +2561,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-372467006"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-372467006">372467006</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en vaso o ganglio linfático (calificador)</td>
               </tr>
               <tr>
@@ -2219,6 +2569,7 @@
                   <a name="https---rme.hl7chile.cl-CodeSystem-CSViasAdmin-404819002"> </a>  
                   <a href="CodeSystem-CSViasAdmin.html#CSViasAdmin-404819002">404819002</a>
                 </td>
+                <td>https://rme.hl7chile.cl/CodeSystem/CSViasAdmin</td>
                 <td>vía de administración en la bilis o las vías biliares (calificador)</td>
               </tr>
             </table>
@@ -2246,8 +2597,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a30bffb2-87e2-425c-b93d-696b1cd76512"/>
-          <timestamp value="2022-09-30T09:33:26-03:00"/>
+          <identifier value="urn:uuid:8214ba99-90fd-4f8d-a632-8ad85a91d5b7"/>
+          <timestamp value="2022-12-20T14:39:04-03:00"/>
           <total value="72"/>
           <parameter>
             <name value="excludeNested"/>

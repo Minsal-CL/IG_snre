@@ -1,19 +1,19 @@
 ﻿RecetaCL : Validation Results
 =========================================
 
-err = 0, warn = 21, info = 10
-IG Publisher Version: 1.1.128 Out of date - current version is 1.2.4
-Generated Fri Sep 30 09:34:36 CLST 2022. FHIR version 4.0.1 for hl7.fhir.cl.recetachile#0.9 (canonical = https://rme.hl7chile.cl)
- Build Errors : 9 / 21 / 0
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\CodeSystem-CSCodificacionCategoria : 0 / 0 / 2
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\CodeSystem-CSCodificacionPatron : 0 / 0 / 2
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\CodeSystem-CSFuncionProfesionalDispensacion : 0 / 0 / 2
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\CodeSystem-CSMetodos : 0 / 0 / 2
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\CodeSystem-CSRazonEstadoDispensacion : 0 / 0 / 2
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\CodeSystem-CSStatusReason : 0 / 0 / 2
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\CodeSystem-CSTipoPrescripcion : 0 / 0 / 2
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\CodeSystem-CSUnidadAsistencial : 0 / 0 / 2
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\CodeSystem-CSViasAdmin : 0 / 0 / 2
+err = 29, warn = 26, info = 10
+IG Publisher Version: 1.2.22 Out of date - current version is 1.2.25
+Generated Tue Dec 20 14:40:20 CLST 2022. FHIR version 4.0.1 for hl7.fhir.cl.recetachile#0.9 (canonical = https://rme.hl7chile.cl)
+ Build Errors : 1 / 25 / 0
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\CodeSystem-CSCodificacionCategoria : 2 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\CodeSystem-CSCodificacionPatron : 2 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\CodeSystem-CSFuncionProfesionalDispensacion : 2 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\CodeSystem-CSMetodos : 2 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\CodeSystem-CSRazonEstadoDispensacion : 2 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\CodeSystem-CSStatusReason : 2 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\CodeSystem-CSTipoPrescripcion : 2 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\CodeSystem-CSUnidadAsistencial : 2 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\CodeSystem-CSViasAdmin : 2 / 0 / 2
  C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.recetachile : 0 / 0 / 1
  C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\Location-tqo6krppa0gbygu2kkud : 0 / 0 / 1
  C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\Medication-1654171000167115 : 0 / 0 / 1
@@ -65,20 +65,21 @@ Generated Fri Sep 30 09:34:36 CLST 2022. FHIR version 4.0.1 for hl7.fhir.cl.rece
  C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\RequestGroup-Ejemplo6-Receta : 0 / 0 / 5
  C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\RequestGroup-Ejemplo7-Receta : 0 / 0 / 3
  C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-DispensacionMedicamentoCl : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-PacienteCardio : 0 / 1 / 1
  C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-ProdComercial : 0 / 0 / 1
  C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RangeCL : 0 / 0 / 1
  C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaCl : 0 / 0 / 1
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl : 2 / 0 / 1
  C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\StructureDefinition-SimpleQuantityCL : 0 / 0 / 1
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ValueSet-VSCodificacionCategoria : 0 / 0 / 1
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ValueSet-VSCodificacionPatron : 0 / 0 / 1
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ValueSet-VSFuncionProfesionalDispensacion : 0 / 0 / 1
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ValueSet-VSMetodos : 0 / 0 / 1
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ValueSet-VSRazonEstadoDispensacion : 0 / 0 / 1
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ValueSet-VSStatusReason : 0 / 0 / 1
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ValueSet-VSTipoPrescripcion : 0 / 0 / 1
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ValueSet-VSUnidadAsistencial : 0 / 0 / 1
- C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ValueSet-VSViasAdmin : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ValueSet-VSCodificacionCategoria : 1 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ValueSet-VSCodificacionPatron : 1 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ValueSet-VSFuncionProfesionalDispensacion : 1 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ValueSet-VSMetodos : 1 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ValueSet-VSRazonEstadoDispensacion : 1 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ValueSet-VSStatusReason : 1 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ValueSet-VSTipoPrescripcion : 1 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ValueSet-VSUnidadAsistencial : 1 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\fsh-generated\resources\ValueSet-VSViasAdmin : 1 / 0 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/Ejemplo1-Dispensacion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -103,32 +104,46 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/Ejemplo7-prescipcion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/Ejemplo8-prescipcion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\output\operaciones.html#/html/body/div/div/div/div/div/ul/li/a at Line 532, column 111: The link 'resource-operations.html' for "Resource Operations" cannot be resolved
-ERROR: C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\output\toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 174, column 38353: The link 'MedicationRequest-Ejemplo1-Receta_Inline-Instance-para-ejemplo1.html' for "5.46.1 MedicationRequest" cannot be resolved
-ERROR: C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\output\toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 174, column 41367: The link 'MedicationRequest-Ejemplo2-Receta_Inline-Instance-para-ejemplo2.html' for "5.49.1 MedicationRequest" cannot be resolved
-ERROR: C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\output\toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 174, column 44381: The link 'MedicationRequest-Ejemplo3-Receta_Inline-Instance-para-ejemplo3.html' for "5.52.1 MedicationRequest" cannot be resolved
-ERROR: C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\output\toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 174, column 47395: The link 'MedicationRequest-Ejemplo4-Receta_Inline-Instance-para-ejemplo4.html' for "5.55.1 MedicationRequest" cannot be resolved
-ERROR: C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\output\toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 174, column 50409: The link 'MedicationRequest-Ejemplo5-Receta_Inline-Instance-para-ejemplo5.html' for "5.58.1 MedicationRequest" cannot be resolved
-ERROR: C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\output\toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 174, column 53419: The link 'MedicationRequest-Ejemplo6-Receta_Inline-Instance-para-ejemplo6.html' for "5.61.1 MedicationRequest" cannot be resolved
-ERROR: C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\output\toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 174, column 54259: The link 'MedicationRequest-Ejemplo6-Receta_Inline-Instance-para-ejemplo7.html' for "5.61.2 MedicationRequest" cannot be resolved
-ERROR: C:\Users\jmansilla\ownCloud\IGs\_IG_Receta\output\toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 174, column 56539: The link 'MedicationRequest-Ejemplo7-Receta_Inline-Instance-para-ejemplo8.html' for "5.63.1 MedicationRequest" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated\resources\CodeSystem-CSCodificacionCategoria.json ==
 INFORMATION: CodeSystem/CSCodificacionCategoria: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/CSCodificacionCategoria: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/CSCodificacionCategoria: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == fsh-generated\resources\CodeSystem-CSCodificacionPatron.json ==
 INFORMATION: CodeSystem/CSCodificacionPatron: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/CSCodificacionPatron: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/CSCodificacionPatron: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == fsh-generated\resources\CodeSystem-CSFuncionProfesionalDispensacion.json ==
 INFORMATION: CodeSystem/CSFuncionProfesionalDispensacion: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/CSFuncionProfesionalDispensacion: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/CSFuncionProfesionalDispensacion: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == fsh-generated\resources\CodeSystem-CSMetodos.json ==
 INFORMATION: CodeSystem/CSMetodos: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/CSMetodos: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/CSMetodos: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == fsh-generated\resources\CodeSystem-CSRazonEstadoDispensacion.json ==
 INFORMATION: CodeSystem/CSRazonEstadoDispensacion: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/CSRazonEstadoDispensacion: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/CSRazonEstadoDispensacion: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == fsh-generated\resources\CodeSystem-CSStatusReason.json ==
 INFORMATION: CodeSystem/CSStatusReason: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/CSStatusReason: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/CSStatusReason: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == fsh-generated\resources\CodeSystem-CSTipoPrescripcion.json ==
 INFORMATION: CodeSystem/CSTipoPrescripcion: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/CSTipoPrescripcion: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/CSTipoPrescripcion: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == fsh-generated\resources\CodeSystem-CSUnidadAsistencial.json ==
 INFORMATION: CodeSystem/CSUnidadAsistencial: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/CSUnidadAsistencial: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/CSUnidadAsistencial: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == fsh-generated\resources\CodeSystem-CSViasAdmin.json ==
 INFORMATION: CodeSystem/CSViasAdmin: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/CSViasAdmin: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/CSViasAdmin: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.recetachile.json ==
 == fsh-generated\resources\Location-tqo6krppa0gbygu2kkud.json ==
 == fsh-generated\resources\Medication-1654171000167115.json ==
@@ -181,17 +196,30 @@ INFORMATION: CodeSystem/CSViasAdmin: CodeSystem: CodeSystems SHOULD have a state
 == fsh-generated\resources\RequestGroup-Ejemplo7-Receta.json ==
 == fsh-generated\resources\StructureDefinition-DispensacionMedicamentoCl.json ==
 INFORMATION: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.snapshot.element[125].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated\resources\StructureDefinition-PacienteCardio.json ==
+WARNING: StructureDefinition.where(url = 'https://rme.hl7chile.cl/StructureDefinition/PacienteCardio'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-ProdComercial.json ==
 == fsh-generated\resources\StructureDefinition-RangeCL.json ==
 == fsh-generated\resources\StructureDefinition-RecetaCl.json ==
 == fsh-generated\resources\StructureDefinition-RecetaPrescripcionCl.json ==
+ERROR: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[65]: This element has a Binding but the types [Reference] do not make this kind of constraint relevant
+ERROR: StructureDefinition/RecetaPrescripcionCl: StructureDefinition.snapshot.element[65].binding: The element MedicationRequest.medication[x] has a binding, but no bindable types are present [Reference]
 == fsh-generated\resources\StructureDefinition-SimpleQuantityCL.json ==
 == fsh-generated\resources\ValueSet-VSCodificacionCategoria.json ==
+ERROR: ValueSet/VSCodificacionCategoria: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
 == fsh-generated\resources\ValueSet-VSCodificacionPatron.json ==
+ERROR: ValueSet/VSCodificacionPatron: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
 == fsh-generated\resources\ValueSet-VSFuncionProfesionalDispensacion.json ==
+ERROR: ValueSet/VSFuncionProfesionalDispensacion: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
 == fsh-generated\resources\ValueSet-VSMetodos.json ==
+ERROR: ValueSet/VSMetodos: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
 == fsh-generated\resources\ValueSet-VSRazonEstadoDispensacion.json ==
+ERROR: ValueSet/VSRazonEstadoDispensacion: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
 == fsh-generated\resources\ValueSet-VSStatusReason.json ==
+ERROR: ValueSet/VSStatusReason: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
 == fsh-generated\resources\ValueSet-VSTipoPrescripcion.json ==
+ERROR: ValueSet/VSTipoPrescripcion: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
 == fsh-generated\resources\ValueSet-VSUnidadAsistencial.json ==
+ERROR: ValueSet/VSUnidadAsistencial: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
 == fsh-generated\resources\ValueSet-VSViasAdmin.json ==
+ERROR: ValueSet/VSViasAdmin: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile

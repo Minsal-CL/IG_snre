@@ -7,17 +7,17 @@
 
 <https://rme.hl7chile.cl/CodeSystem/CSCodificacionCategoria> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "CSCodificacionCategoria"];
+  fhir:Resource.id [ fhir:value "CSCodificacionCategoria"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://rme.hl7chile.cl/CodeSystem/CSCodificacionCategoria defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">inpatient<a name=\"CSCodificacionCategoria-inpatient\"> </a></td><td>Hospitalizado</td><td>Incluye solicitudes de medicamentos para ser administrados o consumidos en contexto de hospitalización o cuidados primarios</td></tr><tr><td style=\"white-space:nowrap\">outpatient<a name=\"CSCodificacionCategoria-outpatient\"> </a></td><td>Ambulatorio</td><td>Incluye solicitudes de medicamentos para ser administrados o consumidos en el contexto ambulatorio (por ejemplo, departamento de urgencia, clínica ambulatoria, cirugía ambulatoria, oficina del doctor)</td></tr><tr><td style=\"white-space:nowrap\">community<a name=\"CSCodificacionCategoria-community\"> </a></td><td>community</td><td>Incluye solicitudes de medicamentos para ser administrados o consumidos por el paciente en su hogar (esto incluiría cuidados a largo plazo u hogares de ancianos, asilos, etc.)</td></tr><tr><td style=\"white-space:nowrap\">discharge<a name=\"CSCodificacionCategoria-discharge\"> </a></td><td>Alta</td><td>Incluye solicitudes de medicamentos creadas cuando el paciente es dado de alta de un centro</td></tr></table></div>"
-  ];
-  fhir:CodeSystem.url [ fhir:value "https://rme.hl7chile.cl/CodeSystem/CSCodificacionCategoria"];
-  fhir:CodeSystem.version [ fhir:value "0.9"];
-  fhir:CodeSystem.name [ fhir:value "CSCodificacionCategoria"];
-  fhir:CodeSystem.title [ fhir:value "Codificación del estado de una prescripción"];
-  fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-01-18T00:00:00-03:00"^^xsd:dateTime];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://rme.hl7chile.cl/CodeSystem/CSCodificacionCategoria</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">inpatient<a name=\"CSCodificacionCategoria-inpatient\"> </a></td><td>Hospitalizado</td><td>Incluye solicitudes de medicamentos para ser administrados o consumidos en contexto de hospitalización o cuidados primarios</td></tr><tr><td style=\"white-space:nowrap\">outpatient<a name=\"CSCodificacionCategoria-outpatient\"> </a></td><td>Ambulatorio</td><td>Incluye solicitudes de medicamentos para ser administrados o consumidos en el contexto ambulatorio (por ejemplo, departamento de urgencia, clínica ambulatoria, cirugía ambulatoria, oficina del doctor)</td></tr><tr><td style=\"white-space:nowrap\">community<a name=\"CSCodificacionCategoria-community\"> </a></td><td>community</td><td>Incluye solicitudes de medicamentos para ser administrados o consumidos por el paciente en su hogar (esto incluiría cuidados a largo plazo u hogares de ancianos, asilos, etc.)</td></tr><tr><td style=\"white-space:nowrap\">discharge<a name=\"CSCodificacionCategoria-discharge\"> </a></td><td>Alta</td><td>Incluye solicitudes de medicamentos creadas cuando el paciente es dado de alta de un centro</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://rme.hl7chile.cl/CodeSystem/CSCodificacionCategoria"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.9"]; # 
+  fhir:CodeSystem.name [ fhir:value "CSCodificacionCategoria"]; # 
+  fhir:CodeSystem.title [ fhir:value "Codificación del estado de una prescripción"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.date [ fhir:value "2022-01-18T00:00:00-03:00"^^xsd:dateTime]; # 
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "HL7 Chile" ];
@@ -26,8 +26,8 @@
        fhir:ContactPoint.system [ fhir:value "email" ];
        fhir:ContactPoint.value [ fhir:value "chair@hl7chile.cl" ]
      ]
-  ];
-  fhir:CodeSystem.description [ fhir:value "Estado de una prescripción"];
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Estado de una prescripción"]; # 
   fhir:CodeSystem.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -36,9 +36,9 @@
        fhir:Coding.code [ fhir:value "CL" ];
        fhir:Coding.display [ fhir:value "Chile" ]
      ]
-  ];
-  fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  ]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger]; # 
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "inpatient" ];
@@ -59,7 +59,7 @@
      fhir:CodeSystem.concept.code [ fhir:value "discharge" ];
      fhir:CodeSystem.concept.display [ fhir:value "Alta" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Incluye solicitudes de medicamentos creadas cuando el paciente es dado de alta de un centro" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

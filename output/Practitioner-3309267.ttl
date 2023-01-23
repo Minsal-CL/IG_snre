@@ -7,12 +7,12 @@
 
 <https://rme.hl7chile.cl/Practitioner/3309267> a fhir:Practitioner;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "3309267"];
+  fhir:Resource.id [ fhir:value "3309267"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner \"3309267\" </p></div><p><b>active</b>: true</p><p><b>name</b>: Maria Carmen De los angeles Del rio Gonzalez </p></div>"
-  ];
-  fhir:Practitioner.active [ fhir:value "true"^^xsd:boolean];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"3309267\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;3309267&quot; </p></div><p><b>active</b>: true</p><p><b>name</b>: Maria Carmen De los angeles Del rio Gonzalez </p></div>"
+  ]; # 
+  fhir:Practitioner.active [ fhir:value "true"^^xsd:boolean]; # 
   fhir:Practitioner.name [
      fhir:index 0;
      fhir:HumanName.family [ fhir:value "Del rio Gonzalez" ];
@@ -20,7 +20,7 @@
        fhir:value "Maria Carmen De los angeles";
        fhir:index 0
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

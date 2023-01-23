@@ -1,177 +1,184 @@
 [
   {
-    "id": "CSCodificacionCategoria",
-    "type": "CodeSystem",
-    "url": "https://rme.hl7chile.cl/CodeSystem/CSCodificacionCategoria",
-    "version": "0.9",
-    "name": "CSCodificacionCategoria"
+    "id" : "CSCodificacionCategoria",
+    "type" : "CodeSystem",
+    "url" : "https://rme.hl7chile.cl/CodeSystem/CSCodificacionCategoria",
+    "version" : "0.9",
+    "name" : "CSCodificacionCategoria"
   },
   {
-    "id": "CSCodificacionPatron",
-    "type": "CodeSystem",
-    "url": "https://rme.hl7chile.cl/CodeSystem/CSCodificacionPatron",
-    "version": "0.9",
-    "name": "CSCodificacionPatron"
+    "id" : "CSCodificacionPatron",
+    "type" : "CodeSystem",
+    "url" : "https://rme.hl7chile.cl/CodeSystem/CSCodificacionPatron",
+    "version" : "0.9",
+    "name" : "CSCodificacionPatron"
   },
   {
-    "id": "CSFuncionProfesionalDispensacion",
-    "type": "CodeSystem",
-    "url": "https://rme.hl7chile.cl/CodeSystem/CSFuncionProfesionalDispensacion",
-    "version": "0.9",
-    "name": "CSFuncionProfesionalDispensacion"
+    "id" : "CSFuncionProfesionalDispensacion",
+    "type" : "CodeSystem",
+    "url" : "https://rme.hl7chile.cl/CodeSystem/CSFuncionProfesionalDispensacion",
+    "version" : "0.9",
+    "name" : "CSFuncionProfesionalDispensacion"
   },
   {
-    "id": "CSMetodos",
-    "type": "CodeSystem",
-    "url": "https://rme.hl7chile.cl/CodeSystem/CSMetodos",
-    "version": "0.9",
-    "name": "CSMetodos"
+    "id" : "CSMetodos",
+    "type" : "CodeSystem",
+    "url" : "https://rme.hl7chile.cl/CodeSystem/CSMetodos",
+    "version" : "0.9",
+    "name" : "CSMetodos"
   },
   {
-    "id": "CSRazonEstadoDispensacion",
-    "type": "CodeSystem",
-    "url": "https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion",
-    "version": "0.9",
-    "name": "CSRazonEstadoDispensacion"
+    "id" : "CSRazonEstadoDispensacion",
+    "type" : "CodeSystem",
+    "url" : "https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion",
+    "version" : "0.9",
+    "name" : "CSRazonEstadoDispensacion"
   },
   {
-    "id": "CSStatusReason",
-    "type": "CodeSystem",
-    "url": "https://rme.hl7chile.cl/CodeSystem/CSStatusReason",
-    "version": "0.9",
-    "name": "CSStatusReason"
+    "id" : "CSStatusReason",
+    "type" : "CodeSystem",
+    "url" : "https://rme.hl7chile.cl/CodeSystem/CSStatusReason",
+    "version" : "0.9",
+    "name" : "CSStatusReason"
   },
   {
-    "id": "CSTipoPrescripcion",
-    "type": "CodeSystem",
-    "url": "https://rme.hl7chile.cl/CodeSystem/CSTipoPrescripcion",
-    "version": "0.9",
-    "name": "CSTipoPrescripcion"
+    "id" : "CSTipoPrescripcion",
+    "type" : "CodeSystem",
+    "url" : "https://rme.hl7chile.cl/CodeSystem/CSTipoPrescripcion",
+    "version" : "0.9",
+    "name" : "CSTipoPrescripcion"
   },
   {
-    "id": "CSUnidadAsistencial",
-    "type": "CodeSystem",
-    "url": "https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial",
-    "version": "0.9",
-    "name": "CSUnidadAsistencial"
+    "id" : "CSUnidadAsistencial",
+    "type" : "CodeSystem",
+    "url" : "https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial",
+    "version" : "0.9",
+    "name" : "CSUnidadAsistencial"
   },
   {
-    "id": "CSViasAdmin",
-    "type": "CodeSystem",
-    "url": "https://rme.hl7chile.cl/CodeSystem/CSViasAdmin",
-    "version": "0.9",
-    "name": "CSViasAdmin"
+    "id" : "CSViasAdmin",
+    "type" : "CodeSystem",
+    "url" : "https://rme.hl7chile.cl/CodeSystem/CSViasAdmin",
+    "version" : "0.9",
+    "name" : "CSViasAdmin"
   },
   {
-    "id": "hl7.fhir.cl.recetachile",
-    "type": "ImplementationGuide",
-    "url": "https://rme.hl7chile.cl/ImplementationGuide/hl7.fhir.cl.recetachile",
-    "version": "0.9",
-    "name": "RecetaCL"
+    "id" : "hl7.fhir.cl.recetachile",
+    "type" : "ImplementationGuide",
+    "url" : "https://rme.hl7chile.cl/ImplementationGuide/hl7.fhir.cl.recetachile",
+    "version" : "0.9",
+    "name" : "RecetaCL"
   },
   {
-    "id": "DispensacionMedicamentoCl",
-    "type": "StructureDefinition",
-    "url": "https://rme.hl7chile.cl/StructureDefinition/DispensacionMedicamentoCl",
-    "version": "0.9",
-    "name": "DispensacionMedicamentoCL"
+    "id" : "DispensacionMedicamentoCl",
+    "type" : "StructureDefinition",
+    "url" : "https://rme.hl7chile.cl/StructureDefinition/DispensacionMedicamentoCl",
+    "version" : "0.9",
+    "name" : "DispensacionMedicamentoCL"
   },
   {
-    "id": "ProdComercial",
-    "type": "StructureDefinition",
-    "url": "https://rme.hl7chile.cl/StructureDefinition/ProdComercial",
-    "version": "0.9",
-    "name": "ProdComercial"
+    "id" : "PacienteCardio",
+    "type" : "StructureDefinition",
+    "url" : "https://rme.hl7chile.cl/StructureDefinition/PacienteCardio",
+    "version" : "0.9",
+    "name" : "PacienteCardio"
   },
   {
-    "id": "RangeCL",
-    "type": "StructureDefinition",
-    "url": "https://rme.hl7chile.cl/StructureDefinition/RangeCL",
-    "version": "0.9",
-    "name": "RangeCL"
+    "id" : "ProdComercial",
+    "type" : "StructureDefinition",
+    "url" : "https://rme.hl7chile.cl/StructureDefinition/ProdComercial",
+    "version" : "0.9",
+    "name" : "ProdComercial"
   },
   {
-    "id": "RecetaCl",
-    "type": "StructureDefinition",
-    "url": "https://rme.hl7chile.cl/StructureDefinition/RecetaCl",
-    "version": "0.9",
-    "name": "MedicamentoRecetaCL"
+    "id" : "RangeCL",
+    "type" : "StructureDefinition",
+    "url" : "https://rme.hl7chile.cl/StructureDefinition/RangeCL",
+    "version" : "0.9",
+    "name" : "RangeCL"
   },
   {
-    "id": "RecetaPrescripcionCl",
-    "type": "StructureDefinition",
-    "url": "https://rme.hl7chile.cl/StructureDefinition/RecetaPrescripcionCl",
-    "version": "0.9",
-    "name": "PrescripcionRecetaCL"
+    "id" : "RecetaCl",
+    "type" : "StructureDefinition",
+    "url" : "https://rme.hl7chile.cl/StructureDefinition/RecetaCl",
+    "version" : "0.9",
+    "name" : "MedicamentoRecetaCL"
   },
   {
-    "id": "SimpleQuantityCL",
-    "type": "StructureDefinition",
-    "url": "https://rme.hl7chile.cl/StructureDefinition/SimpleQuantityCL",
-    "version": "0.9",
-    "name": "SimpleQuantityCL"
+    "id" : "RecetaPrescripcionCl",
+    "type" : "StructureDefinition",
+    "url" : "https://rme.hl7chile.cl/StructureDefinition/RecetaPrescripcionCl",
+    "version" : "0.9",
+    "name" : "PrescripcionRecetaCL"
   },
   {
-    "id": "VSCodificacionCategoria",
-    "type": "ValueSet",
-    "url": "https://rme.hl7chile.cl/ValueSet/VSCodificacionCategoria",
-    "version": "0.9",
-    "name": "VSCodificacionCategoria"
+    "id" : "SimpleQuantityCL",
+    "type" : "StructureDefinition",
+    "url" : "https://rme.hl7chile.cl/StructureDefinition/SimpleQuantityCL",
+    "version" : "0.9",
+    "name" : "SimpleQuantityCL"
   },
   {
-    "id": "VSCodificacionPatron",
-    "type": "ValueSet",
-    "url": "https://rme.hl7chile.cl/ValueSet/VSCodificacionPatron",
-    "version": "0.9",
-    "name": "VSCodificacionPatron"
+    "id" : "VSCodificacionCategoria",
+    "type" : "ValueSet",
+    "url" : "https://rme.hl7chile.cl/ValueSet/VSCodificacionCategoria",
+    "version" : "0.9",
+    "name" : "VSCodificacionCategoria"
   },
   {
-    "id": "VSFuncionProfesionalDispensacion",
-    "type": "ValueSet",
-    "url": "https://rme.hl7chile.cl/ValueSet/VSFuncionProfesionalDispensacion",
-    "version": "0.9",
-    "name": "VSFuncionProfesionalDispensacion"
+    "id" : "VSCodificacionPatron",
+    "type" : "ValueSet",
+    "url" : "https://rme.hl7chile.cl/ValueSet/VSCodificacionPatron",
+    "version" : "0.9",
+    "name" : "VSCodificacionPatron"
   },
   {
-    "id": "VSMetodos",
-    "type": "ValueSet",
-    "url": "https://rme.hl7chile.cl/ValueSet/VSMetodos",
-    "version": "0.9",
-    "name": "VSMetodos"
+    "id" : "VSFuncionProfesionalDispensacion",
+    "type" : "ValueSet",
+    "url" : "https://rme.hl7chile.cl/ValueSet/VSFuncionProfesionalDispensacion",
+    "version" : "0.9",
+    "name" : "VSFuncionProfesionalDispensacion"
   },
   {
-    "id": "VSRazonEstadoDispensacion",
-    "type": "ValueSet",
-    "url": "https://rme.hl7chile.cl/ValueSet/VSRazonEstadoDispensacion",
-    "version": "0.9",
-    "name": "VSRazonEstadoDispensacion"
+    "id" : "VSMetodos",
+    "type" : "ValueSet",
+    "url" : "https://rme.hl7chile.cl/ValueSet/VSMetodos",
+    "version" : "0.9",
+    "name" : "VSMetodos"
   },
   {
-    "id": "VSStatusReason",
-    "type": "ValueSet",
-    "url": "https://rme.hl7chile.cl/ValueSet/VSStatusReason",
-    "version": "0.9",
-    "name": "VSStatusReason"
+    "id" : "VSRazonEstadoDispensacion",
+    "type" : "ValueSet",
+    "url" : "https://rme.hl7chile.cl/ValueSet/VSRazonEstadoDispensacion",
+    "version" : "0.9",
+    "name" : "VSRazonEstadoDispensacion"
   },
   {
-    "id": "VSTipoPrescripcion",
-    "type": "ValueSet",
-    "url": "https://rme.hl7chile.cl/ValueSet/VSTipoPrescripcion",
-    "version": "0.9",
-    "name": "VSTipoPrescripcion"
+    "id" : "VSStatusReason",
+    "type" : "ValueSet",
+    "url" : "https://rme.hl7chile.cl/ValueSet/VSStatusReason",
+    "version" : "0.9",
+    "name" : "VSStatusReason"
   },
   {
-    "id": "VSUnidadAsistencial",
-    "type": "ValueSet",
-    "url": "https://rme.hl7chile.cl/ValueSet/VSUnidadAsistencial",
-    "version": "0.9",
-    "name": "VSUnidadAsistencial"
+    "id" : "VSTipoPrescripcion",
+    "type" : "ValueSet",
+    "url" : "https://rme.hl7chile.cl/ValueSet/VSTipoPrescripcion",
+    "version" : "0.9",
+    "name" : "VSTipoPrescripcion"
   },
   {
-    "id": "VSViasAdmin",
-    "type": "ValueSet",
-    "url": "https://rme.hl7chile.cl/ValueSet/VSViasAdmin",
-    "version": "0.9",
-    "name": "VSViasAdmin"
+    "id" : "VSUnidadAsistencial",
+    "type" : "ValueSet",
+    "url" : "https://rme.hl7chile.cl/ValueSet/VSUnidadAsistencial",
+    "version" : "0.9",
+    "name" : "VSUnidadAsistencial"
+  },
+  {
+    "id" : "VSViasAdmin",
+    "type" : "ValueSet",
+    "url" : "https://rme.hl7chile.cl/ValueSet/VSViasAdmin",
+    "version" : "0.9",
+    "name" : "VSViasAdmin"
   }
 ]
