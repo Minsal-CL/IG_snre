@@ -5,7 +5,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.cl.recetachile
 canonical: https://rme.hl7chile.cl
-version: 0.9
+version: 0.9.1
 name: RecetaCL
 title: Guía de Implementación Receta-CL
 status: draft

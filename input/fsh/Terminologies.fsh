@@ -2,6 +2,7 @@
 RuleSet: MetadataVSCS
 * ^version = "1.0.0"
 * ^status = #active
+* ^experimental = false
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
@@ -22,6 +23,7 @@ Id: CSStatusReason
 Title: "Razón del cambio de estado (Prescripción)"
 Description: "Códigos que indican la razón por la cual una Prescripción ha cambiado su estado"
 * insert MetadataVSCS
+* ^caseSensitive = true
 
 * #altchoice    "Primero probar otro tratamiento" "Esta terapia se ha ordenado como respaldo a una terapia preferida. Esta orden será liberada cuando y si, la terapia preferida no tiene éxito"
 * #clarif	"La prescripción requiere una aclaración" "Se requiere una aclaración antes de que la orden pueda ser realizada"
@@ -51,6 +53,7 @@ Id: CSCodificacionCategoria
 Description: "Estado de una prescripción"
 Title: "Codificación del estado de una prescripción"
 * insert MetadataVSCS
+* ^caseSensitive = true
 
 * #inpatient    "Hospitalizado" "Incluye solicitudes de medicamentos para ser administrados o consumidos en contexto de hospitalización o cuidados primarios"
 * #outpatient   "Ambulatorio" "Incluye solicitudes de medicamentos para ser administrados o consumidos en el contexto ambulatorio (por ejemplo, departamento de urgencia, clínica ambulatoria, cirugía ambulatoria, oficina del doctor)"
@@ -69,6 +72,7 @@ Id: CSCodificacionPatron
 Title: "Patrón de la Prescripción"
 Description: "Codificación del patrón de administración de una prescripción"
 * insert MetadataVSCS
+* ^caseSensitive = true
 
 * #continuous	"Terapia continua a largo plazo" "Una medicación que se espera sea continuada más allá de la presente orden y que el paciente debe tomar a menos que explicitamente se le indique lo contrario"
 * #acute	"Terapia a corto plazo (aguda)" "Una medicación que se espera que el paciente consuma solo por la duración de la presente orden y no se espera que sea renovada"
@@ -86,6 +90,7 @@ Id: CSRazonEstadoDispensacion
 Title: "Razón del cambio de estado (Dispensación)"
 Description: "Códigos que indican la razón por la cual una Dispensación ha cambiado su estado"
 * insert MetadataVSCS
+* ^caseSensitive = true
 
 * #frr01	"Orden detenida"    "Esta orden fue detenida por el prescriptor pero no necesariamente por medios electrónicos. Ejemplos: Detención verbal, un fax, etc."
 * #frr02	"Orden caducada"    "Orden no fue completada dentro de un periodo razonable de tiempo, y podría no estar vigente."
@@ -120,6 +125,7 @@ Id: CSUnidadAsistencial
 Title: "Unidad Asistencial"
 Description: "Unidad para dosificar"
 * insert MetadataVSCS
+* ^caseSensitive = true
 
 * #mililitro "Mililitro"
 * #comprimido "Comprimido"
@@ -167,6 +173,7 @@ Id: CSViasAdmin
 Title: "Vías de Administración"
 Description:  "Vías de Administración de SNOMED-CT utilizadas para el Sistema Nacional de Receta Electrónica"
 * insert MetadataVSCS
+* ^caseSensitive = true
 
 * #26643006 "vía Oral route (calificador)"
 * #46713006 "vía de administración en cavidad nasal (calificador)"
@@ -253,6 +260,7 @@ Id: CSMetodos
 Title: "Métodos de Administración"
 Description: "Métodos de Administración de SNOMED-CT utilizados para el proyecto de receta electrónica"
 * insert MetadataVSCS
+* ^caseSensitive = true
 
 * #738991002 "Aplicación (método de administración)"
 * #740685003 "Inyección (método de administración)"
@@ -282,6 +290,7 @@ Id: CSTipoPrescripcion
 Title: "Tipo de Prescripción"
 Description: "Identifica el tipo de Prescripción"
 * insert MetadataVSCS
+* ^caseSensitive = true
 
 * #Id_Local "Id_Local"
 * #Id_Cheque "Id_Cheque"
@@ -299,6 +308,7 @@ Id: CSFuncionProfesionalDispensacion
 Title: "Funcion del Personal"
 Description: "Funcion del Personal. Puede ser Dispensador o Validador"
 * insert MetadataVSCS
+* ^caseSensitive = true
 
 * #Dispensador "Dispensador"
 * #Validador "Validador"

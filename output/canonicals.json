@@ -1,0 +1,184 @@
+[
+  {
+    "id" : "CSCodificacionCategoria",
+    "type" : "CodeSystem",
+    "url" : "https://rme.hl7chile.cl/CodeSystem/CSCodificacionCategoria",
+    "version" : "0.9",
+    "name" : "CSCodificacionCategoria"
+  },
+  {
+    "id" : "CSCodificacionPatron",
+    "type" : "CodeSystem",
+    "url" : "https://rme.hl7chile.cl/CodeSystem/CSCodificacionPatron",
+    "version" : "0.9",
+    "name" : "CSCodificacionPatron"
+  },
+  {
+    "id" : "CSFuncionProfesionalDispensacion",
+    "type" : "CodeSystem",
+    "url" : "https://rme.hl7chile.cl/CodeSystem/CSFuncionProfesionalDispensacion",
+    "version" : "0.9",
+    "name" : "CSFuncionProfesionalDispensacion"
+  },
+  {
+    "id" : "CSMetodos",
+    "type" : "CodeSystem",
+    "url" : "https://rme.hl7chile.cl/CodeSystem/CSMetodos",
+    "version" : "0.9",
+    "name" : "CSMetodos"
+  },
+  {
+    "id" : "CSRazonEstadoDispensacion",
+    "type" : "CodeSystem",
+    "url" : "https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion",
+    "version" : "0.9",
+    "name" : "CSRazonEstadoDispensacion"
+  },
+  {
+    "id" : "CSStatusReason",
+    "type" : "CodeSystem",
+    "url" : "https://rme.hl7chile.cl/CodeSystem/CSStatusReason",
+    "version" : "0.9",
+    "name" : "CSStatusReason"
+  },
+  {
+    "id" : "CSTipoPrescripcion",
+    "type" : "CodeSystem",
+    "url" : "https://rme.hl7chile.cl/CodeSystem/CSTipoPrescripcion",
+    "version" : "0.9",
+    "name" : "CSTipoPrescripcion"
+  },
+  {
+    "id" : "CSUnidadAsistencial",
+    "type" : "CodeSystem",
+    "url" : "https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial",
+    "version" : "0.9",
+    "name" : "CSUnidadAsistencial"
+  },
+  {
+    "id" : "CSViasAdmin",
+    "type" : "CodeSystem",
+    "url" : "https://rme.hl7chile.cl/CodeSystem/CSViasAdmin",
+    "version" : "0.9",
+    "name" : "CSViasAdmin"
+  },
+  {
+    "id" : "hl7.fhir.cl.recetachile",
+    "type" : "ImplementationGuide",
+    "url" : "https://rme.hl7chile.cl/ImplementationGuide/hl7.fhir.cl.recetachile",
+    "version" : "0.9",
+    "name" : "RecetaCL"
+  },
+  {
+    "id" : "DispensacionMedicamentoCl",
+    "type" : "StructureDefinition",
+    "url" : "https://rme.hl7chile.cl/StructureDefinition/DispensacionMedicamentoCl",
+    "version" : "0.9",
+    "name" : "DispensacionMedicamentoCL"
+  },
+  {
+    "id" : "PacienteCardio",
+    "type" : "StructureDefinition",
+    "url" : "https://rme.hl7chile.cl/StructureDefinition/PacienteCardio",
+    "version" : "0.9",
+    "name" : "PacienteCardio"
+  },
+  {
+    "id" : "ProdComercial",
+    "type" : "StructureDefinition",
+    "url" : "https://rme.hl7chile.cl/StructureDefinition/ProdComercial",
+    "version" : "0.9",
+    "name" : "ProdComercial"
+  },
+  {
+    "id" : "RangeCL",
+    "type" : "StructureDefinition",
+    "url" : "https://rme.hl7chile.cl/StructureDefinition/RangeCL",
+    "version" : "0.9",
+    "name" : "RangeCL"
+  },
+  {
+    "id" : "RecetaCl",
+    "type" : "StructureDefinition",
+    "url" : "https://rme.hl7chile.cl/StructureDefinition/RecetaCl",
+    "version" : "0.9",
+    "name" : "MedicamentoRecetaCL"
+  },
+  {
+    "id" : "RecetaPrescripcionCl",
+    "type" : "StructureDefinition",
+    "url" : "https://rme.hl7chile.cl/StructureDefinition/RecetaPrescripcionCl",
+    "version" : "0.9",
+    "name" : "PrescripcionRecetaCL"
+  },
+  {
+    "id" : "SimpleQuantityCL",
+    "type" : "StructureDefinition",
+    "url" : "https://rme.hl7chile.cl/StructureDefinition/SimpleQuantityCL",
+    "version" : "0.9",
+    "name" : "SimpleQuantityCL"
+  },
+  {
+    "id" : "VSCodificacionCategoria",
+    "type" : "ValueSet",
+    "url" : "https://rme.hl7chile.cl/ValueSet/VSCodificacionCategoria",
+    "version" : "0.9",
+    "name" : "VSCodificacionCategoria"
+  },
+  {
+    "id" : "VSCodificacionPatron",
+    "type" : "ValueSet",
+    "url" : "https://rme.hl7chile.cl/ValueSet/VSCodificacionPatron",
+    "version" : "0.9",
+    "name" : "VSCodificacionPatron"
+  },
+  {
+    "id" : "VSFuncionProfesionalDispensacion",
+    "type" : "ValueSet",
+    "url" : "https://rme.hl7chile.cl/ValueSet/VSFuncionProfesionalDispensacion",
+    "version" : "0.9",
+    "name" : "VSFuncionProfesionalDispensacion"
+  },
+  {
+    "id" : "VSMetodos",
+    "type" : "ValueSet",
+    "url" : "https://rme.hl7chile.cl/ValueSet/VSMetodos",
+    "version" : "0.9",
+    "name" : "VSMetodos"
+  },
+  {
+    "id" : "VSRazonEstadoDispensacion",
+    "type" : "ValueSet",
+    "url" : "https://rme.hl7chile.cl/ValueSet/VSRazonEstadoDispensacion",
+    "version" : "0.9",
+    "name" : "VSRazonEstadoDispensacion"
+  },
+  {
+    "id" : "VSStatusReason",
+    "type" : "ValueSet",
+    "url" : "https://rme.hl7chile.cl/ValueSet/VSStatusReason",
+    "version" : "0.9",
+    "name" : "VSStatusReason"
+  },
+  {
+    "id" : "VSTipoPrescripcion",
+    "type" : "ValueSet",
+    "url" : "https://rme.hl7chile.cl/ValueSet/VSTipoPrescripcion",
+    "version" : "0.9",
+    "name" : "VSTipoPrescripcion"
+  },
+  {
+    "id" : "VSUnidadAsistencial",
+    "type" : "ValueSet",
+    "url" : "https://rme.hl7chile.cl/ValueSet/VSUnidadAsistencial",
+    "version" : "0.9",
+    "name" : "VSUnidadAsistencial"
+  },
+  {
+    "id" : "VSViasAdmin",
+    "type" : "ValueSet",
+    "url" : "https://rme.hl7chile.cl/ValueSet/VSViasAdmin",
+    "version" : "0.9",
+    "name" : "VSViasAdmin"
+  }
+]

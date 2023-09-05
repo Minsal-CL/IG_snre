@@ -1,0 +1,12 @@
+﻿/Users/jorgemansilla/IGs/_IG_Receta/fsh-generated/resources/StructureDefinition-DispensacionMedicamentoCl.json: line 1, col 181242, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
+/Users/jorgemansilla/IGs/_IG_Receta/fsh-generated/resources/StructureDefinition-PacienteCardio.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+/Users/jorgemansilla/IGs/_IG_Receta/fsh-generated/resources/StructureDefinition-ProdComercial.json: line 0, col 0, Warning - Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere (BUSINESSRULE)
+/Users/jorgemansilla/IGs/_IG_Receta/fsh-generated/resources/StructureDefinition-RecetaPrescripcionCl.json: line 0, col 0, Error - This element has a Binding but the types [Reference] do not make this kind of constraint relevant (BUSINESSRULE)
+/Users/jorgemansilla/IGs/_IG_Receta/fsh-generated/resources/StructureDefinition-RecetaPrescripcionCl.json: line 0, col 0, Error - The element MedicationRequest.medication[x] has a binding, but no bindable types are present [Reference] (BUSINESSRULE)
+
+RecetaCL : Validation Results
+=========================================
+
+err = 2, warn = 27, info = 1
+IG Publisher Version: 1.4.2
+Generated Tue Sep 05 00:07:11 CLST 2023. FHIR version 4.0.1 for hl7.fhir.cl.recetachile#0.9 (canonical = https://rme.hl7chile.cl)
