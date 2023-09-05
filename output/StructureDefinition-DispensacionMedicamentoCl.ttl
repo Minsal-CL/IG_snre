@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   ] ; # 
   fhir:url [ fhir:v "https://rme.hl7chile.cl/StructureDefinition/DispensacionMedicamentoCl"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.9"] ; # 
+  fhir:version [ fhir:v "0.9.1"] ; # 
   fhir:name [ fhir:v "DispensacionMedicamentoCL"] ; # 
   fhir:title [ fhir:v "CL Dispensación"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-05T00:05:31-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-05T15:26:19-03:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso del Sistema Nacional de Receta Electrónica desde la visión de la TFC que se utilizará para poder manejar fármacos que cuentan con autorización de comercialización en el país, los cuales deberán ser consultados por los prestadores a la hora de prescribir alguno o mantener una base local actualizada."] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [

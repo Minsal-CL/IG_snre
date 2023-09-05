@@ -13,7 +13,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   ] ; # 
   fhir:url [ fhir:v "https://rme.hl7chile.cl/ImplementationGuide/hl7.fhir.cl.recetachile"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.9"] ; # 
+  fhir:version [ fhir:v "0.9.1"] ; # 
   fhir:name [ fhir:v "RecetaCL"] ; # 
   fhir:title [ fhir:v "Guía de Implementación Receta-CL"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
@@ -54,13 +54,13 @@
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
      fhir:version [ fhir:v "1.0.0" ]
   ] [
-     fhir:id [ fhir:v "hl7_fhir_cl_corecl" ] ;
+     fhir:id [ fhir:v "hl7_fhir_cl_clcore" ] ;
      fhir:uri [
-       fhir:v "https://hl7chile.cl/fhir/ig/CoreCL/ImplementationGuide/hl7.fhir.cl.corecl"^^xsd:anyURI ;
-       fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ImplementationGuide/hl7.fhir.cl.corecl>
+       fhir:v "https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore"^^xsd:anyURI ;
+       fhir:link <https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore>
      ] ;
-     fhir:packageId [ fhir:v "hl7.fhir.cl.corecl" ] ;
-     fhir:version [ fhir:v "1.7.0" ]
+     fhir:packageId [ fhir:v "hl7.fhir.cl.clcore" ] ;
+     fhir:version [ fhir:v "1.8.4" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [

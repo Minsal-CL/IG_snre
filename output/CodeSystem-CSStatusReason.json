@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://rme.hl7chile.cl/CodeSystem/CSStatusReason",
-  "version" : "0.9",
+  "version" : "0.9.1",
   "name" : "CSStatusReason",
   "title" : "Razón del cambio de estado (Prescripción)",
   "status" : "active",

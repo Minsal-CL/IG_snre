@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   ] ; # 
   fhir:url [ fhir:v "https://rme.hl7chile.cl/StructureDefinition/RecetaCl"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.9"] ; # 
+  fhir:version [ fhir:v "0.9.1"] ; # 
   fhir:name [ fhir:v "MedicamentoRecetaCL"] ; # 
   fhir:title [ fhir:v "CL Receta"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-05T00:05:31-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-05T15:26:19-03:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Este Perfil utiliza este recurso como un contenedor de Prescripciones, de tal forma de poder ser utilizado como formato de Receta electrónica con los fármacos indicados por el clínico durante un acto de indicación farmacológica."] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [

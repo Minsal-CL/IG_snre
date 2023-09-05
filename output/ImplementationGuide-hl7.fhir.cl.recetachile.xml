@@ -6,7 +6,7 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="https://rme.hl7chile.cl/ImplementationGuide/hl7.fhir.cl.recetachile"/>
-  <version value="0.9"/>
+  <version value="0.9.1"/>
   <name value="RecetaCL"/>
   <title value="Guía de Implementación Receta-CL"/>
   <status value="draft"/>
@@ -38,10 +38,10 @@
     <packageId value="hl7.fhir.uv.extensions.r4"/>
     <version value="1.0.0"/>
   </dependsOn>
-  <dependsOn id="hl7_fhir_cl_corecl">
-    <uri value="https://hl7chile.cl/fhir/ig/CoreCL/ImplementationGuide/hl7.fhir.cl.corecl"/>
-    <packageId value="hl7.fhir.cl.corecl"/>
-    <version value="1.7.0"/>
+  <dependsOn id="hl7_fhir_cl_clcore">
+    <uri value="https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore"/>
+    <packageId value="hl7.fhir.cl.clcore"/>
+    <version value="1.8.4"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

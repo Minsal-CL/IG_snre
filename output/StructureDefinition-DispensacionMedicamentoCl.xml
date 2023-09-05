@@ -6,11 +6,11 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="https://rme.hl7chile.cl/StructureDefinition/DispensacionMedicamentoCl"/>
-  <version value="0.9"/>
+  <version value="0.9.1"/>
   <name value="DispensacionMedicamentoCL"/>
   <title value="CL Dispensación"/>
   <status value="draft"/>
-  <date value="2023-09-05T00:05:31-03:00"/>
+  <date value="2023-09-05T15:26:19-03:00"/>
   <description value="Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso del Sistema Nacional de Receta Electrónica desde la visión de la TFC que se utilizará para poder manejar fármacos que cuentan con autorización de comercialización en el país, los cuales deberán ser consultados por los prestadores a la hora de prescribir alguno o mantener una base local actualizada."/>
   <jurisdiction>
     <coding>

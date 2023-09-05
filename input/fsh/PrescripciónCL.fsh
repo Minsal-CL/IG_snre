@@ -102,10 +102,9 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * category.coding.code from VSCodificacionCategoria (extensible)
 * category.coding.display ^short = "Glosa del código"
 * category.coding.display ^definition = "Glosa del código según su definición de la tabla de HL7"
-* medicationReference 1..1
 * medicationReference ^short = "Referencia al medicamento que se prescribe."
-* medicationReference ^definition = "Referencia al medicamento que se prescribe, la cual se encuentra disponible en el servicio de la TFC."
-* medicationReference.reference ^short = "uri del recurso. Para el caso el repositorio se encuentra en \"https://api-receta.minsal.cl/v2/Medication\""
+* medicationReference ^definition = "Referencia al medicamento que se prescribe, la cual se encuentra disponible en el //servicio de la TFC."
+* medicationReference.reference ^short = "uri del recurso. Para el caso el repositorio se encuentra en \"https:////api-receta.minsal.cl/v2/Medication\""
 * medicationReference.display ^short = "Descripción del fármaco, según definición TFC"
 
 

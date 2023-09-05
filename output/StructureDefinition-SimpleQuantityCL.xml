@@ -6,11 +6,11 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="https://rme.hl7chile.cl/StructureDefinition/SimpleQuantityCL"/>
-  <version value="0.9"/>
+  <version value="0.9.1"/>
   <name value="SimpleQuantityCL"/>
   <title value="SimpleQuantity para el caso de Receta"/>
   <status value="draft"/>
-  <date value="2023-09-05T00:05:31-03:00"/>
+  <date value="2023-09-05T15:26:19-03:00"/>
   <publisher value="HL7 Chile"/>
   <description value="Definición para una unidad simple y su contenido para el consumo de un fármaco según prescripción"/>
   <jurisdiction>

@@ -26,7 +26,7 @@ copyrightYear: 2020+
 releaseLabel: ci-build
 
 dependencies:
-  hl7.fhir.cl.corecl: 1.7.0
+  hl7.fhir.cl.clcore: 1.8.4
 #  hl7.fhir.cl.corecl:
 #    id: CoreCLDEV
 #    uri: https://build.fhir.org/ig/HL7Chile/CL-Core/

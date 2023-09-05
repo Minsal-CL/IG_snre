@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.cl.recetachile",
-  "version": "0.9",
+  "version": "0.9.1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "CL",
   "extensions": [
@@ -62,8 +62,7 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family": [
-      "Patient.contact.name.family",
-      "Patient.name.family"
+      "Patient.contact.name.family"
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
@@ -93,12 +92,15 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises": [
+    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises": [
       "Patient",
       "Patient.identifier.type"
     ],
-    "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/IdContacto": [
+    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdContacto": [
       "Patient.contact"
+    ],
+    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido": [
+      "Patient.name.family"
     ],
     "https://rme.hl7chile.cl/StructureDefinition/ProdComercial": [
       "MedicationRequest",

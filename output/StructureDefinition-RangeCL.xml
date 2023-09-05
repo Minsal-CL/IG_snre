@@ -6,11 +6,11 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="https://rme.hl7chile.cl/StructureDefinition/RangeCL"/>
-  <version value="0.9"/>
+  <version value="0.9.1"/>
   <name value="RangeCL"/>
   <title value="Rango para dispensación de medicamentos"/>
   <status value="draft"/>
-  <date value="2023-09-05T00:05:31-03:00"/>
+  <date value="2023-09-05T15:26:19-03:00"/>
   <publisher value="HL7 Chile"/>
   <description value="Definición para un rango de valores y su contenido para el consumo de un fármaco según prescripción"/>
   <jurisdiction>

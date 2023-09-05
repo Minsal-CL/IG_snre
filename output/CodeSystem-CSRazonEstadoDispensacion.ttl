@@ -13,7 +13,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   ] ; # 
   fhir:url [ fhir:v "https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.9"] ; # 
+  fhir:version [ fhir:v "0.9.1"] ; # 
   fhir:name [ fhir:v "CSRazonEstadoDispensacion"] ; # 
   fhir:title [ fhir:v "Razón del cambio de estado (Dispensación)"] ; # 
   fhir:status [ fhir:v "active"] ; # 

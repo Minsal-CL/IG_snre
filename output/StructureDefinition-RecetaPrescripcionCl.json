@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://rme.hl7chile.cl/StructureDefinition/RecetaPrescripcionCl",
-  "version" : "0.9",
+  "version" : "0.9.1",
   "name" : "PrescripcionRecetaCL",
   "title" : "CL Prescripción",
   "status" : "draft",
-  "date" : "2023-09-05T00:05:31-03:00",
+  "date" : "2023-09-05T15:26:19-03:00",
   "description" : "Este Perfil describe la información contenida en la Prescripción de un medicamento para el Sistema Nacional de Receta Electrónica del MINSAL",
   "jurisdiction" : [{
     "coding" : [{
@@ -2691,7 +2691,7 @@
           "path" : "$this"
         }],
         "ordered" : false,
-        "rules" : "closed"
+        "rules" : "open"
       },
       "short" : "Medication to be taken",
       "definition" : "Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications.",
@@ -2704,6 +2704,9 @@
         "max" : "1"
       },
       "type" : [{
+        "code" : "CodeableConcept"
+      },
+      {
         "code" : "Reference",
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Medication"]
       }],
@@ -2752,9 +2755,9 @@
       "path" : "MedicationRequest.medication[x]",
       "sliceName" : "medicationReference",
       "short" : "Referencia al medicamento que se prescribe.",
-      "definition" : "Referencia al medicamento que se prescribe, la cual se encuentra disponible en el servicio de la TFC.",
+      "definition" : "Referencia al medicamento que se prescribe, la cual se encuentra disponible en el //servicio de la TFC.",
       "comment" : "If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the Medication resource is recommended.  For example, if you require form or lot number or if the medication is compounded or extemporaneously prepared, then you must reference the Medication resource.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "base" : {
         "path" : "MedicationRequest.medication[x]",
@@ -2876,7 +2879,7 @@
     {
       "id" : "MedicationRequest.medication[x]:medicationReference.reference",
       "path" : "MedicationRequest.medication[x].reference",
-      "short" : "uri del recurso. Para el caso el repositorio se encuentra en \"https://api-receta.minsal.cl/v2/Medication\"",
+      "short" : "uri del recurso. Para el caso el repositorio se encuentra en \"https:////api-receta.minsal.cl/v2/Medication\"",
       "definition" : "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
       "comment" : "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
       "min" : 0,
@@ -10200,8 +10203,8 @@
       "path" : "MedicationRequest.medication[x]",
       "sliceName" : "medicationReference",
       "short" : "Referencia al medicamento que se prescribe.",
-      "definition" : "Referencia al medicamento que se prescribe, la cual se encuentra disponible en el servicio de la TFC.",
-      "min" : 1,
+      "definition" : "Referencia al medicamento que se prescribe, la cual se encuentra disponible en el //servicio de la TFC.",
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Reference",
@@ -10212,7 +10215,7 @@
     {
       "id" : "MedicationRequest.medication[x]:medicationReference.reference",
       "path" : "MedicationRequest.medication[x].reference",
-      "short" : "uri del recurso. Para el caso el repositorio se encuentra en \"https://api-receta.minsal.cl/v2/Medication\"",
+      "short" : "uri del recurso. Para el caso el repositorio se encuentra en \"https:////api-receta.minsal.cl/v2/Medication\"",
       "mustSupport" : true
     },
     {

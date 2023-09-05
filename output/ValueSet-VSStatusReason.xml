@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="https://rme.hl7chile.cl/ValueSet/VSStatusReason"/>
-  <version value="0.9"/>
+  <version value="0.9.1"/>
   <name value="VSStatusReason"/>
   <title value="Razón del cambio de estado (Prescripción)"/>
   <status value="active"/>

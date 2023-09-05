@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="296742f6-a234-4363-bdf1-ec3cbad43aa2"/>
+  <id value="faf5dd41-928a-4a2b-9625-1a88e49b7d5f"/>
   <meta>
-    <lastUpdated value="2023-09-05T00:05:31.615-03:00"/>
+    <lastUpdated value="2023-09-05T15:26:19.807-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,7 +15,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 72 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSViasAdmin.html">codesystem Vías de Administración v0.9 (CodeSystem)</a>
+              <a href="CodeSystem-CSViasAdmin.html">codesystem Vías de Administración v0.9.1 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -609,7 +609,7 @@
           </div>
         </text>
         <url value="https://rme.hl7chile.cl/ValueSet/VSViasAdmin"/>
-        <version value="0.9"/>
+        <version value="0.9.1"/>
         <name value="VSViasAdmin"/>
         <title value="Vías de Administración"/>
         <status value="active"/>
@@ -623,8 +623,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:daa04caa-a96f-4caa-ac17-261b397fff2c"/>
-          <timestamp value="2023-09-05T00:06:12-03:00"/>
+          <identifier value="urn:uuid:4000fd79-2f00-4d4d-b9c3-50caa317952c"/>
+          <timestamp value="2023-09-05T15:26:58-03:00"/>
           <total value="72"/>
           <parameter>
             <name value="excludeNested"/>
@@ -632,7 +632,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://rme.hl7chile.cl/CodeSystem/CSViasAdmin|0.9"/>
+            <valueUri value="https://rme.hl7chile.cl/CodeSystem/CSViasAdmin|0.9.1"/>
           </parameter>
           <contains>
             <system value="https://rme.hl7chile.cl/CodeSystem/CSViasAdmin"/>
@@ -1007,7 +1007,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 32 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSUnidadAsistencial.html">codesystem Unidad Asistencial v0.9 (CodeSystem)</a>
+              <a href="CodeSystem-CSUnidadAsistencial.html">codesystem Unidad Asistencial v0.9.1 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -1281,7 +1281,7 @@
           </div>
         </text>
         <url value="https://rme.hl7chile.cl/ValueSet/VSUnidadAsistencial"/>
-        <version value="0.9"/>
+        <version value="0.9.1"/>
         <name value="VSUnidadAsistencial"/>
         <title value="Unidad Asistencial"/>
         <status value="active"/>
@@ -1295,8 +1295,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:951ecc6a-5fd2-4fff-8da2-571b7bc516a9"/>
-          <timestamp value="2023-09-05T00:06:17-03:00"/>
+          <identifier value="urn:uuid:c904a99f-fa1c-4795-9426-0bfb0cb75649"/>
+          <timestamp value="2023-09-05T15:27:03-03:00"/>
           <total value="32"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1304,7 +1304,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial|0.9"/>
+            <valueUri value="https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial|0.9.1"/>
           </parameter>
           <contains>
             <system value="https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial"/>
@@ -1479,7 +1479,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 14 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSStatusReason.html">codesystem Razón del cambio de estado (Prescripción) v0.9 (CodeSystem)</a>
+              <a href="CodeSystem-CSStatusReason.html">codesystem Razón del cambio de estado (Prescripción) v0.9.1 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -1696,7 +1696,7 @@
           </div>
         </text>
         <url value="https://rme.hl7chile.cl/ValueSet/VSStatusReason"/>
-        <version value="0.9"/>
+        <version value="0.9.1"/>
         <name value="VSStatusReason"/>
         <title value="Razón del cambio de estado (Prescripción)"/>
         <status value="active"/>
@@ -1710,8 +1710,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ebda65de-777a-4499-9972-d9a6d2aef6d6"/>
-          <timestamp value="2023-09-05T00:06:17-03:00"/>
+          <identifier value="urn:uuid:05812167-b089-4573-bcfb-0c41053e062f"/>
+          <timestamp value="2023-09-05T15:27:03-03:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1719,7 +1719,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://rme.hl7chile.cl/CodeSystem/CSStatusReason|0.9"/>
+            <valueUri value="https://rme.hl7chile.cl/CodeSystem/CSStatusReason|0.9.1"/>
           </parameter>
           <contains>
             <system value="https://rme.hl7chile.cl/CodeSystem/CSStatusReason"/>
@@ -1804,7 +1804,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodificacionCategoria.html">codesystem Codificación del estado de una prescripción v0.9 (CodeSystem)</a>
+              <a href="CodeSystem-CSCodificacionCategoria.html">codesystem Codificación del estado de una prescripción v0.9.1 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -1881,7 +1881,7 @@
           </div>
         </text>
         <url value="https://rme.hl7chile.cl/ValueSet/VSCodificacionCategoria"/>
-        <version value="0.9"/>
+        <version value="0.9.1"/>
         <name value="VSCodificacionCategoria"/>
         <title value="Codificación de la categoría de una prescripción"/>
         <status value="active"/>
@@ -1895,8 +1895,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:91f0a82a-0439-48f4-abcd-7d6f4fbaf4b8"/>
-          <timestamp value="2023-09-05T00:06:21-03:00"/>
+          <identifier value="urn:uuid:fa69ebf0-dc10-495a-b5b4-41a9c5395ce5"/>
+          <timestamp value="2023-09-05T15:27:06-03:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1904,7 +1904,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://rme.hl7chile.cl/CodeSystem/CSCodificacionCategoria|0.9"/>
+            <valueUri value="https://rme.hl7chile.cl/CodeSystem/CSCodificacionCategoria|0.9.1"/>
           </parameter>
           <contains>
             <system value="https://rme.hl7chile.cl/CodeSystem/CSCodificacionCategoria"/>
@@ -1939,7 +1939,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 3 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodificacionPatron.html">codesystem Patrón de la Prescripción v0.9 (CodeSystem)</a>
+              <a href="CodeSystem-CSCodificacionPatron.html">codesystem Patrón de la Prescripción v0.9.1 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -2002,7 +2002,7 @@
           </div>
         </text>
         <url value="https://rme.hl7chile.cl/ValueSet/VSCodificacionPatron"/>
-        <version value="0.9"/>
+        <version value="0.9.1"/>
         <name value="VSCodificacionPatron"/>
         <title value="Patrón de la Prescripción"/>
         <status value="active"/>
@@ -2016,8 +2016,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b1286fd4-3e64-442c-b03e-e6526f45069a"/>
-          <timestamp value="2023-09-05T00:06:23-03:00"/>
+          <identifier value="urn:uuid:3d456b2c-95d1-4251-b5a8-f84a2569b332"/>
+          <timestamp value="2023-09-05T15:27:08-03:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2025,7 +2025,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://rme.hl7chile.cl/CodeSystem/CSCodificacionPatron|0.9"/>
+            <valueUri value="https://rme.hl7chile.cl/CodeSystem/CSCodificacionPatron|0.9.1"/>
           </parameter>
           <contains>
             <system value="https://rme.hl7chile.cl/CodeSystem/CSCodificacionPatron"/>
@@ -2055,7 +2055,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 20 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSRazonEstadoDispensacion.html">codesystem Razón del cambio de estado (Dispensación) v0.9 (CodeSystem)</a>
+              <a href="CodeSystem-CSRazonEstadoDispensacion.html">codesystem Razón del cambio de estado (Dispensación) v0.9.1 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -2356,7 +2356,7 @@
           </div>
         </text>
         <url value="https://rme.hl7chile.cl/ValueSet/VSRazonEstadoDispensacion"/>
-        <version value="0.9"/>
+        <version value="0.9.1"/>
         <name value="VSRazonEstadoDispensacion"/>
         <title value="Razón del cambio de estado (Dispensación)"/>
         <status value="active"/>
@@ -2370,8 +2370,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:33fd80c8-ae89-4b09-a33a-4cd140e91cf7"/>
-          <timestamp value="2023-09-05T00:06:23-03:00"/>
+          <identifier value="urn:uuid:aeb73acc-4baf-4abf-8a71-d2951bb77aaa"/>
+          <timestamp value="2023-09-05T15:27:08-03:00"/>
           <total value="20"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2379,7 +2379,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion|0.9"/>
+            <valueUri value="https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion|0.9.1"/>
           </parameter>
           <contains>
             <system value="https://rme.hl7chile.cl/CodeSystem/CSRazonEstadoDispensacion"/>
@@ -2494,7 +2494,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 14 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSMetodos.html">codesystem Métodos de Administración v0.9 (CodeSystem)</a>
+              <a href="CodeSystem-CSMetodos.html">codesystem Métodos de Administración v0.9.1 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -2624,7 +2624,7 @@
           </div>
         </text>
         <url value="https://rme.hl7chile.cl/ValueSet/VSMetodos"/>
-        <version value="0.9"/>
+        <version value="0.9.1"/>
         <name value="VSMetodos"/>
         <title value="Métodos de Administración"/>
         <status value="active"/>
@@ -2638,8 +2638,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ca710120-6ba7-49dc-bd60-b76230acc3e4"/>
-          <timestamp value="2023-09-05T00:06:23-03:00"/>
+          <identifier value="urn:uuid:ae3a0ca4-b71b-4475-b593-dab6eebf68aa"/>
+          <timestamp value="2023-09-05T15:27:08-03:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2647,7 +2647,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://rme.hl7chile.cl/CodeSystem/CSMetodos|0.9"/>
+            <valueUri value="https://rme.hl7chile.cl/CodeSystem/CSMetodos|0.9.1"/>
           </parameter>
           <contains>
             <system value="https://rme.hl7chile.cl/CodeSystem/CSMetodos"/>
@@ -2732,7 +2732,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 3 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSTipoPrescripcion.html">codesystem Tipo de Prescripción v0.9 (CodeSystem)</a>
+              <a href="CodeSystem-CSTipoPrescripcion.html">codesystem Tipo de Prescripción v0.9.1 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -2774,7 +2774,7 @@
           </div>
         </text>
         <url value="https://rme.hl7chile.cl/ValueSet/VSTipoPrescripcion"/>
-        <version value="0.9"/>
+        <version value="0.9.1"/>
         <name value="VSTipoPrescripcion"/>
         <title value="Tipo de Prescripción"/>
         <status value="active"/>
@@ -2788,8 +2788,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a7be8edd-3f66-4911-871d-73a91a6cc794"/>
-          <timestamp value="2023-09-05T00:06:23-03:00"/>
+          <identifier value="urn:uuid:6f735ca0-da2f-45ec-91ac-c0ee6001f72d"/>
+          <timestamp value="2023-09-05T15:27:08-03:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2797,7 +2797,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://rme.hl7chile.cl/CodeSystem/CSTipoPrescripcion|0.9"/>
+            <valueUri value="https://rme.hl7chile.cl/CodeSystem/CSTipoPrescripcion|0.9.1"/>
           </parameter>
           <contains>
             <system value="https://rme.hl7chile.cl/CodeSystem/CSTipoPrescripcion"/>
@@ -2827,7 +2827,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 2 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSFuncionProfesionalDispensacion.html">codesystem Funcion del Personal v0.9 (CodeSystem)</a>
+              <a href="CodeSystem-CSFuncionProfesionalDispensacion.html">codesystem Funcion del Personal v0.9.1 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -2861,7 +2861,7 @@
           </div>
         </text>
         <url value="https://rme.hl7chile.cl/ValueSet/VSFuncionProfesionalDispensacion"/>
-        <version value="0.9"/>
+        <version value="0.9.1"/>
         <name value="VSFuncionProfesionalDispensacion"/>
         <title value="Funcion del Personal"/>
         <status value="active"/>
@@ -2875,8 +2875,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1af9b0a9-c2c9-4325-8dc4-818035494e6c"/>
-          <timestamp value="2023-09-05T00:06:23-03:00"/>
+          <identifier value="urn:uuid:3ed9d45f-8638-49c4-ad7a-920a17c17315"/>
+          <timestamp value="2023-09-05T15:27:09-03:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2884,7 +2884,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://rme.hl7chile.cl/CodeSystem/CSFuncionProfesionalDispensacion|0.9"/>
+            <valueUri value="https://rme.hl7chile.cl/CodeSystem/CSFuncionProfesionalDispensacion|0.9.1"/>
           </parameter>
           <contains>
             <system value="https://rme.hl7chile.cl/CodeSystem/CSFuncionProfesionalDispensacion"/>

@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   ] ; # 
   fhir:url [ fhir:v "https://rme.hl7chile.cl/StructureDefinition/RecetaPrescripcionCl"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.9"] ; # 
+  fhir:version [ fhir:v "0.9.1"] ; # 
   fhir:name [ fhir:v "PrescripcionRecetaCL"] ; # 
   fhir:title [ fhir:v "CL Prescripción"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-05T00:05:31-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-05T15:26:19-03:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Este Perfil describe la información contenida en la Prescripción de un medicamento para el Sistema Nacional de Receta Electrónica del MINSAL"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
@@ -2794,7 +2794,7 @@
            fhir:path [ fhir:v "$this" ]
          ] ) ;
          fhir:ordered [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:rules [ fhir:v "closed" ]
+         fhir:rules [ fhir:v "open" ]
        ] ;
        fhir:short [ fhir:v "Medication to be taken" ] ;
        fhir:definition [ fhir:v "Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications." ] ;
@@ -2807,6 +2807,8 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
+         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+       ] [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Medication"^^xsd:anyURI ;
@@ -2859,9 +2861,9 @@
        fhir:path [ fhir:v "MedicationRequest.medication[x]" ] ;
        fhir:sliceName [ fhir:v "medicationReference" ] ;
        fhir:short [ fhir:v "Referencia al medicamento que se prescribe." ] ;
-       fhir:definition [ fhir:v "Referencia al medicamento que se prescribe, la cual se encuentra disponible en el servicio de la TFC." ] ;
+       fhir:definition [ fhir:v "Referencia al medicamento que se prescribe, la cual se encuentra disponible en el //servicio de la TFC." ] ;
        fhir:comment [ fhir:v "If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the Medication resource is recommended.  For example, if you require form or lot number or if the medication is compounded or extemporaneously prepared, then you must reference the Medication resource." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
          fhir:path [ fhir:v "MedicationRequest.medication[x]" ] ;
@@ -2986,7 +2988,7 @@
      ] [
        fhir:id [ fhir:v "MedicationRequest.medication[x]:medicationReference.reference" ] ;
        fhir:path [ fhir:v "MedicationRequest.medication[x].reference" ] ;
-       fhir:short [ fhir:v "uri del recurso. Para el caso el repositorio se encuentra en \"https://api-receta.minsal.cl/v2/Medication\"" ] ;
+       fhir:short [ fhir:v "uri del recurso. Para el caso el repositorio se encuentra en \"https:////api-receta.minsal.cl/v2/Medication\"" ] ;
        fhir:definition [ fhir:v "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." ] ;
        fhir:comment [ fhir:v "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -10678,8 +10680,8 @@
        fhir:path [ fhir:v "MedicationRequest.medication[x]" ] ;
        fhir:sliceName [ fhir:v "medicationReference" ] ;
        fhir:short [ fhir:v "Referencia al medicamento que se prescribe." ] ;
-       fhir:definition [ fhir:v "Referencia al medicamento que se prescribe, la cual se encuentra disponible en el servicio de la TFC." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:definition [ fhir:v "Referencia al medicamento que se prescribe, la cual se encuentra disponible en el //servicio de la TFC." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
@@ -10692,7 +10694,7 @@
      ] [
        fhir:id [ fhir:v "MedicationRequest.medication[x]:medicationReference.reference" ] ;
        fhir:path [ fhir:v "MedicationRequest.medication[x].reference" ] ;
-       fhir:short [ fhir:v "uri del recurso. Para el caso el repositorio se encuentra en \"https://api-receta.minsal.cl/v2/Medication\"" ] ;
+       fhir:short [ fhir:v "uri del recurso. Para el caso el repositorio se encuentra en \"https:////api-receta.minsal.cl/v2/Medication\"" ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "MedicationRequest.medication[x]:medicationReference.display" ] ;

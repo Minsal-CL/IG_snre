@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://rme.hl7chile.cl/CodeSystem/CSMetodos",
-  "version" : "0.9",
+  "version" : "0.9.1",
   "name" : "CSMetodos",
   "title" : "Métodos de Administración",
   "status" : "active",
