@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PacienteCardio"] ; # 
   fhir:title [ fhir:v "Perfil Paciente Cardio"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-05T15:26:19-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-06T23:59:11-03:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Indica datos administrativos del paciente que se encuentra dentro del programa cardiovascular"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [

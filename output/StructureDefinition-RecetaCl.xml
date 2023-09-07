@@ -10,7 +10,7 @@
   <name value="MedicamentoRecetaCL"/>
   <title value="CL Receta"/>
   <status value="draft"/>
-  <date value="2023-09-05T15:26:19-03:00"/>
+  <date value="2023-09-06T23:59:11-03:00"/>
   <description value="Este Perfil utiliza este recurso como un contenedor de Prescripciones, de tal forma de poder ser utilizado como formato de Receta electrónica con los fármacos indicados por el clínico durante un acto de indicación farmacológica."/>
   <jurisdiction>
     <coding>

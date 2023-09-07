@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PrescripcionRecetaCL"] ; # 
   fhir:title [ fhir:v "CL Prescripción"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-05T15:26:19-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-06T23:59:11-03:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Este Perfil describe la información contenida en la Prescripción de un medicamento para el Sistema Nacional de Receta Electrónica del MINSAL"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [

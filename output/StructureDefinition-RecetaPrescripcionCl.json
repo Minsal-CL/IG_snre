@@ -10,7 +10,7 @@
   "name" : "PrescripcionRecetaCL",
   "title" : "CL Prescripción",
   "status" : "draft",
-  "date" : "2023-09-05T15:26:19-03:00",
+  "date" : "2023-09-06T23:59:11-03:00",
   "description" : "Este Perfil describe la información contenida en la Prescripción de un medicamento para el Sistema Nacional de Receta Electrónica del MINSAL",
   "jurisdiction" : [{
     "coding" : [{

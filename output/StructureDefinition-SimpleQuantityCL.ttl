@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SimpleQuantityCL"] ; # 
   fhir:title [ fhir:v "SimpleQuantity para el caso de Receta"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-05T15:26:19-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-06T23:59:11-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Chile"] ; # 
   fhir:description [ fhir:v "Definición para una unidad simple y su contenido para el consumo de un fármaco según prescripción"] ; # 
   fhir:jurisdiction ( [

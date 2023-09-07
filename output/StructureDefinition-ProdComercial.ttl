@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ProdComercial"] ; # 
   fhir:title [ fhir:v "Identificación de un medicamento bajo su marca comercial"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-05T15:26:19-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-06T23:59:11-03:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Indicación de un Medicamento bajo su Marca Comercial"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [

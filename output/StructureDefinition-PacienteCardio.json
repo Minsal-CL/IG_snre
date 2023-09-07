@@ -10,7 +10,7 @@
   "name" : "PacienteCardio",
   "title" : "Perfil Paciente Cardio",
   "status" : "draft",
-  "date" : "2023-09-05T15:26:19-03:00",
+  "date" : "2023-09-06T23:59:11-03:00",
   "description" : "Indica datos administrativos del paciente que se encuentra dentro del programa cardiovascular",
   "jurisdiction" : [{
     "coding" : [{

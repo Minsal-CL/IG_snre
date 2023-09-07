@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "faf5dd41-928a-4a2b-9625-1a88e49b7d5f",
+  "id" : "06ee8fe5-db9d-437d-b545-da5b6aefba29",
   "meta" : {
-    "lastUpdated" : "2023-09-05T15:26:19.807-03:00"
+    "lastUpdated" : "2023-09-06T23:59:11.020-03:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -28,8 +28,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:4000fd79-2f00-4d4d-b9c3-50caa317952c",
-        "timestamp" : "2023-09-05T15:26:58-03:00",
+        "identifier" : "urn:uuid:b7acdb27-248e-4198-8c93-aa9c1225bfb8",
+        "timestamp" : "2023-09-06T23:59:50-03:00",
         "total" : 72,
         "parameter" : [{
           "name" : "excludeNested",
@@ -425,8 +425,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c904a99f-fa1c-4795-9426-0bfb0cb75649",
-        "timestamp" : "2023-09-05T15:27:03-03:00",
+        "identifier" : "urn:uuid:edf591bd-84bc-4d15-a2d9-e11984d91392",
+        "timestamp" : "2023-09-06T23:59:55-03:00",
         "total" : 32,
         "parameter" : [{
           "name" : "excludeNested",
@@ -622,8 +622,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:05812167-b089-4573-bcfb-0c41053e062f",
-        "timestamp" : "2023-09-05T15:27:03-03:00",
+        "identifier" : "urn:uuid:bcd0bd7f-003f-4b71-a21a-afb34e763211",
+        "timestamp" : "2023-09-06T23:59:55-03:00",
         "total" : 14,
         "parameter" : [{
           "name" : "excludeNested",
@@ -729,8 +729,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fa69ebf0-dc10-495a-b5b4-41a9c5395ce5",
-        "timestamp" : "2023-09-05T15:27:06-03:00",
+        "identifier" : "urn:uuid:4037264a-437b-44fa-a450-ee58cc501384",
+        "timestamp" : "2023-09-07T00:00:00-03:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -786,8 +786,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3d456b2c-95d1-4251-b5a8-f84a2569b332",
-        "timestamp" : "2023-09-05T15:27:08-03:00",
+        "identifier" : "urn:uuid:ad040b9a-1b5d-4e45-8bd7-39ded717c6d0",
+        "timestamp" : "2023-09-07T00:00:03-03:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -838,8 +838,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:aeb73acc-4baf-4abf-8a71-d2951bb77aaa",
-        "timestamp" : "2023-09-05T15:27:08-03:00",
+        "identifier" : "urn:uuid:0f08f9a2-ca57-4a3f-ac08-ea87141a91a5",
+        "timestamp" : "2023-09-07T00:00:03-03:00",
         "total" : 20,
         "parameter" : [{
           "name" : "excludeNested",
@@ -975,8 +975,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ae3a0ca4-b71b-4475-b593-dab6eebf68aa",
-        "timestamp" : "2023-09-05T15:27:08-03:00",
+        "identifier" : "urn:uuid:c3377187-618d-48ed-9290-15b66486364c",
+        "timestamp" : "2023-09-07T00:00:03-03:00",
         "total" : 14,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1082,8 +1082,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6f735ca0-da2f-45ec-91ac-c0ee6001f72d",
-        "timestamp" : "2023-09-05T15:27:08-03:00",
+        "identifier" : "urn:uuid:bca53dda-33f0-4689-8782-c57351caf5bf",
+        "timestamp" : "2023-09-07T00:00:03-03:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1134,8 +1134,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3ed9d45f-8638-49c4-ad7a-920a17c17315",
-        "timestamp" : "2023-09-05T15:27:09-03:00",
+        "identifier" : "urn:uuid:981c78ca-49dc-4fa8-b34f-c966ff3633af",
+        "timestamp" : "2023-09-07T00:00:03-03:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
