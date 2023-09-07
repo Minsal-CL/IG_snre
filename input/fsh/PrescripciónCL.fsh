@@ -2,7 +2,7 @@ Profile:        PrescripcionRecetaCL
 Parent:         MedicationRequest
 Id:             RecetaPrescripcionCl
 Title:          "CL Prescripción"
-Description:    "Este Perfil describe la información contenida en la Prescripción de un medicamento para el Sistema Nacional de Receta Electrónica del MINSAL"
+Description:    "Este Perfil describe la información contenida en la Prescripción de un medicamento para el Sistema Nacional de Receta Electrónica del MINSAL  "
 
 * identifier MS
   * type MS
