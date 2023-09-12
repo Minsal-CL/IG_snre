@@ -1,0 +1,188 @@
+﻿RecetaCL : Validation Results
+=========================================
+
+err = 0, warn = 27, info = 1
+IG Publisher Version: 1.4.2 Out of date - current version is 1.4.5
+Generated Tue Sep 12 17:39:09 CLST 2023. FHIR version 4.0.1 for hl7.fhir.cl.recetachile#0.9.1 (canonical = https://rme.hl7chile.cl)
+ Build Errors : 1 / 25 / 0
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/CodeSystem-CSCodificacionCategoria : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/CodeSystem-CSCodificacionPatron : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/CodeSystem-CSFuncionProfesionalDispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/CodeSystem-CSMetodos : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/CodeSystem-CSRazonEstadoDispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/CodeSystem-CSStatusReason : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/CodeSystem-CSTipoPrescripcion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/CodeSystem-CSUnidadAsistencial : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/CodeSystem-CSViasAdmin : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/ImplementationGuide-hl7.fhir.cl.recetachile : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Location-tqo6krppa0gbygu2kkud : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Medication-1654171000167115 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Medication-1667301000167110 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Medication-1667701000167114 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Medication-1667741000167112 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Medication-1668191000167115 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Medication-1669781000167113 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Medication-1683511000167113 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Medication-1690341000167110 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Medication-1965501000167112 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Medication-1973011000167111 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Medication-1976661000167112 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Medication-2034051000167119 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Medication-2034171000167114 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Medication-2116751000167113 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Medication-2148351000167115 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Medication-2184971000167114 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Medication-2196531000167114 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Medication-2210431000167113 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationDispense-Ejemplo1-Dispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationDispense-Ejemplo2-Dispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationDispense-Ejemplo3-Dispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationDispense-Ejemplo4-Dispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationDispense-Ejemplo5-Dispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationDispense-Ejemplo6-Dispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationRequest-Ejemplo1-prescipcion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationRequest-Ejemplo2-prescipcion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationRequest-Ejemplo3-prescipcion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationRequest-Ejemplo4-prescipcion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationRequest-Ejemplo5-prescipcion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationRequest-Ejemplo6-prescipcion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationRequest-Ejemplo7-prescipcion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationRequest-Ejemplo8-prescipcion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationRequest-bzm9efcieni3j191tpqr : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationRequest-ilh8j9kaii5ye2vcqppm : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationRequest-jtngw6tu5ftm8rf19whx : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationRequest-rf0er64j3bihpuasj041 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/MedicationRequest-wbpacdehcs1vyrae3l7m : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Organization-8qj5s1ostjswt3r95vnv : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Patient-Paciente1 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Practitioner-3309267 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/Practitioner-Prescriptor1 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/RequestGroup-Ejemplo1-Receta : 0 / 0 / 3
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/RequestGroup-Ejemplo2-Receta : 0 / 0 / 3
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/RequestGroup-Ejemplo3-Receta : 0 / 0 / 3
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/RequestGroup-Ejemplo4-Receta : 0 / 0 / 3
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/RequestGroup-Ejemplo5-Receta : 0 / 0 / 3
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/RequestGroup-Ejemplo6-Receta : 0 / 0 / 5
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/RequestGroup-Ejemplo7-Receta : 0 / 0 / 3
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/StructureDefinition-DispensacionMedicamentoCl : 0 / 0 / 2
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/StructureDefinition-PacienteCardio : 0 / 1 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/StructureDefinition-ProdComercial : 0 / 1 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/StructureDefinition-RangeCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/StructureDefinition-RecetaCl : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/StructureDefinition-RecetaPrescripcionCl : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/StructureDefinition-SimpleQuantityCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/ValueSet-VSCodificacionCategoria : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/ValueSet-VSCodificacionPatron : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/ValueSet-VSFuncionProfesionalDispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/ValueSet-VSMetodos : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/ValueSet-VSRazonEstadoDispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/ValueSet-VSStatusReason : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/ValueSet-VSTipoPrescripcion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/ValueSet-VSUnidadAsistencial : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/fsh-generated/resources/ValueSet-VSViasAdmin : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/Ejemplo1-Dispensacion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RequestGroup/Ejemplo1-Receta.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/Ejemplo1-prescipcion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/Ejemplo2-Dispensacion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RequestGroup/Ejemplo2-Receta.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/Ejemplo2-prescipcion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/Ejemplo3-Dispensacion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RequestGroup/Ejemplo3-Receta.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/Ejemplo3-prescipcion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/Ejemplo4-Dispensacion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RequestGroup/Ejemplo4-Receta.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/Ejemplo4-prescipcion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/Ejemplo5-Dispensacion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RequestGroup/Ejemplo5-Receta.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/Ejemplo5-prescipcion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/Ejemplo6-Dispensacion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RequestGroup/Ejemplo6-Receta.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/Ejemplo6-prescipcion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RequestGroup/Ejemplo7-Receta.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/Ejemplo7-prescipcion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/Ejemplo8-prescipcion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /Users/jorgemansilla/IGs/_IG_Receta/_SNRE/output/operaciones.html#/html/body/div/div/div/div/div/ul/li/a at Line 532, column 111: The link 'resource-operations.html' for "Resource Operations" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-CSCodificacionCategoria.json ==
+== fsh-generated/resources/CodeSystem-CSCodificacionPatron.json ==
+== fsh-generated/resources/CodeSystem-CSFuncionProfesionalDispensacion.json ==
+== fsh-generated/resources/CodeSystem-CSMetodos.json ==
+== fsh-generated/resources/CodeSystem-CSRazonEstadoDispensacion.json ==
+== fsh-generated/resources/CodeSystem-CSStatusReason.json ==
+== fsh-generated/resources/CodeSystem-CSTipoPrescripcion.json ==
+== fsh-generated/resources/CodeSystem-CSUnidadAsistencial.json ==
+== fsh-generated/resources/CodeSystem-CSViasAdmin.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.cl.recetachile.json ==
+== fsh-generated/resources/Location-tqo6krppa0gbygu2kkud.json ==
+== fsh-generated/resources/Medication-1654171000167115.json ==
+== fsh-generated/resources/Medication-1667301000167110.json ==
+== fsh-generated/resources/Medication-1667701000167114.json ==
+== fsh-generated/resources/Medication-1667741000167112.json ==
+== fsh-generated/resources/Medication-1668191000167115.json ==
+== fsh-generated/resources/Medication-1669781000167113.json ==
+== fsh-generated/resources/Medication-1683511000167113.json ==
+== fsh-generated/resources/Medication-1690341000167110.json ==
+== fsh-generated/resources/Medication-1965501000167112.json ==
+== fsh-generated/resources/Medication-1973011000167111.json ==
+== fsh-generated/resources/Medication-1976661000167112.json ==
+== fsh-generated/resources/Medication-2034051000167119.json ==
+== fsh-generated/resources/Medication-2034171000167114.json ==
+== fsh-generated/resources/Medication-2116751000167113.json ==
+== fsh-generated/resources/Medication-2148351000167115.json ==
+== fsh-generated/resources/Medication-2184971000167114.json ==
+== fsh-generated/resources/Medication-2196531000167114.json ==
+== fsh-generated/resources/Medication-2210431000167113.json ==
+== fsh-generated/resources/MedicationDispense-Ejemplo1-Dispensacion.json ==
+== fsh-generated/resources/MedicationDispense-Ejemplo2-Dispensacion.json ==
+== fsh-generated/resources/MedicationDispense-Ejemplo3-Dispensacion.json ==
+== fsh-generated/resources/MedicationDispense-Ejemplo4-Dispensacion.json ==
+== fsh-generated/resources/MedicationDispense-Ejemplo5-Dispensacion.json ==
+== fsh-generated/resources/MedicationDispense-Ejemplo6-Dispensacion.json ==
+== fsh-generated/resources/MedicationRequest-Ejemplo1-prescipcion.json ==
+== fsh-generated/resources/MedicationRequest-Ejemplo2-prescipcion.json ==
+== fsh-generated/resources/MedicationRequest-Ejemplo3-prescipcion.json ==
+== fsh-generated/resources/MedicationRequest-Ejemplo4-prescipcion.json ==
+== fsh-generated/resources/MedicationRequest-Ejemplo5-prescipcion.json ==
+== fsh-generated/resources/MedicationRequest-Ejemplo6-prescipcion.json ==
+== fsh-generated/resources/MedicationRequest-Ejemplo7-prescipcion.json ==
+== fsh-generated/resources/MedicationRequest-Ejemplo8-prescipcion.json ==
+== fsh-generated/resources/MedicationRequest-bzm9efcieni3j191tpqr.json ==
+== fsh-generated/resources/MedicationRequest-ilh8j9kaii5ye2vcqppm.json ==
+== fsh-generated/resources/MedicationRequest-jtngw6tu5ftm8rf19whx.json ==
+== fsh-generated/resources/MedicationRequest-rf0er64j3bihpuasj041.json ==
+== fsh-generated/resources/MedicationRequest-wbpacdehcs1vyrae3l7m.json ==
+== fsh-generated/resources/Organization-8qj5s1ostjswt3r95vnv.json ==
+== fsh-generated/resources/Patient-Paciente1.json ==
+== fsh-generated/resources/Practitioner-3309267.json ==
+== fsh-generated/resources/Practitioner-Prescriptor1.json ==
+== fsh-generated/resources/RequestGroup-Ejemplo1-Receta.json ==
+== fsh-generated/resources/RequestGroup-Ejemplo2-Receta.json ==
+== fsh-generated/resources/RequestGroup-Ejemplo3-Receta.json ==
+== fsh-generated/resources/RequestGroup-Ejemplo4-Receta.json ==
+== fsh-generated/resources/RequestGroup-Ejemplo5-Receta.json ==
+== fsh-generated/resources/RequestGroup-Ejemplo6-Receta.json ==
+== fsh-generated/resources/RequestGroup-Ejemplo7-Receta.json ==
+== fsh-generated/resources/StructureDefinition-DispensacionMedicamentoCl.json ==
+INFORMATION: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.snapshot.element[125].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated/resources/StructureDefinition-PacienteCardio.json ==
+WARNING: StructureDefinition.where(url = 'https://rme.hl7chile.cl/StructureDefinition/PacienteCardio'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ProdComercial.json ==
+WARNING: StructureDefinition/ProdComercial: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+== fsh-generated/resources/StructureDefinition-RangeCL.json ==
+== fsh-generated/resources/StructureDefinition-RecetaCl.json ==
+== fsh-generated/resources/StructureDefinition-RecetaPrescripcionCl.json ==
+== fsh-generated/resources/StructureDefinition-SimpleQuantityCL.json ==
+== fsh-generated/resources/ValueSet-VSCodificacionCategoria.json ==
+== fsh-generated/resources/ValueSet-VSCodificacionPatron.json ==
+== fsh-generated/resources/ValueSet-VSFuncionProfesionalDispensacion.json ==
+== fsh-generated/resources/ValueSet-VSMetodos.json ==
+== fsh-generated/resources/ValueSet-VSRazonEstadoDispensacion.json ==
+== fsh-generated/resources/ValueSet-VSStatusReason.json ==
+== fsh-generated/resources/ValueSet-VSTipoPrescripcion.json ==
+== fsh-generated/resources/ValueSet-VSUnidadAsistencial.json ==
+== fsh-generated/resources/ValueSet-VSViasAdmin.json ==

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="8qj5s1ostjswt3r95vnv"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="8qj5s1ostjswt3r95vnv"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;8qj5s1ostjswt3r95vnv&quot; </p></div><p><b>name</b>: Centro de Salud Familiar Juan Pablo II (La Serena)</p></div>
+  </text>
+  <name value="Centro de Salud Familiar Juan Pablo II (La Serena)"/>
+</Organization>
