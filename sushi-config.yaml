@@ -5,7 +5,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.cl.recetachile
 canonical: https://rme.hl7chile.cl
-version: 0.9.1
+version: 0.9.2
 name: RecetaCL
 title: Guía de Implementación Receta-CL
 status: draft
@@ -35,12 +35,12 @@ dependencies:
 pages:
   index.md:
     title: Inicio
-#  Alcances-Objetivos.md:
-#    title: Objetivos
-#  casos.md:
-#    title: Casos de uso
-#  operaciones.md:
-#    title: Operaciones
+  Alcances-Objetivos.md:
+    title: Objetivos
+  casos.md:
+    title: Casos de uso
+  operaciones.md:
+    title: Operaciones
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
