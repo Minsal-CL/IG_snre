@@ -1,4 +1,4 @@
-Profile:        PrescripcionRecetaCL
+Profile:        PrescripcionRecetaCL2
 Parent:         MedicationRequest
 Id:             RecetaPrescripcionCl
 Title:          "CL Prescripción"

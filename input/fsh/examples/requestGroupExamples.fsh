@@ -1,3 +1,4 @@
+/*
 Instance: Ejemplo1-Receta
 InstanceOf: MedicamentoRecetaCL
 Usage: #example
@@ -32,7 +33,6 @@ Usage: #inline
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "community"
 * courseOfTherapyType = CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
 * note.text = "En caso de fiebre"
-
 
 Instance: Ejemplo2-Receta
 InstanceOf: MedicamentoRecetaCL
@@ -289,3 +289,4 @@ Usage: #inline
 * extension[ProdComercial].url = "https://rme.hl7chile.cl/StructureDefinition/ProdComercial"
 * extension.valueReference = Reference(Medication/1976661000167112) "ketanor SL comprimido sublingual (ITF - Labomed)"
 * note.text = "Tomar según intensidad del dolor"
+*/

@@ -1,5 +1,5 @@
 Instance: Ejemplo1-prescipcion
-InstanceOf: PrescripcionRecetaCL
+InstanceOf: PrescripcionRecetaCL2
 Usage: #example
 * status = #active
 * intent = #order
@@ -24,9 +24,9 @@ http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "comm
 * note.text = "En caso de fiebre"
 
 
-
+/*
 Instance: Ejemplo2-prescipcion
-InstanceOf: PrescripcionRecetaCL
+InstanceOf: PrescripcionRecetaCL2
 Usage: #example
 * status = #active
 * intent = #order
@@ -214,3 +214,5 @@ Usage: #example
 //* extension[ProdComercial].url = "https://rme.hl7chile.cl/StructureDefinition/ProdComercial"
 ////* extension[ProdComercial].valueReference = "Medication/1976661000167112"
 * note.text = "Tomar según intensidad del dolor"
+
+*/

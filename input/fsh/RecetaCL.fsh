@@ -34,7 +34,7 @@ Description:    "Este Perfil utiliza este recurso como un contenedor de Prescrip
 * basedOn ^comment = "Campo el cual se debe agregar la referencia hacia los medicamentos que se incluyen en esta receta. Con medicamentos incluidos, se hace refencia a los medicamentos agregados dentro del elemento \"contained\""
 * basedOn ^short = "Referencia a las prescipciones que contiene la receta"
 * basedOn 0..* MS
-* basedOn only Reference(PrescripcionRecetaCL)
+* basedOn only Reference(PrescripcionRecetaCL2)
 
 /*
 Instance : EjemploRecetaCL
