@@ -35,28 +35,28 @@ dependencies:
 pages:
   index.md:
     title: Inicio
-  Alcances-Objetivos.md:
-    title: Objetivos
-  casos.md:
-    title: Casos de uso
-  operaciones.md:
-    title: Operaciones
+#  Alcances-Objetivos.md:
+#    title: Objetivos
+#  casos.md:
+#    title: Casos de uso
+#  operaciones.md:
+#    title: Operaciones
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Inicio: index.html
-  Objetivos: Alcances-Objetivos.html
-  Actores y Casos de Uso: casos.html
-  Operaciones y Terminologías: operaciones.html
-  Resumen de Artefactos:
-    Artefactos: artifacts.html
-  Perfiles:
-    Prescripción: StructureDefinition-RecetaPrescripcionCl.html
-    Dispensación: StructureDefinition-DispensacionMedicamentoCl.html
-    Receta: StructureDefinition-RecetaCl.html
-  Ejemplos:
-    Ejemplo Prescripción: StructureDefinition-RecetaPrescripcionCl-examples.html
-    Ejemplo Dispensación: StructureDefinition-DispensacionMedicamentoCl-examples.html
-    Ejemplo de Receta: StructureDefinition-RecetaCl-examples.html
+#  Objetivos: Alcances-Objetivos.html
+#  Actores y Casos de Uso: casos.html
+#  Operaciones y Terminologías: operaciones.html
+#  Resumen de Artefactos:
+#    Artefactos: artifacts.html
+#  Perfiles:
+#    Prescripción: StructureDefinition-RecetaPrescripcionCl.html
+#    Dispensación: StructureDefinition-DispensacionMedicamentoCl.html
+#    Receta: StructureDefinition-RecetaCl.html
+#  Ejemplos:
+#    Ejemplo Prescripción: StructureDefinition-RecetaPrescripcionCl-examples.html
+#    Ejemplo Dispensación: StructureDefinition-DispensacionMedicamentoCl-examples.html
+#    Ejemplo de Receta: StructureDefinition-RecetaCl-examples.html
