@@ -1,3 +1,4 @@
+/*
 Instance: PresciptorEjemplo1
 InstanceOf: Practitioner
 Title : "Ejemplo de Recurso Presciptor"
@@ -184,18 +185,7 @@ Usage: #example
 * subject = Reference(Patient/Paciente1)
 * medicationReference = Reference(Medication/2210431000167113)
 
-/*
-Instance: PrescripcionEjemplo3
-InstanceOf: MedicationRequest
-Title : "Ejemplo de Recurso Prescripcion"
-Description: "Prescripcion ficticio"
-Usage: #example
-* id = "wbpacdehcs1vyrae3l7mm"
-* status = #active
-* intent = #order
-* subject = Reference(Patient/Paciente1)
-* medicationReference = Reference(Medication/ilh8j9kaii5ye2vcqppm)
-*/
+
 Instance: PrescripcionEjemplo4
 InstanceOf: MedicationRequest
 Title : "Ejemplo de Recurso Prescripcion"
@@ -238,3 +228,4 @@ Usage: #example
 * id = "8qj5s1ostjswt3r95vnv"
 * name = "Centro de Salud Familiar Juan Pablo II (La Serena)"
 
+*/

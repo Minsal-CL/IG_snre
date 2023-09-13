@@ -1,3 +1,4 @@
+/*
 Instance: Ejemplo1-Dispensacion
 InstanceOf: DispensacionMedicamentoCL
 Usage: #example
@@ -155,3 +156,4 @@ Usage: #example
 * dosageInstruction.sequence = 1
 * dosageInstruction.doseAndRate.doseQuantity = 1 https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial#comprimido "Comprimido"
 * whenHandedOver = "2022-08-20T15:27:32.350Z"
+*/

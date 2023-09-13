@@ -1,3 +1,4 @@
+/*
 Instance: Ejemplo1-prescipcion
 InstanceOf: PrescripcionRecetaCL2
 Usage: #example
@@ -24,7 +25,7 @@ http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "comm
 * note.text = "En caso de fiebre"
 
 
-/*
+
 Instance: Ejemplo2-prescipcion
 InstanceOf: PrescripcionRecetaCL2
 Usage: #example
