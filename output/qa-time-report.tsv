@@ -1,0 +1,25 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.cl.recetachile.json	9211	-	1	0	0	0	0	0	2	330	0	0	0	0	0	0	0	1	0	0	83	79	0	0	0	3	0	1
+fsh-generated/resources/ValueSet-VSViasAdmin.json	882	5	0	0	1	0	0	0	0	55	0	0	0	0	0	0	0	0	0	0	5	6422	0	1	0	0	0	0
+fsh-generated/resources/StructureDefinition-DispensacionMedicamentoCl.json	35953	1084	0	0	0	0	0	4407	0	4277	0	0	1	0	0	0	0	2	0	0	712	3912	0	0	0	45	0	4
+fsh-generated/resources/CodeSystem-CSMetodos.json	2234	5	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	8	44	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-SimpleQuantityCL.json	2028	50	0	0	0	0	0	153	0	154	0	0	0	0	0	0	0	0	0	0	29	150	0	0	0	1	1	0
+fsh-generated/resources/CodeSystem-CSCodificacionCategoria.json	1798	2	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	6	44	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-CSViasAdmin.json	9318	8	0	0	0	0	0	0	0	12	0	0	0	1	0	0	0	0	0	0	22	56	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-VSUnidadAsistencial.json	833	1	0	0	0	0	0	0	1	5	0	0	0	0	0	0	0	0	0	0	6	57	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-VSStatusReason.json	899	1	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	4	58	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-CSUnidadAsistencial.json	2943	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	14	38	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-CSStatusReason.json	4432	3	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	12	22	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-CSTipoPrescripcion.json	1021	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	7	18	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-CSFuncionProfesionalDispensacion.json	1003	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	5	20	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-CSRazonEstadoDispensacion.json	5937	3	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	16	23	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-VSCodificacionCategoria.json	888	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	27	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-PacienteCardio.json	1226	13	0	0	0	0	0	1958	0	1930	0	0	0	0	0	0	0	1	0	0	389	1717	0	0	0	13	0	1
+fsh-generated/resources/StructureDefinition-ProdComercial.json	1568	48	0	0	0	0	0	115	0	106	0	0	0	0	0	0	0	0	0	0	16	87	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-VSCodificacionPatron.json	890	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	4	42	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-RangeCL.json	2042	36	0	0	0	0	0	102	0	101	0	0	0	0	0	0	0	0	0	0	21	180	0	0	0	1	0	1
+fsh-generated/resources/ValueSet-VSRazonEstadoDispensacion.json	943	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	59	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-VSMetodos.json	872	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	32	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-CSCodificacionPatron.json	1534	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	5	25	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-VSTipoPrescripcion.json	846	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	29	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-VSFuncionProfesionalDispensacion.json	921	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	3	35	0	0	0	0	0	0
