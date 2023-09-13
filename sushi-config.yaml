@@ -47,11 +47,11 @@ pages:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Inicio: index.html
-#  Objetivos: Alcances-Objetivos.html
-#  Actores y Casos de Uso: casos.html
-#  Operaciones y Terminologías: operaciones.html
-#  Resumen de Artefactos:
-#    Artefactos: artifacts.html
+  Objetivos: Alcances-Objetivos.html
+  Actores y Casos de Uso: casos.html
+  Operaciones y Terminologías: operaciones.html
+  Resumen de Artefactos:
+    Artefactos: artifacts.html
 #  Perfiles:
 #    Prescripción: StructureDefinition-RecetaPrescripcionCl.html
 #    Dispensación: StructureDefinition-DispensacionMedicamentoCl.html
