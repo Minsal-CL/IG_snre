@@ -28,3 +28,5 @@ else
 		echo IG Publisher NOT FOUND in input-cache or parent folder.  Please run _updatePublisher.  Aborting...
 	fi
 fi
+rm -rf docs
+mv output docs
