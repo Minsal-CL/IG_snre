@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSViasAdmin"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSViasAdmin"/>
+  <version value="0.9.2"/>
+  <name value="CSViasAdmin"/>
+  <title value="Vías de Administración"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-01-18T00:00:00-03:00"/>
+  <contact>
+    <name value="HL7 Chile"/>
+    <telecom>
+      <system value="email"/>
+      <value value="chair@hl7chile.cl"/>
+    </telecom>
+  </contact>
+  <description value="Vías de Administración de SNOMED-CT utilizadas para el Sistema Nacional de Receta Electrónica"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="72"/>
+  <concept>
+    <code value="26643006"/>
+    <display value="vía Oral route (calificador)"/>
+  </concept>
+  <concept>
+    <code value="46713006"/>
+    <display value="vía de administración en cavidad nasal (calificador)"/>
+  </concept>
+  <concept>
+    <code value="404820008"/>
+    <display value="vía de administración en el espacio epidural que rodea a la duramadre (calificador)"/>
+  </concept>
+  <concept>
+    <code value="418136008"/>
+    <display value="vía de administración a través de estoma gastrointestinal (calificador)"/>
+  </concept>
+  <concept>
+    <code value="127490009"/>
+    <display value="vía de administración a través de gastrostomía (calificador)"/>
+  </concept>
+  <concept>
+    <code value="127491008"/>
+    <display value="vía de administración a través de yeyunostomía (calificador)"/>
+  </concept>
+  <concept>
+    <code value="58100008"/>
+    <display value="vía de administración intrarterial (calificador)"/>
+  </concept>
+  <concept>
+    <code value="12130007"/>
+    <display value="vía de administración en una articulación (calificador)"/>
+  </concept>
+  <concept>
+    <code value="372461007"/>
+    <display value="vía de administración en lesión cavernosa (calificador)"/>
+  </concept>
+  <concept>
+    <code value="372461008"/>
+    <display value="vía de administración en lesión cavernosa (calificador)"/>
+  </concept>
+  <concept>
+    <code value="372464004"/>
+    <display value="vía de administración en la dermis (calificador)"/>
+  </concept>
+  <concept>
+    <code value="78421000"/>
+    <display value="vía de administración intramuscular (calificador)"/>
+  </concept>
+  <concept>
+    <code value="38239002"/>
+    <display value="vía de administración en la cavidad peritoneal (calificador)"/>
+  </concept>
+  <concept>
+    <code value="72607000"/>
+    <display value="vía de administración en el espacio subaracnoideo (calificador)"/>
+  </concept>
+  <concept>
+    <code value="418892005"/>
+    <display value="vía de administración en cisterna magna (calificador)"/>
+  </concept>
+  <concept>
+    <code value="420719007"/>
+    <display value="vía de administración en ventrículo cerebral (calificador)"/>
+  </concept>
+  <concept>
+    <code value="62226000"/>
+    <display value="vía de administración en la cavidad uterina (calificador)"/>
+  </concept>
+  <concept>
+    <code value="47625008"/>
+    <display value="vía de administración intravenosa (calificador)"/>
+  </concept>
+  <concept>
+    <code value="372471009"/>
+    <display value="vía de administración en la cavidad de la vejiga (calificador)"/>
+  </concept>
+  <concept>
+    <code value="54485002"/>
+    <display value="vía de administración oftálmica (calificador)"/>
+  </concept>
+  <concept>
+    <code value="10547007"/>
+    <display value="vía de administración a través del oído (calificador)"/>
+  </concept>
+  <concept>
+    <code value="37161004"/>
+    <display value="vía de administración en el recto (calificador)"/>
+  </concept>
+  <concept>
+    <code value="127492001"/>
+    <display value="vía de administración a través de la nariz hasta el estómago (calificador)"/>
+  </concept>
+  <concept>
+    <code value="34206005"/>
+    <display value="vía de administración subcutánea (calificador)"/>
+  </concept>
+  <concept>
+    <code value="37839007"/>
+    <display value="vía de administración por debajo de la lengua (calificador)"/>
+  </concept>
+  <concept>
+    <code value="6064005"/>
+    <display value="vía de administración tópica (calificador)"/>
+  </concept>
+  <concept>
+    <code value="45890007"/>
+    <display value="vía de administración a través de la dermis (calificador)"/>
+  </concept>
+  <concept>
+    <code value="418511008"/>
+    <display value="vía de administración a través de la uretra (calificador)"/>
+  </concept>
+  <concept>
+    <code value="16857009"/>
+    <display value="vía de administración por la vagina (calificador)"/>
+  </concept>
+  <concept>
+    <code value="418722009"/>
+    <display value="vía de administración alrededor del globo ocular (calificador)"/>
+  </concept>
+  <concept>
+    <code value="419762003"/>
+    <display value="vía de administración alrededor de un tendón (calificador)"/>
+  </concept>
+  <concept>
+    <code value="418813001"/>
+    <display value="vía de administración a través de drenaje quirúrgico (calificador)"/>
+  </concept>
+  <concept>
+    <code value="372458006"/>
+    <display value="vía de administración en la cavidad amniótica (calificador)"/>
+  </concept>
+  <concept>
+    <code value="419894000"/>
+    <display value="vía de administración en cavidad quirúrgica (calificador)"/>
+  </concept>
+  <concept>
+    <code value="418162004"/>
+    <display value="vía de administración a través de colostomía (calificador)"/>
+  </concept>
+  <concept>
+    <code value="418418000"/>
+    <display value="vía de administración en columna vertebral (calificador)"/>
+  </concept>
+  <concept>
+    <code value="372460008"/>
+    <display value="vía de administración en el corazón (calificador)"/>
+  </concept>
+  <concept>
+    <code value="419243002"/>
+    <display value="vía de administración a través del cuello uterino (calificador)"/>
+  </concept>
+  <concept>
+    <code value="448598008"/>
+    <display value="vía de administración cutánea (calificador)"/>
+  </concept>
+  <concept>
+    <code value="445769006"/>
+    <display value="vía de administración en el cuerpo cavernoso (calificador)"/>
+  </concept>
+  <concept>
+    <code value="372449004"/>
+    <display value="vía de administración dental (calificador)"/>
+  </concept>
+  <concept>
+    <code value="372457001"/>
+    <display value="vía de administración en la encía (calificador)"/>
+  </concept>
+  <concept>
+    <code value="417985001"/>
+    <display value="vía de administración enteral (calificador)"/>
+  </concept>
+  <concept>
+    <code value="420163009"/>
+    <display value="vía de administración a través de esofagostomía (calificador)"/>
+  </concept>
+  <concept>
+    <code value="697971008"/>
+    <display value="vía de administración a través de fístula arteriovenosa (calificador)"/>
+  </concept>
+  <concept>
+    <code value="447121004"/>
+    <display value="vía de administración en la glándula mamaria (calificador)"/>
+  </concept>
+  <concept>
+    <code value="766790006"/>
+    <display value="vía de hemodiálisis extracorpórea (calificador)"/>
+  </concept>
+  <concept>
+    <code value="418401004"/>
+    <display value="vía de administración en el humor vítreo (calificador)"/>
+  </concept>
+  <concept>
+    <code value="419954003"/>
+    <display value="vía de administración a través de ileostomía (calificador)"/>
+  </concept>
+  <concept>
+    <code value="372459003"/>
+    <display value="vía de administración en una bolsa serosa (calificador)"/>
+  </concept>
+  <concept>
+    <code value="58771000052103"/>
+    <display value="vía intracolangiopancreática (calificador)"/>
+  </concept>
+  <concept>
+    <code value="429817007"/>
+    <display value="vía de administración en el intersticio de un tejido (calificador)"/>
+  </concept>
+  <concept>
+    <code value="418608002"/>
+    <display value="vía de administración en la córnea (calificador)"/>
+  </concept>
+  <concept>
+    <code value="711360002"/>
+    <display value="vía intraneural (calificador)"/>
+  </concept>
+  <concept>
+    <code value="446442000"/>
+    <display value="vía de administración a través de la placenta (calificador)"/>
+  </concept>
+  <concept>
+    <code value="60213007"/>
+    <display value="vía de administración en médula ósea (calificador)"/>
+  </concept>
+  <concept>
+    <code value="418730005"/>
+    <display value="vía de administración a través de la nariz hasta el yeyuno (calificador)"/>
+  </concept>
+  <concept>
+    <code value="428191002"/>
+    <display value="vía de administración a través de la piel (calificador)"/>
+  </concept>
+  <concept>
+    <code value="372474001"/>
+    <display value="vía de administración en tejidos que rodean una articulación (calificador)"/>
+  </concept>
+  <concept>
+    <code value="445771006"/>
+    <display value="vía de administración en pericardio (calificador)"/>
+  </concept>
+  <concept>
+    <code value="372475000"/>
+    <display value="vía de administración en el tejido que rodea a un nervio (calificador)"/>
+  </concept>
+  <concept>
+    <code value="420047004"/>
+    <display value="vía de administración en el periostio (calificador)"/>
+  </concept>
+  <concept>
+    <code value="372469009"/>
+    <display value="vía de administración en pleura o espacio pleural (calificador)"/>
+  </concept>
+  <concept>
+    <code value="418321004"/>
+    <display value="vía de administración retrobulbar (calificador)"/>
+  </concept>
+  <concept>
+    <code value="58831000052108"/>
+    <display value="vía subretiniana (calificador)"/>
+  </concept>
+  <concept>
+    <code value="447081004"/>
+    <display value="vía de administración en el tracto respiratorio inferior (calificador)"/>
+  </concept>
+  <concept>
+    <code value="447227007"/>
+    <display value="vía de administración a través del tímpano (calificador)"/>
+  </concept>
+  <concept>
+    <code value="447122006"/>
+    <display value="vía de administración en un tumor (calificador)"/>
+  </concept>
+  <concept>
+    <code value="420168000"/>
+    <display value="vía de administración a través urostomía (calificador)"/>
+  </concept>
+  <concept>
+    <code value="372463005"/>
+    <display value="vía de administración en vaso coronario (calificador)"/>
+  </concept>
+  <concept>
+    <code value="372467006"/>
+    <display value="vía de administración en vaso o ganglio linfático (calificador)"/>
+  </concept>
+  <concept>
+    <code value="404819002"/>
+    <display value="vía de administración en la bilis o las vías biliares (calificador)"/>
+  </concept>
+</CodeSystem>

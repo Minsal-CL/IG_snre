@@ -1,0 +1,12 @@
+{
+  "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ImplementationGuide/hl7.fhir.cl.snre",
+  "name" : "RecetaCL",
+  "package-id" : "hl7.fhir.cl.snre",
+  "ig-ver" : "0.9.2",
+  "date" : "Fri, 15 Sep, 2023 12:15:27 -0300",
+  "errs" : 0,
+  "warnings" : 11,
+  "hints" : 1,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)"
+}

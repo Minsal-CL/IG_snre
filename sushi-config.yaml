@@ -3,8 +3,8 @@
 # │  supported properties, see:                                                                    │
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.cl.recetachile
-canonical: https://rme.hl7chile.cl
+id: hl7.fhir.cl.snre
+canonical: https://interoperabilidad.minsal.cl/fhir/ig/snre
 version: 0.9.2
 name: RecetaCL
 title: Guía de Implementación Receta-CL

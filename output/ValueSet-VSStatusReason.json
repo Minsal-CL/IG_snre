@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "VSStatusReason",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSStatusReason",
+  "version" : "0.9.2",
+  "name" : "VSStatusReason",
+  "title" : "Razón del cambio de estado (Prescripción)",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2022-01-18T00:00:00-03:00",
+  "contact" : [{
+    "name" : "HL7 Chile",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "chair@hl7chile.cl"
+    }]
+  }],
+  "description" : "Códigos que indican la razón por la cual una Prescripción ha cambiado su estado",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"
+    }]
+  }
+}

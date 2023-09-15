@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSStatusReason"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
+  <version value="0.9.2"/>
+  <name value="CSStatusReason"/>
+  <title value="Razón del cambio de estado (Prescripción)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-01-18T00:00:00-03:00"/>
+  <contact>
+    <name value="HL7 Chile"/>
+    <telecom>
+      <system value="email"/>
+      <value value="chair@hl7chile.cl"/>
+    </telecom>
+  </contact>
+  <description value="Códigos que indican la razón por la cual una Prescripción ha cambiado su estado"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="14"/>
+  <concept>
+    <code value="altchoice"/>
+    <display value="Primero probar otro tratamiento"/>
+    <definition value="Esta terapia se ha ordenado como respaldo a una terapia preferida. Esta orden será liberada cuando y si, la terapia preferida no tiene éxito"/>
+  </concept>
+  <concept>
+    <code value="clarif"/>
+    <display value="La prescripción requiere una aclaración"/>
+    <definition value="Se requiere una aclaración antes de que la orden pueda ser realizada"/>
+  </concept>
+  <concept>
+    <code value="drughigh"/>
+    <display value="Dosis del fármaco es muy alta"/>
+    <definition value="Los niveles actuales del fármaco en el sistema del paciente son muy altos. El fármaco es suspendido para permitir que los niveles disminuyan hasta un nivel seguro"/>
+  </concept>
+  <concept>
+    <code value="hospadm"/>
+    <display value="Admisión a hospital"/>
+    <definition value="El paciente ha sido ingresado a un centro asistencial y su medicación comunitaria será suspendida hasta el alta hospitalaria"/>
+  </concept>
+  <concept>
+    <code value="labint"/>
+    <display value="Interferencia con exámenes de laboratorio"/>
+    <definition value="La terapia podría interferir con un exámen de laboratorio planificado, por lo que se suspende la terapia hasta que el exámen se realice"/>
+  </concept>
+  <concept>
+    <code value="non-avail"/>
+    <display value="Paciente no disponible"/>
+    <definition value="Paciente no disponible por un período de tiempo debido a una terapia programada, permiso de ausencia u otra razón"/>
+  </concept>
+  <concept>
+    <code value="preg"/>
+    <display value="Paciente embarazada/amamantando"/>
+    <definition value="La paciente está embarazada o amamantando. La terapia se continuará cuando se complete el embarazo, y la paciente deje de amamantar."/>
+  </concept>
+  <concept>
+    <code value="salg"/>
+    <display value="Alergia"/>
+    <definition value="Se sospecha que el paciente es alérgico a una sustancia que forma parte de la terapia, por lo que ésta será temporalmente suspendida para confirmar"/>
+  </concept>
+  <concept>
+    <code value="sddi"/>
+    <display value="Fármaco interactúa con otro fármaco"/>
+    <definition value="El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete."/>
+  </concept>
+  <concept>
+    <code value="sdupther"/>
+    <display value="Terapia duplicada"/>
+    <definition value="El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete."/>
+  </concept>
+  <concept>
+    <code value="sintol"/>
+    <display value="Sospecha de intolerancia"/>
+    <definition value="El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete."/>
+  </concept>
+  <concept>
+    <code value="surg"/>
+    <display value="Paciente programado para cirugía"/>
+    <definition value="El fármaco está contraindicado para pacientes que se someten a cirugía y para pacientes que estén programados para ser admitidos para cirugía en un futuro próximo. El tratamiento se reanudará cuando el paciente se haya recuperado suficientemente de la cirugía."/>
+  </concept>
+  <concept>
+    <code value="washout"/>
+    <display value="En espera de eliminación de fármaco previo"/>
+    <definition value="El paciente estaba recibiendo un fármaco que está contraindicado con su medicación actual. La medicación actual se mantendrá en espera hasta que el fármaco anterior haya sido eliminado de su sistema"/>
+  </concept>
+  <concept>
+    <code value="otra"/>
+    <display value="Otra"/>
+    <definition value="Otra razón no considerada en el listado"/>
+  </concept>
+</CodeSystem>

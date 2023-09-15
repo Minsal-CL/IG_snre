@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSCodificacionCategoria"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria"/>
+  <version value="0.9.2"/>
+  <name value="CSCodificacionCategoria"/>
+  <title value="Codificación del estado de una prescripción"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-01-18T00:00:00-03:00"/>
+  <contact>
+    <name value="HL7 Chile"/>
+    <telecom>
+      <system value="email"/>
+      <value value="chair@hl7chile.cl"/>
+    </telecom>
+  </contact>
+  <description value="Estado de una prescripción"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="inpatient"/>
+    <display value="Hospitalizado"/>
+    <definition value="Incluye solicitudes de medicamentos para ser administrados o consumidos en contexto de hospitalización o cuidados primarios"/>
+  </concept>
+  <concept>
+    <code value="outpatient"/>
+    <display value="Ambulatorio"/>
+    <definition value="Incluye solicitudes de medicamentos para ser administrados o consumidos en el contexto ambulatorio (por ejemplo, departamento de urgencia, clínica ambulatoria, cirugía ambulatoria, oficina del doctor)"/>
+  </concept>
+  <concept>
+    <code value="community"/>
+    <display value="community"/>
+    <definition value="Incluye solicitudes de medicamentos para ser administrados o consumidos por el paciente en su hogar (esto incluiría cuidados a largo plazo u hogares de ancianos, asilos, etc.)"/>
+  </concept>
+  <concept>
+    <code value="discharge"/>
+    <display value="Alta"/>
+    <definition value="Incluye solicitudes de medicamentos creadas cuando el paciente es dado de alta de un centro"/>
+  </concept>
+</CodeSystem>

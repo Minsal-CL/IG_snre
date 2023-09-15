@@ -1,0 +1,85 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSMetodos"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.9.2"] ; # 
+  fhir:name [ fhir:v "CSMetodos"] ; # 
+  fhir:title [ fhir:v "Métodos de Administración"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-01-18T00:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Chile" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "chair@hl7chile.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Métodos de Administración de SNOMED-CT utilizados para el proyecto de receta electrónica"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "14"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "738991002" ] ;
+     fhir:display [ fhir:v "Aplicación (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "740685003" ] ;
+     fhir:display [ fhir:v "Inyección (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "738990001" ] ;
+     fhir:display [ fhir:v "Administración (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "785900008" ] ;
+     fhir:display [ fhir:v "Enjuague o lavado (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "764794000" ] ;
+     fhir:display [ fhir:v "Infusión (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "740666001" ] ;
+     fhir:display [ fhir:v "Inhalación (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "738994005" ] ;
+     fhir:display [ fhir:v "Instilación (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "738993004" ] ;
+     fhir:display [ fhir:v "Inserción (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "738996007" ] ;
+     fhir:display [ fhir:v "Aerosolización (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "738995006" ] ;
+     fhir:display [ fhir:v "Tragar (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "738992009" ] ;
+     fhir:display [ fhir:v "Masticar (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "764498003" ] ;
+     fhir:display [ fhir:v "Chupar (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "823034001" ] ;
+     fhir:display [ fhir:v "Orodispersión (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "827107003" ] ;
+     fhir:display [ fhir:v "Implante (método de administración)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

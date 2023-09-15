@@ -1,0 +1,53 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "CSCodificacionCategoria",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria",
+  "version" : "0.9.2",
+  "name" : "CSCodificacionCategoria",
+  "title" : "Codificación del estado de una prescripción",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2022-01-18T00:00:00-03:00",
+  "contact" : [{
+    "name" : "HL7 Chile",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "chair@hl7chile.cl"
+    }]
+  }],
+  "description" : "Estado de una prescripción",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "inpatient",
+    "display" : "Hospitalizado",
+    "definition" : "Incluye solicitudes de medicamentos para ser administrados o consumidos en contexto de hospitalización o cuidados primarios"
+  },
+  {
+    "code" : "outpatient",
+    "display" : "Ambulatorio",
+    "definition" : "Incluye solicitudes de medicamentos para ser administrados o consumidos en el contexto ambulatorio (por ejemplo, departamento de urgencia, clínica ambulatoria, cirugía ambulatoria, oficina del doctor)"
+  },
+  {
+    "code" : "community",
+    "display" : "community",
+    "definition" : "Incluye solicitudes de medicamentos para ser administrados o consumidos por el paciente en su hogar (esto incluiría cuidados a largo plazo u hogares de ancianos, asilos, etc.)"
+  },
+  {
+    "code" : "discharge",
+    "display" : "Alta",
+    "definition" : "Incluye solicitudes de medicamentos creadas cuando el paciente es dado de alta de un centro"
+  }]
+}

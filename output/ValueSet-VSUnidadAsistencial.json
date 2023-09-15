@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "VSUnidadAsistencial",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSUnidadAsistencial",
+  "version" : "0.9.2",
+  "name" : "VSUnidadAsistencial",
+  "title" : "Unidad Asistencial",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2022-01-18T00:00:00-03:00",
+  "contact" : [{
+    "name" : "HL7 Chile",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "chair@hl7chile.cl"
+    }]
+  }],
+  "description" : "Unidad para dosificar",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"
+    }]
+  }
+}

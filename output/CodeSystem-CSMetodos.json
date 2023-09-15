@@ -1,0 +1,89 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "CSMetodos",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos",
+  "version" : "0.9.2",
+  "name" : "CSMetodos",
+  "title" : "Métodos de Administración",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2022-01-18T00:00:00-03:00",
+  "contact" : [{
+    "name" : "HL7 Chile",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "chair@hl7chile.cl"
+    }]
+  }],
+  "description" : "Métodos de Administración de SNOMED-CT utilizados para el proyecto de receta electrónica",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 14,
+  "concept" : [{
+    "code" : "738991002",
+    "display" : "Aplicación (método de administración)"
+  },
+  {
+    "code" : "740685003",
+    "display" : "Inyección (método de administración)"
+  },
+  {
+    "code" : "738990001",
+    "display" : "Administración (método de administración)"
+  },
+  {
+    "code" : "785900008",
+    "display" : "Enjuague o lavado (método de administración)"
+  },
+  {
+    "code" : "764794000",
+    "display" : "Infusión (método de administración)"
+  },
+  {
+    "code" : "740666001",
+    "display" : "Inhalación (método de administración)"
+  },
+  {
+    "code" : "738994005",
+    "display" : "Instilación (método de administración)"
+  },
+  {
+    "code" : "738993004",
+    "display" : "Inserción (método de administración)"
+  },
+  {
+    "code" : "738996007",
+    "display" : "Aerosolización (método de administración)"
+  },
+  {
+    "code" : "738995006",
+    "display" : "Tragar (método de administración)"
+  },
+  {
+    "code" : "738992009",
+    "display" : "Masticar (método de administración)"
+  },
+  {
+    "code" : "764498003",
+    "display" : "Chupar (método de administración)"
+  },
+  {
+    "code" : "823034001",
+    "display" : "Orodispersión (método de administración)"
+  },
+  {
+    "code" : "827107003",
+    "display" : "Implante (método de administración)"
+  }]
+}

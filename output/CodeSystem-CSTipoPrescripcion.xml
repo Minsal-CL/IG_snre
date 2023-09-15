@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSTipoPrescripcion"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion"/>
+  <version value="0.9.2"/>
+  <name value="CSTipoPrescripcion"/>
+  <title value="Tipo de Prescripción"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-01-18T00:00:00-03:00"/>
+  <contact>
+    <name value="HL7 Chile"/>
+    <telecom>
+      <system value="email"/>
+      <value value="chair@hl7chile.cl"/>
+    </telecom>
+  </contact>
+  <description value="Identifica el tipo de Prescripción"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="Id_Local"/>
+    <display value="Id_Local"/>
+  </concept>
+  <concept>
+    <code value="Id_Cheque"/>
+    <display value="Id_Cheque"/>
+  </concept>
+  <concept>
+    <code value="Id_Receta_Grafica"/>
+    <display value="Id_Receta_Grafica"/>
+  </concept>
+</CodeSystem>

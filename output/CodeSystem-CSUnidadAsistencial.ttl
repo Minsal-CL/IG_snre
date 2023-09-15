@@ -1,0 +1,139 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSUnidadAsistencial"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.9.2"] ; # 
+  fhir:name [ fhir:v "CSUnidadAsistencial"] ; # 
+  fhir:title [ fhir:v "Unidad Asistencial"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-01-18T00:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Chile" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "chair@hl7chile.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Unidad para dosificar"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "32"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "mililitro" ] ;
+     fhir:display [ fhir:v "Mililitro" ]
+  ] [
+     fhir:code [ fhir:v "comprimido" ] ;
+     fhir:display [ fhir:v "Comprimido" ]
+  ] [
+     fhir:code [ fhir:v "miligramo" ] ;
+     fhir:display [ fhir:v "Miligramo" ]
+  ] [
+     fhir:code [ fhir:v "unidades" ] ;
+     fhir:display [ fhir:v "Unidades" ]
+  ] [
+     fhir:code [ fhir:v "capsula" ] ;
+     fhir:display [ fhir:v "Cápsula" ]
+  ] [
+     fhir:code [ fhir:v "aplicacion" ] ;
+     fhir:display [ fhir:v "Aplicación" ]
+  ] [
+     fhir:code [ fhir:v "supositorio" ] ;
+     fhir:display [ fhir:v "Supositorio" ]
+  ] [
+     fhir:code [ fhir:v "ampolla" ] ;
+     fhir:display [ fhir:v "Ampolla" ]
+  ] [
+     fhir:code [ fhir:v "sobre" ] ;
+     fhir:display [ fhir:v "Sobre" ]
+  ] [
+     fhir:code [ fhir:v "gotas" ] ;
+     fhir:display [ fhir:v "Gotas" ]
+  ] [
+     fhir:code [ fhir:v "dosis" ] ;
+     fhir:display [ fhir:v "Dosis" ]
+  ] [
+     fhir:code [ fhir:v "aposito" ] ;
+     fhir:display [ fhir:v "Apósito" ]
+  ] [
+     fhir:code [ fhir:v "parche" ] ;
+     fhir:display [ fhir:v "Parche" ]
+  ] [
+     fhir:code [ fhir:v "microgramo" ] ;
+     fhir:display [ fhir:v "Microgramo" ]
+  ] [
+     fhir:code [ fhir:v "frasco" ] ;
+     fhir:display [ fhir:v "Frasco" ]
+  ] [
+     fhir:code [ fhir:v "unidades-internacionales" ] ;
+     fhir:display [ fhir:v "Unidades Internacionales" ]
+  ] [
+     fhir:code [ fhir:v "puff" ] ;
+     fhir:display [ fhir:v "Puff" ]
+  ] [
+     fhir:code [ fhir:v "bidon" ] ;
+     fhir:display [ fhir:v "Bidón" ]
+  ] [
+     fhir:code [ fhir:v "bolsa" ] ;
+     fhir:display [ fhir:v "Bolsa" ]
+  ] [
+     fhir:code [ fhir:v "gramo" ] ;
+     fhir:display [ fhir:v "Gramo" ]
+  ] [
+     fhir:code [ fhir:v "dispositivo" ] ;
+     fhir:display [ fhir:v "Dispositivo" ]
+  ] [
+     fhir:code [ fhir:v "ovulo" ] ;
+     fhir:display [ fhir:v "Óvulo" ]
+  ] [
+     fhir:code [ fhir:v "vial" ] ;
+     fhir:display [ fhir:v "Vial" ]
+  ] [
+     fhir:code [ fhir:v "implante" ] ;
+     fhir:display [ fhir:v "Implante" ]
+  ] [
+     fhir:code [ fhir:v "anillo-vaginal" ] ;
+     fhir:display [ fhir:v "Anillo Vaginal" ]
+  ] [
+     fhir:code [ fhir:v "chicle" ] ;
+     fhir:display [ fhir:v "Chicle" ]
+  ] [
+     fhir:code [ fhir:v "tarro" ] ;
+     fhir:display [ fhir:v "Tarro" ]
+  ] [
+     fhir:code [ fhir:v "aplicador" ] ;
+     fhir:display [ fhir:v "Aplicador" ]
+  ] [
+     fhir:code [ fhir:v "jeringa-prellenada" ] ;
+     fhir:display [ fhir:v "Jeringa Prellenada" ]
+  ] [
+     fhir:code [ fhir:v "gragea" ] ;
+     fhir:display [ fhir:v "Gragea" ]
+  ] [
+     fhir:code [ fhir:v "cartucho" ] ;
+     fhir:display [ fhir:v "Cartucho" ]
+  ] [
+     fhir:code [ fhir:v "globulo" ] ;
+     fhir:display [ fhir:v "Glóbulo" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

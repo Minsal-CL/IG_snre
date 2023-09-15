@@ -1,0 +1,15 @@
+{
+    "package-id": "hl7.fhir.cl.snre",
+    "version": "0.9.2",
+    "desc": "Versión de desarrollo",
+    "path": "https://interoperabilidad.minsal.cl/fhir/ig/snre/0.9.2",
+    "changes": "changes.html",
+    "status": "draft",
+    "sequence": "STU2",
+    "first": true,
+    "category": "National Base",
+    "title": "Sistema Nacional de Receta Electronica",
+    "introduction": "Sistema Nacional de Receta Electronica",
+    "ci-build": "https://build.fhir.org/ig/Minsal-CL/snre",
+    "fhirversion": "4.0.1"
+}

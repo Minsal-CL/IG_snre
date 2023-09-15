@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSUnidadAsistencial"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+  <version value="0.9.2"/>
+  <name value="CSUnidadAsistencial"/>
+  <title value="Unidad Asistencial"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-01-18T00:00:00-03:00"/>
+  <contact>
+    <name value="HL7 Chile"/>
+    <telecom>
+      <system value="email"/>
+      <value value="chair@hl7chile.cl"/>
+    </telecom>
+  </contact>
+  <description value="Unidad para dosificar"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="32"/>
+  <concept>
+    <code value="mililitro"/>
+    <display value="Mililitro"/>
+  </concept>
+  <concept>
+    <code value="comprimido"/>
+    <display value="Comprimido"/>
+  </concept>
+  <concept>
+    <code value="miligramo"/>
+    <display value="Miligramo"/>
+  </concept>
+  <concept>
+    <code value="unidades"/>
+    <display value="Unidades"/>
+  </concept>
+  <concept>
+    <code value="capsula"/>
+    <display value="Cápsula"/>
+  </concept>
+  <concept>
+    <code value="aplicacion"/>
+    <display value="Aplicación"/>
+  </concept>
+  <concept>
+    <code value="supositorio"/>
+    <display value="Supositorio"/>
+  </concept>
+  <concept>
+    <code value="ampolla"/>
+    <display value="Ampolla"/>
+  </concept>
+  <concept>
+    <code value="sobre"/>
+    <display value="Sobre"/>
+  </concept>
+  <concept>
+    <code value="gotas"/>
+    <display value="Gotas"/>
+  </concept>
+  <concept>
+    <code value="dosis"/>
+    <display value="Dosis"/>
+  </concept>
+  <concept>
+    <code value="aposito"/>
+    <display value="Apósito"/>
+  </concept>
+  <concept>
+    <code value="parche"/>
+    <display value="Parche"/>
+  </concept>
+  <concept>
+    <code value="microgramo"/>
+    <display value="Microgramo"/>
+  </concept>
+  <concept>
+    <code value="frasco"/>
+    <display value="Frasco"/>
+  </concept>
+  <concept>
+    <code value="unidades-internacionales"/>
+    <display value="Unidades Internacionales"/>
+  </concept>
+  <concept>
+    <code value="puff"/>
+    <display value="Puff"/>
+  </concept>
+  <concept>
+    <code value="bidon"/>
+    <display value="Bidón"/>
+  </concept>
+  <concept>
+    <code value="bolsa"/>
+    <display value="Bolsa"/>
+  </concept>
+  <concept>
+    <code value="gramo"/>
+    <display value="Gramo"/>
+  </concept>
+  <concept>
+    <code value="dispositivo"/>
+    <display value="Dispositivo"/>
+  </concept>
+  <concept>
+    <code value="ovulo"/>
+    <display value="Óvulo"/>
+  </concept>
+  <concept>
+    <code value="vial"/>
+    <display value="Vial"/>
+  </concept>
+  <concept>
+    <code value="implante"/>
+    <display value="Implante"/>
+  </concept>
+  <concept>
+    <code value="anillo-vaginal"/>
+    <display value="Anillo Vaginal"/>
+  </concept>
+  <concept>
+    <code value="chicle"/>
+    <display value="Chicle"/>
+  </concept>
+  <concept>
+    <code value="tarro"/>
+    <display value="Tarro"/>
+  </concept>
+  <concept>
+    <code value="aplicador"/>
+    <display value="Aplicador"/>
+  </concept>
+  <concept>
+    <code value="jeringa-prellenada"/>
+    <display value="Jeringa Prellenada"/>
+  </concept>
+  <concept>
+    <code value="gragea"/>
+    <display value="Gragea"/>
+  </concept>
+  <concept>
+    <code value="cartucho"/>
+    <display value="Cartucho"/>
+  </concept>
+  <concept>
+    <code value="globulo"/>
+    <display value="Glóbulo"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,161 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "CSUnidadAsistencial",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial",
+  "version" : "0.9.2",
+  "name" : "CSUnidadAsistencial",
+  "title" : "Unidad Asistencial",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2022-01-18T00:00:00-03:00",
+  "contact" : [{
+    "name" : "HL7 Chile",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "chair@hl7chile.cl"
+    }]
+  }],
+  "description" : "Unidad para dosificar",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 32,
+  "concept" : [{
+    "code" : "mililitro",
+    "display" : "Mililitro"
+  },
+  {
+    "code" : "comprimido",
+    "display" : "Comprimido"
+  },
+  {
+    "code" : "miligramo",
+    "display" : "Miligramo"
+  },
+  {
+    "code" : "unidades",
+    "display" : "Unidades"
+  },
+  {
+    "code" : "capsula",
+    "display" : "Cápsula"
+  },
+  {
+    "code" : "aplicacion",
+    "display" : "Aplicación"
+  },
+  {
+    "code" : "supositorio",
+    "display" : "Supositorio"
+  },
+  {
+    "code" : "ampolla",
+    "display" : "Ampolla"
+  },
+  {
+    "code" : "sobre",
+    "display" : "Sobre"
+  },
+  {
+    "code" : "gotas",
+    "display" : "Gotas"
+  },
+  {
+    "code" : "dosis",
+    "display" : "Dosis"
+  },
+  {
+    "code" : "aposito",
+    "display" : "Apósito"
+  },
+  {
+    "code" : "parche",
+    "display" : "Parche"
+  },
+  {
+    "code" : "microgramo",
+    "display" : "Microgramo"
+  },
+  {
+    "code" : "frasco",
+    "display" : "Frasco"
+  },
+  {
+    "code" : "unidades-internacionales",
+    "display" : "Unidades Internacionales"
+  },
+  {
+    "code" : "puff",
+    "display" : "Puff"
+  },
+  {
+    "code" : "bidon",
+    "display" : "Bidón"
+  },
+  {
+    "code" : "bolsa",
+    "display" : "Bolsa"
+  },
+  {
+    "code" : "gramo",
+    "display" : "Gramo"
+  },
+  {
+    "code" : "dispositivo",
+    "display" : "Dispositivo"
+  },
+  {
+    "code" : "ovulo",
+    "display" : "Óvulo"
+  },
+  {
+    "code" : "vial",
+    "display" : "Vial"
+  },
+  {
+    "code" : "implante",
+    "display" : "Implante"
+  },
+  {
+    "code" : "anillo-vaginal",
+    "display" : "Anillo Vaginal"
+  },
+  {
+    "code" : "chicle",
+    "display" : "Chicle"
+  },
+  {
+    "code" : "tarro",
+    "display" : "Tarro"
+  },
+  {
+    "code" : "aplicador",
+    "display" : "Aplicador"
+  },
+  {
+    "code" : "jeringa-prellenada",
+    "display" : "Jeringa Prellenada"
+  },
+  {
+    "code" : "gragea",
+    "display" : "Gragea"
+  },
+  {
+    "code" : "cartucho",
+    "display" : "Cartucho"
+  },
+  {
+    "code" : "globulo",
+    "display" : "Glóbulo"
+  }]
+}

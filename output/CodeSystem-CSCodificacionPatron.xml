@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSCodificacionPatron"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron"/>
+  <version value="0.9.2"/>
+  <name value="CSCodificacionPatron"/>
+  <title value="Patrón de la Prescripción"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-01-18T00:00:00-03:00"/>
+  <contact>
+    <name value="HL7 Chile"/>
+    <telecom>
+      <system value="email"/>
+      <value value="chair@hl7chile.cl"/>
+    </telecom>
+  </contact>
+  <description value="Codificación del patrón de administración de una prescripción"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="continuous"/>
+    <display value="Terapia continua a largo plazo"/>
+    <definition value="Una medicación que se espera sea continuada más allá de la presente orden y que el paciente debe tomar a menos que explicitamente se le indique lo contrario"/>
+  </concept>
+  <concept>
+    <code value="acute"/>
+    <display value="Terapia a corto plazo (aguda)"/>
+    <definition value="Una medicación que se espera que el paciente consuma solo por la duración de la presente orden y no se espera que sea renovada"/>
+  </concept>
+  <concept>
+    <code value="seasonal"/>
+    <display value="Por temporada"/>
+    <definition value="Una medicación que se espera sea usada a tiempo parcial en ciertos momentos del año"/>
+  </concept>
+</CodeSystem>
