@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Casos de uso - Sistema Nacional de Receta Electronica v0.9.5</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7chile.css" rel="stylesheet" />
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" async>
+</script>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+    <a id="MINSAL-logo" no-external="true" href="http://minsal.cl">
+        <img height="71" alt="Visitar sitio MINSAL Chile" src="assets/images/minsal-logo.svg" />
+    </a>
+</div>
+<div id="family-nav">
+    <a id="hl7chile-logo" no-external="true" href="http://hl7chile.cl"><img height="71" alt="Visitar HL7 Chile" src="assets/images/hl7chile-logo.svg" /> </a>
+</div>
+<!--
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+-->
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Sistema Nacional de Receta Electronica</span>
+            <br/>
+            <span style="display:inline-block;">0.9.5 - draft
+
+
+
+  <img alt="Chile flag" src="assets/images/chl.svg" height="16" title="Chile"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Inicio</a>
+  </li>
+  <li>
+    <a href="Alcances-Objetivos.html">Objetivos</a>
+  </li>
+  <li>
+    <a href="casos.html">Actores y Casos de Uso</a>
+  </li>
+  <li>
+    <a href="operaciones.html">Operaciones y Terminologías</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Resumen de Artefactos
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artefactos</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Casos de uso</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Sistema Nacional de Receta Electronica - Local Development build (v0.9.5). See the <a href="https://interoperabilidad.minsal.cl/fhir/ig/snre/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Casos de uso</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#casos-de-uso-proyecto" id="markdown-toc-casos-de-uso-proyecto">Casos de Uso Proyecto</a></li>
+  <li><a href="#caso-de-uso-1-prescripción" id="markdown-toc-caso-de-uso-1-prescripción">Caso de Uso 1: Prescripción</a></li>
+  <li><a href="#caso-de-uso-2-dispensación" id="markdown-toc-caso-de-uso-2-dispensación">Caso de Uso 2: Dispensación</a></li>
+  <li><a href="#caso-de-uso-3-cambio-de-estado-prescripciones-recetadas" id="markdown-toc-caso-de-uso-3-cambio-de-estado-prescripciones-recetadas">Caso de Uso 3: Cambio de Estado Prescripciones Recetadas</a></li>
+</ul>
+
+</div>
+<h3 id="casos-de-uso-proyecto">Casos de Uso Proyecto</h3>
+
+<p><em>JJOC</em>
+En la actualidad, el SNRE se implementa mediante la generación de una Receta por parte del prescriptor, que contiene el detalle de cada medicamento recetado. Este enfoque se logra mediante la definición de un “agrupador de prescripciones” que se utiliza tanto para el caso de prescripción como para el de dispensación. En consecuencia, el Repositorio del MINSAL cuenta con servicios para diferenciar la Receta de las prescripciones individuales. No obstante, en el proceso de dispensación, es el sistema del punto de venta o entrega el encargado de revisar cada prescripción contenida en la Receta</p>
+
+<p>Actualmente el SNRE se ha levantado en base a la generación de una <em>Receta</em> desde el prescriptor que contiene el detalle de cada fármaco prescrito. Este concepto se realizará por medio de la definición de un <em>agrupador</em> de prescripciones el cual será usado tanto para el caso de uso de prescripción como para el caso de uso de dispensación. Dado lo anterior el sistema de <strong>Repositorio de  MINSAL</strong> tendrá los servicios para poder diferenciar la Receta de las prescripciones individuales, sin embargo, en la dispensación deberá ser el sistema del punto de venta o entrega, aquel que recorra el recurso de receta para revisar cada prescripción contenida en este.</p>
+
+<p>Luego los Casos de Uso descritos serán los siguientes</p>
+
+<ul>
+  <li>Prescripción</li>
+  <li>Dispensación</li>
+  <li>Actualización Prescripciones</li>
+</ul>
+
+<h3 id="caso-de-uso-1-prescripción">Caso de Uso 1: Prescripción</h3>
+<p>Este caso de uso describe la generación de una Receta con una o múltiples Prescripciones generadas durante un acto clínico. La Receta generada se envía al Repositorio de Recetas del MINSAL y queda disponible para el proceso de Dispensación. Este caso de uso presenta la siguiente secuencia:</p>
+
+<ul>
+  <li>Prescriptor Genera Prescripciones por Fármacos
+    <ul>
+      <li>El Prescriptor genera cada una de las prescripciones con un único medicamento clínico por recurso <strong>MedicationRequest</strong>. Cada uno de estos recursos generados deben contener un <em>groupIdentifier</em> idéntico entre sí, y cuyo valor será el que se genere por medio de un UUID (identificador único universal o universally unique identifier).</li>
+      <li>Al cerrar el ciclo de creación de prescripciones, el sistema del prescriptor debe generar la Receta en el formato de recurso <strong>RequestGroup</strong>. Este recurso también debe replicar el valor del elemento groupIdentifier de los <strong>MedicationRequest</strong> generados. El valor del elemento status del <strong>RequestGroup</strong> debe ser siempre igual a active</li>
+    </ul>
+  </li>
+  <li>Prescriptor Envía a Repositorio Central la Receta
+    <ul>
+      <li>El sistema del Prescriptor genera una operación <em>POST</em> del recurso <strong>RequestGroup</strong> al EndPoint de MINSAL para que la receta sea almacenada en el Repositorio Central de Recetas.</li>
+      <li>El Sistema de MINSAL responde al Sistema del Prescriptor con un mensaje de estado de recepción acusando recibo sin error o con errores</li>
+    </ul>
+  </li>
+</ul>
+
+<div align="center">
+  <img src="DS_Presc.png" /> 
+  <p>Diagrama de Secuencias para Prescripción</p>
+</div>
+
+<h3 id="caso-de-uso-2-dispensación">Caso de Uso 2: Dispensación</h3>
+
+<p>Este caso describe la secuencia de mensajes que ocurre cuando se procede a dispensar o rechazar la dispensación de uno o varios medicamentos de una misma receta. El proceso comienza cuando en el lugar de dispensación se solicita la información de la receta. Esta solicitud puede realizarse de dos maneras: digitando o escaneando el código de barras que contiene el valor del “groupIdentifier”. Este último valor se genera tanto en el agrupador como en las prescripciones individuales al momento de crear la receta.</p>
+
+<p>Además, este proceso permite al Dispensador realizar cambios de estado en las prescripciones, indicando si la dispensación se ha realizado, la cantidad dispensada o si la prescripción se bloquea al ser retenida. Estos cambios se notifican a MINSAL mediante el envío del recurso <strong>MedicationDispense</strong>.</p>
+
+<p>Aquí se detalla la secuencia de eventos:</p>
+
+<ul>
+  <li>El Dispensador recibe la solicitud de dispensación.
+    <ul>
+      <li>El Dispensador digita el código identificador o lee el código de barras de la receta para poder identificarla.</li>
+      <li>El código de barras identifica el valor de groupIdentifier sobre el cual debe hacer la consulta para recuperar la receta del Repositorio Central</li>
+    </ul>
+  </li>
+  <li>Dispensador consulta por Receta
+    <ul>
+      <li>El sistema del Dispensador realiza la consulta al EndPoint del Repositorio Central por la receta mediante la operación <em>GET</em> sobre el recurso <strong>RequestGroup</strong> mediante el parámetro groupIdentifier</li>
+      <li>El Sistema de MINSAL contesta a la solicitud devolviendo el recurso agrupador correspondiente o indicando un error en caso de no encontrar un <strong>RequestGroup</strong> válido por el parámetro consultado</li>
+      <li>El sistema del punto de dispensación recorre el recurso agrupador obteniendo de éste cada una de las Prescripciones representadas en el formato de un recurso <strong>MedicationRequest</strong> contenidas en el agrupador Receta.</li>
+      <li>El Dispensador hace entrega de los fármacos paciente por el solicitante, hace registro de esto, de las modificaciones que se puedan producir entre lo que se dispensó v/s lo recetado y en los eventuales cambios de estado que existan en cada Prescripción recetada.</li>
+      <li>Por cada dispensación que es dispensada, se debe generar un recurso <strong>MedicationDispense</strong></li>
+      <li>Cada Recurso <strong>MedicationDispense</strong> generado debe ser enviado al Repositorio Central mediante la operación <em>POST</em></li>
+      <li>El sistema del punto de dispensación, actualiza la receta representada en el recurso RequestGroup y mediante la operación <em>PUT</em> sobre el EndPoint del Repositorio Central actualiza dicho recurso en caso de ser necesario.</li>
+      <li>El sistema de Repositorio Central responde al sistema del punto de dispensación indicando si el recurso <em>MedicationDispense</em> se generó sin errores o se identificaron errores en su generación.</li>
+    </ul>
+  </li>
+</ul>
+
+<div align="center">
+  <img src="DS_Dispen.png" /> 
+  <p>Diagrama de Secuencias para Dispensación</p>
+</div>
+<h3 id="caso-de-uso-3-cambio-de-estado-prescripciones-recetadas">Caso de Uso 3: Cambio de Estado Prescripciones Recetadas</h3>
+<p>Este caso nos presenta la capacidad de realizar cambios en una prescripción tanto desde el sistema del Prescriptor como desde el sistema del Dispensador. Estos cambios obedecen a diferentes razones y se manifiestan como una actualización de las Prescripciones generadas durante el acto clínico con el paciente.
+Estos cambios se reducen a los siguientes:</p>
+
+<ul>
+  <li>
+    <p><em>Desde el Prescriptor</em></p>
+  </li>
+  <li>Cambio en el fármaco prescrito</li>
+  <li>Eliminación de la Prescripción</li>
+  <li>Corrección de error en la Prescripción</li>
+  <li>Suspensión de la prescripción
+<br /></li>
+</ul>
+
+<p><em>Nota:</em> En todos los casos se debe justificar la razón del cambio de estado, lo cual es factible mediante ciertos parámetros del recurso <strong>MedicationRequest</strong>
+<br /></p>
+
+<ul>
+  <li>
+    <p><em>Desde el Dispensador</em></p>
+  </li>
+  <li>Dispensación de fármaco distinto</li>
+  <li>No dispensación del Fármaco</li>
+  <li>Actualización del estado de una prescripción (Ej: Retenida al ser dispensada)
+<br />
+<em>Nota:</em> En los casos de no dispensación o de dispensación de fármaco distinto se debe justificar este cambio. Lo anterior se realiza modificando los parámetros en el recurso <strong>MedicationDispense</strong>
+<br /></li>
+</ul>
+
+<p>La secuencia del caso de uso se describe a continuación</p>
+
+<ul>
+  <li>
+    <p><strong>Dispensador o Prescriptor solicitan la Receta</strong></p>
+  </li>
+  <li>El usuario rescata de la receta generada el código de barras que contiene el valor del parámetro <em>identifierGroup</em> de la receta. En ambos casos debe ser ante la presencia del código de barras, ya sea porque el paciente solicita dispensación o porque este solicita al médico un cambio en la receta.</li>
+  <li>Mediante la operación <em>GET</em> el sistema correspondiente, consulta al EndPoint del <strong>Repositorio Central</strong> por la receta mediante el uso del parámetro <em>groupIdentifier</em>.</li>
+  <li>
+    <p>El sistema de <strong>Repositorio Central</strong> devuelve al sistema solicitante el recurso <strong>RequestGroup</strong> que hace de contenedor de las prescripciones generadas en formato de recurso <strong>MedicationRequest</strong>.</p>
+  </li>
+  <li>
+    <p><strong>Actualización de las Prescripciones</strong></p>
+  </li>
+  <li>El sistema correspondiente lee del recurso <strong>RequestGroup</strong> cada uno de los recursos <strong>MedicationRequest</strong> contenidos en él.</li>
+  <li>
+    <p>Para cada prescripción en la cual se realiza un <em>cambio de estado o actualización</em>, el sistema modifica los parámetros de su recurso <strong>MedicationRequest</strong> correspondiente</p>
+  </li>
+  <li>
+    <p><strong>Actualización de las dispensaciones</strong></p>
+  </li>
+  <li>El sistema de dispensación lee el recurso <strong>MedicationDispense</strong> que se desea modificar.</li>
+  <li>Para la dispensación en la cual se realiza un cambio de estado o actualización, el sistema modifica los parámetros del recurso <strong>MedicationDispense</strong>.</li>
+  <li><strong>Actualización del Repositorio Central</strong></li>
+  <li>El sistema <strong>(del Prestador o Punto de Dispensación)</strong> realiza la operación <em>UPDATE</em> al EndPoint del <strong>Repositorio Central</strong>, por cada recurso <strong>MedicationRequest</strong> actualizado o modificado o <strong>MedicationDispense</strong> si corresponde</li>
+  <li>El Sistema <strong>Repositorio Central</strong> responde a la solicitud indicando la actualización de los recursos o errores en la operación solicitada</li>
+  <li>El sistema <strong>Repositorio Central</strong> actualiza los recursos <strong>MedicationRequest</strong> o <strong>MedicationDispense</strong> cuando corresponda, generando una nueva versión de estos.</li>
+</ul>
+
+<p><br /><br />
+<br />
+<br />
+<br /></p>
+
+<div align="center">
+  <img src="DS_Cambio.png" /> 
+  <p>Diagrama de Secuencias para Cambios en Prescripciones</p>
+</div>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.snre#0.9.5 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 12, 2023 17:23-0300">2023-10-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+             Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reporte QA</a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interoperabilidad.minsal.cl/fhir/ig/snre/history.html">Historial de versiones</a></a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="">Issues</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+  
+    
+    <script type="text/javascript">
+     /* <![CDATA[ */
+        $(':header[id]').each(function() { // apply this to each heading
+          var id = $(this).attr('id');
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSeN-pr4KHP-JOYclwFKpsDw5Y11NGXNyg29sQvqipHhmmNfhw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Observaciones';  // The feedback label is a string
+            
+
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(1894621411).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'pageTitle';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+              }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]]> */
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(823462654).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'sectionName';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+              }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]]> */
+            
+            
+          if (id) { //To make sure the element has an id
+            $(this).append(function () {
+              return $('<a/>', {
+                id,
+                href: feedbackurl,
+                text: feedbacklabel+' ' ,
+                class: 'feedback',
+                target: '_blank',
+                onclick: 'window.open('+feedbackurl+',\'newwindow\',\'width=300,height=250\');return false;'
+        
+              });
+            });
+          }
+        }) 
+/* ]]> */
+      </script>  
+    
+  
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

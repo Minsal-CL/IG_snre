@@ -1,0 +1,6 @@
+{
+  "version" : "0.9.5",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20231012172322",
+  "name" : "hl7.fhir.cl.minsal.snre"
+}

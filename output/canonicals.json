@@ -1,0 +1,177 @@
+[
+  {
+    "id" : "CSCodificacionCategoria",
+    "type" : "CodeSystem",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria",
+    "version" : "0.9.5",
+    "name" : "CSCodificacionCategoria"
+  },
+  {
+    "id" : "CSCodificacionPatron",
+    "type" : "CodeSystem",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron",
+    "version" : "0.9.5",
+    "name" : "CSCodificacionPatron"
+  },
+  {
+    "id" : "CSFuncionProfesionalDispensacion",
+    "type" : "CodeSystem",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion",
+    "version" : "0.9.5",
+    "name" : "CSFuncionProfesionalDispensacion"
+  },
+  {
+    "id" : "CSMetodos",
+    "type" : "CodeSystem",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos",
+    "version" : "0.9.5",
+    "name" : "CSMetodos"
+  },
+  {
+    "id" : "CSRazonEstadoDispensacion",
+    "type" : "CodeSystem",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion",
+    "version" : "0.9.5",
+    "name" : "CSRazonEstadoDispensacion"
+  },
+  {
+    "id" : "CSStatusReason",
+    "type" : "CodeSystem",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason",
+    "version" : "0.9.5",
+    "name" : "CSStatusReason"
+  },
+  {
+    "id" : "CSTipoPrescripcion",
+    "type" : "CodeSystem",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion",
+    "version" : "0.9.5",
+    "name" : "CSTipoPrescripcion"
+  },
+  {
+    "id" : "CSUnidadAsistencial",
+    "type" : "CodeSystem",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial",
+    "version" : "0.9.5",
+    "name" : "CSUnidadAsistencial"
+  },
+  {
+    "id" : "CSViasAdmin",
+    "type" : "CodeSystem",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSViasAdmin",
+    "version" : "0.9.5",
+    "name" : "CSViasAdmin"
+  },
+  {
+    "id" : "hl7.fhir.cl.minsal.snre",
+    "type" : "ImplementationGuide",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ImplementationGuide/hl7.fhir.cl.minsal.snre",
+    "version" : "0.9.5",
+    "name" : "SistemaNacionaldeRecetaElectronica"
+  },
+  {
+    "id" : "DispensacionMedicamentoCl",
+    "type" : "StructureDefinition",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/DispensacionMedicamentoCl",
+    "version" : "0.9.5",
+    "name" : "DispensacionMedicamentoCL"
+  },
+  {
+    "id" : "ProdComercial",
+    "type" : "StructureDefinition",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/ProdComercial",
+    "version" : "0.9.5",
+    "name" : "ProdComercial"
+  },
+  {
+    "id" : "RangeCL",
+    "type" : "StructureDefinition",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RangeCL",
+    "version" : "0.9.5",
+    "name" : "RangeCL"
+  },
+  {
+    "id" : "RecetaCl",
+    "type" : "StructureDefinition",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RecetaCl",
+    "version" : "0.9.5",
+    "name" : "MedicamentoRecetaCL"
+  },
+  {
+    "id" : "RecetaPrescripcionCl",
+    "type" : "StructureDefinition",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RecetaPrescripcionCl",
+    "version" : "0.9.5",
+    "name" : "PrescripcionRecetaCL2"
+  },
+  {
+    "id" : "SimpleQuantityCL",
+    "type" : "StructureDefinition",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/SimpleQuantityCL",
+    "version" : "0.9.5",
+    "name" : "SimpleQuantityCL"
+  },
+  {
+    "id" : "VSCodificacionCategoria",
+    "type" : "ValueSet",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSCodificacionCategoria",
+    "version" : "0.9.5",
+    "name" : "VSCodificacionCategoria"
+  },
+  {
+    "id" : "VSCodificacionPatron",
+    "type" : "ValueSet",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSCodificacionPatron",
+    "version" : "0.9.5",
+    "name" : "VSCodificacionPatron"
+  },
+  {
+    "id" : "VSFuncionProfesionalDispensacion",
+    "type" : "ValueSet",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSFuncionProfesionalDispensacion",
+    "version" : "0.9.5",
+    "name" : "VSFuncionProfesionalDispensacion"
+  },
+  {
+    "id" : "VSMetodos",
+    "type" : "ValueSet",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSMetodos",
+    "version" : "0.9.5",
+    "name" : "VSMetodos"
+  },
+  {
+    "id" : "VSRazonEstadoDispensacion",
+    "type" : "ValueSet",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSRazonEstadoDispensacion",
+    "version" : "0.9.5",
+    "name" : "VSRazonEstadoDispensacion"
+  },
+  {
+    "id" : "VSStatusReason",
+    "type" : "ValueSet",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSStatusReason",
+    "version" : "0.9.5",
+    "name" : "VSStatusReason"
+  },
+  {
+    "id" : "VSTipoPrescripcion",
+    "type" : "ValueSet",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSTipoPrescripcion",
+    "version" : "0.9.5",
+    "name" : "VSTipoPrescripcion"
+  },
+  {
+    "id" : "VSUnidadAsistencial",
+    "type" : "ValueSet",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSUnidadAsistencial",
+    "version" : "0.9.5",
+    "name" : "VSUnidadAsistencial"
+  },
+  {
+    "id" : "VSViasAdmin",
+    "type" : "ValueSet",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSViasAdmin",
+    "version" : "0.9.5",
+    "name" : "VSViasAdmin"
+  }
+]

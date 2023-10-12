@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSTipoPrescripcion"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">Id_Local<a name="CSTipoPrescripcion-Id_Local"> </a></td></tr><tr><td style="white-space:nowrap">Id_Cheque<a name="CSTipoPrescripcion-Id_Cheque"> </a></td></tr><tr><td style="white-space:nowrap">Id_Receta_Grafica<a name="CSTipoPrescripcion-Id_Receta_Grafica"> </a></td></tr></table></div>
+  </text>
+  <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion"/>
+  <version value="0.9.5"/>
+  <name value="CSTipoPrescripcion"/>
+  <title value="Tipo de Prescripción"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-01-18T00:00:00-03:00"/>
+  <publisher value="Unidad de Interoperabilidad - MINSAL"/>
+  <contact>
+    <name value="Unidad de Interoperabilidad - MINSAL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://interoperabilidad.minsal.cl"/>
+    </telecom>
+  </contact>
+  <description value="Identifica el tipo de Prescripción"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="Id_Local"/>
+    <display value="Id_Local"/>
+  </concept>
+  <concept>
+    <code value="Id_Cheque"/>
+    <display value="Id_Cheque"/>
+  </concept>
+  <concept>
+    <code value="Id_Receta_Grafica"/>
+    <display value="Id_Receta_Grafica"/>
+  </concept>
+</CodeSystem>

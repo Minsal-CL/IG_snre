@@ -1,0 +1,72 @@
+﻿SistemaNacionaldeRecetaElectronica : Validation Results
+=========================================
+
+err = 0, warn = 11, info = 1
+IG Publisher Version: 1.4.11 Out of date - current version is 1.4.14
+Generated Thu Oct 12 17:24:51 CLST 2023. FHIR version 4.0.1 for hl7.fhir.cl.minsal.snre#0.9.5 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/snre)
+ Build Errors : 1 / 4 / 0
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/CodeSystem-CSCodificacionCategoria : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/CodeSystem-CSCodificacionPatron : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/CodeSystem-CSFuncionProfesionalDispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/CodeSystem-CSMetodos : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/CodeSystem-CSRazonEstadoDispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/CodeSystem-CSStatusReason : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/CodeSystem-CSTipoPrescripcion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/CodeSystem-CSUnidadAsistencial : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/CodeSystem-CSViasAdmin : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ImplementationGuide-hl7.fhir.cl.minsal.snre : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-DispensacionMedicamentoCl : 0 / 1 / 2
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-ProdComercial : 0 / 2 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-RangeCL : 0 / 1 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-RecetaCl : 0 / 1 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-RecetaPrescripcionCl : 0 / 1 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-SimpleQuantityCL : 0 / 1 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ValueSet-VSCodificacionCategoria : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ValueSet-VSCodificacionPatron : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ValueSet-VSFuncionProfesionalDispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ValueSet-VSMetodos : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ValueSet-VSRazonEstadoDispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ValueSet-VSStatusReason : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ValueSet-VSTipoPrescripcion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ValueSet-VSUnidadAsistencial : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ValueSet-VSViasAdmin : 0 / 0 / 1
+</table>
+== n/a ==
+ERROR: /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/output/operaciones.html#/html/body/div/div/div/div/div/ul/li/a at Line 516, column 111: The link 'resource-operations.html' for "Resource Operations" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-CSCodificacionCategoria.json ==
+== fsh-generated/resources/CodeSystem-CSCodificacionPatron.json ==
+== fsh-generated/resources/CodeSystem-CSFuncionProfesionalDispensacion.json ==
+== fsh-generated/resources/CodeSystem-CSMetodos.json ==
+== fsh-generated/resources/CodeSystem-CSRazonEstadoDispensacion.json ==
+== fsh-generated/resources/CodeSystem-CSStatusReason.json ==
+== fsh-generated/resources/CodeSystem-CSTipoPrescripcion.json ==
+== fsh-generated/resources/CodeSystem-CSUnidadAsistencial.json ==
+== fsh-generated/resources/CodeSystem-CSViasAdmin.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.cl.minsal.snre.json ==
+== fsh-generated/resources/StructureDefinition-DispensacionMedicamentoCl.json ==
+INFORMATION: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.snapshot.element[125].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/DispensacionMedicamentoCl'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ProdComercial.json ==
+WARNING: StructureDefinition/ProdComercial: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/ProdComercial'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-RangeCL.json ==
+WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RangeCL'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-RecetaCl.json ==
+WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RecetaCl'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-RecetaPrescripcionCl.json ==
+WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RecetaPrescripcionCl'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-SimpleQuantityCL.json ==
+WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/SimpleQuantityCL'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/ValueSet-VSCodificacionCategoria.json ==
+== fsh-generated/resources/ValueSet-VSCodificacionPatron.json ==
+== fsh-generated/resources/ValueSet-VSFuncionProfesionalDispensacion.json ==
+== fsh-generated/resources/ValueSet-VSMetodos.json ==
+== fsh-generated/resources/ValueSet-VSRazonEstadoDispensacion.json ==
+== fsh-generated/resources/ValueSet-VSStatusReason.json ==
+== fsh-generated/resources/ValueSet-VSTipoPrescripcion.json ==
+== fsh-generated/resources/ValueSet-VSUnidadAsistencial.json ==
+== fsh-generated/resources/ValueSet-VSViasAdmin.json ==

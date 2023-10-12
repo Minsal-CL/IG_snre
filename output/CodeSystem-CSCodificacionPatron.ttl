@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSCodificacionPatron"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">continuous<a name=\"CSCodificacionPatron-continuous\"> </a></td><td>Terapia continua a largo plazo</td><td>Una medicación que se espera sea continuada más allá de la presente orden y que el paciente debe tomar a menos que explicitamente se le indique lo contrario</td></tr><tr><td style=\"white-space:nowrap\">acute<a name=\"CSCodificacionPatron-acute\"> </a></td><td>Terapia a corto plazo (aguda)</td><td>Una medicación que se espera que el paciente consuma solo por la duración de la presente orden y no se espera que sea renovada</td></tr><tr><td style=\"white-space:nowrap\">seasonal<a name=\"CSCodificacionPatron-seasonal\"> </a></td><td>Por temporada</td><td>Una medicación que se espera sea usada a tiempo parcial en ciertos momentos del año</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.9.5"] ; # 
+  fhir:name [ fhir:v "CSCodificacionPatron"] ; # 
+  fhir:title [ fhir:v "Patrón de la Prescripción"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-01-18T00:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://interoperabilidad.minsal.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codificación del patrón de administración de una prescripción"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "continuous" ] ;
+     fhir:display [ fhir:v "Terapia continua a largo plazo" ] ;
+     fhir:definition [ fhir:v "Una medicación que se espera sea continuada más allá de la presente orden y que el paciente debe tomar a menos que explicitamente se le indique lo contrario" ]
+  ] [
+     fhir:code [ fhir:v "acute" ] ;
+     fhir:display [ fhir:v "Terapia a corto plazo (aguda)" ] ;
+     fhir:definition [ fhir:v "Una medicación que se espera que el paciente consuma solo por la duración de la presente orden y no se espera que sea renovada" ]
+  ] [
+     fhir:code [ fhir:v "seasonal" ] ;
+     fhir:display [ fhir:v "Por temporada" ] ;
+     fhir:definition [ fhir:v "Una medicación que se espera sea usada a tiempo parcial en ciertos momentos del año" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

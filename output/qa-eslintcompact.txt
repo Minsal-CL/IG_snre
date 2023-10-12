@@ -1,0 +1,15 @@
+﻿/Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-DispensacionMedicamentoCl.json: line 1, col 395304, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-DispensacionMedicamentoCl.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-ProdComercial.json: line 0, col 0, Warning - Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere (BUSINESSRULE)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-ProdComercial.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-RangeCL.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-RecetaCl.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-RecetaPrescripcionCl.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-SimpleQuantityCL.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+
+SistemaNacionaldeRecetaElectronica : Validation Results
+=========================================
+
+err = 0, warn = 11, info = 1
+IG Publisher Version: 1.4.11 Out of date - current version is 1.4.14
+Generated Thu Oct 12 17:24:51 CLST 2023. FHIR version 4.0.1 for hl7.fhir.cl.minsal.snre#0.9.5 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/snre)

@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSMetodos"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">738991002<a name=\"CSMetodos-738991002\"> </a></td><td>Aplicación (método de administración)</td></tr><tr><td style=\"white-space:nowrap\">740685003<a name=\"CSMetodos-740685003\"> </a></td><td>Inyección (método de administración)</td></tr><tr><td style=\"white-space:nowrap\">738990001<a name=\"CSMetodos-738990001\"> </a></td><td>Administración (método de administración)</td></tr><tr><td style=\"white-space:nowrap\">785900008<a name=\"CSMetodos-785900008\"> </a></td><td>Enjuague o lavado (método de administración)</td></tr><tr><td style=\"white-space:nowrap\">764794000<a name=\"CSMetodos-764794000\"> </a></td><td>Infusión (método de administración)</td></tr><tr><td style=\"white-space:nowrap\">740666001<a name=\"CSMetodos-740666001\"> </a></td><td>Inhalación (método de administración)</td></tr><tr><td style=\"white-space:nowrap\">738994005<a name=\"CSMetodos-738994005\"> </a></td><td>Instilación (método de administración)</td></tr><tr><td style=\"white-space:nowrap\">738993004<a name=\"CSMetodos-738993004\"> </a></td><td>Inserción (método de administración)</td></tr><tr><td style=\"white-space:nowrap\">738996007<a name=\"CSMetodos-738996007\"> </a></td><td>Aerosolización (método de administración)</td></tr><tr><td style=\"white-space:nowrap\">738995006<a name=\"CSMetodos-738995006\"> </a></td><td>Tragar (método de administración)</td></tr><tr><td style=\"white-space:nowrap\">738992009<a name=\"CSMetodos-738992009\"> </a></td><td>Masticar (método de administración)</td></tr><tr><td style=\"white-space:nowrap\">764498003<a name=\"CSMetodos-764498003\"> </a></td><td>Chupar (método de administración)</td></tr><tr><td style=\"white-space:nowrap\">823034001<a name=\"CSMetodos-823034001\"> </a></td><td>Orodispersión (método de administración)</td></tr><tr><td style=\"white-space:nowrap\">827107003<a name=\"CSMetodos-827107003\"> </a></td><td>Implante (método de administración)</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.9.5"] ; # 
+  fhir:name [ fhir:v "CSMetodos"] ; # 
+  fhir:title [ fhir:v "Métodos de Administración"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-01-18T00:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://interoperabilidad.minsal.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Métodos de Administración de SNOMED-CT utilizados para el proyecto de receta electrónica"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "14"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "738991002" ] ;
+     fhir:display [ fhir:v "Aplicación (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "740685003" ] ;
+     fhir:display [ fhir:v "Inyección (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "738990001" ] ;
+     fhir:display [ fhir:v "Administración (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "785900008" ] ;
+     fhir:display [ fhir:v "Enjuague o lavado (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "764794000" ] ;
+     fhir:display [ fhir:v "Infusión (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "740666001" ] ;
+     fhir:display [ fhir:v "Inhalación (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "738994005" ] ;
+     fhir:display [ fhir:v "Instilación (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "738993004" ] ;
+     fhir:display [ fhir:v "Inserción (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "738996007" ] ;
+     fhir:display [ fhir:v "Aerosolización (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "738995006" ] ;
+     fhir:display [ fhir:v "Tragar (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "738992009" ] ;
+     fhir:display [ fhir:v "Masticar (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "764498003" ] ;
+     fhir:display [ fhir:v "Chupar (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "823034001" ] ;
+     fhir:display [ fhir:v "Orodispersión (método de administración)" ]
+  ] [
+     fhir:code [ fhir:v "827107003" ] ;
+     fhir:display [ fhir:v "Implante (método de administración)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

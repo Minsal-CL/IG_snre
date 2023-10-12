@@ -1,7 +1,7 @@
 ### Disclaimer
 <br>
 
-Esta guía se encuentra en **fase de evolución** por lo que esta sujeta a cambios previo a alcanzar nivel normativo. El proceso de apertura a implementadores será usado como primer balotage con el fin de recopilar de parte de éstos actores comentarios, sugerencias u observaciones para robustecer la Guía de Implementación (GI o IG del ingles Implementation Guide)  previa Versión 1.0
+Esta guía se encuentra en **fase de evolución** por lo que está sujeta a cambios previo a alcanzar el nivel normativo. El proceso de apertura a implementadores será usado como primer balotage con el fin de recopilar de parte de éstos actores comentarios, sugerencias u observaciones para robustecer la Guía de Implementación (GI o IG del ingles Implementation Guide)  previa Versión 1.0
 
 ### Trasfondo
 <br>
@@ -27,7 +27,7 @@ Esta Guía de Implementación está dirigida a los desarrolladores de las soluci
 ###	 Aspectos Generales de esta Guía 
 <br>
 
-A continuación, se describe el funcionamiento general del proceso de la receta, con las funcionalidades que deberán estar contenidas en el desarrollo solicitado. Se detalla el modelo, componentes, servicios y aplicaciones que permiten abarcar los diferentes escenarios que se presenten, de modo que esta solución tenga un alcance nacional, tanto público como privado.
+A continuación, se describe el funcionamiento general del proceso de receta, con las funcionalidades que deben estar soportadas. Se detalla el modelo, componentes, servicios y aplicaciones que permiten abarcar los diferentes escenarios presentados, de modo que esta solución tenga un alcance nacional, tanto pública como privada.
 <br>
 <br>
 
@@ -46,7 +46,7 @@ El proceso del sistema se describe en la siguiente imagen:
 
 <br>
 
-El proyecto abarca desde la prescripción hasta el momento de la dispensación en una farmacia. La prescripción y la dispensación pueden generarse en diferentes ámbitos.
+El proyecto abarca desde la prescripción hasta el momento de la dispensación en una farmacia. La prescripción y la dispensación podrian generarse en diferentes ámbitos.
 
 *Ejemplos:* Atención clínica en un establecimiento público y dispensación en farmacia comunitaria, atención clínica en un establecimiento privado y dispensación en farmacia privada.
 
@@ -55,7 +55,7 @@ El funcionamiento genérico con sus funciones sería el siguiente:
 *Emisión de Receta y Registro en Repositorio:* El prescriptor visualiza los datos administrativos de la receta, como los de identificación de paciente, prestador e institución (obtenidos desde el SNRE). El Ministerio de Salud dispondrá de una serie de recursos para la validación de los datos mencionados.
 El clínico ingresa los datos de prescripción, como el fármaco recetado, potencia, dosis. Una vez generado el documento clínico, este es enviado al repositorio centralizado del SNRE.
 
-*Dispensación de Receta Electrónica:* Cada paciente, desde su aplicación móvil y/o correo electrónico, podrá disponer de las recetas extendidas a su nombre o de algún tercero bajo autorización. El Ministerio de Salud dispondrá de un servicio que permitirá leer, mediante código de barra, el folio de la receta, para poder obtener la información de la receta o el documento mismo desde el repositorio central. La farmacia deberá registrar el o los medicamentos dispensados, tanto para producto comercial como genérico o bioequivalente. El detalle será tratado más adelante.
+*Dispensación de Receta Electrónica:* Cada paciente, desde su aplicación móvil y/o correo electrónico, podrá disponer de las recetas extendidas a su nombre o de algún tercero bajo autorización. El Ministerio de Salud dispone ha disponibilizado un servicio que permitirá leer, mediante código de barra, el folio de la receta, para poder obtener la información de la receta o el documento mismo desde el repositorio central. La farmacia deberá registrar el o los medicamentos dispensados, tanto para producto comercial como genérico o bioequivalente. El detalle será tratado más adelante.
 <br>
 <br>
 
@@ -95,7 +95,7 @@ Este proceso describe los cambios de estado que sufre una receta durante el cicl
 ### Contenido de la Guía
 <br>
 
-Esta guía se implementación estructura en base al menú de la parte superior de la siguiente manera:
+Esta guía de implementación se estructura en base al menú de la parte superior de la siguiente manera:
 <br>
 
 * [Home](index.html): Página de Bienvenida a la Guía.
@@ -117,14 +117,15 @@ Esta guía se implementación estructura en base al menú de la parte superior d
 - Autores de la Guía: 
   - **Pablo Pizarro (MINSAL)** [ppizarro.delgado@minsal.cl](mailto:ppizarro.delgado@minsal.cl)
   - **Nicolás Soto (MINSAL)** [nicolas.soto@minsal.cl](mailto:nicolas.soto@minsal.cl)
+  - **Juan Jose Ortega (MINSAL)** [juan.ortega@minsal.cl](mailto:juan.ortega@minsal.cl)
   - **César Galindo (HL7 Chile)** [cgalindo@uv.cl](mailto:cgalindo@uv.cl)
   - **Jorge Mansilla (HL7 Chile)** [jorgemansillas@gmail.com](mailto:jorgemansillas@gmail.com)
-  
+
 - Colaboradores:
   - Diego Olea (MINSAL)
   - Franco Ulloa (MINSAL)
   - Fernanda Canales (MINSAL)
-  - Diego Kaminker (HL7 Iternacional)
+  - Diego Kaminker (HL7 Internacional)
 <br>
 <br>
 
