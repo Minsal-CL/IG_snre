@@ -1,0 +1,140 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSUnidadAsistencial"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">mililitro<a name=\"CSUnidadAsistencial-mililitro\"> </a></td><td>Mililitro</td></tr><tr><td style=\"white-space:nowrap\">comprimido<a name=\"CSUnidadAsistencial-comprimido\"> </a></td><td>Comprimido</td></tr><tr><td style=\"white-space:nowrap\">miligramo<a name=\"CSUnidadAsistencial-miligramo\"> </a></td><td>Miligramo</td></tr><tr><td style=\"white-space:nowrap\">unidades<a name=\"CSUnidadAsistencial-unidades\"> </a></td><td>Unidades</td></tr><tr><td style=\"white-space:nowrap\">capsula<a name=\"CSUnidadAsistencial-capsula\"> </a></td><td>Cápsula</td></tr><tr><td style=\"white-space:nowrap\">aplicacion<a name=\"CSUnidadAsistencial-aplicacion\"> </a></td><td>Aplicación</td></tr><tr><td style=\"white-space:nowrap\">supositorio<a name=\"CSUnidadAsistencial-supositorio\"> </a></td><td>Supositorio</td></tr><tr><td style=\"white-space:nowrap\">ampolla<a name=\"CSUnidadAsistencial-ampolla\"> </a></td><td>Ampolla</td></tr><tr><td style=\"white-space:nowrap\">sobre<a name=\"CSUnidadAsistencial-sobre\"> </a></td><td>Sobre</td></tr><tr><td style=\"white-space:nowrap\">gotas<a name=\"CSUnidadAsistencial-gotas\"> </a></td><td>Gotas</td></tr><tr><td style=\"white-space:nowrap\">dosis<a name=\"CSUnidadAsistencial-dosis\"> </a></td><td>Dosis</td></tr><tr><td style=\"white-space:nowrap\">aposito<a name=\"CSUnidadAsistencial-aposito\"> </a></td><td>Apósito</td></tr><tr><td style=\"white-space:nowrap\">parche<a name=\"CSUnidadAsistencial-parche\"> </a></td><td>Parche</td></tr><tr><td style=\"white-space:nowrap\">microgramo<a name=\"CSUnidadAsistencial-microgramo\"> </a></td><td>Microgramo</td></tr><tr><td style=\"white-space:nowrap\">frasco<a name=\"CSUnidadAsistencial-frasco\"> </a></td><td>Frasco</td></tr><tr><td style=\"white-space:nowrap\">unidades-internacionales<a name=\"CSUnidadAsistencial-unidades-internacionales\"> </a></td><td>Unidades Internacionales</td></tr><tr><td style=\"white-space:nowrap\">puff<a name=\"CSUnidadAsistencial-puff\"> </a></td><td>Puff</td></tr><tr><td style=\"white-space:nowrap\">bidon<a name=\"CSUnidadAsistencial-bidon\"> </a></td><td>Bidón</td></tr><tr><td style=\"white-space:nowrap\">bolsa<a name=\"CSUnidadAsistencial-bolsa\"> </a></td><td>Bolsa</td></tr><tr><td style=\"white-space:nowrap\">gramo<a name=\"CSUnidadAsistencial-gramo\"> </a></td><td>Gramo</td></tr><tr><td style=\"white-space:nowrap\">dispositivo<a name=\"CSUnidadAsistencial-dispositivo\"> </a></td><td>Dispositivo</td></tr><tr><td style=\"white-space:nowrap\">ovulo<a name=\"CSUnidadAsistencial-ovulo\"> </a></td><td>Óvulo</td></tr><tr><td style=\"white-space:nowrap\">vial<a name=\"CSUnidadAsistencial-vial\"> </a></td><td>Vial</td></tr><tr><td style=\"white-space:nowrap\">implante<a name=\"CSUnidadAsistencial-implante\"> </a></td><td>Implante</td></tr><tr><td style=\"white-space:nowrap\">anillo-vaginal<a name=\"CSUnidadAsistencial-anillo-vaginal\"> </a></td><td>Anillo Vaginal</td></tr><tr><td style=\"white-space:nowrap\">chicle<a name=\"CSUnidadAsistencial-chicle\"> </a></td><td>Chicle</td></tr><tr><td style=\"white-space:nowrap\">tarro<a name=\"CSUnidadAsistencial-tarro\"> </a></td><td>Tarro</td></tr><tr><td style=\"white-space:nowrap\">aplicador<a name=\"CSUnidadAsistencial-aplicador\"> </a></td><td>Aplicador</td></tr><tr><td style=\"white-space:nowrap\">jeringa-prellenada<a name=\"CSUnidadAsistencial-jeringa-prellenada\"> </a></td><td>Jeringa Prellenada</td></tr><tr><td style=\"white-space:nowrap\">gragea<a name=\"CSUnidadAsistencial-gragea\"> </a></td><td>Gragea</td></tr><tr><td style=\"white-space:nowrap\">cartucho<a name=\"CSUnidadAsistencial-cartucho\"> </a></td><td>Cartucho</td></tr><tr><td style=\"white-space:nowrap\">globulo<a name=\"CSUnidadAsistencial-globulo\"> </a></td><td>Glóbulo</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.9.5"] ; # 
+  fhir:name [ fhir:v "CSUnidadAsistencial"] ; # 
+  fhir:title [ fhir:v "Unidad Asistencial"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-01-18T00:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://interoperabilidad.minsal.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Unidad para dosificar"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "32"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "mililitro" ] ;
+     fhir:display [ fhir:v "Mililitro" ]
+  ] [
+     fhir:code [ fhir:v "comprimido" ] ;
+     fhir:display [ fhir:v "Comprimido" ]
+  ] [
+     fhir:code [ fhir:v "miligramo" ] ;
+     fhir:display [ fhir:v "Miligramo" ]
+  ] [
+     fhir:code [ fhir:v "unidades" ] ;
+     fhir:display [ fhir:v "Unidades" ]
+  ] [
+     fhir:code [ fhir:v "capsula" ] ;
+     fhir:display [ fhir:v "Cápsula" ]
+  ] [
+     fhir:code [ fhir:v "aplicacion" ] ;
+     fhir:display [ fhir:v "Aplicación" ]
+  ] [
+     fhir:code [ fhir:v "supositorio" ] ;
+     fhir:display [ fhir:v "Supositorio" ]
+  ] [
+     fhir:code [ fhir:v "ampolla" ] ;
+     fhir:display [ fhir:v "Ampolla" ]
+  ] [
+     fhir:code [ fhir:v "sobre" ] ;
+     fhir:display [ fhir:v "Sobre" ]
+  ] [
+     fhir:code [ fhir:v "gotas" ] ;
+     fhir:display [ fhir:v "Gotas" ]
+  ] [
+     fhir:code [ fhir:v "dosis" ] ;
+     fhir:display [ fhir:v "Dosis" ]
+  ] [
+     fhir:code [ fhir:v "aposito" ] ;
+     fhir:display [ fhir:v "Apósito" ]
+  ] [
+     fhir:code [ fhir:v "parche" ] ;
+     fhir:display [ fhir:v "Parche" ]
+  ] [
+     fhir:code [ fhir:v "microgramo" ] ;
+     fhir:display [ fhir:v "Microgramo" ]
+  ] [
+     fhir:code [ fhir:v "frasco" ] ;
+     fhir:display [ fhir:v "Frasco" ]
+  ] [
+     fhir:code [ fhir:v "unidades-internacionales" ] ;
+     fhir:display [ fhir:v "Unidades Internacionales" ]
+  ] [
+     fhir:code [ fhir:v "puff" ] ;
+     fhir:display [ fhir:v "Puff" ]
+  ] [
+     fhir:code [ fhir:v "bidon" ] ;
+     fhir:display [ fhir:v "Bidón" ]
+  ] [
+     fhir:code [ fhir:v "bolsa" ] ;
+     fhir:display [ fhir:v "Bolsa" ]
+  ] [
+     fhir:code [ fhir:v "gramo" ] ;
+     fhir:display [ fhir:v "Gramo" ]
+  ] [
+     fhir:code [ fhir:v "dispositivo" ] ;
+     fhir:display [ fhir:v "Dispositivo" ]
+  ] [
+     fhir:code [ fhir:v "ovulo" ] ;
+     fhir:display [ fhir:v "Óvulo" ]
+  ] [
+     fhir:code [ fhir:v "vial" ] ;
+     fhir:display [ fhir:v "Vial" ]
+  ] [
+     fhir:code [ fhir:v "implante" ] ;
+     fhir:display [ fhir:v "Implante" ]
+  ] [
+     fhir:code [ fhir:v "anillo-vaginal" ] ;
+     fhir:display [ fhir:v "Anillo Vaginal" ]
+  ] [
+     fhir:code [ fhir:v "chicle" ] ;
+     fhir:display [ fhir:v "Chicle" ]
+  ] [
+     fhir:code [ fhir:v "tarro" ] ;
+     fhir:display [ fhir:v "Tarro" ]
+  ] [
+     fhir:code [ fhir:v "aplicador" ] ;
+     fhir:display [ fhir:v "Aplicador" ]
+  ] [
+     fhir:code [ fhir:v "jeringa-prellenada" ] ;
+     fhir:display [ fhir:v "Jeringa Prellenada" ]
+  ] [
+     fhir:code [ fhir:v "gragea" ] ;
+     fhir:display [ fhir:v "Gragea" ]
+  ] [
+     fhir:code [ fhir:v "cartucho" ] ;
+     fhir:display [ fhir:v "Cartucho" ]
+  ] [
+     fhir:code [ fhir:v "globulo" ] ;
+     fhir:display [ fhir:v "Glóbulo" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
