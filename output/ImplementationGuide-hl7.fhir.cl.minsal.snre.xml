@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.cl.minsal.snre"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SistemaNacionaldeRecetaElectronica</h2><p>The official URL for this implementation guide is: </p><pre>https://interoperabilidad.minsal.cl/fhir/ig/snre/ImplementationGuide/hl7.fhir.cl.minsal.snre</pre><div><p>Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional. Esta Guía se encuentra aún en proceso de creación por lo que esta versión esta sujeta a observaciones y cambios. Aquellos implementadores que tengan acceso a ella se les sugiere desarrollar comentarios para su mejora)</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SistemaNacionalDeRecetaElectronica</h2><p>The official URL for this implementation guide is: </p><pre>https://interoperabilidad.minsal.cl/fhir/ig/snre/ImplementationGuide/hl7.fhir.cl.minsal.snre</pre><div><p>Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional. Esta Guía se encuentra aún en proceso de creación por lo que esta versión esta sujeta a observaciones y cambios. Aquellos implementadores que tengan acceso a ella se les sugiere desarrollar comentarios para su mejora)</p>
 </div></div>
   </text>
   <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ImplementationGuide/hl7.fhir.cl.minsal.snre"/>
   <version value="0.9.5"/>
-  <name value="SistemaNacionaldeRecetaElectronica"/>
-  <title value="Sistema Nacional de Receta Electronica"/>
+  <name value="SistemaNacionalDeRecetaElectronica"/>
+  <title value="Sistema Nacional de receta electronica"/>
   <status value="draft"/>
-  <date value="2023-10-12T17:23:51-03:00"/>
+  <date value="2023-11-03T17:06:20-03:00"/>
   <publisher value="Unidad de Interoperabilidad - MINSAL"/>
   <contact>
     <name value="Unidad de Interoperabilidad - MINSAL"/>

@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "hl7.fhir.cl.minsal.snre"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SistemaNacionaldeRecetaElectronica</h2><p>The official URL for this implementation guide is: </p><pre>https://interoperabilidad.minsal.cl/fhir/ig/snre/ImplementationGuide/hl7.fhir.cl.minsal.snre</pre><div><p>Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional. Esta Guía se encuentra aún en proceso de creación por lo que esta versión esta sujeta a observaciones y cambios. Aquellos implementadores que tengan acceso a ella se les sugiere desarrollar comentarios para su mejora)</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SistemaNacionalDeRecetaElectronica</h2><p>The official URL for this implementation guide is: </p><pre>https://interoperabilidad.minsal.cl/fhir/ig/snre/ImplementationGuide/hl7.fhir.cl.minsal.snre</pre><div><p>Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional. Esta Guía se encuentra aún en proceso de creación por lo que esta versión esta sujeta a observaciones y cambios. Aquellos implementadores que tengan acceso a ella se les sugiere desarrollar comentarios para su mejora)</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/ImplementationGuide/hl7.fhir.cl.minsal.snre"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.9.5"] ; # 
-  fhir:name [ fhir:v "SistemaNacionaldeRecetaElectronica"] ; # 
-  fhir:title [ fhir:v "Sistema Nacional de Receta Electronica"] ; # 
+  fhir:name [ fhir:v "SistemaNacionalDeRecetaElectronica"] ; # 
+  fhir:title [ fhir:v "Sistema Nacional de receta electronica"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-12T17:23:51-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-03T17:06:20-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
