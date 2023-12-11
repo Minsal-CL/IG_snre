@@ -1,6 +1,6 @@
 {
     "package-id": "hl7.fhir.cl.snre",
-    "version": "0.9.4",
+    "version": "0.9.5",
     "desc": "Versión de desarrollo",
     "path": "https://interoperabilidad.minsal.cl/fhir/ig/snre/0.9.2",
     "changes": "changes.html",
