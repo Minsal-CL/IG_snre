@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/snre/Practitioner/Prestador1> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Prestador1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl"^^xsd:anyURI ;
+       fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"Prestador1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;Prestador1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://hl7chile.cl/fhir/ig/clcore/1.8.5/StructureDefinition-CorePrestadorCl.html\">CL Prestador</a></p></div><p><b>identifier</b>: id: 8336277-3 (use: OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Leonidas Rey Esparta (OFFICIAL)</p><p><b>telecom</b>: ph: 9345666(MOBILE), <a href=\"mailto:Leonidas300@mimail.com\">Leonidas300@mimail.com</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1974-08-12</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: cert</p><p><b>code</b>: Certificado(s) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#2112 &quot;Certificado Profesional Médico Cirujano&quot;)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: esp</p><p><b>code</b>: Especialidad(es) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#122 &quot;Cardiólogia&quot;)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: esp</p><p><b>code</b>: Especialidad(es) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#1234 &quot;Medicina interna&quot;)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://registrocivil.cl/run"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "8336277-3" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Esparta" ] ;
+     fhir:given ( [ fhir:v "Leonidas" ] [ fhir:v "Rey" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "9345666" ] ;
+     fhir:use [ fhir:v "mobile" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "Leonidas300@mimail.com" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1974-08-12"^^xsd:date] ; # 
+  fhir:qualification ( [
+     fhir:identifier ( [
+       fhir:value [ fhir:v "cert" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://api.minsal.cl/v1/catalogos/profesiones/"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2112" ] ;
+         fhir:display [ fhir:v "Certificado Profesional Médico Cirujano" ]
+       ] ) ;
+       fhir:text [ fhir:v "Certificado(s)" ]
+     ]
+  ] [
+     fhir:identifier ( [
+       fhir:value [ fhir:v "esp" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "122" ] ;
+         fhir:display [ fhir:v "Cardiólogia" ]
+       ] ) ;
+       fhir:text [ fhir:v "Especialidad(es)" ]
+     ]
+  ] [
+     fhir:identifier ( [
+       fhir:value [ fhir:v "esp" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1234" ] ;
+         fhir:display [ fhir:v "Medicina interna" ]
+       ] ) ;
+       fhir:text [ fhir:v "Especialidad(es)" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

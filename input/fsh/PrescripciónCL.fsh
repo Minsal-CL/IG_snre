@@ -1,8 +1,12 @@
-Profile:        PrescripcionRecetaCL2
+Profile:        PrescripcionRecetaCL
 Parent:         MedicationRequest
 Id:             RecetaPrescripcionCl
 Title:          "CL Prescripción"
 Description:    "Este Perfil describe la información contenida en la Prescripción de un medicamento para el Sistema Nacional de Receta Electrónica del MINSAL  "
+
+* ^version = "0.9.8"
+* ^status = #active
+* ^publisher = "MINSAL Chile"
 
 * identifier MS
   * type MS
@@ -109,7 +113,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 
 
 
-* extension contains ProdComercial named PComercial 0..1 MS
+* extension contains ProdComercial named ProdComercial 0..1 MS
 * extension ^short = "Determinación del medicamento en Producto Comercial"
 * extension ^definition = "Determinación de un medicamento en Producto Comercial. Para eso esta extensión define una Referencia solo a un recurso de medication. "
 * subject only Reference (Patient) 

@@ -1,0 +1,108 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/snre/MedicationDispense/Ejemplo2-Dispensacion> a fhir:MedicationDispense ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Ejemplo2-Dispensacion"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2022-08-17T14:16:46.924Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/DispensacionMedicamentoCl"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/DispensacionMedicamentoCl>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationDispense</b><a name=\"Ejemplo2-Dispensacion\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationDispense &quot;Ejemplo2-Dispensacion&quot; Version &quot;1&quot; Updated &quot;2022-08-17 14:16:46+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DispensacionMedicamentoCl.html\">CL Dispensación</a></p></div><p><b>status</b>: completed</p><p><b>medication</b>: <a href=\"Medication-Medicamento1.html\">Medication/Medicamento1: enalapril maleato 10 mg comprimido (Lab Chile) 20 comprimidos</a></p><p><b>subject</b>: <a href=\"Patient-Paciente1.html\">Patient/Paciente1</a> &quot; VADER&quot;</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Function</b></td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td>Dispensador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSFuncionProfesionalDispensacion.html\">Funcion del Personal</a>#Dispensador)</span></td><td><a href=\"Practitioner-Prestador1.html\">Practitioner/Prestador1</a> &quot; ESPARTA&quot;</td></tr></table><p><b>location</b>: <a href=\"Location-Loc1.html\">Location/Loc1: FarmaShield - Local: 73</a> &quot;Gran Farmacia Gran&quot;</p><p><b>authorizingPrescription</b>: <a href=\"MedicationRequest-Ejemplo1-prescipcion.html\">MedicationRequest/Ejemplo1-prescipcion</a></p><p><b>quantity</b>: 3</p><p><b>whenHandedOver</b>: 2022-08-20 15:27:32+0000</p><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 1</p><p><b>text</b>: Administrar 1 pastilla cada 1 día por 1 año hasta un máximo de 20 mg x día</p><p><b>timing</b>: Once per 1 days</p><p><b>route</b>: vía Oral route (calificador) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSViasAdmin.html\">Vías de Administración</a>#26643006)</span></p><p><b>method</b>: Tragar (método de administración) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSMetodos.html\">Métodos de Administración</a>#738995006)</span></p><blockquote><p><b>doseAndRate</b></p></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/Medication/Medicamento1> ;
+     fhir:reference [ fhir:v "Medication/Medicamento1" ] ;
+     fhir:display [ fhir:v "enalapril maleato 10 mg comprimido (Lab Chile) 20 comprimidos" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/Patient/Paciente1> ;
+     fhir:reference [ fhir:v "Patient/Paciente1" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:function [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Dispensador" ]
+       ] )
+     ] ;
+     fhir:actor [
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/Practitioner/Prestador1> ;
+       fhir:reference [ fhir:v "Practitioner/Prestador1" ]
+     ]
+  ] ) ; # 
+  fhir:location [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/Location/Loc1> ;
+     fhir:reference [ fhir:v "Location/Loc1" ] ;
+     fhir:display [ fhir:v "FarmaShield - Local: 73" ]
+  ] ; # 
+  fhir:authorizingPrescription ( [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/MedicationRequest/Ejemplo1-prescipcion> ;
+     fhir:reference [ fhir:v "MedicationRequest/Ejemplo1-prescipcion" ]
+  ] ) ; # 
+  fhir:quantity [
+     fhir:value [ fhir:v "3"^^xsd:decimal ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+  ] ; # 
+  fhir:whenHandedOver [ fhir:v "2022-08-20T15:27:32.349Z"^^xsd:dateTime] ; # 
+  fhir:dosageInstruction ( [
+     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:text [ fhir:v "Administrar 1 pastilla cada 1 día por 1 año hasta un máximo de 20 mg x día" ] ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:bounds [
+           a fhir:Duration ;
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "a" ]
+         ] ;
+         fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ]
+       ]
+     ] ;
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSViasAdmin"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "26643006" ] ;
+         fhir:display [ fhir:v "vía Oral route (calificador)" ]
+       ] )
+     ] ;
+     fhir:method [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "738995006" ] ;
+         fhir:display [ fhir:v "Tragar (método de administración)" ]
+       ] )
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Range ;
+         fhir:low [
+           fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "miligramo" ]
+         ] ;
+         fhir:high [
+           fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "miligramo" ]
+         ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

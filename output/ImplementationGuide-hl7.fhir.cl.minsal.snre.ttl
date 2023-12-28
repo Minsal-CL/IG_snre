@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SistemaNacionalDeRecetaElectronica</h2><p>The official URL for this implementation guide is: </p><pre>https://interoperabilidad.minsal.cl/fhir/ig/snre/ImplementationGuide/hl7.fhir.cl.minsal.snre</pre><div><p>Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional. Esta Guía se encuentra aún en proceso de creación por lo que esta versión esta sujeta a observaciones y cambios. Aquellos implementadores que tengan acceso a ella se les sugiere desarrollar comentarios para su mejora)</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/ImplementationGuide/hl7.fhir.cl.minsal.snre"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.9.5"] ; # 
+  fhir:version [ fhir:v "0.9.8"] ; # 
   fhir:name [ fhir:v "SistemaNacionalDeRecetaElectronica"] ; # 
   fhir:title [ fhir:v "Sistema Nacional de receta electronica"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-11-03T17:06:20-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-28T18:47:13-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
@@ -68,7 +68,7 @@
        fhir:link <https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.cl.clcore" ] ;
-     fhir:version [ fhir:v "1.8.4" ]
+     fhir:version [ fhir:v "1.8.5" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -588,6 +588,168 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/Location/Loc1> ;
+         fhir:reference [ fhir:v "Location/Loc1" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de  Localización Farmacia" ] ;
+       fhir:description [ fhir:v "Ejemplo de la localización relacionada con una Farmacia específica ubicada en la comuna de Viña del Mar" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/Medication/Medicamento1> ;
+         fhir:reference [ fhir:v "Medication/Medicamento1" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de comprimido Tareg - D 160" ] ;
+       fhir:description [ fhir:v "Medicamento comprimido Tareg -D160 referemciado como medicamento en la TFC, considerando el de 25 comprimidos" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/Medication/Medicamento3> ;
+         fhir:reference [ fhir:v "Medication/Medicamento3" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Recurso Medicamento" ] ;
+       fhir:description [ fhir:v "Medicamento ficticio" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/Patient/Paciente1> ;
+         fhir:reference [ fhir:v "Patient/Paciente1" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Recurso Paciente Nacional" ] ;
+       fhir:description [ fhir:v "Paciente de referencia basado en la Core-CL" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/Practitioner/Prestador1> ;
+         fhir:reference [ fhir:v "Practitioner/Prestador1" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Recurso Prestador como base para un Core Nacional" ] ;
+       fhir:description [ fhir:v "Ejemplo de un Prestador no Real con identificadores en Systemas con API\"s no disponibles" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/Organization/ORG1> ;
+         fhir:reference [ fhir:v "Organization/ORG1" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo Organización Prestadora de Salud" ] ;
+       fhir:description [ fhir:v "CESFAM Rio Bueno (Ficticio) con ID DEIS no real" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationDispense" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/MedicationDispense/Ejemplo1-Dispensacion> ;
+         fhir:reference [ fhir:v "MedicationDispense/Ejemplo1-Dispensacion" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo1-Dispensacion" ] ;
+       fhir:description [ fhir:v "Dispensación de medicamento comercial" ] ;
+       fhir:example [
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/DispensacionMedicamentoCl"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/DispensacionMedicamentoCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/MedicationRequest/Ejemplo1-prescipcion> ;
+         fhir:reference [ fhir:v "MedicationRequest/Ejemplo1-prescipcion" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo1-prescipcion" ] ;
+       fhir:description [ fhir:v "Prescripción de medicamento con nombre comercial agregado" ] ;
+       fhir:example [
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RecetaPrescripcionCl"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RecetaPrescripcionCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RequestGroup" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/RequestGroup/Receta1> ;
+         fhir:reference [ fhir:v "RequestGroup/Receta1" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo1-Receta" ] ;
+       fhir:description [ fhir:v "Ejemplo de una receta con un fármaco" ] ;
+       fhir:example [
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RecetaCl"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RecetaCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationDispense" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/MedicationDispense/Ejemplo2-Dispensacion> ;
+         fhir:reference [ fhir:v "MedicationDispense/Ejemplo2-Dispensacion" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo2-Dispensacion" ] ;
+       fhir:description [ fhir:v "Dispensación de medicamento Lab Chile con rango indicado" ] ;
+       fhir:example [
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/DispensacionMedicamentoCl"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/DispensacionMedicamentoCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/MedicationRequest/Ejemplo2-prescipcion> ;
+         fhir:reference [ fhir:v "MedicationRequest/Ejemplo2-prescipcion" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo2-prescipcion" ] ;
+       fhir:description [ fhir:v "Prescripción de medicamento genérico" ] ;
+       fhir:example [
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RecetaPrescripcionCl"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RecetaPrescripcionCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/MedicationRequest/Ejemplo3-prescipcion> ;
+         fhir:reference [ fhir:v "MedicationRequest/Ejemplo3-prescipcion" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo3-prescipcion" ] ;
+       fhir:description [ fhir:v "Prescripción de medicamento genérico, con dosage simple" ] ;
+       fhir:example [
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RecetaPrescripcionCl"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RecetaPrescripcionCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -609,6 +771,18 @@
        fhir:name [ fhir:v "Funcion del Personal" ] ;
        fhir:description [ fhir:v "Funcion del Personal. Puede ser Dispensador o Validador" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/Medication/Medicamento2> ;
+         fhir:reference [ fhir:v "Medication/Medicamento2" ]
+       ] ;
+       fhir:name [ fhir:v "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido" ] ;
+       fhir:description [ fhir:v "Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -845,14 +1019,6 @@
          ] ) ;
          fhir:name [ fhir:v "casos.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Casos de uso" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "operaciones.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "operaciones.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Operaciones" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

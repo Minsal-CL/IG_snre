@@ -28,6 +28,30 @@ Este caso de uso describe la generación de una Receta con una o múltiples Pres
   <p>Diagrama de Secuencias para Prescripción</p>
 </div>
 
+#### Operaciones
+ 
+ La consulta por un la existencia de un registro de paciente se hacer por medio de una búsqueda paramétrica donde la mas recurente será la consulta por medio de identificación la cual puede ser el número RUN
+
+```
+GET [URL_Base]/Patient?identifier=[id_Paciente]
+```
+<br>
+
+En caso de no existir ficha del paciente se debe crear una:
+
+```
+POST  [URL_Base]/Patient
+```
+<br>
+
+El envío de la receta se hace por medio de la operación **POST**, sobre el recurso *RequestGroup*. Considerar que el recurso debe *contener* los recursos *MedicationRequest* en donde cada elemento *groupIdentifier* debe tener el mismo valor.
+
+```
+POST [URL_Base]/RequestGroup/
+```
+<br>
+
+
 ### Caso de Uso 2: Dispensación
 
 Este caso describe la secuencia de mensajes que ocurre cuando se procede a dispensar o rechazar la dispensación de uno o varios medicamentos de una misma receta. El proceso comienza cuando en el lugar de dispensación se solicita la información de la receta. Esta solicitud puede realizarse de dos maneras: digitando o escaneando el código de barras que contiene el valor del "groupIdentifier". Este último valor se genera tanto en el agrupador como en las prescripciones individuales al momento de crear la receta.
@@ -54,6 +78,25 @@ Aquí se detalla la secuencia de eventos:
   <img src="DS_Dispen.png"> 
   <p>Diagrama de Secuencias para Dispensación</p>
 </div>
+
+<br>
+
+#### Operaciones
+ 
+ El Dispensador obtendrá de la receta el número asociado a al valor en *groupIdentifier*. La operación de consulta, por tanto será por medio de **GET** y la búsqueda paramétrica *group-identifier*
+
+```
+GET [URL_Base]/RequestGroup?group-identifier=[groupIdentifier_valor]
+```
+<br>
+
+La notificación de dispensación se hace por medio de un **POST** al servidor del recurso *MedicationDispense* en donde se registran los cambios de estado y eventualmente los cambios de medicamento de sus instrucciones de dosage. 
+
+```
+POST [URL_Base]/MedicationDispense
+```
+
+
 ### Caso de Uso 3: Cambio de Estado Prescripciones Recetadas
 Este caso nos presenta la capacidad de realizar cambios en una prescripción tanto desde el sistema del Prescriptor como desde el sistema del Dispensador. Estos cambios obedecen a diferentes razones y se manifiestan como una actualización de las Prescripciones generadas durante el acto clínico con el paciente.
 Estos cambios se reducen a los siguientes:
@@ -67,6 +110,8 @@ Estos cambios se reducen a los siguientes:
 <br>
 
 *Nota:* En todos los casos se debe justificar la razón del cambio de estado, lo cual es factible mediante ciertos parámetros del recurso **MedicationRequest**
+
+
 <br>
 
 * *Desde el Dispensador*
@@ -110,10 +155,22 @@ La secuencia del caso de uso se describe a continuación
   <p>Diagrama de Secuencias para Cambios en Prescripciones</p>
 </div>
 
+<br>
 
+#### Operaciones
+ 
+ Para modificar una receta desde el **Prescriptor** se debe tener en consideración que las recetas deben ser previamente leídas por el sistema
 
+ La modificación se sugiere hacer por medio de la operación **PUT**, debido a que la implementación de **PATCH**, no necesariamente se puede encontrar disponible. Se considera para este caso armar el recurso *RequestGroup* completo con las modificaciones a realizar para luego actualizar:
 
+```
+PUT [URL_Base]/RequestGroup/[id]
+```
+<br>
 
+En caso de ser una actualización desde el dispensador, esta se deberá hacer sobre el *MedicationDispense*. a modificación se sugiere hacer por medio de la operación **PUT**, debido a que la implementación de **PATCH**, no necesariamente se puede encontrar disponible. Se considera para este caso armar el recurso *MedicationDispense* completo con las modificaciones a realizar para luego actualizar:
 
-
+```
+PUT [URL_Base]/MedicationDispense/[id]
+```
 

@@ -101,7 +101,7 @@ Esta guía de implementación se estructura en base al menú de la parte superio
 * [Home](index.html): Página de Bienvenida a la Guía.
 * [Objetivos](Alcances-Objetivos.html): Información General sobre los objetivos de esta Guía
 * [Actores y Casos de Uso](casos.html): Información detallada de los casos de uso, sus actores, y la secuencia de transacciones.
-* [Operaciones y Terminologías](operaciones.html): Información general de las operaciones básicas que se ejecutan para el manejo de datos entre un servicio FHIR y los clientes.
+
 * [Resumen de Artefactos](artifacts.html): Describe todos los artefactos que son parte de esta GI, separados en Estructura de Perfiles, Extensiones, Value Sets y Ejemplos. Dado que esta Guía hereda su base Canónica desde la guía de implementación Core-CL, algunos de los artefactos descritos son parte de esa Guía.
 * Perfiles: Este menú despliega el listado de los 3 perfiles generados para esta GI
   * [Prescripción](StructureDefinition-RecetaPrescripcionCl.html): Perfil del Recurso para la prescripción de un fármaco

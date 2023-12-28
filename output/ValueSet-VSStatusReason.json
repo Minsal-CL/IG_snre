@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSStatusReason.html\"><code>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</code></a></li></ul></div>"
   },
   "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSStatusReason",
-  "version" : "0.9.5",
+  "version" : "0.9.8",
   "name" : "VSStatusReason",
   "title" : "Razón del cambio de estado (Prescripción)",
   "status" : "active",

@@ -9,7 +9,7 @@ name: Sistema Nacional De Receta Electronica
 title: Sistema Nacional de receta electronica
 description: Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional. Esta Guía se encuentra aún en proceso de creación por lo que esta versión esta sujeta a observaciones y cambios. Aquellos implementadores que tengan acceso a ella se les sugiere desarrollar comentarios para su mejora)
 status: draft # draft | active | retired | unknown
-version: 0.9.5
+version: 0.9.8
 fhirVersion: 4.0.1
 copyrightYear: 2023+
 releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -25,7 +25,7 @@ publisher:
 #
 
 dependencies:
-  hl7.fhir.cl.clcore: 1.8.4
+  hl7.fhir.cl.clcore: 1.8.5
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
@@ -58,8 +58,7 @@ pages:
     title: Objetivos
   casos.md:
     title: Casos de uso
-  operaciones.md:
-    title: Operaciones
+ 
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
@@ -68,7 +67,6 @@ menu:
   Inicio: index.html
   Objetivos: Alcances-Objetivos.html
   Actores y Casos de Uso: casos.html
-  Operaciones y Terminologías: operaciones.html
   Resumen de Artefactos:
     Artefactos: artifacts.html
 #  Perfiles:

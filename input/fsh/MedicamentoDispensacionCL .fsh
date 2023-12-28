@@ -4,6 +4,10 @@ Id:             DispensacionMedicamentoCl
 Title:          "CL Dispensación"
 Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso del Sistema Nacional de Receta Electrónica desde la visión de la TFC que se utilizará para poder manejar fármacos que cuentan con autorización de comercialización en el país, los cuales deberán ser consultados por los prestadores a la hora de prescribir alguno o mantener una base local actualizada."
 
+* ^version = "0.9.8"
+* ^status = #active
+* ^publisher = "MINSAL Chile"
+
 * dosageInstruction MS
   * sequence and text and patientInstruction and asNeededBoolean MS
   * timing MS
@@ -140,13 +144,17 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * dosageInstruction.doseAndRate ^short = "Definición de la cantidad de fármaco a consumir por uso indicado"
 * dosageInstruction.doseAndRate ^definition = "Cantidad de los medicamentos a administrar"
 
-* dosageInstruction.doseAndRate.dose[x] only SimpleQuantityCL or RangeCL
-* dosageInstruction.doseAndRate.dose[x] ^short = "Definición de Cantidad Simple o Rango"
 * dosageInstruction.doseAndRate.dose[x] MS
+
+* dosageInstruction.doseAndRate.dose[x] ^short = "Definición de Cantidad Simple o Rango"
+* dosageInstruction.doseAndRate.dose[x] only RangeCL or SimpleQuantityCL
 * dosageInstruction.doseAndRate.dose[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
 * dosageInstruction.doseAndRate.dose[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * dosageInstruction.doseAndRate.dose[x] ^type[=].extension.valueBoolean = true
+
+
+
 * dosageInstruction.method MS
 * dosageInstruction.method ^short = "Forma exacta en la que el fármaco ingresa al organismo"
 * dosageInstruction.method ^definition = "Forma exacta en la que el fármaco ingresa al organismo. En este caso se define la ruta plausible para vías de administración"

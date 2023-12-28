@@ -1,12 +1,15 @@
-/*
+
 Instance: Ejemplo1-prescipcion
-InstanceOf: PrescripcionRecetaCL2
+InstanceOf: PrescripcionRecetaCL
+Description: "Prescripción de medicamento con nombre comercial agregado"
 Usage: #example
 * status = #active
 * intent = #order
-* subject = Reference(Patient/Paciente1) "María Carmen de los Angeles Del río"
-* medicationReference = Reference(Medication/1654171000167115) "diclofenaco sódico 50 mg supositorio"
-* requester = Reference(Practitioner/3309267) "Maria Carmen De los angeles Del rio Gonzalez"
+* extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/ProdComercial"
+* extension.valueReference = Reference(Medicamento1)
+* subject = Reference(Paciente1) 
+* medicationReference = Reference(Medicamento2) "VALSARTAN-HIDROCLOROTIAZIDA"
+* requester = Reference(Prestador1) 
 * groupIdentifier.value = "7f5b95f78a375236d71f"
 * dosageInstruction.text = "Administrar 1 Supositorio cada 12 horas por 5 días"
 * dosageInstruction.sequence = 1
@@ -27,13 +30,14 @@ http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "comm
 
 
 Instance: Ejemplo2-prescipcion
-InstanceOf: PrescripcionRecetaCL2
+InstanceOf: PrescripcionRecetaCL
+Description: "Prescripción de medicamento genérico"
 Usage: #example
 * status = #active
 * intent = #order
-* subject = Reference(Patient/Paciente1) "María Carmen de los Angeles Del río"
-* medicationReference = Reference(Medication/1690341000167110) "prednisona 20 mg comprimido"
-* requester = Reference(Practitioner/3309267) "Maria Carmen De los angeles Del rio Gonzalez"
+* subject = Reference(Paciente1) 
+* medicationReference = Reference(Medicamento3) "prednisona 20 mg comprimido"
+* requester = Reference(Prestador1) 
 * groupIdentifier.value = "47g7a524age7b5a2cf0a"
 * dosageInstruction.text = "Administrar 1 Comprimido cada 4 horas por 24 horas"
 * dosageInstruction.sequence = 1
@@ -46,7 +50,7 @@ Usage: #example
 * dosageInstruction.doseAndRate.doseQuantity = 1 https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial#comprimido "Comprimido"
 * dispenseRequest.validityPeriod.start = "2022-08-19"
 * dispenseRequest.validityPeriod.end = "2022-08-20"
-* dispenseRequest.performer = Reference(Organization/8qj5s1ostjswt3r95vnv) "Centro de Salud Familiar Juan Pablo II (La Serena)"
+* dispenseRequest.performer = Reference(Organizacion1) "Centro de Salud Familiar Juan Pablo II (La Serena)"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#outpatient "Outpatient"
 * courseOfTherapyType = CSCodificacionPatron#seasonal "Por temporada"
 * identifier.type = CSTipoPrescripcion#Id_Local "Id_Local"
@@ -57,12 +61,13 @@ Usage: #example
 
 Instance: Ejemplo3-prescipcion
 InstanceOf: PrescripcionRecetaCL
+Description: "Prescripción de medicamento genérico, con dosage simple"
 Usage: #example
 * status = #active
 * intent = #order
-* subject = Reference(Patient/Paciente1) "María Carmen de los Angeles Del río"
-* medicationReference = Reference(Medication/1683511000167113) "ácido alendrónico 70 mg comprimido y carbonato de calcio 1289 mg (calcio 500 mg) + colecalciferol 400 UI comprimido"
-* requester = Reference(Practitioner/3309267) "Maria Carmen De los angeles Del rio Gonzalez"
+* subject = Reference(Paciente1) 
+* medicationReference = Reference(Medicamento3) 
+* requester = Reference(Prestador1) 
 * groupIdentifier.value = "51c6bcc8ga342820c9b9"
 * dosageInstruction.text = "Administrar 1 Comprimido cada 1 semana por 1 año. Administrar el día Lunes"
 * dosageInstruction.sequence = 1
@@ -78,11 +83,11 @@ Usage: #example
 * dispenseRequest.validityPeriod.end = "2023-08-20"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "community"
 * courseOfTherapyType = CSCodificacionPatron#continuous "Terapia continua a largo plazo"
-//* extension[ProdComercial].url = "https://rme.hl7chile.cl/StructureDefinition/ProdComercial"
-////* extension[ProdComercial].valueReference = Reference(Medication/1973011000167111)
+
 * note.text = "Consumir a primera hora de la mañana, con el estómago vacío. Alimento luego de 1 hora de tomar el medicamento"
 
 
+/*
 Instance: Ejemplo4-prescipcion
 InstanceOf: PrescripcionRecetaCL
 Usage: #example
@@ -131,8 +136,7 @@ Usage: #example
 * dispenseRequest.validityPeriod.end = "2022-08-26"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#inpatient "Inpatient"
 * courseOfTherapyType = CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
-////* extension[ProdComercial].url = "https://rme.hl7chile.cl/StructureDefinition/ProdComercial"
-////* extension[ProdComercial].valueReference = Reference(Medication/2034051000167119) "insulatard suspensión inyectable (Novo Nordisk)"
+
 * note.text = "Administrar la cantidad según resultado de glucosa en sangre"
 
 Instance: Ejemplo6-prescipcion
@@ -157,8 +161,8 @@ Usage: #example
 * dispenseRequest.validityPeriod.end = "2023-08-19"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "community"
 * courseOfTherapyType = CSCodificacionPatron#continuous "Terapia continua a largo plazo"
-//* extension[ProdComercial].url = "https://rme.hl7chile.cl/StructureDefinition/ProdComercial"
-////* extension[ProdComercial].valueReference = Reference(Medication/1965501000167112) "enalten 10 mg comprimido (Saval)"
+* extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/ProdComercial"
+* extension.valueReference = Reference(Medication/1965501000167112) "enalten 10 mg comprimido (Saval)"
 
 Instance: Ejemplo7-prescipcion
 InstanceOf: PrescripcionRecetaCL
@@ -182,8 +186,7 @@ Usage: #example
 * dispenseRequest.validityPeriod.end = "2023-08-19"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "community"
 * courseOfTherapyType = CSCodificacionPatron#continuous "Terapia continua a largo plazo"
-//* extension[ProdComercial].url = "https://rme.hl7chile.cl/StructureDefinition/ProdComercial"
-////* extension[ProdComercial].valueReference = Reference(Medication/2034171000167114) "hidroronol T comprimido (ITF - Labomed)"
+
 * note.text = "Tomar en las mañanas"
 
 
@@ -212,8 +215,7 @@ Usage: #example
 * dispenseRequest.validityPeriod.end = "2022-09-18"
 * category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#community "community"
 * courseOfTherapyType = CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
-//* extension[ProdComercial].url = "https://rme.hl7chile.cl/StructureDefinition/ProdComercial"
-////* extension[ProdComercial].valueReference = "Medication/1976661000167112"
+
 * note.text = "Tomar según intensidad del dolor"
 
 */

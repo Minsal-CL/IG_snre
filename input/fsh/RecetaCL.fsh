@@ -4,6 +4,10 @@ Id:             RecetaCl
 Title:          "CL Receta"
 Description:    "Este Perfil utiliza este recurso como un contenedor de Prescripciones, de tal forma de poder ser utilizado como formato de Receta electrónica con los fármacos indicados por el clínico durante un acto de indicación farmacológica."
 
+* ^version = "0.9.8"
+* ^status = #active
+* ^publisher = "MINSAL Chile"
+
 * groupIdentifier MS
   * value MS
 * status and intent and subject MS
@@ -34,7 +38,7 @@ Description:    "Este Perfil utiliza este recurso como un contenedor de Prescrip
 * basedOn ^comment = "Campo el cual se debe agregar la referencia hacia los medicamentos que se incluyen en esta receta. Con medicamentos incluidos, se hace refencia a los medicamentos agregados dentro del elemento \"contained\""
 * basedOn ^short = "Referencia a las prescipciones que contiene la receta"
 * basedOn 0..* MS
-* basedOn only Reference(PrescripcionRecetaCL2)
+* basedOn only Reference(PrescripcionRecetaCL)
 
 
 

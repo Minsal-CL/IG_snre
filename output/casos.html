@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Casos de uso - Sistema Nacional de receta electronica v0.9.5</title>
+    <title>Casos de uso - Sistema Nacional de receta electronica v0.9.8</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -65,7 +65,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Sistema Nacional de receta electronica</span>
             <br/>
-            <span style="display:inline-block;">0.9.5 - draft
+            <span style="display:inline-block;">0.9.8 - draft
 
 
 
@@ -104,9 +104,6 @@
   </li>
   <li>
     <a href="casos.html">Actores y Casos de Uso</a>
-  </li>
-  <li>
-    <a href="operaciones.html">Operaciones y Terminologías</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Resumen de Artefactos
@@ -150,7 +147,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Sistema Nacional de receta electronica - Local Development build (v0.9.5). See the <a href="https://interoperabilidad.minsal.cl/fhir/ig/snre/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Sistema Nacional de receta electronica - Local Development build (v0.9.8) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interoperabilidad.minsal.cl/fhir/ig/snre/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Casos de uso</h2>
   
 
@@ -213,6 +210,26 @@ En la actualidad, el SNRE se implementa mediante la generación de una Receta po
   <p>Diagrama de Secuencias para Prescripción</p>
 </div>
 
+<h4 id="operaciones">Operaciones</h4>
+
+<p>La consulta por un la existencia de un registro de paciente se hacer por medio de una búsqueda paramétrica donde la mas recurente será la consulta por medio de identificación la cual puede ser el número RUN</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [URL_Base]/Patient?identifier=[id_Paciente]
+</code></pre></div></div>
+<p><br /></p>
+
+<p>En caso de no existir ficha del paciente se debe crear una:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST  [URL_Base]/Patient
+</code></pre></div></div>
+<p><br /></p>
+
+<p>El envío de la receta se hace por medio de la operación <strong>POST</strong>, sobre el recurso <em>RequestGroup</em>. Considerar que el recurso debe <em>contener</em> los recursos <em>MedicationRequest</em> en donde cada elemento <em>groupIdentifier</em> debe tener el mismo valor.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST [URL_Base]/RequestGroup/
+</code></pre></div></div>
+<p><br /></p>
+
 <h3 id="caso-de-uso-2-dispensación">Caso de Uso 2: Dispensación</h3>
 
 <p>Este caso describe la secuencia de mensajes que ocurre cuando se procede a dispensar o rechazar la dispensación de uno o varios medicamentos de una misma receta. El proceso comienza cuando en el lugar de dispensación se solicita la información de la receta. Esta solicitud puede realizarse de dos maneras: digitando o escaneando el código de barras que contiene el valor del “groupIdentifier”. Este último valor se genera tanto en el agrupador como en las prescripciones individuales al momento de crear la receta.</p>
@@ -246,6 +263,22 @@ En la actualidad, el SNRE se implementa mediante la generación de una Receta po
   <img src="DS_Dispen.png" /> 
   <p>Diagrama de Secuencias para Dispensación</p>
 </div>
+
+<p><br /></p>
+
+<h4 id="operaciones-1">Operaciones</h4>
+
+<p>El Dispensador obtendrá de la receta el número asociado a al valor en <em>groupIdentifier</em>. La operación de consulta, por tanto será por medio de <strong>GET</strong> y la búsqueda paramétrica <em>group-identifier</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [URL_Base]/RequestGroup?group-identifier=[groupIdentifier_valor]
+</code></pre></div></div>
+<p><br /></p>
+
+<p>La notificación de dispensación se hace por medio de un <strong>POST</strong> al servidor del recurso <em>MedicationDispense</em> en donde se registran los cambios de estado y eventualmente los cambios de medicamento de sus instrucciones de dosage.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST [URL_Base]/MedicationDispense
+</code></pre></div></div>
+
 <h3 id="caso-de-uso-3-cambio-de-estado-prescripciones-recetadas">Caso de Uso 3: Cambio de Estado Prescripciones Recetadas</h3>
 <p>Este caso nos presenta la capacidad de realizar cambios en una prescripción tanto desde el sistema del Prescriptor como desde el sistema del Dispensador. Estos cambios obedecen a diferentes razones y se manifiestan como una actualización de las Prescripciones generadas durante el acto clínico con el paciente.
 Estos cambios se reducen a los siguientes:</p>
@@ -261,8 +294,9 @@ Estos cambios se reducen a los siguientes:</p>
 <br /></li>
 </ul>
 
-<p><em>Nota:</em> En todos los casos se debe justificar la razón del cambio de estado, lo cual es factible mediante ciertos parámetros del recurso <strong>MedicationRequest</strong>
-<br /></p>
+<p><em>Nota:</em> En todos los casos se debe justificar la razón del cambio de estado, lo cual es factible mediante ciertos parámetros del recurso <strong>MedicationRequest</strong></p>
+
+<p><br /></p>
 
 <ul>
   <li>
@@ -315,6 +349,23 @@ Estos cambios se reducen a los siguientes:</p>
   <p>Diagrama de Secuencias para Cambios en Prescripciones</p>
 </div>
 
+<p><br /></p>
+
+<h4 id="operaciones-2">Operaciones</h4>
+
+<p>Para modificar una receta desde el <strong>Prescriptor</strong> se debe tener en consideración que las recetas deben ser previamente leídas por el sistema</p>
+
+<p>La modificación se sugiere hacer por medio de la operación <strong>PUT</strong>, debido a que la implementación de <strong>PATCH</strong>, no necesariamente se puede encontrar disponible. Se considera para este caso armar el recurso <em>RequestGroup</em> completo con las modificaciones a realizar para luego actualizar:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PUT [URL_Base]/RequestGroup/[id]
+</code></pre></div></div>
+<p><br /></p>
+
+<p>En caso de ser una actualización desde el dispensador, esta se deberá hacer sobre el <em>MedicationDispense</em>. a modificación se sugiere hacer por medio de la operación <strong>PUT</strong>, debido a que la implementación de <strong>PATCH</strong>, no necesariamente se puede encontrar disponible. Se considera para este caso armar el recurso <em>MedicationDispense</em> completo con las modificaciones a realizar para luego actualizar:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PUT [URL_Base]/MedicationDispense/[id]
+</code></pre></div></div>
+
 
 
 
@@ -340,7 +391,7 @@ Estos cambios se reducen a los siguientes:</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.snre#0.9.5 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 3, 2023 17:06-0300">2023-11-03</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.snre#0.9.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 28, 2023 18:47-0300">2023-12-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

@@ -2,7 +2,12 @@ Extension: ProdComercial
 Id: ProdComercial
 Title: "Identificación de un medicamento bajo su marca comercial"
 Description: "Indicación de un Medicamento bajo su Marca Comercial"
-
+Context: PrescripcionRecetaCL
+* ^version = "0.9.8"
+* ^status = #active
+* ^publisher = "MINSAL Chile"
+* ^context[0].type = #element
+* ^context[=].expression = "PrescripcionRecetaCL"
 // * extension 0..0
 * value[x] only Reference
 //* valueReference = Reference()

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - Sistema Nacional de receta electronica v0.9.5</title>
+    <title>Artifacts Summary - Sistema Nacional de receta electronica v0.9.8</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5"}
-    h3,h4,h5,h6{--heading-prefix:"5.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -65,7 +65,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Sistema Nacional de receta electronica</span>
             <br/>
-            <span style="display:inline-block;">0.9.5 - draft
+            <span style="display:inline-block;">0.9.8 - draft
 
 
 
@@ -104,9 +104,6 @@
   </li>
   <li>
     <a href="casos.html">Actores y Casos de Uso</a>
-  </li>
-  <li>
-    <a href="operaciones.html">Operaciones y Terminologías</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Resumen de Artefactos
@@ -150,7 +147,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Sistema Nacional de receta electronica - Local Development build (v0.9.5). See the <a href="https://interoperabilidad.minsal.cl/fhir/ig/snre/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Sistema Nacional de receta electronica - Local Development build (v0.9.8) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interoperabilidad.minsal.cl/fhir/ig/snre/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -175,6 +172,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </li>
       <li>
          <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -432,6 +432,123 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
+   <a name="6"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-ORG1.html" title="Organization/ORG1">Ejemplo Organización Prestadora de Salud</a>
+            </td>
+            <td>
+<p>CESFAM Rio Bueno (Ficticio) con ID DEIS no real</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-Loc1.html" title="Location/Loc1">Ejemplo de  Localización Farmacia</a>
+            </td>
+            <td>
+<p>Ejemplo de la localización relacionada con una Farmacia específica ubicada en la comuna de Viña del Mar</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-Medicamento3.html" title="Medication/Medicamento3">Ejemplo de Recurso Medicamento</a>
+            </td>
+            <td>
+<p>Medicamento ficticio</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-Paciente1.html" title="Patient/Paciente1">Ejemplo de Recurso Paciente Nacional</a>
+            </td>
+            <td>
+<p>Paciente de referencia basado en la Core-CL</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-Prestador1.html" title="Practitioner/Prestador1">Ejemplo de Recurso Prestador como base para un Core Nacional</a>
+            </td>
+            <td>
+<p>Ejemplo de un Prestador no Real con identificadores en Systemas con API”s no disponibles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-Medicamento1.html" title="Medication/Medicamento1">Ejemplo de comprimido Tareg - D 160</a>
+            </td>
+            <td>
+<p>Medicamento comprimido Tareg -D160 referemciado como medicamento en la TFC, considerando el de 25 comprimidos</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationDispense-Ejemplo1-Dispensacion.html"
+                  title="MedicationDispense/Ejemplo1-Dispensacion">Ejemplo1-Dispensacion</a>
+            </td>
+            <td>
+<p>Dispensación de medicamento comercial</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RequestGroup-Receta1.html" title="RequestGroup/Receta1">Ejemplo1-Receta</a>
+            </td>
+            <td>
+<p>Ejemplo de una receta con un fármaco</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-Ejemplo1-prescipcion.html"
+                  title="MedicationRequest/Ejemplo1-prescipcion">Ejemplo1-prescipcion</a>
+            </td>
+            <td>
+<p>Prescripción de medicamento con nombre comercial agregado</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationDispense-Ejemplo2-Dispensacion.html"
+                  title="MedicationDispense/Ejemplo2-Dispensacion">Ejemplo2-Dispensacion</a>
+            </td>
+            <td>
+<p>Dispensación de medicamento Lab Chile con rango indicado</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-Ejemplo2-prescipcion.html"
+                  title="MedicationRequest/Ejemplo2-prescipcion">Ejemplo2-prescipcion</a>
+            </td>
+            <td>
+<p>Prescripción de medicamento genérico</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-Ejemplo3-prescipcion.html"
+                  title="MedicationRequest/Ejemplo3-prescipcion">Ejemplo3-prescipcion</a>
+            </td>
+            <td>
+<p>Prescripción de medicamento genérico, con dosage simple</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-Medicamento2.html" title="Medication/Medicamento2">Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido</a>
+            </td>
+            <td>
+<p>Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
 </div>
 
 </div>
@@ -456,7 +573,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.snre#0.9.5 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 3, 2023 17:06-0300">2023-11-03</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.snre#0.9.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 28, 2023 18:47-0300">2023-12-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

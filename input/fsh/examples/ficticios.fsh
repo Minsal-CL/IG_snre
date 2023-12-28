@@ -1,231 +1,287 @@
-/*
-Instance: PresciptorEjemplo1
-InstanceOf: Practitioner
-Title : "Ejemplo de Recurso Presciptor"
-Description: "Presciptor ficticio"
-Usage: #example
-* id = "Prescriptor1"
-* active = true
-* name.family = "SOTO"
-* name.given = "NICOLÁS ALEXIS"
 
-Instance: PresciptorEjemplo2
-InstanceOf: Practitioner
-Title : "Ejemplo de Recurso Presciptor"
-Description: "Presciptor ficticio"
-Usage: #example
-* id = "3309267"
-* active = true
-* name.family = "Del rio Gonzalez"
-* name.given = "Maria Carmen De los angeles"
+Instance : Paciente1
+Title : "Ejemplo de Recurso Paciente Nacional"
+Description: "Paciente de referencia basado en la Core-CL"
+InstanceOf : CorePacienteCl
+Usage : #example
 
-Instance: PacienteEjemplo1
-InstanceOf: Patient
-Title : "Ejemplo de Recurso Paciente"
-Description: "Paciente ficticio"
-Usage: #example
 * id = "Paciente1"
+//Identificación por Cédula Chilena
+* identifier.use = #official    //obligado
+* identifier.type.extension[paises].valueCodeableConcept.coding.system =  "urn:iso:std:iso:3166"
+* identifier.type.extension[paises].valueCodeableConcept.coding.code = #152
+* identifier.type.extension[paises].valueCodeableConcept.coding.display = "Chile"
+* identifier.type.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI"
+* identifier.type.coding.code = #NNCHL
+* identifier.type.coding.display = "Chile"
+
+* identifier.system = "http://regcivil.cl/Validacion/RUN"
+* identifier.value = "15.236.327-k"
+
+//registro de paciente activo
 * active = true
-* name.family = "Del Rio"
-* name.given = "María Carmen de los Angeles"
 
-Instance: MedicamentoEjemplo1
-InstanceOf: Medication
-Title : "Ejemplo de Recurso Medicamento"
-Description: "Medicamento ficticio"
-Usage: #example
-* id = "2148351000167115"
+//Nombre Oficial
+* name[NombreOficial].use = #official
+* name[NombreOficial].family = "Vader"
+* name[NombreOficial].family.extension[mothers-family].valueString	 = "Organa" //uso de la extensión
+* name[NombreOficial].given[0] = "Marietta"
+* name[NombreOficial].given[+] = "María"
+* name[NombreOficial].given[+] = "Ximena"
 
-Instance: MedicamentoEjemplo2
-InstanceOf: Medication
-Title : "Ejemplo de Recurso Medicamento"
-Description: "Medicamento ficticio"
-Usage: #example
-* id = "2184971000167114"
+//nombre social
+* name[NombreSocial].use = #usual
+* name[NombreSocial].given = "Xime"
 
-Instance: MedicamentoEjemplo3
-InstanceOf: Medication
-Title : "Ejemplo de Recurso Medicamento"
-Description: "Medicamento ficticio"
-Usage: #example
-* id = "2210431000167113"
+//dos contactos, un celular y un email
+* telecom.system = #phone
+* telecom.use = #mobile
+* telecom.value = "943561833"
 
-Instance: MedicamentoEjemplo4
-InstanceOf: Medication
-Title : "Ejemplo de Recurso Medicamento"
-Description: "Medicamento ficticio"
-Usage: #example
-* id = "2196531000167114"
+* telecom[1].system = #email
+* telecom[1].use = #work
+* telecom[1].value = "mariRosal@mimail.com"
 
-Instance: MedicamentoEjemplo5
-InstanceOf: Medication
-Title : "Ejemplo de Recurso Medicamento"
-Description: "Medicamento ficticio"
-Usage: #example
-* id = "1683511000167113"
+//sexo registrado al nacer y fecha de nacimiento
+* gender = #female
+* birthDate = "1983-03-24"
 
-Instance: MedicamentoEjemplo6
-InstanceOf: Medication
-Title : "Ejemplo de Recurso Medicamento"
-Description: "Medicamento ficticio"
-Usage: #example
-* id = "1667301000167110"
+// Una sola dirección
+* address.use = #home
+* address.line = "Av Los Chirimoyos, 32, casa 4"
 
-Instance: MedicamentoEjemplo7
-InstanceOf: Medication
-Title : "Ejemplo de Recurso Medicamento"
-Description: "Medicamento ficticio"
-Usage: #example
-* id = "1667701000167114"
 
-Instance: MedicamentoEjemplo8
-InstanceOf: Medication
-Title : "Ejemplo de Recurso Medicamento"
-Description: "Medicamento ficticio"
-Usage: #example
-* id = "1690341000167110"
+* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.code = #05602
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.display =  "Algarrobo"
 
-Instance: MedicamentoEjemplo9
-InstanceOf: Medication
-Title : "Ejemplo de Recurso Medicamento"
-Description: "Medicamento ficticio"
-Usage: #example
-* id = "1973011000167111"
+* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl"
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL" 
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.code = #056 
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.display = "San Antonio"
 
-Instance: MedicamentoEjemplo10
-InstanceOf: Medication
-Title : "Ejemplo de Recurso Medicamento"
-Description: "Medicamento ficticio"
-Usage: #example
-* id = "2116751000167113"
+* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl"
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL" 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #05 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Valparaíso"
 
-Instance: MedicamentoEjemplo11
-InstanceOf: Medication
-Title : "Ejemplo de Recurso Medicamento"
-Description: "Medicamento ficticio"
-Usage: #example
-* id = "1654171000167115"
 
-Instance: MedicamentoEjemplo12
-InstanceOf: Medication
-Title : "Ejemplo de Recurso Medicamento"
-Description: "Medicamento ficticio"
-Usage: #example
-* id = "2034051000167119"
 
-Instance: MedicamentoEjemplo13
-InstanceOf: Medication
-Title : "Ejemplo de Recurso Medicamento"
-Description: "Medicamento ficticio"
-Usage: #example
-* id = "1965501000167112"
+* contact.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdContacto"
 
-Instance: MedicamentoEjemplo14
-InstanceOf: Medication
-Title : "Ejemplo de Recurso Medicamento"
-Description: "Medicamento ficticio"
-Usage: #example
-* id = "1669781000167113"
+* contact.extension.extension[0].url = "tutId"
+* contact.extension.extension[=].valueIdentifier.type = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI#NNCHL "Chile"
+* contact.extension.extension[=].valueIdentifier.system = "http://regcivil.cl/Validacion/RUN"
+* contact.extension.extension[=].valueIdentifier.value = "8987321-7"
 
-Instance: MedicamentoEjemplo15
-InstanceOf: Medication
-Title : "Ejemplo de Recurso Medicamento"
-Description: "Medicamento ficticio"
-Usage: #example
-* id = "2034171000167114"
 
-Instance: MedicamentoEjemplo16
-InstanceOf: Medication
-Title : "Ejemplo de Recurso Medicamento"
-Description: "Medicamento ficticio"
-Usage: #example
-* id = "1667741000167112"
 
-Instance: MedicamentoEjemplo17
-InstanceOf: Medication
-Title : "Ejemplo de Recurso Medicamento"
-Description: "Medicamento ficticio"
-Usage: #example
-* id = "1976661000167112"
+* contact.relationship = http://terminology.hl7.org/CodeSystem/v2-0131#N "Next-of-Kin"
+* contact.name.use = #official
+* contact.name.family = "Calleja"
+* contact.name.family.extension.url = "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family"
+* contact.name.family.extension.valueString = "Morales"
+* contact.name.given[0] = "Juana"
+* contact.name.given[+] = "Josefa"
 
-Instance: MedicamentoEjemplo18
-InstanceOf: Medication
-Title : "Ejemplo de Recurso Medicamento"
-Description: "Medicamento ficticio"
-Usage: #example
-* id = "1668191000167115"
+* communication.language.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje"
+* communication.language.coding.code = #es-CL "Spanish"
+* communication.language.coding.display = "Spanish"
 
-Instance: LocalEjemplo1
-InstanceOf: Location
-Title : "Ejemplo de Recurso Local"
-Description: "Local ficticio"
-Usage: #example
-* id = "tqo6krppa0gbygu2kkud"
-* name = "SALCOBRAND - Local: 73"
 
-Instance: PrescripcionEjemplo1
-InstanceOf: MedicationRequest
-Title : "Ejemplo de Recurso Prescripcion"
-Description: "Prescripcion ficticio"
-Usage: #example
-* id = "bzm9efcieni3j191tpqr"
+Instance : Loc1
+Title : "Ejemplo de  Localización Farmacia"
+Description: "Ejemplo de la localización relacionada con una Farmacia específica ubicada en la comuna de Viña del Mar"
+InstanceOf : CoreLocalizacionCl
+
+* id = "Loc1"
+* identifier.value = "23144561"
+* identifier.system = "http://miderfarm.cl/validador_id"
+* status = #active
+* name = "Gran Farmacia Gran"
+* alias = "La gran"
+
+* type.coding.code = #PHARM
+* type.coding.system = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+* type.coding.display = "Pharmacy"
+
+* telecom.system = #phone
+* telecom.value = "(+56) 234221678"
+* telecom.use = #work
+
+
+* position.longitude = 42.2565
+* position.latitude = -71.550261
+
+* managingOrganization.reference = "Organization/ORG1"
+
+* hoursOfOperation.daysOfWeek = #mon
+* hoursOfOperation.daysOfWeek = #tue
+* hoursOfOperation.daysOfWeek = #wed
+* hoursOfOperation.daysOfWeek = #thu
+* hoursOfOperation.daysOfWeek = #fri
+* hoursOfOperation.daysOfWeek = #sat
+* hoursOfOperation.allDay = false
+* hoursOfOperation.openingTime = 09:00:00
+* hoursOfOperation.openingTime = 19:00:00
+
+Instance: PrescipcionEj
+InstanceOf: PrescripcionRecetaCL
+Usage: #inline
 * status = #active
 * intent = #order
-* subject = Reference(Patient/Paciente1)
-* medicationReference = Reference(Medication/2210431000167113)
+* subject = Reference(Paciente1) 
+* medicationReference = Reference(Medicamento2) "clonazepam 0,5 mg comprimido"
+* requester = Reference(Prestador1) 
+* groupIdentifier.value = "7f5b95f78a375236d71f"
+* dosageInstruction.text = "Administrar 1 Comprimido cada 12 horas por 30 días"
+* dosageInstruction.sequence = 1
+* dosageInstruction.timing.repeat.period = 12
+* dosageInstruction.timing.repeat.frequency = 1
+* dosageInstruction.timing.repeat.periodUnit = #h
+* dosageInstruction.timing.repeat.boundsDuration = 30 'd'
+* dosageInstruction.route = CSViasAdmin#26643006 "vía Oral route (calificador)"
+* dosageInstruction.method = CSMetodos#738995006 "Tragar (método de administración)"
+* dosageInstruction.doseAndRate.doseQuantity = 1 https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial#comprimido "Comprimido"
+* dispenseRequest.validityPeriod.start = "2022-08-19"
+* dispenseRequest.validityPeriod.end = "2022-09-18"
+* dispenseRequest.quantity.value = 60
+* category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#discharge "Discharge"
+* courseOfTherapyType = CSCodificacionPatron#acute "Terapia a corto plazo (aguda)"
+ 
 
-Instance: PrescripcionEjemplo2
-InstanceOf: MedicationRequest
-Title : "Ejemplo de Recurso Prescripcion"
-Description: "Prescripcion ficticio"
+Instance : Prestador1
+Title : "Ejemplo de Recurso Prestador como base para un Core Nacional"
+Description: "Ejemplo de un Prestador no Real con identificadores en Systemas con API\"s no disponibles"
+InstanceOf : CorePrestadorCl
+
+* id = "Prestador1"	
+ 
+//Identificación por Cédula Chilena
+* identifier[run].use = #official    //obligado
+//* identifier[RUN].system = "https://api.minsal.cl/v1/personas/datos/basicos/run"
+* identifier[run].value = "8336277-3" // endPoint definido por perfil
+* identifier[run].system = "http://registrocivil.cl/run"
+
+//registro de prestador activo
+* active = true
+//Nombre Prestador
+* name.use = #official
+* name.family = "Esparta"
+* name.given = "Leonidas"
+* name.given[1] = "Rey"
+
+
+//dos contactos, un celular y un email
+
+* telecom.system = #phone
+* telecom.use = #mobile
+* telecom.value = "9345666"
+
+* telecom[1].system = #email
+* telecom[1].use = #work
+* telecom[1].value = "Leonidas300@mimail.com"
+
+//sexo registrado al nacer y fecha de nacimiento
+* gender = #male
+* birthDate = "1974-08-12"
+
+
+
+* qualification[Cert].identifier.value = "cert"
+* qualification[Cert].code.coding.system = "https://api.minsal.cl/v1/catalogos/profesiones/"
+* qualification[Cert].code.coding.code = #2112  // endPoint definido por perfil
+* qualification[Cert].code.coding.display = "Certificado Profesional Médico Cirujano" //codigo de título profesional Universitario
+* qualification[Cert].code.text = "Certificado(s)"
+
+* qualification[Esp][0].identifier.value = "esp"
+* qualification[Esp][0].code.coding.system = "https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"
+* qualification[Esp][0].code.coding.code = #122  // endPoint definido por perfil
+* qualification[Esp][0].code.coding.display = "Cardiólogia"
+* qualification[Esp][0].code.text = "Especialidad(es)" 
+
+* qualification[Esp][+].identifier.value = "esp"
+* qualification[Esp][=].code.coding.system = "https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"
+* qualification[Esp][=].code.coding.code = #1234  // endPoint definido por perfil
+* qualification[Esp][=].code.coding.display = "Medicina interna"
+* qualification[Esp][=].code.text = "Especialidad(es)" 
+
+
+
+Instance : Medicamento1
+Title : "Ejemplo de comprimido Tareg - D 160"
+Description: "Medicamento comprimido Tareg -D160 referemciado como medicamento en la TFC, considerando el de 25 comprimidos"
+InstanceOf : CoreMedicamentoCl
+
+* id = "Medicamento1"	
+* identifier[DescripcionId].use = #official
+* identifier[DescripcionId].system = "http://minsal.cl/semantikos/description-id"
+* identifier[DescripcionId].value = "1991971000167110"
+
+* identifier[ConceptId].use = #official
+* identifier[ConceptId].system = "http://minsal.cl/semantikos/concept-id"
+* identifier[ConceptId].value = "840851000167103"
+
+* code.text = "Tareg - D 160 / 25 comprimido recubierto (Novartis)"
+* code.coding.system = "http://minsal.cl/semantikos/description-id"
+* code.coding.code = #1991971000167110  
+* code.coding.display = "Tareg - D 160 / 25 comprimido recubierto (Novartis)"
+
+
+
+Alias: $description-id = http://minsal.cl/semantikos/description-id
+
+Instance: Medicamento2
+Title : "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"
+Description: "Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC"
+InstanceOf: CoreMedicamentoCl
 Usage: #example
-* id = "wbpacdehcs1vyrae3l7m"
-* status = #active
-* intent = #order
-* subject = Reference(Patient/Paciente1)
-* medicationReference = Reference(Medication/2210431000167113)
 
+* id = "Medicamento2"
 
-Instance: PrescripcionEjemplo4
-InstanceOf: MedicationRequest
-Title : "Ejemplo de Recurso Prescripcion"
-Description: "Prescripcion ficticio"
+* identifier[DescripcionId].use = #official
+* identifier[DescripcionId].system = "http://minsal.cl/semantikos/description-id"
+* identifier[DescripcionId].value = "1703591000167111"
+* identifier[ConceptId].use = #official
+* identifier[ConceptId].system = "http://minsal.cl/semantikos/concept-id"
+* identifier[ConceptId].value = "696681000167108"
+* code.text = "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"
+* code = $description-id#1703591000167111 "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido" 
+
+Instance: Medicamento3
+InstanceOf: Medication
+Title : "Ejemplo de Recurso Medicamento"
+Description: "Medicamento ficticio"
 Usage: #example
-* id = "rf0er64j3bihpuasj041"
-* status = #active
-* intent = #order
-* subject = Reference(Patient/Paciente1)
-* medicationReference = Reference(Medication/2184971000167114)
+* id = "Medicamento3"
 
 
-Instance: PrescripcionEjemplo5
-InstanceOf: MedicationRequest
-Title : "Ejemplo de Recurso Prescripcion"
-Description: "Prescripcion ficticio"
-Usage: #example
-* id = "jtngw6tu5ftm8rf19whx"
-* status = #active
-* intent = #order
-* subject = Reference(Patient/Paciente1)
-* medicationReference = Reference(Medication/2210431000167113)
 
-Instance: PrescripcionEjemplo6
-InstanceOf: MedicationRequest
-Title : "Ejemplo de Recurso Prescripcion"
-Description: "Prescripcion ficticio"
-Usage: #example
-* id = "ilh8j9kaii5ye2vcqppm"
-* status = #active
-* intent = #order
-* subject = Reference(Patient/Paciente1)
-* medicationReference = Reference(Medication/2196531000167114)
+Instance : Organizacion1
+Title : "Ejemplo Organización Prestadora de Salud"
+Description: "CESFAM Rio Bueno (Ficticio) con ID DEIS no real"
+InstanceOf : CoreOrganizacionCl
+Usage : #example
 
-Instance: OrganizacionEjemplo6
-InstanceOf: Organization
-Title : "Ejemplo de Recurso Organizacion"
-Description: "Organizacion ficticio"
-Usage: #example
-* id = "8qj5s1ostjswt3r95vnv"
-* name = "Centro de Salud Familiar Juan Pablo II (La Serena)"
+	 
+* id = "ORG1"	
+* active = true
+* identifier.system = "http://minsal.cl/deis/codigodeis"
+* identifier.value = "1233"
 
-*/
+* name = "Centro de Salud Familiar Rio Bueno de Linares"	
+* alias = "Rio Bueno CESFAM"
+
+* telecom.system = #phone
+* telecom.use = #work
+* telecom.value = "45325775"
+	
+	
+
+* address.line = "Calle Central 33"
+* address.city = #07401  //codigo de comuna por binding (linares, no validable aun)
+* address.district = #074  //codigo de comuna por binding (linares, no validable aun)
+* address.state = #07 //codigo por binding region (maule)
+* address.country = #152	
+

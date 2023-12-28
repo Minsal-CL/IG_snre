@@ -23,9 +23,17 @@ Se generó un nuevo formato de guía en donde las paginas que se generan ahora s
 * Se modifico la estructura de algunos elementos MS del perfil Location
 * Se generó mejor texto de definición y comentarios en los perfiles 
 * Correcciones menores de formato
+* se agregaron las operaciones FHIR en los casos de uso
 
 ## Cambios en los ejemplos
 * Se ajustaron los ejemplos a los cambios generados en los perfiles. Esto en especial en el ejemplo del Pestador, del Paciente Nacional y de la Localización
+
+## Cambios Diciembre 2023
+
+* Se volvieron a colocar ejemplos para cada uno de los perfiles generados
+* Corrección nombre perfil Prescripción de "PrescripcionRecetaCl2" a "PrescripcionRecetaCL", y todas las referencias al nombre anterior
+* Se entrega "Context" a la extención ProdComercial
+* Se agrega versión y publicador a los perfiles
 
 # FHIR_Core_CH
 Es el Core Nacional de FHIR en una versión Preliminar 0.8, que se esta preparando para ballot
