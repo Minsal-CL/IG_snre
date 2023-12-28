@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1295ac44-0186-437a-b049-7366c45e144d"/>
+  <id value="0ca4528c-dca0-4261-8a7d-b8841e17b432"/>
   <meta>
-    <lastUpdated value="2023-12-28T18:47:13.082-03:00"/>
+    <lastUpdated value="2023-12-28T19:04:34.330-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -106,8 +106,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:defbf9a1-4b0d-45c2-9a56-c5049d51605e"/>
-          <timestamp value="2023-12-28T18:48:08-03:00"/>
+          <identifier value="urn:uuid:213f0b3e-e19d-4264-be5a-822265108ff8"/>
+          <timestamp value="2023-12-28T19:05:28-03:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -227,8 +227,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f9110424-7e8c-49e2-903c-6c0da41048c7"/>
-          <timestamp value="2023-12-28T18:48:08-03:00"/>
+          <identifier value="urn:uuid:e2f4a6de-7b52-47c0-a076-36048a2f64ea"/>
+          <timestamp value="2023-12-28T19:05:28-03:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -314,8 +314,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9705de56-f704-4bf3-aa0d-0ae093a0ca08"/>
-          <timestamp value="2023-12-28T18:48:08-03:00"/>
+          <identifier value="urn:uuid:c59dfb32-f530-4952-9347-1140db7c86b5"/>
+          <timestamp value="2023-12-28T19:05:28-03:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -492,8 +492,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6df455cd-983d-49ca-bd57-01a09aff5449"/>
-          <timestamp value="2023-12-28T18:48:08-03:00"/>
+          <identifier value="urn:uuid:5a321daa-e085-453f-9f6e-95230982bdc5"/>
+          <timestamp value="2023-12-28T19:05:28-03:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -901,8 +901,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a97224f8-5403-4b41-809c-dc4ed8621173"/>
-          <timestamp value="2023-12-28T18:48:08-03:00"/>
+          <identifier value="urn:uuid:13a32d3a-2460-4fc7-86f0-48fb4cb76f41"/>
+          <timestamp value="2023-12-28T19:05:28-03:00"/>
           <total value="20"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1256,8 +1256,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:457fbcfe-4743-4db6-bb5d-3ce228bfb073"/>
-          <timestamp value="2023-12-28T18:48:08-03:00"/>
+          <identifier value="urn:uuid:d279b105-e735-461c-8616-c1306f0be9b3"/>
+          <timestamp value="2023-12-28T19:05:29-03:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1406,8 +1406,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e806f7b0-1ad3-465c-880c-5bda91bc456a"/>
-          <timestamp value="2023-12-28T18:48:09-03:00"/>
+          <identifier value="urn:uuid:828fbabb-8a88-4ad2-9616-bae0de9638bd"/>
+          <timestamp value="2023-12-28T19:05:29-03:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1733,8 +1733,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3f4fe475-e6a6-4ad2-82d9-cadff63a6c1f"/>
-          <timestamp value="2023-12-28T18:48:09-03:00"/>
+          <identifier value="urn:uuid:f22374c7-8539-44ce-8ac5-5c3f13fd70af"/>
+          <timestamp value="2023-12-28T19:05:29-03:00"/>
           <total value="32"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2525,8 +2525,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d3e9b0b3-f0e5-4830-812e-6bd87d52712b"/>
-          <timestamp value="2023-12-28T18:48:09-03:00"/>
+          <identifier value="urn:uuid:df51dceb-6373-477c-9ddd-bbe5ad0c9444"/>
+          <timestamp value="2023-12-28T19:05:29-03:00"/>
           <total value="72"/>
           <parameter>
             <name value="excludeNested"/>

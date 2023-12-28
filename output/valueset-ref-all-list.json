@@ -245,9 +245,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-RecetaCl.html" : "CL Receta",
       "StructureDefinition-RecetaPrescripcionCl.html" : "CL Prescripción",
-      "StructureDefinition-DispensacionMedicamentoCl.html" : "CL Dispensación"
+      "StructureDefinition-DispensacionMedicamentoCl.html" : "CL Dispensación",
+      "StructureDefinition-RecetaCl.html" : "CL Receta"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -261,9 +261,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-RecetaCl.html" : "CL Receta",
       "StructureDefinition-RecetaPrescripcionCl.html" : "CL Prescripción",
-      "StructureDefinition-DispensacionMedicamentoCl.html" : "CL Dispensación"
+      "StructureDefinition-DispensacionMedicamentoCl.html" : "CL Dispensación",
+      "StructureDefinition-RecetaCl.html" : "CL Receta"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -277,9 +277,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-RecetaCl.html" : "CL Receta",
       "StructureDefinition-RecetaPrescripcionCl.html" : "CL Prescripción",
-      "StructureDefinition-DispensacionMedicamentoCl.html" : "CL Dispensación"
+      "StructureDefinition-DispensacionMedicamentoCl.html" : "CL Dispensación",
+      "StructureDefinition-RecetaCl.html" : "CL Receta"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
@@ -477,9 +477,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.59"],
       "uses" : {
       },
-      "StructureDefinition-SimpleQuantityCL.html" : "SimpleQuantity para el caso de Receta",
       "StructureDefinition-RecetaPrescripcionCl.html" : "CL Prescripción",
-      "StructureDefinition-DispensacionMedicamentoCl.html" : "CL Dispensación"
+      "StructureDefinition-DispensacionMedicamentoCl.html" : "CL Dispensación",
+      "StructureDefinition-SimpleQuantityCL.html" : "SimpleQuantity para el caso de Receta"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-intent",
@@ -507,8 +507,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.115"],
       "uses" : {
       },
-      "StructureDefinition-RecetaCl.html" : "CL Receta",
-      "StructureDefinition-RecetaPrescripcionCl.html" : "CL Prescripción"
+      "StructureDefinition-RecetaPrescripcionCl.html" : "CL Prescripción",
+      "StructureDefinition-RecetaCl.html" : "CL Receta"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-status",
@@ -536,9 +536,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-RecetaCl.html" : "CL Receta",
       "StructureDefinition-RecetaPrescripcionCl.html" : "CL Prescripción",
-      "StructureDefinition-DispensacionMedicamentoCl.html" : "CL Dispensación"
+      "StructureDefinition-DispensacionMedicamentoCl.html" : "CL Dispensación",
+      "StructureDefinition-RecetaCl.html" : "CL Receta"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/route-codes",

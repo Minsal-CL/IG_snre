@@ -26,7 +26,7 @@ Description:    "Este Perfil utiliza este recurso como un contenedor de Prescrip
 * intent ^definition = "Dado que la receta siempre sera creada para receta y enviada al repositorio Central entonces el estado se debe forzar a order"
 * intent = #order
 * intent ^comment = "Debe ser siempre order"
-* subject only Reference(Patient)
+* subject only Reference(PacienteCl)
 * subject 1..1
 * subject ^short = "Información acerca del paciente al cual se le ha indicado la receta"
 * subject.reference ^short = "Referencia al recurso del paciente al cual se le genera la receta"

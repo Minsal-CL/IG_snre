@@ -69,7 +69,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 * subject and subject.display and subject.reference MS
 * subject 1..1
-* subject only Reference (Patient)
+* subject only Reference (PacienteCl)
 * subject ^short = "Referencia al Paciente  \"https://api-receta.minsal.cl/v2/Patient\""
 * subject ^definition = "La referencia en este caso solo se hace sobre el paciente al cual se le receta el fármaco independiente que sea otra la persona que hace retiro de estos. Se usa el repositorio \"https://api-receta.minsal.cl/v2/patient\""
 * subject.display ^short = "Nombre del Paciente"
@@ -184,7 +184,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * performer[Dispensador].function.coding.code ^short = "Código del tipo de dispensador. El valor obligado es \"Dispensador\""
 * performer[Dispensador].function.coding.code ^definition = "Código del tipo de dispensador según tabla maestra. En este caso debe ser Dispensador"
 * performer[Dispensador].function.coding.code = #Dispensador
-* performer[Dispensador].actor only Reference(Practitioner)
+* performer[Dispensador].actor only Reference(PrestadorCL)
 * performer[Dispensador].actor ^short = "Identificación del individuo que realiza la dispensación. El EndPoint es \"https://api-receta.minsal.cl/v2/Practitioner\""
 * performer[Dispensador].actor.reference ^short = "La referencia del recurso especificado debe ser al EndPoint \"https://api-receta.minsal.cl/v2/Practitioner\""
 * performer[Dispensador].actor.reference ^definition = "La referencia del recurso especificado debe ser al EndPoint \"https://api-receta.minsal.cl/v2/Practitioner\". En el caso nacional el dispensador estaría dentro de los recucursos desarrollados para Prestadores"
@@ -200,7 +200,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * performer[Validador].function.coding.code ^definition = "Código de validador según tabla maestra. En este caso debe ser Validador"
 * performer[Validador].function.coding.code = #Validador
 * performer[Validador].actor.display ^short = "Nombre de quien valida la receta antes de la entrega."
-* performer[Validador].actor only Reference(Practitioner)
+* performer[Validador].actor only Reference(PrestadorCL)
 * performer[Validador].actor ^short = "Profesional que realiza la validación. El EndPoint es \"https://api-receta.minsal.cl/v2/Practitioner\""
 * performer[Validador].actor.reference ^short = "La referencia del recurso especificado debe ser al EndPoint \"https://api-receta.minsal.cl/v2/Practitioner\""
 * performer[Validador].actor.reference ^definition = "La referencia del recurso especificado debe ser al EndPoint \"https://api-receta.minsal.cl/v2/Practitioner\". En el caso nacional el dispensador estaría dentro de los recucursos desarrollados para Prestadores"
@@ -213,7 +213,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * location.reference ^definition = "El repositorio Central tendrá listada la ubicación de todos los dispensadores en recurso location. Estas deberán ser alcanzadas desde \"https://api-receta.minsal.cl/v2/Location\" (Obligatoria)"
 * location.display ^short = "Descripción de la ubicación o localización donde se realiza la dispensación"
 
-* receiver only Reference(Patient)
+* receiver only Reference(PacienteCl)
 * receiver and receiver.display and receiver.reference MS
 * receiver 0..1
 * receiver ^short = "Persona a la cual se le hace entrega de los fármacos."

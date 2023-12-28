@@ -172,7 +172,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "DispensacionMedicamentoCl","MedicationDispense.medication[x]:medicationReference.display","MedicationDispense.medication[x].display","","","",0,1,"Y","","Y","string {[]} {[]}
 ","Nombre del medicamento dispensado según TFC","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"DispensacionMedicamentoCl","MedicationDispense.subject","MedicationDispense.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+"DispensacionMedicamentoCl","MedicationDispense.subject","MedicationDispense.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl]]}
 ","Referencia al Paciente  ""https://api-receta.minsal.cl/v2/Patient""","La referencia en este caso solo se hace sobre el paciente al cual se le receta el fármaco independiente que sea otra la persona que hace retiro de estos. Se usa el repositorio ""https://api-receta.minsal.cl/v2/patient""","SubstanceAdministration->subject->Patient.","","","","","","","","",,,,,"",,,,"MedicationDispense.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "DispensacionMedicamentoCl","MedicationDispense.subject.id","MedicationDispense.subject.id","","","",0,1,"","","","string {[]} {[]}
@@ -284,7 +284,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "DispensacionMedicamentoCl","MedicationDispense.performer:Dispensador.function.text","MedicationDispense.performer.function.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"DispensacionMedicamentoCl","MedicationDispense.performer:Dispensador.actor","MedicationDispense.performer.actor","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
+"DispensacionMedicamentoCl","MedicationDispense.performer:Dispensador.actor","MedicationDispense.performer.actor","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl]]}
 ","Identificación del individuo que realiza la dispensación. El EndPoint es ""https://api-receta.minsal.cl/v2/Practitioner""","The device, practitioner, etc. who performed the action.  It should be assumed that the actor is the dispenser of the medication.","","","","","","","","","",,,,,"",,,,"MedicationDispense.performer.actor",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "DispensacionMedicamentoCl","MedicationDispense.performer:Dispensador.actor.id","MedicationDispense.performer.actor.id","","","",0,1,"","","","string {[]} {[]}
@@ -368,7 +368,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "DispensacionMedicamentoCl","MedicationDispense.performer:Validador.function.text","MedicationDispense.performer.function.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"DispensacionMedicamentoCl","MedicationDispense.performer:Validador.actor","MedicationDispense.performer.actor","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
+"DispensacionMedicamentoCl","MedicationDispense.performer:Validador.actor","MedicationDispense.performer.actor","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl]]}
 ","Profesional que realiza la validación. El EndPoint es ""https://api-receta.minsal.cl/v2/Practitioner""","The device, practitioner, etc. who performed the action.  It should be assumed that the actor is the dispenser of the medication.","","","","","","","","","",,,,,"",,,,"MedicationDispense.performer.actor",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "DispensacionMedicamentoCl","MedicationDispense.performer:Validador.actor.id","MedicationDispense.performer.actor.id","","","",0,1,"","","","string {[]} {[]}
@@ -479,7 +479,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "DispensacionMedicamentoCl","MedicationDispense.destination","MedicationDispense.destination","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
 ","Where the medication was sent","Identification of the facility/location where the medication was shipped to, as part of the dispense event.","","","","","","","","","",,,,,"",,,,"MedicationDispense.destination",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"DispensacionMedicamentoCl","MedicationDispense.receiver","MedicationDispense.receiver","","","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+"DispensacionMedicamentoCl","MedicationDispense.receiver","MedicationDispense.receiver","","","",0,1,"Y","","","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl]]}
 ","Persona a la cual se le hace entrega de los fármacos.","Identifies the person who picked up the medication.  This will usually be a patient or their caregiver, but some cases exist where it can be a healthcare professional.","","","","","","","","","",,,,,"",,,,"MedicationDispense.receiver",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "DispensacionMedicamentoCl","MedicationDispense.receiver.id","MedicationDispense.receiver.id","","","",0,1,"","","","string {[]} {[]}
@@ -1008,7 +1008,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "RecetaCl","RequestGroup.code","RequestGroup.code","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","What's being requested/ordered","A code that identifies what the overall request group is.","This element can be used to provide a code that captures the meaning of the request group as a whole, as opposed to the code of the action element, which captures the meaning of the individual actions within the request group.","","","","","","","","",,,,,"",,,,"RequestGroup.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"RecetaCl","RequestGroup.subject","RequestGroup.subject","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+"RecetaCl","RequestGroup.subject","RequestGroup.subject","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl]]}
 ","Información acerca del paciente al cual se le ha indicado la receta","The subject for which the request group was created.","","","","","","","","","",,,,,"",,,,"RequestGroup.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "RecetaCl","RequestGroup.subject.id","RequestGroup.subject.id","","","",0,1,"","","","string {[]} {[]}
@@ -1423,7 +1423,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "RecetaPrescripcionCl","MedicationRequest.medication[x]:medicationReference.display","MedicationRequest.medication[x].display","","","",0,1,"Y","","Y","string {[]} {[]}
 ","Descripción del fármaco, según definición TFC","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"RecetaPrescripcionCl","MedicationRequest.subject","MedicationRequest.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+"RecetaPrescripcionCl","MedicationRequest.subject","MedicationRequest.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl]]}
 ","Referencia al paciente a quien se le prescribe","La referencia en este caso solo se hace sobre el paciente al cual se le prescribe el fármaco independiente que sea otra la persona que hace retiro de estos","The subject on a medication request is mandatory.  For the secondary use case where the actual subject is not provided, there still must be an anonymized subject specified.","","","","","","","","",,,,,"",,,,"MedicationRequest.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "RecetaPrescripcionCl","MedicationRequest.subject.id","MedicationRequest.subject.id","","","",0,1,"","","","string {[]} {[]}
@@ -1463,7 +1463,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "RecetaPrescripcionCl","MedicationRequest.authoredOn","MedicationRequest.authoredOn","","","",0,1,"Y","","Y","dateTime {[]} {[]}
 ","Fecha y hora en la cual fue prescrito el medicamento en formato YYYY-MM-DDThh:mm:ss+zz:zz","Fecha y hora en la cual fue prescrito el medicamento en formato YYYY-MM-DDThh:mm:ss+zz:zz, e.j. 2018, 1973-06, 1905-08-23, 2015-02-07T13:28:17-05:00 o 2017-01-01T00:00:00.000Z","","","","","","","","","",,,,,"",,,,"MedicationRequest.authoredOn",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"RecetaPrescripcionCl","MedicationRequest.requester","MedicationRequest.requester","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
+"RecetaPrescripcionCl","MedicationRequest.requester","MedicationRequest.requester","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl]]}
 ","Referencia al Prescriptor","En este caso la referencia será sobre una persona que es Prescritpr  validado por la SIS","","","","","","","","","",,,,,"",,,,"MedicationRequest.requester",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "RecetaPrescripcionCl","MedicationRequest.requester.id","MedicationRequest.requester.id","","","",0,1,"","","","string {[]} {[]}
@@ -1500,7 +1500,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "RecetaPrescripcionCl","MedicationRequest.performerType","MedicationRequest.performerType","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Desired kind of performer of the medication administration","Indicates the type of performer of the administration of the medication.","If specified without indicating a performer, this indicates that the performer must be of the specified type. If specified with a performer then it indicates the requirements of the performer if the designated performer is not available.","","","","","","","","",,"example","Identifies the type of individual that is desired to administer the medication.","http://hl7.org/fhir/ValueSet/performer-role","",,,,"MedicationRequest.performerType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"RecetaPrescripcionCl","MedicationRequest.recorder","MedicationRequest.recorder","","","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
+"RecetaPrescripcionCl","MedicationRequest.recorder","MedicationRequest.recorder","","","",0,1,"Y","","","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl]]}
 ","Referencia a un sujeto, que será el que registra la receta","En este caso la referencia será sobre una persona que es un prescriptor validado por la SIS","","","","","","","","","",,,,,"",,,,"MedicationRequest.recorder",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "RecetaPrescripcionCl","MedicationRequest.recorder.id","MedicationRequest.recorder.id","","","",0,1,"","","","string {[]} {[]}
