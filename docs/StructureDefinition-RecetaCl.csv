@@ -89,7 +89,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "RequestGroup.code","RequestGroup.code","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","What's being requested/ordered","A code that identifies what the overall request group is.","This element can be used to provide a code that captures the meaning of the request group as a whole, as opposed to the code of the action element, which captures the meaning of the individual actions within the request group.","","","","","","","","",,,,,"",,,,"RequestGroup.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.code","FiveWs.what[x]"
-"RequestGroup.subject","RequestGroup.subject","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+"RequestGroup.subject","RequestGroup.subject","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl]]}
 ","Información acerca del paciente al cual se le ha indicado la receta","The subject for which the request group was created.","","","","","","","","","",,,,,"",,,,"RequestGroup.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.subject","FiveWs.subject[x]","FiveWs.subject"
 "RequestGroup.subject.id","RequestGroup.subject.id","","","",0,1,"","","","string {[]} {[]}

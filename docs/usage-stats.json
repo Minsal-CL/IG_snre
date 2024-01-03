@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.cl.minsal.snre",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "fhirVersion": "4.0.1",
   "jurisdiction": "CL",
   "extensions": [
@@ -55,6 +55,10 @@
       "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family": [
+      "Patient.contact.name.family",
+      "Patient.name.family"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
@@ -73,6 +77,21 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises": [
+      "Patient.identifier.type"
+    ],
+    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl": [
+      "Patient.address.city"
+    ],
+    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdContacto": [
+      "Patient.contact"
+    ],
+    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl": [
+      "Patient.address.district"
+    ],
+    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl": [
+      "Patient.address.state"
     ],
     "https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/ProdComercial": [
       "MedicationRequest"

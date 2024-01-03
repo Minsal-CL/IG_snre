@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Dispensador<a name=\"CSFuncionProfesionalDispensacion-Dispensador\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Validador<a name=\"CSFuncionProfesionalDispensacion-Validador\"> </a></td></tr></table></div>"
   },
   "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion",
-  "version" : "0.9.5",
+  "version" : "0.9.6",
   "name" : "CSFuncionProfesionalDispensacion",
   "title" : "Funcion del Personal",
   "status" : "active",

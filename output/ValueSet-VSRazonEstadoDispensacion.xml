@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-CSRazonEstadoDispensacion.html"><code>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</code></a></li></ul></div>
   </text>
   <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSRazonEstadoDispensacion"/>
-  <version value="0.9.8"/>
+  <version value="0.9.6"/>
   <name value="VSRazonEstadoDispensacion"/>
   <title value="Razón del cambio de estado (Dispensación)"/>
   <status value="active"/>

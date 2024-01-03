@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="Prestador1"/>
+  <meta>
+    <profile value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="Prestador1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;Prestador1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://hl7chile.cl/fhir/ig/clcore/1.8.5/StructureDefinition-CorePrestadorCl.html">CL Prestador</a></p></div><p><b>identifier</b>: id: 8336277-3 (use: OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Leonidas Rey Esparta (OFFICIAL)</p><p><b>telecom</b>: ph: 9345666(MOBILE), <a href="mailto:Leonidas300@mimail.com">Leonidas300@mimail.com</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1974-08-12</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: cert</p><p><b>code</b>: Certificado(s) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#2112 &quot;Certificado Profesional Médico Cirujano&quot;)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: esp</p><p><b>code</b>: Especialidad(es) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#122 &quot;Cardiólogia&quot;)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: esp</p><p><b>code</b>: Especialidad(es) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#1234 &quot;Medicina interna&quot;)</span></p></blockquote></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="http://registrocivil.cl/run"/>
+    <value value="8336277-3"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="Esparta"/>
+    <given value="Leonidas"/>
+    <given value="Rey"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="9345666"/>
+    <use value="mobile"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="Leonidas300@mimail.com"/>
+    <use value="work"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1974-08-12"/>
+  <qualification>
+    <identifier>
+      <value value="cert"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="https://api.minsal.cl/v1/catalogos/profesiones/"/>
+        <code value="2112"/>
+        <display value="Certificado Profesional Médico Cirujano"/>
+      </coding>
+      <text value="Certificado(s)"/>
+    </code>
+  </qualification>
+  <qualification>
+    <identifier>
+      <value value="esp"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"/>
+        <code value="122"/>
+        <display value="Cardiólogia"/>
+      </coding>
+      <text value="Especialidad(es)"/>
+    </code>
+  </qualification>
+  <qualification>
+    <identifier>
+      <value value="esp"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"/>
+        <code value="1234"/>
+        <display value="Medicina interna"/>
+      </coding>
+      <text value="Especialidad(es)"/>
+    </code>
+  </qualification>
+</Practitioner>

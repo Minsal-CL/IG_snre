@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodificacionPatron.html\"><code>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron</code></a></li></ul></div>"
   },
   "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSCodificacionPatron",
-  "version" : "0.9.8",
+  "version" : "0.9.6",
   "name" : "VSCodificacionPatron",
   "title" : "Patrón de la Prescripción",
   "status" : "active",

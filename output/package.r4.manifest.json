@@ -1,6 +1,6 @@
 {
-  "version" : "0.9.8",
-  "date" : "20231228190340",
+  "version" : "0.9.6",
+  "date" : "20240103111239",
   "notForPublication" : true,
   "name" : "hl7.fhir.cl.minsal.snre.r4"
 }

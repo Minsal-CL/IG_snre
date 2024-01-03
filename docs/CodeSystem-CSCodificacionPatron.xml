@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">continuous<a name="CSCodificacionPatron-continuous"> </a></td><td>Terapia continua a largo plazo</td><td>Una medicación que se espera sea continuada más allá de la presente orden y que el paciente debe tomar a menos que explicitamente se le indique lo contrario</td></tr><tr><td style="white-space:nowrap">acute<a name="CSCodificacionPatron-acute"> </a></td><td>Terapia a corto plazo (aguda)</td><td>Una medicación que se espera que el paciente consuma solo por la duración de la presente orden y no se espera que sea renovada</td></tr><tr><td style="white-space:nowrap">seasonal<a name="CSCodificacionPatron-seasonal"> </a></td><td>Por temporada</td><td>Una medicación que se espera sea usada a tiempo parcial en ciertos momentos del año</td></tr></table></div>
   </text>
   <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron"/>
-  <version value="0.9.5"/>
+  <version value="0.9.6"/>
   <name value="CSCodificacionPatron"/>
   <title value="Patrón de la Prescripción"/>
   <status value="active"/>

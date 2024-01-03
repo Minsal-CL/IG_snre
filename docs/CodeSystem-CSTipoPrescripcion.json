@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Id_Local<a name=\"CSTipoPrescripcion-Id_Local\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Id_Cheque<a name=\"CSTipoPrescripcion-Id_Cheque\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Id_Receta_Grafica<a name=\"CSTipoPrescripcion-Id_Receta_Grafica\"> </a></td></tr></table></div>"
   },
   "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion",
-  "version" : "0.9.5",
+  "version" : "0.9.6",
   "name" : "CSTipoPrescripcion",
   "title" : "Tipo de Prescripción",
   "status" : "active",

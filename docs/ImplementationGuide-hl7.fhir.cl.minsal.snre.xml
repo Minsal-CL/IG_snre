@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.cl.minsal.snre"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SistemaNacionaldeRecetaElectronica</h2><p>The official URL for this implementation guide is: </p><pre>https://interoperabilidad.minsal.cl/fhir/ig/snre/ImplementationGuide/hl7.fhir.cl.minsal.snre</pre><div><p>Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional. Esta Guía se encuentra aún en proceso de creación por lo que esta versión esta sujeta a observaciones y cambios. Aquellos implementadores que tengan acceso a ella se les sugiere desarrollar comentarios para su mejora)</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SistemaNacionalDeRecetaElectronica</h2><p>The official URL for this implementation guide is: </p><pre>https://interoperabilidad.minsal.cl/fhir/ig/snre/ImplementationGuide/hl7.fhir.cl.minsal.snre</pre><div><p>Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional. Esta Guía se encuentra aún en proceso de creación por lo que esta versión esta sujeta a observaciones y cambios. Aquellos implementadores que tengan acceso a ella se les sugiere desarrollar comentarios para su mejora)</p>
 </div></div>
   </text>
   <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ImplementationGuide/hl7.fhir.cl.minsal.snre"/>
-  <version value="0.9.5"/>
-  <name value="SistemaNacionaldeRecetaElectronica"/>
-  <title value="Sistema Nacional de Receta Electronica"/>
+  <version value="0.9.6"/>
+  <name value="SistemaNacionalDeRecetaElectronica"/>
+  <title value="Sistema Nacional de receta electronica"/>
   <status value="draft"/>
-  <date value="2023-10-12T17:23:51-03:00"/>
+  <date value="2024-01-03T11:13:10-03:00"/>
   <publisher value="Unidad de Interoperabilidad - MINSAL"/>
   <contact>
     <name value="Unidad de Interoperabilidad - MINSAL"/>
@@ -50,7 +50,7 @@
   <dependsOn id="hl7_fhir_cl_clcore">
     <uri value="https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore"/>
     <packageId value="hl7.fhir.cl.clcore"/>
-    <version value="1.8.4"/>
+    <version value="1.8.5"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -513,6 +513,138 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/Loc1"/>
+      </reference>
+      <name value="Ejemplo de  Localización Farmacia"/>
+      <description value="Ejemplo de la localización relacionada con una Farmacia específica ubicada en la comuna de Viña del Mar"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/Medicamento1"/>
+      </reference>
+      <name value="Ejemplo de comprimido Tareg - D 160"/>
+      <description value="Medicamento comprimido Tareg -D160 referemciado como medicamento en la TFC, considerando el de 25 comprimidos"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/Medicamento3"/>
+      </reference>
+      <name value="Ejemplo de Recurso Medicamento"/>
+      <description value="Medicamento ficticio"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Paciente1"/>
+      </reference>
+      <name value="Ejemplo de Recurso Paciente Nacional"/>
+      <description value="Paciente de referencia basado en la Core-CL"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/Prestador1"/>
+      </reference>
+      <name value="Ejemplo de Recurso Prestador como base para un Core Nacional"/>
+      <description value="Ejemplo de un Prestador no Real con identificadores en Systemas con API&quot;s no disponibles"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/ORG1"/>
+      </reference>
+      <name value="Ejemplo Organización Prestadora de Salud"/>
+      <description value="CESFAM Rio Bueno (Ficticio) con ID DEIS no real"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationDispense"/>
+      </extension>
+      <reference>
+        <reference value="MedicationDispense/Ejemplo1-Dispensacion"/>
+      </reference>
+      <name value="Ejemplo1-Dispensacion"/>
+      <description value="Dispensación de medicamento comercial"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/DispensacionMedicamentoCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/Ejemplo1-prescipcion"/>
+      </reference>
+      <name value="Ejemplo1-prescipcion"/>
+      <description value="Prescripción de medicamento con nombre comercial agregado"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RecetaPrescripcionCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RequestGroup"/>
+      </extension>
+      <reference>
+        <reference value="RequestGroup/Receta1"/>
+      </reference>
+      <name value="Ejemplo1-Receta"/>
+      <description value="Ejemplo de una receta con un fármaco"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RecetaCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationDispense"/>
+      </extension>
+      <reference>
+        <reference value="MedicationDispense/Ejemplo2-Dispensacion"/>
+      </reference>
+      <name value="Ejemplo2-Dispensacion"/>
+      <description value="Dispensación de medicamento Lab Chile con rango indicado"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/DispensacionMedicamentoCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/Ejemplo2-prescipcion"/>
+      </reference>
+      <name value="Ejemplo2-prescipcion"/>
+      <description value="Prescripción de medicamento genérico"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RecetaPrescripcionCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/Ejemplo3-prescipcion"/>
+      </reference>
+      <name value="Ejemplo3-prescipcion"/>
+      <description value="Prescripción de medicamento genérico, con dosage simple"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RecetaPrescripcionCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -532,6 +664,17 @@
       <name value="Funcion del Personal"/>
       <description value="Funcion del Personal. Puede ser Dispensador o Validador"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/Medicamento2"/>
+      </reference>
+      <name value="Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"/>
+      <description value="Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -749,14 +892,6 @@
         </extension>
         <nameUrl value="casos.html"/>
         <title value="Casos de uso"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="operaciones.html"/>
-        </extension>
-        <nameUrl value="operaciones.html"/>
-        <title value="Operaciones"/>
         <generation value="markdown"/>
       </page>
     </page>

@@ -1,15 +1,21 @@
-﻿/Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-DispensacionMedicamentoCl.json: line 1, col 395304, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
-/Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-DispensacionMedicamentoCl.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
-/Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-ProdComercial.json: line 0, col 0, Warning - Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere (BUSINESSRULE)
-/Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-ProdComercial.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
-/Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-RangeCL.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
-/Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-RecetaCl.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
-/Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-RecetaPrescripcionCl.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
-/Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-SimpleQuantityCL.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+﻿/Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/Medication-Medicamento1.json: line 24, col 8, Info - El URI para el Code System 'http://minsal.cl/semantikos/description-id' es desconocido asi que el código no puede ser validado (UNKNOWN)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/Medication-Medicamento2.json: line 24, col 8, Info - El URI para el Code System 'http://minsal.cl/semantikos/description-id' es desconocido asi que el código no puede ser validado (UNKNOWN)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/MedicationDispense-Ejemplo1-Dispensacion.json: line 83, col 12, Info - El URI para el Code System 'https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial' es desconocido asi que el código no puede ser validado (UNKNOWN)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/MedicationRequest-Ejemplo1-prescipcion.json: line 68, col 12, Info - El URI para el Code System 'https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial' es desconocido asi que el código no puede ser validado (UNKNOWN)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/MedicationRequest-Ejemplo2-prescipcion.json: line 60, col 12, Info - El URI para el Code System 'https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial' es desconocido asi que el código no puede ser validado (UNKNOWN)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/MedicationRequest-Ejemplo3-prescipcion.json: line 62, col 12, Info - El URI para el Code System 'https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial' es desconocido asi que el código no puede ser validado (UNKNOWN)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/Patient-Paciente1.json: line 15, col 12, Info - Este elemento no coincide con ninguna partición conocida defined in the profile https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl|1.8.5 (INFORMATIONAL)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/Practitioner-Prestador1.json: line 73, col 6, Info - Este elemento no coincide con ninguna partición conocida defined in the profile https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl|1.8.5 (INFORMATIONAL)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/Practitioner-Prestador1.json: line 28, col 12, Info - El URI para el Code System 'https://api.minsal.cl/v1/catalogos/profesiones/' es desconocido asi que el código no puede ser validado (UNKNOWN)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/Practitioner-Prestador1.json: line 45, col 12, Info - El URI para el Code System 'https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/' es desconocido asi que el código no puede ser validado (UNKNOWN)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/Practitioner-Prestador1.json: line 62, col 12, Info - El URI para el Code System 'https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/' es desconocido asi que el código no puede ser validado (UNKNOWN)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/RequestGroup-Receta1.json: line 70, col 16, Info - El URI para el Code System 'https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial' es desconocido asi que el código no puede ser validado (UNKNOWN)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/RequestGroup-Receta1.json: line 169, col 16, Info - El URI para el Code System 'https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial' es desconocido asi que el código no puede ser validado (UNKNOWN)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/StructureDefinition-DispensacionMedicamentoCl.json: line 1, col 395543, Info - El valor de la cadena contiene texto que parece ser etiquetas HTML embebidas. Si este contenido se presenta en HTML sin el procesamiento adecuado, puede ser un riesgo de seguridad (INVALID)
 
-SistemaNacionaldeRecetaElectronica : Validation Results
+SistemaNacionalDeRecetaElectronica : Validation Results
 =========================================
 
-err = 0, warn = 11, info = 1
-IG Publisher Version: 1.4.11 Out of date - current version is 1.4.14
-Generated Thu Oct 12 17:24:51 CLST 2023. FHIR version 4.0.1 for hl7.fhir.cl.minsal.snre#0.9.5 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/snre)
+err = 0, warn = 4, info = 14
+IG Publisher Version: 1.4.11 Out of date - current version is 1.5.8
+Generated Wed Jan 03 11:14:14 CLST 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsal.snre#0.9.6 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/snre)

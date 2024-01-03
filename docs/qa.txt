@@ -1,38 +1,50 @@
-﻿SistemaNacionaldeRecetaElectronica : Validation Results
+﻿SistemaNacionalDeRecetaElectronica : Validation Results
 =========================================
 
-err = 0, warn = 11, info = 1
-IG Publisher Version: 1.4.11 Out of date - current version is 1.4.14
-Generated Thu Oct 12 17:24:51 CLST 2023. FHIR version 4.0.1 for hl7.fhir.cl.minsal.snre#0.9.5 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/snre)
- Build Errors : 1 / 4 / 0
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/CodeSystem-CSCodificacionCategoria : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/CodeSystem-CSCodificacionPatron : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/CodeSystem-CSFuncionProfesionalDispensacion : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/CodeSystem-CSMetodos : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/CodeSystem-CSRazonEstadoDispensacion : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/CodeSystem-CSStatusReason : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/CodeSystem-CSTipoPrescripcion : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/CodeSystem-CSUnidadAsistencial : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/CodeSystem-CSViasAdmin : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ImplementationGuide-hl7.fhir.cl.minsal.snre : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-DispensacionMedicamentoCl : 0 / 1 / 2
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-ProdComercial : 0 / 2 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-RangeCL : 0 / 1 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-RecetaCl : 0 / 1 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-RecetaPrescripcionCl : 0 / 1 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/StructureDefinition-SimpleQuantityCL : 0 / 1 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ValueSet-VSCodificacionCategoria : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ValueSet-VSCodificacionPatron : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ValueSet-VSFuncionProfesionalDispensacion : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ValueSet-VSMetodos : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ValueSet-VSRazonEstadoDispensacion : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ValueSet-VSStatusReason : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ValueSet-VSTipoPrescripcion : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ValueSet-VSUnidadAsistencial : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/fsh-generated/resources/ValueSet-VSViasAdmin : 0 / 0 / 1
+err = 0, warn = 4, info = 14
+IG Publisher Version: 1.4.11 Out of date - current version is 1.5.8
+Generated Wed Jan 03 11:14:14 CLST 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsal.snre#0.9.6 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/snre)
+ Build Errors : 0 / 4 / 0
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/CodeSystem-CSCodificacionCategoria : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/CodeSystem-CSCodificacionPatron : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/CodeSystem-CSFuncionProfesionalDispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/CodeSystem-CSMetodos : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/CodeSystem-CSRazonEstadoDispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/CodeSystem-CSStatusReason : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/CodeSystem-CSTipoPrescripcion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/CodeSystem-CSUnidadAsistencial : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/CodeSystem-CSViasAdmin : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/ImplementationGuide-hl7.fhir.cl.minsal.snre : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/Location-Loc1 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/Medication-Medicamento1 : 0 / 0 / 2
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/Medication-Medicamento2 : 0 / 0 / 2
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/Medication-Medicamento3 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/MedicationDispense-Ejemplo1-Dispensacion : 0 / 0 / 2
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/MedicationDispense-Ejemplo2-Dispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/MedicationRequest-Ejemplo1-prescipcion : 0 / 0 / 2
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/MedicationRequest-Ejemplo2-prescipcion : 0 / 0 / 2
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/MedicationRequest-Ejemplo3-prescipcion : 0 / 0 / 2
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/Organization-ORG1 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/Patient-Paciente1 : 0 / 0 / 2
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/Practitioner-Prestador1 : 0 / 0 / 5
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/RequestGroup-Receta1 : 0 / 0 / 7
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/StructureDefinition-DispensacionMedicamentoCl : 0 / 0 / 2
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/StructureDefinition-ProdComercial : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/StructureDefinition-RangeCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/StructureDefinition-RecetaCl : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/StructureDefinition-RecetaPrescripcionCl : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/StructureDefinition-SimpleQuantityCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/ValueSet-VSCodificacionCategoria : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/ValueSet-VSCodificacionPatron : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/ValueSet-VSFuncionProfesionalDispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/ValueSet-VSMetodos : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/ValueSet-VSRazonEstadoDispensacion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/ValueSet-VSStatusReason : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/ValueSet-VSTipoPrescripcion : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/ValueSet-VSUnidadAsistencial : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/ValueSet-VSViasAdmin : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: /Users/jorgemansilla/IGs/_MINSAL-SNRE-publish_hl7/snre/output/operaciones.html#/html/body/div/div/div/div/div/ul/li/a at Line 516, column 111: The link 'resource-operations.html' for "Resource Operations" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
@@ -47,20 +59,39 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/CodeSystem-CSUnidadAsistencial.json ==
 == fsh-generated/resources/CodeSystem-CSViasAdmin.json ==
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.cl.minsal.snre.json ==
+== fsh-generated/resources/Location-Loc1.json ==
+== fsh-generated/resources/Medication-Medicamento1.json ==
+INFORMATION: Medication/Medicamento1: Medication.code.coding[0]: El URI para el Code System 'http://minsal.cl/semantikos/description-id' es desconocido asi que el código no puede ser validado
+== fsh-generated/resources/Medication-Medicamento2.json ==
+INFORMATION: Medication/Medicamento2: Medication.code.coding[0]: El URI para el Code System 'http://minsal.cl/semantikos/description-id' es desconocido asi que el código no puede ser validado
+== fsh-generated/resources/Medication-Medicamento3.json ==
+== fsh-generated/resources/MedicationDispense-Ejemplo1-Dispensacion.json ==
+INFORMATION: MedicationDispense/Ejemplo1-Dispensacion: MedicationDispense.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): El URI para el Code System 'https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial' es desconocido asi que el código no puede ser validado
+== fsh-generated/resources/MedicationDispense-Ejemplo2-Dispensacion.json ==
+== fsh-generated/resources/MedicationRequest-Ejemplo1-prescipcion.json ==
+INFORMATION: MedicationRequest/Ejemplo1-prescipcion: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): El URI para el Code System 'https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial' es desconocido asi que el código no puede ser validado
+== fsh-generated/resources/MedicationRequest-Ejemplo2-prescipcion.json ==
+INFORMATION: MedicationRequest/Ejemplo2-prescipcion: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): El URI para el Code System 'https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial' es desconocido asi que el código no puede ser validado
+== fsh-generated/resources/MedicationRequest-Ejemplo3-prescipcion.json ==
+INFORMATION: MedicationRequest/Ejemplo3-prescipcion: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): El URI para el Code System 'https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial' es desconocido asi que el código no puede ser validado
+== fsh-generated/resources/Organization-ORG1.json ==
+== fsh-generated/resources/Patient-Paciente1.json ==
+INFORMATION: Patient/Paciente1: Patient.name[0].family.extension[0]: Este elemento no coincide con ninguna partición conocida defined in the profile https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl|1.8.5
+== fsh-generated/resources/Practitioner-Prestador1.json ==
+INFORMATION: Practitioner/Prestador1: Practitioner.identifier[0]: Este elemento no coincide con ninguna partición conocida defined in the profile https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl|1.8.5
+INFORMATION: Practitioner/Prestador1: Practitioner.qualification[0].code.coding[0]: El URI para el Code System 'https://api.minsal.cl/v1/catalogos/profesiones/' es desconocido asi que el código no puede ser validado
+INFORMATION: Practitioner/Prestador1: Practitioner.qualification[1].code.coding[0]: El URI para el Code System 'https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/' es desconocido asi que el código no puede ser validado
+INFORMATION: Practitioner/Prestador1: Practitioner.qualification[2].code.coding[0]: El URI para el Code System 'https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/' es desconocido asi que el código no puede ser validado
+== fsh-generated/resources/RequestGroup-Receta1.json ==
+INFORMATION: RequestGroup/Receta1: RequestGroup.contained[0]/*MedicationRequest/PrescipcionEj*/.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): El URI para el Code System 'https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial' es desconocido asi que el código no puede ser validado
+INFORMATION: RequestGroup/Receta1: RequestGroup.contained[1]/*MedicationRequest/Receta4*/.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): El URI para el Code System 'https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial' es desconocido asi que el código no puede ser validado
 == fsh-generated/resources/StructureDefinition-DispensacionMedicamentoCl.json ==
-INFORMATION: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.snapshot.element[125].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/DispensacionMedicamentoCl'): The Implementation Guide contains no examples for this profile
+INFORMATION: StructureDefinition/DispensacionMedicamentoCl: StructureDefinition.snapshot.element[125].mapping[0].map: El valor de la cadena contiene texto que parece ser etiquetas HTML embebidas. Si este contenido se presenta en HTML sin el procesamiento adecuado, puede ser un riesgo de seguridad
 == fsh-generated/resources/StructureDefinition-ProdComercial.json ==
-WARNING: StructureDefinition/ProdComercial: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/ProdComercial'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-RangeCL.json ==
-WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RangeCL'): The Implementation Guide contains no examples for this data type profile
 == fsh-generated/resources/StructureDefinition-RecetaCl.json ==
-WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RecetaCl'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-RecetaPrescripcionCl.json ==
-WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/RecetaPrescripcionCl'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-SimpleQuantityCL.json ==
-WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/snre/StructureDefinition/SimpleQuantityCL'): The Implementation Guide contains no examples for this data type profile
 == fsh-generated/resources/ValueSet-VSCodificacionCategoria.json ==
 == fsh-generated/resources/ValueSet-VSCodificacionPatron.json ==
 == fsh-generated/resources/ValueSet-VSFuncionProfesionalDispensacion.json ==

@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Patrón de la Prescripción - JSON Representation - Sistema Nacional de Receta Electronica v0.9.5</title>
+    <title>Patrón de la Prescripción - JSON Representation - Sistema Nacional de receta electronica v0.9.6</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -44,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.19"}
-    h3,h4,h5,h6{--heading-prefix:"5.19"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.19"}
+    h3,h4,h5,h6{--heading-prefix:"4.19"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -65,9 +65,9 @@
 -->
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Sistema Nacional de Receta Electronica</span>
+          <p><span style="font-size:12pt;font-weight:bold">Sistema Nacional de receta electronica</span>
             <br/>
-            <span style="display:inline-block;">0.9.5 - draft
+            <span style="display:inline-block;">0.9.6 - draft
 
 
 
@@ -107,9 +107,6 @@
   <li>
     <a href="casos.html">Actores y Casos de Uso</a>
   </li>
-  <li>
-    <a href="operaciones.html">Operaciones y Terminologías</a>
-  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Resumen de Artefactos
       <b class="caret"></b>
@@ -145,7 +142,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Sistema Nacional de Receta Electronica - Local Development build (v0.9.5). See the <a href="https://interoperabilidad.minsal.cl/fhir/ig/snre/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Sistema Nacional de receta electronica - Local Development build (v0.9.6). See the <a href="https://interoperabilidad.minsal.cl/fhir/ig/snre/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -225,7 +222,7 @@
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;continuous&lt;a name=\&quot;CSCodificacionPatron-continuous\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Terapia continua a largo plazo&lt;/td&gt;&lt;td&gt;Una medicación que se espera sea continuada más allá de la presente orden y que el paciente debe tomar a menos que explicitamente se le indique lo contrario&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;acute&lt;a name=\&quot;CSCodificacionPatron-acute\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Terapia a corto plazo (aguda)&lt;/td&gt;&lt;td&gt;Una medicación que se espera que el paciente consuma solo por la duración de la presente orden y no se espera que sea renovada&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;seasonal&lt;a name=\&quot;CSCodificacionPatron-seasonal\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Por temporada&lt;/td&gt;&lt;td&gt;Una medicación que se espera sea usada a tiempo parcial en ciertos momentos del año&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.9.5",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.9.6",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "CSCodificacionPatron",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "Patrón de la Prescripción",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
@@ -305,7 +302,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.snre#0.9.5 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 12, 2023 17:23-0300">2023-10-12</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.snre#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 3, 2024 11:13-0300">2024-01-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ImplementationGuide/hl7.fhir.cl.minsal.snre"/>
-  <version value="0.9.8"/>
+  <version value="0.9.6"/>
   <name value="SistemaNacionalDeRecetaElectronica"/>
   <title value="Sistema Nacional de receta electronica"/>
   <status value="draft"/>
-  <date value="2023-12-28T19:04:34-03:00"/>
+  <date value="2024-01-03T11:13:10-03:00"/>
   <publisher value="Unidad de Interoperabilidad - MINSAL"/>
   <contact>
     <name value="Unidad de Interoperabilidad - MINSAL"/>

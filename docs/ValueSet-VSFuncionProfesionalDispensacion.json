@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSFuncionProfesionalDispensacion.html\"><code>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion</code></a></li></ul></div>"
   },
   "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSFuncionProfesionalDispensacion",
-  "version" : "0.9.5",
+  "version" : "0.9.6",
   "name" : "VSFuncionProfesionalDispensacion",
   "title" : "Funcion del Personal",
   "status" : "active",

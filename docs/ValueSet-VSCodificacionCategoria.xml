@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-CSCodificacionCategoria.html"><code>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria</code></a></li></ul></div>
   </text>
   <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSCodificacionCategoria"/>
-  <version value="0.9.5"/>
+  <version value="0.9.6"/>
   <name value="VSCodificacionCategoria"/>
   <title value="Codificación de la categoría de una prescripción"/>
   <status value="active"/>
