@@ -36,9 +36,9 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for SistemaNacionalDeRecetaElectronica</h1>
- <p>Generated Wed Jan 03 11:14:14 CLST 2024, FHIR version 4.0.1 for hl7.fhir.cl.minsal.snre#0.9.6 (canonical = <a href="https://interoperabilidad.minsal.cl/fhir/ig/snre">https://interoperabilidad.minsal.cl/fhir/ig/snre</a> (<a href="https://interoperabilidad.minsal.cl/fhir/ig/snre/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Wed Jan 03 12:29:08 CLST 2024, FHIR version 4.0.1 for hl7.fhir.cl.minsal.snre#0.9.6 (canonical = <a href="https://interoperabilidad.minsal.cl/fhir/ig/snre">https://interoperabilidad.minsal.cl/fhir/ig/snre</a> (<a href="https://interoperabilidad.minsal.cl/fhir/ig/snre/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.4.11, which is out of date. The current version is v1.5.8 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.5.8</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.cl.minsal.snre, Canonical = https://interoperabilidad.minsal.cl/fhir/ig/snre</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Publication Request:</td><td><table class="grid">
@@ -53,7 +53,7 @@
  <tr><td>introduction</d><td>Sistema Nacional de Receta Electronica</td></tr>
  <tr><td>ci-build</d><td>https://build.fhir.org/ig/Minsal-CL/snre</td></tr>
 </table>
-<ul><li><span title="Invalid HTTP response 404 from https://interoperabilidad.minsal.cl/fhir/ig/snre/package-list.json?nocache=1704291254484 (Not Found) (content in /var/folders/0g/fbcld4s52t5fl6f9w63l8y3h0000gn/T/http-log/fhir-http-3.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<ul><li>Error fetching package-list from https://interoperabilidad.minsal.cl/fhir/ig/snre: Not Found <img src="icon-error.gif" height="16px" width="16px"/></li>
 <li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
 <li>Publication Request is for 'hl7.fhir.cl.snre' but package is hl7.fhir.cl.minsal.snre <img src="icon-error.gif" height="16px" width="16px"/></li>
 <li>Publication Request is for v'0.9.5' but package version is v0.9.6 <img src="icon-error.gif" height="16px" width="16px"/></li>
@@ -78,14 +78,14 @@
  <tr><td>Draft Dependencies:</td><td><ul>
   <li>
 hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
- (15 uses),     <a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/extension-humanname-mothers-family.html">mothers-family</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a>
  (12 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bestpractice.html">bestpractice</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bestpractice-explanation.html">bestpractice-explanation</a>
  (3 uses),     <code>fhir-type</code>
  (75 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html">maxValueSet</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bindingname.html">bindingName</a>
- (86 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-iscommonbinding.html">isCommonBinding</a>
- (7 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (86 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
  (8 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-translatable.html">translatable</a>
  (45 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
@@ -112,7 +112,6 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-administration-method-codes.html">SNOMEDCTAdministrationMethodCodes</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-dose-rate-type.html">DoseAndRateType</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/extension-humanname-mothers-family.html">mothers-family</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/requestgroup.html">RequestGroup</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-status.html">RequestStatus</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-intent.html">RequestIntent</a>
@@ -159,8 +158,9 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
 </ul>
 </td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://interoperabilidad.minsal.cl/fhir/ig/snre (Problem #1 with package-list.json at https://interoperabilidad.minsal.cl/fhir/ig/snre: Invalid HTTP response 404 from https://interoperabilidad.minsal.cl/fhir/ig/snre/package-list.json?nocache=1704291190266 (Not Found) (content in /var/folders/0g/fbcld4s52t5fl6f9w63l8y3h0000gn/T/http-log/fhir-http-2.log))</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://interoperabilidad.minsal.cl/fhir/ig/snre (Problem #1 with package-list.json at https://interoperabilidad.minsal.cl/fhir/ig/snre: Not Found)</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Summary:</td><td> errors = 0, warn = 4, info = 14, broken links = 0</td></tr>
 </table>
  <table class="grid">
@@ -395,8 +395,9 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
 </table>
 <hr/>
 <a name="_Users_jorgemansilla_IGs__MINSAL-SNRE_fsh-generated_resources_ImplementationGuide-hl7.fhir.cl.minsal.snre"> </a>
-<h2><a href="ImplementationGuide-hl7.fhir.cl.minsal.snre.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.cl.minsal.snre.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi10"></div>
+<h2><a href="ImplementationGuide-hl7.fhir.cl.minsal.snre.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.cl.minsal.snre.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>ImplementationGuide/hl7.fhir.cl.minsal.snre: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -581,7 +582,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[125]&#8203;.mapping[0]&#8203;.map (l1&#8203;/c395543)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>El valor de la cadena contiene texto que parece ser etiquetas HTML embebidas. Si este contenido se presenta en HTML sin el procesamiento adecuado, puede ser un riesgo de seguridad</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[125]&#8203;.mapping[0]&#8203;.map (l1&#8203;/c395335)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>El valor de la cadena contiene texto que parece ser etiquetas HTML embebidas. Si este contenido se presenta en HTML sin el procesamiento adecuado, puede ser un riesgo de seguridad</b></td>
    </tr>
 </table>
 <hr/>

@@ -1,13 +1,16 @@
 {
   "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ImplementationGuide/hl7.fhir.cl.minsal.snre",
   "name" : "SistemaNacionalDeRecetaElectronica",
+  "title" : "Sistema Nacional de receta electronica",
+  "description" : "Guía de Implementación para los perfiles de Receta complementarios a los de CORE Nacional, para su uso en Recete Electrónica Nacional. Esta Guía se encuentra aún en proceso de creación por lo que esta versión esta sujeta a observaciones y cambios. Aquellos implementadores que tengan acceso a ella se les sugiere desarrollar comentarios para su mejora)",
+  "status" : "draft",
   "package-id" : "hl7.fhir.cl.minsal.snre",
   "ig-ver" : "0.9.6",
-  "date" : "Wed, 03 Jan, 2024 11:13:10 -0300",
+  "date" : "Wed, 03 Jan, 2024 12:28:05 -0300",
   "errs" : 0,
   "warnings" : 4,
   "hints" : 14,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1895740320
+  "maxMemory" : 1333977696
 }

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SistemaNacionalDeRecetaElectronica"] ; # 
   fhir:title [ fhir:v "Sistema Nacional de receta electronica"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-01-03T11:13:10-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-01-03T12:28:05-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;

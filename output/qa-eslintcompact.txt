@@ -11,11 +11,11 @@
 /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/Practitioner-Prestador1.json: line 62, col 12, Info - El URI para el Code System 'https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/' es desconocido asi que el código no puede ser validado (UNKNOWN)
 /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/RequestGroup-Receta1.json: line 70, col 16, Info - El URI para el Code System 'https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial' es desconocido asi que el código no puede ser validado (UNKNOWN)
 /Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/RequestGroup-Receta1.json: line 169, col 16, Info - El URI para el Code System 'https://rme.hl7chile.cl/CodeSystem/CSUnidadAsistencial' es desconocido asi que el código no puede ser validado (UNKNOWN)
-/Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/StructureDefinition-DispensacionMedicamentoCl.json: line 1, col 395543, Info - El valor de la cadena contiene texto que parece ser etiquetas HTML embebidas. Si este contenido se presenta en HTML sin el procesamiento adecuado, puede ser un riesgo de seguridad (INVALID)
+/Users/jorgemansilla/IGs/_MINSAL-SNRE/fsh-generated/resources/StructureDefinition-DispensacionMedicamentoCl.json: line 1, col 395335, Info - El valor de la cadena contiene texto que parece ser etiquetas HTML embebidas. Si este contenido se presenta en HTML sin el procesamiento adecuado, puede ser un riesgo de seguridad (INVALID)
 
 SistemaNacionalDeRecetaElectronica : Validation Results
 =========================================
 
 err = 0, warn = 4, info = 14
-IG Publisher Version: 1.4.11 Out of date - current version is 1.5.8
-Generated Wed Jan 03 11:14:14 CLST 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsal.snre#0.9.6 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/snre)
+IG Publisher Version: 1.5.8
+Generated Wed Jan 03 12:29:08 CLST 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsal.snre#0.9.6 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/snre)

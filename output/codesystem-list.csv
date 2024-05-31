@@ -1,0 +1,10 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria,0.9.6,active,,CSCodificacionCategoria,Codificación del estado de una prescripción,"Estado de una prescripción",
+https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron,0.9.6,active,,CSCodificacionPatron,Patrón de la Prescripción,"Codificación del patrón de administración de una prescripción",
+https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion,0.9.6,active,,CSFuncionProfesionalDispensacion,Funcion del Personal,"Funcion del Personal. Puede ser Dispensador o Validador",
+https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos,0.9.6,active,,CSMetodos,Métodos de Administración,"Métodos de Administración de SNOMED-CT utilizados para el proyecto de receta electrónica",
+https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion,0.9.6,active,,CSRazonEstadoDispensacion,Razón del cambio de estado (Dispensación),"Códigos que indican la razón por la cual una Dispensación ha cambiado su estado",
+https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason,0.9.6,active,,CSStatusReason,Razón del cambio de estado (Prescripción),"Códigos que indican la razón por la cual una Prescripción ha cambiado su estado",
+https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion,0.9.6,active,,CSTipoPrescripcion,Tipo de Prescripción,"Identifica el tipo de Prescripción",
+https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial,0.9.6,active,,CSUnidadAsistencial,Unidad Asistencial,"Unidad para dosificar",
+https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSViasAdmin,0.9.6,active,,CSViasAdmin,Vías de Administración,"Vías de Administración de SNOMED-CT utilizadas para el Sistema Nacional de Receta Electrónica",

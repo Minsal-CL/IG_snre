@@ -1,0 +1,199 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/age-units",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonUCUMCodesForAge",
+      "title" : "Common UCUM Codes for Age",
+      "description" : "Unified Code for Units of Measure (UCUM). This value set includes all UCUM codes",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.19"],
+      "sources" : ["2.16.840.1.113883.4.642.3.19"],
+      "uses" : {
+      },
+      "StructureDefinition-RecetaPrescripcionCl.html" : "CL Prescripción"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Course of Therapy Codes",
+      "title" : "Medication request  course of  therapy  codes",
+      "description" : "MedicationRequest Course of Therapy Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1326"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1326"],
+      "uses" : {
+      },
+      "StructureDefinition-RecetaPrescripcionCl.html" : "CL Prescripción"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Intent",
+      "title" : "Medication request  intent",
+      "description" : "MedicationRequest Intent Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1321"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1321"],
+      "uses" : {
+      },
+      "StructureDefinition-RecetaPrescripcionCl.html" : "CL Prescripción"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationrequest Status",
+      "title" : "Medicationrequest  status",
+      "description" : "MedicationRequest Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1320"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1320"],
+      "uses" : {
+      },
+      "StructureDefinition-RecetaPrescripcionCl.html" : "CL Prescripción"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/units-of-time",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "UnitsOfTime",
+      "title" : "UnitsOfTime",
+      "description" : "A unit of time (units from UCUM).",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.77"],
+      "sources" : ["2.16.840.1.113883.4.642.3.77"],
+      "uses" : {
+      },
+      "StructureDefinition-RecetaPrescripcionCl.html" : "CL Prescripción",
+      "StructureDefinition-DispensacionMedicamentoCl.html" : "CL Dispensación"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSCodificacionCategoria",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "VSCodificacionCategoria",
+      "title" : "Codificación de la categoría de una prescripción",
+      "description" : "Estado de una prescripción",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-RecetaPrescripcionCl.html" : "CL Prescripción"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSCodificacionPatron",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "VSCodificacionPatron",
+      "title" : "Patrón de la Prescripción",
+      "description" : "Codificación del patrón de administración de una prescripción",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron"
+      ]
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSFuncionProfesionalDispensacion",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "VSFuncionProfesionalDispensacion",
+      "title" : "Funcion del Personal",
+      "description" : "Funcion del Personal. Puede ser Dispensador o Validador",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion"
+      ]
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSMetodos",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "VSMetodos",
+      "title" : "Métodos de Administración",
+      "description" : "Métodos de Administración de SNOMED-CT utilizados para el proyecto de receta electrónica",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-RecetaPrescripcionCl.html" : "CL Prescripción",
+      "StructureDefinition-DispensacionMedicamentoCl.html" : "CL Dispensación"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSRazonEstadoDispensacion",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "VSRazonEstadoDispensacion",
+      "title" : "Razón del cambio de estado (Dispensación)",
+      "description" : "Códigos que indican la razón por la cual una Dispensación ha cambiado su estado",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-DispensacionMedicamentoCl.html" : "CL Dispensación"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSStatusReason",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "VSStatusReason",
+      "title" : "Razón del cambio de estado (Prescripción)",
+      "description" : "Códigos que indican la razón por la cual una Prescripción ha cambiado su estado",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-RecetaPrescripcionCl.html" : "CL Prescripción"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSTipoPrescripcion",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "VSTipoPrescripcion",
+      "title" : "Tipo de Prescripción",
+      "description" : "Identifica el tipo de Prescripción",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-RecetaPrescripcionCl.html" : "CL Prescripción"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSUnidadAsistencial",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "VSUnidadAsistencial",
+      "title" : "Unidad Asistencial",
+      "description" : "Unidad para dosificar",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SimpleQuantityCL.html" : "SimpleQuantity para el caso de Receta"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSViasAdmin",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "VSViasAdmin",
+      "title" : "Vías de Administración",
+      "description" : "Vías de Administración de SNOMED-CT utilizadas para el Sistema Nacional de Receta Electrónica",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSViasAdmin"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-RecetaPrescripcionCl.html" : "CL Prescripción",
+      "StructureDefinition-DispensacionMedicamentoCl.html" : "CL Dispensación"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSCodificacionCategoria,0.9.6,active,,VSCodificacionCategoria,Codificación de la categoría de una prescripción,"Estado de una prescripción",,"Internal"
+https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSCodificacionPatron,0.9.6,active,,VSCodificacionPatron,Patrón de la Prescripción,"Codificación del patrón de administración de una prescripción",,"Internal"
+https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSFuncionProfesionalDispensacion,0.9.6,active,,VSFuncionProfesionalDispensacion,Funcion del Personal,"Funcion del Personal. Puede ser Dispensador o Validador",,"Internal"
+https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSMetodos,0.9.6,active,,VSMetodos,Métodos de Administración,"Métodos de Administración de SNOMED-CT utilizados para el proyecto de receta electrónica",,"Internal"
+https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSRazonEstadoDispensacion,0.9.6,active,,VSRazonEstadoDispensacion,Razón del cambio de estado (Dispensación),"Códigos que indican la razón por la cual una Dispensación ha cambiado su estado",,"Internal"
+https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSStatusReason,0.9.6,active,,VSStatusReason,Razón del cambio de estado (Prescripción),"Códigos que indican la razón por la cual una Prescripción ha cambiado su estado",,"Internal"
+https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSTipoPrescripcion,0.9.6,active,,VSTipoPrescripcion,Tipo de Prescripción,"Identifica el tipo de Prescripción",,"Internal"
+https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSUnidadAsistencial,0.9.6,active,,VSUnidadAsistencial,Unidad Asistencial,"Unidad para dosificar",,"Internal"
+https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSViasAdmin,0.9.6,active,,VSViasAdmin,Vías de Administración,"Vías de Administración de SNOMED-CT utilizadas para el Sistema Nacional de Receta Electrónica",,"Internal"

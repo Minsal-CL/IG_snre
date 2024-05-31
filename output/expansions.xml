@@ -1,11 +1,1913 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="e87f0563-71dc-41b5-9cb5-d3eb70dac3f1"/>
+  <id value="b7929d74-4336-4dbc-9f6c-8c11ec756dc5"/>
   <meta>
-    <lastUpdated value="2024-01-03T11:13:10.965-03:00"/>
+    <lastUpdated value="2024-01-03T12:28:05.840-03:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSCodificacionCategoria"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CSCodificacionCategoria.html">codesystem Codificación del estado de una prescripción v0.9.6 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSCodificacionCategoria-inpatient"> </a>  
+                  <a href="CodeSystem-CSCodificacionCategoria.html#CSCodificacionCategoria-inpatient">inpatient</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria</td>
+                <td>Hospitalizado</td>
+                <td>
+                  <div>
+                    <p>Incluye solicitudes de medicamentos para ser administrados o consumidos en contexto de hospitalización o cuidados primarios</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSCodificacionCategoria-outpatient"> </a>  
+                  <a href="CodeSystem-CSCodificacionCategoria.html#CSCodificacionCategoria-outpatient">outpatient</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria</td>
+                <td>Ambulatorio</td>
+                <td>
+                  <div>
+                    <p>Incluye solicitudes de medicamentos para ser administrados o consumidos en el contexto ambulatorio (por ejemplo, departamento de urgencia, clínica ambulatoria, cirugía ambulatoria, oficina del doctor)</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSCodificacionCategoria-community"> </a>  
+                  <a href="CodeSystem-CSCodificacionCategoria.html#CSCodificacionCategoria-community">community</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria</td>
+                <td>community</td>
+                <td>
+                  <div>
+                    <p>Incluye solicitudes de medicamentos para ser administrados o consumidos por el paciente en su hogar (esto incluiría cuidados a largo plazo u hogares de ancianos, asilos, etc.)</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSCodificacionCategoria-discharge"> </a>  
+                  <a href="CodeSystem-CSCodificacionCategoria.html#CSCodificacionCategoria-discharge">discharge</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria</td>
+                <td>Alta</td>
+                <td>
+                  <div>
+                    <p>Incluye solicitudes de medicamentos creadas cuando el paciente es dado de alta de un centro</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSCodificacionCategoria"/>
+        <version value="0.9.6"/>
+        <name value="VSCodificacionCategoria"/>
+        <title value="Codificación de la categoría de una prescripción"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2022-01-18T00:00:00-03:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CL"/>
+            <display value="Chile"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f0b0cbe8-ae29-4683-aefd-94e0bcfb43ab"/>
+          <timestamp value="2024-01-03T12:28:28-03:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria|0.9.6"/>
+          </parameter>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria"/>
+            <code value="inpatient"/>
+            <display value="Hospitalizado"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria"/>
+            <code value="outpatient"/>
+            <display value="Ambulatorio"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria"/>
+            <code value="community"/>
+            <display value="community"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria"/>
+            <code value="discharge"/>
+            <display value="Alta"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSCodificacionPatron"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CSCodificacionPatron.html">codesystem Patrón de la Prescripción v0.9.6 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSCodificacionPatron-continuous"> </a>  
+                  <a href="CodeSystem-CSCodificacionPatron.html#CSCodificacionPatron-continuous">continuous</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron</td>
+                <td>Terapia continua a largo plazo</td>
+                <td>
+                  <div>
+                    <p>Una medicación que se espera sea continuada más allá de la presente orden y que el paciente debe tomar a menos que explicitamente se le indique lo contrario</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSCodificacionPatron-acute"> </a>  
+                  <a href="CodeSystem-CSCodificacionPatron.html#CSCodificacionPatron-acute">acute</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron</td>
+                <td>Terapia a corto plazo (aguda)</td>
+                <td>
+                  <div>
+                    <p>Una medicación que se espera que el paciente consuma solo por la duración de la presente orden y no se espera que sea renovada</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSCodificacionPatron-seasonal"> </a>  
+                  <a href="CodeSystem-CSCodificacionPatron.html#CSCodificacionPatron-seasonal">seasonal</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron</td>
+                <td>Por temporada</td>
+                <td>
+                  <div>
+                    <p>Una medicación que se espera sea usada a tiempo parcial en ciertos momentos del año</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSCodificacionPatron"/>
+        <version value="0.9.6"/>
+        <name value="VSCodificacionPatron"/>
+        <title value="Patrón de la Prescripción"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2022-01-18T00:00:00-03:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CL"/>
+            <display value="Chile"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ce83a925-9502-48a9-a161-704333739f39"/>
+          <timestamp value="2024-01-03T12:28:28-03:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron|0.9.6"/>
+          </parameter>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron"/>
+            <code value="continuous"/>
+            <display value="Terapia continua a largo plazo"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron"/>
+            <code value="acute"/>
+            <display value="Terapia a corto plazo (aguda)"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron"/>
+            <code value="seasonal"/>
+            <display value="Por temporada"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSFuncionProfesionalDispensacion"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CSFuncionProfesionalDispensacion.html">codesystem Funcion del Personal v0.9.6 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSFuncionProfesionalDispensacion-Dispensador"> </a>  
+                  <a href="CodeSystem-CSFuncionProfesionalDispensacion.html#CSFuncionProfesionalDispensacion-Dispensador">Dispensador</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion</td>
+                <td>Dispensador</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSFuncionProfesionalDispensacion-Validador"> </a>  
+                  <a href="CodeSystem-CSFuncionProfesionalDispensacion.html#CSFuncionProfesionalDispensacion-Validador">Validador</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion</td>
+                <td>Validador</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSFuncionProfesionalDispensacion"/>
+        <version value="0.9.6"/>
+        <name value="VSFuncionProfesionalDispensacion"/>
+        <title value="Funcion del Personal"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2022-01-18T00:00:00-03:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CL"/>
+            <display value="Chile"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2781b051-9241-409c-bad0-38175d6fd8e3"/>
+          <timestamp value="2024-01-03T12:28:28-03:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion|0.9.6"/>
+          </parameter>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion"/>
+            <code value="Dispensador"/>
+            <display value="Dispensador"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion"/>
+            <code value="Validador"/>
+            <display value="Validador"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSMetodos"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CSMetodos.html">codesystem Métodos de Administración v0.9.6 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 14 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-738991002"> </a>  
+                  <a href="CodeSystem-CSMetodos.html#CSMetodos-738991002">738991002</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
+                <td>Aplicación (método de administración)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-740685003"> </a>  
+                  <a href="CodeSystem-CSMetodos.html#CSMetodos-740685003">740685003</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
+                <td>Inyección (método de administración)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-738990001"> </a>  
+                  <a href="CodeSystem-CSMetodos.html#CSMetodos-738990001">738990001</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
+                <td>Administración (método de administración)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-785900008"> </a>  
+                  <a href="CodeSystem-CSMetodos.html#CSMetodos-785900008">785900008</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
+                <td>Enjuague o lavado (método de administración)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-764794000"> </a>  
+                  <a href="CodeSystem-CSMetodos.html#CSMetodos-764794000">764794000</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
+                <td>Infusión (método de administración)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-740666001"> </a>  
+                  <a href="CodeSystem-CSMetodos.html#CSMetodos-740666001">740666001</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
+                <td>Inhalación (método de administración)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-738994005"> </a>  
+                  <a href="CodeSystem-CSMetodos.html#CSMetodos-738994005">738994005</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
+                <td>Instilación (método de administración)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-738993004"> </a>  
+                  <a href="CodeSystem-CSMetodos.html#CSMetodos-738993004">738993004</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
+                <td>Inserción (método de administración)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-738996007"> </a>  
+                  <a href="CodeSystem-CSMetodos.html#CSMetodos-738996007">738996007</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
+                <td>Aerosolización (método de administración)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-738995006"> </a>  
+                  <a href="CodeSystem-CSMetodos.html#CSMetodos-738995006">738995006</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
+                <td>Tragar (método de administración)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-738992009"> </a>  
+                  <a href="CodeSystem-CSMetodos.html#CSMetodos-738992009">738992009</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
+                <td>Masticar (método de administración)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-764498003"> </a>  
+                  <a href="CodeSystem-CSMetodos.html#CSMetodos-764498003">764498003</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
+                <td>Chupar (método de administración)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-823034001"> </a>  
+                  <a href="CodeSystem-CSMetodos.html#CSMetodos-823034001">823034001</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
+                <td>Orodispersión (método de administración)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-827107003"> </a>  
+                  <a href="CodeSystem-CSMetodos.html#CSMetodos-827107003">827107003</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
+                <td>Implante (método de administración)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSMetodos"/>
+        <version value="0.9.6"/>
+        <name value="VSMetodos"/>
+        <title value="Métodos de Administración"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2022-01-18T00:00:00-03:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CL"/>
+            <display value="Chile"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:cf271e8a-1a04-4a92-8017-c446b0947621"/>
+          <timestamp value="2024-01-03T12:28:29-03:00"/>
+          <total value="14"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos|0.9.6"/>
+          </parameter>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
+            <code value="738991002"/>
+            <display value="Aplicación (método de administración)"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
+            <code value="740685003"/>
+            <display value="Inyección (método de administración)"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
+            <code value="738990001"/>
+            <display value="Administración (método de administración)"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
+            <code value="785900008"/>
+            <display value="Enjuague o lavado (método de administración)"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
+            <code value="764794000"/>
+            <display value="Infusión (método de administración)"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
+            <code value="740666001"/>
+            <display value="Inhalación (método de administración)"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
+            <code value="738994005"/>
+            <display value="Instilación (método de administración)"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
+            <code value="738993004"/>
+            <display value="Inserción (método de administración)"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
+            <code value="738996007"/>
+            <display value="Aerosolización (método de administración)"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
+            <code value="738995006"/>
+            <display value="Tragar (método de administración)"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
+            <code value="738992009"/>
+            <display value="Masticar (método de administración)"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
+            <code value="764498003"/>
+            <display value="Chupar (método de administración)"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
+            <code value="823034001"/>
+            <display value="Orodispersión (método de administración)"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
+            <code value="827107003"/>
+            <display value="Implante (método de administración)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSRazonEstadoDispensacion"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CSRazonEstadoDispensacion.html">codesystem Razón del cambio de estado (Dispensación) v0.9.6 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 20 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-frr01"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-frr01">frr01</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>Orden detenida</td>
+                <td>
+                  <div>
+                    <p>Esta orden fue detenida por el prescriptor pero no necesariamente por medios electrónicos. Ejemplos: Detención verbal, un fax, etc.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-frr02"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-frr02">frr02</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>Orden caducada</td>
+                <td>
+                  <div>
+                    <p>Orden no fue completada dentro de un periodo razonable de tiempo, y podría no estar vigente.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-frr03"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-frr03">frr03</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>Información incompleta</td>
+                <td>
+                  <div>
+                    <p>La información necesaria para ejecutar de forma segura la orden que se esperaba estuviese disponible independiente de la orden aún no está disponible. Ejemplo: Resultados de laboratorio, diagnóstico por imágenes, etc.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-frr04"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-frr04">frr04</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>Producto no disponible</td>
+                <td>
+                  <div>
+                    <p>Producto no disponible o no manufacturado. No se puede proveer.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-frr06"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-frr06">frr06</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>Incapaz de proporcionar cuidados</td>
+                <td>
+                  <div>
+                    <p>Realizador no es capaz de proveer el cuidado necesario asociado con el cumplimiento de la orden. Ejemplo: La terapia requiere monitoreo constante por el realizador y el realizador estará terminando su práctica, dejando la ciudad, incapaz de dedicar el tiempo necesario, etc.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-altchoice"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-altchoice">altchoice</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>Primero probar otro tratamiento</td>
+                <td>
+                  <div>
+                    <p>Esta terapia ha sido definida como respaldo de una terapia de elección. Esta orden será liberada cuando y si la terapia de elección fracasa.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-clarif"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-clarif">clarif</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>La prescripción requiere una aclaración</td>
+                <td>
+                  <div>
+                    <p>Se requiere una aclaración antes de que la orden pueda ser realizada</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-drughigh"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-drughigh">drughigh</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>Dosis del fármaco es muy alta</td>
+                <td>
+                  <div>
+                    <p>Los niveles actuales del fármaco en el sistema del paciente son muy altos. El fármaco es suspendido para permitir que los niveles disminuyan hasta un nivel seguro</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-hospadm"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-hospadm">hospadm</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>Admisión a hospital</td>
+                <td>
+                  <div>
+                    <p>El paciente ha ingresado a un centro asistencial y su medicación comunitaria será suspendido hasta el egreso hospitalario</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-labint"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-labint">labint</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>Interferencia con exámenes de laboratorio</td>
+                <td>
+                  <div>
+                    <p>La terapia podría interferir con un exámen de laboratorio planeado, por lo que se suspende la terapia hasta que el examen se realice</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-non-avail"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-non-avail">non-avail</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>Paciente no disponible</td>
+                <td>
+                  <div>
+                    <p>Paciente no disponible por un período de tiempo debido a una terapia programada, permiso de ausencia u otra razón</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-preg"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-preg">preg</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>Paciente embarazada/amamantando</td>
+                <td>
+                  <div>
+                    <p>La paciente está embarazada o amamantando. La terapia se continuará cuando se complete el embarazo y la paciente deje de amamantar.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-saig"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-saig">saig</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>Alergia</td>
+                <td>
+                  <div>
+                    <p>Se sospecha que el paciente es alérgico a una sustancia que es parte de la terapia y la terapia será temporalmente suspendida para confirmar</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-sddi"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-sddi">sddi</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>Fármaco interactúa con otro fármaco</td>
+                <td>
+                  <div>
+                    <p>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-sdupther"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-sdupther">sdupther</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>Terapia duplicada</td>
+                <td>
+                  <div>
+                    <p>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-sintol"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-sintol">sintol</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>Intolerancia sospechada</td>
+                <td>
+                  <div>
+                    <p>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-surg"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-surg">surg</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>Paciente programado para cirugía</td>
+                <td>
+                  <div>
+                    <p>Este fármaco está contraindicado en pacientes que serán sometidos a cirugía y el paciente está programado para recibir una cirugía en el futuro cercano. El fármaco será retomado una vez que el paciente se haya recuperado lo suficiente de la cirugía</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-washout"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-washout">washout</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>En espera de eliminación de fármaco previo</td>
+                <td>
+                  <div>
+                    <p>El paciente estaba recibiendo un fármaco que está contraindicado con su medicación actual. La medicación actual se mantendrá en espera hasta que el fármaco anterior haya sido eliminado de su sistema</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-outofstock"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-outofstock">outofstock</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>Fármaco no disponible - Sin stock</td>
+                <td>
+                  <div>
+                    <p>Fármaco sin stock. No se puede proveer.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-offmarket"> </a>  
+                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-offmarket">offmarket</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
+                <td>Fármaco no disponible - Fuera del mercado</td>
+                <td>
+                  <div>
+                    <p>Fármaco ya no se vende. No se puede proveer.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSRazonEstadoDispensacion"/>
+        <version value="0.9.6"/>
+        <name value="VSRazonEstadoDispensacion"/>
+        <title value="Razón del cambio de estado (Dispensación)"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2022-01-18T00:00:00-03:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CL"/>
+            <display value="Chile"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:48cf8a9f-b4a2-444b-a5eb-343f9db02f2d"/>
+          <timestamp value="2024-01-03T12:28:29-03:00"/>
+          <total value="20"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion|0.9.6"/>
+          </parameter>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="frr01"/>
+            <display value="Orden detenida"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="frr02"/>
+            <display value="Orden caducada"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="frr03"/>
+            <display value="Información incompleta"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="frr04"/>
+            <display value="Producto no disponible"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="frr06"/>
+            <display value="Incapaz de proporcionar cuidados"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="altchoice"/>
+            <display value="Primero probar otro tratamiento"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="clarif"/>
+            <display value="La prescripción requiere una aclaración"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="drughigh"/>
+            <display value="Dosis del fármaco es muy alta"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="hospadm"/>
+            <display value="Admisión a hospital"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="labint"/>
+            <display value="Interferencia con exámenes de laboratorio"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="non-avail"/>
+            <display value="Paciente no disponible"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="preg"/>
+            <display value="Paciente embarazada/amamantando"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="saig"/>
+            <display value="Alergia"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="sddi"/>
+            <display value="Fármaco interactúa con otro fármaco"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="sdupther"/>
+            <display value="Terapia duplicada"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="sintol"/>
+            <display value="Intolerancia sospechada"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="surg"/>
+            <display value="Paciente programado para cirugía"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="washout"/>
+            <display value="En espera de eliminación de fármaco previo"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="outofstock"/>
+            <display value="Fármaco no disponible - Sin stock"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
+            <code value="offmarket"/>
+            <display value="Fármaco no disponible - Fuera del mercado"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSStatusReason"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CSStatusReason.html">codesystem Razón del cambio de estado (Prescripción) v0.9.6 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 14 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-altchoice"> </a>  
+                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-altchoice">altchoice</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
+                <td>Primero probar otro tratamiento</td>
+                <td>
+                  <div>
+                    <p>Esta terapia se ha ordenado como respaldo a una terapia preferida. Esta orden será liberada cuando y si, la terapia preferida no tiene éxito</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-clarif"> </a>  
+                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-clarif">clarif</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
+                <td>La prescripción requiere una aclaración</td>
+                <td>
+                  <div>
+                    <p>Se requiere una aclaración antes de que la orden pueda ser realizada</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-drughigh"> </a>  
+                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-drughigh">drughigh</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
+                <td>Dosis del fármaco es muy alta</td>
+                <td>
+                  <div>
+                    <p>Los niveles actuales del fármaco en el sistema del paciente son muy altos. El fármaco es suspendido para permitir que los niveles disminuyan hasta un nivel seguro</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-hospadm"> </a>  
+                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-hospadm">hospadm</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
+                <td>Admisión a hospital</td>
+                <td>
+                  <div>
+                    <p>El paciente ha sido ingresado a un centro asistencial y su medicación comunitaria será suspendida hasta el alta hospitalaria</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-labint"> </a>  
+                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-labint">labint</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
+                <td>Interferencia con exámenes de laboratorio</td>
+                <td>
+                  <div>
+                    <p>La terapia podría interferir con un exámen de laboratorio planificado, por lo que se suspende la terapia hasta que el exámen se realice</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-non-avail"> </a>  
+                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-non-avail">non-avail</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
+                <td>Paciente no disponible</td>
+                <td>
+                  <div>
+                    <p>Paciente no disponible por un período de tiempo debido a una terapia programada, permiso de ausencia u otra razón</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-preg"> </a>  
+                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-preg">preg</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
+                <td>Paciente embarazada/amamantando</td>
+                <td>
+                  <div>
+                    <p>La paciente está embarazada o amamantando. La terapia se continuará cuando se complete el embarazo, y la paciente deje de amamantar.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-salg"> </a>  
+                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-salg">salg</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
+                <td>Alergia</td>
+                <td>
+                  <div>
+                    <p>Se sospecha que el paciente es alérgico a una sustancia que forma parte de la terapia, por lo que ésta será temporalmente suspendida para confirmar</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-sddi"> </a>  
+                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-sddi">sddi</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
+                <td>Fármaco interactúa con otro fármaco</td>
+                <td>
+                  <div>
+                    <p>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-sdupther"> </a>  
+                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-sdupther">sdupther</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
+                <td>Terapia duplicada</td>
+                <td>
+                  <div>
+                    <p>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-sintol"> </a>  
+                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-sintol">sintol</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
+                <td>Sospecha de intolerancia</td>
+                <td>
+                  <div>
+                    <p>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-surg"> </a>  
+                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-surg">surg</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
+                <td>Paciente programado para cirugía</td>
+                <td>
+                  <div>
+                    <p>El fármaco está contraindicado para pacientes que se someten a cirugía y para pacientes que estén programados para ser admitidos para cirugía en un futuro próximo. El tratamiento se reanudará cuando el paciente se haya recuperado suficientemente de la cirugía.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-washout"> </a>  
+                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-washout">washout</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
+                <td>En espera de eliminación de fármaco previo</td>
+                <td>
+                  <div>
+                    <p>El paciente estaba recibiendo un fármaco que está contraindicado con su medicación actual. La medicación actual se mantendrá en espera hasta que el fármaco anterior haya sido eliminado de su sistema</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-otra"> </a>  
+                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-otra">otra</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
+                <td>Otra</td>
+                <td>
+                  <div>
+                    <p>Otra razón no considerada en el listado</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSStatusReason"/>
+        <version value="0.9.6"/>
+        <name value="VSStatusReason"/>
+        <title value="Razón del cambio de estado (Prescripción)"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2022-01-18T00:00:00-03:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CL"/>
+            <display value="Chile"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:fd5962c1-295b-46b9-b173-e3698250dc68"/>
+          <timestamp value="2024-01-03T12:28:29-03:00"/>
+          <total value="14"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason|0.9.6"/>
+          </parameter>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
+            <code value="altchoice"/>
+            <display value="Primero probar otro tratamiento"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
+            <code value="clarif"/>
+            <display value="La prescripción requiere una aclaración"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
+            <code value="drughigh"/>
+            <display value="Dosis del fármaco es muy alta"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
+            <code value="hospadm"/>
+            <display value="Admisión a hospital"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
+            <code value="labint"/>
+            <display value="Interferencia con exámenes de laboratorio"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
+            <code value="non-avail"/>
+            <display value="Paciente no disponible"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
+            <code value="preg"/>
+            <display value="Paciente embarazada/amamantando"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
+            <code value="salg"/>
+            <display value="Alergia"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
+            <code value="sddi"/>
+            <display value="Fármaco interactúa con otro fármaco"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
+            <code value="sdupther"/>
+            <display value="Terapia duplicada"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
+            <code value="sintol"/>
+            <display value="Sospecha de intolerancia"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
+            <code value="surg"/>
+            <display value="Paciente programado para cirugía"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
+            <code value="washout"/>
+            <display value="En espera de eliminación de fármaco previo"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
+            <code value="otra"/>
+            <display value="Otra"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSTipoPrescripcion"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CSTipoPrescripcion.html">codesystem Tipo de Prescripción v0.9.6 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSTipoPrescripcion-Id-Local"> </a>  
+                  <a href="CodeSystem-CSTipoPrescripcion.html#CSTipoPrescripcion-Id_Local">Id_Local</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion</td>
+                <td>Id_Local</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSTipoPrescripcion-Id-Cheque"> </a>  
+                  <a href="CodeSystem-CSTipoPrescripcion.html#CSTipoPrescripcion-Id_Cheque">Id_Cheque</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion</td>
+                <td>Id_Cheque</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSTipoPrescripcion-Id-Receta-Grafica"> </a>  
+                  <a href="CodeSystem-CSTipoPrescripcion.html#CSTipoPrescripcion-Id_Receta_Grafica">Id_Receta_Grafica</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion</td>
+                <td>Id_Receta_Grafica</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSTipoPrescripcion"/>
+        <version value="0.9.6"/>
+        <name value="VSTipoPrescripcion"/>
+        <title value="Tipo de Prescripción"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2022-01-18T00:00:00-03:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CL"/>
+            <display value="Chile"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:1a64065f-b86d-4e25-b910-d28b22475068"/>
+          <timestamp value="2024-01-03T12:28:29-03:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion|0.9.6"/>
+          </parameter>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion"/>
+            <code value="Id_Local"/>
+            <display value="Id_Local"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion"/>
+            <code value="Id_Cheque"/>
+            <display value="Id_Cheque"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion"/>
+            <code value="Id_Receta_Grafica"/>
+            <display value="Id_Receta_Grafica"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSUnidadAsistencial"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CSUnidadAsistencial.html">codesystem Unidad Asistencial v0.9.6 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 32 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-mililitro"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-mililitro">mililitro</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Mililitro</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-comprimido"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-comprimido">comprimido</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Comprimido</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-miligramo"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-miligramo">miligramo</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Miligramo</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-unidades"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-unidades">unidades</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Unidades</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-capsula"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-capsula">capsula</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Cápsula</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-aplicacion"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-aplicacion">aplicacion</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Aplicación</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-supositorio"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-supositorio">supositorio</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Supositorio</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-ampolla"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-ampolla">ampolla</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Ampolla</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-sobre"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-sobre">sobre</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Sobre</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-gotas"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-gotas">gotas</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Gotas</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-dosis"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-dosis">dosis</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Dosis</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-aposito"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-aposito">aposito</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Apósito</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-parche"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-parche">parche</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Parche</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-microgramo"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-microgramo">microgramo</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Microgramo</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-frasco"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-frasco">frasco</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Frasco</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-unidades-internacionales"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-unidades-internacionales">unidades-internacionales</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Unidades Internacionales</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-puff"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-puff">puff</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Puff</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-bidon"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-bidon">bidon</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Bidón</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-bolsa"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-bolsa">bolsa</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Bolsa</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-gramo"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-gramo">gramo</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Gramo</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-dispositivo"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-dispositivo">dispositivo</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Dispositivo</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-ovulo"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-ovulo">ovulo</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Óvulo</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-vial"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-vial">vial</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Vial</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-implante"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-implante">implante</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Implante</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-anillo-vaginal"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-anillo-vaginal">anillo-vaginal</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Anillo Vaginal</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-chicle"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-chicle">chicle</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Chicle</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-tarro"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-tarro">tarro</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Tarro</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-aplicador"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-aplicador">aplicador</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Aplicador</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-jeringa-prellenada"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-jeringa-prellenada">jeringa-prellenada</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Jeringa Prellenada</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-gragea"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-gragea">gragea</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Gragea</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-cartucho"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-cartucho">cartucho</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Cartucho</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-globulo"> </a>  
+                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-globulo">globulo</a>
+                </td>
+                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
+                <td>Glóbulo</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSUnidadAsistencial"/>
+        <version value="0.9.6"/>
+        <name value="VSUnidadAsistencial"/>
+        <title value="Unidad Asistencial"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2022-01-18T00:00:00-03:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CL"/>
+            <display value="Chile"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:daf1a0b3-de65-4478-b246-07c74ed1bc20"/>
+          <timestamp value="2024-01-03T12:28:29-03:00"/>
+          <total value="32"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial|0.9.6"/>
+          </parameter>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="mililitro"/>
+            <display value="Mililitro"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="comprimido"/>
+            <display value="Comprimido"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="miligramo"/>
+            <display value="Miligramo"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="unidades"/>
+            <display value="Unidades"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="capsula"/>
+            <display value="Cápsula"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="aplicacion"/>
+            <display value="Aplicación"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="supositorio"/>
+            <display value="Supositorio"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="ampolla"/>
+            <display value="Ampolla"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="sobre"/>
+            <display value="Sobre"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="gotas"/>
+            <display value="Gotas"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="dosis"/>
+            <display value="Dosis"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="aposito"/>
+            <display value="Apósito"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="parche"/>
+            <display value="Parche"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="microgramo"/>
+            <display value="Microgramo"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="frasco"/>
+            <display value="Frasco"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="unidades-internacionales"/>
+            <display value="Unidades Internacionales"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="puff"/>
+            <display value="Puff"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="bidon"/>
+            <display value="Bidón"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="bolsa"/>
+            <display value="Bolsa"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="gramo"/>
+            <display value="Gramo"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="dispositivo"/>
+            <display value="Dispositivo"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="ovulo"/>
+            <display value="Óvulo"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="vial"/>
+            <display value="Vial"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="implante"/>
+            <display value="Implante"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="anillo-vaginal"/>
+            <display value="Anillo Vaginal"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="chicle"/>
+            <display value="Chicle"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="tarro"/>
+            <display value="Tarro"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="aplicador"/>
+            <display value="Aplicador"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="jeringa-prellenada"/>
+            <display value="Jeringa Prellenada"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="gragea"/>
+            <display value="Gragea"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="cartucho"/>
+            <display value="Cartucho"/>
+          </contains>
+          <contains>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
+            <code value="globulo"/>
+            <display value="Glóbulo"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSViasAdmin"/>
     <resource>
@@ -13,10 +1915,10 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 72 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSViasAdmin.html">codesystem Vías de Administración v0.9.6 (CodeSystem)</a>
             </p>
+            <p>This value set contains 72 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -623,8 +2525,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5d7da870-697e-4d49-a5f8-76c09776ca5a"/>
-          <timestamp value="2024-01-03T11:13:27-03:00"/>
+          <identifier value="urn:uuid:6314727c-2347-49c8-8e4d-62bea04de1e5"/>
+          <timestamp value="2024-01-03T12:28:29-03:00"/>
           <total value="72"/>
           <parameter>
             <name value="excludeNested"/>
@@ -993,1908 +2895,6 @@
             <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSViasAdmin"/>
             <code value="404819002"/>
             <display value="vía de administración en la bilis o las vías biliares (calificador)"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSUnidadAsistencial"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 32 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSUnidadAsistencial.html">codesystem Unidad Asistencial v0.9.6 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-mililitro"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-mililitro">mililitro</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Mililitro</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-comprimido"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-comprimido">comprimido</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Comprimido</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-miligramo"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-miligramo">miligramo</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Miligramo</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-unidades"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-unidades">unidades</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Unidades</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-capsula"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-capsula">capsula</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Cápsula</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-aplicacion"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-aplicacion">aplicacion</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Aplicación</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-supositorio"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-supositorio">supositorio</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Supositorio</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-ampolla"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-ampolla">ampolla</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Ampolla</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-sobre"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-sobre">sobre</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Sobre</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-gotas"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-gotas">gotas</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Gotas</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-dosis"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-dosis">dosis</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Dosis</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-aposito"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-aposito">aposito</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Apósito</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-parche"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-parche">parche</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Parche</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-microgramo"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-microgramo">microgramo</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Microgramo</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-frasco"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-frasco">frasco</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Frasco</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-unidades-internacionales"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-unidades-internacionales">unidades-internacionales</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Unidades Internacionales</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-puff"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-puff">puff</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Puff</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-bidon"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-bidon">bidon</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Bidón</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-bolsa"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-bolsa">bolsa</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Bolsa</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-gramo"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-gramo">gramo</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Gramo</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-dispositivo"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-dispositivo">dispositivo</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Dispositivo</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-ovulo"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-ovulo">ovulo</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Óvulo</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-vial"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-vial">vial</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Vial</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-implante"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-implante">implante</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Implante</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-anillo-vaginal"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-anillo-vaginal">anillo-vaginal</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Anillo Vaginal</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-chicle"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-chicle">chicle</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Chicle</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-tarro"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-tarro">tarro</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Tarro</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-aplicador"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-aplicador">aplicador</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Aplicador</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-jeringa-prellenada"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-jeringa-prellenada">jeringa-prellenada</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Jeringa Prellenada</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-gragea"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-gragea">gragea</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Gragea</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-cartucho"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-cartucho">cartucho</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Cartucho</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSUnidadAsistencial-globulo"> </a>  
-                  <a href="CodeSystem-CSUnidadAsistencial.html#CSUnidadAsistencial-globulo">globulo</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial</td>
-                <td>Glóbulo</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSUnidadAsistencial"/>
-        <version value="0.9.6"/>
-        <name value="VSUnidadAsistencial"/>
-        <title value="Unidad Asistencial"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2022-01-18T00:00:00-03:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="CL"/>
-            <display value="Chile"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:f9e535ad-c4ef-4407-8a17-64456170f753"/>
-          <timestamp value="2024-01-03T11:13:30-03:00"/>
-          <total value="32"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial|0.9.6"/>
-          </parameter>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="mililitro"/>
-            <display value="Mililitro"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="comprimido"/>
-            <display value="Comprimido"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="miligramo"/>
-            <display value="Miligramo"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="unidades"/>
-            <display value="Unidades"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="capsula"/>
-            <display value="Cápsula"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="aplicacion"/>
-            <display value="Aplicación"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="supositorio"/>
-            <display value="Supositorio"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="ampolla"/>
-            <display value="Ampolla"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="sobre"/>
-            <display value="Sobre"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="gotas"/>
-            <display value="Gotas"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="dosis"/>
-            <display value="Dosis"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="aposito"/>
-            <display value="Apósito"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="parche"/>
-            <display value="Parche"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="microgramo"/>
-            <display value="Microgramo"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="frasco"/>
-            <display value="Frasco"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="unidades-internacionales"/>
-            <display value="Unidades Internacionales"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="puff"/>
-            <display value="Puff"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="bidon"/>
-            <display value="Bidón"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="bolsa"/>
-            <display value="Bolsa"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="gramo"/>
-            <display value="Gramo"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="dispositivo"/>
-            <display value="Dispositivo"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="ovulo"/>
-            <display value="Óvulo"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="vial"/>
-            <display value="Vial"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="implante"/>
-            <display value="Implante"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="anillo-vaginal"/>
-            <display value="Anillo Vaginal"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="chicle"/>
-            <display value="Chicle"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="tarro"/>
-            <display value="Tarro"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="aplicador"/>
-            <display value="Aplicador"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="jeringa-prellenada"/>
-            <display value="Jeringa Prellenada"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="gragea"/>
-            <display value="Gragea"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="cartucho"/>
-            <display value="Cartucho"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"/>
-            <code value="globulo"/>
-            <display value="Glóbulo"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSStatusReason"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 14 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSStatusReason.html">codesystem Razón del cambio de estado (Prescripción) v0.9.6 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-altchoice"> </a>  
-                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-altchoice">altchoice</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
-                <td>Primero probar otro tratamiento</td>
-                <td>
-                  <div>
-                    <p>Esta terapia se ha ordenado como respaldo a una terapia preferida. Esta orden será liberada cuando y si, la terapia preferida no tiene éxito</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-clarif"> </a>  
-                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-clarif">clarif</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
-                <td>La prescripción requiere una aclaración</td>
-                <td>
-                  <div>
-                    <p>Se requiere una aclaración antes de que la orden pueda ser realizada</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-drughigh"> </a>  
-                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-drughigh">drughigh</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
-                <td>Dosis del fármaco es muy alta</td>
-                <td>
-                  <div>
-                    <p>Los niveles actuales del fármaco en el sistema del paciente son muy altos. El fármaco es suspendido para permitir que los niveles disminuyan hasta un nivel seguro</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-hospadm"> </a>  
-                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-hospadm">hospadm</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
-                <td>Admisión a hospital</td>
-                <td>
-                  <div>
-                    <p>El paciente ha sido ingresado a un centro asistencial y su medicación comunitaria será suspendida hasta el alta hospitalaria</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-labint"> </a>  
-                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-labint">labint</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
-                <td>Interferencia con exámenes de laboratorio</td>
-                <td>
-                  <div>
-                    <p>La terapia podría interferir con un exámen de laboratorio planificado, por lo que se suspende la terapia hasta que el exámen se realice</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-non-avail"> </a>  
-                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-non-avail">non-avail</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
-                <td>Paciente no disponible</td>
-                <td>
-                  <div>
-                    <p>Paciente no disponible por un período de tiempo debido a una terapia programada, permiso de ausencia u otra razón</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-preg"> </a>  
-                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-preg">preg</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
-                <td>Paciente embarazada/amamantando</td>
-                <td>
-                  <div>
-                    <p>La paciente está embarazada o amamantando. La terapia se continuará cuando se complete el embarazo, y la paciente deje de amamantar.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-salg"> </a>  
-                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-salg">salg</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
-                <td>Alergia</td>
-                <td>
-                  <div>
-                    <p>Se sospecha que el paciente es alérgico a una sustancia que forma parte de la terapia, por lo que ésta será temporalmente suspendida para confirmar</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-sddi"> </a>  
-                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-sddi">sddi</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
-                <td>Fármaco interactúa con otro fármaco</td>
-                <td>
-                  <div>
-                    <p>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-sdupther"> </a>  
-                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-sdupther">sdupther</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
-                <td>Terapia duplicada</td>
-                <td>
-                  <div>
-                    <p>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-sintol"> </a>  
-                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-sintol">sintol</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
-                <td>Sospecha de intolerancia</td>
-                <td>
-                  <div>
-                    <p>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-surg"> </a>  
-                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-surg">surg</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
-                <td>Paciente programado para cirugía</td>
-                <td>
-                  <div>
-                    <p>El fármaco está contraindicado para pacientes que se someten a cirugía y para pacientes que estén programados para ser admitidos para cirugía en un futuro próximo. El tratamiento se reanudará cuando el paciente se haya recuperado suficientemente de la cirugía.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-washout"> </a>  
-                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-washout">washout</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
-                <td>En espera de eliminación de fármaco previo</td>
-                <td>
-                  <div>
-                    <p>El paciente estaba recibiendo un fármaco que está contraindicado con su medicación actual. La medicación actual se mantendrá en espera hasta que el fármaco anterior haya sido eliminado de su sistema</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSStatusReason-otra"> </a>  
-                  <a href="CodeSystem-CSStatusReason.html#CSStatusReason-otra">otra</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason</td>
-                <td>Otra</td>
-                <td>
-                  <div>
-                    <p>Otra razón no considerada en el listado</p>
-
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSStatusReason"/>
-        <version value="0.9.6"/>
-        <name value="VSStatusReason"/>
-        <title value="Razón del cambio de estado (Prescripción)"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2022-01-18T00:00:00-03:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="CL"/>
-            <display value="Chile"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:a021c6a3-3f30-42e0-b423-839cf1a5f77d"/>
-          <timestamp value="2024-01-03T11:13:31-03:00"/>
-          <total value="14"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason|0.9.6"/>
-          </parameter>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
-            <code value="altchoice"/>
-            <display value="Primero probar otro tratamiento"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
-            <code value="clarif"/>
-            <display value="La prescripción requiere una aclaración"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
-            <code value="drughigh"/>
-            <display value="Dosis del fármaco es muy alta"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
-            <code value="hospadm"/>
-            <display value="Admisión a hospital"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
-            <code value="labint"/>
-            <display value="Interferencia con exámenes de laboratorio"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
-            <code value="non-avail"/>
-            <display value="Paciente no disponible"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
-            <code value="preg"/>
-            <display value="Paciente embarazada/amamantando"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
-            <code value="salg"/>
-            <display value="Alergia"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
-            <code value="sddi"/>
-            <display value="Fármaco interactúa con otro fármaco"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
-            <code value="sdupther"/>
-            <display value="Terapia duplicada"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
-            <code value="sintol"/>
-            <display value="Sospecha de intolerancia"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
-            <code value="surg"/>
-            <display value="Paciente programado para cirugía"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
-            <code value="washout"/>
-            <display value="En espera de eliminación de fármaco previo"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"/>
-            <code value="otra"/>
-            <display value="Otra"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSCodificacionCategoria"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodificacionCategoria.html">codesystem Codificación del estado de una prescripción v0.9.6 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSCodificacionCategoria-inpatient"> </a>  
-                  <a href="CodeSystem-CSCodificacionCategoria.html#CSCodificacionCategoria-inpatient">inpatient</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria</td>
-                <td>Hospitalizado</td>
-                <td>
-                  <div>
-                    <p>Incluye solicitudes de medicamentos para ser administrados o consumidos en contexto de hospitalización o cuidados primarios</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSCodificacionCategoria-outpatient"> </a>  
-                  <a href="CodeSystem-CSCodificacionCategoria.html#CSCodificacionCategoria-outpatient">outpatient</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria</td>
-                <td>Ambulatorio</td>
-                <td>
-                  <div>
-                    <p>Incluye solicitudes de medicamentos para ser administrados o consumidos en el contexto ambulatorio (por ejemplo, departamento de urgencia, clínica ambulatoria, cirugía ambulatoria, oficina del doctor)</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSCodificacionCategoria-community"> </a>  
-                  <a href="CodeSystem-CSCodificacionCategoria.html#CSCodificacionCategoria-community">community</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria</td>
-                <td>community</td>
-                <td>
-                  <div>
-                    <p>Incluye solicitudes de medicamentos para ser administrados o consumidos por el paciente en su hogar (esto incluiría cuidados a largo plazo u hogares de ancianos, asilos, etc.)</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSCodificacionCategoria-discharge"> </a>  
-                  <a href="CodeSystem-CSCodificacionCategoria.html#CSCodificacionCategoria-discharge">discharge</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria</td>
-                <td>Alta</td>
-                <td>
-                  <div>
-                    <p>Incluye solicitudes de medicamentos creadas cuando el paciente es dado de alta de un centro</p>
-
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSCodificacionCategoria"/>
-        <version value="0.9.6"/>
-        <name value="VSCodificacionCategoria"/>
-        <title value="Codificación de la categoría de una prescripción"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2022-01-18T00:00:00-03:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="CL"/>
-            <display value="Chile"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:dff983ea-f92f-4457-91fd-a0395e320ba3"/>
-          <timestamp value="2024-01-03T11:13:33-03:00"/>
-          <total value="4"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria|0.9.6"/>
-          </parameter>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria"/>
-            <code value="inpatient"/>
-            <display value="Hospitalizado"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria"/>
-            <code value="outpatient"/>
-            <display value="Ambulatorio"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria"/>
-            <code value="community"/>
-            <display value="community"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria"/>
-            <code value="discharge"/>
-            <display value="Alta"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSCodificacionPatron"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodificacionPatron.html">codesystem Patrón de la Prescripción v0.9.6 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSCodificacionPatron-continuous"> </a>  
-                  <a href="CodeSystem-CSCodificacionPatron.html#CSCodificacionPatron-continuous">continuous</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron</td>
-                <td>Terapia continua a largo plazo</td>
-                <td>
-                  <div>
-                    <p>Una medicación que se espera sea continuada más allá de la presente orden y que el paciente debe tomar a menos que explicitamente se le indique lo contrario</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSCodificacionPatron-acute"> </a>  
-                  <a href="CodeSystem-CSCodificacionPatron.html#CSCodificacionPatron-acute">acute</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron</td>
-                <td>Terapia a corto plazo (aguda)</td>
-                <td>
-                  <div>
-                    <p>Una medicación que se espera que el paciente consuma solo por la duración de la presente orden y no se espera que sea renovada</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSCodificacionPatron-seasonal"> </a>  
-                  <a href="CodeSystem-CSCodificacionPatron.html#CSCodificacionPatron-seasonal">seasonal</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron</td>
-                <td>Por temporada</td>
-                <td>
-                  <div>
-                    <p>Una medicación que se espera sea usada a tiempo parcial en ciertos momentos del año</p>
-
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSCodificacionPatron"/>
-        <version value="0.9.6"/>
-        <name value="VSCodificacionPatron"/>
-        <title value="Patrón de la Prescripción"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2022-01-18T00:00:00-03:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="CL"/>
-            <display value="Chile"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:12b8983e-23ff-449b-bb0c-df87cac5ea90"/>
-          <timestamp value="2024-01-03T11:13:33-03:00"/>
-          <total value="3"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron|0.9.6"/>
-          </parameter>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron"/>
-            <code value="continuous"/>
-            <display value="Terapia continua a largo plazo"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron"/>
-            <code value="acute"/>
-            <display value="Terapia a corto plazo (aguda)"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron"/>
-            <code value="seasonal"/>
-            <display value="Por temporada"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSRazonEstadoDispensacion"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 20 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSRazonEstadoDispensacion.html">codesystem Razón del cambio de estado (Dispensación) v0.9.6 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-frr01"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-frr01">frr01</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>Orden detenida</td>
-                <td>
-                  <div>
-                    <p>Esta orden fue detenida por el prescriptor pero no necesariamente por medios electrónicos. Ejemplos: Detención verbal, un fax, etc.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-frr02"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-frr02">frr02</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>Orden caducada</td>
-                <td>
-                  <div>
-                    <p>Orden no fue completada dentro de un periodo razonable de tiempo, y podría no estar vigente.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-frr03"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-frr03">frr03</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>Información incompleta</td>
-                <td>
-                  <div>
-                    <p>La información necesaria para ejecutar de forma segura la orden que se esperaba estuviese disponible independiente de la orden aún no está disponible. Ejemplo: Resultados de laboratorio, diagnóstico por imágenes, etc.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-frr04"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-frr04">frr04</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>Producto no disponible</td>
-                <td>
-                  <div>
-                    <p>Producto no disponible o no manufacturado. No se puede proveer.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-frr06"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-frr06">frr06</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>Incapaz de proporcionar cuidados</td>
-                <td>
-                  <div>
-                    <p>Realizador no es capaz de proveer el cuidado necesario asociado con el cumplimiento de la orden. Ejemplo: La terapia requiere monitoreo constante por el realizador y el realizador estará terminando su práctica, dejando la ciudad, incapaz de dedicar el tiempo necesario, etc.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-altchoice"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-altchoice">altchoice</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>Primero probar otro tratamiento</td>
-                <td>
-                  <div>
-                    <p>Esta terapia ha sido definida como respaldo de una terapia de elección. Esta orden será liberada cuando y si la terapia de elección fracasa.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-clarif"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-clarif">clarif</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>La prescripción requiere una aclaración</td>
-                <td>
-                  <div>
-                    <p>Se requiere una aclaración antes de que la orden pueda ser realizada</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-drughigh"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-drughigh">drughigh</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>Dosis del fármaco es muy alta</td>
-                <td>
-                  <div>
-                    <p>Los niveles actuales del fármaco en el sistema del paciente son muy altos. El fármaco es suspendido para permitir que los niveles disminuyan hasta un nivel seguro</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-hospadm"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-hospadm">hospadm</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>Admisión a hospital</td>
-                <td>
-                  <div>
-                    <p>El paciente ha ingresado a un centro asistencial y su medicación comunitaria será suspendido hasta el egreso hospitalario</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-labint"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-labint">labint</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>Interferencia con exámenes de laboratorio</td>
-                <td>
-                  <div>
-                    <p>La terapia podría interferir con un exámen de laboratorio planeado, por lo que se suspende la terapia hasta que el examen se realice</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-non-avail"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-non-avail">non-avail</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>Paciente no disponible</td>
-                <td>
-                  <div>
-                    <p>Paciente no disponible por un período de tiempo debido a una terapia programada, permiso de ausencia u otra razón</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-preg"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-preg">preg</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>Paciente embarazada/amamantando</td>
-                <td>
-                  <div>
-                    <p>La paciente está embarazada o amamantando. La terapia se continuará cuando se complete el embarazo y la paciente deje de amamantar.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-saig"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-saig">saig</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>Alergia</td>
-                <td>
-                  <div>
-                    <p>Se sospecha que el paciente es alérgico a una sustancia que es parte de la terapia y la terapia será temporalmente suspendida para confirmar</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-sddi"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-sddi">sddi</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>Fármaco interactúa con otro fármaco</td>
-                <td>
-                  <div>
-                    <p>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-sdupther"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-sdupther">sdupther</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>Terapia duplicada</td>
-                <td>
-                  <div>
-                    <p>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-sintol"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-sintol">sintol</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>Intolerancia sospechada</td>
-                <td>
-                  <div>
-                    <p>El fármaco interactúa con un tratamiento a corto plazo que es requerido con mayor urgencia. Esta orden será retomada cuando el tratamiento a corto plazo se complete.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-surg"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-surg">surg</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>Paciente programado para cirugía</td>
-                <td>
-                  <div>
-                    <p>Este fármaco está contraindicado en pacientes que serán sometidos a cirugía y el paciente está programado para recibir una cirugía en el futuro cercano. El fármaco será retomado una vez que el paciente se haya recuperado lo suficiente de la cirugía</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-washout"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-washout">washout</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>En espera de eliminación de fármaco previo</td>
-                <td>
-                  <div>
-                    <p>El paciente estaba recibiendo un fármaco que está contraindicado con su medicación actual. La medicación actual se mantendrá en espera hasta que el fármaco anterior haya sido eliminado de su sistema</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-outofstock"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-outofstock">outofstock</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>Fármaco no disponible - Sin stock</td>
-                <td>
-                  <div>
-                    <p>Fármaco sin stock. No se puede proveer.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSRazonEstadoDispensacion-offmarket"> </a>  
-                  <a href="CodeSystem-CSRazonEstadoDispensacion.html#CSRazonEstadoDispensacion-offmarket">offmarket</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion</td>
-                <td>Fármaco no disponible - Fuera del mercado</td>
-                <td>
-                  <div>
-                    <p>Fármaco ya no se vende. No se puede proveer.</p>
-
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSRazonEstadoDispensacion"/>
-        <version value="0.9.6"/>
-        <name value="VSRazonEstadoDispensacion"/>
-        <title value="Razón del cambio de estado (Dispensación)"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2022-01-18T00:00:00-03:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="CL"/>
-            <display value="Chile"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:397ddb4d-9804-414f-ab3c-22e03c3af229"/>
-          <timestamp value="2024-01-03T11:13:33-03:00"/>
-          <total value="20"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion|0.9.6"/>
-          </parameter>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="frr01"/>
-            <display value="Orden detenida"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="frr02"/>
-            <display value="Orden caducada"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="frr03"/>
-            <display value="Información incompleta"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="frr04"/>
-            <display value="Producto no disponible"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="frr06"/>
-            <display value="Incapaz de proporcionar cuidados"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="altchoice"/>
-            <display value="Primero probar otro tratamiento"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="clarif"/>
-            <display value="La prescripción requiere una aclaración"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="drughigh"/>
-            <display value="Dosis del fármaco es muy alta"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="hospadm"/>
-            <display value="Admisión a hospital"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="labint"/>
-            <display value="Interferencia con exámenes de laboratorio"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="non-avail"/>
-            <display value="Paciente no disponible"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="preg"/>
-            <display value="Paciente embarazada/amamantando"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="saig"/>
-            <display value="Alergia"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="sddi"/>
-            <display value="Fármaco interactúa con otro fármaco"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="sdupther"/>
-            <display value="Terapia duplicada"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="sintol"/>
-            <display value="Intolerancia sospechada"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="surg"/>
-            <display value="Paciente programado para cirugía"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="washout"/>
-            <display value="En espera de eliminación de fármaco previo"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="outofstock"/>
-            <display value="Fármaco no disponible - Sin stock"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"/>
-            <code value="offmarket"/>
-            <display value="Fármaco no disponible - Fuera del mercado"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSMetodos"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 14 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSMetodos.html">codesystem Métodos de Administración v0.9.6 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-738991002"> </a>  
-                  <a href="CodeSystem-CSMetodos.html#CSMetodos-738991002">738991002</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
-                <td>Aplicación (método de administración)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-740685003"> </a>  
-                  <a href="CodeSystem-CSMetodos.html#CSMetodos-740685003">740685003</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
-                <td>Inyección (método de administración)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-738990001"> </a>  
-                  <a href="CodeSystem-CSMetodos.html#CSMetodos-738990001">738990001</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
-                <td>Administración (método de administración)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-785900008"> </a>  
-                  <a href="CodeSystem-CSMetodos.html#CSMetodos-785900008">785900008</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
-                <td>Enjuague o lavado (método de administración)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-764794000"> </a>  
-                  <a href="CodeSystem-CSMetodos.html#CSMetodos-764794000">764794000</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
-                <td>Infusión (método de administración)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-740666001"> </a>  
-                  <a href="CodeSystem-CSMetodos.html#CSMetodos-740666001">740666001</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
-                <td>Inhalación (método de administración)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-738994005"> </a>  
-                  <a href="CodeSystem-CSMetodos.html#CSMetodos-738994005">738994005</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
-                <td>Instilación (método de administración)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-738993004"> </a>  
-                  <a href="CodeSystem-CSMetodos.html#CSMetodos-738993004">738993004</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
-                <td>Inserción (método de administración)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-738996007"> </a>  
-                  <a href="CodeSystem-CSMetodos.html#CSMetodos-738996007">738996007</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
-                <td>Aerosolización (método de administración)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-738995006"> </a>  
-                  <a href="CodeSystem-CSMetodos.html#CSMetodos-738995006">738995006</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
-                <td>Tragar (método de administración)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-738992009"> </a>  
-                  <a href="CodeSystem-CSMetodos.html#CSMetodos-738992009">738992009</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
-                <td>Masticar (método de administración)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-764498003"> </a>  
-                  <a href="CodeSystem-CSMetodos.html#CSMetodos-764498003">764498003</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
-                <td>Chupar (método de administración)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-823034001"> </a>  
-                  <a href="CodeSystem-CSMetodos.html#CSMetodos-823034001">823034001</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
-                <td>Orodispersión (método de administración)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSMetodos-827107003"> </a>  
-                  <a href="CodeSystem-CSMetodos.html#CSMetodos-827107003">827107003</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos</td>
-                <td>Implante (método de administración)</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSMetodos"/>
-        <version value="0.9.6"/>
-        <name value="VSMetodos"/>
-        <title value="Métodos de Administración"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2022-01-18T00:00:00-03:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="CL"/>
-            <display value="Chile"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:dc2dc38c-f590-41ab-a844-232112b2e09b"/>
-          <timestamp value="2024-01-03T11:13:33-03:00"/>
-          <total value="14"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos|0.9.6"/>
-          </parameter>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
-            <code value="738991002"/>
-            <display value="Aplicación (método de administración)"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
-            <code value="740685003"/>
-            <display value="Inyección (método de administración)"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
-            <code value="738990001"/>
-            <display value="Administración (método de administración)"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
-            <code value="785900008"/>
-            <display value="Enjuague o lavado (método de administración)"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
-            <code value="764794000"/>
-            <display value="Infusión (método de administración)"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
-            <code value="740666001"/>
-            <display value="Inhalación (método de administración)"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
-            <code value="738994005"/>
-            <display value="Instilación (método de administración)"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
-            <code value="738993004"/>
-            <display value="Inserción (método de administración)"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
-            <code value="738996007"/>
-            <display value="Aerosolización (método de administración)"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
-            <code value="738995006"/>
-            <display value="Tragar (método de administración)"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
-            <code value="738992009"/>
-            <display value="Masticar (método de administración)"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
-            <code value="764498003"/>
-            <display value="Chupar (método de administración)"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
-            <code value="823034001"/>
-            <display value="Orodispersión (método de administración)"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"/>
-            <code value="827107003"/>
-            <display value="Implante (método de administración)"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSTipoPrescripcion"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSTipoPrescripcion.html">codesystem Tipo de Prescripción v0.9.6 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSTipoPrescripcion-Id-Local"> </a>  
-                  <a href="CodeSystem-CSTipoPrescripcion.html#CSTipoPrescripcion-Id_Local">Id_Local</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion</td>
-                <td>Id_Local</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSTipoPrescripcion-Id-Cheque"> </a>  
-                  <a href="CodeSystem-CSTipoPrescripcion.html#CSTipoPrescripcion-Id_Cheque">Id_Cheque</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion</td>
-                <td>Id_Cheque</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSTipoPrescripcion-Id-Receta-Grafica"> </a>  
-                  <a href="CodeSystem-CSTipoPrescripcion.html#CSTipoPrescripcion-Id_Receta_Grafica">Id_Receta_Grafica</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion</td>
-                <td>Id_Receta_Grafica</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSTipoPrescripcion"/>
-        <version value="0.9.6"/>
-        <name value="VSTipoPrescripcion"/>
-        <title value="Tipo de Prescripción"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2022-01-18T00:00:00-03:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="CL"/>
-            <display value="Chile"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:49c7f464-1e90-4f95-b98a-acdd52aa4040"/>
-          <timestamp value="2024-01-03T11:13:33-03:00"/>
-          <total value="3"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion|0.9.6"/>
-          </parameter>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion"/>
-            <code value="Id_Local"/>
-            <display value="Id_Local"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion"/>
-            <code value="Id_Cheque"/>
-            <display value="Id_Cheque"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion"/>
-            <code value="Id_Receta_Grafica"/>
-            <display value="Id_Receta_Grafica"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSFuncionProfesionalDispensacion"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSFuncionProfesionalDispensacion.html">codesystem Funcion del Personal v0.9.6 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSFuncionProfesionalDispensacion-Dispensador"> </a>  
-                  <a href="CodeSystem-CSFuncionProfesionalDispensacion.html#CSFuncionProfesionalDispensacion-Dispensador">Dispensador</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion</td>
-                <td>Dispensador</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interoperabilidad.minsal.cl-fhir-ig-snre-CodeSystem-CSFuncionProfesionalDispensacion-Validador"> </a>  
-                  <a href="CodeSystem-CSFuncionProfesionalDispensacion.html#CSFuncionProfesionalDispensacion-Validador">Validador</a>
-                </td>
-                <td>https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion</td>
-                <td>Validador</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSFuncionProfesionalDispensacion"/>
-        <version value="0.9.6"/>
-        <name value="VSFuncionProfesionalDispensacion"/>
-        <title value="Funcion del Personal"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2022-01-18T00:00:00-03:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="CL"/>
-            <display value="Chile"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:7fb14ea6-50fc-4de6-8a4e-94994dc8e6d6"/>
-          <timestamp value="2024-01-03T11:13:33-03:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion|0.9.6"/>
-          </parameter>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion"/>
-            <code value="Dispensador"/>
-            <display value="Dispensador"/>
-          </contains>
-          <contains>
-            <system value="https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion"/>
-            <code value="Validador"/>
-            <display value="Validador"/>
           </contains>
         </expansion>
       </ValueSet>

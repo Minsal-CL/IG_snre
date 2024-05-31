@@ -1,0 +1,152 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Intent",
+      "title" : "Medication request  intent",
+      "description" : "MedicationRequest Intent Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1378"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html" : "Medication request  intent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationrequest Status",
+      "title" : "Medicationrequest  status",
+      "description" : "MedicationRequest Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1377"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-status.html" : "Medicationrequest  status"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MedicationRequestCourseOfTherapyCodes",
+      "title" : "MedicationRequest Course of Therapy Codes",
+      "description" : "MedicationRequest Course of Therapy Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1327"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-course-of-therapy.html" : "Medication request  course of  therapy  codes"
+    },
+    {
+      "url" : "http://unitsofmeasure.org",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "UCUM",
+      "title" : "Unified Code for Units of Measure (UCUM)",
+      "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+      "oids" : ["2.16.840.1.113883.6.8"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-age-units.html" : "Common UCUM Codes for Age",
+      "http://hl7.org/fhir/R4/valueset-units-of-time.html" : "UnitsOfTime"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "CSCodificacionCategoria",
+      "title" : "Codificación del estado de una prescripción",
+      "description" : "Estado de una prescripción",
+      "uses" : {
+      },
+      "ValueSet-VSCodificacionCategoria.html" : "Codificación de la categoría de una prescripción"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "CSCodificacionPatron",
+      "title" : "Patrón de la Prescripción",
+      "description" : "Codificación del patrón de administración de una prescripción",
+      "uses" : {
+      },
+      "ValueSet-VSCodificacionPatron.html" : "Patrón de la Prescripción"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "CSFuncionProfesionalDispensacion",
+      "title" : "Funcion del Personal",
+      "description" : "Funcion del Personal. Puede ser Dispensador o Validador",
+      "uses" : {
+      },
+      "ValueSet-VSFuncionProfesionalDispensacion.html" : "Funcion del Personal"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "CSMetodos",
+      "title" : "Métodos de Administración",
+      "description" : "Métodos de Administración de SNOMED-CT utilizados para el proyecto de receta electrónica",
+      "uses" : {
+      },
+      "ValueSet-VSMetodos.html" : "Métodos de Administración"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "CSRazonEstadoDispensacion",
+      "title" : "Razón del cambio de estado (Dispensación)",
+      "description" : "Códigos que indican la razón por la cual una Dispensación ha cambiado su estado",
+      "uses" : {
+      },
+      "ValueSet-VSRazonEstadoDispensacion.html" : "Razón del cambio de estado (Dispensación)"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "CSStatusReason",
+      "title" : "Razón del cambio de estado (Prescripción)",
+      "description" : "Códigos que indican la razón por la cual una Prescripción ha cambiado su estado",
+      "uses" : {
+      },
+      "ValueSet-VSStatusReason.html" : "Razón del cambio de estado (Prescripción)"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "CSTipoPrescripcion",
+      "title" : "Tipo de Prescripción",
+      "description" : "Identifica el tipo de Prescripción",
+      "uses" : {
+      },
+      "ValueSet-VSTipoPrescripcion.html" : "Tipo de Prescripción"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "CSUnidadAsistencial",
+      "title" : "Unidad Asistencial",
+      "description" : "Unidad para dosificar",
+      "uses" : {
+      },
+      "ValueSet-VSUnidadAsistencial.html" : "Unidad Asistencial"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSViasAdmin",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "CSViasAdmin",
+      "title" : "Vías de Administración",
+      "description" : "Vías de Administración de SNOMED-CT utilizadas para el Sistema Nacional de Receta Electrónica",
+      "uses" : {
+      },
+      "ValueSet-VSViasAdmin.html" : "Vías de Administración"
+    }
+  ]
+}

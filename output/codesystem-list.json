@@ -1,0 +1,76 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "CSCodificacionCategoria",
+      "title" : "Codificación del estado de una prescripción",
+      "description" : "Estado de una prescripción"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "CSCodificacionPatron",
+      "title" : "Patrón de la Prescripción",
+      "description" : "Codificación del patrón de administración de una prescripción"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "CSFuncionProfesionalDispensacion",
+      "title" : "Funcion del Personal",
+      "description" : "Funcion del Personal. Puede ser Dispensador o Validador"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "CSMetodos",
+      "title" : "Métodos de Administración",
+      "description" : "Métodos de Administración de SNOMED-CT utilizados para el proyecto de receta electrónica"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "CSRazonEstadoDispensacion",
+      "title" : "Razón del cambio de estado (Dispensación)",
+      "description" : "Códigos que indican la razón por la cual una Dispensación ha cambiado su estado"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "CSStatusReason",
+      "title" : "Razón del cambio de estado (Prescripción)",
+      "description" : "Códigos que indican la razón por la cual una Prescripción ha cambiado su estado"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "CSTipoPrescripcion",
+      "title" : "Tipo de Prescripción",
+      "description" : "Identifica el tipo de Prescripción"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "CSUnidadAsistencial",
+      "title" : "Unidad Asistencial",
+      "description" : "Unidad para dosificar"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSViasAdmin",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "CSViasAdmin",
+      "title" : "Vías de Administración",
+      "description" : "Vías de Administración de SNOMED-CT utilizadas para el Sistema Nacional de Receta Electrónica"
+    }
+  ]
+}

@@ -4,6 +4,7 @@ Id:             RecetaPrescripcionCl
 Title:          "CL Prescripción"
 Description:    "Este Perfil describe la información contenida en la Prescripción de un medicamento para el Sistema Nacional de Receta Electrónica del MINSAL  "
 
+
 * ^version = "0.9.8"
 * ^status = #active
 * ^publisher = "MINSAL Chile"

@@ -1,0 +1,103 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSCodificacionCategoria",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "VSCodificacionCategoria",
+      "title" : "Codificación de la categoría de una prescripción",
+      "description" : "Estado de una prescripción",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionCategoria"
+      ]
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSCodificacionPatron",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "VSCodificacionPatron",
+      "title" : "Patrón de la Prescripción",
+      "description" : "Codificación del patrón de administración de una prescripción",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSCodificacionPatron"
+      ]
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSFuncionProfesionalDispensacion",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "VSFuncionProfesionalDispensacion",
+      "title" : "Funcion del Personal",
+      "description" : "Funcion del Personal. Puede ser Dispensador o Validador",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSFuncionProfesionalDispensacion"
+      ]
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSMetodos",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "VSMetodos",
+      "title" : "Métodos de Administración",
+      "description" : "Métodos de Administración de SNOMED-CT utilizados para el proyecto de receta electrónica",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSMetodos"
+      ]
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSRazonEstadoDispensacion",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "VSRazonEstadoDispensacion",
+      "title" : "Razón del cambio de estado (Dispensación)",
+      "description" : "Códigos que indican la razón por la cual una Dispensación ha cambiado su estado",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSRazonEstadoDispensacion"
+      ]
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSStatusReason",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "VSStatusReason",
+      "title" : "Razón del cambio de estado (Prescripción)",
+      "description" : "Códigos que indican la razón por la cual una Prescripción ha cambiado su estado",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSStatusReason"
+      ]
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSTipoPrescripcion",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "VSTipoPrescripcion",
+      "title" : "Tipo de Prescripción",
+      "description" : "Identifica el tipo de Prescripción",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSTipoPrescripcion"
+      ]
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSUnidadAsistencial",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "VSUnidadAsistencial",
+      "title" : "Unidad Asistencial",
+      "description" : "Unidad para dosificar",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSUnidadAsistencial"
+      ]
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/snre/ValueSet/VSViasAdmin",
+      "version" : "0.9.6",
+      "status" : "active",
+      "name" : "VSViasAdmin",
+      "title" : "Vías de Administración",
+      "description" : "Vías de Administración de SNOMED-CT utilizadas para el Sistema Nacional de Receta Electrónica",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/snre/CodeSystem/CSViasAdmin"
+      ]
+    }
+  ]
+}
